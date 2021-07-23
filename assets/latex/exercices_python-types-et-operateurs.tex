@@ -1,0 +1,71 @@
+\input{_header}
+\meta{url}{/exercices/python-types-et-operateurs/}
+\meta{pid}{11090}
+\meta{titre}{Python : Types et opérateurs}
+\meta{type}{exercices}
+\par
+En mode interactif, on entre chacune des instructions suivantes dans une console Python~:
+\begin{lstlisting}[language=Python]
+>>> 3+3
+>>> 3.0+3
+>>> "3"+3
+>>> "3"+"3"
+>>> 3*3
+>>> 3.0*3
+>>> "3"*3
+>>> "3"*"3"
+\end{lstlisting}
+Pour chacune des lignes ci-dessus, indiquer le résultat renvoyé par l'interpréteur Python.
+\begin{corrige}
+     \begin{enumerate}
+          \item %
+\begin{lstlisting}[language=Python]
+>>> 3+3
+     \end{lstlisting}
+     Le résultat de cette instruction est~: \texttt{6}.\\
+     Python ajoute les deux entiers et renvoie un entier.
+     \item %
+\begin{lstlisting}[language=Python]
+>>> 3.0+3
+\end{lstlisting}
+Le résultat de cette instruction est~: \texttt{6.0}.\\
+Python ajoute les deux nombres. Comme l'un de ces nombres est un décimal (\texttt{float}), le résultat renvoyé est également un décimal (d'où la présence du \og .0 \fg{} ).
+\item %
+\begin{lstlisting}[language=Python]
+>>> "3"+3
+\end{lstlisting}
+Cette instruction renvoie une erreur.\\
+Python ne peut pas ajouter un entier et une chaine de caractères. Il faut noter que, contrairement à d'autres langages, Python n'effectue pas de conversion de types automatiquement. On dit que Python est \textbf{fortement typé}.
+\item %
+\begin{lstlisting}[language=Python]
+>>> "3"+"3"
+\end{lstlisting}
+Le résultat de cette instruction est~: \texttt{'33'}.\\
+Python concatène les chaînes de caractères. À cause des guillemets, \texttt{"3"} est considéré comme une chaîne de caractères.  L'interpréteur Python n'additionne donc pas les valeurs numériques mais effectue une concaténation.
+\item %
+\begin{lstlisting}[language=Python]
+>>> 3*3
+\end{lstlisting}
+Le résultat de cette instruction est~: \texttt{9}.\\
+Python effectue le produit des deux entiers et renvoie un entier.
+\item %
+\begin{lstlisting}[language=Python]
+>>> 3.0*3
+\end{lstlisting}
+Le résultat de cette instruction est~: \texttt{9.0}.\\
+Python multiplie les deux nombres. Comme l'un de ces nombres est un décimal (\texttt{float}), le résultat renvoyé est un décimal.
+\item %
+\begin{lstlisting}[language=Python]
+>>> "3"*3
+\end{lstlisting}
+Le résultat de cette instruction est~: \texttt{'333'}.\\
+Python répète trois fois la chaîne de caractères \texttt{"3"}. L'opérateur *,  suivi ou précédé d'un nombre entier, permet de répéter une chaîne de caractères.
+\item %
+\begin{lstlisting}[language=Python]
+>>> "3"*"3"
+\end{lstlisting}
+Cette instruction renvoie une erreur.\\
+Python ne peut pas multiplier une chaîne de caractères par une autre chaîne de caractères.
+\end{enumerate}
+\end{corrige}
+\input{_footer}

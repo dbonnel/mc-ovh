@@ -1,0 +1,189 @@
+\input{_header}
+\begin{h2}Exercice 2 (6 points)\end{h2}
+\par
+\textbf{Commun  à tous les candidats}
+\medbreak
+Dans cet exercice, on s'intéresse au volume d'une ampoule basse consommation.
+\bigbreak
+\TitreC{Partie A - Modélisation de la forme de l'ampoule}
+\medbreak
+Le plan est muni d'un repère orthonormé $(O~;~\overrightarrow{u},~\overrightarrow{v})$.
+\par
+On considère les points A$(-1~;~1)$, B$(0~;~1)$, C$(4~;~3)$, D$(7~;~0)$, E$(4~;~-3)$, F$(O~;~-1)$ et G$(- 1~;~- 1)$.
+\par
+On modélise la section de l'ampoule par un plan passant par son axe de révolution à l'aide de la figure ci-dessous~:
+\begin{center}
+\begin{extern}%width="400" alt="Coupe ampoule Bac S Polynésie 2018"
+     \psset{unit=1.2cm,algebraic=true}
+     \begin{pspicture*}(-1.8,-3.5)(7.8,3.5)
+          \psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt](-2,-4)(8,4)
+          \psaxes[linewidth=1pt,Dx=10,Dy=10]{->}(0,0)(-1.8,-3.5)(7.8,3.5)
+          \psaxes[linewidth=1.2pt,Dx=10,Dy=10]{->}(0,0)(1,1)
+          \uput[d](0.5,0){$\overrightarrow{u}$}
+          \uput[l](0,0.5){$\overrightarrow{v}$}
+          \psline[linecolor=blue](-1,1)(0,1)\psline[linecolor=blue](-1,-1)(0,-1)
+          \psplot[linewidth=1pt,plotpoints=1000,linecolor=blue]{0}{4}{2-cos(x*3.141659/4)}
+          \psplot[linewidth=1pt,plotpoints=1000,linecolor=blue]{0}{4}{cos(x*3.141659/4)-2}
+          \psarc[linewidth=1pt,linecolor=blue](4,0){3}{-90}{90}
+          \psdots(-1,1)(0,1)(4,3)(7,0)(4,-3)(0,-1)(-1,-1)
+          \uput[dl](0,0){\small O}\uput[ul](-1,1){\small A}\uput[ur](0,1){\small B}\uput[u](4,3){\small C}
+          \uput[ur](7,0){\small D}\uput[d](4,-3){\small E}\uput[dr](0,-1){\small F}\uput[d](-1,-1){\small G}
+     \end{pspicture*}
+\end{extern}
+\end{center}
+\medbreak
+La partie de la courbe située au-dessus de l'axe des abscisses se décompose de la manière suivante~:
+\begin{indent}
+     \begin{itemize}
+          \item la portion située entre les points A et B est la représentation graphique de la fonction constante
+          $h$ définie sur l'intervalle $[-1~;~0]$ par $h(x) = 1$~;
+          \item la portion située entre les points B et C est la représentation graphique d'une fonction $f$ définie sur l'intervalle [0~;~4] par $f(x) = a + b \sin \left(c + \frac{\pi}{4} x\right)$, où $a$, $b$ et $c$ sont des réels non nuls
+          fixés et où le réel $c$ appartient à l'intervalle $\left[0~;~\frac{\pi}{2}\right]$~;
+          \item la portion située entre les points C et D est un quart de cercle de diamètre [CE].
+     \end{itemize}
+\end{indent}
+La partie de la courbe située en-dessous de l'axe des abscisses est obtenue par symétrie par rapport à l'axe des abscisses.
+\medbreak
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item On appelle $f'$ la fonction dérivée de la fonction $f$. Pour tout réel $x$ de l'intervalle [0~;~4], déterminer $f'(x)$.
+          \item On impose que les tangentes aux points B et C à la représentation graphique de la fonction $f$ soient parallèles à l'axe des abscisses. Déterminer la valeur du réel $c$.
+     \end{enumerate}
+     \item  Déterminer les réels $a$ et $b$.
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B - Approximation du volume de l'ampoule}
+\medbreak
+Par rotation de la figure précédente autour de l'axe des abscisses, on obtient un modèle de l'ampoule.
+\par
+Afin d'en calculer le volume, on la décompose en trois parties comme illustré ci-dessous~:
+\begin{center}
+\begin{extern}%width="400" alt="Volume ampoule Bac S Polynésie 2018"
+     \psset{unit=1.2cm,algebraic=true}
+     \begin{pspicture*}(-2,-4)(8,3.5)
+          %\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt]
+          \par
+          \uput[d](0.5,0){$\overrightarrow{u}$}
+          \uput[l](0,0.5){$\overrightarrow{v}$}
+          \psline(-1,1)(0,1)\psline(-1,-1)(0,-1)
+          \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{2-cos(x*3.141659/4)}
+          \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{cos(x*3.141659/4)-2}
+          \psarc[linewidth=1pt](4,0){3}{-90}{90}
+          \psdots(-1,1)(0,1)(4,3)(7,0)(4,-3)(0,-1)(-1,-1)
+          \uput[dl](0,0){\small O}\uput[ul](-1,1){\small A}\uput[ur](0,1){\small B}\uput[u](4,3){\small C}
+          \uput[ur](7,0){\small D}\uput[d](4,-3){\small E}\uput[dr](0,-1){\small F}\uput[d](-1,-1){\small G}
+          \pscustom[fillstyle=solid,fillcolor=mcmauve]{
+               \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{2-cos(x*3.141659/4)}
+          \psplot[linewidth=1pt,plotpoints=1000]{4}{0}{cos(x*3.141659/4)-2}}
+          \pscustom[fillstyle=solid,fillcolor=mcvert]{
+          \psline(4,3)(4,-3)\psarc[linewidth=1pt](4,0){3}{-90}{90}}
+          \psframe[fillstyle=solid,fillcolor=red](-1,-1)(0,1)
+         \psaxes[linewidth=1pt,Dx=10,Dy=10](0,0)(-2,-3.5)(8,3.5)
+          \psaxes[linewidth=1.5pt,Dx=10,Dy=10]{->}(0,0)(1,1)
+     \end{pspicture*}
+\end{extern}
+\end{center}
+\begin{center}
+Vue dans le plan (BCE)
+\end{center}
+\medbreak
+On rappelle que~:
+\begin{indent}
+     \begin{itemize}
+          \item le volume d'un cylindre est donné par la formule $\pi r^2 h$ où $r$ est le rayon du disque de base et $h$ est la hauteur~;
+          \item le volume d'une boule de rayon $r$ est donné par la formule $\dfrac{4}{3}\pi r^3$.
+     \end{itemize}
+\end{indent}
+On admet également que, pour tout réel $x$ de l'intervalle [0~;~4], $f(x) = 2 - \cos \left(\frac{\pi}{4}x\right)$.
+\medbreak
+\begin{enumerate}
+     \item Calculer le volume du cylindre de section le rectangle ABFG.
+     \item Calculer le volume de la demi-sphère de section le demi -disque de diamètre [CE].
+     \item Pour approcher le volume du solide de section la zone colorée en mauve BCEF, on partage le segment [OO$'$] en $n$ segments de même longueur $\dfrac{4}{n}$ puis on construit $n$ cylindres de même hauteur $\dfrac{4}{n}$.
+     \begin{enumerate}[label=\alph*.]
+          \item \textbf{Cas particulier~:} dans cette question uniquement on choisit $n = 5$.
+          \par
+          Calculer le volume du troisième cylindre, grisé dans les figures ci-dessous, puis en donner
+          la valeur arrondie à $10^{-2}$.
+          \begin{center}
+\begin{extern}%width="400" alt="Cylindres vue plan Bac S Polynésie 2018"
+                         \psset{unit=1.2cm,algebraic=true}
+               \begin{pspicture*}(-2,-4)(8,3.5)
+                    %\psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt]
+                    \psaxes[linewidth=1pt,Dx=10,Dy=10](0,0)(-2,-3.5)(8,3.5)
+                    \psaxes[linewidth=1.5pt,Dx=10,Dy=10]{->}(0,0)(1,1)
+                    %\uput[d](0.5,0){$\overrightarrow{i}$}
+                    %\uput[l](0,0.5){$\overrightarrow{j}$}
+                    \psline(-1,1)(0,1)\psline(-1,-1)(0,-1)
+                    \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{2-cos(x*3.141659/4)}
+                    \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{cos(x*3.141659/4)-2}
+                    \psarc[linewidth=1pt](4,0){3}{-90}{90}
+                    \psdots(-1,1)(0,1)(4,3)(7,0)(4,-3)(0,-1)(-1,-1)
+                    \uput[dl](0,0){\small O}
+                    %\uput[ul](-1,1){\small A}
+                    \uput[ur](0,1){\small B}\uput[u](4,3){\small C}
+                    \uput[ur](7,0){\small D}\uput[d](4,-3){\small E}\uput[dr](0,-1){\small F}
+                    %\uput[d](-1,-1){\small G}
+                    \psframe[fillstyle=solid,fillcolor=mcmauve](0,-1)(0.8,1)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve](0.8,-1.2)(1.6,1.2)
+                    \psframe[fillstyle=solid,fillcolor=blue](1.6,-1.7)(2.4,1.7)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve](2.4,-2.3)(3.2,2.3)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve](3.2,-2.8)(4,2.8)
+                     \psline(-1,-1)(-1,1)\psline(4,3)(4,-3)
+               \end{pspicture*}
+          \end{extern}
+                    \end{center}
+\begin{center}
+Vue dans le plan (BCE)
+\end{center}
+          \begin{center}
+ \begin{extern}%width="360" alt="Cylindres vue espace Bac S Polynésie 2018"
+                         \psset{unit=1.2cm,algebraic=true}
+               \begin{pspicture*}(-2,-4)(8,3.5)
+                    %\psgrid
+                    \psline(-1,1)(0,1)\psline(-1,-1)(0,-1)
+                    \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{2-cos(x*3.141659/4)}
+                    \psplot[linewidth=1pt,plotpoints=1000]{0}{4}{cos(x*3.141659/4)-2}
+                    \psarc[linewidth=1pt](4,0){3}{-90}{90}
+                    \psline(-1,-1)(-1,1)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](3.2,-2.8)(4,2.8)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](3.2,0)(0.3,2.8)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](4,0)(0.3,2.8)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](2.4,-2.3)(3.2,2.3)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](2.4,0)(0.3,2.3)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](3.2,0)(0.3,2.3)
+                      \psframe[fillstyle=solid,fillcolor=blue,linewidth=0pt](1.6,-1.7)(2.4,1.7)
+                    \psellipse[fillstyle=solid,fillcolor=blue,linewidth=0pt](1.6,0)(0.3,1.7)
+                    \psellipse[fillstyle=solid,fillcolor=blue,linewidth=0pt](2.4,0)(0.3,1.7)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](0.8,-1.2)(1.6,1.2)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](0.8,0)(0.3,1.2)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](1.6,0)(0.3,1.2)
+                    \psframe[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](0,-1)(0.8,1)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](0,0)(0.3,1)
+                    \psellipse[fillstyle=solid,fillcolor=mcmauve,linewidth=0pt](0.8,0)(0.3,1)
+               \end{pspicture*}
+           \end{extern}
+                     \end{center}
+                    \begin{center}
+                     Vue dans l'espace
+                    \end{center}
+          \item \textbf{Cas général~:} dans cette question, $n$ désigne un entier naturel quelconque non nul.
+          \par
+          On approche le volume du solide de section BCEF par la somme des volumes des $n$ cylindres
+          ainsi créés en choisissant une valeur de $n$ suffisamment grande.
+          \par
+          Recopier et compléter l'algorithme suivant de sorte qu'à la fin de son exécution, la variable $V$ contienne la somme des volumes des $n$ cylindres créés lorsque l'on saisit $n$.
+          \begin{center}
+ \begin{extern}%width="300" alt="Algorithme Bac S Polynésie 2018"
+                         \begin{tabularx}{0.45\linewidth}{|l X|}\hline
+                    1&$V \gets 0$\\
+                    2& Pour $k$ allant de \ldots à \ldots~:\\
+                    3& \hspace{0.5cm} $V \gets \ldots$\\
+                    4& Fin Pour\\ \hline
+               \end{tabularx}
+           \end{extern}
+                     \end{center}
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

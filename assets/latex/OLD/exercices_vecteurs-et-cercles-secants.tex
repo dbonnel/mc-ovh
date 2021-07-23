@@ -1,0 +1,102 @@
+\input{_header}
+$ \mathscr{C} $ et $ \mathscr{C}' $ sont deux cercles de même rayon sécants en deux points distincts $A$ et $B$.
+\par
+$ [AP] $ et $ [BQ] $ sont des diamètres du cercle $ \mathscr{C} $ et $ [AR] $ et $ [BS] $ des diamètres du cercle $ \mathscr{C}'. $
+\\
+\begin{center}
+\begin{extern}%alt="cercles sécants" style="width:60rem"
+\newrgbcolor{tttttt}{0.2 0.2 0.2} 
+\psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=2.pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-0.5,-0.5)(11.5,6.5)
+\pscircle[linewidth=0.5pt,linecolor=tttttt](3.,3.){3.}
+\pscircle[linewidth=0.5pt,linecolor=tttttt](8.,3.){3.}
+\psline[linewidth=0.5pt,linecolor=tttttt](0.5,1.3416876048223005)(5.5,4.658312395177699)
+\psline[linewidth=0.5pt,linecolor=tttttt](0.5,4.658312395177701)(5.5,1.3416876048223)
+\psline[linewidth=0.5pt,linecolor=tttttt](5.5,1.3416876048223)(10.5,4.658312395177702)
+\psline[linewidth=0.5pt,linecolor=tttttt](5.5,4.658312395177699)(10.5,1.3416876048222974)
+\rput[tl](0.9121563349924472,6.023806232132701){$\tttttt{\mathscr{C}}$}
+\rput[tl](9.925359952528456,5.932559534595379){$\tttttt{\mathscr{C'}}$}
+\begin{scriptsize}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](3.,3.)
+\rput[b](2.997028686927544,3.094787241184669){\tttttt{$I$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](8.,3.)
+\rput[b](7.986155537846467,3.094787241184669){\tttttt{$J$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](5.5,4.658312395177699)
+\rput[b](5.5,4.801100485132588){\darkgray{$A$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](5.5,1.3416876048223)
+\rput[bl](5.4,1.0508612163486593){\darkgray{$B$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](10.5,4.658312395177702)
+\rput[bl](10.535344439775843,4.691604448087801){\darkgray{$S$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](0.5,4.658312395177701)
+\rput[b](0.33858883205833745,4.746352466610195){\darkgray{$Q$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](0.5,1.3416876048223005)
+\rput[b](0.28,1.2151052719158386){\darkgray{$P$}}
+\psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](10.5,1.3416876048222974)
+\rput[b](10.65,1.2151052719158386){\darkgray{$R$}}
+\end{scriptsize}
+\end{pspicture*}
+\end{extern}
+\end{center}
+\\
+
+\begin{enumerate}
+\item
+Quelle est la nature du quadrilatère $ AJBI $~?
+\\
+Justifier votre réponse.
+\item
+Quelle est la nature du quadrilatère $ ABPQ $~?
+\\
+Justifier votre réponse.
+\item
+Montrer que  $  \overrightarrow{ AI } =  \overrightarrow{ IP }. $
+\item
+En déduire que $ IPBJ $ est un parallélogramme.
+\\
+De même, montrer que  $ IBRJ $ est un parallélogramme.
+
+\item
+Montrer que $B$ est le milieu de $ [PR]. $
+\end{enumerate}
+
+\begin{corrige}
+
+\begin{enumerate}
+\item
+$ [AI] $ et $ [BI] $ sont deux rayons du cercle  $ \mathscr{C} $ et  $ [AJ] $ et $ [BJ] $ sont deux rayons du cercle  $ \mathscr{C}' $.
+\par
+Les deux cercles ayant le même rayon : $ AI=BI=AJ=BJ $. Par conséquent, $ AIBJ $ est un  \textbf{losange.} 
+
+\item
+$ [AP] $ et $ [BQ] $ , les diagonales du quadrilatère  $ ABPQ $, sont deux diamètres du cercle $ \mathscr{C}  $.
+\par
+Ces diagonales sont donc de même longueur et elles se coupent en leur milieu.
+\par
+Par conséquent,  $ ABPQ $ est un rectangle.
+
+\item
+$I$ est le milieu du segment $ [AP] $ donc $  \overrightarrow{ AI } =  \overrightarrow{ IP }. $
+
+
+\item
+$ AJBI $ est un losange donc c'est également un parallélogramme.
+\par
+Par conséquent~: $  \overrightarrow{ AI } =  \overrightarrow{ JB }. $
+\par
+Or, d'après la question précédente  $  \overrightarrow{ AI } =  \overrightarrow{ IP }. $ On en déduit que  $  \overrightarrow{ JB } =  \overrightarrow{ IP }. $ et donc que  $ IPBJ $ est un parallélogramme.
+\par
+La démonstration est analogue pour $ IBRJ $~:
+\par
+$  \overrightarrow{ IB } =  \overrightarrow{ AJ } =  \overrightarrow{ JR }, $
+\par
+donc   $ IBRJ $ est un parallélogramme.
+
+\item
+Puisque $ IPBJ $ est un parallélogramme :  $  \overrightarrow{ PB } =  \overrightarrow{ IJ }.  $
+\\
+Puisque $ IBRJ $ est un parallélogramme :  $  \overrightarrow{ BR } =  \overrightarrow{ IJ }.  $
+\par
+Par conséquent,  $  \overrightarrow{ PB } =  \overrightarrow{ BR }$   donc  $B$ est le milieu du segment $ [PR].$
+\end{enumerate}
+\end{corrige}
+\input{_footer}

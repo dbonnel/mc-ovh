@@ -1,0 +1,104 @@
+\input{_header}
+\meta{url}{/cours/divisibilite-congruences/}
+\meta{pid}{561}
+\meta{titre}{Divisibilité et congruences (Spécialité)}
+\meta{type}{cours}
+\begin{h2}1. Division euclidienne\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soient $a$ et  $b$ deux entiers relatifs tels qu'il existe un entier relatif $k$ tel que $a=bk$.
+     \par
+     On dit alors que :
+     \begin{itemize}
+          \item $b$ \textbf{divise} $a$ ;
+          \item $b$ est un \textbf{diviseur} de $a$ ;
+          \item $a$ est un \textbf{multiple} de $b$.
+     \end{itemize}
+     Ceci se note $b|a$
+}
+\bloc{orange}{Exemple}{% id="e10"
+     $15=3\times 5$ donc :
+     \begin{itemize}
+          \item 3 divise 15.
+          \item 3 est un diviseur de 15.
+          \item 15 est un multiple de 3.
+     \end{itemize}
+}
+\bloc{vert}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item 0 est un multiple de tout entier relatif.
+          \item 1 et -1 sont des diviseurs de tout entier relatif.
+          \item $a$ et $-a$ ont les mêmes diviseurs.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{% id="p20"
+     \begin{itemize}
+          \item Si $a$ divise $b$ et $b$ divise $a$, alors $a$ et $b$ sont égaux ou opposés.
+          \item Si $a$ divise $b$ et $b$  divise $c$, alors $a$ divise $c$.
+          \item Si $c$ divise $a$ et $c$ divise $b$, alors $c$ divise toute combinaison linéaire de $a$ et $b$ (c'est-à-dire tout nombre de la forme $au+bv ; u\in \mathbb{Z}, v\in \mathbb{Z}$).
+     \end{itemize}
+}
+\cadre{rouge}{Théorème et définitions}{% id="d30"
+     \textbf{Division euclidienne dans $\mathbb{Z}$}
+     \par
+     Soient $a$ et $b$ deux entiers relatifs avec $b\neq 0$.
+     \par
+     Il existe un et un seul couple d'entiers relatifs $\left(q,r\right)$ tels que :
+     \par     \begin{center}
+          $a=bq+r$ et $0 \leqslant  r < |b|$.
+     \end{center}
+     $q$ et $r$ s'appelle respectivement le \textbf{quotient} et le \textbf{reste} de la \textbf{division euclidienne} de $a$ par $b$.
+}
+\bloc{orange}{Exemple}{% id="e30"
+     -14=3$\times $(-5)+1 et 0$\leqslant $1$ < $3
+     \par
+     La division euclidienne de -14 par 3 donne un quotient de -5 est un reste de 1.
+}
+\bloc{vert}{Remarques}{% id="r30"
+     \begin{itemize}
+          \item \textbf{Attention !} Ne pas oublier la condition $0 \leqslant  r <  |b|$. La seule égalité $a=bq+r$  ne suffit pas à prouver que $q$ et $r$ sont les quotient et reste dans la division euclidienne de $a$ par $b$.
+          \item $a$ est divisible par $b$ si et seulement si le reste de la division de $a$ par $b$ est égal à zéro.
+     \end{itemize}
+}
+\begin{h2}2. Congruences\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     On dit que deux entiers relatifs $a$ et $b$ son congrus modulo $n$ ( $n\in \mathbb{N}^*$ ) et l'on écrit $a\equiv b  \left[n\right]$ si et seulement si $a$ et $b$ ont le même reste dans la division par $n$.
+}
+\bloc{orange}{Exemple}{% id="e40"
+     $18\equiv 23  \left[5\right]$ car 18 et 23 ont tous les deux 3 comme reste dans la division par 5.
+}
+\cadre{vert}{Propriétés}{% id="p50"
+     \begin{itemize}
+          \item $a\equiv b  \left[n\right]$ si et seulement si $n$ divise $a-b$ en particulier $a\equiv 0  \left[n\right]$ si et seulement si $n$ divise $a$.
+          \item Si $a\equiv b  \left[n\right]$ et $b\equiv c  \left[n\right]$, alors $a\equiv c  \left[n\right]$.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés (Congruences et opérations)}{% id="p60"
+     Soient quatre entiers relatifs $a, b, c, d$ tels que $a\equiv b  \left[n\right]$ et $c\equiv d  \left[n\right]$. Alors :
+     \begin{itemize}
+          \item $a+c\equiv b+d  \left[n\right]$ et $a-c\equiv b-d  \left[n\right]$.
+          \item $ac\equiv bd  \left[n\right]$.
+          \item $ka\equiv kb  \left[n\right]$ pour tout entier relatif $k$.
+          \item $a^{m}\equiv b^{m}  \left[n\right]$ pour tout entier naturel $m$.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p70"
+     $r$ est le reste de la division euclidienne de $a$ par $b$ si et seulement si :
+     \par
+     \begin{center}
+          $\left\{ \begin{matrix} r\equiv a  \left[b\right] \\ r < |b| \end{matrix}\right.$
+     \end{center}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     On cherche à déterminer le reste de la division euclidienne de $2009^{2009}$ par 5.
+     \par
+     $2009\equiv -1  \left[5\right]$ car 2009-(-1)=2010 est divisible par 5.
+     \par
+     Donc :
+     \par
+     $2009^{2009}\equiv \left(-1\right)^{2009}  \left[5\right]$ c'est-à-dire $2009^{2009}\equiv -1  \left[5\right]$
+     \par
+     Or $-1\equiv 4  \left[5\right]$ donc $2009^{2009}\equiv 4  \left[5\right]$
+     \par
+     Comme $0\leqslant 4 < 5$, le reste de la division euclidienne de $2009^{2009}$ par 5 est 4.
+}
+\input{_footer}

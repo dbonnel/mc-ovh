@@ -1,0 +1,62 @@
+\input{_header}
+\begin{h2}EXERCICE 5 (5 points)\end{h2}
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\medskip
+On définit la suite de réels $\left(a_n\right)$ par :
+\[\left\{\begin{array}{l c l}
+          a_0 &= &0\\
+          a_1 &= &1\\
+          a_{n+1} &=& a_n + a_{n-1}\: \text{ pour }\: n \geqslant 1.
+\end{array}\right.\]
+On appelle cette suite la suite de Fibonacci.
+\medskip
+\begin{enumerate}
+     \item Recopier et compléter l'algorithme ci-dessous pour qu'à la fin de son exécution la variable $A$
+     contienne le terme $a_n$.
+     \begin{center}
+          \begin{extern}%width="340"
+               \begin{tabularx}{0.5\linewidth}{|c X|}\hline
+                    1&$A \gets 0$\\
+                    2& $B \gets 1$\\
+                    3& Pour $i$ allant de 2 à $n$ :\\
+                    4& {\hspace{0.6cm} $C \gets A + B$}\\
+                    5& {\hspace{0.6cm} $A \gets \ldots$}\\
+                    6& {\hspace{0.6cm} $B \gets \ldots$}\\
+                    7& Fin Pour\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     On obtient ainsi les premières valeurs de la suite $a_n$ :
+     \begin{center}
+          \begin{extern}%width="670"
+               \begin{tabularx}{\linewidth}{|c|*{11}{>{\centering \arraybackslash}X|}}\hline
+                    $n$		&0 	&1 	&2 	&3 	&4 	&5 &6 	&7 		&8 	&9 &10\\ \hline
+                    $a_n$	&0	& 1 &1	&2 	&3	&5 &8 	&13 	&21 &34 &55\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \item  Soit la matrice $A = \begin{pmatrix}1&1\\1&0\end{pmatrix}$.
+     \par
+     Calculer $A^2$, $A^3$ et $A^4$.
+     \par
+     Vérifier que $A^5 = \begin{pmatrix}8&5\\5&3\end{pmatrix}$.
+     \item On peut démontrer, et nous admettrons, que pour tout entier naturel $n$ non nul,
+     \[A^n = \begin{pmatrix}a_{n+1}&a_n\\a_n&a_{n-1}\end{pmatrix}.\]
+     \begin{enumerate}[label=\alph*.]
+          \item Soit $p$ et $q$ deux entiers naturels non nuls. Calculer le produit $A^p \times A^q$ et en déduire que
+          \[a_{p+q} = a_p \times a_{q+1} + a_{p-1} \times a_q.\]
+          \item  En déduire que si un entier $r$ divise les entiers $a_p$ et $a_q$, alors $r$ divise également $a_{p+q}$.
+          \item  Soit $p$ un entier naturel non nul.
+          \par
+          Démontrer, en utilisant un raisonnement par récurrence sur $n$, que pour tout entier naturel
+          $n$ non nul, $a_p$ divise $a_{np}$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Soit $n$ un entier supérieur ou égal à 5. Montrer que si $n$ est un entier naturel qui n'est pas premier, alors $a_n$ n'est pas un nombre premier.
+          \item On peut calculer $a_{19} = 4~181 = 37 \times 113$.
+          \par
+          Que penser de la réciproque de la propriété obtenue dans la question 4. a. ?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

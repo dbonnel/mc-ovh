@@ -1,0 +1,198 @@
+\input{_header}
+\begin{h2}I - Définition d'une suite\end{h2}
+\cadre{bleu}{Définitions}{%id="d10"
+     Une \textbf{suite} $u$ associe à tout entier naturel $n$ un nombre réel noté $u_{n}$.
+     \par
+     Les nombres réels $u_{n}$ sont les \textbf{termes} de la suite.
+     \par
+     Les nombres entiers $n$ sont les \textbf{indices} ou les \textbf{rangs}.
+     \par
+     La suite $u$ peut également se noter $\left(u_{n}\right)$ ou $\left(u_{n}\right)_{n\in \mathbb{N}}$
+}
+\bloc{cyan}{Remarque}{%id="r10"
+     Intuitivement, une suite est une liste infinie et ordonnée de nombres réels. Ces nombres réels sont les termes de la suite et les indices correspondent à la position du terme dans la liste.
+}
+\bloc{orange}{Exemple}{%id="e10"
+     Par exemple la liste 1,6 ; 2,4 ; 3,2 ; 5 ; ... correspond à la suite $\left(u_{n}\right)$ suivante :
+     \par
+     $u_{0}=1,6$ (terme de rang 0)
+     \par
+     $u_{1}=2,4$ (terme de rang 1)
+     \par
+     $u_{2}=3,2$ (terme de rang 2)
+     \par
+     $u_{3}=5$ ...
+}
+\bloc{cyan}{Remarque}{%id="r11"
+     Ne pas confondre l'écriture $\left(u_{n}\right)$ avec parenthèses qui désigne la suite et l'écriture $u_{n}$ sans parenthèse qui désigne le $n$-ième terme de la suite.
+}
+\cadre{bleu}{Définition}{%id="d20"
+     Une suite est définie de façon \textbf{explicite} lorsqu'on dispose d'une formule du type $u_{n}=f\left(n\right)$ permettant de calculer chaque terme de la suite à partir de son rang.
+}
+\bloc{orange}{Exemple}{%id="e20"
+     La suite $\left(u_{n}\right)$ définie par la formule explicite $u_{n}=\frac{2n+1}{3}$ est telle que
+     \par
+     $u_{0}=\frac{1}{3}$
+     \par
+     $u_{1}=\frac{3}{3}=1$ ...
+     \par
+     $u_{100}=\frac{201}{3}=67$
+}
+\cadre{bleu}{Définition}{%id="d30"
+     Une suite est définie par une relation de \textbf{récurrence} lorsqu'on dispose du premier terme et d'une formule du type $u_{n+1}=f\left(u_{n}\right)$ permettant de calculer chaque terme de la suite à partir du terme précédent..
+}
+\bloc{cyan}{Remarque}{%id="r30"
+     Il est possible de calculer un terme quelconque d'une suite définie par une relation de récurrence mais il faut au préalable calculer tout les termes précédents. Comme cela peut se révéler long, on utilise parfois un algorithme pour faire ce calcul.
+}
+\bloc{orange}{Exemple}{%id="e30"
+     La suite $\left(u_{n}\right)$ définie par la formule de récurrence
+     \par
+     $\left\{ \begin{matrix} u_{0}=1 \\ u_{n+1}=2u_{n}-3\end{matrix}\right.$
+          \par
+          est telle que :
+          \par
+          $u_{0}=1$
+          \par
+          $u_{1}=2\times u_{0}-3=2\times 1-3=-1$
+          \par
+          $u_{2}=2\times u_{1}-3=2\times \left(-1\right)-3=-5$
+          \par
+          etc...
+     }
+     \begin{h2}II - Représentation graphique d'une suite\end{h2}
+     \cadre{bleu}{Définition}{%id="d40"
+          La représentation graphique d'une suite $\left(u_{n}\right)$ ($n \in \mathbb{N}$) dans un repère du plan, s'obtient en plaçant les points de coordonnées $\left(n ; u_{n}\right)$ lorsque $n$ parcourt $\mathbb{N}$
+     }
+     \bloc{orange}{Exemple}{%id="e40"
+          Pour représenter la suite définie par $u_{n}=1+\frac{3}{n+1}$ on calcule:
+          \par
+          $u_{0}=4$
+          \par
+          $u_{1}=\frac{5}{2}$
+          \par
+          $u_{2}=2$
+          \par
+          $u_{3}=\frac{7}{4}$
+          \par
+          etc.
+          \par
+          et on place les points de coordonnées : $\left(0 ; 4\right) ; \left(1 ; \frac{5}{2}\right) ; \left(2 ; 2\right) ; \left(3 ; \frac{7}{4}\right)$; etc.
+     }
+          \begin{center}
+          \begin{extern}%width="300" alt="représentation graphique d'une suite"
+               % -+-+-+ variables modifiables
+               \resizebox{7cm}{!}{%
+                    \def\xmin{-0.8}
+                    \def\xmax{7.5}
+                    \def\ymin{-0.8}
+                    \def\ymax{4.8}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.3){$O$}
+                         \multido{\n=0.0+1}{8}{
+                              \FPeval{\suite}{1+3/(\n+1)}
+                              \psdots[linecolor=blue](\n,\suite)
+                         }
+                   \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Représentation graphique de la suite définie par $u_{n}=1+\frac{3}{n+1}$}
+     \end{center}
+     \begin{h2}III - Sens de variation d'une suite\end{h2}
+     \cadre{bleu}{Définitions}{%id="d50"
+          On dit qu'une suite $\left(u_{n}\right)$ est \textbf{croissante} (\textit{resp.\textbf{décroissante})} si pour tout entier naturel $n$ :
+          \begin{center}$u_{n+1} \geqslant u_{n} $ (\textit{resp. $u_{n+1} \leqslant u_{n} $)}\end{center}
+          On dit qu'une suite $\left(u_{n}\right)$ est \textbf{strictement croissante} (\textit{resp.\textbf{strictement décroissante})} si pour tout entier naturel $n$ :
+          \begin{center}$u_{n+1} > u_{n} $ (\textit{resp. $u_{n+1} < u_{n} $)}\end{center}
+          On dit qu'une suite $\left(u_{n}\right)$ est \textbf{constante} si pour tout entier naturel $n$ :
+          \begin{center}$u_{n+1} = u_{n} $\end{center}
+     }
+     \bloc{cyan}{Remarques}{%id="r50"
+          \begin{itemize}
+               \item Une suite peut n'être ni croissante,, ni décroissante, ni constante. C'est le cas, par exemple de la suite définie par $u_{n}=\left(-1\right)^{n}$ dont les termes valent successivement : $1; -1; 1; -1; 1; -1;$ etc.
+               \item En pratique pour savoir si une suite $\left(u_{n}\right)$ est croissante ou décroissante, on calcule souvent $u_{n+1}-u_{n}$ :
+             \begin{itemize}[label=---]
+                \item si $u_{n+1}-u_{n} \geqslant 0$ pour tout $n \in \mathbb{N}$, la suite $u_{n}$ est croissante
+             \item  si $u_{n+1}-u_{n} \leqslant 0$ pour tout $n \in \mathbb{N}$, la suite $u_{n}$ est décroissante
+              \item  si $u_{n+1}-u_{n} = 0$ pour tout $n \in \mathbb{N}$, la suite $u_{n}$ est constante.       
+             \end{itemize}
+
+          \end{itemize}
+     }
+     \begin{h2}IV - Notion de limite\end{h2}
+     \cadre{bleu}{Définition}{%id="d60"
+          On dit que la suite $u_{n}$ \textbf{converge} vers le nombre réel $l$ (ou \textbf{admet pour limite} le nombre réel $l$) si les termes de la suite se rapprochent de $l$ lorsque $n$ devient grand.
+     }
+          \begin{center}
+          \begin{extern}%width="300" alt="représentation graphique d'une suite convergeant vers 3"
+               % -+-+-+ variables modifiables
+               \resizebox{7cm}{!}{%
+                    \def\xmin{-0.8}
+                    \def\xmax{7.5}
+                    \def\ymin{-0.8}
+                    \def\ymax{4.8}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.3){$O$}
+                         \multido{\n=0.0+1}{8}{
+                              \FPeval{\suite}{3-3/(\n+1)}
+                              \psdots[linecolor=blue](\n,\suite)
+                         }
+                 \psline[linecolor=red,linewidth=0.5pt](-1,3)(8,3)
+                   \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Suite convergente vers 3}
+     \end{center}
+     \bloc{cyan}{Remarques}{%id="r60"
+          \begin{itemize}
+               \item Une suite qui n'est pas convergente est dite \textbf{divergente}.
+               \item La limite, si elle existe, est \textbf{unique}.
+          \end{itemize}
+     }
+     \bloc{orange}{Exemples}{%id="e60"
+          \begin{itemize}
+               \item La suite définie pour $n > 0$ par $u_{n}=\frac{1}{n}$ , \textbf{converge vers zéro}
+\begin{center}
+                             \begin{tabular}{|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+                    \hline
+                    $n$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 & ...\\ \hline
+                    $u_{n}=\frac{1}{n}$ & 1 & 0,5 & 0,33 & 0,25 & 0,2 & 0,17 & 0,14 & ...\\ \hline
+               \end{tabular}
+\end{center}
+               \item La suite définie pour tout $n\in \mathbb{N}$ par $u_{n}=\left(-1\right)^{n}$ est \textbf{divergente}. En effet, les termes de la suite « oscillent » indéfiniment entre $1$ et $-1$
+\begin{center}
+                              \begin{tabular}{|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+                    \hline
+                    $n$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & ...\\ \hline
+                    $u_{n}=\left(-1\right)^{n}$ & 1 & -1 & 1 & -1 & 1 & -1 & 1 & ...\\ \hline
+               \end{tabular}
+
+               \end{center}               \item La suite définie pour tout $n\in \mathbb{N}$ par récurrence par~:
+\begin{center}
+                                   $\left\{ \begin{matrix} u_{0}=1 \\ u_{n+1}=u_{n}+2\end{matrix}\right.$
+
+                    \end{center}                
+                    est elle aussi \textbf{divergente}. Les termes de la suite croissent indéfiniment en ne se rapprochant d'aucun nombre réel.
+\begin{center}
+                               \begin{tabular}{|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+                         \hline
+                         $n$ & 0 & 1 & 2 & 3 & 4 & 5 & 6 & ...\\ \hline
+                         $u_{n}$ & 1 & 3 & 5 & 7 & 9 & 11 & 13 & ...\\ \hline
+                    \end{tabular}
+
+               \end{center}               \end{itemize}
+          }
+          \input{_footer}

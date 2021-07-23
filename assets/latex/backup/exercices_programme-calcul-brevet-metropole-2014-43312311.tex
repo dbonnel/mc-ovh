@@ -1,0 +1,71 @@
+\input{_header}
+\meta{url}{/exercices/programme-calcul-brevet-metropole-2014/}
+\meta{pid}{1826}
+\meta{titre}{Programme de calcul - Brevet Métropole 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 - 5 points\end{h2}
+Voici un programme de calcul:
+
+\begin{center}
+\imgsvg{mc-0319}{0.1}%alt="Programme de calcul" style="width:35rem"
+\end{center}
+\begin{enumerate}
+     \item
+     Montrer que si on choisit 8 comme nombre de départ, le programme donne 12 comme résultat.
+     \item
+     Pour chacune des affirmations suivantes, indiquer si elle est vraie ou fausse. On rappelle que les réponses doivent être justifiées.
+     \par
+     ♦    Le programme peut donner un résultat négatif;
+     \par
+     ♦     Si on choisit $\frac{1}{2}$ comme nombre de départ, le programme donne $\frac{33}{4}$ comme résultat;
+     \par
+     ♦     Le programme donne 0 comme résultat pour exactement deux nombres;
+     \par
+     ♦     La fonction qui, au nombre de départ, associe le résultat du programme est une fonction linéaire.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+\begin{center}
+\imgsvg{mc-0451}{0.1}%alt="Programme de calcul 2" style="width:35rem"
+\end{center}
+          \item
+          \textbf{Le programme peut donner un résultat négatif : VRAI}
+\par
+          Si l'on choisit 4 comme nombre de départ par exemple :
+\begin{center}
+\imgsvg{mc-0452}{0.1}%alt="Programme de calcul 3" style="width:35rem"
+\end{center}
+          \textbf{Si on choisit $\frac{1}{2}$ comme nombre de départ, le programme donne $\frac{33}{4}$ comme résultat : VRAI}
+          $\frac{1}{2}-6=\frac{1}{2}-\frac{12}{2}=-\frac{11}{2}$
+          \par
+          $\frac{1}{2}-2=\frac{1}{2}-\frac{4}{2}=-\frac{3}{2}$
+          \par
+          $-\frac{11}{2}\times -\frac{3}{2}=\frac{33}{4}$
+
+\begin{center}
+\imgsvg{mc-0454}{0.1}%alt="Programme de calcul 3" style="width:35rem"
+\end{center}
+          \textbf{Le programme donne 0 comme résultat pour exactement deux nombres: VRAI}
+          Si on entre $x$ comme nombre de départ le résultat est $\left(x-6\right)\left(x-2\right)$ :
+
+\begin{center}
+\imgsvg{mc-0453}{0.1}%alt="Programme de calcul 4" style="width:35rem"
+\end{center}
+          Ce résultat vaut $0$ lorsque :
+          \par
+          $\left(x-6\right)\left(x-2\right)=0$
+          \par
+          c'est à dire
+          \par
+          $x-6=0$ ou $x-2=0$
+          \par
+          $x=6$ ou $x=2$
+          \par
+          Le programme donne  donc 0 comme résultat pour exactement deux nombres : 6 et 2.
+          \textbf{La fonction qui, au nombre de départ, associe le résultat du programme est une fonction linéaire : FAUX}
+          La fonction $x\mapsto \left(x-6\right)\left(x-2\right)$ n'est pas une fonction linéaire. (Les fonctions linéaires sont de la forme $x\mapsto ax$)
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

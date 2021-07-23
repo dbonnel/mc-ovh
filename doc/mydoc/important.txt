@@ -1,0 +1,1 @@
+Conversion de maths-cours -> newmc : C:\laragon\www\maths-cours\wp-content\plugins\zzhook\shortcodeHooks\totex.inc.php

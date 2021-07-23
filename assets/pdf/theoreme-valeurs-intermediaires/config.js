@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"","author":"Patrick Kitabgi","fileName":"solution22.pdf","bounds":[[790,660]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

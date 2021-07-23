@@ -1,0 +1,82 @@
+\input{_header}
+\textit{(D'après Brevet Centres étrangers 2013)}
+\par
+\textit{Dans cet exercice, toute trace de recherche, même incomplète, sera prise en compte dans l'évaluation.}
+\medskip
+On considère la figure ci-dessous,  \textbf{ qui n'est pas en vraie grandeur.}
+\begin{center}
+     \begin{extern}%width="550" alt="Courbe représentative de f"
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,0.)(11.,8.)
+               \psline[linewidth=0.4pt,linecolor=tttttt](1.,7.)(10.,7.)
+               \psline[linewidth=0.4pt,linecolor=tttttt](10.,7.)(10.,1.)
+               \psline[linewidth=0.4pt,linecolor=tttttt](10.,1.)(4.,1.)
+               \psline[linewidth=0.4pt,linecolor=tttttt](4.,1.)(4.,7.)
+               \psline[linewidth=0.4pt,linecolor=tttttt](1.,7.)(10.,3.)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](1.,7.)
+                    \rput[bl](0.7560766474115809,7.1187630144416305){\tttttt{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](4.,7.)
+                    \rput[bl](4.004426603925136,7.1187630144416305){\tttttt{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](10.,7.)
+                    \rput[bl](10.045865348804515,7.044936879066323){\tttttt{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](10.,1.)
+                    \rput[bl](10.070474060596284,0.9542807106034092){\tttttt{$D$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](4.,1.)
+                    \rput[bl](3.684513350632135,1.0281068459787173){\tttttt{$E$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](10.,3.)
+                    \rput[bl](10.095082772388054,2.9475863657367265){\tttttt{$F$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](4.,5.666666666666667)
+                    \rput[bl](4.053644027508676,5.716066442310778){\darkgray{$M$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\par
+$BCDE$ est un carré de $6$ cm de côté.
+\par
+Les points $A$, $B$ et $C$ sont alignés et $AB=3$cm.
+\par
+$F$ est un point du segment $\left[CD\right]$.
+\par
+La droite $\left(AF\right)$ coupe le segment $\left[BE\right]$ en $M$.
+\par
+Déterminer la longueur $CF$ pour que les longueurs $BM$ et $FD$ soient égales.
+\begin{corrige}
+     Notons $x=CF$.
+     \par
+     Comme les points $C, F$ et $D$ sont alignés :
+     \par
+     $FD=CD-CF=6-x     \qquad     $\textbf{(1)}
+     \par
+     Comme $BCDE$ est un carré, les droites $\left(BE\right)$ et $\left(CD\right)$ sont parallèles.
+     \par
+     D'après le théorème de Thalès :
+     \par
+     $\frac{AB}{AC}=\frac{AM}{AF}=\frac{BM}{CF}$
+     \par
+     $\frac{3}{9}=\frac{AM}{AF}=\frac{BM}{x}$
+     \medskip
+     De l'égalité $\frac{3}{9}=\frac{BM}{x}$, on déduit :
+     \par
+     $BM=\frac{3x}{9}=\frac{x}{3}  \qquad     $\textbf{(2)}
+     \medskip
+     En utilisant les égalités \textbf{(1)} et \textbf{(2)}, on peut dire que les longueurs $FD$ et $BM$ sont donc égales lorsque :
+     \par
+     $6-x=\frac{x}{3}$
+     \par
+     $6=\frac{x}{3}+x$
+     \par
+     $6=\frac{4}{3}x$
+     \par
+     $\frac{4}{3}x=6$
+     \par
+     $x=6\times \frac{3}{4}$
+     \par
+     $x=4,5$
+     \medskip
+     Les longueurs $BM$ et $FD$ sont donc égales lorsque  $CF$ vaut $4,5$cm.
+\end{corrige}
+\input{_footer}

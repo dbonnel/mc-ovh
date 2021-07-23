@@ -1,0 +1,145 @@
+\input{_header}
+\begin{h2}1. Fonctions linéaires\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une fonction \textbf{linéaire} est une fonction définie sur $\mathbb{R}$ par une formule du type : $x\mapsto ax$ où $a \in  \mathbb{R}$.
+     \par
+     $a$ s'appelle le \textbf{coefficient directeur}.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     La définition ci-dessus indique que si $f$ est une fonction linéaire, les valeurs de $f\left(x\right)$ sont proportionnelles aux valeurs de $x$, le coefficient de proportionnalité étant le coefficient directeur $a$.
+}
+\cadre{vert}{Propriété}{% id="p20"
+     La courbe représentative d'une fonction linéaire est une \textbf{droite qui passe par l'origine} du repère.
+}
+\bloc{orange}{Exemple}{% id="e20"
+\begin{center}
+\begin{extern}%width="230" alt="fonction linéaire"
+               \resizebox{6cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{1.5*x}
+                    \def\xmin{-2.5}
+                    \def\xmax{2.5}
+                    \def\ymin{-2.5}
+                    \def\ymax{4.5}
+                    \def\xunit{1.5}  % unités en cm
+                    \def\yunit{1.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                           \rput[tr](-0.2,-0.2){$O$} 
+                                     \rput[tl](1.9,4){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center}   
+  \begin{center}\textit{Courbe représentative de la fonction linéaire $x\mapsto \frac{3}{2}x$}\end{center}
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Soit $f$ une fonction linéaire.
+     \par
+     Pour tous réels $x$ et $x^{\prime}$ : $ f\left(x+x^{\prime}\right)=f\left(x\right)+f\left(x^{\prime}\right)$
+     \par
+     Pour tous réels $k$ et $x$ : $ f\left(kx\right)=kf\left(x\right)$
+}
+\begin{h2}2. Fonctions affines\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     Une fonction \textbf{affine} est une fonction définie sur $\mathbb{R}$ par une formule du type : $x\mapsto ax+b$ où $a \in  \mathbb{R}$ et $b \in  \mathbb{R}$.
+     \par
+     $a$ s'appelle le \textbf{coefficient directeur} et $b$ l'\textbf{ordonnée à l'origine}.
+}
+\bloc{cyan}{Remarque}{% id="r50"
+     Si $b=0$, la fonction est linéaire. Les fonctions linéaires sont donc des cas particuliers des fonctions affines.
+}
+\cadre{vert}{Propriété}{% id="p60"
+     La courbe représentative d'une fonction affine est une \textbf{droite}.
+}
+\bloc{orange}{Exemple}{% id="e60"
+\begin{center}
+\begin{extern}%width="400" alt="fonction linéaire"
+               \resizebox{11cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{0.5*x+2}
+                    \def\xmin{-4.5}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5.2}
+                    \def\xunit{1.5}  % unités en cm
+                    \def\yunit{1.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                           \rput[tr](-0.2,-0.2){$O$} 
+                                     \rput[tl](4,4.7){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center}   
+     \begin{center}\textit{Courbe représentative de la fonction affine $x\mapsto \frac{1}{2}x+2$}\end{center}
+}
+\cadre{vert}{Propriété}{% id="p70"
+     Soit $f$ une fonction affine de représentation graphique $\mathscr D$ et soient $A$ et $B$ deux points de $\mathscr D$.
+     \par
+     Le rapport $\dfrac{y_B-y_A}{x_B-x_A}$ ne dépend pas des points $A$ et $B$ choisis et est égal au coefficient directeur de la droite $\mathscr D$ :
+     \begin{center}$a = \dfrac{y_B-y_A}{x_B-x_A}$\end{center}
+}
+\begin{center}
+\begin{extern}%width="400" alt="coefficient directeur"
+               \resizebox{11cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{0.5*x+2}
+                    \def\xmin{-4.5}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5.2}
+                    \def\xunit{1.5}  % unités en cm
+                    \def\yunit{1.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                           \rput[tr](-0.2,-0.2){$O$} 
+                                     \rput[tl](4,4.7){$\color{blue} \mathcal{C}_f$}
+                                     \psdots[linecolor=red](-2,1)\psdots[linecolor=red](1,2.5)
+                                     \psline[linewidth=0.75pt,linecolor=mcvert,arrowsize=6pt]{->}(-2,1)(1,1)
+                                      \psline[linewidth=0.75pt,linecolor=mcmauve,arrowsize=6pt]{->}(1,1)(1,2.5)
+                                       \rput[tr](-0.2,0.65){$\color{mcvert} x_B-x_A$}
+                                      \rput[br](-2.1,1.1){$\color{red} A$} \rput[br](0.9,2.6){$\color{red} B$}
+                                       \rput[l](1.2,1.7){$\color{mcmauve} y_B-y_A$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center} 
+\begin{center}\textit{Lecture graphique du coefficient directeur $a = \dfrac{y_B-y_A}{x_B-x_A}=\dfrac{1,5}{3}=0,5$}\end{center}
+  \cadre{rouge}{Théorème}{% id="t80"
+     Une fonction affine est :
+     \begin{itemize}
+          \item \textbf{strictement croissante} si son coefficient directeur est \textbf{strictement positif}.
+          \item \textbf{strictement décroissante} si son coefficient directeur est \textbf{strictement négatif}.
+          \item \textbf{constante} si son coefficient directeur est \textbf{nul}.
+     \end{itemize}
+}
+\bloc{orange}{Démonstration}{% id="m80"
+     Démontrons par exemple que la fonction $f : x\mapsto ax+b$ est strictement décroissante si $a < 0$
+     \par
+     Soient deux réels $x_1$ et $x_2$ tels que $x_1 < x_2$
+     \par
+     Alors $ax_1 > ax_2$ (on change le sens de l'inégalité car on multiplie par un réel négatif) donc
+     \par
+     $ax_1+b > ax_2+b$ c'est à dire :
+     \par
+     $f\left(x_1\right) > f\left(x_2\right)$
+     \par
+     Le sens de l'inégalité est inversé donc $f$ est décroissante sur $\mathbb{R}$.
+}
+\bloc{cyan}{Remarque}{% id="r80"
+     Ce théorème s'applique aussi aux fonctions linéaires puisque les fonctions linéaires sont des fonctions affines particulières.
+}
+\input{_footer}

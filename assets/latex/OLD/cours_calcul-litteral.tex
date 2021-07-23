@@ -1,0 +1,137 @@
+\input{_header}
+\begin{h2}1 - Développer\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     \textbf{Développer} un produit, c'est l'écrire sous la forme d'une somme (ou d'une différence).
+}
+\bloc{cyan}{Rappel}{% id="r10"
+     \begin{itemize}
+          \item Une expression est une somme (algébrique) si la \textbf{dernière} opération effectuée (celle qui donne le résultat final) est une addition ou une soustraction.
+          \item Une expression est un produit si la \textbf{dernière} opération effectuée (celle qui donne le résultat final) est une multiplication.
+     \end{itemize}
+     Par exemple :
+     \begin{itemize}
+          \item $3\times 5-2\times 45$ et $2x+8y$ sont des sommes algébriques
+          \item $5\times \left(3+8\right)$ et $\left(x+1\right)\left(y-5\right)$ sont des produits.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés (Distributivité)}{% id="p20"
+     \begin{itemize}
+          \item $k\left(a+b\right)=ka+kb$
+          \item $k\left(a-b\right)=ka-kb$
+          \item $\left(a+b\right)\left(c+d\right)=ac+ad+bc+bd$
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e20"
+     Développer les expressions suivantes:
+     \begin{itemize}
+          \item $A=3\left(x-2\right)$
+          \par
+          $A=3x-6$
+          \item $B=\left(x+3\right)\left(2x-5\right)$
+          \par
+          $B=2x^{2}-5x+6x-15$
+          \par
+          $B=2x^{2}+x-15$
+     \end{itemize}
+}
+\cadre{vert}{Propriétés (Identités remarquables - Développement)}{% id="p30"
+     \begin{itemize}
+          \item $\left(a+b\right)^{2}=a^{2}+2ab+b^{2}$
+          \item $\left(a-b\right)^{2}=a^{2}-2ab+b^{2}$
+          \item $\left(a+b\right)\left(a-b\right)=a^{2}-b^{2}$
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e30"
+     Développer les expressions suivantes:
+     \begin{itemize}
+          \item $C=\left(x+1\right)^{2}$
+          \par
+          $C=x^{2}+2\times x\times 1+1^{2} $  \textit{(première identité remarquable avec $a=x$ et $b=1$)}
+          $C=x^{2}+2x+1 $
+          \item $D=\left(2x-1\right)^{2}$
+          \par
+          $D=4x^{2}-2\times 2x\times 1+1^{2} $  \textit{(seconde identité remarquable avec $a=2x$ et $b=1$)}
+          $D=4x^{2}-4x+1 $
+          \item $E=\left(x+2\right)\left(x-2\right)$
+          \par
+          $E=x^{2}-2^{2} $  \textit{(troisième identité remarquable avec $a=x$ et $b=2$)}
+          $E=x^{2}-4 $
+     \end{itemize}
+}
+\begin{h2}2 - Factoriser\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     \textbf{Factoriser} une somme (ou une différence), c'est l'écrire sous la forme d'un produit.
+}
+\cadre{vert}{Propriétés}{% id="p50"
+     \begin{itemize}
+          \item $ka+kb=k\left(a+b\right)$
+          \item $ka-kb=k\left(a-b\right)$
+     \end{itemize}
+     k est le \textbf{facteur commun}
+}
+\bloc{orange}{Exemples}{% id="e50"
+     Factoriser les expressions suivantes:
+     \begin{itemize}
+          \item $A=\left(x+3\right)\left(x+2\right)-7\left(x+2\right)$
+          \par
+          Le facteur commun est $\left(x+2\right)$
+          \par
+          $A=\left(x+2\right)\left[\left(x+3\right)-7\right]$
+          \par
+          $A=\left(x+2\right)\left(x-4\right)$
+          \item $B=\left(2x+1\right)^{2}-\left(2x+1\right)\left(x+3\right)$
+          \par
+          $B=\left(2x+1\right)\left(2x+1\right)-\left(2x+1\right)\left(x+3\right)$
+          \par
+          Le facteur commun est $\left(2x+1\right)$
+          \par
+          $B=\left(2x+1\right)\left[\left(2x+1\right)-\left(x+3\right)\right]$
+          \par
+          $B=\left(2x+1\right)\left(2x+1-x-3\right)$
+          \par
+          $B=\left(2x+1\right)\left(x-2\right)$
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r50"
+     \begin{itemize}
+          \item \textbf{Avec des carrés :}
+\par
+          Pour factoriser $\left(x+1\right)^{2}+\left(x+1\right)\left(x+2\right)$, on utilise le fait que $\left(x+1\right)^{2}=\left(x+1\right)\left(x+1\right)$ ce qui fait apparaître le facteur commun $\left(x+1\right)$ :
+          \par
+          $\left(x+1\right)^{2}+\left(x+1\right)\left(x+2\right)={\color{red} {\left(x+1\right)}}\left(x+1\right)+{\color{red} {\left(x+1\right)}}\left(x+2\right)$
+          \par
+          ~ ~ ~ ~ $=\left(x+1\right)\left[\left(x+1\right)+\left(x+2\right)\right]$
+          \par
+          ~ ~ ~ ~ $=\left(x+1\right)\left(2x+3\right)$
+          \item \textbf{Attention à ne pas oublier le 1 !}
+\par
+          Pour factoriser $x^{2}-x$ on écrit que $x^{2}=x\times x$ et $x=x\times 1$;
+          \par
+          $x$ est alors facteur commun :
+          \par
+          $x^{2}-x = {\color{red} x}\times x-{\color{red} x}\times 1 = x \left(x-1\right)$
+     \end{itemize}
+}
+\cadre{vert}{Propriétés (Identités remarquables - Factorisation)}{% id="p60"
+     \begin{itemize}
+          \item $a^{2}+2ab+b^{2}=\left(a+b\right)^{2}$
+          \item $a^{2}-2ab+b^{2}=\left(a-b\right)^{2}$
+          \item $a^{2}-b^{2}=\left(a+b\right)\left(a-b\right)$
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e60"
+     Factoriser les expressions suivantes:
+     \begin{itemize}
+          \item $C=x^{2}-6x+9$
+          \par
+          $C=x^{2}-2\times x\times 3+3^{2}$
+          \par
+          $C=\left(x-3\right)^{2} $ \textit{(seconde identité remarquable avec $a=x$ et $b=3$)}
+          \item $D=25x^{2}-4$
+          \par
+          $D=\left(5x\right)^{2}-2^{2}$
+          \par
+          $D=\left(5x+2\right)\left(5x-2\right)$ \textit{(troisième identité remarquable avec $a=5x$ et $b=2$)}
+     \end{itemize}
+}
+\input{_footer}

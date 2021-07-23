@@ -1,0 +1,95 @@
+\input{_header}
+\\
+L'un des intérêts de la programmation est de pouvoir faire exécuter facilement à une machine des tâches \textbf{répétitives}.
+\newpar
+Le langage Python propose deux instructions~: « for » et « while » qui permettent de répéter automatiquement l'exécution de certains blocs de code.
+\id{h05}\begin{h2}1. Les boucles \og for \fg{} (Boucles bornées) \end{h2}
+Une boucle \og for \fg{} (ou boucle \og pour \fg{} ou boucle bornée) est généralement utilisée lorsque l'on connaît le nombre de répétitions que l'on souhaite exécuter.
+\newpar
+La syntaxe de cette instruction est la suivante~:
+\begin{lstlisting}[language=Python]
+for variable in [liste de valeurs] :
+   # bloc d'instructions à répéter
+# instructions à exécuter une fois la boucle terminée
+\end{lstlisting}
+Ce programme se déroule de la manière suivante~:
+\begin{itemize}
+     \item
+     les \og instructions à répéter \fg{} sont exécutées en donnant à la \og variable \fg{} chacune des valeurs de la \og liste de valeurs \fg{}~; c''est l'indentation (écriture décalée vers la droite) qui détermine la taille du bloc d'instructions à répéter
+     \item
+     une fois que tous les items de la liste ont été parcourus, le programme passe au \og instructions à exécuter une fois la boucle terminée \fg{}.
+\end{itemize}
+Par exemple, le programme Python ci-dessous ~:
+\begin{lstlisting}[language=Python]
+for i in [1, 2, 5, 11] :
+   j = i**2 # calcul du carré de i
+   print(j, end=' - ') # affichage~; on sépare les valeurs par des tirets 
+print("fin") 
+\end{lstlisting}
+affichera~:\\
+1 - 4 - 25 - 121 - fin\\
+ce qui correspond aux carrés des nombres de la liste.
+\newpar
+\textbf{Remarque~: } on aurait pu faire l'économie de la variable j, en écrivant plus simplement \og print(i**2, end=' - ') \fg{} mais le but, ici, était de montrer qu'un bloc pouvait comporter plusieurs lignes.
+\newpar
+Avec l'instruction \texttt{for} on utilise fréquemment la fonction \texttt{range}~;
+en effet, \texttt{range(a,b)} renvoie la liste des entiers compris (au sens large) entre \texttt{a} et \texttt{b - 1}.
+\cadre{rouge}{Attention}{ % id=a010
+     L'instruction \texttt{range(a,b)} créer une liste qui s'arrête à l'entier \texttt{b -1} et non à l'entier \texttt{b}~!
+}% fin théorème
+\newpar
+Par exemple, le programme suivant affiche les doubles des nombres entiers compris entre 3 et 5~:\\
+\begin{lstlisting}[language=Python]
+for i in range(3, 6) :
+   print(2*i, end=' - ') # affiche 6 - 8 - 10 -
+\end{lstlisting}
+\textbf{Remarque~:} si l'on utilise l'instruction \texttt{range} avec un seul paramètre \texttt{b}, celle-ci retournera la liste des entiers compris entre 0 et \texttt{b - 1}~:
+\begin{lstlisting}[language=Python]
+for i in range(4):
+   print(i, end=' - ') # affiche 0 - 1 - 2 - 3 -
+\end{lstlisting}
+
+\id{h10}\begin{h2}2. Les boucles « while » (Boucles non bornées) \end{h2}
+On utilise une boucle \texttt{while} (ou boucle \og Tant que \fg{} ou boucle non bornée) lorsque l'on doit répéter l'exécution d'un bloc d'instructions \textbf{tant qu'une condition est vérifiée} (mais en général, on ne sait pas au préalable le nombre de répétitions que l'on devra effectuer). Là encore, c'est l'indentation qui détermine la fin du bloc d'instructions à répéter.
+\newpar
+La syntaxe de l'instruction « while » est~:
+\begin{lstlisting}[language=Python]
+while condition :
+   #bloc d'instructions à répéter 
+#instructions à exécuter une fois la boucle terminée
+\end{lstlisting}
+Le programme se déroule alors de la façon suivante~:
+\begin{itemize}
+     \item
+     tant que la \og condition \fg{} de la ligne 1. est vraie, les \og instructions à répéter \fg{} de la ligne 2. sont exécutées \item
+     dès que la \og condition \fg{} de la ligne 1. devient fausse, le programme passe aux \og instructions à exécuter une fois la boucle terminée \fg{} (ligne 3.).
+\end{itemize}
+Par exemple, le programme ci-dessous affiche la plus petite puissance de 2 qui est supérieure ou égale à 1~000~:
+\begin{lstlisting}[language=Python]
+i = 1 # initialisation de i
+while i < 1000 :
+   i = i * 2
+print(i) # affiche 1024
+\end{lstlisting}
+À chaque passage à la ligne 3., on multiplie la valeur précédente de de \texttt{i} par 2. On obtient ainsi les puissances successives de 2.
+\newpar
+Pour bien comprendre comment fonctionne ce programme, il peut être utile de représenter les différentes valeurs de \texttt{i} et de la condition \texttt{i < 1000} dans un tableau~:
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+          \hline
+          $i$ & 1 & 2 & 4 & 8 & 16 & 32 & 64 & 128 & 256 & 512 & 1024
+          \\ \hline
+          $ i < 1000 $ & vrai & vrai & vrai & vrai & vrai & vrai & vrai & vrai & vrai & vrai & faux
+          \\ \hline
+     \end{tabular}
+\end{center}
+L'utilisation de l'instruction \texttt{while} peut être assez délicate~; si, suite à une erreur de programmation, la condition figurant dans le \texttt{while} est toujours vérifiée, le programme ne sortira jamais de la boucle et tournera indéfiniment (sauf si un intervenant extérieur met fin à son exécution...)
+\newpar
+En particulier, il faut faire attention aux points suivants~:
+\begin{itemize}
+     \item
+     penser à initialiser les variables avant l'instruction \texttt{while}~: dans notre exemple, python provoquerait une erreur si la ligne 1. (initialisation de i) était manquante.
+     \item
+     la condition figurant après l'instruction \texttt{while} est celle qui permet de \textbf{rester} dans la boucle~; c'est donc le \textbf{contraire} de la condition de \textbf{sortie} de boucle. Dans l'exemple précédent, on souhaitait \textbf{sortir} de la boucle lorsque la valeur de \texttt{i} était \textbf{supérieure ou égale à 1000}~; il fallait donc coder \texttt{i < 1000} à l'intérieur de l'instruction \texttt{while}.
+\end{itemize}
+\input{_footer}

@@ -1,0 +1,97 @@
+\input{_header}
+\meta{url}{/exercices/suites-controle-continu-1ere-2020-sujet-zero/}
+\meta{pid}{11213}
+\meta{titre}{Suites - Contrôle continu 1ère - 2020 - Sujet zéro}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (5 points)\end{h2}
+En traversant une plaque de verre teintée, un rayon lumineux perd 20  \% de son intensité lumineuse. L'intensité lumineuse est exprimée en candela ( cd ).
+\newpar
+On utilise une lampe torche qui émet un rayon d'intensité lumineuse réglée à 400 cd.
+\newpar
+On superpose $n$ plaques de verre identiques (  $n$ étant un entier naturel ) et on désire mesurer l'intensité lumineuse $I_{ n }$ du rayon à la sortie de la $n$-ième plaque.
+\newpar
+On note $I_{ 0 }=400$ l'intensité lumineuse du rayon émis par la lampe torche avant de traverser les plaques ( intensité lumineuse initiale ). Ainsi, cette situation est modélisée par la suite $( I_{ n } ).$
+\begin{enumerate}
+     \item
+     Montrer par un calcul que $I_{ 1 }=320.$
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Pour tout entier naturel $n$ , exprimer $I_{ n+1 }$ en fonction de $I_{ n }.$
+          \item
+          En déduire la nature de la suite $( I_{ n } ).$ Préciser sa raison et son premier terme.
+          \item
+          Pour tout entier naturel $n$ , exprimer $I_{ n }$ en fonction de $n. $
+     \end{enumerate}
+     \item
+     On souhaite déterminer le nombre minimal $n$ de plaques à superposer afin que le rayon initial ait perdu au moins 70 \% de son intensité lumineuse initiale après sa traversée des plaques.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Afin de déterminer le nombre de plaques à superposer, on considère la fonction Python suivante~:
+\begin{lstlisting}[language=Python]
+def nombrePlaques(J):
+	I=400
+	n=0
+	while I > J:
+		I = 0.8*I
+		n = n+1
+	return n
+     \end{lstlisting}
+     Préciser, en justifiant, le nombre \texttt{J} de sorte que l'appel \texttt{nombrePlaques(J)} renvoie le nombre de plaques à superposer.
+     \item
+     Le tableau suivant donne des valeurs de $I_{ n }.$ Combien de plaques doit-on superposer ?
+     \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+               \hline
+               $n$ &  0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+               \hline
+               $I_{ n }$  & 400 & 320 & 256 & 204,8 & 163,84 & 131,07 & 104,85 & 83,886 \\
+               \hline
+          \end{tabular}
+     \end{center}
+\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Le coefficient multiplicateur correspondant à une baisse de 20 \% est~:
+          \newpar
+          $CM=1 - \frac{ 20 }{ 100 }=0,8$
+          \newpar
+          L'intensité lumineuse $I_{ 1 }$ à la sortie de la première plaque est donc~:
+          \newpar
+          $I_{ 1 }=0,8 \times I_{ 0 }=0,8 \times 400=320$
+          \medbreak
+          \textbf{Remarque~: }On aurait également pu calculer la diminution de l'intensité lumineuse qui est égale à $\frac{ 20 }{ 100 } \times 400=80$, puis la nouvelle intensité $I_{ 1 }=400 - 80=320$ . Mais il est préférable de s'habituer à utiliser le coefficient multiplicateur qui facilite les calculs lors d'augmentation ou de diminution en pourcentage.
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               De même, le raisonnement précédent indique que, pour tout entier naturel $n$ ~: \\
+               $I_{ n+1 }=0,8 \times I_{ n }.$
+               \item
+               La formule précédente prouve que la suite $( I_{ n } )$ est une suite géométrique de raison  $q=0,8$~; son premier terme est $I_{ 0 }=400.$
+               \item
+               D'après le cours, le n-ième terme d'une suite géométrique de premier terme $u_{ 0 }$ et de raison $q$ est donné par la \mcLien{https://www.maths-cours.fr/cours/suites-geometriques/\#p110}{formule}~:
+               \newpar
+               \[
+               u_{ n }=u_{ 0 } \times q{}^{ n }
+               \]
+               On obtient ici~:
+               \newpar
+               $I_{ n }=I_{ 0 } \times q{}^{ n }=400 \times 0,8{}^{ n }$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               L'appel à la fonction Python \texttt{nombrePlaques( )} avec l'argument  \texttt{J} renvoie le nombre minimal de plaques à superposer afin que l'intensité lumineuse du rayon à la sortie de la n-ième plaque soit inférieure ou égale à  \texttt{J}.
+               \newpar
+               Puisque l'on veut que le rayon initial perde au moins 70 \% de son intensité lumineuse, il faut que l'intensité lumineuse à la sortie de la n-ième plaque soit inférieure à 30 \% de  $I_{ 0 }$ c'est-à-dire inférieure à $\frac{ 30 }{ 100 } \times 400=120.$
+               \newpar
+               Il faut donc choisir le nombre  \texttt{J} = 120, pour obtenir, en sortie de la fonction \texttt{nombrePlaques( )}, le nombre de plaques à superposer.
+               \item
+               Le tableau montre qu'il faut choisir 6 plaques pour obtenir une intensité lumineuse inférieure ou égale à 120 cd.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

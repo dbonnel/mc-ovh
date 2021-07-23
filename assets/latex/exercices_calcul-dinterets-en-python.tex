@@ -1,0 +1,68 @@
+\input{_header}
+\meta{url}{/exercices/calcul-dinterets-en-python/}
+\meta{pid}{11636}
+\meta{titre}{Calcul d'intérêts en Python}
+\meta{type}{exercices}
+%
+On place un capital de 10~000~euros sur un compte rémunéré à 1,5\% d'intérêts par an (à intérêts composés).
+\par
+\begin{enumerate}
+     \item
+     Compléter le programme Python ci-dessous afin qu'il affiche le capital disponible au bout de 5 ans. 
+\begin{lstlisting}[language=Python]
+C=10000
+for i in range (...) :
+   C = ...
+print(C)
+\end{lstlisting}
+\item
+On souhaite savoir au bout de combien d'années le capital aura dépassé 12~000~euros.
+\par
+Compléter le programme Python ci-dessous afin qu'il affiche ce nombre d'années.
+\begin{lstlisting}[language=Python]
+C=10000
+n=0
+while ...:
+   n = ...
+   C = ...
+print(...)
+\end{lstlisting}
+Répondre à la question posée en utilisant ce programme.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Le capital $ C' $ obtenu après un an en plaçant un montant $C$ à $ t = 1,5\% $ est~:
+          \par
+          $C' = C \left( 1 + \frac{ t }{ 100 } \right) $\nosp$= C \left( 1 + \frac{ 1,5 }{ 100 } \right) =1,015\ C$.
+          \par
+          On doit effectuer cette opération cinq fois pour obtenir le capital au bout de 5 ans.
+          \par
+          On peut donc compléter le programme comme suit~:
+\begin{lstlisting}[language=Python]
+C=10000
+for i in range (5) :
+   C = 1.015*C
+print(C)
+     \end{lstlisting}
+     On obtient comme résultat $ 10~772,84 $ (arrondi au centime).
+     \item
+     Comme on ne connait pas, au départ, le nombre d'itérations, on va utiliser une boucle non bornée \texttt{while}
+     \par
+     On reste dans la boucle tant que \texttt{C < 12000} et chaque passage on incrémente le nombre d'années \texttt{n} et on calcule le nouveau capital \texttt{C}.
+     \par
+     À la sortie de la boucle, on affiche le nombre d'années \texttt{n}.
+\begin{lstlisting}[language=Python]
+C=10000
+n=0
+while C < 12000 :
+   n = n + 1
+   C = 1.015*C
+print(n)
+\end{lstlisting}
+\end{enumerate}
+Ce programme affiche le résultat 13.
+\par
+Le capital dépassera donc 12~000~euros au bout de 13 ans.
+\end{corrige}
+\input{_footer}

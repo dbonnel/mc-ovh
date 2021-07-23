@@ -1,0 +1,52 @@
+\input{_header}
+\meta{url}{/exercices/utilisation-d-une-suite-annexe/}
+\meta{pid}{883}
+\meta{titre}{Utilisation d'une suite annexe}
+\meta{type}{exercices}
+%
+On considère la suite $\left(u_{n}\right)$ définie par :
+\par
+$u_{0}=1$ et pour tout entier $n$ , $u_{n+1}= \frac{1}{2} u_{n}-1$.
+\begin{enumerate}
+     \item
+     Calculer $u_{1}$ et $u_{2}$. La suite $\left(u_{n}\right)$ est-elle arithmétique? géométrique ?
+     \item
+     On pose $v_{n}=u_{n}+2$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Exprimer $v_{n+1}$ en fonction de $v_{n}$. Quelle est la nature de la suite $\left(v_{n}\right)$ ?
+          \item
+          Exprimer $v_{n}$ en fonction de $n$.
+          \item
+          En déduire $u_{n}$ en fonction de $n$.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $u_{1}=\frac{1}{2}u_{0}-1=-\frac{1}{2}$
+          \par
+          $u_{2}=\frac{1}{2}u_{1}-1=-\frac{5}{4}$
+          \par
+          La suite n'est ni arithmétique ni géométrique.
+   
+     \item
+     \begin{enumerate}
+          \item
+          $v_{n+1}=u_{n+1}+2  $  (définition de la suite $v_{n}$)
+          \par
+          $v_{n+1}=\frac{1}{2}u_{n}-1+2=\frac{1}{2}u_{n}+1   $ (car $u_{n+1}= \frac{1}{2} u_{n}-1$)
+          \par
+          $v_{n+1}=\frac{1}{2}\left(u_{n}+2\right)=\frac{1}{2}v_{n}$
+          \par
+          $\left(v_{n}\right)$ est une suite géométrique de raison $\frac{1}{2}$.
+          \par
+          Son premier terme est $v_{0}=u_{0}+2=3$.
+          \item
+          $v_{n}=v_{0}\times \left(\frac{1}{2}\right)^{n}=3\times \left(\frac{1}{2}\right)^{n}$
+          \item
+          $u_{n}=v_{n}-2=3\times \left(\frac{1}{2}\right)^{n}-2$
+     \end{enumerate}
+\end{enumerate}
+\end{corrige}
+\input{_footer}

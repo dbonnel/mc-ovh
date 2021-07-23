@@ -1,0 +1,230 @@
+\input{_header}
+\meta{url}{/exercices/suites-integrales-bac-s-pondichery-2016/}
+\meta{pid}{4085}
+\meta{titre}{Suites - Intégrales – Bac S Pondichéry 2016}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 5 - 3 points\end{h2} 
+\par
+\textbf{Commun à tous les candidats}
+\par
+On souhaite stériliser une boîte de conserve.
+\par
+Pour cela, on la prend à la température ambiante $T_0 = 25$°C et on la place dans un four à température constante $T_F = 100$°C.
+\par
+La stérilisation débute dès lors que la température de la boîte est supérieure à $85$°C.
+\par
+\textit{Les deux parties de cet exercice sont indépendantes}
+\par
+\begin{h3}Partie A : Modélisation discrète\end{h3}
+Pour $n$ entier naturel, on note $T_n$ la température en degré Celsius de la boîte au bout de $n$ minutes. On a donc $T_0 = 25$.
+\par
+Pour $n$ non nul, la valeur $T_n$ est calculée puis affichée par l'algorithme suivant :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+          \hline
+
+          \textbf{Initialisation}  &  $T$ prend la valeur $25$
+          \\ 
+               \textbf{Traitement	}  & Demander la valeur de $n$
+          \\ 
+       &  Pour $i$ allant de $1$ à $n$ faire
+          \\ \hline
+& \quad T$ prend la valeur $0,85 \times T + 15$
+
+& Fin Pour
+\textbf{Sortie }: &Afﬁcher $T$[/table]
+
+
+          \\ \hline
+     \end{tabularx}
+
+<div class="border">
+[table class=noborder left]\textbf{Initialisation }: | $T$ prend la valeur $25$
+\textbf{Traitement }: |Demander la valeur de $n$
+\par
+|Pour $i$ allant de $1$ à $n$ faire
+\par
+|$\quad \quad T$ prend la valeur $0,85 \times T + 15$
+\par
+|Fin Pour
+\textbf{Sortie }: |Afﬁcher $T$[/table]
+}
+\begin{enumerate}
+     \item
+     Déterminer la température de la boîte de conserve au bout de 3 minutes.
+     \par
+     Arrondir à l'unité.
+     \item
+     Démontrer que, pour tout entier naturel $n$, on a $T_n = 100-75 \times 0,85^n$.
+     \item
+     Au bout de combien de minutes la stérilisation débute-elle ?
+\end{enumerate}
+\begin{h3}Partie B : Modélisation continue\end{h3}
+Dans cette partie, $t$ désigne un réel positif.
+\par
+On suppose désormais qu'à l'instant $t$ (exprimé en minutes), la température de la boîte est donnée par $f(t)$ (exprimée en degré Celsius) avec :
+\begin{center}$f(t) = 100-75{e}^{- \frac{\ln 5}{10}t}$.\end{center}
+\begin{enumerate}
+     \item
+     \begin{enumerate}
+          \item
+          Étudier le sens de variations de $f$ sur $[0~;~+ \infty[$.
+          \item
+          Justifier que si $t \geqslant 10$ alors $f(t) \geqslant 85$.
+     \end{enumerate}
+     \item
+     Soit $\theta$ un réel supérieur ou égal à $10$.
+     \par
+     On note $\mathcal{A}(\theta)$ le domaine délimité par les droites d'équation $t = 10$, $t = \theta$, $y = 85$ et la courbe représentative $\mathscr{C}_f$ de $f$.
+     \par
+     On considère que la stérilisation est finie au bout d'un temps $\theta$, si l'aire, exprimée en unité d'aire du domaine $\mathcal{A}(\theta)$ est supérieure à $80$.
+     <img class="aligncenter border-ccc" style="width: 600px;" src="/wp-content/uploads/suites-integrales-bac-s-pondichery-2016-1.svg" alt="bac S Pondichery 2016" />
+     \begin{enumerate}
+          \item
+          Justifier, à l'aide du graphique donné, que l'on a $\mathcal{A}(25) > 80$.
+          \item
+          Justifier que, pour $\theta \geqslant 10$, on a $\mathcal{A}(\theta) = 15(\theta-10)-75 \int_{10}^{\theta} \text{e}^{- \frac{\ln 5}{10}t}\:\text{d}t$.
+          \item
+          La stérilisation est-elle finie au bout de $20$ minutes ?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A : Modélisation discrète\end{h3}
+     \begin{enumerate}
+          \item
+          À partir de l'algorithme proposé, on déduit que la suite $(T_n)$ est définie par :
+          \par
+          $\begin{cases} T_0=25 \\ T_{n+1}=0,85 \times T_n+15  \end{cases}$
+          \par
+          Par conséquent :
+          \par
+          $T_1=0,85 \times  25+15=36,25$
+          \par
+          $T_2=0,85 \times  36,25+15=45,8125$
+          \par
+          $T_3=0,85 \times  45,8125+15=45,8125 \approx 54$ à une unité près.
+          \par
+          Au bout de 3 minutes, la température de la boîte de conserve sera d'environ $54$°.
+          \item
+          Montrons la propriété $(P_n)\ :\ T_n = 100-75 \times 0,85^n$ par récurrence.
+          \begin{itemize}
+               \item
+               \textbf{Initialisation :}
+               $100-75 \times 0,85^0=100-75 \times 1=25$
+               \par
+               On a bien $T_0 = 100-75 \times 0,85^0$ donc la propriété $(P_0)$ est vérifiée.
+               \item
+               \textbf{Hérédité :}
+               Supposons que la propriété $(P_n)$ soit vraie pour un certain rang $n \in \mathbb{N}$.
+               \par
+               Alors :
+               \par
+               $T_{n+1}=0,85 \times T_n+15$ (définition de la suite $(T_n)$)
+               \par
+               $\phantom{T_{n+1}}= 0,85 \times (100-75 \times 0,85^n)+15$ (d'après l'hypothèse de récurrence)
+          <div class="note flr-40">$0,85 \times 0,85^n=0,85^{n+1}$\end{corrige}
+          $\phantom{T_{n+1}}= 85 -75 \times 0,85 \times 0,85^n+15$
+          \par
+          $\phantom{T_{n+1}}= 100 -75 \times 0,85^{n+1}$
+          \par
+          La propriété $(P_{n+1})$ est donc vérifiée.
+     \end{itemize}
+     Finalement, la propriété $T_n = 100-75 \times 0,85^n$ est démontrée par récurrence.
+     \item
+     La stérilisation débute lorsque $T_n  > 85$ :
+     \par
+     $T_n  > 85 \Leftrightarrow 100-75 \times 0,85^n  > 85 $
+     \par
+     $\phantom{T_n  > 85 }\Leftrightarrow -75 \times 0,85^n  > 85-100 $
+     \par
+     $\phantom{T_n  > 85 }\Leftrightarrow 0,85^n  <\frac{15}{75}$
+     \par
+     $\phantom{T_n  > 85 }\Leftrightarrow \ln(0,85^n)  <\ln\frac{1}{5}$ (car la fonction $\ln$ est strictement croissante)
+     \par
+     $\phantom{T_n  > 85 }\Leftrightarrow n\ln(0,85)  <-\ln 5$
+<div class="note flr-40">\textbf{Attention au sens :}$\ln(0,85)$ est négatif~!}
+$\phantom{T_n  > 85 }\Leftrightarrow n >-\frac{\ln 5}{\ln(0,85)}$
+\par
+À la calculatrice $-\frac{\ln 5}{\ln(0,85)} \approx 9,9$.
+\par
+La stérilisation débutera au bout de $10$ minutes.
+\end{enumerate}
+\begin{h3}Partie B : Modélisation continue\end{h3}
+\begin{enumerate}
+     \item
+     \begin{enumerate}
+          \item
+          $f$ est dérivable sur $[0~;~+ \infty[$ comme composée de fonctions dérivables.
+          \par
+          On calcule la dérivée de la fonction $f$ en utilisant la formule $(e^u)^{\prime}=u^{\prime}e^u$ :
+          \par
+          $f^{\prime}(t)=-75 \times \left(-\frac{\ln 5}{10} \right){e}^{-\frac{\ln 5}{10}t}$$=7,5\ln5\ {e}^{-\frac{\ln 5}{10}t} $
+          \par
+          La fonction exponentielle étant à valeurs strictement positives, $f^{\prime}(t)  > 0$ pour tout $t \in [0~;~+ \infty[$ donc la fonction $f$ est strictement croissante sur $[0~;~+ \infty[$.
+          \item
+          Comme $f$ est strictement croissante sur $[0~;~+ \infty[$ :
+          \par
+          $t \geqslant 10 \Rightarrow f(t) \geqslant f(10)$
+          \par
+          Or :
+          \par
+          $f(10)=100-75{e}^{- \frac{\ln 5}{10} \times 10}$
+          \par
+          $\phantom{f(10)}=100-75{e}^{-\ln 5}$
+          \par
+          $\phantom{f(10)}=100-\frac{75}{{e}^{\ln 5}}$
+          \par
+          $\phantom{f(10)}=100-\frac{75}{5}=85$
+          \par
+          Donc pour tout $t \in [0~;~+ \infty[$, $f(t) \geqslant 85$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}
+          \item
+          ~
+          <img class="aligncenter border-ccc" style="width: 600px;" src="/wp-content/uploads/suites-integrales-bac-s-pondichery-2016-2.svg" alt="bac S Pondichery 2016" />
+          L'aire d'un carreau rectangulaire (coloré en bleu ci-dessus) est $5 \times 5 = 25$ u.a.
+          \par
+          $\mathcal{A}(25)$ est l'aire du domaine (coloré en vert ci-dessus) délimité par les droites d'équation $t = 10$, $t = 25$, $y = 85$ et la courbe représentative $\mathscr{C}_f$ de $f$.
+          \par
+          Il est visible que cette aire est (assez largement !) supérieure à trois fois et demi l'aire d'un carreau donc $\mathcal{A}(25)  > 3,5 \times 25  >  80$.
+          \item
+          Pour $t \geqslant 10$, $f(t) \geqslant 85$ donc :
+          \par
+          $\mathcal{A}(\theta) = \int_{10}^{\theta} f(t)-85\:\text{d}t$
+          \par
+          $\phantom{\mathcal{A}(\theta)} = \int_{10}^{\theta} 15-75{e}^{- \frac{\ln 5}{10}t}\:\text{d}t$
+          \par
+          $\phantom{\mathcal{A}(\theta)} = \int_{10}^{\theta} 15\:\text{d}t-75\int_{10}^{\theta}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t$ (linéarité de l'intégrale)
+          \par
+          $\phantom{\mathcal{A}(\theta)} = \left[15t\right]_{10}^\theta-75\int_{10}^{\theta}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t$
+          \par
+          $\phantom{\mathcal{A}(\theta)} = 15(\theta-10)-75\int_{10}^{\theta}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t$
+          \item
+          Une primitive sur $\mathbb{R}$ de la fonction $g : t \longmapsto {e}^{-\frac{\ln 5}{10}t}$ est la fonction $G $ définie par :
+          \par
+          $G(t)=-\frac{10}{\ln 5}{e}^{-\frac{\ln 5}{10}t}$
+          \par
+          Par conséquent :
+          \par
+          $\int_{10}^{20}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t = \left[-\frac{10}{\ln 5}{e}^{-\frac{\ln 5}{10}t}\right]_{10}^{20}$
+          \par
+          $\phantom{\int_{10}^{20}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t} = -\frac{10}{\ln 5}\left({e}^{-2\ln 5}-{e}^{-\ln 5}\right) $
+          \par
+          $\phantom{\int_{10}^{20}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t} = -\frac{10}{\ln 5}\left(\frac{1}{25}-\frac{1}{5}\right) $
+          \par
+          $\phantom{\int_{10}^{20}{e}^{-\frac{\ln 5}{10}t}\:\text{d}t} = \frac{8}{5\ln 5}$
+          \par
+          et :
+          \par
+          $\mathcal{A}(20) = 15(20-10)-75 \times \frac{8}{5\ln 5}$
+          \par
+          $\phantom{\mathcal{A}(20)} = 150-\frac{120}{\ln 5} \approx 75,44$u.a.
+          \par
+          Au bout de $20$ minutes, $\mathcal{A}(20)\approx 75,44$u.a.; le seuil de $80$u.a. n'a pas été atteint donc la stérilisation n'est pas encore finie.
+          \par
+          D'après la question \textbf{2.a.}, la stérilisation sera terminée au bout d'un temps compris entre $20$ et $25$ minutes.
+     \end{enumerate}
+\end{enumerate}
+}
+\input{_footer}

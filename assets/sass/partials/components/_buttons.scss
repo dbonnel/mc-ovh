@@ -1,0 +1,199 @@
+/*
+  Placeholders
+*/
+
+%btn {
+    font-weight: bold;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2em;
+
+    cursor: pointer;
+    transition: all .3s linear;
+    white-space: nowrap;
+    text-transform: uppercase;
+
+    border: 0;
+    border-radius: 2px;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+%std-size-btn {
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+
+    height: 4.5rem;
+}
+
+%small-btn {
+    font-size: 1.4rem;
+    line-height: 4rem;
+
+    height: 4rem;
+}
+
+%big-btn {
+    font-size: 2.5rem;
+    line-height: 5rem;
+
+    height: 5rem;
+
+    @media(max-width: $breakpoints-md - 1) {
+        font-size: 1.6rem;
+        line-height: 4.5rem;
+
+        height: 4.5rem;
+    }
+}
+
+%std-color-btn {
+    color: $white;
+    background-color: $secondary;
+
+    &:hover {
+        color: $white;
+        background-color: $primary;
+    }
+}
+
+%ok-color-btn {
+    color: $white;
+    background-color: $green;
+
+    &:hover {
+        color: $white;
+        background-color: $green-light;
+    }
+}
+
+%nok-color-btn {
+    color: $white;
+    background-color: $red;
+
+    &:hover {
+        color: $white;
+        background-color: $red-light;
+    }
+}
+
+%white-btn {
+    color: $primary;
+    border: 1px solid $primary;
+    background-color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: $primary;
+    }
+}
+
+%transparent-btn {
+    color: $primary;
+    background-color: transparent;
+
+    &:hover {
+        color: $secondary;
+        border: 0;
+    }
+}
+
+/*
+  Buttons
+*/
+
+.main-btn {
+    @extend %btn;
+    @extend %std-size-btn;
+    @extend %std-color-btn
+}
+
+.main-small-btn {
+    @extend %btn;
+    @extend %small-btn;
+    @extend %std-color-btn
+}
+
+.main-big-btn {
+    @extend %btn;
+    @extend %big-btn;
+    @extend %std-color-btn
+}
+
+.white-btn {
+    @extend %btn;
+    @extend %std-size-btn;
+    @extend %white-btn
+}
+
+.white-small-btn {
+    @extend %btn;
+    @extend %small-btn;
+    @extend %white-btn
+}
+
+.white-big-btn {
+    @extend %btn;
+    @extend %big-btn;
+    @extend %white-btn
+}
+
+.ok-btn {
+    @extend %btn;
+    @extend %std-size-btn;
+    @extend %ok-color-btn
+}
+
+.nok-btn {
+    @extend %btn;
+    @extend %std-size-btn;
+    @extend %nok-color-btn
+}
+
+.transparent-btn {
+    @extend %btn;
+    @extend %std-size-btn;
+    @extend %transparent-btn;
+}
+
+.transparent-small-btn {
+    @extend %btn;
+    @extend %small-btn;
+    @extend %transparent-btn;
+}
+
+.transparent-big-btn {
+    @extend %btn;
+    @extend %big-btn;
+    @extend %transparent-btn;
+}
+
+.icon-transparent-btn {
+    svg {
+        width: .875em;
+        height: .875em;
+        margin-right: .5em;
+
+        transition: all .3s linear;
+
+        stroke: $primary;
+        fill: $primary;
+    }
+
+    &:hover svg {
+        stroke: $secondary;
+        fill: $secondary;
+    }
+}
+
+.single-icon-btn {
+    padding: 0;
+    @extend .icon-transparent-btn;
+
+    svg {
+        margin: 0;
+    }
+}

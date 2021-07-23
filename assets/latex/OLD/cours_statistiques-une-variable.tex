@@ -1,0 +1,119 @@
+\input{_header}
+\begin{h2}I - Rappels\end{h2}
+\cadre{bleu}{Définitions}{% id="d10"
+     Les statistiques permettent d'étudier un \textbf{caractère} d'une \textbf{population}.
+     \par
+     Le nombre d'éléments de la population s'appelle l'\textbf{effectif global} (ou l'\textbf{effectif total}).
+     \par
+     Pour une valeur de caractère donnée, l'\textbf{effectif} est le nombre d'éléments correspondant à cette valeur.
+     \par
+     Une \textbf{série statistique} est un tableau donnant les effectifs pour chacune des valeurs possibles du caractère.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     On effectue une étude portant sur l'âge des élèves d'un lycée.
+     \begin{itemize}
+          \item le \textbf{caractère} étudié est l'âge
+          \item la \textbf{population} est l'ensemble des élèves du lycée
+          \item l'\textbf{effectif global} est le nombre d'élèves du lycée
+          \item le tableau ci-dessous est la \textbf{série statistique} pour ce caractère dans un lycée donné :
+\begin{center}
+          \begin{tabularx}{\linewidth}{|m{2.5cm}|*{7}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               \textbf{âges (en années)}  &  14  &  15  &  16  &  17  &  18  &  19  &  20
+               \\ \hline
+               \textbf{effectifs}  &  3  &  22  &  65  &  82  &  59  &  35  &  2
+               \\ \hline
+          \end{tabularx}
+\end{center}
+               \end{itemize}
+     }
+     \begin{h2}II - Médiane - Quartiles - Déciles\end{h2}
+     \cadre{bleu}{Définition}{% id="d20"
+          La \textbf{médiane} d'une série statistique est la valeur du caractère qui partage la population en deux classes de même effectif.
+     }
+     \bloc{cyan}{Remarque}{% id="r20"
+          En pratique pour trouver la médiane d'une série statistique d'effectif global $n$ :
+          \begin{itemize}
+               \item On ordonne les valeurs du caractère dans l'ordre croissant.
+               \item Si $n$ est pair, la médiane sera la moyenne des valeurs du terme de rang $\frac{n}{2}$ et du terme de rang $\frac{n}{2}+1$.
+               \item Si $n$ est impair, la médiane sera la valeur du terme de rang $\frac{n+1}{2}$.
+               \item Lorsque l'effectif global est élevé, il est souvent utile de calculer les effectifs cumulés pour trouver cette valeur.
+          \end{itemize}
+     }
+     \bloc{orange}{Exemple}{% id="e20"
+          On lance 10 fois un dé à six faces. Les résultats obtenus sont : $1;5;6;6;3;2;3;1;4;1$
+          \par
+          On trie ces valeurs par ordre croissant : $1;1;1;2;3;3;4;5;6;6$
+          \par
+          $n=10$ étant pair on effectue la moyenne du cinquième et du sixième terme ($3$ et $3$) et la médiane est donc $3$.
+     }
+     \cadre{bleu}{Définitions}{% id="d30"
+          \begin{itemize}
+               \item Le \textbf{premier quartile} Q1 d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins un quart des données sont inférieures ou égales à Q1.
+               \item Le \textbf{troisième quartile} Q3  d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins trois quarts des données sont inférieures ou égales à Q3.
+               \item Le \textbf{premier décile} D1 d'une série statistique est la plus petite valeur  des termes de la série pour laquelle au moins 10\% des données sont inférieures ou égales à D1.
+               \item Le \textbf{neuvième décile} D9 d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins 90\% des données sont inférieures ou égales à D9.
+          \end{itemize}
+     }
+     \cadre{bleu}{Définition}{% id="d35"
+          L'\textbf{écart interquartile} est la différence entre le troisième et le premier quartile $Q_{3}-Q_{1}$.
+     }
+     \bloc{cyan}{Remarque}{% id="r35"
+          L'écart interquartile mesure la dispersion autour de la médiane.
+     }
+     \begin{h2}III - Diagramme en boîte\end{h2}
+\begin{center}
+\begin{extern}%width="320" alt="Diagramme en boîte"
+\resizebox{6cm}{!}{
+\psset{xunit=0.4cm,yunit=0.4cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(1.,0.5)(23.,5.5)
+\psline(3.,2.5)(3.,1.5)
+\psline(3.,2.)(6.,2.)
+\psline(14.,2.)(18.,2.)
+\psline(18.,2.5)(18.,1.5)
+\psline[linecolor=blue](6.,3.)(6.,1.)
+\psline[linecolor=blue](6.,1.)(14.,1.)
+\psline[linecolor=blue](14.,1.)(14.,3.)
+\psline[linecolor=blue](14.,3.)(6.,3.)
+\psline[linecolor=red](11.,3.)(11.,1.)
+\rput[tl](0.5,3.8){Minimum}
+\rput[tl](5.56,4.2){\blue{Q1}}
+\rput[tl](13.55,4.2){\blue{Q3}}
+\rput[tl](16,3.8){Maximum}
+\rput[tl](9.,4.2){\red{Médiane}}
+\end{pspicture*}
+}
+\end{extern}
+\end{center}
+
+     On peut résumer un certain nombre d'informations relatives à une série statistique grâce à un \textbf{diagramme en boîte} (aussi appelé \textit{boîte à moustache}) qui fait apparaître (voir figure ci-dessus) :
+     \begin{itemize}
+          \item les valeurs minimum et maximum
+          \item le premier et le troisième quartile (Q1 et Q3)
+          \item la médiane
+     \end{itemize}
+     \par
+     \bloc{orange}{Exemple}{% id="e40"
+\begin{center}
+\begin{extern}%width="400" alt="Exemple boîte à moustache"
+\resizebox{7cm}{!}{
+\psset{xunit=0.4cm,yunit=0.4cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+\begin{pspicture*}(-1.,-1.5)(23.,4.)
+\psaxes[linewidth=0.8pt,xAxis=true,yAxis=false,Dx=5.,Dy=5.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-1.,-1.)(23.,4.)
+\psline(3.,2.5)(3.,1.5)
+\psline(3.,2.)(6.,2.)
+\psline(14.,2.)(20.,2.)
+\psline(20.,2.5)(20.,1.5)
+\psline[linecolor=blue](6.,3.)(6.,1.)
+\psline[linecolor=blue](6.,1.)(14.,1.)
+\psline[linecolor=blue](14.,1.)(14.,3.)
+\psline[linecolor=blue](14.,3.)(6.,3.)
+\psline[linecolor=blue](9.5,3.)(9.5,1.)
+\psline[linecolor=red](9.5,3.)(9.5,1.)
+\end{pspicture*}
+}
+\end{extern}
+\end{center}
+          La figure ci-dessus représente une série statistique de valeurs extrêmes 3 et 20, de premier quartile 6, de troisième quartile 14 et de médiane 9,5.
+     }
+     \input{_footer}

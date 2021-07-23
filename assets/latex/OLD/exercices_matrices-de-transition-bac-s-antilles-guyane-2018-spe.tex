@@ -1,0 +1,130 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\smallbreak
+\textit{Candidats ayant choisi l'enseignement de spécialité \og Mathématiques \fg{} }
+\bigbreak
+Le droit de pêche dans une réserve marine est réglementé~: chaque pêcheur doit posséder une carte d'accréditation annuelle. Il existe deux types de cartes~:
+\begin{itemize}
+     \item une carte de pêche dite « libre » (le pêcheur n'est pas limité en nombre de poissons pêchés)~;
+     \item une carte de pêche dite « avec quota » (le pêcheur ne doit pas dépasser une certaine quantité hebdomadaire de poissons).
+\end{itemize}
+On suppose que le nombre total de pêcheurs reste constant d'année en année.\\
+On note, pour l'année $2017+n$~:
+\begin{itemize}
+     \item $l_n$ la proportion de pêcheurs possédant la carte de pêche libre~;
+     \item $q_n$ la proportion de pêcheurs possédant la carte de pêche avec quota.
+\end{itemize}
+On observe que~:
+\begin{itemize}
+     \item chaque année, 65~\% des possesseurs de la carte de pêche libres achète de nouveaux une carte de pêche libre l'année suivante~;
+     \item Chaque année, 45~\% des possesseurs de la carte de pêche avec quota acheté une carte de pêche libre l'année suivante~;
+     \item En 2017, 40~\% des pêcheurs ont acheté une carte de pêche libre. On a donc $l_0=0,4$ et $q_0=0,6$.
+\end{itemize}
+On note, pour tout entier naturel $n$, $P_n=\begin{pmatrix}
+     l_n\\q_n
+\end{pmatrix}$.
+\begin{enumerate}
+     \item Démontrer que, pour tout entier naturel $n$, $P_{n+1}=MP_n$, où $M$ est la matrice carrée $\begin{pmatrix}
+          0,65&0,45\\
+          0,35&0,55
+     \end{pmatrix}$.
+     \item Calculer la proportion de pêcheurs achetant une carte de pêche avec quota en 2019.
+     \item Un logiciel de calcul formel donne les résultats ci-dessous~:
+     \begin{center}
+\begin{extern}%width="320" alt="Calcul formel Bac S Antilles-Guyane 2018 "
+          \def\arraystretch{1.8}% 
+          \begin{tabular}{cc}
+               \begin{tabular}{|c|l|}
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}1\end{tabular} &
+                    \begin{tabular}{l}
+                         $M~:=\{\{0.65,0,45\},\{0.35,0.55\}\}$\\
+                         $\qquad M~:=\begin{pmatrix}
+                              0.65&0.45\\0.35&0.55
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}2\end{tabular} &
+                    \begin{tabular}{l}
+                         $P_0~:=\{\{ 0.4 \},\{ 0.6 \}\}$\\
+                         $\qquad P_0~:=\begin{pmatrix}
+                              0.4\\0.6
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}3\end{tabular} &
+                    \begin{tabular}{l}
+                         $Q~:=\{\{ 9,1 \},\{ 7,$-1$ \}\}$\\
+                         $\qquad Q~:=\begin{pmatrix}
+                              9&1\\7&-1
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}4\end{tabular} &
+                    \begin{tabular}{l}
+                         $T~:=\{\{ 1/16,1/16 \},\{ 7/16,$-9/16$ \}\}$\\
+                         $\qquad T~:=\begin{pmatrix}
+                              \frac{1}{16}&\frac{1}{16}\\\frac{7}{16}&-\frac{9}{16}
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}5\end{tabular} &
+                    \begin{tabular}{l}
+                         $TQ$\\
+                         $\rightarrow~~ \begin{pmatrix}
+                              1&0\\0&1
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}6\end{tabular} &
+                    \begin{tabular}{l}
+                         $QT$\\
+                         $\rightarrow~~ \begin{pmatrix}
+                              1&0\\0&1
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+                    \cellcolor{lightgray!50}\begin{tabular}{c}7\end{tabular} &
+                    \begin{tabular}{l}
+                         $D~:=TMQ$\\
+                         $\rightarrow~~ D~:=\begin{pmatrix}
+                              1&0\\0&\frac15
+                         \end{pmatrix}$\\
+                    \end{tabular}
+                    \\
+                    \hline
+               \end{tabular}
+          \end{tabular}
+     \end{extern}
+          \end{center}
+     En vous appuyant sur les résultats précédents, répondre aux deux questions suivantes~:
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier que $Q$ est une matrice inversible et préciser sa matrice inverse.\\
+          On notera $Q^{-1}$ la matrice inverse de $Q$.
+          \item Justifier que $M=QDQ^{-1}$ et démontrer que, pour tout entier naturel $n$ non nul~:
+          \[M^n=QD^nQ^{-1}.\]
+     \end{enumerate}
+     \item On admet que, pour tout entier naturel $n$ non nul,
+     \[
+     M^n=\frac{1}{16}\begin{pmatrix}
+          9+7\times0,2^n&9-9\times0,2^n\\
+          7-7\times0,2^n&7+9\times0,2^n
+     \end{pmatrix}.
+     \]
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que pour tout entier naturel $n$, $P_n=M^nP_0$.
+          \item Justifier que, pour tout entier naturel $n$~:
+          \[
+          l_n=\frac{9}{16}-\frac{13}{80}\times0,2^n.
+          \]
+     \end{enumerate}
+     \item La proportion de pêcheurs achetant la carte de pêche libre dépassera-t-elle 60~\%~?
+\end{enumerate}
+\input{_footer}

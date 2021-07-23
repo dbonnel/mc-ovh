@@ -1,0 +1,95 @@
+\input{_header}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.,0.)(9.,5.)
+               \pspolygon[linewidth=0.4pt,linecolor=grey](5.738795805833042,3.3693979029165204)(5.8040177825740145,3.238953949434575)(5.93446173605596,3.3041759261755477)(5.869239759314987,3.434619879657493)
+               \pspolygon[linewidth=0.4pt,linecolor=grey](7.142504831241246,1.101090032454455)(7.001129447156849,1.1369024887369967)(6.965316990874307,0.995527104652599)(7.106692374958705,0.9597146483700572)
+               \pspolygon[linewidth=0.4pt,linecolor=grey](5.003467207433093,1.6429396046799178)(4.8620918233486945,1.6787520609624595)(4.826279367066153,1.5373766768780617)(4.967654751150551,1.50156422059552)
+               \pspolygon[linewidth=0.4pt,linecolor=grey](5.267143958152722,3.133571979076361)(5.332365934893695,3.0031280255944157)(5.462809888375641,3.0683500023353885)(5.397587911634668,3.198793955817334)
+               \psplot[linewidth=0.4pt,linecolor=grey]{2.}{9.}{(--1.--1.*x)/2.}
+               \psplot[linewidth=0.4pt,linecolor=grey]{2.}{9.}{(--5.6380408873423296-0.5174736842105285*x)/2.042809917355372}
+               \psline[linewidth=0.4pt,linecolor=blue](6.43162538544843,1.130719008189808)(5.397587911634668,3.198793955817334)
+               \psline[linewidth=0.4pt,linecolor=blue](5.397587911634668,3.198793955817334)(4.967654751150551,1.50156422059552)
+               \psline[linewidth=0.4pt,linecolor=blue](8.004005905632527,4.502002952816263)(7.106692374958705,0.9597146483700572)
+               \psline[linewidth=0.4pt,linecolor=blue](7.106692374958705,0.9597146483700572)(5.869239759314987,3.434619879657493)
+               \psplot[linewidth=0.4pt,linecolor=red]{2.}{9.}{(--8.248965338892633-1.9330556590619732*x)/-0.9015850081644361}
+               \psplot[linewidth=0.4pt,linecolor=red]{2.}{9.}{(--19.904914857534692-3.3712839446264553*x)/-1.5723805201840966}
+               \fontsize{9pt}{9pt}\selectfont
+               \rput[tl](8.217190082644626,4.6){$\tiny\grey{\mathscr{D}}$}
+               \rput[tl](8.065940082644625,0.5432786885245919){$\tiny\grey{\mathscr{D'}}$}
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.,2.)
+                    \rput[bl](2.9440650826446273,2.1109387402933586){\grey{$O$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](8.004005905632527,4.502002952816263)
+                    \rput[bl](7.907815082644626,4.598381363244179){$I$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](7.106692374958705,0.9597146483700572)
+                    \rput[bl](7.0759400826446255,0.6259637618636773){\grey{$K$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](6.43162538544843,1.130719008189808)
+                    \rput[bl](6.429690082644626,0.7844434857635911){$J$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](5.397587911634668,3.198793955817334)
+                    \rput[bl](5.302190082644627,3.3787765314926688){\grey{$M$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](4.967654751150551,1.50156422059552)
+                    \rput[bl](4.9928150826446265,1.1703071613459898){\grey{$N$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](5.869239759314987,3.434619879657493)
+                    \rput[bl](5.797190082644626,3.5854892148403823){\grey{$L$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+$\mathscr{D} $ et $\mathscr{D'} $ sont deux droites sécantes en $ O $.
+\\
+$ I $ est un point quelconque de $\mathscr{D} $ et $ J $ un point quelconque de $\mathscr{D'}. $
+\par
+$K$ est la projection orthogonale de $ I $ sur $\mathscr{D'} $
+\\
+(cela signifie que $ K \in \mathscr{D'} $ et que les droites $ \left( IJ \right) $ et $\mathscr{D'} $ sont perpendiculaires.)
+\\
+$L$ est la projection orthogonale de $ K $ sur $\mathscr{D} $
+\\
+$M$ est la projection orthogonale de $ J $ sur $\mathscr{D} $
+\\
+$N$ est la projection orthogonale de $M$ sur $\mathscr{D'}. $
+\par
+Démontrer que les droites $ \left( IJ \right) $ et $ \left( LN \right) $ sont parallèles.
+\begin{corrige}
+     Les droites $ \left( JM \right) $ et $ \left( KL \right) $ sont toutes les deux perpendiculaires à la droite $\mathscr{D} $, donc, elles sont parallèles entre elles.
+     \par
+     Par ailleurs, les points $ O, N, K $ sont alignés ainsi que les points $ O, L, M $~;
+     \\
+     par conséquent, d'après le théorème de Thalès~:
+     \begin{center}
+          $ \frac{ OJ }{ OK } = \frac{ OM }{ OL } = \frac{ JM }{ KL } $
+     \end{center}
+     L'égalité $ \frac{ OJ }{ OK } = \frac{ OM }{ OL } $ est équivalente à~:
+     \begin{center}
+          $ OM \times OK = OJ \times OL \quad \textbf{(1)} $
+     \end{center}
+\medskip
+De même, les droites $  \left( IK \right)   $ et $  \left( NM \right)   $ sont parallèles puisqu'elles sont toutes les deux perpendiculaires à la droite $\mathscr{D'} $.
+\par
+Les points $ O, M, K $ et $ O, M, I $ sont alignés ;
+\par
+donc, d'après le théorème de Thalès :   
+     \begin{center}
+          $ \frac{ OK }{ ON } = \frac{ OI }{ OM } = \frac{ IK }{ NM } $
+     \end{center}
+ L'égalité $ \frac{ OK }{ ON } = \frac{ OI }{ OM } $ est équivalente à~:
+     \begin{center}
+          $ OM \times OK = OI \times ON \quad \textbf{(2)} $
+     \end{center}
+\medskip
+Des égalités  \textbf{(1) } et  \textbf{(2)}  on en déduit que :
+     \begin{center}
+         $ OJ \times OL = OI \times ON  $
+     \end{center}
+En divisant chaque membre de l'égalité par $ OL  \times ON  $ on en déduit que :
+\par
+$ \frac{ OJ  \times OL  }{ OL  \times ON  } = \frac{ OI  \times ON  }{ OL  \times ON  }    $ 
+\par
+$ \frac{ OJ }{ ON } = \frac{ OI }{ OL }    $ 
+\par
+Donc, d'après \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#t50}{la réciproque du théorème de Thalès}, les droites $  \left( NL \right)   $ et $  \left( IJ \right)   $ sont parallèles.   
+\end{corrige}
+\input{_footer}

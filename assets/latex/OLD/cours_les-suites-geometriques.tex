@@ -1,0 +1,141 @@
+\input{_header}
+\begin{h2}1 - Caractéristiques d'une suite géométrique\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     On dit qu'une suite $\left(u_{n}\right)_{n\in \mathbb{N}}$ est une \textbf{suite géométrique} s'il existe un nombre réel $q$ tel que :
+     \par
+     pour tout $n\in \mathbb{N}$,  $u_{n+1}=q \times  u_{n}$
+     \par
+     Le réel $q$ s'appelle la \textbf{raison} de la suite géométrique $\left(u_{n}\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     Pour démontrer qu'une suite $\left(u_{n}\right)_{n\in \mathbb{N}}$ dont les termes sont non nuls est une suite géométrique, on pourra calculer le rapport $\frac{u_{n+1}}{u_{n}}$.
+     \par
+     Si ce rapport est une constante $q$, on pourra affirmer que la suite est une suite géométrique de raison $q$.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     Soit la suite $\left(u_{n}\right)_{n\in \mathbb{N}}$ définie par $u_{n}=\frac{3}{2^{n}}$.
+     \par
+     Les termes de la suite sont tous strictement positifs et
+     \par
+     $\frac{u_{n+1}}{u_{n}}=$$\frac{3}{2^{n+1}}\times \frac{2^{n}}{3}=\frac{2^{n}}{2^{n+1}}=$$\frac{2^{n}}{2\times 2^{n}}=\frac{1}{2}$
+     \par
+     La suite $\left(u_{n}\right)$ est une suite géométrique de raison $\frac{1}{2}$
+}
+\cadre{vert}{Propriété}{% id="p20"
+     Pour $n$ et $k$ quelconques entiers naturels, si la suite $\left(u_{n}\right)$ est géométrique de raison $q$ :$u_{n}=u_{k}\times q^{n-k}$.
+     \par
+     En particulier $u_{n}=u_{0}\times q^{n}$.
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Réciproquement, soient $a$ et $b$ deux nombres réels. La suite $\left(u_{n}\right)$ définie par $u_{n}=a\times b^{n}$ suite est une suite géométrique de raison $q=b$ et de premier terme $u_{0}=a$.
+}
+\bloc{cyan}{Démonstration}{% id="m30"
+     $u_{n+1}=a\times b^{n+1}=a\times b^{n}\times b=u_{n}\times b$
+     \par
+     et
+     \par
+     $u_{0}=a\times b^{0}=a\times 1=a$
+}
+\cadre{rouge}{Théorème}{% id="t40"
+     Soit $\left(u_{n}\right) $une suite géométrique de raison $q  > 0$ et de premier terme strictement positif :
+     \begin{itemize}
+          \item Si q >1, la suite $\left(u_{n}\right) $est strictement croissante
+          \item Si 0 < q <1, la suite $\left(u_{n}\right) $est strictement décroissante
+          \item Si q=1, la suite $\left(u_{n}\right) $est constante
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t50"
+     Si $\left(u_{n}\right)$ et $\left(v_{n}\right)$ sont deux suites géométriques de raison respectives $q$ et $q^{\prime}$ alors le produit $\left(w_{n}\right)$ de ces deux suites défini par :
+     \par
+     $w_{n}=u_{n}\times v_{n}$
+     \par
+     est une suite géométrique de raison $q^{\prime\prime}=q\times q^{\prime}$
+}
+\begin{h2}2 - Somme des puissances successives d'un nombre\end{h2}
+\cadre{rouge}{Théorème}{% id="t70"
+     Soit $q$ un nombre réel \textbf{différent de 1}:
+     \begin{center}
+     $1+q+q^{2}+ . . . +q^{n} = \frac{1-q^{n+1}}{1-q}$
+     \end{center}
+}
+\bloc{cyan}{Remarque}{% id="r70"
+     Cette formule n'est pas valable pour $q=1$. Mais dans ce cas le calcul est immédiat car tous les termes sont égaux à 1.
+}
+\bloc{orange}{Exemple}{% id="e70"
+     Soit à calculer la somme $S=1+2+4+8+16 + . . .+2^{n}$
+     \par
+     Donc:
+     \par
+     $S=\frac{1-2^{n+1}}{1-2}=\frac{1-2^{n+1}}{-1}=2^{n+1}-1$
+}
+\begin{h2}3 - Limite de la suite $\left(q^{n}\right)$ où $q\geqslant 0$\end{h2}
+\cadre{rouge}{Théorème}{% id="t90"
+     Soit $q$ un nombre réel positif.
+     \begin{itemize}
+          \item \textbf{Si $q > 1$ :} alors $q^{n}$ est aussi grand que l'on veut dès que $n$ est suffisamment grand. On dit que la suite $\left(q^{n}\right)$ tend vers $+\infty $ et on écrit :
+          \begin{center}$\lim\limits_{n\rightarrow +\infty }  q^{n} = +\infty  $ ( ou $\lim\limits_{n\rightarrow +\infty }\left(q^{n}\right) = +\infty $)\end{center}
+          \item \textbf{Si $ 0 \leqslant  q < 1$ :} alors $q^{n}$ est aussi proche de zéro que l'on veut dès que $n$ est suffisamment grand. On dit que la suite $\left(q^{n}\right)$ tend vers $0$ et on écrit :
+          \begin{center}$\lim\limits_{n\rightarrow +\infty }  q^{n} = 0 $ ( ou $\lim\limits_{n\rightarrow +\infty }\left(q^{n}\right) = 0$)\end{center}
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r90"
+     Pour $q=1$ $q^{n}=1^{n}=1$; la suite est constante, égale à $1$, et tend donc vers $1$;
+}
+\begin{h2}4 - Suites arithmético-géométriques\end{h2}
+\cadre{bleu}{Définition}{% id="d110"
+     Une suite arithmético-géométrique $u_{n}$ est définie par son premier terme $u_{0}$ et une relation de  récurrence du type :
+     \begin{center}$u_{n+1} = a\times u_{n}+b$ pour tout entier $n$\end{center}
+     où $a$ et $b$ sont deux nombres réels.
+}
+\bloc{cyan}{Remarque}{% id="r110"
+     \textbf{Attention} : Ces suites ne sont \textbf{ni arithmétiques} (sauf si $a=1$) \textbf{ni géométriques} (sauf si $b=0$).
+}
+\cadre{vert}{Propriété}{% id="p130"
+     Il existe un nombre réel $k$ tel que la suite $v_{n}$ définie, pour tout entier $n$, par $v_{n}=u_{n}+k$ soit une suite géométrique de raison $a$.
+}
+\bloc{cyan}{Remarques}{% id="r130"
+     \begin{itemize}
+          \item En général, dans les exercices, le nombre $k$ vous sera donné (et si ce n'est pas le cas on vous indiquera une démarche pour le trouver). On vous demandera de prouver que $v_{n}$ est une suite géométrique de raison $a$.
+          \item Puisque  $v_{n}=u_{n}+k$, pour tout entier $n$, on a en particulier $v_{0}=u_{0}+k$ ce qui permet de connaître le premier terme de la suite $v_{n}$.
+          \item $v_{n}=u_{n}+k$ signifie aussi que $u_{n}=v_{n}-k$.
+          \par
+          Donc une fois que l'on connaît $v_{n}$ on peut trouver $u_{n}$ (voir exemple ci-dessous)
+     \end{itemize}
+}
+\bloc{orange}{Exemple détaillé}{% id="e130"
+     Soit la suite $\left(u_{n}\right)$ définie par $u_{0}=5$ et $u_{n+1}=0,6u_{n}+4$.
+     \begin{enumerate}\item Montrer que la suite $\left(v_{n}\right)$ définie par $v_{n}=u_{n}-10$ est une suite géométrique.
+          \item En déduire l'expression de $u_{n}$ en fonction de $n$.
+                    \end{enumerate}
+          \begin{enumerate}\item \textbf{Montrons que la suite $\left(v_{n}\right)$ est une suite géométrique}
+               Pour montrer que la suite $\left(v_{n}\right)$ est géométrique on va calculer $v_{n+1}$ en fonction de $v_{n}$.
+               \par
+               $v_{n}=u_{n}-10$ pour tout entier $n$ donc :
+               \par
+               $v_{n+1}=u_{n+1}-10$
+               \par
+               or on sait que
+               \par
+               $u_{n+1}=0,6u_{n}+4$
+               \par
+               donc
+               \par
+               $v_{n+1}=0,6u_{n}+4-10 = 0,6u_{n}-6$
+               \par
+               Ici, une petite astuce consiste à mettre $0,6$ en facteur (on peut également dire que $u_{n}=v_{n}+10$ et remplacer $u_{n}$ par $v_{n}+10$)
+               \par
+               $v_{n+1}=0,6u_{n}-0,6\times 10=0,6\left(u_{n}-10\right)=0,6v_{n}$
+               \par
+               On a bien une relation du type $v_{n+1}=q\times v_{n}$ avec $q=0,6$ ce qui montre que \textbf{la suite $\left(v_{n}\right)$ est une suite géométrique de raison $0,6$}.
+               \item \textbf{Expression de $u_{n}$ en fonction de $n$}
+               Par ailleurs, $v_{0}=u_{0}-10=5-10=-5$
+               \par
+               $\left(v_{n}\right)$ est une suite géométrique de premier terme $v_{0}=5$ et de raison $q=0,6$ donc pour tout entier $n$:
+               \par
+               $v_{n}=v_{0}\times q^{n}=-5\times 0,6^{n}$
+               \par
+               Comme $u_{n}=v_{n}+10$, on obtient finalement :
+               \begin{center}$u_{n}=-5\times 0,6^{n}+10$\end{center}
+          \end{enumerate}
+     }
+     \input{_footer}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+
+%================================================================================================================================
+%
+% Packages
+%
+%================================================================================================================================
+
+\usepackage[T1]{fontenc} 	% pour caractères accentués
+\usepackage[utf8]{inputenc}  % encodage utf8
+\usepackage[french]{babel}	% langue : français
+\usepackage{fourier}			% caractères plus lisibles
+\usepackage[dvipsnames]{xcolor} % couleurs
+\usepackage{fancyhdr}		% réglage header footer
+\usepackage{needspace}		% empêcher sauts de page mal placés
+\usepackage{graphicx}		% pour inclure des graphiques
+\usepackage{enumitem}		% personnalise les listes d'items (nécessaire pour ol, al ...)
+\usepackage{hyperref}		% Liens hypertexte
+\usepackage{pstricks,pst-all,pst-node,pstricks-add,pst-math,pst-plot,pst-tree,pst-eucl} % pstricks
+\usepackage[a4paper,includeheadfoot,top=2cm,left=3cm, bottom=2cm,right=3cm]{geometry} % marges etc.
+\usepackage{comment}			% commentaires multilignes
+\usepackage{amsmath,environ} % maths (matrices, etc.)
+\usepackage{amssymb,makeidx} 
+\usepackage{bm}				% bold maths
+\usepackage{tabularx}		% tableaux
+\usepackage{colortbl}		% tableaux en couleur
+\usepackage{fontawesome}		% Fontawesome
+\usepackage{environ}			% environment with command
+\usepackage{fp}				% pour ps (apmep)
+\usepackage{multido}			% pour ps (apmep)
+\usepackage[np]{numprint}	% formattage nombre
+\usepackage{tikz,tkz-tab} 			% package principal TikZ
+\usepackage{pgfplots}   % axes
+\usepackage{mathrsfs}    % cursives
+\usepackage{calc}			% calcul taille boites
+\usepackage[scaled=0.875]{helvet} % font sans serif
+\usepackage{svg} % svg
+\usepackage{scratch} %scratch
+
+\renewcommand{\ttdefault}{lmtt} 
+\thispagestyle{empty}
+
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\newcommand{\imgdir}{C:/wamp/www/wpmc/wp-content/uploads/}
+\newcommand{\imgsvgdir}{C:/wamp/www/wpmc/wp-content/uploads/imgsvg/}
+
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+
+
+\definecolor{mcgris}{RGB}{220, 220, 220}% ancien~; pour compatibilité
+\definecolor{mcbleu}{RGB}{52, 152, 219}
+\definecolor{mcvert}{RGB}{125, 194, 70}
+\definecolor{mcmauve}{RGB}{154, 0, 215}
+\definecolor{mcorange}{RGB}{255, 96, 0}
+\definecolor{mcturquoise}{RGB}{0, 153, 153}
+\definecolor{mcrouge}{RGB}{255, 0, 0}
+\definecolor{mclightvert}{RGB}{205, 234, 190}
+
+\definecolor{gris}{RGB}{220, 220, 220}
+\definecolor{bleu}{RGB}{52, 152, 219}
+\definecolor{vert}{RGB}{125, 194, 70}
+\definecolor{mauve}{RGB}{154, 0, 215}
+\definecolor{orange}{RGB}{255, 96, 0}
+\definecolor{turquoise}{RGB}{0, 153, 153}
+\definecolor{rouge}{RGB}{255, 0, 0}
+\definecolor{lightvert}{RGB}{205, 234, 190}
+\setitemize[0]{label=\color{lightvert}  $\bullet$}
+
+\newcommand\img[2]{
+          \includegraphics[width=#2\paperwidth]{\imgdir#1}
+}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\begin{document}

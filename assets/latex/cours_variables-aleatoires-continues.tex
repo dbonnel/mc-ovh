@@ -1,0 +1,205 @@
+\input{_header}
+\meta{url}{/cours/variables-aleatoires-continues/}
+\meta{pid}{488}
+\meta{titre}{Variables aléatoires continues}
+\meta{type}{cours}
+\cadre{vert}{Introduction}{%id="i10"
+     Il arrive qu'une variable aléatoire puisse prendre n'importe quelle valeur sur $\mathbb{R}$ ou sur un intervalle $I$ de $\mathbb{R}$. On parle alors de \textbf{variable aléatoire continue}.
+     \par
+     Pour une telle variable, les événements qui vont nous intéresser ne sont plus $(X=5)$, $(X=20)$, etc... , mais $(X \leqslant 5)$, $(5 \leqslant X \leqslant 20)$, etc...
+}
+\begin{h2}1. Généralités\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     Soit $f$ une fonction \textbf{continue} et \textbf{positive} sur un intervalle $I=\left[a;b\right]$ telle que
+     \[ \int_{a}^{b}f\left(x\right)dx=1. \]
+     On dit que $X$ est une \textbf{variable aléatoire réelle continue de densité} $f$ si et seulement si pour tout $x_{1} \in I$ et tout $x_{2} \in I $ ($x_{1}\leqslant x_{2}$) :
+     \begin{center}$p\left(x_{1}\leqslant X\leqslant x_{2}\right)=\int_{x_{1}}^{x_{2}}f\left(x\right)dx$\end{center}
+}
+\bloc{orange}{Exemple}{%id="e10"
+     La fonction $f$ définie sur $I=\left[0;2\right]$ par $f\left(x\right)=\frac{x}{2}$ est une fonction continue et positive sur $I$.
+     \par
+     La fonction $F : x \longmapsto \dfrac{x^2}{4}$ est une primitive de $f$ sur $I$, par conséquent :
+     \par
+     $\int_{0}^{2}f\left(x\right)dx=\left[\frac{x^{2}}{4}\right]_{0}^{2}=1$.
+     \par
+     $f$ est donc une \textbf{densité de probabilité}.
+     \par
+     Soit X une variable aléatoire réelle à valeurs dans $I$ de densité $f$, on a alors, par exemple :
+     \par
+     $P\left(1\leqslant X\leqslant 1,5\right)=\int_{1}^{1,5}f\left(x\right)dx$.
+     \par
+     $P\left(1\leqslant X\leqslant 1,5\right)$ est donc l'aire (en u.a.) colorée ci-dessous :
+     \begin{center}
+          \begin{extern} %width="250" alt="densité linéaire"
+               \begin{pspicture}(0,-0.5)(5,3)
+                    \psset{xunit=2 cm, yunit=2 cm, algebraic=true}
+                    %\psgrid[gridcolor=mcgris, subgriddiv=0, gridlabels=0pt](0,0)(2,1)
+                    \psaxes{->}(0,0)(0,0)(2.5,1.5)
+                    \psplot[linecolor=red,linewidth=0.75pt]{0}{2}{x/2}
+                    \pscustom[linecolor=mcvert,linewidth=0.75pt,fillstyle=solid,fillcolor=mcvert,opacity=0.1]{
+                         \psplot{1}{1.5}{x/2}
+                         \psline(1.5,0)(1,0)(1,0.5)
+                    }
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     Un calcul simple montre que $P\left(1\leqslant X\leqslant 1,5\right)=\left[\frac{x^{2}}{4}\right]_{1}^{1,5}=0,3125$.
+}
+\bloc{mauve}{Remarques}{%id="r10"
+     \begin{itemize}
+          \item On peut étendre cette définition aux cas où l'une ou les deux bornes $a$ et $b$ sont infinies.
+          \par
+          Dans ce cas, on remplace la condition $\int_{a}^{ b}f\left(x\right)dx=1$ par une condition portant sur une limite; par exemple si $b$ vaut $+\infty $, la condition $\int_{a}^{ b}f\left(x\right)dx=1$ deviendra $\lim\limits_{y\rightarrow +\infty }\int_{a}^{ y}f\left(x\right)dx=1$
+          \item Comme indiqué en introduction, les événements du type $\left(X=k\right)$ ne sont pas intéressants car pour tout $k$ appartenant à $I$, $p\left(X=k\right)=\int_{k}^{ k}f\left(x\right)dx=0$.
+          \item On peut employer indifféremment des inégalités larges ou strictes :
+          \begin{center}$p\left(x_{1} < X < x_{2}\right)=p\left(x_{1}\leqslant X\leqslant x_{2}\right)$.\end{center}
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%id="d20"
+     L'espérance mathématique d'une variable aléatoire $X$ qui suit une loi de densité $f$ sur $\left[a;b\right]$ est le réel noté $E\left(X\right)$ défini par :
+     \begin{center}$E\left(X\right)=\int_{a}^{b}xf\left(x\right)dx$.\end{center}
+}
+\bloc{orange}{Exemple}{%id="e20"
+     Si l'on reprend l'exemple de la fonction $f$ définie sur $I=\left[0;2\right]$ par $f\left(x\right)=\frac{x}{2}$, l'espérance mathématique est :
+     \par
+     $E\left(X\right)=\int_{0}^{2}xf\left(x\right)dx$\nosp$=\int_{0}^{2}\frac{x^{2}}{2}dx$\nosp$=\left[\frac{x^{3}}{6}\right]_{0}^{2}$\nosp$=\frac{8}{6}=\frac{4}{3}$.
+}
+\begin{h2}2. Loi uniforme sur un intervalle\end{h2}
+\cadre{bleu}{Définition}{%id="d40"
+     On dit qu'une variable aléatoire $X$ suit la \textbf{loi uniforme} sur l'intervalle $\left[a~;~b\right]$ si sa densité de probabilité $f$ est constante sur $\left[a~;~b\right]$.
+     \par
+     Cette densité vaut alors, pour tout réel $x \in [a~;~b]$ :
+     \[ f\left(x\right)=\frac{1}{b-a}. \]
+}
+\bloc{orange}{Exemple}{%id="e40"
+     La densité de la loi uniforme sur l'intervalle $\left[0, 2\right]$ est représentée ci-dessous~:
+     \begin{center}
+          \begin{extern} %width="250" alt="loi uniforme"
+               \begin{pspicture}(0,-0.5)(5,3)
+                    \psset{xunit=2 cm, yunit=2 cm, algebraic=true}
+                    %\psgrid[gridcolor=mcgris, subgriddiv=0, gridlabels=0pt](0,0)(2,1)
+                    \psaxes{->}(0,0)(0,0)(2.5,1.5)
+                    \psplot[linecolor=red,linewidth=0.75pt]{0}{2}{1/2}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     \begin{center}\textit{Densité de la loi uniforme sur l'intervalle $\left[0, 2\right]$}\end{center}
+}
+\bloc{mauve}{Remarque}{%id="r40"
+     Une primitive de la fonction $x \longmapsto \dfrac{1}{b-a}$ sur $[a~;~b]$ est  $x \longmapsto \dfrac{x}{b-a}$.
+     \par
+     On vérifie alors que :
+     $\int_{a}^{b} \frac{1}{b-a} dx=\left[\frac{x}{b-a}\right]_{a}^{b}=1$.
+}
+\cadre{vert}{Propriété}{%id="p50"
+     Si $X$ suit une \textbf{loi uniforme} sur $\left[a;b\right]$, alors pour tous réels $c$ et $d$ compris entre $a$ et $b$ avec $c < d$ :
+     \begin{center}$p\left(c\leqslant X\leqslant d\right) = \frac{d-c}{b-a}$.\end{center}
+}
+\bloc{orange}{Démonstration}{%id="r50"
+     En effet, si $a\leqslant c < d \leqslant b$ alors :
+     \par
+     $p\left(c \leqslant X\leqslant d \right)=\int_{c}^{d}\frac{1}{b-a}dx$\nosp$=\frac{d-c}{b-a}$
+}
+\cadre{rouge}{Théorème}{%id="t60"
+     L'espérance mathématique d'une variable aléatoire $X$ qui suit une \textbf{loi uniforme} sur $\left[a;b\right]$ est :
+     \begin{center}$E\left(X\right)=\frac{a+b}{2}$.\end{center}
+}
+\bloc{orange}{Démonstration}{%"m65"
+     La fonction $x \longmapsto \dfrac{x^2}{2(b-a)}$ est une primitive de la fonction $x \longmapsto \dfrac{x}{b-a}$ sur $[a~;~b]$ ; par conséquent :
+     \par
+     $E\left(X\right) =\int_{a}^{ b}\frac{x}{b-a}dx$\\
+     $\phantom{E\left(X\right)} =\left[\frac{x^{2}}{2\left(b-a\right)}\right]_{a}^{b}$\\
+     $\phantom{E\left(X\right)}=\frac{b^{2}-a^{2}}{2\left(b-a\right)}$\\
+     $\phantom{E\left(X\right)}=\frac{\left(b-a\right)\left(b+a\right)}{2\left(b-a\right)}$\\
+     $\phantom{E\left(X\right)}=\frac{a+b}{2}$.
+}
+\begin{h2}3. Loi exponentielle de paramètre lambda\end{h2}
+\cadre{bleu}{Définition}{%id="d70"
+     On dit qu'une variable aléatoire X suit une \textbf{loi exponentielle de paramètre $\lambda  > 0$} sur $\left[0;+\infty \right[$ si sa densité de probabilité $f$ est définie sur $\left[0;+\infty \right[$ par :
+     \begin{center}
+          $f\left(x\right)=\lambda \text{e}^{-\lambda x}$.
+     \end{center}
+}
+\bloc{orange}{Exemple}{%id="e70"
+     La densité de la loi exponentielle de paramètre $\lambda =1,5$ est la fonction $f$ définie sur $\left[0;+\infty \right[$ par $f\left(x\right)=1,5 \text{e}^{-1,5 x}$.
+     \par
+     Cette fonction est représentée ci-dessous :
+     \begin{center}
+          \begin{extern} %width="350" alt="loi exponentielle"
+               % -+-+-+ variables modifiables
+               \def\e{2.7182818}
+               \def\fonction{1.5*\e^(-1.5*x)  }
+               \def\xmin{0}
+               \def\xmax{3.5}
+               \def\ymin{0}
+               \def\ymax{2}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{2}
+               \begin{pspicture}(0,-0.5)(7,4.5)
+                    \psset{xunit=\xunit, yunit=\yunit, algebraic=true}
+                    %\psgrid[gridcolor=mcgris, subgriddiv=0, gridlabels=0pt](0,0)(2,1)
+                    \psaxes{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psclip{
+                         \psframe[linestyle=none](\xmin,\ymin)(\xmax,\ymax)
+                    }
+                    \psplot[linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                    \endpsclip
+                    \uput[l](0,1.5){$\red \lambda$}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+}
+\bloc{mauve}{Remarque}{%id="r70"
+     La fonction $x \longmapsto -\text{e}^{-\lambda x}$ est une primitive de la fonction $x \longmapsto \lambda \text{e}^{-\lambda x}$.
+     \par
+     On vérifie alors que :
+     \par
+     $\int_{0}^{+\infty } \lambda \text{e}^{-\lambda x} dx=\lim\limits_{t\rightarrow +\infty }\int_{0}^{t} \lambda \text{e}^{-\lambda x} dx$\\
+     $\phantom{\int_{0}^{+\infty } \lambda \text{e}^{-\lambda x} dx}=\lim\limits_{t\rightarrow +\infty }\left[-\text{e}^{-\lambda x}\right]_{0}^{t}$\\
+     $\phantom{\int_{0}^{+\infty } \lambda \text{e}^{-\lambda x} dx}=\lim\limits_{t\rightarrow +\infty }-\text{e}^{-\lambda t}+1=1$.
+}
+\cadre{vert}{Propriété}{%id="p80"
+     Si $X$ suit une exponentielle de paramètre $\lambda $ sur $\left[0;+\infty \right[$, alors pour tous réels positifs $x_{1}$ et $x_{2}$ :
+     \begin{itemize}
+          \item %
+          $p\left(x_{1}\leqslant X\leqslant x_{2}\right) = \text{e}^{-\lambda x_{1}}-\text{e}^{-\lambda x_{2}}$
+          \item %
+          $p\left(X\geqslant x_{1}\right) = \text{e}^{-\lambda x_{1}}$.
+     \end{itemize}
+}
+\bloc{orange}{Démonstration}{%id="d80"
+     $p\left(x_{1}\leqslant X\leqslant x_{2}\right)=\int_{x_{1}}^{x_{2}}\lambda \text{e}^{-\lambda x} dx$\\
+     $\phantom{p\left(x_{1}\leqslant X\leqslant x_{2}\right)}=\left[-\text{e}^{-\lambda x}\right]_{x_{1}}^{x_{2}}$\\
+     $\phantom{p\left(x_{1}\leqslant X\leqslant x_{2}\right)}=\text{e}^{-\lambda x_{1}}- \text{e}^{-\lambda x_{2}}$
+     \par
+     La seconde égalité s'obtient alors en faisant tendre $x_{2}$ vers $+\infty $.
+}
+\cadre{rouge}{Théorème}{%id="t90"
+     L'espérance mathématique d'une variable aléatoire $X$ qui suit une \textbf{loi exponentielle} de paramètre $\lambda $ est :
+     \begin{center}$E\left(X\right)=\frac{1}{\lambda}$\end{center}
+}
+\bloc{orange}{Démonstration}{%id="r95"
+     Voir exercice : \Lien{https://www.maths-cours.fr/exercices/roc-esperance-mathematique-dune-loi-exponentielle/}{[ROC] Espérance mathématique d'une loi exponentielle}.
+}
+\cadre{vert}{Propriété}{%id="p100"
+     Soient $X$ une variable aléatoire qui suit une exponentielle de paramètre $\lambda $ et $x$ et $x_{0}$ deux réels, alors :
+     \begin{center}$p\left(X > x\right) = p_{(X > x_{0})}\left(X > x+x_{0}\right)$\end{center}
+     On dit qu'une loi exponentielle est \og \textit{sans vieillissement} \fg{}.
+}
+\bloc{mauve}{Commentaire}{%id="r110"
+     Tout d'abord, rappelons que la notation $p_{(X > x_{0})}\left(X > x+x_{0}\right)$ indique la probabilité (conditionnelle) de l'événement $\left(X > x+x_{0}\right)$ \textbf{sachant que} l'événement $(X > x_{0})$ est réalisé.
+     \par
+     Supposons que $X$ modélise la durée de vie d'une machine.
+     \par
+     \begin{itemize}
+          \item %
+          $p\left(X > x\right)$ correspond à la probabilité qu'une machine \og neuve \fg{} fonctionne pendant une durée supérieure ou égale à $x$ ;
+          \item %
+          $p_{(X > x_{0})}\left(X > x+x_{0}\right)$ est la probabilité qu'une machine, qui a déjà fonctionné pendant une durée $x_0$, fonctionne encore pendant une durée supérieure ou égale à $x$.
+     \end{itemize}
+     Dans le cadre d'une loi exponentielle, ces probabilités sont égales ce qui explique l'expression \og \textit{sans vieillissement} \fg{}.
+}
+\bloc{orange}{Démonstration}{%id="m120"
+     Voir exercice : \Lien{https://www.maths-cours.fr/exercices/loi-exponentielle-bac-s-metropole-2008/}{Loi exponentielle - Bac S Métropole 2008}.
+}
+\input{_footer}

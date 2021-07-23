@@ -1,0 +1,441 @@
+\input{_header}
+\meta{url}{/cours/nombres-complexes-et-algebre/}
+\meta{pid}{533}
+\meta{titre}{Nombres complexes et algèbre}
+\meta{type}{cours}
+\begin{h2}1. Ensemble des nombres complexes\end{h2}
+\cadre{rouge}{Théorème et Définition}{% id="t10"
+     On admet qu'il existe un ensemble de nombres (appelés \textbf{nombres complexes}), noté $\mathbb{C}$ tel que:
+     \begin{itemize}
+          \item $\mathbb{C}$ contient $\mathbb{R}$
+          \item $\mathbb{C}$ est muni d'une addition et d'une multiplication qui suivent des règles de calcul analogues à celles de $\mathbb{R}$
+          \item $\mathbb{C}$ contient un nombre noté $i$ tel que $i^{2}=-1$
+          \item Chaque élément $z$ de $\mathbb{C}$ s'écrit \textbf{de manière unique} sous la forme $z=a+ib$ où $a$ et $b$ sont deux réels.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e10"
+     $\sqrt{5}+\frac{1}{2}i$ , $ 3i $ et $ \sqrt{2}$ sont des nombres complexes ($\sqrt{2}$ est un nombre réel mais comme $\mathbb{R}\subset\mathbb{C}$ c'est aussi un nombre complexe !)
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     \textbf{Attention~: }On définit une addition et une multiplication sur $\mathbb{C}$ mais on ne définit \textbf{pas} de relation d'ordre (comme $\leqslant $). En effet il n'est pas possible de définir une telle relation qui soit compatible avec celle définie sur $\mathbb{R}$ et possède les même propriétés que dans $\mathbb{R}$.
+     \par
+     Dans les exercices, attention donc à ne pas écrire de choses comme $z < z^{\prime}$, si $z$ et $z^{\prime}$ sont des nombres complexes non réels !
+}
+\cadre{bleu}{Définitions}{% id="d20"
+     \begin{itemize}
+          \item L'écriture $ z = a+ib$ est appelée la \textbf{forme algébrique} du nombre complexe $z$.
+          \item Le nombre réel $a$ s'appelle la \textbf{partie réelle} du nombre complexe $z$.
+          \item Le nombre réel $b$ s'appelle la \textbf{partie imaginaire} du nombre complexe $z$.
+          \item Si la partie réelle de $z$ est nulle (c'est à dire $a=0$ et $z=bi$), on dit que $z$ est un \textbf{imaginaire pur} .
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Deux nombres complexes sont égaux si et seulement si ils ont la même partie réelle et la même partie imaginaire.
+}
+\bloc{cyan}{Remarques}{% id="r30"
+     \begin{itemize}
+          \item Cela résulte immédiatement du fait que chaque élément de $\mathbb{C}$ s'écrit \textbf{de manière unique} sous la forme $z=a+ib$.
+          \item En particulier, un nombre complexe est nul si et seulement si ses parties réelles et imaginaires sont nulles.
+     \end{itemize}
+}
+\begin{h2}2. Conjugué\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     Soit $z$ le nombre complexe $z=a+ib$.On appelle \textbf{conjugué} de $z$, le nombre complexe
+     \par
+     \begin{center}
+          $\overline{z}=a-ib$.
+     \end{center}
+}
+\bloc{orange}{Exemple}{% id="e40"
+     Soit $z=3+4i$
+     \par
+     Le conjugué de $z$ est $\overline{z}=3-4i$.
+}
+\cadre{vert}{Propriétés des conjugués}{% id="p50"
+     Pour tous nombres complexes $z$ et $z^{\prime}$ et tout entier naturel $n$~:
+     \begin{itemize}
+          \item $\overline{z+z^{\prime}} = \overline{z}+\overline{z}^{\prime}$
+          \item $\overline{zz^{\prime}} = \overline{z}\times \overline{z}^{\prime}$
+          \item $\overline{\left(\frac{z}{z^{\prime}}\right)} = \frac{\overline{z}}{\overline{z^{\prime}}}  $ pour $z^{\prime}\neq 0$
+          \item $\overline{\left(z^{n}\right)} = \left(\overline{z}\right)^{n}$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r50"
+     \begin{itemize}
+          \item Par contre, en général, $|z+z^{\prime}|$ n'est pas égal à $|z|+|z^{\prime}|$. On peut juste montrer que  $|z+z^{\prime}| \leqslant  |z|+|z^{\prime}|$ (inégalité triangulaire)~;
+          \item \textbf{ROC~:} La démonstration de certaines de ces propriétés a été demandée au \mcLien{/exercices/nombres-complexes/nombres-complexes-bac-s-metropole-2014}{Bac 2014}.
+     \end{itemize}
+}
+\begin{h2}3. Équation du second degré à coefficients réels\end{h2}
+\cadre{vert}{Propriété}{% id="p60"
+     Soient $a$, $b$, $c $ trois réels avec $a\neq 0$.
+     \par
+     Dans $\mathbb{C}$, l'équation $az^{2}+bz+c=0$ admet toujours au moins une solution.
+     \par
+     Plus précisément, si on note $\Delta $ son discriminant ($\Delta =b^{2}-4ac$)~:
+     \par
+     \begin{itemize}
+          \item Si $\Delta  > 0$, l'équation possède \textbf{deux solutions réelles}~:
+          \par
+          $z_{1}=\frac{-b-\sqrt{\Delta }}{2a}  $ et $  z_{2}=\frac{-b+\sqrt{\Delta }}{2a}$
+          \par
+          \item Si $\Delta  = 0$, l'équation possède \textbf{une solution réelle}~:
+          \par
+          $z=\frac{-b}{2a}  $
+          \par
+          \item Si $\Delta  < 0$, l'équation possède \textbf{deux solutions complexes} conjuguées l'une de l'autre~:
+          \par
+          $z_{1}=\frac{-b-i\sqrt{-\Delta }}{2a}  $ et $  z_{2}=\frac{-b+i\sqrt{-\Delta }}{2a}$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e60"
+     Soit à résoudre l'équation $z^{2}+2z+2=0$ dans $\mathbb{C}$
+     \par
+     $\Delta =4-8=-4$
+     \par
+     $\Delta  < 0$ donc l'équation admet 2 racines complexes conjuguées~:
+     \par
+     $z_{1}=\frac{-2-i\sqrt{4}}{2}=-1-i  $ et $  z_{2}=\frac{-2+i\sqrt{4}}{2}=-1+i$.
+}
+\begin{h2}4. Représentation géométrique\end{h2}
+Le plan $\left(P\right)$ est muni d'un repère orthonormé $\left(O; \vec{u}, \vec{v}\right)$
+\cadre{bleu}{Définitions}{% id="d70"
+     A tout nombre complexe $z=a+ib$, on associe le point $M$ de coordonnées $\left(a ; b\right)$
+     \par
+     On dit que $M$ est l'\textbf{image} de $z$ et que $z$ est l'\textbf{affixe} du point $M$.
+     \par
+     A tout vecteur $\vec{k}$ de coordonnées $\left(a ; b\right)$  on associe le nombre complexe $z=a+ib$.
+     \par
+     On dit que $z$ est l'\textbf{affixe} du vecteur $\vec{k}$.
+}
+\begin{center}
+     \begin{extern} %width="450" alt="représentation graphique des nombres complexes"
+          \newrgbcolor{dblue}{0. 0. 0.7}
+          \newrgbcolor{dvert}{0. 0.4 0.}
+          \newrgbcolor{dmauve}{0.5 0. 0.5}
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\xmin{-1.2}
+               \def\xmax{6.5}
+               \def\ymin{-0.8}
+               \def\ymax{5.5}
+               \def\xunit{1.5}  % unités en cm
+               \def\yunit{1.5}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true,arrowsize=3pt 2,arrowinset=0.25}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    %           \psaxes[labels=none,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psline[linewidth=0.75pt,linecolor=dmauve]{->}(0,0)(\xmin,0)(\xmax,0)
+                    \psline[linewidth=0.75pt,linecolor=dvert]{->}(0,0)(0,\ymin)(0,\ymax)
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](3,2)
+                    \rput[bl](3,2){$\color{dblue} M(z=a+\text{i}b)$}
+                    \psline[linewidth=0.75pt,linecolor=dblue]{->}(0,0)(3,2)
+                    \psline[linestyle=dotted,linewidth=0.75pt,linecolor=dblue](3,0)(3,2)(0,2)
+                    \rput[t](3,-0.1){\color{dblue} $a$}
+                    \rput[r](-0.1,2){\color{dblue} $b$}
+                    \rput[tr](6.4,-0.1){\color{dmauve} axe des réels}
+                    \rput[tr]{90}(-0.8,5.3){\color{dvert} axe des}
+                    \rput[tr]{90}(-0.45,5.3){\color{dvert} imaginaires purs}
+                    \psline[linewidth=1.25pt,linecolor=dvert]{->}(0,0)(0,1)
+                    \psline[linewidth=1.25pt,linecolor=dmauve]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.03){\color{dmauve} $\vect{u}$}
+                    \rput[r](-0.03,0.5){\color{dvert} $\vect{v}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{vert}{Propriétés}{% id="p80"
+     \begin{itemize}
+          \item $M$ appartient à l'axe des abscisses si et seulement si son affixe $z$ est un nombre réel
+          \item $M$ appartient à l'axe des ordonnées si et seulement si son affixe $z$ est un nombre imaginaire pur
+          \item Deux nombres complexes conjugués ont des affixes symétriques par rapport à l'axe des abscisses
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern} %width="450" alt="nombres complexes conjugués"
+          \newrgbcolor{dblue}{0. 0. 0.7}
+          \newrgbcolor{dvert}{0. 0.4 0.}
+          \newrgbcolor{dmauve}{0.5 0. 0.5}
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\xmin{-1.2}
+               \def\xmax{6.5}
+               \def\ymin{-2.5}
+               \def\ymax{3.2}
+               \def\xunit{1.5}  % unités en cm
+               \def\yunit{1.5}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true,arrowsize=3pt 2,arrowinset=0.25}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[ticks=none,labels=none,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](3,2)
+                    \rput[bl](3,2){$\color{dblue} M(z)$}
+                    \psline[linewidth=0.75pt,linecolor=dvert]{->}(0,0)(3,-2)
+                    \rput[bl](3,-2){$\color{dvert} M'(\bar{z})$}
+                    \psline[linewidth=0.75pt,linecolor=dblue]{->}(0,0)(3,2)
+                    \psline[linestyle=dotted,linewidth=0.75pt,linecolor=dblue](3,0)(3,2)(0,2)
+                    \psline[linestyle=dotted,linewidth=0.75pt,linecolor=dvert](3,0)(3,-2)(0,-2)
+                    \rput[t](3,-0.1){\color{dblue} $a$}
+                    \rput[r](-0.1,2){\color{dblue} $b$}
+                    \rput[r](-0.1,-2){\color{dvert} $-b$}
+                    \psline[linewidth=1.25pt]{->}(0,0)(0,1)
+                    \psline[linewidth=1.25pt]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.03){$\vect{u}$}
+                    \rput[r](-0.03,0.5){ $\vect{v}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{vert}{Propriétés}{% id="p90"
+     Soient $A$ et $B$ deux points d'affixes respectives $z_{A}$ et $z_{B}$.
+     \begin{itemize}
+          \item  l'affixe du vecteur $\overrightarrow{AB}$ est égale à~:
+          \begin{center}$z_{\overrightarrow{AB}}= z_{B}-z_{A}$\end{center}
+          \item  l'affixe du milieu $M$ du segment $\left[AB\right]$ est égale à~:
+          \begin{center}$z_{M}= \frac{z_{A}+z_{B}}{2}$\end{center}
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{% id="p100"
+     Soient $\vec{w}\left(z\right)$ et $\overrightarrow{w^{\prime}}\left(z^{\prime}\right)$ deux vecteurs du plan et $k$ un nombre réel.
+     \begin{itemize}
+          \item Le vecteur $\vec{w}+\overrightarrow{w^{\prime}}$ a pour affixe $z+z^{\prime}$~;
+          \item Le vecteur $k\vec{w}$ a pour affixe $kz$.
+     \end{itemize}
+}
+\begin{h2}5. Forme trigonométrique\end{h2}
+\cadre{bleu}{Définition}{% id="d110"
+     Soit $z$ un nombre complexe \textbf{non nul} d'image $M$ dans le repère $\left(O; \vec{u}, \vec{v}\right)$.
+     \par
+     On appelle module de $z$, et on note $|z|$ le nombre \textbf{réel} positif ou nul $|z|=\sqrt{a^{2}+b^{2}}$.
+     \par
+     On appelle argument de $z$ et on note $\text{arg}\left(z\right)$ une mesure, exprimée en radians, de l'angle
+     \par
+     $\left(\vec{u}; \overrightarrow{OM}\right)$.
+}
+\begin{center}
+     \begin{extern} %width="450" alt="forme trigonométrique des nombres complexes"
+          \newrgbcolor{dblue}{0. 0. 0.7}
+          \newrgbcolor{dvert}{0. 0.4 0.}
+          \newrgbcolor{dmauve}{0.5 0. 0.5}
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\xmin{-1.2}
+               \def\xmax{6.5}
+               \def\ymin{-0.8}
+               \def\ymax{3.2}
+               \def\xunit{1.5}  % unités en cm
+               \def\yunit{1.5}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true,arrowsize=3pt 2,arrowinset=0.25}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[ticks=none,labels=none,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](3,2)
+                    \rput[bl](3,2){$\color{dblue} M(z)$}
+                    \psline[linewidth=0.75pt,linecolor=dvert](0,0)(3,2)
+                    \rput[t]{33.7}(1.3,1.3){$\color{dvert} |z|=OM$}
+                    \psline[linestyle=dotted,linewidth=0.75pt,linecolor=dblue](3,0)(3,2)(0,2)
+                    \rput[t](3,-0.1){\color{dblue} $a$}
+                    \rput[r](-0.1,2){\color{dblue} $b$}
+                    \pscustom[linewidth=0.8pt,linecolor=dmauve,fillcolor=dmauve,fillstyle=solid,opacity=0.1]{ % color angle
+                         \parametricplot{0.0}{0.588}{0.6*cos(t)|0.6*sin(t)}
+                         \lineto(0.,0.)
+                    \closepath}
+                    \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](0.,0.)(0.6,0.6){0.}{33.7} % fleche angle
+                    \rput[t](1.4,0.38){$\color{dmauve} \theta=\text{arg}(z)$}
+                    \psline[linewidth=1.25pt]{->}(0,0)(0,1)
+                    \psline[linewidth=1.25pt]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.03){$\vect{u}$}
+                    \rput[r](-0.03,0.5){$\vect{v}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{vert}{Propriétés des modules}{% id="p130"
+     Pour tous nombres complexes $z$ et $z^{\prime}$~:
+     \begin{itemize}
+          \item $|z|^{2} = z\times \overline{z}$
+          \item $|zz^{\prime}| = |z|\times |z^{\prime}|$
+          \item $|\frac{z}{z^{\prime}}| = \frac{|z|}{|z^{\prime}|}  $ pour $z^{\prime}\neq 0$
+     \end{itemize}
+}
+\cadre{vert}{Propriétés des arguments}{% id="p140"
+     Pour tous nombres complexes $z$ et $z^{\prime}$ \textbf{non nuls} et tout entier $n\in \mathbb{Z}$~:
+     \begin{itemize}
+          \item $\text{arg}\left(\overline{z}\right)=-\text{arg}\left(z\right)$
+          \item $\text{arg}\left(zz^{\prime}\right)=\text{arg}\left(z\right)+\text{arg}\left(z^{\prime}\right)$
+          \item $\text{arg}\left(z^{n}\right)=n\times \text{arg}\left(z\right)$
+          \item $\text{arg}\left(\frac{z}{z^{\prime}}\right)=\text{arg}\left(z\right)-\text{arg}\left(z^{\prime}\right)$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r140"
+     En particulier~:
+     \begin{itemize}
+          \item $\text{arg}\left(-z\right)=\text{arg}\left(z\right)+\text{arg}\left(-1\right) = \text{arg}\left(z\right)+\pi $
+          \item $\text{arg}\left(\frac{1}{z}\right)=\text{arg}\left(1\right)-\text{arg}\left(z\right) = -\text{arg}\left(z\right)$.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème et définition}{% id="t170"
+     Soit $z$ un nombre complexe non nul de module $r$ et d'argument $\theta $~:
+     \begin{center}$z=r\left(\cos\theta  + i \sin\theta \right)$\end{center}
+     Cette écriture s'appelle \textbf{forme trigonométrique} du nombre $z$.
+}
+\cadre{vert}{Passage de la forme algébrique à la forme trigonométrique}{% id="p180"
+     Soit $z=a+ib$ un nombre complexe non nul.
+     \begin{itemize}
+          \item $r=|z|=\sqrt{a^{2}+b^{2}}$
+          \item $\theta =\text{arg}\left(z\right)$ est défini par~:
+          \par
+          $\cos \theta  = \frac{a}{\sqrt{a^{2}+b^{2}}}$ et $ \sin \theta  = \frac{b}{\sqrt{a^{2}+b^{2}}}$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e180"
+     Soit $z=\sqrt{3}+i$.
+     \par
+     $|z|=\sqrt{3+1}=2$
+     \par
+     Si $\theta $ est un argument de $z$~:
+     \par
+     $\cos \theta =\frac{\sqrt{3}}{2} $ et $ \sin \theta =\frac{1}{2}$ donc $\theta =\frac{\pi }{6}   \left(\text{mod. } 2\pi \right)$
+     \par
+     La forme trigonométrique de $z$ est donc~:
+     \par
+     $z=2\left(\cos \frac{\pi }{6} + i \sin \frac{\pi }{6}\right) $.
+     \begin{center}
+          \begin{extern} %width="380" alt="représentation graphique du nombre complexe racine de 3 + i"
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \resizebox{7cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\xmin{-1.2}
+                    \def\xmax{3}
+                    \def\ymin{-0.8}
+                    \def\ymax{2}
+                    \def\xunit{2.5}  % unités en cm
+                    \def\yunit{2.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true,arrowsize=3pt 2,arrowinset=0.25}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[ticks=none,labels=none,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1.732,1)
+                         \rput[bl](1.732,1){$\color{dblue} M(\sqrt{3}+\text{i})$}
+                         \psline[linewidth=0.75pt,linecolor=dvert](0,0)(1.732,1)
+                         \rput[t]{30}(0.8,0.7){$\color{dvert} |z|=2$}
+                         \psline[linestyle=dotted,linewidth=0.75pt,linecolor=dblue](1.732,0)(1.732,1)(0,1)
+                         \rput[t](1.732,-0.1){\color{dblue} $\sqrt{3}$}
+                         \rput[r](-0.1,1){\color{dblue} $1$}
+                         \pscustom[linewidth=0.8pt,linecolor=dmauve,fillcolor=dmauve,fillstyle=solid,opacity=0.1]{ % color angle
+                              \parametricplot{0.0}{0.524}{0.5*cos(t)|0.5*sin(t)}
+                              \lineto(0.,0.)
+                         \closepath}
+                         \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](0.,0.)(0.5,0.5){0.}{30} % fleche angle
+                         \rput[t](0.9,0.42){$\color{dmauve} \theta=\dfrac{\pi}{6}$}
+                         \psline[linewidth=1.25pt]{->}(0,0)(0,1)
+                         \psline[linewidth=1.25pt]{->}(0,0)(1,0)
+                         \rput[t](0.5,-0.03){$\vect{u}$}
+                         \rput[r](-0.03,0.5){$\vect{v}$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+}
+\cadre{vert}{Angle de vecteurs et arguments}{% id="p190"
+     Soit $A, B$ et $C$ trois points du plan d'afixes respectives $z_{A}$,$z_{B}$, $z_{C}$ avec $A\neq B$ et $A\neq C$~:
+     \par
+     $\left(\overrightarrow{AB};\overrightarrow{AC}\right)= \text{arg}\left(\frac{z_{C}-z_{A}}{z_{B}-z_{A}}\right)$.
+}
+\begin{center}
+     \begin{extern} %width="450" alt="forme trigonométrique des nombres complexes"
+          \newrgbcolor{dblue}{0. 0. 0.7}
+          \newrgbcolor{dvert}{0. 0.4 0.}
+          \newrgbcolor{dmauve}{0.5 0. 0.5}
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\xmin{-1.2}
+               \def\xmax{6.5}
+               \def\ymin{-0.8}
+               \def\ymax{4.2}
+               \def\xunit{1.5}  % unités en cm
+               \def\yunit{1.5}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true,arrowsize=3pt 2,arrowinset=0.25}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[ticks=none,labels=none,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1,1)
+                    \rput[tr](0.9,0.9){$\color{dblue} A$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](5,2)
+                    \rput[bl](5,2.1){$\color{dblue} B$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](2,3)
+                    \rput[bl](2,3.1){$\color{dblue} C$}
+                    \psline[linewidth=0.75pt,linecolor=dblue]{->}(1,1)(5,2)
+                    \psline[linewidth=0.75pt,linecolor=dblue]{->}(1,1)(2,3)
+                    \pscustom[linewidth=0.8pt,linecolor=dmauve,fillcolor=dmauve,fillstyle=solid,opacity=0.1]{ % color angle
+                         \parametricplot{0.25}{1.11}{0.6*cos(t)+1|0.6*sin(t)+1}
+                         \lineto(1,1)
+                    \closepath}
+                    \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](1.,1.)(0.6,0.6){14.}{63.4} % fleche angle
+                    \rput[t](2.9,2.6){$\color{dmauve} \theta=\text{arg}\left(\frac{z_{C}-z_{A}}{z_{B}-z_{A}}\right)$}
+                    \psline[linewidth=1.25pt]{->}(0,0)(0,1)
+                    \psline[linewidth=1.25pt]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.03){$\vect{u}$}
+                    \rput[r](-0.03,0.5){$\vect{v}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r190"
+     \begin{itemize}
+          \item Notez bien l'\textbf{ordre des affixes} (inverse de l'ordre des points dans l'écriture de l'angle).
+          \item \textbf{Premier cas particulier important~:}
+          \par
+          $A, B$ et $C$ sont alignés \\
+          $\phantom{A, B} \Leftrightarrow  \text{arg}\left(\frac{z_{C}-z_{A}}{z_{B}-z_{A}}\right) = 0~\text{ou}~\pi~\left[\text{mod. } 2\pi \right] $ \\
+          $\phantom{A, B} \Leftrightarrow  \frac{z_{C}-z_{A}}{z_{B}-z_{A}} \in  \mathbb{R}$.
+          \item \textbf{Second cas particulier important~:}
+          \par
+          $\widehat{BAC}$ est un angle droit \\
+          $\phantom{A, B} \Leftrightarrow  \text{arg}\left(\frac{z_{C}-z_{A}}{z_{B}-z_{A}}\right) = \pm \frac{\pi }{2} ~  \left[\text{mod. } 2\pi \right] $\\
+          $\phantom{A, B} \Leftrightarrow  \frac{z_{C}-z_{A}}{z_{B}-z_{A}}$ est un \textbf{imaginaire pur}.
+     \end{itemize}
+}
+\begin{h2}6. Forme exponentielle\end{h2}
+\cadre{bleu}{Notation}{% id="d200"
+     Si $z$ est un nombre complexe de module $r$ et d'argument $\theta $, la notation exponentielle du nombre $z$ est~:
+     \begin{center}$z=re^{i\theta }$\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r200"
+     Ce sont les propriétés des arguments~:
+     \begin{itemize}
+          \item $\text{arg}\left(zz^{\prime}\right)=\text{arg}\left(z\right)+\text{arg}\left(z^{\prime}\right)$
+          \item $\text{arg}\left(z^{n}\right)=n\times \text{arg}\left(z\right)$
+          \item $\text{arg}\left(\frac{z}{z^{\prime}}\right)=\text{arg}\left(z\right)-\text{arg}\left(z^{\prime}\right)$
+     \end{itemize}
+     similaires aux propriétés de l'exponentielle qui justifient cette notation.
+}
+\bloc{orange}{Exemple}{% id="e200"
+     Le nombre $-1$ a pour module $1$ et pour argument $\pi   \left(\text{mod. } 2\pi \right)$. On peut donc écrire~:
+     \par
+     $-1=e^{i\pi }$ ou encore $e^{i\pi }+1=0$.
+     \par
+     C'est la célèbre \Lien{http://fr.wikipedia.org/wiki/Identit\%C3\%A9_d\%27Euler}{identité d'Euler} qui relie $0$, $1$, $e$, $i$ et $\pi $.
+}
+Les propriétés des arguments vues précédemment s'écrivent alors~:
+\cadre{vert}{Propriétés}{% id="p210"
+     Pour tous réels $\theta $ et $\theta ^{\prime}$~:
+     \begin{itemize}
+          \item $e^{i\theta }\times e^{i\theta ^{\prime}}=e^{i\left(\theta +\theta ^{\prime}\right)}$
+          \item $\left(e^{i\theta }\right)^{n}=e^{in\theta }$
+          \item $\frac{e^{i\theta }}{e^{i\theta ^{\prime}}}=e^{i\left(\theta -\theta ^{\prime}\right)}$.
+     \end{itemize}
+}
+\input{_footer}

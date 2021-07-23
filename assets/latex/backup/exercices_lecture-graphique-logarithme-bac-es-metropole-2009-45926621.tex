@@ -1,0 +1,246 @@
+\input{_header}
+\meta{url}{/exercices/lecture-graphique-logarithme-bac-es-metropole-2009/}
+\meta{pid}{1913}
+\meta{titre}{Logarithmes - Bac ES Métropole 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2\end{h2}
+\textit{5 points - Pour les candidats n'ayant pas suivi l'enseignement de spécialité}
+\par
+Soit $f$ une fonction définie et dérivable sur l'intervalle [- 2; 5], décroissante sur chacun des intervalles [-2;0] et [2; 5] et croissante sur l'intervalle [0;2].
+\par
+On note $f^{\prime}$ sa fonction dérivée sur l'intervalle [- 2; 5].
+\par
+La courbe $\left(\Gamma \right)$ représentative de la fonction $f$ est tracée en annexe 1 dans le plan muni d'un repère orthogonal.  Elle passe par les points A(- 2; 9), B(0; 4), C(1;4,5), D(2;5) et E(4; 0).
+\par
+En chacun des points B et D. la tangente à la courbe $\left(\Gamma \right)$ est parallèle à l'axe des abscisses.
+\par
+On note F le point de coordonnées (3;6).
+\par
+La droite (CF) est la tangente à la courbe $\left(\Gamma \right)$ au point C.
+
+\begin{center}
+\imgsvg{Bac-ES-2009-courbe}{0.3}% alt="Logarithmes - Bac ES Métropole 2009" style="width:50rem"
+\end{center}
+
+\begin{enumerate}
+     \item
+     À l'aide des informations précédentes et de l'annexe 1, préciser sans justifier :
+\begin{enumerate}[label=\alph*.]
+          \item
+          les valeurs de $f\left(0\right)$, $f^{\prime}\left(1\right)$ et $f^{\prime}\left(2\right)$.
+          \item
+          le signe de $f^{\prime}\left(x\right)$ suivant les valeurs du nombre réel $x$ de l'intervalle $\left[- 2; 5\right]$.
+          \item
+          le signe de $f\left(x\right)$ suivant les valeurs du nombre réel $x$ de l'intervalle $\left[- 2; 5\right]$.
+     \end{enumerate}
+     \item
+     On considère la fonction $g$ définie par $g\left(x\right)=\ln \left(f\left(x\right)\right)$  où $\ln$ désigne la fonction logarithme népérien.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Expliquer pourquoi la fonction $g$ est définie sur l'intervalle $\left[- 2; 4\right[$.
+          \item
+          Calculer $g\left(-2\right), g\left(0\right)$ et $g\left(2\right)$.
+          \item
+          Préciser, en le justifiant, le sens  de variations de la fonction $g$ sur l'intervalle $\left[- 2; 4\right[$.
+          \item
+          Déterminer la limite de la fonction $g$ lorsque $x$ tend vers 4.
+          \par
+          Interpréter ce résultat pour la représentation graphique de la fonction $g$.
+          \item
+          Dresser le tableau de variations de la fonction $g$.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $f\left(0\right)=4$
+               \par
+               $f^{\prime}\left(1\right)=\frac{3}{4}$
+               \par
+               $f^{\prime}\left(2\right)=0$
+               \item
+&nbsp;
+\\
+%##
+% type=table; width=45; c1=30
+%--
+% x|   -2  ~    0   ~   2  ~  5
+% f'(x)|  ~    -       :0     +  :0   -   ~
+%--
+\begin{center}
+ \begin{extern}%style="width:45rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (92*\width, -10*\height);
+       \draw (30*\width, 0*\height) -- (30*\width, -10*\height);
+       \node (l0c0) at (15*\width,-5*\height) {$ x $};
+       \node (l0c1) at (34*\width,-5*\height) {$ -2 $};
+       \node (l0c2) at (43*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (52*\width,-5*\height) {$ 0 $};
+       \node (l0c4) at (61*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (70*\width,-5*\height) {$ 2 $};
+       \node (l0c6) at (79*\width,-5*\height) {$ ~ $};
+       \node (l0c7) at (88*\width,-5*\height) {$ 5 $};
+       \draw (0, -20*\height) -- (92*\width, -20*\height);
+       \draw (30*\width, -10*\height) -- (30*\width, -20*\height);
+       \node (l1c0) at (15*\width,-15*\height) {$ f'(x) $};
+       \node (l1c1) at (34*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (43*\width,-15*\height) {$ - $};
+       \draw[light] (52*\width, -10*\height) -- (52*\width, -20*\height);
+       \node (l1c3) at (52*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (61*\width,-15*\height) {$ + $};
+       \draw[light] (70*\width, -10*\height) -- (70*\width, -20*\height);
+       \node (l1c5) at (70*\width,-15*\height) {$ 0 $};
+       \node (l1c6) at (79*\width,-15*\height) {$ - $};
+       \node (l1c7) at (88*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (92*\width, -20*\height);
+
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+&nbsp;
+\\
+%##
+% type=table; width=35; c1=30
+%--
+% x|   -2  ~    4  ~  5
+% f(x)|  ~     +  :0   -   ~
+%--
+\begin{center}
+ \begin{extern}%style="width:35rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (74*\width, -10*\height);
+       \draw (30*\width, 0*\height) -- (30*\width, -10*\height);
+       \node (l0c0) at (15*\width,-5*\height) {$ x $};
+       \node (l0c1) at (34*\width,-5*\height) {$ -2 $};
+       \node (l0c2) at (43*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (52*\width,-5*\height) {$ 4 $};
+       \node (l0c4) at (61*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (70*\width,-5*\height) {$ 5 $};
+       \draw (0, -20*\height) -- (74*\width, -20*\height);
+       \draw (30*\width, -10*\height) -- (30*\width, -20*\height);
+       \node (l1c0) at (15*\width,-15*\height) {$ f(x) $};
+       \node (l1c1) at (34*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (43*\width,-15*\height) {$ + $};
+       \draw[light] (52*\width, -10*\height) -- (52*\width, -20*\height);
+       \node (l1c3) at (52*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (61*\width,-15*\height) {$ - $};
+       \node (l1c5) at (70*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (74*\width, -20*\height);
+
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img src="/wp-content/uploads/t_a1a7f8e0dd8709e8ad5acfabf5088ff3.gif" alt="" class="aligncenter size-full  img-pc" />
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $g$ est définie si et seulement si $f\left(x\right) > 0$ donc si et seulement si $x\in \left[-2; 4\right[$
+               \item
+               $g\left(-2\right)=\ln\left(f\left(-2\right)\right)=\ln9=2\ln3$
+               \par
+               $g\left(0\right)=\ln\left(f\left(0\right)\right)=\ln4=2\ln2$
+               \par
+               $g\left(2\right)=\ln\left(f\left(2\right)\right)=\ln5$
+               \item
+               Sur [-2; 4[, par dérivation de fonctions composées:
+               \par
+               $g^{\prime}\left(x\right)=\frac{f^{\prime}\left(x\right)}{f\left(x\right)}$
+               \par
+               La fonction $f$ étant positive sur [-2; 4[ $g^{\prime}\left(x\right)$ est du signe de $f^{\prime}\left(x\right)$
+               \par
+               $g$ est donc strictement croissante sur [0; 2] et strictement décroissante sur [-2; 0] et sur [2;4[
+               \item
+               Lorsque x tend vers 4 (par valeurs inférieures) $f\left(x\right)$ tend vers 0 par valeurs supérieures.
+               \par
+               D'après le théorème de composition des limites pour les fonctions continues:
+               \par
+               $\lim\limits_{x\rightarrow 4}g\left(x\right)=\lim\limits_{x\rightarrow 4}\ln\left(f\left(x\right)\right)=-\infty $
+               \item
+&nbsp;
+\\
+%##
+% type=table; width=35; l3=20
+%--
+% x|   -2   ~    0   ~   2  ~   4 
+% g'(x)|  ~       -               :0             +   :0   -     ~
+% g(x)|  2\ln 3    \          :0              /   :5   \   -\infty
+%--
+\begin{center}
+ \begin{extern}%style="width:35rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (72*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ -2 $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ 0 $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ 2 $};
+       \node (l0c6) at (59*\width,-5*\height) {$ ~ $};
+       \node (l0c7) at (68*\width,-5*\height) {$ 4 $};
+       \draw (0, -20*\height) -- (72*\width, -20*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -20*\height);
+       \node (l1c0) at (5*\width,-15*\height) {$ g'(x) $};
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-15*\height) {$ - $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -20*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (41*\width,-15*\height) {$ + $};
+       \draw[light] (50*\width, -10*\height) -- (50*\width, -20*\height);
+       \node (l1c5) at (50*\width,-15*\height) {$ 0 $};
+       \node (l1c6) at (59*\width,-15*\height) {$ - $};
+       \node (l1c7) at (68*\width,-15*\height) {$ ~ $};
+       \draw (0, -40*\height) -- (72*\width, -40*\height);
+       \draw (10*\width, -20*\height) -- (10*\width, -40*\height);
+       \node (l2c0) at (5*\width,-30*\height) {$ g(x) $};
+       \node (l2c1) at (14*\width,-25*\height) {$ 2\ln 3 $};
+       \node (l2c2) at (23*\width,-30*\height) {$ ~ $};
+       \draw[light] (32*\width, -20*\height) -- (32*\width, -40*\height);
+       \node (l2c3) at (32*\width,-35*\height) {$ 0 $};
+       \node (l2c4) at (41*\width,-30*\height) {$ ~ $};
+       \draw[light] (50*\width, -20*\height) -- (50*\width, -40*\height);
+       \node (l2c5) at (50*\width,-25*\height) {$ 5 $};
+       \node (l2c6) at (59*\width,-30*\height) {$ ~ $};
+       \node (l2c7) at (68*\width,-35*\height) {$ -\infty $};
+       \draw (0, 0) rectangle (72*\width, -40*\height);
+       \draw[fleche] (l2c1) -- (l2c3);
+       \draw[fleche] (l2c3) -- (l2c5);
+       \draw[fleche] (l2c5) -- (l2c7);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img src="/wp-content/uploads/t_6e4ae5cbb7de177ef707dfa5ed3a042f.gif" alt="" class="aligncenter size-full  img-pc" />
+          \end{enumerate}
+     \end{enumerate}
+
+\end{corrige}
+\input{_footer}

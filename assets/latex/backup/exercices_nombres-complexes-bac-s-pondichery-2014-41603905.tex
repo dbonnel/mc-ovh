@@ -1,0 +1,182 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-bac-s-pondichery-2014/}
+\meta{pid}{1413}
+\meta{titre}{Nombres complexes - Bac S Pondichéry 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3   (5 points)\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+Le plan complexe est muni d'un repère orthonormé $\left(O; \vec{u}, \vec{v}\right)$.
+\par
+Pour tout entier naturel $n$, on note $A_{n}$ le point d'affixe $z_{n}$ défini par :
+\par
+$z_{0}=1$     et    $ z_{n+1}=\left(\frac{3}{4}+\frac{\sqrt{3}}{4}i\right)z_{n}$
+\par
+On définit la suite $\left(r_{n}\right)$ par $r_{n}=|z_{n}|$ pour tout entier naturel $n$.
+\begin{enumerate}
+     \item
+     Donner la forme exponentielle du nombre complexe $\frac{3}{4}+\frac{\sqrt{3}}{4}i$.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que la suite $\left(r_{n}\right)$ est géométrique de raison $\frac{\sqrt{3}}{2}$.
+          \item
+          En déduire l'expression de $r_{n}$ en fonction de $n$.
+          \item
+          Que dire de la longueur $OA_{n}$ lorsque $n$ tend vers $+ \infty $ ?
+     \end{enumerate}
+     \item
+     On considère l'algorithme suivant :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+          \hline
+          \textbf{Variables} &  $n$ entier naturel
+          \\ \hline
+          & $R$ réel
+          \\ \hline
+          & $P$ réel strictement positif
+          \\ \hline
+          \textbf{Entrée} &  Demander la valeur de $P$
+          \\ \hline
+          \textbf{Traitement}  & $R$ prend la valeur $1$
+          \\ \hline
+          & $n$ prend la valeur $0$
+          \\ \hline
+          & Tant que $R > P$
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span>$n$ prend la valeur $n+1$
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span>$R$ prend la valeur $\frac{\sqrt{3}}{2}R$
+          \\ \hline
+          & Fin tant que
+          \\ \hline
+          \textbf{Sortie}  & Afficher $n$
+          \\ \hline
+\end{tabularx}
+\begin{enumerate}[label=\alph*.]
+     \item
+     Quelle est la valeur affichée par l'algorithme pour $P=0,5$ ?
+     \item
+     Pour $P=0,01$ on obtient $n=33$. Quel est le rôle de cet algorithme ?
+\end{enumerate}
+\item
+\begin{enumerate}[label=\alph*.]
+     \item
+     Démontrer que le triangle $OA_{n}A_{n+1}$ est rectangle en $A_{n+1}$.
+     \item
+     On admet que $z_{n}=r_{n}e^{i\frac{n\pi }{6}}$.
+     \par
+     Déterminer les valeurs de $n$ pour lesquelles $A_{n}$ est un point de l'axe des ordonnées.
+     \item
+     Compléter la figure ci-dessous, à rendre avec la copie, en représentant les points $A_{6}, A_{7}, A_{8}$ et $A_{9}$.
+     \par
+     Les traits de construction seront apparents.
+\begin{center}
+\imgsvg{mc-0274}{0.3}% alt="Nombres complexes - Bac S Pondichéry 2014 corrigé" style="width:35rem" 
+\end{center}
+     <img src="/wp-content/uploads/mc-0260.png" alt="" class="aligncenter size-full  img-pc" />
+\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Soit $r$ le module de $\frac{3}{4}+\frac{\sqrt{3}}{4}i$ :
+          \par
+          $r^2=\left(\frac{3}{4}\right)^2+\left(\frac{\sqrt{3}}{4}\right)^2=\frac{12}{16}=\frac{3}{4}$
+          \par
+          Donc :
+          \par
+          $r=\frac{\sqrt{3}}{2}$
+          \par
+          $\frac{3}{4}+\frac{\sqrt{3}}{4}i=\frac{\sqrt{3}}{2}\left(\frac{\sqrt{3}}{2}+\frac{1}{2}i\right)$
+          \par
+          Si $\theta $ est un argument de  $\frac{3}{4}+\frac{\sqrt{3}}{4}i$ :
+          \par
+          $cos \theta  = \frac{\sqrt{3}}{2}$ et $\sin \theta  = \frac{1}{2}$ donc $\theta  = \frac{\pi }{6} + 2k\pi $.
+          \par
+          La forme exponentielle du nombre complexe $\frac{3}{4}+\frac{\sqrt{3}}{4}i$ est donc $\frac{\sqrt{3}}{2}e^{i\frac{\pi }{6}}$
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $ z_{n+1}=\left(\frac{3}{4}+\frac{\sqrt{3}}{4}i\right)z_{n}$ donc :
+               \par
+               $ |z_{n+1}|=\left|\frac{3}{4}+\frac{\sqrt{3}}{4}i\right|\times \left|z_{n}\right|$
+               \par
+               $r_{n+1}=\frac{\sqrt{3}}{2}r_{n}$
+               \par
+               La suite $\left(r_{n}\right)$ est donc une suite géométrique de raison $q=\frac{\sqrt{3}}{2}$ et de premier terme $r_{0}=|z_{0}|=1$.
+               \item
+               $r_{n}=r_{0}\times q^{n}=\left(\frac{\sqrt{3}}{2}\right)^{n}$
+               \item
+               $OA_{n}=r_{n}$.
+               \par
+               $\left(r_{n}\right)$ est une suite géométrique de raison $q=\frac{\sqrt{3}}{2}$. Comme $0 < q < 1$ la suite $\left(r_{n}\right)$ \textbf{converge vers 0} lorsque $n$ tend vers $+ \infty $ .
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Voici les valeurs prises par les variables lors de l'exécution pas à pas de l'algorithme pour $P=0,5$:
+               \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+                    \hline
+                    $     n     $  &  $     R     $  &  $     P     $  &  condition $R > P$
+                    \\ \hline
+                    0  &  1  &  0,5  &  Vraie
+                    \\ \hline
+                    1  &  0,866  &  0,5  &  Vraie
+                    \\ \hline
+                    2  &  0,75  &  0,5  &  Vraie
+                    \\ \hline
+                    3  &  0,6495  &  0,5  &  Vraie
+                    \\ \hline
+                    4  &  0,5625  &  0,5  &  Vraie
+                    \\ \hline
+                    5  &  0,487  &  0,5  &  Fausse
+                    \\ \hline
+               \end{tabularx}
+               A la fin,\textbf{ l'algorithme affiche la valeur $5$}.
+               \item
+               Cet algorithme affiche la plus petite valeur de $n$ telle que $OA_{n} \leqslant  P$.
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $OA_{n}=r_{n} ,  OA_{n+1}=r_{n+1}=\frac{\sqrt{3}}{2}r_{n}$ et :
+               \par
+               $A_{n}A_{n+1}= | z_{n+1}-z_{n} | = \left| \left(\frac{3}{4}+\frac{\sqrt{3}}{4}i\right)z_{n}-z_{n} \right|  = \left| \left(-\frac{1}{4} + \frac{\sqrt{3}}{4}i\right) z_{n} \right|$
+               \par
+               $A_{n}A_{n+1}= \left| \left(-\frac{1}{4} + \frac{\sqrt{3}}{4}i\right) \right| \times  r_{n} $
+               \par
+               Or :
+               \par
+               $\left| \left(-\frac{1}{4} + \frac{\sqrt{3}}{4}i\right) \right| ^{2} = \frac{1}{16}+\frac{3}{16}=\frac{1}{4}$
+               \par
+               donc $\left| \left(-\frac{1}{4} + \frac{\sqrt{3}}{4}i\right) \right| = \frac{1}{2}$ et $A_{n}A_{n+1}=\frac{1}{2}r_{n}$
+               \par
+               Finalement :
+               \par
+               $ OA_{n+1}^{2} + A_{n}A_{n+1}^{2} = \frac{3}{4}r_{n}^{2}+\frac{1}{4}r_{n}^{2} = r_{n}^{2} = OA_{n}^{2}$
+               \par
+               Donc, d'après la réciproque du théorème de Pythagore, le triangle $OA_{n}A_{n+1}$ est rectangle en $A_{n+1}$.
+               \item
+               $z_{n}=r_{n} \left(\cos\frac{n\pi }{6}+i \sin\frac{n\pi }{6}\right)$
+               \par
+               Le point $A_{n}$ appartient à l'axe des ordonnées si et seulement si $\cos\frac{n\pi }{6} = 0$, c'est à dire $\frac{n\pi }{6}=\frac{\pi }{2}+2k\pi $ ou $n\frac{\pi }{6}=\left(3\frac{\pi }{2}\right)+2k\pi $ ou encore $\frac{n\pi }{6}=\frac{\pi }{2} + k\pi $ avec $k \in  \mathbb{Z}$
+               \par
+               Or :
+               \par
+               $\frac{n\pi }{6}=\frac{\pi }{2} + k\pi   \Leftrightarrow  \left(n\pi \right)=3\pi  + 6k\pi    \Leftrightarrow  n= 3 + 6k$  (avec $k \in  \mathbb{Z}$)
+               \par
+               Comme $n\geqslant 0$, $k$ doit être positif ou nul (donc appartenir à $\mathbb{N}$).
+               \par
+               Les valeurs de $n$  pour lesquelles $A_{n}$ est un point de l'axe des ordonnées sont donc
+               \par
+               $n= 3 + 6k$  avec $k \in  \mathbb{N}$ (soit $n = 3, 9, 15, 21,$ etc.).
+               \item
+
+\begin{center}
+\imgsvg{mc-0274}{0.3}% alt="Nombres complexes - Bac S Pondichéry 2014 corrigé" style="width:35rem" 
+\end{center}
+               Pour la construction (à l'équerre ou au compas) on utilise le fait que les triangles $OA_{n}A_{n+1}$ sont rectangles en $A_{n+1}$.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

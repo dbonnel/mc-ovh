@@ -1,0 +1,185 @@
+\input{_header}
+\meta{url}{/exercices/statistiques-regroupement-en-classes/}
+\meta{pid}{6949}
+\meta{titre}{Statistiques~: Regroupement en classes}
+\meta{type}{exercices}
+
+\par
+Le tableau ci-dessous (source INSEE) présente la répartition par âge de la population française métropolitaine au $1^\text{er}$ janvier 2018
+\textit{(L'âge révolu est l'âge de la personne à son dernier anniversaire).}
+\par
+\`A cette date, la doyenne des français était âgée de 113 ans.
+\begin{center}
+     \begin{tabular}{|c|c|c|}\hline %class="compact"
+          Âge révolu  &  Effectifs  & Effectifs cumulés croissants \\ \hline
+          0  &  691 165  &  691 165 \\ \hline
+          1  &  710 534  &  1 401 699 \\ \hline
+          2  &  728 579  &  2 130 278 \\ \hline
+          3  &  749 270  &  2 879 548 \\ \hline
+          4  &  763 228  &  3 642 776 \\ \hline
+          5  &  782 484  &  4 425 260 \\ \hline
+          6  &  792 558  &  5 217 818 \\ \hline
+          7  &  813 001  &  6 030 819 \\ \hline
+          8  &  808 393  &  6 839 212 \\ \hline
+          9  &  813 680  &  7 652 892 \\ \hline
+          10  &  807 548  &  8 460 440 \\ \hline
+          11  &  822 302  &  9 282 742 \\ \hline
+          12  &  802 674  &  10 085 416 \\ \hline
+          13  &  800 480  &  10 885 896 \\ \hline
+          14  &  796 320  &  11 682 216 \\ \hline
+          15  &  800 560  &  12 482 776 \\ \hline
+          16  &  816 021  &  13 298 797 \\ \hline
+          17  &  828 193  &  14 126 990 \\ \hline
+          18  &  785 471  &  14 912 461 \\ \hline
+          19  &  775 524  &  15 687 985 \\ \hline
+          20  &  750 885  &  16 438 870 \\ \hline
+          21  &  751 084  &  17 189 954 \\ \hline
+          22  &  734 838  &  17 924 792 \\ \hline
+          23  &  705 808  &  18 630 600 \\ \hline
+          24  &  698 780  &  19 329 380 \\ \hline
+          25  &  732 693  &  20 062 073 \\ \hline
+          26  &  742 199  &  20 804 272 \\ \hline
+          27  &  758 458  &  21 562 730 \\ \hline
+          28  &  763 258  &  22 325 988 \\ \hline
+          29  &  774 435  &  23 100 423 \\ \hline
+          30  &  778 738  &  23 879 161 \\ \hline
+          31  &  793 507  &  24 672 668 \\ \hline
+          32  &  794 025  &  25 466 693 \\ \hline
+          33  &  789 604  &  26 256 297 \\ \hline
+          34  &  781 093  &  27 037 390 \\ \hline
+     \end{tabular}
+\end{center}
+\newpage
+\begin{center}
+     \begin{tabular}{|c|c|c|}\hline %class="compact"
+         Âge révolu  & Effectifs &  Effectifs cumulés croissants \\ \hline
+          35  &  829 365  &  27 866 755 \\ \hline
+          36  &  837 426  &  28 704 181 \\ \hline
+          37  &  849 108  &  29 553 289 \\ \hline
+          38  &  804 184  &  30 357 473 \\ \hline
+          39  &  788 264  &  31 145 737 \\ \hline
+          40  &  794 640  &  31 940 377 \\ \hline
+          41  &  773 344  &  32 713 721 \\ \hline
+          42  &  793 019  &  33 506 740 \\ \hline
+          43  &  836 502  &  34 343 242 \\ \hline
+          44  &  885 498  &  35 228 740 \\ \hline
+          45  &  903 921  &  36 132 661 \\ \hline
+          46  &  897 885  &  37 030 546 \\ \hline
+          47  &  881 680  &  37 912 226 \\ \hline
+          48  &  868 783  &  38 781 009 \\ \hline
+          49  &  860 664  &  39 641 673 \\ \hline
+          50  &  856 564  &  40 498 237 \\ \hline
+          51  &  873 805  &  41 372 042 \\ \hline
+          52  &  875 149  &  42 247 191 \\ \hline
+          53  &  884 018  &  43 131 209 \\ \hline
+          54  &  874 390  &  44 005 599 \\ \hline
+          55  &  842 410  &  44 848 009 \\ \hline
+          56  &  844 453  &  45 692 462 \\ \hline
+          57  &  840 074  &  46 532 536 \\ \hline
+          58  &  833 430  &  47 365 966 \\ \hline
+          59  &  813 824  &  48 179 790 \\ \hline
+          60  &  809 540  &  48 989 330 \\ \hline
+          61  &  801 271  &  49 790 601 \\ \hline
+          62  &  790 864  &  50 581 465 \\ \hline
+          63  &  788 149  &  51 369 614 \\ \hline
+          64  &  769 877  &  52 139 491 \\ \hline
+          65  &  780 203  &  52 919 694 \\ \hline
+          66  &  760 764  &  53 680 458 \\ \hline
+          67  &  788 609  &  54 469 067 \\ \hline
+          68  &  771 267  &  55 240 334 \\ \hline
+          69  &  763 386  &  56 003 720 \\ \hline
+     \end{tabular}
+\end{center}
+\newpage
+\begin{center}
+     \begin{tabular}{|c|c|c|}\hline %class="compact"
+         Âge révolu  & Effectifs  &  Effectifs cumulés croissants \\ \hline
+          70  &  746 205  &  56 749 925 \\ \hline
+          71  &  703 078  &  57 453 003 \\ \hline
+          72  &  526 166  &  57 979 169 \\ \hline
+          73  &  510 477  &  58 489 646 \\ \hline
+          74  &  493 523  &  58 983 169 \\ \hline
+          75  &  452 195  &  59 435 364 \\ \hline
+          76  &  399 640  &  59 835 004 \\ \hline
+          77  &  410 887  &  60 245 891 \\ \hline
+          78  &  424 148  &  60 670 039 \\ \hline
+          79  &  410 734  &  61 080 773 \\ \hline
+          80  &  394 185  &  61 474 958 \\ \hline
+          81  &  385 845  &  61 860 803 \\ \hline
+          82  &  365 057  &  62 225 860 \\ \hline
+          83  &  356 869  &  62 582 729 \\ \hline
+          84  &  327 225  &  62 909 954 \\ \hline
+          85  &  319 458  &  63 229 412 \\ \hline
+          86  &  290 749  &  63 520 161 \\ \hline
+          87  &  268 489  &  63 788 650 \\ \hline
+          88  &  227 255  &  64 015 905 \\ \hline
+          89  &  201 758  &  64 217 663 \\ \hline
+          90  &  171 893  &  64 389 556 \\ \hline
+          91  &  147 011  &  64 536 567 \\ \hline
+          92  &  123 524  &  64 660 091 \\ \hline
+          93  &  98 697  &  64 758 788 \\ \hline
+          94  &  78 283  &  64 837 071 \\ \hline
+          95  &  61 359  &  64 898 430 \\ \hline
+          96  &  46 186  &  64 944 616 \\ \hline
+          97  &  34 225  &  64 978 841 \\ \hline
+          98  &  14 599  &  64 993 440 \\ \hline
+          99  &  8 401  &  65 001 841 \\ \hline
+          100  &  5 174  &  65 007 015 \\ \hline
+          101  &  3 135  &  65 010 150 \\ \hline
+          102  &  2 297  &  65 012 447 \\ \hline
+          103  &  2 281  &  65 014 728 \\ \hline
+          104  &  1 208  &  65 015 936 \\ \hline
+          105 ou plus  &  2 160  &  65 018 096 \\ \hline
+         Total &  65 018 096 &\\ \hline
+     \end{tabular}
+     \textbf{Tableau A}
+\end{center}
+
+
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+%
+%============================================================================================================================
+\begin{enumerate}
+     \item %1
+     Quel sont le mode et l'étendue de cette série statistique~?
+     \item %2
+     Calculer le pourcentage de personnes mineures (c'est à dire ayant un âge révolu inférieur ou égal à 17 ans) en métropole au $1^\text{er}$ janvier 2018.
+     \item %3
+     Déterminer la médiane ainsi que les premier et troisième quartiles de cette série.
+     \item %4
+     Représenter cette série par un diagramme en boîte.
+\end{enumerate}
+%============================================================================================================================
+%
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+%============================================================================================================================
+\par
+Le tableau \textbf{A} comporte trop de lignes pour être facilement exploitable.
+\par
+On décide donc de regrouper ces résultats en classes d'amplitude 10 ans (à l'exception de la dernière).
+\par
+On obtient alors le tableau suivant~:
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|c|c|}\hline %class="compact left"
+        Classes d'âge & [0~;~10[ & [10~;~20[ & [20~;~30[ & [30~;~40[ & [40~;~50[ & [50~;~60[\\ \hline
+          \textbf{Effectifs} & 7~652~892  &  8~035~093  &  7~412~438  &  8~045~314  &  8~495~936 &  8~538~117   \\ \hline
+          \textbf{E.C.C} & 7~652~892  &  15~687~985  &  23~100~423  &  31~145~737  &  39~641~673  &  48~179~790  \\ \hline
+          \textbf{Classes d'âge} &[60~;~70[ & [70~;~80[ & [80~;~90[ & [90~;~100[ & [100~;~114[ \\ \hline
+          \textbf{Effectifs} & 7~823~930  &  5~077~053  &  3~136~890  &  784~178  &  16~255 \\ \hline
+          \textbf{E.C.C} & 56~003~720  &  61~080~773  &  64~217~663  &  65~001~841  &  65~018~096 \\ \hline
+     \end{tabular}
+     \textbf{Tableau B}
+\end{center}
+\bigskip
+\begin{enumerate}
+     \item %1
+     Expliquer comment, à partir du tableau \textbf{A}, on a obtenu le tableau \textbf{B}.
+     \item %2
+     Calculer la moyenne de cette série en utilisant le tableau \textbf{B}.
+     \item %3
+     Tracer le graphique des effectifs cumulés croissants en choisissant une échelle appropriée.
+     \item %4
+     \`A l'aide du graphique de la question précédente, déterminer des valeurs approchées à l'unité près de la médiane et des premier et troisième quartiles.\\
+     Comparer ce résultat à celui de la question \textbf{3.} de la partie A.
+\end{enumerate}
+\input{_footer}

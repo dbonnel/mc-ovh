@@ -1,0 +1,76 @@
+\input{_header}
+\meta{url}{/exercices/fonction-logarithme-bac-s-pondichery-2016/}
+\meta{pid}{4080}
+\meta{titre}{Fonction logarithme – Bac S Pondichéry 2016}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 -  3 points\end{h2}
+\textbf{Commun  à tous les candidats}
+\par
+Soit $f$ la fonction définie sur $]0~;~14]$ par
+\begin{center}$f(x) = 2-\ln\left(\dfrac{x}{2}\right).$\end{center}
+La courbe représentative $\mathscr{C}_f$ de la fonction $f$ est donnée dans le repère orthogonal d'origine O ci-dessous :
+
+\begin{center}
+\imgsvg{fonction-logarithme-bac-s-pondichery-2016-1}{0.3}% alt="fonction-logarithme" style="width:50rem" 
+\end{center}
+À tout point $M$ appartenant à $\mathscr{C}_f$ on associe le point $P$ projeté orthogonal de $M$ sur l'axe des abscisses, et le point $Q$ projeté orthogonal de $M$ sur l'axe des ordonnées.
+\begin{itemize}
+     \item
+     L'aire du rectangle $OPMQ$ est-elle constante quelle que soit la position du point $M$ sur $\mathscr{C}_f$ ?
+     \item
+     L'aire du rectangle $OPMQ$ peut-elle être maximale ?
+     \par
+     Si oui, préciser les coordonnées du point $M$ correspondant.
+\end{itemize}
+Justifier les réponses.
+\begin{corrige}
+     Notons $x$ l'abscisse du point $M$.$x$ est positif donc $OP=x$.
+     \par
+     Le point $M$ appartient à la courbe $\mathscr C_f$; son ordonnée est donc $f(x)$. Comme $f$ est positive sur $]0~;~14]$, $OQ=f(x)$.
+     \par
+     L'aire du rectangle $OPMQ$ est donc :
+     \par
+     $\mathscr A(x)=OP \times OQ $$=x \times f(x) = 2x-x\ln \left(\frac{x}{2}\right)$
+     \par
+     Cette aire n'est pas constante.
+     \par
+     La fonction $\mathscr A$ est dérivable sur $]0~;~14]$ :
+     \par
+     $\left(\ln \left(\frac{x}{2}\right) \right) ^{\prime} = \frac{\frac{1}{2}}{\frac{x}{2}}=\frac{1}{x}$
+     \par
+     $\left(x\ln \left(\frac{x}{2}\right) \right) ^{\prime} =  \ln \left(\frac{x}{2}\right) + x \times \frac{1}{x} = 1 + \ln \left(\frac{x}{2}\right) $
+     \par
+     ~
+     \par
+     $\mathscr A^{\prime}(x)=2-\left[1 +  \ln \left(\frac{x}{2}\right)\right]=1-\ln \left(\frac{x}{2}\right)$
+     \par
+     Etudions le signe de $\mathscr A^{\prime}(x)$ :
+     \par
+     $\mathscr A^{\prime}(x)  >  0 \ \Leftrightarrow \ 1-\ln \left(\frac{x}{2}\right)  >  0$
+     \par
+     $\phantom{\mathscr A^{\prime}(x)  >  0 \ }\Leftrightarrow \ \ln \left(\frac{x}{2}\right)  <  1$
+     \par
+     $\phantom{\mathscr A^{\prime}(x)  >  0 \ }\Leftrightarrow \ \frac{x}{2}  <  e$ (par croissance de la fonction exponentielle)
+     \par
+     $\phantom{\mathscr A^{\prime}(x)  >  0 \ }\Leftrightarrow \ x  <  2e$
+     \par
+     On démontre de même que $\mathscr A^{\prime}(x)  <  0 \ \Leftrightarrow \ x  >  2e$ et $\mathscr A^{\prime}(x)  =  0 \ \Leftrightarrow \ x  =  2e$.
+     \par
+     Par ailleurs :
+     \par
+     $f(2e)=2-\ln\left(\frac{2e}{2}\right)=2-\ln(e)=2-1=1$
+     \par
+     et $\mathscr A(2e)=2e \times f(2e)=2e$
+     \par
+     On obtient le tableau de variations suivant :
+
+\begin{center}
+
+\imgsvg{fonction-logarithme-bac-s-pondichery-2016-2.svg}{0.3}% alt="tableau de variations" style="width:30rem"
+
+\end{center}
+    
+     D'après ce tableau, l'aire du rectangle $OPMQ$ est maximale au point $M$ de coordonnées $(2e~;~f(2e))$ c'est à dire $M(2e~;~1)$.
+\end{corrige}
+\input{_footer}

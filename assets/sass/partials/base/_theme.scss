@@ -1,0 +1,240 @@
+// Titre page
+.headline {
+    display: block;
+    border-bottom: 1px solid $gray-400;
+    margin: 3rem 0;
+
+    h1 {
+        display: inline-block;
+        border-bottom: 2px solid $secondary;
+        padding-bottom: 0.5rem;
+        margin-bottom: -2px;
+    }
+}
+
+article.content {
+    font-family: Libre Baskerville, Times New Roman, serif;
+    font-size: 1.1em;
+    letter-spacing: -0.01em;
+}
+
+// ol.question>li {
+//     padding-left: 1.2rem;
+// }
+
+ol,
+ul,
+.quote-caption {
+    margin: 1rem 0;
+}
+
+ol>li {
+    list-style-type: decimal;
+}
+
+ol ol,
+ul ul {
+    margin-bottom: 0;
+}
+
+ol li {
+    margin: 0.6em 0 0.6em 1.5em;
+    padding: 0 0 0 0.2em;
+}
+
+ol.question-alpha>li {
+    list-style-type: lower-alpha;
+    margin: 0.5em 0 0.5em 1.2em;
+}
+
+ol.question,
+ol.question-alpha {
+    list-style: none;
+    counter-reset: li;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+p.item {
+    display: inline;
+}
+
+li>p, li>div, p.item {
+    font-weight: normal;
+}
+
+.sommaire-chapitre {
+    margin: 4rem 0;
+    background-color: $gray-100;
+    padding: 3rem 4rem 1rem;
+    border: 1px solid $gray-300;
+    border-left: 2px solid $secondary;
+    box-shadow: 0 1rem .6rem -.6rem $gray-400;
+}
+
+.sommaire-fiche .sommaire-chapitre {
+    border: 1px solid $gray-300;
+    border-top: 1px solid $secondary;
+}
+
+.related {
+    ul {
+        margin: 1rem 0 2.4rem 0;
+        list-style-type: none;
+    }
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.cadre,
+.note {
+    border: 1px solid #ccc;
+    margin: 2.5rem 0;
+    padding: 2rem 3.5rem;
+}
+
+.cadre h3 {
+    font-size: 1.4rem;
+}
+
+.bloc h3 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.cadre-bleu,
+.note-bleu {
+    border-left: 2px solid $blue;
+}
+
+.cadre-bleu h3 {
+    color: $blue;
+}
+
+.cadre-vert,
+.note-vert {
+    border-left: 2px solid $green;
+}
+
+.cadre-vert h3 {
+    color: $green;
+}
+
+.cadre-rouge,
+.note-rouge {
+    border-left: 2px solid $red;
+}
+
+.cadre-rouge h3 {
+    color: $red;
+}
+
+.bloc-orange h3,
+.bloc-rouge h3 {
+    color: $orange;
+}
+
+.bloc-cyan h3,
+.bloc-mauve h3 {
+    color: $pink;
+}
+
+.bloc-vert h3,
+.bloc-turquoise h3 {
+    color: #20c997;
+}
+
+.bloc-bleu h3 {
+    color: $blue;
+}
+
+ul.no-puce>li {
+    padding: 0;
+    background: none;
+}
+
+ul.dot>li {
+    margin: 0 0 0 1.5rem;
+
+    &>p.item:before {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 7.2 7.2' stroke-width='.75'%3E%3Ccircle cx='3.58' cy='3.67' r='3.2' fill='%23f9f9f9' stroke='%238ba9a2'/%3E%3Ccircle cx='4.08' cy='3.87' r='2.3' fill='%2389939f' stroke='%23869e95'/%3E%3C/svg%3E");
+        width: .7rem;
+        height: .7rem;
+        margin: 0 0.5rem 0 -1.5rem;
+        display: inline-block;
+    }
+}
+
+pre.language-python {
+    background-color: $gray-100;
+    font-size: .9em;
+    border: 1px solid $gray-400;
+    margin: 2rem 0;
+}
+
+code.language-python {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sans-serif {
+    font-size: .9em;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.minbox {
+    display: inline-block;
+    padding: 0 1em;
+    border: 1px solid #333;
+}
+
+.volet {
+    h2 {
+
+        border-bottom: 0px none;
+        border-top: 1px solid #ccc;
+        padding: 3rem 0 1.2rem 0;
+        margin: 3rem 0 0 0;
+        display: block !important;
+
+        a {
+            color: #333;
+            font-size: 2.4rem;
+            padding-right: 3.5rem;
+            border: none;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Calque_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 181 197' %3E%3Cpath fill='%237dc246' d='M9.1,196.3C9.2,130.9,8.9,65.4,9.3,0c46.9,27.9,93.2,57,139.9,85.3c6.8,4.2,13.6,8.1,20.2,12.7 C116,130.9,62.4,163.4,9.1,196.3z'/%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: 20% 45%;
+            display: inline-block !important;
+
+        }
+
+    }
+
+    div {
+        transform: scaleY(0);
+        transform-origin: top;
+        position: absolute;
+        transition: all .3s linear;
+        overflow: hidden;
+    }
+
+}
+
+#text-content .volet,
+.volet.volet-open {
+    h2 a {
+        background-image: url("data:image/svg+xml,%3Csvg version='1.1' viewBox='0 0 206 174' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5.08 8.97c65.43 0.16 130.86-0.19 196.29 0.18-27.94 46.93-57.01 93.19-85.32 139.9-4.19 6.75-8.14 13.65-12.65 20.2-32.88-53.36-65.4-106.95-98.32-160.28z' fill='%237dc246'/%3E%3C/svg%3E");
+    }
+
+    div {
+        transform: scaleY(1);
+        position: relative;
+
+    }
+}

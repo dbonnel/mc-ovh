@@ -1,0 +1,202 @@
+\input{_header}
+\begin{h2}I - Suites arithmétiques\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     On dit qu'une suite $\left(u_{n}\right)$ est une \textbf{suite arithmétique} s'il existe un nombre $r$ tel que :
+     \par
+     pour tout $n\in \mathbb{N}$,  $u_{n+1}=u_{n}+r$
+     \par
+     Le réel $r$ s'appelle la \textbf{raison} de la suite arithmétique.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     Pour démontrer qu'une suite $\left(u_{n}\right)_{n\in \mathbb{N}}$ est arithmétique, on pourra calculer la différence $u_{n+1}-u_{n}$.
+     \par
+     Si on constate que la différence est une constante $r$, on pourra affirmer que la suite est arithmétique de raison $r$.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     Soit la suite $\left(u_{n}\right)$ définie par $u_{n}=3n+5$.
+     \par
+     $u_{n+1}-u_{n}=3\left(n+1\right)+5-\left(3n+5\right)=3$
+     \par
+     La suite $\left(u_{n}\right)$ est une suite arithmétique de raison $r=3$
+}
+\cadre{vert}{Propriété}{% id="p20"
+     Pour $n$ et $k$ quelconques entiers naturels, si la suite $\left(u_{n}\right)$ est arithmétique de raison $r$ alors \begin{center}$u_{n}=u_{k}+\left(n-k\right)\times r$\end{center}
+     En particulier pour $k=0$ :
+     \begin{center}$u_{n}=u_{0}+n\times r$\end{center}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Soit $\left(u_{n}\right)$ la suite arithmétique de premier terme $u_{0}=500$ et de raison $r=3$.
+     \par
+     La formule précédente permet de calculer directement $u_{100}$ (par exemple) :
+     \par
+     $u_{100}=u_{0}+100\times r=500+100\times 3=800$
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Réciproquement, si $a$ et $b$ sont deux nombres réels et si la suite $\left(u_{n}\right)$ est définie par $u_{n}=a\times n+b$ alors cette suite est une suite arithmétique de raison $r=a$ et de premier terme $u_{0}=b$.
+}
+\bloc{cyan}{Démonstration}{% id="m30"
+     $u_{n+1}-u_{n}=a\left(n+1\right)+b-\left(an+b\right)=an+a+b-an-b=a$
+     \par
+     et
+     \par
+     $u_{0}=a\times 0+b=b$
+}
+\cadre{vert}{Propriété}{% id="p40"
+     Les points de coordonnées $\left(n; u_{n}\right)$ représentant une suite arithmétique $\left(u_{n}\right)$ sont \textbf{alignés}.
+}
+\bloc{orange}{Exemple}{% id="e40"
+     Le graphique ci-dessous représente les premiers termes de la suite arithmétique de raison $r=0,5$ et de premier terme $u_{0}=-1$.
+ \begin{center}
+     \begin{extern}%width="300" alt="suite arithmétique de raison positive"
+          % -+-+-+ variables modifiables
+          \resizebox{7cm}{!}{%
+          \def\fonction{0.5*x-1}
+               \def\xmin{-0.8}
+               \def\xmax{7.5}
+               \def\ymin{-1.8}
+               \def\ymax{4.8}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+          \newrgbcolor{lightblue}{0.8 0.8 1}
+                    \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.2,-0.3){$O$}    
+                    \psplot[plotpoints=1000,linecolor=lightblue]{\xmin}{\xmax}{\fonction}                 
+                          \psdots[linecolor=blue](0,-1) \psdots[linecolor=blue](1,-0.5) \psdots[linecolor=blue](2,0) \psdots[linecolor=blue](3,0.5) \psdots[linecolor=blue](4,1)
+                          \psdots[linecolor=blue](5,1.5) \psdots[linecolor=blue](6,2) \psdots[linecolor=blue](7,2.5)                          
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Suite arithmétique de raison $r=0,5$ et de premier terme $u_{0}=-1$}
+\end{center}}
+\cadre{rouge}{Théorème}{% id="t40"
+     Soit $\left(u_{n}\right)$ une suite arithmétique de raison $r$ :
+     \begin{itemize}
+          \item si $r > 0$ alors $\left(u_{n}\right)$ est strictement croissante
+          \item si $r=0$ alors $\left(u_{n}\right)$ est constante
+          \item si $r < 0$ alors $\left(u_{n}\right)$ est strictement décroissante.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e40"
+     \begin{itemize}
+          \item Le graphique de la partie II (ci-dessus) représente les premiers termes d'une suite arithmétique de raison $r=0,5$ \textbf{positive}. Cette suite est \textbf{croissante}.
+          \item Le graphique ci-dessous représente les premiers termes d'une suite arithmétique de raison $r=-1$ \textbf{négative}. Cette suite est \textbf{décroissante}.
+ \begin{center}
+     \begin{extern}%width="300" alt="suite arithmétique de raison négative"
+          % -+-+-+ variables modifiables
+          \resizebox{7cm}{!}{%
+          \def\fonction{-x+3}
+               \def\xmin{-0.8}
+               \def\xmax{7.5}
+               \def\ymin{-4.8}
+               \def\ymax{4.8}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+          \newrgbcolor{lightred}{1 0.8 0.8}
+                    \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.2,-0.3){$O$}    
+                    \psplot[plotpoints=1000,linecolor=lightred]{\xmin}{\xmax}{\fonction}                 
+                          \psdots[linecolor=red](0,3) \psdots[linecolor=red](1,2) \psdots[linecolor=red](2,1) \psdots[linecolor=red](3,0) \psdots[linecolor=red](4,-1)
+                          \psdots[linecolor=red](5,-2) \psdots[linecolor=red](6,-3) \psdots[linecolor=red](7,-4)                          
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Suite arithmétique de raison $r=-1$ et de premier terme $u_{0}=3$}
+\end{center}
+     \end{itemize}
+}
+\begin{h2}II - Suites géométriques\end{h2}
+\cadre{bleu}{Définition}{% id="d60"
+     On dit qu'une suite $\left(u_{n}\right)$ est une \textbf{suite géométrique} s'il existe un nombre réel $q$ tel que, pour tout $n \in  \mathbb{N}$ :
+     \begin{center}$u_{n+1}=q \times  u_{n}$\end{center}
+     Le réel $q$ s'appelle la \textbf{raison} de la suite géométrique $\left(u_{n}\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r60"
+     Pour démontrer qu'une suite $\left(u_{n}\right)$ dont les termes sont \textbf{non nuls} est une suite géométrique, on pourra calculer le rapport $\frac{u_{n+1}}{u_{n}}$.
+     \par
+     Si ce rapport est une constante $q$, on pourra affirmer que la suite est une suite géométrique de raison $q$.
+}
+\bloc{orange}{Exemple}{% id="e60"
+\boite{gray}{Bien revoir les règles de calcul sur les puissances qui servent énormément pour les suites géométriques}
+\par
+Soit la suite $\left(u_{n}\right)$ définie par $u_{n}=\frac{3}{2^{n}}$.
+\par
+Les termes de la suite sont tous strictement positifs et
+\par
+$\frac{u_{n+1}}{u_{n}}=$$\frac{3}{2^{n+1}}\times \frac{2^{n}}{3}=\frac{2^{n}}{2^{n+1}}=$$\frac{2^{n}}{2\times 2^{n}}=\frac{1}{2}$
+\par
+La suite $\left(u_{n}\right)$ est une suite géométrique de raison $\frac{1}{2}$
+}
+\cadre{vert}{Propriété}{% id="p70"
+     Pour $n$ et $k$ quelconques entiers naturels, si la suite $\left(u_{n}\right)$ est géométrique de raison $q$ \begin{center}$u_{n}=u_{k}\times q^{n-k}$.\end{center}
+     En particulier pour $k=0$
+     \begin{center} $u_{n}=u_{0}\times q^{n}$.\end{center}
+}
+\cadre{vert}{Propriété}{% id="p80"
+     Réciproquement, soient $a$ et $b$ deux nombres réels. La suite $\left(u_{n}\right)$ définie par $u_{n}=a\times b^{n}$ suite est une suite géométrique de raison $q=b$ et de premier terme $u_{0}=a$.
+}
+\bloc{cyan}{Démonstration}{% id="m80"
+     $u_{n+1}=a\times b^{n+1}=a\times b^{n}\times b=u_{n}\times b$
+     \par
+     $\left(u_{n}\right)$ est donc une suite géométrique de raison $q$.
+     \par
+     Le premier terme est
+     \par
+     $u_{0}=a\times b^{0}=a\times 1=a$
+}
+\cadre{rouge}{Théorème}{% id="t90"
+     Soit $\left(u_{n}\right) $une suite géométrique de raison $q  > 0$ et de premier terme strictement positif :
+     \begin{itemize}
+          \item Si $q > 1$, la suite $\left(u_{n}\right) $est strictement croissante
+          \item Si $0 < q < 1$, la suite $\left(u_{n}\right) $est strictement décroissante
+          \item Si $q=1$, la suite $\left(u_{n}\right) $est constante
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e90"
+\begin{center}
+     \begin{extern}%width="500" alt="Suites géométriques et raison"
+          \begin{tabular}{c c c}
+               \resizebox{5.5cm}{!}{%
+                      \def\xmin{-0.8}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.8}
+                    \def\ymax{5.5}
+                 \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.2,-0.3){$O$}    
+                      \psdots[linecolor=blue](0,1) \psdots[linecolor=blue](1,1.5) \psdots[linecolor=blue](2,2.25) \psdots[linecolor=blue](3,3.375) \psdots[linecolor=blue](4,5.063)
+               \end{pspicture*}
+          }        
+               & ~~~~ &%
+              \resizebox{5.5cm}{!}{%
+                     \def\xmin{-0.8}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.8}
+                    \def\ymax{5.5}
+                 \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                          \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.2,-0.3){$O$}    
+                      \psdots[linecolor=blue](0,3) \psdots[linecolor=blue](1,1.5) \psdots[linecolor=blue](2,0.75) \psdots[linecolor=blue](3,0.375) \psdots[linecolor=blue](4,0.188)
+               \end{pspicture*}
+          }
+               \\
+               Figure 1 & ~~~~ & Figure 2 %
+               \\
+          \end{tabular}
+     \end{extern}
+\end{center}
+     \begin{itemize}
+          \item La figure 1 représente une suite géométrique  de raison $q=1,5 > 1$
+          \item La figure 2 représente une suite géométrique de raison $q=0,5 < 1$
+     \end{itemize}
+}
+\input{_footer}

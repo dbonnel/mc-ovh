@@ -1,0 +1,185 @@
+\input{_header}
+\meta{url}{/exercices/graphes-bac-blanc-es-l-sujet-3-maths-cours-2018-spe/}
+\meta{pid}{10479}
+\meta{titre}{Graphes - Bac blanc ES/L Sujet 3 - Maths-cours 2018 (spé)}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\par
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\par
+\emph{Pour chacune des cinq affirmations suivantes, indiquer si elle est vraie ou fausse en justifiant la réponse.
+\par Il est attribué un point par réponse exacte correctement justifiée.
+\par
+\textbf{Une réponse non justifiée n'est pas prise en compte.}
+}
+\par
+On modélise le plan d'un village à l'aide du graphe (G) ci-dessous :
+\par
+\begin{center}
+     \begin{extern}%width="350" alt="modélisation à l'aide d'un graphe"
+          \psset{unit=0.7cm}
+          \begin{pspicture}(12,8)
+               \rput(0.75,7.5){\circlenode{A}{A}}
+               \rput(7.2,7.5){\circlenode{B}{B}}
+               \rput(11.3,5.5){\circlenode{C}{C}}
+               \rput(10.3,2){\circlenode{D}{D}}
+               \rput(0.3,2.7){\circlenode{E}{E}}
+               \rput(6.7,4.3){\circlenode{F}{F}}
+               \ncline{A}{B}
+               \ncline{A}{E}
+               \ncline{B}{E}
+               \ncline{B}{C}
+               \ncline{B}{D}
+               \ncline{B}{F}
+               \ncline{C}{D}
+               \ncline{D}{E}
+               \ncline{D}{F}
+               \ncline{E}{F}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+\par
+Les sommets du graphe (G) représentent les carrefours et les arêtes du graphe schématisent les routes reliant ces carrefours.
+\par
+\begin{itemize}
+     \item %1
+     \textbf{Affirmation 1 :}\quad Le graphe (G) est connexe.
+     \item %2
+     \textbf{Affirmation 2 :}\quad Le graphe (G) contient un sous-graphe complet d'ordre 4.
+     \item %3
+     \textbf{Affirmation 3 :}\quad Une personne peut parcourir toutes les routes du village sans emprunter plusieurs fois la même route.
+     \item %4
+     \textbf{Affirmation 4 :}\quad Il y a exactement 5 trajets de trois routes reliant les carrefours C et E.
+\par
+     \textit{On pourra utiliser la calculatrice pour justifier la réponse à l'aide d'un calcul matriciel.}
+     \par
+\end{itemize}
+On pondère le graphe (G) par les longueurs, en centaines de mètres, de chacune des routes :
+\par
+\begin{center}
+     \begin{extern}%width="350" alt=" graphe pondéré"
+          \psset{unit=0.7cm}
+          \begin{pspicture}(12,8)
+               \rput(0.75,7.5){\circlenode{A}{A}}
+               \rput(7.2,7.5){\circlenode{B}{B}}
+               \rput(11.3,5.5){\circlenode{C}{C}}
+               \rput(10.3,2){\circlenode{D}{D}}
+               \rput(0.3,2.7){\circlenode{E}{E}}
+               \rput(6.7,4.3){\circlenode{F}{F}}
+               \ncline{A}{B}\ncput*[nrot=:U]{3}
+               \ncline{A}{E}\ncput*[nrot=:U]{2}
+               \ncline{E}{B}\ncput*[nrot=:U]{5}
+               \ncline{B}{C}\ncput*[nrot=:U]{2}
+               \ncline{B}{D}\ncput*[nrot=:U]{4}
+               \ncline{B}{F}\ncput*[nrot=:U]{1}
+               \ncline{C}{D}\ncput*[nrot=:U]{2}
+               \ncline{E}{D}\ncput*[nrot=:U]{5}
+               \ncline{F}{D}\ncput*[nrot=:U]{2}
+               \ncline{E}{F}\ncput*[nrot=:U]{5}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+\par
+\begin{itemize}
+     \item %5
+     \textbf{Affirmation 5 :}\quad Le plus court chemin menant de A à D mesure 700 mètres .\\
+     \textit{On justifiera la réponse à l'aide d'un algorithme.}
+\end{itemize}
+\begin{corrige}
+     \begin{itemize}
+          \item %1
+          \textbf{Affirmation 1 :}\quad Le graphe (G) est connexe : \textbf{EXACT}.
+          \par
+          Un graphe est connexe si et seulement si on peut relier deux quelconques de ses sommets par une chaîne.
+          \par
+          C'est bien le cas ici donc le graphe (G) est connexe.
+          \item %2
+          \textbf{Affirmation 2 :}\quad Le graphe (G) contient un sous-graphe complet d'ordre 4 : \textbf{EXACT}.
+          \par
+          Considérons le sous-graphe d'ordre 4 composé des sommets B, D, E et F. Chacun de ces sommets est relié aux trois autres.\\
+          Ce sous-graphe est donc complet.
+          \item %3
+          \textbf{Affirmation 3 :}\quad Une personne peut parcourir toutes les routes du village sans emprunter plusieurs fois la même route : \textbf{EXACT}.
+          \par
+          La question revient à déterminer s'il existe une chaîne qui contient une fois et une seule chacune des arêtes du graphe c'est à dire une \textbf{chaîne eulérienne}.
+          \par
+          Or, d'après le théorème d'Euler, un graphe connexe contient une chaîne eulérienne si et seulement s'il possède \textbf{0 ou 2 sommets de degré impair}.
+          \par
+          Le tableau ci-après recense le degré de chacun des sommets :
+          \par
+          \begin{center}
+               \begin{tabular}{|l|c|c|c|c|c|c|c|c|}%class="compact"
+                    \hline
+                    Sommet & A & B & C & D & E & F  \\
+                    \hline
+                    Degré & 2 & 5 & 2 & 4 & 4 & 3 \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          \par
+          Le graphe (G) possède deux sommets de degré impair : B et F. Il existe donc au moins un trajet qui emprunte une fois et une seule chacune des routes du graphe.\\
+          Ces trajets ont nécessairement comme extrémités B et F ; par exemple : B-C-D-E-A-B-E-F-D-B-F.
+          \item %4
+          \textbf{Affirmation 4 :}\quad Il y a exactement 5 trajets de trois routes reliant les carrefours C et E: \textbf{EXACT}.
+          \par
+          La matrice de transition du graphe (G) obtenue en classant les sommets par ordre alphabétique est :
+          \[ M = \begin{pmatrix}
+               0 &1 &0 &0 &1 &0 \\
+               1 &0 &1 &1 &1 &1 \\
+               0 &1 &0 &1 &0 &0 \\
+               0 &1 &1 &0 &1 &1 \\
+               1 &1 &0 &1 &0 &1\\
+          0 &1 &0 &1 &1 &0  \end{pmatrix}
+          \]
+          \par
+          Pour obtenir le nombre de chemins de trois routes reliant deux sommets on calcule $M^3$.
+          \par
+          \`A la calculatrice, on trouve :
+          \par
+          \[ M^3 = \begin{pmatrix}
+               2 &8 &3 &5 &7 &4 \\
+               8 &10 &8 &11 &11 &11 \\
+               3 &8 &2 &7 &5 &4 \\
+               5 &11 &7 &8 &11 &9 \\
+               7 &11 &5 &11 &8 &9\\
+          4 &11 &4 &9 &9 &6  \end{pmatrix}
+          \]
+          \par
+          Le nombre de chemins de trois routes, reliant C à E, est le coefficient de $M^3$ situé sur la troisième ligne (correspondant au sommet de départ C) et la cinquième colonne (correspondant au sommet d'arrivé E).
+          \par
+          Il y a donc bien \textbf{5 trajets} de trois routes reliant les carrefours C et E.
+          \par
+          \cadre{vert}{En pratique}{
+               Soit $M$ la matrice de transition d'un graphe G. Pour déterminer \textbf{le nombre de chemins de longueur $\bm{n}$} reliant deux sommets du graphe on calcule $\bm{M^n}$.
+               \par
+               Le coefficient de la matrice $M^n$ situé à la $i$-ème ligne et à la $j$-ème colonne indique le nombre de chemins de longueur $n$ menant du sommet numéro $i$ au sommet numéro $j$.
+          }
+          \item %5
+          \textbf{Affirmation 5 :}\quad Le plus court chemin menant de A à D mesure 700 mètres : \textbf{FAUX}.
+          \par
+          On utilise l'algorithme de Dijkstra en partant de A :
+          \par
+          \begin{center}
+               \begin{extern}%width="600" alt="algorithme de Dijkstra"
+                    \begin{tabularx}{0.9\linewidth}{|c|C|C|C|C|C|C|}
+                         \hline
+                         Sommets			&   A 						& B 							& C							& D 							& E								& F   						\\ \hline
+                         Départ			&  $\color{red}0_{\text{A}}$ 	& $\infty$					& $\infty$					& $\infty$					& $\infty$						& $\infty$	  				\\ \hline
+                         A (0) 			&  \cellcolor{black!20}		& $3_{\text{A}}$	 			& $\infty$ 					& $\infty$ 					& $\color{red}2_{\text{A}}$		& $\infty$ 					\\ \hline
+                         E (2)			&  \cellcolor{black!20}	 	& $\color{red}3_{\text{A}}$	& $\infty$ 					& $7_{\text{E}}$   			& \cellcolor{black!20} 			& $7_{\text{E}}$				\\ \hline
+                         B (3)			&  \cellcolor{black!20}		& \cellcolor{black!20}	 	& $5_{\text{B}}$ 			& $7_{\text{E}}$ 			& \cellcolor{black!20}			& $\color{red}4_{\text{B}}$ 	\\ \hline
+                         F (4)			&  \cellcolor{black!20}		& \cellcolor{black!20}		& $\color{red}5_{\text{B}}$ 	& $6_{\text{F}}$  			& \cellcolor{black!20}			& \cellcolor{black!20}  		\\ \hline
+                         C (5)			&  \cellcolor{black!20} 		& \cellcolor{black!20} 		& \cellcolor{black!20} 		& $\color{red}6_{\text{F}}$ 	& \cellcolor{black!20} 			& \cellcolor{black!20} 		\\ \hline
+                    \end{tabularx}
+               \end{extern}
+          \end{center}
+          Le trajet le plus court menant de A à D mesure 6 centaines de mètres soit 600 mètres.
+          \par
+          Il s'agit du trajet A-B-F-D.
+          \par
+          \textit{Pour plus de détails sur la méthode employée dans cette question se reporter à la fiche  consacrée à \mcLien{/methode/algorithme-de-dijkstra-etape-par-etape/}{ l'algorithme de Dijkstra}.}
+          \par
+     \end{itemize}
+\end{corrige}
+\input{_footer}

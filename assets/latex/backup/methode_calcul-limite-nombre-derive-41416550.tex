@@ -1,0 +1,67 @@
+\input{_header}
+\meta{url}{/methode/calcul-limite-nombre-derive/}
+\meta{pid}{1300}
+\meta{titre}{Calculer une limite à l'aide du nombre dérivé}
+\meta{type}{methode}
+%
+\cadre{rouge}{Méthode}{%
+     On cherche à calculer une limite du type $\lim\limits_{x\rightarrow a}\frac{f\left(x\right)-f\left(a\right)}{x-a}$
+     \par
+     C'est une forme indéterminée du type «$\frac{0}{0}$»
+     \par
+     Pour lever l'indétermination, on utilise la \mcLien{/cours/premiere-s/fonction-derivee#d20}{définition du nombre dérivé }qui donne :
+     \par
+     $\lim\limits_{x\rightarrow a}\frac{f\left(x\right)-f\left(a\right)}{x-a}=f^{\prime}\left(a\right)$
+     \par
+     Il suffit donc de calculer $f^{\prime}\left(x\right)$ puis de remplacer $x$ par $a$ pour obtenir $f^{\prime}\left(a\right)$
+}
+\bloc{orange}{Exemple 1}{%
+     Soit $n$ un entier strictement positif.
+     \par
+     Calculer $\lim\limits_{x\rightarrow 1} \frac{x^{n}-1}{x-1}$.
+     \par
+     On pose $f\left(x\right)=x^{n}$.
+     \par
+     On a alors $f\left(1\right)=1$
+     \par
+     La limite cherchée correspond donc à $\lim\limits_{x\rightarrow 1}\frac{f\left(x\right)-f\left(1\right)}{x-1}$ et vaut par conséquent $f^{\prime}\left(1\right)$.
+     \par
+     Or $f^{\prime}\left(x\right)=nx^{n-1}$ dnc $f^{\prime}\left(1\right)=n\times 1^{n-1}=n$
+     \par
+     En conclusion : $\lim\limits_{x\rightarrow 1} \frac{x^{n}-1}{x-1}=n$
+}
+\bloc{orange}{Exemple 2}{%
+     On veut calculer $\lim\limits_{x\rightarrow 2} \frac{\sqrt{x+2}-2}{x-2}$
+     \par
+     On a une forme indéterminée du type «$\frac{0}{0}$»
+     \par
+     Posons $f\left(x\right)=\sqrt{x+2}$ pour $x\geqslant -2$
+     \par
+     On a $f\left(2\right)=\sqrt{4}=2$
+     \par
+     La limite est cherchée est donc :
+     \par
+     $\lim\limits_{x\rightarrow 2}\frac{f\left(x\right)-f\left(2\right)}{x-2}=f^{\prime}\left(2\right)$
+     \par
+     Pour calculer $f^{\prime}$ on applique la \mcLien{/cours/premiere-s/fonction-derivee#p60}{formule} $\left(\sqrt{u}\right)^{\prime}=\frac{u^{\prime}}{2\sqrt{u}}$ :
+     \par
+     $f^{\prime}\left(x\right)=\frac{1}{2\sqrt{x+2}}$
+     \par
+     Donc $f^{\prime}\left(2\right)=\frac{1}{4}$
+     \par
+     Finalement : $\lim\limits_{x\rightarrow 2} \frac{\sqrt{x+2}-2}{x-2}=\frac{1}{4}$
+}<div class="bloc bloc-orange">
+\begin{h2}Exemple 3\end{h2}
+(Cet exemple suppose que l'on a étudié le chapitre sur les fonctions trigonométriques)
+\par
+On veut calculer $\lim\limits_{x\rightarrow 0} \frac{\cos x-1}{x}$
+\par
+On a, là encore une forme indéterminée du type «$\frac{0}{0}$»
+\par
+On pose $f\left(x\right)=\cos x$
+\par
+La limite est cherchée est alors :
+\par
+$\lim\limits_{x\rightarrow 0}\frac{f\left(x\right)-f\left(0\right)}{x-0}=f^{\prime}\left(0\right)=-\sin 0=0$
+}
+\input{_footer}

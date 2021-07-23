@@ -1,0 +1,338 @@
+\input{_header}
+\begin{h2}I - Nombre dérivé\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     Soit $f$ une fonction définie sur un intervalle $I$ et $a$ et $b$ deux réels appartenant à $I$.
+     \par
+     On appelle \textbf{taux d'accroissement} de $f$ entre $a$ et $b$ le nombre :
+     \par
+     $T=\frac{f\left(b\right)-f\left(a\right)}{b-a}$
+}
+\bloc{cyan}{Remarque}{%id="r10"
+     En faisant le changement de variable : $b=a+h$ ($h$ représente alors l'écart entre $b$ et $a$), ce taux s'écrit aussi :
+     \par
+     $T=\frac{f\left(a+h\right)-f\left(a\right)}{h}$
+}
+\bloc{cyan}{Interprétation graphique}{%id="i10"
+     \begin{center}
+          \begin{extern}%width="450" alt="taux d'accroissement"
+               % -+-+-+ variables modifiables
+               \resizebox{8cm}{!}{%
+                    \def\xmin{-2.5}
+                    \def\xmax{8.5}
+                    \def\ymin{-1.5}
+                    \def\ymax{8.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-2)(9,9)
+                         %        \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psline[linecolor=gray]{->}(\xmin,0)(\xmax,0)
+                         \psline[linecolor=gray]{->}(0,\ymin)(0,\ymax)
+                         \psline[linecolor=lightgray](2,0)(2,1.69)
+                         \psline[linecolor=lightgray](5,0)(5,3.713)
+                         \rput[tr](-0.2,-0.2){$O$}\rput[br](1.8,1.8){$A$}\rput[br](4.8,3.693){$B$} \rput[t](3.5,-0.8){\color{mcmauve} $h$}
+                         \rput[t](8,7.5){\color{blue} $\mathscr{C}_f$}\rput[t](2,-0.2){$a$}\rput[t](5,-0.1){$b$}
+                         \psdots(2,1.69)\psdots(5,3.713)
+                         \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{1.3^x}
+                         \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=mcvert]{\xmin}{\xmax}{0.674*x+0.341}
+                        \psline[linecolor=mcmauve]{<->}(2,-0.7)(5,-0.7)
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Le taux d'accroissement de $f$ entre $a$ et $b$ est le \textbf{coefficient directeur} de la droite $(AB)$.
+}
+\cadre{bleu}{Définition}{%id="d20"
+     Soit $f$ une fonction définie sur un intervalle ouvert $I$ contenant $a$.
+     \par
+     On dit que $f$ est dérivable en $a$ si et seulement si le rapport $\frac{f\left(a+h\right)-f\left(a\right)}{h}$ tend vers un nombre réel lorsque $h$ tend vers zéro.
+     \par
+     Ce nombre s'appelle le nombre dérivé de $f$ en $a$ et se note $f^{\prime}\left(a\right)$.
+}
+\bloc{orange}{Exemple}{%id="e20"
+     Calculons le nombre dérivé de la fonction $f : x\mapsto x^{2}$ pour $x=1$.
+     \par
+     $ \frac{f\left(1+h\right)-f\left(1\right)}{h}=\frac{\left(1+h\right)^{2}-1^{2}}{h}=\frac{1+2h+h^{2}-1^{2}}{h}=\frac{2h+h^{2}}{h}=2+h$
+     \par
+     Or quand $h$ tend vers $0$, $2+h$ tend vers 2; donc $f^{\prime}\left(1\right)=2$.
+}
+\bloc{cyan}{Interprétation graphique}{%id="i20"
+      \begin{center}
+          \begin{extern}%width="450" alt="nombre dérivé"
+               % -+-+-+ variables modifiables
+               \resizebox{8cm}{!}{%
+                    \def\xmin{-2.5}
+                    \def\xmax{8.5}
+                    \def\ymin{-1.5}
+                    \def\ymax{8.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-2)(9,9)
+                         %        \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psline[linecolor=gray]{->}(\xmin,0)(\xmax,0)
+                         \psline[linecolor=gray]{->}(0,\ymin)(0,\ymax)
+                         \psline[linecolor=lightgray](2,0)(2,1.69)
+                         \psline[linecolor=lightgray](5,0)(5,3.713)
+                         \rput[tr](-0.2,-0.2){$O$}\rput[br](1.8,1.8){$A$}\rput[br](4.8,3.693){$B$}\rput[t](3.5,-0.8){\color{mcmauve} $h$}
+                         \rput[t](8,4){\color{red} $\mathscr{T}$}\rput[t](8,7.5){\color{blue} $\mathscr{C}_f$}\rput[t](2,-0.2){$a$}\rput[t](5,-0.1){$a+h$}
+                         \psdots(2,1.69)\psdots(5,3.713)
+                         \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{1.3^x}
+                         \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=mcvert]{\xmin}{\xmax}{0.674*x+0.341}
+                         \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=red]{\xmin}{\xmax}{0.443*x+0.803}
+                         \psline[linecolor=mcmauve]{<->}(2,-0.7)(5,-0.7)
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Lorsque $h$ se rapproche de zéro, le point $B$ se rapproche du point $A$ et la droite $\left(AB\right)$ se rapproche de la tangente $\mathscr{T}$
+}
+\cadre{vert}{Propriété}{%id="p30"
+     Soit $f$ une fonction dérivable en $a$ de courbe représentative $C_{f}$ . $f^{\prime}\left(a\right)$ représente le \textbf{coefficient directeur} de la \textbf{tangente} à la courbe $C_{f}$ au point d'abscisse $a$.
+}
+\cadre{vert}{Propriété}{%id="p40"
+     Soit $f$ une fonction dérivable en $a$ de courbe représentative $C_{f}$ . L'équation de la tangente à $C_{f}$ au point d'abscisse $a$ est :
+     \par
+     $y=f^{\prime}\left(a\right)\left(x-a\right)+f\left(a\right)$
+}
+\bloc{orange}{Démonstration}{%id="m40"
+     D'après la propriété précédente, la tangente à $C_{f}$ au point d'abscisse $a$ est une droite de coefficient directeur $f^{\prime}\left(a\right)$. Son équation est donc de la forme :
+     \par
+     $y=f^{\prime}\left(a\right)x+b$
+     \par
+     On sait que la tangente passe par le point $A$ de coordonnées $\left(a; f\left(a\right)\right)$ donc :
+     \par
+     $f\left(a\right)=f^{\prime}\left(a\right)a+b$
+     \par
+     $b=-f^{\prime}\left(a\right)a+f\left(a\right)$
+     \par
+     L'équation de la tangente est donc :
+     \par
+     $y=f^{\prime}\left(a\right)x-f^{\prime}\left(a\right)a+f\left(a\right)$
+     \par
+     Soit :
+     \par
+     $y=f^{\prime}\left(a\right)\left(x-a\right)+f\left(a\right)$
+}
+\bloc{orange}{Exemple}{%id="e40"
+     Cherchons l'équation de la tangente à la courbe représentative de la fonction $f : x\mapsto x^{2}$ au point d'abscisse $a=1$.
+     \par
+     On a $f\left(1\right)=1^{2}=1$ et on a vu dans l'exemple précédent que $f^{\prime}\left(1\right)=2$.
+     \par
+     L'équation cherchée est donc :
+     \par
+     $y=2\left(x-1\right)+1$
+     \par
+     soit :
+     \par
+     $y=2x-1$
+     \begin{center}
+          \begin{extern}%width="380" alt="courbe et tangente"
+               % -+-+-+ variables modifiables
+               \resizebox{7cm}{!}{%
+                    \def\xmin{-2.5}
+                    \def\xmax{2.5}
+                    \def\ymin{-1.5}
+                    \def\ymax{3.8}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-2)(9,9)
+                               \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                           \rput[tr](-0.2,-0.2){$O$}  \rput[l](1.1,1){$A$}
+                         \rput[t](1.5,3.3){\color{blue} $\mathcal{C}_f$}\rput[t](2.4,3.3){$\color{mcvert} \mathcal{T}$}
+                         \psplot[plotpoints=1000,linecolor=blue]{\xmin}{\xmax}{x^2}
+                         \psplot[plotpoints=1000,linecolor=mcvert]{\xmin}{\xmax}{2*x-1}
+                         \psdots(1,1)
+                         \psline[linecolor=lightgray](1,0)(1,1)
+                     \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+}
+\begin{h2}II - Fonction dérivée\end{h2}
+\cadre{bleu}{Définition}{%id="d50"
+     Si $f$ est définie sur un intervalle $I$ et si le nombre dérivé existe en chaque point de $I$, on dit que $f$ est \textbf{dérivable} sur $I$. La fonction qui a $x$ associe le nombre dérivé de $f$ en $x$ s'appelle \textbf{fonction dérivée} de $f$ et se note $f^{\prime}$
+}
+\cadre{vert}{Dérivée des fonctions usuelles}{%id="p60"
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|X|X|X|}%class="compact" width="600"
+               \hline
+               \textbf{Fonction} & \textbf{Dérivée} & \textbf{Ensemble de dérivabilité}
+               \\ \hline
+               $k$  $\left(k\in \mathbb{R}\right)$  &  $0$  &  $\mathbb{R}$
+               \\ \hline
+               $x$ &  $1$  &  $\mathbb{R}$
+               \\ \hline
+               $x^{n}$ $\left(n\in \mathbb{N}\right)$  &  $nx^{n-1}$  &  $\mathbb{R}$
+               \\ \hline
+               $\frac{1}{x}$ &  $-\frac{1}{x^{2}}$  &  $\mathbb{R}-\left\{0\right\}$
+               \\ \hline
+               $\sqrt{x}$ &  $\frac{1}{2\sqrt{x}}$  &  $\left]0;+\infty \right[$
+               \\        \hline
+          \end{tabularx}
+     \end{center}
+}
+\cadre{vert}{Opérations}{%id="p70"
+     Si $u$ et $v$ sont 2 \textbf{fonctions} dérivables :
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               \textbf{Fonction} & \textbf{Dérivée}
+               \\ \hline
+               $u+v$  &  $u^{\prime}+v^{\prime}$
+               \\ \hline
+               $ku$  $\left(k\in \mathbb{R}\right)$  &  $ku^{\prime} $
+               \\ \hline
+               $\frac{1}{u}$ (avec $u\left(x\right)\neq 0$ sur $I$)  &  $-\frac{u^{\prime} }{u^{2}} $
+               \\ \hline
+               $uv$  &  $u^{\prime}v+uv^{\prime}$
+               \\ \hline
+               $\frac{u}{v}$  (avec $v\left(x\right)\neq 0$ sur $I$) &  $\frac{u^{\prime}v-uv^{\prime}}{v^{2}} $
+               \\ \hline
+          \end{tabularx}
+     \end{center}
+}
+\bloc{orange}{Exemples}{%id="e70"
+     \begin{itemize}
+          \item On cherche à calculer la dérivée de la fonction $f$ définie sur $\mathbb{R}\backslash\left\{0\right\}$ par $f\left(x\right)=x^{2}+\frac{1}{x}$
+          \par
+          $f$ est la somme des fonctions $u$ et $v$ définies par $u\left(x\right)=x^{2}$ et $v\left(x\right)=\frac{1}{x}$
+          \par
+          $u^{\prime}\left(x\right)=2x$ et $v^{\prime}\left(x\right)=-\frac{1}{x^{2}}$
+          \par
+          donc $f^{\prime}\left(x\right)=2x-\frac{1}{x^{2}}$
+          \item Soit la fonction $g$ définie sur $\mathbb{R}$ par $g\left(x\right)=\frac{x^{3}-1}{x^{2}+1}$
+          \par
+          $g$ est le quotient des fonctions $u$ et $v$ définies par $u\left(x\right)=x^{3}-1$ et $v\left(x\right)=x^{2}+1$
+          \par
+          $u^{\prime}\left(x\right)=3x^{2}+0=3x^{2}$ et $v^{\prime}\left(x\right)=2x+0=2x$
+          \par
+          $g^{\prime}\left(x\right)=\frac{u^{\prime}\left(x\right)v\left(x\right)-u\left(x\right)v^{\prime}\left(x\right)}{v\left(x\right)^{2}}=\frac{\left(3x^{2}\right)\left(x^{2}+1\right)-\left(x^{3}-1\right)\times 2x}{\left(x^{2}+1\right)^{2}}=\frac{x^{4}+3x^{2}+2x}{\left(x^{2}+1\right)^{2}}$
+          \item Soit enfin la fonction $h$ définie sur $\left]1;+\infty \right[$ par $h\left(x\right)=\frac{3}{x^{2}-1}$
+          \par
+          On pourrait utiliser la formule $\left(\frac{u}{v}\right)^{\prime}=\frac{u^{\prime}v-uv^{\prime}}{v^{2}}$ comme précédemment mais cela ne sera pas très judicieux. En effet, le numérateur étant constant, il y a une manière plus rapide de procéder. Il suffit d'écrire :
+          \par
+          $h\left(x\right)=3\times \frac{1}{x^{2}-1}$
+          \par
+          et d'appliquer la formule $\left(\frac{1}{v}\right)^{\prime} = -\frac{v^{\prime} }{v^{2}}$ avec $v\left(x\right)=x^{2}-1$ (donc $v^{\prime}\left(x\right)=2x$)
+          \par
+          On obtient :
+          \par
+          $h^{\prime}\left(x\right)=3\times -\frac{2x}{\left(x^{2}-1\right)^{2}}=-\frac{6x}{\left(x^{2}-1\right)^{2}}$
+     \end{itemize}
+}
+\begin{h2}III - Applications de la dérivée\end{h2}
+\boite{gray}{%
+Si nécessaire, revoir la notion de \mcLien{/cours/premiere-es/etude-de-fonctions\#d40}{sens de variation d'une fonction}.
+}
+\cadre{rouge}{Théorème}{%id="t80"
+     Soit $f$ une fonction dérivable sur un intervalle $I$, $f$ est \textbf{croissante} sur $I$ si et seulement si $f^{\prime}\left(x\right)$ est \textbf{positif ou nul} pour tout $x \in I$.
+     \par
+     De plus si $f^{\prime}\left(x\right)$ est \textbf{strictement positive} sur $I$, sauf éventuellement en quelques points, alors $f$ est \textbf{strictement croissante} sur $I$.
+}
+\bloc{orange}{Exemple}{%id="e80"
+     Soit la fonction $f$ définie sur $\left[-1;1\right]$ par $f\left(x\right)=x^{3}$.
+     \par
+     $f^{\prime}\left(x\right)=3x^{2}$ est positive ou nulle sur $\left[-1;1\right]$, donc $f$ est \textbf{croissante} sur $\left[-1;1\right]$.
+     \par
+     Comme par ailleurs, $f^{\prime}$ est strictement positive sauf pour $x=0$, $f$ est \textbf{strictement croissante} sur $\left[-1;1\right]$.
+ \begin{center}
+     \begin{extern} %width="280" alt="Fonction  cube sur [-1;1]"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{x^3}
+               \def\xmin{-1.2}
+               \def\xmax{1.4}
+               \def\ymin{-1.2}
+               \def\ymax{1.2}
+               \def\xunit{4}  % unités en cm
+               \def\yunit{4}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{18pt}{18pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.2){$O$}
+                    \rput[tl](1.1,1){$\color{blue} \mathcal{C}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}}
+\begin{center}
+\textit{Fonction  cube sur $[-1;1]$}
+\end{center}
+On a un théorème analogue si la dérivée est négative :
+\cadre{rouge}{Théorème}{%id="t90"
+     Soit $f$ une fonction dérivable sur un intervalle $I$, $f$ est \textbf{décroissante} sur $I$ si et seulement si $f^{\prime}\left(x\right)$ est \textbf{négatif ou nul} pour tout $x \in I$.
+     \par
+     De plus si $f^{\prime}\left(x\right)$ est \textbf{strictement négative} sur $I$, sauf éventuellement en quelques points, alors $f$ est \textbf{strictement décroissante} sur $I$.
+}
+\bloc{cyan}{Remarques}{%id="r90"
+     \begin{itemize}
+          \item Si $f$ est dérivable, les théorèmes précédents montre que l'étude des variations de $f$ se ramène à l'étude du \textbf{signe de la dérivée.}
+          \item On regroupe couramment le tableau de signe de la dérivée et le tableau de variations de $f$ dans un même tableau à 3 lignes (voir exemple ci-dessous)
+          \item Pour montrer qu'une fonction $f$ admet un maximum en $a$, on peut montrer que $f$ est croissante pour $x < a$ et décroissante pour $x > a$ ; c'est à dire, si $f$ est dérivable, que $f^{\prime}$ est positive pour $x < a$ et négative pour $x > a$.
+\begin{center}
+\begin{extern}%width="340" alt="Maximum en a"
+\begin{tikzpicture}[scale=0.875]
+% Styles 
+\tikzstyle{cadre}=[thin]
+\tikzstyle{fleche}=[->,>=latex,thin]
+\tikzstyle{nondefini}=[lightgray]
+% Dimensions Modifiables
+\def\Lrg{1.5}
+\def\HtX{1}
+\def\HtY{0.5}
+% Dimensions Calculées
+\def\lignex{-0.5*\HtX}
+\def\lignef{-1.5*\HtX}
+\def\separateur{-0.5*\Lrg}
+% Largeur du tableau
+\def\gauche{-1.5*\Lrg}
+\def\droite{4.5*\Lrg}
+% Hauteur du tableau
+\def\haut{0.5*\HtX}
+\def\bas{-2.5*\HtX-2*\HtY}
+% Pointillés
+\draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+\draw[lightgray] (2*\Lrg,\lignef) -- (2*\Lrg,\bas);
+% Ligne de l'abscisse : x
+\node at (-1*\Lrg,0) {$x$};
+\node at (0*\Lrg,0) {$ $};
+\node at (2*\Lrg,0) {$a$};
+\node at (4*\Lrg,0) {$ $};
+% Ligne de la dérivée : f'(x)
+\node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+\node at (0*\Lrg,-1*\HtX) {$ $};
+\node at (1*\Lrg,-1*\HtX) {$+$};
+\node at (2*\Lrg,-1*\HtX) {$0$};
+\node at (3*\Lrg,-1*\HtX) {$-$};
+\node at (4*\Lrg,-1*\HtX) {$ $};
+% Ligne de la fonction : f(x)
+\node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+\node (f1) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$ $};
+\node (f2) at (2*\Lrg,{-2*\HtX+(0)*\HtY}) {$\text{max}$};
+\node (f3) at (4*\Lrg,{-2*\HtX+(-2)*\HtY}) {$ $};
+% Flèches
+\draw[fleche] (f1) -- (f2);
+\draw[fleche] (f2) -- (f3);
+% Encadrement
+\draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+\draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+\draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+\draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+\end{tikzpicture}
+\end{extern}
+
+\end{center}
+     \end{itemize}
+}
+\input{_footer}

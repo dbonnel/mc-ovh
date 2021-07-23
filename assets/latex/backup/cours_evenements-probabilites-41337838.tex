@@ -1,0 +1,321 @@
+\input{_header}
+\meta{url}{/cours/evenements-probabilites/}
+\meta{pid}{485}
+\meta{titre}{Probabilités conditionnelles - Indépendance}
+\meta{type}{cours}
+%
+\begin{h2}1.Rappels\end{h2}
+%
+\cadre{bleu}{Rappels de définitions}{
+     \begin{itemize}
+          \item Une expérience \textbf{aléatoire} est une expérience dont le résultat dépend du hasard.
+          \item Chacun des résultats possibles s'appelle une \textbf{éventualité} (ou une \textbf{issue}).
+          \item L'ensemble $\Omega $ de tous les résultats possibles d'une expérience aléatoire s'appelle l'\textbf{univers} de l'expérience.
+          \item On définit une \textbf{loi de probabilité} sur $\Omega $ en associant, à chaque éventualité $x_{i}$, un réel $p_{i}$ compris entre $0$ et $1$ tel que la somme de tous les $p_{i}$ soit égale à $1$.
+          \item Un événement  est un sous-ensemble de $\Omega $.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{
+     Le lancer d'un dé à six faces est une expérience aléatoire d'univers comportant 6 \textbf{éventualités}:
+     $\Omega =\left\{1; 2; 3; 4; 5; 6\right\}$
+     \begin{itemize}
+          \item L'ensemble $E_{1}=\left\{2; 4; 6\right\}$ est un \textbf{événement}. En français, cet événement peut se traduire par la phrase : \og\textit{le résultat du dé est un nombre pair}\fg{}
+          \item L'ensemble $E_{2}=\left\{1; 2; 3\right\}$ est un autre événement. Ce second événement peut se traduire par la phrase : \og\textit{le résultat du dé est strictement inférieur à 4}\fg{}.
+     \end{itemize}
+     Ces événements peuvent être représentés par un diagramme de Venn :
+
+\begin{center}
+     \imgsvg{Venn}{0.33}% alt="Diagramme de Venn" style="width:30rem"
+\end{center}
+
+}
+\cadre{bleu}{Définitions}{
+     \begin{itemize}
+          \item l'événement contraire de $A$ noté $\bar{A}$ est l'ensemble des éventualités de $\Omega $ qui n'appartiennent pas à $A$.
+          \item l'événement $A \cup  B$ (lire \og A union B \fg{} ou \og A ou B \fg{} est constitué des éventualités qui appartiennent soit à A, soit à B, soit aux deux ensembles.
+          \item l'événement $A \cap  B$ (lire \og A inter B \fg{} ou \og A et B \fg{} est constitué des éventualités qui appartiennent à la fois à A et à B.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{
+     On reprend l'exemple précédent :
+     $E_{1}=\left\{2; 4; 6\right\}$
+     $E_{2}=\left\{1; 2; 3\right\}$
+     \begin{itemize}
+          \item $\overline{E}_{1}=\left\{1; 3; 5\right\}$ : cet événement peut se traduire par \og le résultat est un nombre impair \fg{}
+\begin{center}
+     \imgsvg{Venn-complementaire}{0.33}% alt="Diagramme de Venn - Complémentaire" style="width:30rem"
+\end{center}
+          \item $E_{1} \cup  E_{2}=\left\{1; 2; 3; 4; 6\right\}$ : cet événement peut se traduire par \og le résultat est pair \textbf{ou} strictement inférieur à 4 \fg{}.
+\begin{center}
+     \imgsvg{Venn-union}{0.33}% alt="Diagramme de Venn - Union" style="width:30rem"
+\end{center}
+          \item $E_{1} \cap  E_{2}=\left\{2\right\}$ : cet événement peut se traduire par \og le résultat est pair \textbf{et} strictement inférieur à 4 \fg{}.
+\begin{center}
+     \imgsvg{Venn-inter}{0.33}% alt="Diagramme de Venn - Intersection" style="width:30rem"
+\end{center}
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{
+     On dit que A et B sont \textbf{incompatibles} si et seulement si $A \cap  B=\varnothing$
+}
+\bloc{mauve}{Remarque}{
+     Deux événements contraires sont incompatibles mais deux événements peuvent être incompatibles sans être contraires.
+}
+\bloc{orange}{Exemple}{
+     \og Obtenir un chiffre inférieur à 2 \fg{} et \og obtenir un chiffre supérieur à 4 \fg{} sont deux événements incompatibles.
+}
+\cadre{vert}{Propriétés}{
+     \begin{itemize}
+          \item $p\left(\varnothing\right)=0$
+          \item $p\left(\Omega \right)=1$
+          \item $p\left(\overline{A}\right)=1-p\left(A\right)$
+          \item $p\left(A \cup  B\right)=p\left(A\right)+p\left(B\right)-p\left(A \cap  B\right)$.
+     \end{itemize}
+     Si A et B sont incompatibles, la dernière égalité devient :
+     \begin{itemize}
+          \item $p\left(A \cup  B\right)=p\left(A\right)+p\left(B\right)$.
+     \end{itemize}
+}
+\begin{h2}2. Arbre\end{h2}
+Lorsqu'une expérience aléatoire comporte plusieurs étapes, on utilise souvent un arbre pondéré pour la représenter.
+\bloc{orange}{Exemple}{
+     Dans une classe de Terminale, 52\% de garçons et 48\% de filles étaient candidats au baccalauréat.
+     \par
+     80\% des garçons et 85\% des filles ont obtenu leur diplôme.
+     \par
+     On choisit un élève au hasard et on note :
+     \begin{itemize}
+          \item $G$ : l'événement \og l'élève choisi est un garçon \fg{};
+          \item $F$ : l'événement \og l'élève choisie est une fille \fg{};
+          \item $B$ : l'événement \og l'élève choisi(e) a obtenu son baccalauréat \fg{}.
+     \end{itemize}
+     \medskip
+     On peut représenter la situation à l'aide de l'arbre pondéré ci-dessous :
+}
+%:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+\begin{extern} %width="300" alt="arbre pondéré" class="aligncenter"
+     % Racine à Gauche, développement vers la droite
+     \begin{tikzpicture}[xscale=1,yscale=1]
+          % Styles (MODIFIABLES)
+          \tikzstyle{fleche}=[-,>=latex,thick]
+          \tikzstyle{noeud}=[fill=white,circle,draw]
+          \tikzstyle{feuille}=[fill=white,circle,draw]
+          \tikzstyle{etiquette}=[midway,fill=white]
+          % Dimensions (MODIFIABLES)
+          \def\DistanceInterNiveaux{3}
+          \def\DistanceInterFeuilles{2}
+          % Dimensions calculées (NON MODIFIABLES)
+          \def\NiveauA{(0)*\DistanceInterNiveaux}
+          \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+          \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+          \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+          % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+          \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+          \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$G$};
+          \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B$};
+          \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B}$};
+          \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$F$};
+          \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B$};
+          \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B}$};
+          % Arcs (MODIFIABLES : Styles)
+          \draw[fleche] (R)--(Ra) node[etiquette] {$0,52$};
+          \draw[fleche] (Ra)--(Raa) node[etiquette] {$0,8$};
+          \draw[fleche] (Ra)--(Rab) node[etiquette] {$0,2$};
+          \draw[fleche] (R)--(Rb) node[etiquette] {$0,48$};
+          \draw[fleche] (Rb)--(Rba) node[etiquette] {$0,85$};
+          \draw[fleche] (Rb)--(Rbb) node[etiquette] {$0,15$};
+     \end{tikzpicture}
+\end{extern}
+%:-+-+-+-+- Fin
+Le premier niveau indique le genre de l'élève ($G$ ou $F$) et le second indique l'obtention du diplôme ($B$ ou $\overline{B}$).
+\par
+On inscrit les probabilités sur chacune des branches.
+\par
+La \textbf{somme} des probabilités inscrites sur les branches partant d’un même nœud \textbf{est toujours égale à 1}.
+%
+\begin{h2}3. Probabilités conditionnelles\end{h2}
+\cadre{bleu}{Définition}{
+     Soit A et B deux événements tels que $p\left(A\right)\neq 0$, \textbf{la probabilité de B sachant A} est le nombre :
+     \[  p_{A}\left(B\right)=\frac{p\left(A \cap  B\right)}{p\left(A\right)}. \]
+     On peut aussi noter cette probabilité $p\left(B/A\right)$.
+}
+\bloc{orange}{Exemple}{
+     On reprend l'exemple du lancer d'un dé.
+     La probabilité d'obtenir un chiffre pair sachant que le chiffre obtenu est strictement inférieur à 4 est (en cas d'équiprobabilité) :
+     \[ p_{E_{2}}\left(E_{1}\right)=\frac{p\left(E_{1} \cap  E_{2}\right)}{p\left(E_{2}\right)}=\frac{1}{3}. \]
+}
+\bloc{mauve}{Remarques}{
+     \begin{itemize}
+          \item L'égalité précédente s'emploie souvent sous la forme :
+          \[p\left(A \cap  B\right)=p\left(A\right)\times p_{A}\left(B\right)\]
+          pour calculer la probabilité de $A \cap  B$.
+          \item \textbf{Attention} à ne pas confondre $p_{A}\left(B\right)$ et $p\left(A \cap  B\right)$ dans les exercices.\\
+          On doit calculer  $p_{A}\left(B\right)$ lorsque l'\textbf{on sait que $A$ est réalisé.}
+          \item Avec un arbre pondéré, les probabilités conditionnelles figurent sur les branches du second niveau et des niveaux supérieurs (s'il y en a).\\
+          La probabilité inscrite sur la branche reliant $A$ à $B$ est $p_A(B)$.\\
+          Typiquement, un arbre binaire à deux niveaux se présentera ainsi :
+          %:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+          \begin{extern} %width="300" alt="arbre pondéré" class="aligncenter"
+               % Racine à Gauche, développement vers la droite
+               \begin{tikzpicture}[xscale=1,yscale=1]
+                    % Styles (MODIFIABLES)
+                    \tikzstyle{fleche}=[-,>=latex,thick]
+                    \tikzstyle{noeud}=[fill=white,circle,draw]
+                    \tikzstyle{feuille}=[fill=white,circle,draw]
+                    \tikzstyle{etiquette}=[midway,fill=white]
+                    % Dimensions (MODIFIABLES)
+                    \def\DistanceInterNiveaux{3}
+                    \def\DistanceInterFeuilles{2}
+                    % Dimensions calculées (NON MODIFIABLES)
+                    \def\NiveauA{(0)*\DistanceInterNiveaux}
+                    \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                    \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                    \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                    % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                    \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+                    \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$A$};
+                    \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B$};
+                    \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B}$};
+                    \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{A}$};
+                    \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B$};
+                    \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B}$};
+                    % Arcs (MODIFIABLES : Styles)
+                    \draw[fleche] (R)--(Ra) node[etiquette] {$p(A)$};
+                    \draw[fleche] (Ra)--(Raa) node[etiquette] {$p_A(B)$};
+                    \draw[fleche] (Ra)--(Rab) node[etiquette] {$p_A(\overline{B})$};
+                    \draw[fleche] (R)--(Rb) node[etiquette] {$p(\overline{A})$};
+                    \draw[fleche] (Rb)--(Rba) node[etiquette] {$p_{\overline{A}}(B)$};
+                    \draw[fleche] (Rb)--(Rbb) node[etiquette] {$p_{\overline{A}}(\overline{B})$};
+               \end{tikzpicture}
+          \end{extern}
+          %:-+-+-+-+- Fin
+          \item La formule $p\left(A \cap  B\right)=p\left(A\right)\times p_{A}\left(B\right)$ s'interprète alors de la façon suivante : \\
+          \og La probabilité de l'événement  $A \cap  B$ s'obtient en faisant \textbf{le produit} des probabilités inscrites sur le chemin passant par $A$ et $B$\fg{}.
+
+\begin{center}
+          \begin{extern} %width="300" alt="arbre pondéré" class="aligncenter"
+               % Racine à Gauche, développement vers la droite
+               \begin{tikzpicture}[xscale=1,yscale=1]
+                    % Styles (MODIFIABLES)
+                    \tikzstyle{fleche}=[-,>=latex,thick]
+                    \tikzstyle{rfleche}=[-,>=latex,color=red,thick]
+                    \tikzstyle{noeud}=[fill=white,circle,draw]
+                    \tikzstyle{rnoeud}=[fill=white,circle,draw=red]
+                    \tikzstyle{feuille}=[fill=white,circle,draw]
+                    \tikzstyle{rfeuille}=[fill=white,circle,draw=red]
+                    \tikzstyle{etiquette}=[midway,fill=white]
+                    % Dimensions (MODIFIABLES)
+                    \def\DistanceInterNiveaux{3}
+                    \def\DistanceInterFeuilles{2}
+                    % Dimensions calculées (NON MODIFIABLES)
+                    \def\NiveauA{(0)*\DistanceInterNiveaux}
+                    \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                    \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                    \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                    % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                    \node[rnoeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+                    \node[rnoeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$\red A$};
+                    \node[rfeuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$\red B$};
+                    \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B}$};
+                    \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{A}$};
+                    \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B$};
+                    \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B}$};
+                    % Arcs (MODIFIABLES : Styles)
+                    \draw[rfleche] (R)--(Ra) node[etiquette] {\red $p(A)$};
+                    \draw[rfleche] (Ra)--(Raa) node[etiquette] {\red $p_A(B)$};
+                    \draw[fleche] (Ra)--(Rab) node[etiquette] {$p_A(\overline{B})$};
+                    \draw[fleche] (R)--(Rb) node[etiquette] {$p(\overline{A})$};
+                    \draw[fleche] (Rb)--(Rba) node[etiquette] {$p_{\overline{A}}(B)$};
+                    \draw[fleche] (Rb)--(Rbb) node[etiquette] {$p_{\overline{A}}(\overline{B})$};
+               \end{tikzpicture}
+          \end{extern}
+\end{center}
+     \end{itemize}
+}
+\begin{h2}4. Événements indépendants\end{h2}
+\cadre{bleu}{Définition}{
+     Deux événements A et B sont \textbf{indépendants} si et seulement si :
+     \[ p\left(A \cap  B\right)=p\left(A\right)\times p\left(B\right). \]
+}
+\cadre{vert}{Propriété}{
+     $A$ et $B$ sont indépendants si et seulement si :
+     \[ p_{A}\left(B\right)=p\left(B\right). \]
+}
+\bloc{orange}{Démonstration}{
+     Elle résulte directement du fait que pour deux événements quelconques :
+     \[ p\left(A \cap  B\right)=p\left(A\right)\times p_{A}\left(B\right). \]
+}
+\bloc{mauve}{Remarque}{
+     Comme $A \cap  B=B \cap  A$, $A$ et $B$ sont interchangeables dans cette formule et on a également :
+     \begin{center}
+          $A$ et $B$ sont indépendants $ \Leftrightarrow  $ $p_{B}\left(A\right)=p\left(A\right)$.
+     \end{center}
+}
+\begin{h2}5. Formule des probabilités totales\end{h2}
+\cadre{bleu}{Définition}{
+     $A_{1}$, $A_{2}$, ... , $A_{n}$ forment une partition de $\Omega $ si et seulement si  $A_{1} \cup  A_{2} . . . \cup  A_{n}=\Omega $ et $A_{i} \cap  A_{j}=\varnothing$ pour $i\neq j$.
+}
+\bloc{mauve}{Cas particulier fréquent}{
+     Pour toute partie $A\subset\Omega $, $A$ et $\overline{A}$ forment une partition de $\Omega$.
+}
+\cadre{vert}{Propriété (Formule des probabilités totales)}{
+     Si $A_{1}$, $A_{2}$,... $A_{n}$ forment une partition de $\Omega $, pour tout événement $B$, on a :
+     \begin{center}
+          $ p\left(B\right)=p\left(A_{1} \cap  B\right)+p\left(A_{2} \cap  B\right)+ \cdots $\nosp$ +p\left(A_{n} \cap  B\right). $
+     \end{center}
+     \par
+     Cette formule peut également s'écrire à l'aide de probabilités conditionnelles :
+     \begin{center}
+          $p\left(B\right)=p\left(A_{1} \right)\times p_{A_{1} }\left(B\right)$\nosp$+p\left(A_{2} \right)\times p_{A_{2}}\left(B\right)+\cdots$\nosp$+p\left(A_{n}\right)\times p_{A_{n}}\left(B\right)$.
+     \end{center}
+}
+\bloc{mauve}{Cas particulier fréquent}{
+     En utilisant la partition  $\left\{A, \overline{A}\right\}$, quels que soient les événements $A$ et $B$ :
+     \begin{center}
+          $p\left(B\right)=p\left(A \cap  B\right)+p\left(\overline{A} \cap  B\right)$\\
+          $p\left(B\right)=p\left(A\right)\times p_{A}\left(B\right)+p\left(\overline{A}\right)\times p_{\overline{A}}\left(B\right)$.
+\end{center}}
+\bloc{mauve}{Remarque}{
+     \`A l'aide d'un arbre pondéré, ce résultat s'interprète de la façon suivante :\\
+     \og La probabilité de l'événement $B$ est égale à la somme des probabilités des trajets menant à $B$ \fg{}.
+
+\begin{center}
+\begin{extern} %width="300" alt="arbre pondéré" 
+          % Racine à Gauche, développement vers la droite
+          \begin{tikzpicture}[xscale=1,yscale=1]
+               % Styles (MODIFIABLES)
+               \tikzstyle{fleche}=[-,>=latex,thick]
+               \tikzstyle{rfleche}=[-,>=latex,color=red,thick]
+               \tikzstyle{noeud}=[fill=white,circle,draw]
+               \tikzstyle{rnoeud}=[fill=white,circle,draw=red]
+               \tikzstyle{feuille}=[fill=white,circle,draw]
+               \tikzstyle{rfeuille}=[fill=white,circle,draw=red]
+               \tikzstyle{etiquette}=[midway,fill=white]
+               % Dimensions (MODIFIABLES)
+               \def\DistanceInterNiveaux{3}
+               \def\DistanceInterFeuilles{2}
+               % Dimensions calculées (NON MODIFIABLES)
+               \def\NiveauA{(0)*\DistanceInterNiveaux}
+               \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+               \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+               \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+               % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+               \node[rnoeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+               \node[rnoeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$\red A$};
+               \node[rfeuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$\red B$};
+               \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B}$};
+               \node[rnoeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\red \overline{A}$};
+               \node[rfeuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$\red B$};
+               \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B}$};
+               % Arcs (MODIFIABLES : Styles)
+               \draw[rfleche] (R)--(Ra) node[etiquette] {\red $p(A)$};
+               \draw[rfleche] (Ra)--(Raa) node[etiquette] {\red $p_A(B)$};
+               \draw[fleche] (Ra)--(Rab) node[etiquette] {$p_A(\overline{B})$};
+               \draw[rfleche] (R)--(Rb) node[etiquette] {$p(\overline{A})$};
+               \draw[rfleche] (Rb)--(Rba) node[etiquette] {$p_{\overline{A}}(B)$};
+               \draw[fleche] (Rb)--(Rbb) node[etiquette] {$p_{\overline{A}}(\overline{B})$};
+          \end{tikzpicture}
+     \end{extern}
+\end{center}     
+}
+\input{_footer}

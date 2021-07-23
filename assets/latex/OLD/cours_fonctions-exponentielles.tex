@@ -1,0 +1,183 @@
+\input{_header}
+\begin{h2}1. Fonctions exponentielles de base $q$\end{h2}
+\cadre{rouge}{Théorème et définition}{% id="t10"
+     Soit $q$ un réel strictement positif.
+     \par
+     Il existe une unique fonction $f$ définie et dérivable sur $\mathbb{R}$ telle que :
+     \begin{itemize}
+          \item pour tout entier $n \in  \mathbb{Z}$, $f\left(n\right)=q^{n}$
+          \item pour tous réels $x$ et $y$ : $f\left(x+y\right)=f\left(x\right)\times f\left(y\right)  $ \textit{(relation fonctionnelle})
+     \end{itemize}
+     Cette fonction s'appelle fonction \textbf{exponentielle de base $q$} et on note $f\left(x\right)=q^{x}$
+}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}\item D'après la première propriété et les formules vues au collège, on a notamment : $q^{1}=q$, $q^{0}=1$, $q^{-1}=\frac{1}{q}$
+          \item Avec la notation exponentielle, la seconde propriété  (relation fonctionnelle) s'écrit : $q^{x+y}=q^{x}\times q^{y}$.
+          \par
+          A partir de cette propriété on montre également que pour tout $q > 0$ et tous réels $x$ et $y$ :
+          \par
+          $q^{x-y}=\frac{q^{x}}{q^{y}} $ (en particulier $q^{-y}=\frac{1}{q^{y}}$)
+          \par
+          $\left[q^{x}\right] ^{y}=q^{xy}$
+          \par
+          ce qui généralise les propriétés vues au collège.
+          \item La courbe de la fonction $x\mapsto q^{n}$ s'obtient en reliant les points de coordonnées $\left(n, q^{n}\right)$. Pour $n\geqslant 0$ ces points représentent la suite géométrique de premier terme $u_{0}=1$ et de raison $q$.
+     \end{itemize}
+     \begin{center}
+          \begin{extern}%width="460" alt="fonction exponentielle et suite géométrique"
+               % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+                    \def\xmin{-2.5}
+                    \def\xmax{8.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{9.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-1)(9,10)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.2){$O$}
+                         \multido{\n=0.0+1}{7}{
+                              \FPeval{\suite}{1.4^\n}
+                              \psdots[linecolor=red,dotsize=4pt](\n,\suite)
+                         }            
+                           \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{1.4^x}
+                    \end{pspicture*}
+           }
+          \end{extern}
+     \end{center}     \begin{center}\textit{Fonction exponentielle de base $q=1,4$}\\
+     \textit{(les points correspondent à la suite géométrique $u_{0}=1$ et $q=1.4$)}\end{center}
+}
+\cadre{vert}{Propriété}{% id="p15"
+     Pour tout réel $x$ et tout réel $q > 0$, $q^{x}$ est \textbf{strictement positif}.
+}
+\cadre{vert}{Propriété}{% id="p20"
+     \begin{itemize}
+          \item Pour $q > 1$, la fonction $x \mapsto  q^{x}$ est strictement croissante sur $\mathbb{R}$
+          \item Pour $0 < q < 1$, la fonction $x \mapsto  q^{x}$ est strictement décroissante sur $\mathbb{R}$
+     \end{itemize}
+}
+               % -+-+-+ variables modifiables
+\begin{center}
+          \begin{extern}%width="460" alt="fonction exponentielle de base supérieure à 1"
+               % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+                    \def\xmin{-2.5}
+                    \def\xmax{8.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{9.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-1)(9,10)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.2){$O$}
+                           \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{1.4^x}
+                    \end{pspicture*}
+           }
+          \end{extern}
+\end{center}
+         \begin{center}\textit{Fonction exponentielle de base $q > 1$}\end{center}
+\begin{center}
+          \begin{extern}%width="460" alt="fonction exponentielle de base inférieure à 1"
+               % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+                    \def\xmin{-5.5}
+                    \def\xmax{6.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{8.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[gridcolor=mcgris,subgriddiv=0](-6,-1)(7,9)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.2){$O$}       
+                           \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{0.7^x}
+                    \end{pspicture*}
+           }
+          \end{extern}
+\end{center}
+           \begin{center}\textit{Fonction exponentielle de base $0 < q < 1$}\end{center}
+\bloc{cyan}{Remarque}{% id="r20"
+     Pour $q=1$, la fonction $x \mapsto  q^{x}$ est constante et égale à $1$. Sa courbe représentative est une droite parallèle à l'axe des abscisses.
+}
+\begin{h2}2. Fonction exponentielle (de base $e$)\end{h2}
+\cadre{rouge}{Théorème et Définition}{% id="t50"
+     Il existe une valeur de $q$ pour laquelle la fonction $f : x\mapsto q^{x}$ vérifie $f^{\prime}\left(0\right)=1$.
+     \par
+     Cette valeur est notée $e$.
+     \par
+     La fonction  $x \mapsto  e^{x}$ (parfois notée $\text{exp}$) est appelée \textbf{fonction exponentielle}.
+}
+\bloc{cyan}{Remarque}{% id="r50"
+     Le nombre $e$ est approximativement égal à $2,71828$ (on l'obtient à la calculatrice en faisant $e^{1}$ ou $\text{exp}\left(1\right)$.
+}
+\cadre{vert}{Propriété}{% id="p60"
+     La fonction exponentielle est \textbf{strictement positive} et \textbf{strictement croissante} et sur $\mathbb{R}$.
+}
+\bloc{cyan}{Démonstration}{% id="m60"
+     Cela résulte du fait que $e > 1$ et des résultats de la section précédente.
+}
+\begin{center}
+          \begin{extern}%width="400" alt="fonction exponentielle de base e"
+               % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+                    \def\xmin{-4.5}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{8.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[gridcolor=mcgris,subgriddiv=1](-5,-1)(5,9)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(-5,-1)(5,9)
+                         \rput[tr](-0.2,-0.2){$O$}
+               \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{EXP(x)}
+               \rput[r](-0.2,2.718){$\color{rouge} \text{e}$}
+\psline[linewidth=0.8pt,linecolor=rouge](1,0)(1,2.71828)(0,2.71828)
+                    \end{pspicture*}
+           }
+          \end{extern}
+\end{center}
+\begin{center}
+\textit{Fonction exponentielle de base} $\text{e}$
+\end{center}
+          \bloc{cyan}{Remarque}{% id="r60"
+     La stricte croissance de la fonction exponentielle entraîne que :
+     \par
+     $x < y \Leftrightarrow e^{x} < e^{y}$
+     \par
+     Cette propriété est fréquemment utilisée dans les exercices (inéquations notamment).
+}
+\cadre{rouge}{Théorème (dérivée de la fonction exponentielle}{% id="t70"
+     La fonction exponentielle est égale à sa dérivée.
+     \par
+     Autrement dit, pour tout $x \in  \mathbb{R}$ : $\text{exp}^{\prime}\left(x\right)=\text{exp}\left(x\right)$
+}
+\bloc{cyan}{Démonstration}{% id="d70"
+     Le taux d'accroissement de la fonction exponentielle sur l'intervalle $\left[x ; x+h\right]$ est égal à :
+     \par
+     $T=\frac{e^{x+h}-e^{x}}{h}=\frac{e^{x}\times e^{h}-e^{x}}{h}=e^{x}\times \frac{e^{h}-1}{h}$
+     \par
+     Par définition du nombre dérivé, le quotient $\frac{e^{h}-1}{h}$ tend vers $\text{exp}^{\prime}\left(0\right)=1$ quand $h$ tend vers $0$, donc $T$ tend vers $e^{x}$ quand $h$ tend vers 0.
+}
+\cadre{vert}{Propriété}{% id="p80"
+     Soit $u$ une fonction dérivable sur un intervalle $I$.
+     \par
+     Alors la fonction $ f :  x\mapsto e^{u\left(x\right)}$ est dérivable sur $I$ et :
+     \begin{center}$f^{\prime}\left(x\right)=u^{\prime}\left(x\right) e^{u\left(x\right)}$\end{center}
+}
+\bloc{orange}{Exemple}{% id="e80"
+     Soit $f$ définie sur $\mathbb{R}$ par $f\left(x\right)=e^{-x}$
+     \par
+     $f$ est dérivable sur $\mathbb{R}$ et $f^{\prime}\left(x\right)=-e^{-x}$ (on pose $u\left(x\right)=-x$ donc $u^{\prime}\left(x\right)=-1$)
+}
+\input{_footer}

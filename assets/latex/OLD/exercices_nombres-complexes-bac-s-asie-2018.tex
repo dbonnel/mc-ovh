@@ -1,0 +1,108 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas choisi la spécialité \og mathématiques \fg{}}
+\bigbreak
+Dans cet exercice, $x$ et $y$ sont des nombres réels supérieurs à 1.
+\medbreak
+Dans le plan complexe muni d'un repère orthonormé direct $(O~;~\overrightarrow{i},~\overrightarrow{j}~,~\overrightarrow{k})$, on considère les points A, B
+et C d'affixes respectives
+
+\[z_{\text{A}} = 1 + \text{i}, \:  z_{\text{B}} = x + \text{i}\: \text{ et }\: z_{\text{C}} = y + \text{i}.\]
+\begin{center}
+  \begin{extern}%width="550" alt="Nombres complexes Bac S Asie 2018"
+   \psset{unit=4cm}
+     \begin{pspicture}(-0.2,-0.2)(3,1.1)
+          \psaxes[linewidth=1pt]{->}(0,0)(1,1)
+          \psframe[linecolor=lightgray](0,0)(3,1)
+          \psline[linecolor=lightgray](1,0)(1,1)
+          \psline[linecolor=lightgray](1.6,0)(1.6,1)
+          \uput[d](0.5,0){$\overrightarrow{u}$}
+          \uput[l](0,0.5){$\overrightarrow{v}$}
+          \uput[u](1,1){A$(1 + \text{i})$}
+          \uput[u](1.6,1){B$(x + \text{i})$}
+          \uput[u](3,1){C$(y + \text{i})$}
+          \uput[l](0,0){O}
+          \psline(3,1)(0,0)(1.6,1)
+          \psline(1,1)
+     \end{pspicture}
+  \end{extern}
+  
+\end{center}
+\medbreak
+\textbf{Problème~:} on cherche les valeurs éventuelles des réels $x$ et $y$, supérieures à 1, pour lesquelles~:
+$\text{OC} = \text{OA} \times \text{OB} $ et $\left(\overrightarrow{u},~\overrightarrow{\text{OB}}\right) + \left(\overrightarrow{u},~\overrightarrow{\text{OC}}\right) = \left(\overrightarrow{u},~\overrightarrow{\text{OA}}\right).$
+\medbreak
+\begin{enumerate}
+     \item Démontrer que si $\text{OC} = \text{OA} \times \text{OB}$, alors $y^2 = 2x^2 + 1$.
+     \item Reproduire sur la copie et compléter l'algorithme ci-après pour qu'il affiche tous les couples $(x,~y)$ tels que~:
+\begin{center}
+$\left\{\begin{array}{l}
+              y^2 = 2x^2 + 1\\
+              x~\text{et}~y~\text{sont des nombres entiers} \\
+              1  \leqslant x \leqslant 10 ~\text{et}~ 1 \leqslant y \leqslant 10
+     \end{array}\right.$
+\end{center}
+     \begin{center}
+ \begin{extern}%width="250" alt="algorithme Bac S Asie 2018"
+          \begin{tabular}{|l|}\hline
+               Pour $x$ allant de 1 à \ldots faire\\
+               \hspace{0.5cm}Pour \ldots\\
+               \hspace{1cm}Si \ldots\\
+               \hspace{1.5cm}Afficher $x$ et $y$\\
+               \hspace{1cm}Fin Si\\
+               \hspace{0.5cm}Fin Pour\\
+               Fin Pour\\ \hline
+          \end{tabular}
+ \end{extern}
+ 
+     \end{center}
+     \emph{Lorsque l'on exécute cet algorithme, il affiche la valeur $2$ pour la variable $x$ et la valeur $3$ pour la variable $y$.}
+     \smallbreak
+     \item Étude d'un cas particulier~: dans cette question seulement, on prend $x = 2$ et $y = 3$.
+     \begin{enumerate}[label=\alph*.]
+          \item Donner le module et un argument de $z_{\text{A}}$.
+          \item Montrer que $\text{OC} = \text{OA} \times \text{OB}$.
+          \item Montrer que $z_{\text{B}}z_{\text{C}} = 5 z_{\text{A}}$ et en déduire que :
+          $\left(\overrightarrow{u},~\overrightarrow{\text{OB}}\right) + \left(\overrightarrow{u},~\overrightarrow{\text{OC}}\right)$\nosp$ = \left(\overrightarrow{u},~\overrightarrow{\text{OA}}\right)$.
+     \end{enumerate}
+     \item On revient au cas général, et on cherche s'il existe d'autres valeurs des réels $x$ et $y$ telles que les points A, B et C vérifient les deux conditions~:
+     \par
+     $\text{OC} = \text{OA} \times \text{OB} \quad$ et $\:  \left(\overrightarrow{u},~\overrightarrow{\text{OB}}\right) + \left(\overrightarrow{u},~\overrightarrow{\text{OC}}\right)$\nosp$ = \left(\overrightarrow{u},~\overrightarrow{\text{OA}}\right)$.
+     \par
+     On rappelle que si $\text{OC} = \text{OA} \times \text{OB}$, alors $y^2 = 2x^2 + 1$ (question 1.).
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que si $\left(\overrightarrow{u},~\overrightarrow{\text{OB}}\right) + \left(\overrightarrow{u},~\overrightarrow{\text{OC}}\right)$\nosp$ = \left(\overrightarrow{u},~\overrightarrow{\text{OA}}\right)$, alors arg$\left[\dfrac{(x + \text{i})(y + \text{i})}{1 + \text{i}}\right] = 0$\nosp$ \:\text{mod }\: 2\pi$.
+          \par
+          En déduire que sous cette condition~: $x + y - xy + 1 = 0$.
+          \item Démontrer que si les deux conditions sont vérifiées et que de plus $x \neq 1$, alors~:
+\begin{center}
+        $y= \sqrt{2x^2 + 1}\quad $ et $\: y = \dfrac{x + 1}{x - 1}.$
+\end{center}
+     \end{enumerate}
+     \item On définit les fonctions $f$ et $g$ sur l'intervalle $]1~;~+ \infty[$ par~:
+\begin{center}
+$f(x) = \sqrt{2x^2 + 1}\quad$ et $\: g(x) = \dfrac{x + 1}{x - 1}.$
+\end{center}
+     Déterminer le nombre de solutions du problème initial.
+     \par
+     On pourra utiliser la fonction $h$ définie sur l'intervalle $]1~;~+ \infty[$ par $h(x) = f(x) - g(x)$ et s'appuyer sur la copie d'écran d'un logiciel de calcul formel donnée ci-dessous.
+     \begin{center}
+  \begin{extern}%width="230" alt="Calcul formel Bac S Asie 2018"
+  \renewcommand{\arraystretch}{1.5}
+          \begin{tabular}{|l|}
+          \hline
+               $f(x)~:= \text{sqrt}(2*x\verb+^+2+1)$	\\
+               \hspace{1.5cm}$x \to  \sqrt{2*x^2+1}$	\\ \hline
+               deriver$(f)$							\\ 
+               \hspace{1.5cm}$x \to \dfrac{2*x}{\sqrt{2*x^2+ 1}}$ \\[0.3cm] \hline
+               $g(x)~:=(x+1)/(x-1)$					\\
+               \hspace{1.5cm}$x \to \dfrac{x + 1}{x - 1}$ \\[0.2cm] \hline
+               deriver$(g)$							\\ 
+               \hspace{1.5cm}$x \to  - \dfrac{2}{(x - 1)^2}$ \\[0.2cm] \hline
+          \end{tabular}
+  \end{extern}
+     \end{center}
+
+\end{enumerate}
+
+\input{_footer}

@@ -1,0 +1,78 @@
+\input{_header}
+\textit{(D'après Brevet Pondichéry 2013)}
+\par
+On considère la figure ci-dessous~:
+\begin{center}
+     \begin{extern}
+          \begin{pspicture*}(2.,-1.)(12.,6.)
+               \psline[linewidth=0.5pt](4.,5.)(8.,5.)
+               \psline[linewidth=0.5pt](11.,0.)(5.,0.)
+               \psline[linewidth=0.5pt](8.,5.)(11.,0.)
+               \psline[linewidth=0.5pt](5.,0.)(4.,5.)
+               \psline[linewidth=0.5pt](4.,5.)(11.,0.)
+               \psline[linewidth=0.5pt](5.,0.)(8.,5.)
+               \begin{scriptsize}
+                    \fontsize{13pt}{13pt}\selectfont
+                    \psdots[dotsize=2pt 0,dotstyle=*](4.,5.)
+                    \rput[bl](3.6,5.05){$A$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](8.,5.)
+                    \rput[bl](8.04,5.05){$B$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](11.,0.)
+                    \rput[bl](11.11,-0.08){$C$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](5.,0.)
+                    \rput[bl](4.4,-0.10){$D$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](6.8,3.)
+                    \rput[bl](6.98,2.92){$O$}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item %
+     On donne~:
+     \par
+     $OA=2,8$cm\\
+     $OB=2$cm\\
+     $OC=5$cm\\
+     $OD=3,5$cm.
+     \par
+     Les droites $\left(AB\right)$ et $\left(CD\right)$  sont-elles parallèles ?
+     \item %
+     On donne~:
+     \par
+     $OA=4$cm\\
+     $OB=2,8$cm\\
+     $OC=6$cm\\
+     $OD=4,2$cm.
+     \par
+     Les droites $\left(AB\right)$ et $\left(CD\right)$  sont-elles parallèles ?
+\end{enumerate}
+\begin{corrige}
+     \cadre{bleu}{Méthode}{
+          Pour savoir si les droites $\left(AB\right)$ et $\left(CD\right)$  sont parallèles, on calcule séparément les rapports $\dfrac{OA}{OC}$ et $\dfrac{OB}{OD}$.
+          \par
+          Si ces deux rapports sont égaux, les droites $\left(AB\right)$ et $\left(CD\right)$  sont parallèles d'après \mcLien{/cours/theoreme-thales\#t50}{la réciproque du théorème de Thalès}. Sinon, les droites  $\left(AB\right)$ et $\left(CD\right)$  ne sont pas parallèles.
+     } % fin methode
+     \begin{enumerate}
+          \item %
+          Pour la question \textbf{1.} :
+          \par
+          $\dfrac{OA}{OC}=\dfrac{2,8}{5}=0,56$
+          \par
+          $\dfrac{OB}{OD}=\dfrac{2}{3,5}=\dfrac{4}{7} \approx 0,571$
+          \par
+          $\dfrac{OA}{OC} \neq \dfrac{OB}{OD}$ donc les droites  $\left(AB\right)$ et $\left(CD\right)$  ne sont pas parallèles.
+          \item %
+          Pour la question \textbf{2.} :
+          \par
+          $\dfrac{OA}{OC}=\dfrac{4}{6}=\dfrac{2}{3}$
+          \par
+          $\dfrac{OB}{OD}=\dfrac{2,8}{4,2}=\dfrac{28}{42}=\dfrac{2}{3}$
+          \par
+          $\dfrac{OA}{OC} = \dfrac{OB}{OD}$ donc les droites  $\left(AB\right)$ et $\left(CD\right)$  sont parallèles d'après la réciproque du théorème de Thalès.
+          \bloc{cyan}{Remarque}{ % id="r10"
+               \textbf{Attention~: }Ne pas calculer de valeur approchée (par exemple $0,67$) pour cette question~! On veut montrer que les rapports sont \textbf{exactement} égaux (et pas seulement qu'ils sont à peu près égaux).
+          } % fin rem
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

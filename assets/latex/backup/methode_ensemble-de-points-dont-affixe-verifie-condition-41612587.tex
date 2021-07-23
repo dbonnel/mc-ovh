@@ -1,0 +1,106 @@
+\input{_header}
+\meta{url}{/methode/ensemble-de-points-dont-affixe-verifie-condition/}
+\meta{pid}{5765}
+\meta{pi_}{5765}
+\meta{titre}{Ensemble de points dont l'affixe vérifie une condition}
+\meta{type}{methode}
+\cadre{bleu}{Situation}{%
+     On vous demande de trouver l'ensemble des points $M$ du plan complexe dont l'affixe $z$ vérifie une certaine condition.
+}
+\bloc{orange}{Exemples}{% id="e010"
+     \begin{enumerate}
+          \item
+          Déterminer l'ensemble des points $M$ d'affixe $z$ tels que $ \frac{z-1}{z+i} $ soit un imaginaire pur.
+          \item
+          Déterminer l'ensemble des points $M$ d'affixe $z$ tels que $\left| z-1+i\right| =1 $.
+     \end{enumerate}
+}
+\begin{h2}1 - Méthode algébrique\end{h2}
+\cadre{rouge}{Méthode}{% id="m020"
+     On pose $z=x+iy$ (avec $x \in \mathbb{R},\ y \in\mathbb{R}$) dans la condition et l'on essaie de se ramener à une équation cartésienne.
+}
+\bloc{cyan}{Rappels}{% id="r030"
+
+\begin{enumerate}
+
+     \item
+     Une équation cartésienne d'une droite dans le plan est de la forme~:
+     \begin{center}$ax+by+c=0$
+\end{center}
+     \item
+     Une équation cartésienne du cercle de centre $ \Omega (x_0\~;\ y_0)$ et de rayon $r$ est~:
+     \begin{center}$(x-x_0)^2+(y-y_0)^2=r^2$\end{center}
+\end{enumerate}
+}
+\bloc{orange}{Exemple 1}{% id="e040"
+\begin{note}Déterminer l'ensemble des points $M$ d'affixe $z$ tels que $ \frac{z-1}{z+i} $ soit un imaginaire pur.\end{note}
+Tout d'abord notons que $ \frac{z-1}{z+i} $ n'est défini que si $z \neq -i$.
+\par
+Pour $z \neq -i$, on pose $z=x+iy$~:
+\par
+$ \frac{z-1}{z+i}=\frac{x+iy-1}{x+iy+i}=\frac{x+iy-1}{x+i(y+1)}$
+\par
+On multiplie le numérateur et le dénominateur par le conjugué du dénominateur~:
+\par
+${\frac{z-1}{z+i}}=\frac{(x+iy-1)(x-iy-i)}{(x+i(y+1))(x-i(y+1))} $
+\par
+$\phantom {\frac{z-1}{z+i}}=\frac{x^2-ixy-ix+ixy+y^2+y-x+iy+i}{x^2+(y+1)^2} $
+\par
+On réduit et on sépare partie réelle et partie imaginaire~:
+\par
+${\frac{z-1}{z+i}}=\frac{x^2+y^2-x+y}{x^2+(y+1)^2}+i\frac{-x+y+1}{x^2+(y+1)^2} $
+\par
+${\frac{z-1}{z+i}}$ est un imaginaire pur \textbf{si et seulement si sa partie réelle est nulle} donc si et seulement si $x^2+y^2-x+y = 0$.
+\par
+En remarquant que $x^2-x$ est le début de l'identité remarquable $\left(x- \frac{1}{2}\right)^2 $ on trouve $x^2-x=\left(x- \frac{1}{2}\right)^2 -\frac{1}{4}$.
+\par
+De même, $y^2+y=\left(y+ \frac{1}{2}\right)^2 -\frac{1}{4}$.
+\par
+L'équation $x^2+y^2-x+y = 0$ est donc équivalente à~:
+\par
+$\left(x- \frac{1}{2}\right)^2 -\frac{1}{4}$$+\left(y+ \frac{1}{2}\right)^2 -\frac{1}{4} = 0$
+\par
+$\left(x- \frac{1}{2}\right)^2 $$+\left(y+ \frac{1}{2}\right)^2 =\frac{1}{2}$
+\par
+D'après le rappel, l'ensemble cherché est donc le cercle de centre $ \Omega \left( \frac{1}{2}~;~ -\frac{1}{2}\right) $ et de rayon $ r = \dfrac{1}{\sqrt{2}}  = \frac{ \sqrt{2}}{2}$. Il faut toutefois retrancher à cet ensemble le point $A$ d'affixe $-i$ pour lequel le rapport ${\frac{z-1}{z+i}}$ n'est pas défini.
+<img src="/wp-content/uploads/methode-lieu-geometrique.svg" alt="lieu géométrique" class="aligncenter" style="width:450px;"/>
+On pourrait également traiter l'exemple 2 de manière algébrique. On va voir que la méthode géométrique est plus plus rapide et nécessite moins de calculs.
+}
+\begin{h2}2 - Méthode géométrique\end{h2}
+\cadre{rouge}{Méthode}{% id="m020"
+     Cette méthode est particulièrement adaptée au cas où la condition est exprimée à l'aide de module.
+     \par
+     On utilise le résultat suivant~:
+     \par
+     Si $M$ est un point d'affixe $z$ et $A$ un point d'affixe $a$ alors $|z-a|$ s'interprète géométriquement comme la distance $AM$.
+     \par
+     La condition imposée peut alors s'interpréter en terme de distance.
+}
+\bloc{cyan}{Rappels}{% id="r050"
+
+\begin{enumerate}
+     \item
+     L'ensemble des points du plan tels que $AM=BM$ est la médiatrice du segment $[AB]$
+     \item
+     L'ensemble des points du plan tels que $AM=r$ est~:
+     \begin{itemize}
+          \item
+          le cercle de centre $A$ et de rayon $r$ si $r > 0$
+          \item
+          le point $A$ si $r = 0$
+          \item
+          l'ensemble vide si $r < 0$
+     \end{itemize}
+\end{enumerate}
+}
+\bloc{orange}{Exemple 2}{% id="e040"
+     Déterminer l'ensemble des points $M$ d'affixe $z$ tels que $\left| z-1+i\right| =1 $.
+     \par
+     On écrit $\left| z-1+i\right| $ $= \left| z-(1-i)\right| $ (qui est de la forme $|z-a|$ avec $a=1-i$).
+     \par
+     On place le point $A$ d'affixe $1-i$. On a alors $\left| z-(1-i)\right| = AM $.
+     \par
+     La condition $\left| z-1+i\right| =1 $ s'écrit alors $AM = 1$. L'ensemble cherché est donc le cercle de centre $A(1-i)$ et de rayon $1$.
+     <img src="/wp-content/uploads/methode-lieu-geometrique2.svg" alt="méthode lieu géométrique" class="aligncenter" style="width:450px;"/>
+}
+\input{_footer}

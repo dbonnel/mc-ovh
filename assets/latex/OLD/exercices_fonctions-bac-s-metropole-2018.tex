@@ -1,0 +1,132 @@
+\input{_header}
+\begin{h2}Exercice 1 (6 points)\end{h2}
+\textbf{Commun à tous les candidats }
+\bigbreak
+\emph{Dans cet exercice, on munit le plan d'un repère orthonormé.}
+\par
+On a représenté ci-dessous la courbe d'équation~:
+\[y = \dfrac{1}{2}\left(\text{e}^x + \text{e}^{-x} - 2\right).\]
+\par
+Cette courbe est appelée une \og chaînette \fg.
+\par
+On s'intéresse ici aux \og arcs de chaînette\fg{} délimités par deux points de cette courbe
+symétriques par rapport à l'axe des ordonnées.
+\par
+Un tel arc est représenté sur le graphique ci-dessous en trait plein.
+\par
+On définit la \og largeur \fg{} et la \og hauteur \fg{} de l'arc de chaînette délimité par les points $M$ et $M'$ comme indiqué sur le graphique.
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \psset{unit=1.5cm}
+          \begin{pspicture}(-2,-0.8)(2,2)
+               \psaxes[linewidth=1pt,Dx=4,Dy=4]{->}(0,0)(-2,0)(2,2)
+               \psplot[plotpoints=3000,linewidth=1pt]{-1.8}{1.8}{2.71828 x exp 2.71828 x neg exp add 2 sub 0.5 mul}
+               \psline[linestyle=dashed](1.4,0)(1.4,1.1509)(-1.4,1.1509)(-1.4,0)
+               \uput[d](1.4,0){$x$} \uput[d](-1.4,0){$- x$}
+               \psline{<->}(-1.4,-0.5)(1.4,-0.5)
+               \uput[d](0,-0.5){largeur}
+               \psline{<->}(-1.6,0)(-1.6,1.1509)
+               \uput[l](-1.6,0.56){hauteur}
+               \uput[ur](1.5,0.9){$M\left(x~;~\dfrac{1}{2}\left(\text{e}^x + \text{e}^{- x} - 2\right)\right)$}
+               \uput[ur](-1.4,1.15){$M'$}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+\medbreak
+Le but de l'exercice est d'étudier les positions possibles sur la courbe du point $M$ d'abscisse $x$ strictement positive afin que la largeur de l'arc de chaînette soit égale à sa hauteur.
+\medbreak
+\begin{enumerate}
+     \item Justifier que le problème étudié se ramène à la recherche des solutions strictement
+     positives de l'équation
+     \par
+     \[(E)~: \text{e}^x + \text{e}^{- x} - 4x - 2 = 0.\]
+     \item  On note $f$ la fonction définie sur l'intervalle $[0~;~+\infty[$ par~:
+     \par
+     \[f(x) = \text{e}^x + \text{e}^{- x} - 4x - 2.\]
+     \begin{enumerate}[label=\alph*.]
+          \item Vérifier que pour tout $x > 0,\: f(x) = x \left(\dfrac{\text{e}^x}{x}- 4\right) + \text{e}^{- x} - 2$.
+          \item Déterminer $\displaystyle\lim_{x \to + \infty} f(x)$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item On note $f'$ la fonction dérivée de la fonction $f$. Calculer $f'(x)$, où $x$ appartient à l'intervalle $[0~;~ +\infty[$.
+          \item Montrer que l'équation $f'(x) = 0$ équivaut à l'équation~: $\left(\text{e}^x\right)^2 - 4\text{e}^x - 1 = 0$.
+          \item En posant $X = \text{e}^x$, montrer que l'équation $f'(x) = 0$ admet pour unique solution réelle le nombre $\ln \left(2 + \sqrt{5}\right)$.
+     \end{enumerate}
+     \item  On donne ci-dessous le tableau de signes de la fonction dérivée $f'$ de $f$~:
+     \begin{center}
+          \begin{extern}%width="300" alt=""
+               \psset{unit=1cm}
+               \begin{pspicture}(7,1.5)
+                    \psframe(7,1.5)\psline(0,0.75)(7,0.75)\psline(1,0)(1,1.5)
+                    \uput[u](0.5,0.85){$x$}\uput[u](1.2,0.85){$0$}
+                    \uput[u](4,0.7){$\ln \left(2 + \sqrt{5} \right)$}\uput[u](6.5,0.85){$+ \infty$}
+                    \rput(0.5,0.375){$f'(x)$}\rput(2,0.375){$-$}
+                    \rput(4,0.375){$0$}\rput(5,0.375){$+$}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item Dresser le tableau de variations de la fonction $f$.
+          \item Démontrer que l'équation $f(x) = 0$ admet une unique solution strictement positive que l'on notera $\alpha$.
+     \end{enumerate}
+     \item On considère l'algorithme suivant où les variables $a$, $b$ et $m$ sont des nombres réels~:
+     \begin{center}
+          \begin{extern}%width="350" alt=""
+               \begin{tabularx}{0.5\linewidth}{|X|}\hline
+                    Tant que $b - a > 0,1$ faire~:\\
+                    \hspace{1cm}$m \gets \dfrac{a+b}{2}$\\
+                    \hspace{1cm}Si $\text{e}^m + \text{e}^{-m} - 4m - 2 > 0$, alors~:\\
+                    \hspace{2cm}$b \gets m$\\
+                    \hspace{1cm}Sinon~:\\
+                    \hspace{2cm}$a\gets m$\\
+                    \hspace{1cm}Fin Si\\
+                    Fin Tant que\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item Avant l'exécution de cet algorithme, les variables $a$ et $b$
+          contiennent respectivement les valeurs $2$ et $3$.
+          \par
+          Que contiennent-elles à la fin de l'exécution de l'algorithme~?
+          \par
+          On justifiera la réponse en reproduisant et en complétant le tableau ci-contre avec les différentes valeurs prises par les variables, à chaque étape de l'algorithme.
+          \item Comment peut-on utiliser les valeurs obtenues en fin d'algorithme à la question
+          précédente~?
+     \end{enumerate}
+     \begin{center}
+          \begin{extern}%width="550" alt=""
+               \begin{tabularx}{0.8\linewidth}{|*{4}{>{\centering \arraybackslash}X|}}\hline
+                    $m$ 	&$a$ &$b$ &$b - a$\\ \hline
+                    \cellcolor{lightgray}	&2& 3 &1\\ \hline
+                    2,5		&&&\\ \hline
+                    \ldots	&\ldots&\ldots&\\ \hline
+                    ~		&&&\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \item La \emph{Gateway Arch}, édifiée dans la ville de Saint-Louis aux États-Unis, a l'allure ci-dessous.
+     \begin{center}
+          \begin{extern}%width="180" alt=""
+               \psset{unit=1.3cm,arrowsize=2pt 3}
+               \begin{pspicture}(-2,-1)(2,2)
+                    %\psaxes[linewidth=1.25pt,Dx=2,Dy=2]{->}(0,0)(-2,0)(2,2)
+                    \psplot[plotpoints=3000,linewidth=0.75pt]{-1.8}{1.8}{2.71828 x exp 2.71828 x neg exp add 2 sub 0.5 mul neg 1.5 add}
+                    \psline{<->}(-1.8,-0.6)(1.8,-0.6)
+                    \uput[d](0,-0.6){largeur}
+                    \psline{<->}(0,-0.6)(0,1.5)
+                    \uput[r](0,0.45){hauteur}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     Son profil peut être approché par un arc de chaînette renversé dont la largeur est égale à  la hauteur.
+     \par
+     La largeur de cet arc, exprimée en mètre, est égale au double de la solution strictement
+     positive de l'équation~:
+     \par
+     \[\left(E'\right)~: \text{e}^{\tfrac{t}{39}} + \text{e}^{-\tfrac{t}{39}} - 4\frac{t}{39} - 2 = 0.\]
+     \par
+     Donner un encadrement de la hauteur de la \emph{Gateway Arch}.
+\end{enumerate}
+\input{_footer}

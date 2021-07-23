@@ -1,0 +1,371 @@
+\input{_header}
+\begin{h2}1. Notion de fonction\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une \textbf{fonction} $f$ est un procédé qui à tout nombre réel $x$ d'une partie $D$ de $\mathbb{R}$ associe \textbf{ un seul }nombre réel $y$.
+     \begin{itemize}
+          \item $x$ s'appelle la \textbf{variable}.
+          \item $y$ s'appelle l'\textbf{image} de $x$ par la fonction $f$ et se note $f\left(x\right)$
+          \item $f$ est la \textbf{fonction} et se note: $f : x \mapsto  y=f\left(x\right)$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     Les procédés permettant d'associer un nombre à un autre nombre peuvent être :
+     \begin{itemize}
+          \item des formules mathématiques (par exemple : $f\left(x\right)=\frac{1}{1+x^2}$)
+          \item une courbe (par exemple : la courbe donnant le cours d'une action en Bourse en fonction du temps)
+          \item un instrument de mesure ou de conversion (par exemple : le compteur d'un taxi qui donne le prix à payer en fonction du trajet parcouru)
+          \item un tableau de valeurs, chaque élément de la seconde ligne étant associé à un élément de la première ligne
+          \item une touche de calculatrice (par exemple: \textit{sin, cos, ln, log}, etc.) qui affiche un résultat dépendant du nombre saisi auparavant
+          \item etc.
+     \end{itemize}
+}
+\cadre{rouge}{Méthode (Calcul d'une image)}{% id="t30"
+     Pour calculer l'image d'un nombre par une fonction définie par une formule on remplace $x$ par ce nombre dans l'expression de $f\left(x\right)$
+}
+\bloc{orange}{Exemple}{% id="e30"
+     Soit la fonction $f$ définie par $f\left(x\right)=\frac{x^2+3}{x+1}$
+     \begin{itemize}
+          \item Pour calculer l'image de $1$ - notée $f\left(1\right)$ - on remplace $x$ par $1$ dans la formule donnant $f\left(x\right)$. On obtient alors :
+          \par
+          $f\left(1\right)=\frac{1^2+3}{1+1}=\frac{4}{2}=2$
+          \item Pour calculer  l'image de $-2$, on remplace $x$ par $\left(-2\right)$ dans cette même formule. Pensez bien à ajouter une parenthèse lorsque $x$ est négatif ou lorsqu'il s'agit d'une expression fractionnaire. On obtient  :
+          \par
+          $f\left(-2\right)=\frac{\left(-2\right)^2+3}{\left(-2\right)+1}=\frac{7}{-1}=-7$
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d40"
+     L'ensemble $\mathscr D$ des éléments $x$ de $\mathbb{R}$ qui possèdent une image par $f$ s'appelle l'\textbf{ensemble de définition} de $f$.
+     \par
+     On dit également que $f$ est \textbf{définie} sur $\mathscr D$
+}
+\bloc{cyan}{Remarque}{% id="r40"
+     Certaines fonctions sont définies sur $\mathbb{R}$ en entier. Parfois, cependant, l'ensemble de définition est plus petit. C'est en particulier le cas:
+     \begin{itemize}
+          \item s'il est impossible de calculer $f\left(x\right)$ pour certaines valeurs de $x$ (par exemple la fonction $f : x \mapsto  \frac{1}{x}$ n'est pas définie pour $x=0$ car il est impossible de diviser par zéro
+          \item si la fonction n'a aucune signification pour certaines valeurs de $x$; par exemple la fonction donnant l'aire d'un carré en fonction de la longueur $x$ de ses côtés n'a pas de sens pour $x$ négatif.
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d50"
+     Soit $y$ un nombre réel. Les \textbf{antécédents} de $y$ par $f$ sont les nombres réels $x$ appartenant à $\mathscr D$ tels que $f\left(x\right)=y$. Un nombre peut avoir aucun, un ou plusieurs antécédent(s).
+}
+\cadre{rouge}{Méthode (Calcul des antécédents)}{% id="t60"
+     Pour déterminer les antécédents d'un nombre $y$, on résout l'équation  $f\left(x\right)=y$ d'inconnue $x$.
+}
+\bloc{orange}{Exemple}{% id="e60"
+     Soit la fonction $f$ définie par $f\left(x\right)=\frac{x+5}{x+1}$
+     \par
+     Pour déterminer le ou les antécédents du nombre $2$ on résout l'équation $f\left(x\right)=2$ c'est à dire :
+     \begin{center}$\frac{x+5}{x+1}=2$\end{center}
+     On obtient alors :
+     \par
+     $x+5=2\left(x+1\right)$ (« produit en croix »)
+     \par
+     $x+5=2x+2$
+     \par
+     $x-2x=2-5$
+     \par
+     $-x=-3$
+     \par
+     $x=3$
+     \par
+     Le nombre $2$ possède un unique antécédent qui est $x=3$.
+}
+\begin{h2}2. Représentation graphique\end{h2}
+Dans cette section, on munit le plan $\mathscr P$ d'un repère orthogonal $\left(O, i, j\right)$
+\cadre{bleu}{Définition}{% id="d80"
+     Soit $f$ une fonction définie sur un ensemble $\mathscr D$.
+     \par
+     La\textbf{ représentation graphique} de $f$ est la courbe  $\mathscr C_f $  formée des points $M\left(x;y\right)$ où $x\in \mathscr D$ et $y=f\left(x\right)$
+     \par
+     On dit aussi que la courbe $\mathscr C_f $ \textbf{a pour équation} $y=f\left(x\right)$.
+}
+\bloc{orange}{Exemple}{% id="e80"
+     \begin{center}
+          \begin{extern} %width="300" alt=" représentation graphique d'une fonction"
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x^3-x+1}
+                    \def\xmin{-1.2}
+                    \def\xmax{1.2}
+                    \def\ymin{-0.2}
+                    \def\ymax{1.7}
+                    \def\xunit{4}  % unités en cm
+                    \def\yunit{4}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %    \psgrid[gridcolor=lightgray, subgriddiv=1, gridlabels=0pt](-3,-1.8)(7,4)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{-1}{1}{\fonction}
+                         \rput[tr](-0.07,-0.07){$O$}
+                         \rput[l](-0.88,1.05){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}\textit{Exemple de représentation graphique d'une fonction définie sur [-1;1]}\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r80"
+     Du fait qu'un nombre ne peut pas avoir plusieurs images, la courbe représentative d'une fonction \textbf{ne peut pas contenir plusieurs points situés sur la même "verticale"} (droite parallèle à l'axe des ordonnées).
+     \par
+     Par contre, il peut très bien y avoir plusieurs points situés sur une même horizontale comme dans l'exemple ci-dessus.
+}
+\bloc{orange}{Lecture graphique de l'image d'un nombre}{% id="e82"
+     \begin{center}
+          \begin{extern} %width="300" alt="Lecture graphique d'une image"
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x^3-x+1}
+                    \def\xmin{-1.2}
+                    \def\xmax{1.2}
+                    \def\ymin{-0.2}
+                    \def\ymax{1.7}
+                    \def\xunit{4}  % unités en cm
+                    \def\yunit{4}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %    \psgrid[gridcolor=lightgray, subgriddiv=1, gridlabels=0pt](-3,-1.8)(7,4)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{-1}{1}{\fonction}
+                         \rput[tr](-0.07,-0.07){$O$}
+                         \rput[l](-0.88,1.05){$\color{blue} \mathcal{C}_f$}
+                         \rput(0.58,0.72){$\color{blue} M$}
+                         \rput[t](0.5,-0.07){$\red 0,5$}\rput[r](-0.05,0.62){$\red f(0,5)\approx0,6$}
+                         \psline[linecolor=red,linewidth=1pt](0.5,0)(0.5,0.625)(0,0.625)
+                         \psline[linecolor=red,linewidth=.9pt,arrowsize=6pt]{->}(0.5,0)(0.5,0.33)
+                         \psline[linecolor=red,linewidth=.9pt,arrowsize=6pt]{->}(0.5,0.625)(0.23,0.625)
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Pour déterminer graphiquement l'\textbf{image} de $0,5$ par la fonction $f $:
+     \begin{itemize}
+          \item on place le point de d'\textbf{abscisse $0,5$} sur l'axe des abscisses
+          \item on le relie au point $M$ de la courbe qui a la même abscisse
+          \item l'\textbf{ordonnée} du point $M$ nous donne la valeur de $f\left(0,5\right)$; on trouve ici environ $0,6$.
+     \end{itemize}
+}
+\bloc{orange}{Lecture graphique des antécédents d'un nombre}{% id="e84"
+     \begin{center}
+          \begin{extern} %width="300" alt="Lecture graphique d'antécédents "
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x^3-x+1}
+                    \def\xmin{-1.2}
+                    \def\xmax{1.2}
+                    \def\ymin{-0.2}
+                    \def\ymax{1.7}
+                    \def\xunit{4}  % unités en cm
+                    \def\yunit{4}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %    \psgrid[gridcolor=lightgray, subgriddiv=1, gridlabels=0pt](-3,-1.8)(7,4)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{-1}{1}{\fonction}
+                         \rput[tr](-0.07,-0.07){$O$}
+                         \rput[l](-0.88,1.05){$\color{blue} \mathcal{C}_f$}
+                         \rput[t](0.13,-0.08){$\red 0,1$} \rput[t](0.82,-0.08){$\red 0,95$} \rput[r](-0.05,0.8){$\red 0,9$}
+                         \psline[linecolor=red,linewidth=1pt](0.1,0.9)(0.1,0.)
+                         \psline[linecolor=red,linewidth=1pt](0.95,0.9)(0.95,0.)
+                         \psline[linecolor=red,linewidth=1pt](-1.5,0.9)(1.5,0.9)
+                         \psline[linecolor=red,linewidth=.9pt,arrowsize=6pt]{->}(0.1,0.9)(0.1,0.4)
+                         \psline[linecolor=red,linewidth=.9pt,arrowsize=6pt]{->}(0.95,0.9)(0.95,0.4)
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Pour déterminer graphiquement les \textbf{antécédents} de $0,9$ par la fonction $f $:
+     \begin{itemize}
+          \item on place le point de d'\textbf{ordonnée} $0,9$ sur l'axe des ordonnées
+          \item on trace la droite horizontale (d'équation $y=0,9$) qui passe par ce point
+          \item on trace le(s) \textbf{point(s) d'intersection} de cette droite avec la courbe. Dans cet exemple on en trouve deux ; dans d'autres exemples on pourrait en trouver zéro, un, deux ou plus...
+          \item les \textbf{abscisses} de ces points d'intersection nous donne les antécédents de $0,9$; on trouve ici deux antécédents qui valent environ $0,1$ et $0,95$.
+     \end{itemize}
+}
+\begin{h2}3. Variations d'une fonction\end{h2}
+\cadre{bleu}{Définition}{% id="d100"
+     La fonction $f$ est \textbf{croissante} sur l'intervalle $I$ si pour tous réels $x_1$ et $x_2$  appartenant à $I$ tels que $x_1\leqslant  x_2$ on a $f\left(x_1\right)\leqslant f\left(x_2\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r100"
+     Intuitivement, cela se traduit par le fait que la courbe représentative de la fonction $f$ "monte" lorsqu'on la parcourt dans le sens de l'axe des abscisses (e.g. de gauche à droite)
+}
+\begin{center}
+     \begin{extern}%width="250" alt="fonction croissante"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{1+0.2*x*x }
+               \def\xmin{-1.2}
+               \def\xmax{5}
+               \def\ymin{-0.9}
+               \def\ymax{5}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{12pt}{12pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                    \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,1.2)(0,1.2)
+                    \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,4.2)(0,4.2)
+                    \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                    \rput[r](-0.1,1.2){$f(x_1)$} \rput[r](-0.1,4.2){$f(x_2)$}
+                    \rput[tl](4.3,4.5){$\color{red} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définition}{% id="d110"
+     La fonction $f$ est \textbf{décroissante} sur l'intervalle $I$ si pour tous réels $x_1$ et $x_2$  appartenant à $I$ tels que $x_1 \leqslant x_2$ on a $f\left(x_1\right) \geqslant f\left(x_2\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r110"
+     Intuitivement, cela se traduit par le fait que la courbe représentative de la fonction $f$ "descend" lorsqu'on la parcourt dans le sens de l'axe des abscisses (e.g. de gauche à droite)
+}
+\begin{center}
+     \begin{extern}%width="250" alt="fonction décroissante"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{4-0.1*x*x }
+               \def\xmin{-1.2}
+               \def\xmax{5}
+               \def\ymin{-0.9}
+               \def\ymax{5}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{12pt}{12pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                    \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,3.9)(0,3.9)
+                    \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,2.4)(0,2.4)
+                    \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                    \rput[r](-0.1,3.9){$f(x_1)$} \rput[r](-0.1,2.4){$f(x_2)$}
+                    \rput[tl](4.5,2.5){$\color{red} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définition}{% id="d120"
+     Soit $I$ un intervalle et $x_0 \in  I$.
+     \par
+     La fonction $f$ admet un \textbf{maximum} en $x_0$ sur l'intervalle $I$ si pour tout réel $x$ de I, $f\left(x\right)\leqslant f\left(x_0\right)$. Le maximum de la fonction $f$ sur $I$ est alors $M=f\left(x_0\right)$
+}
+\begin{center}
+     \begin{extern}%width="250" alt="maximum d'une fonction"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{(x+1)*(5-x)*4/9}
+               \def\xmin{-1.2}
+               \def\xmax{5}
+               \def\ymin{-0.9}
+               \def\ymax{5}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{12pt}{12pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red]{0.2}{4}{\fonction}
+                    \psline[linewidth=0.75pt,linecolor=lightgray](2,0)(2,4)(0,4)
+                    \rput[tr](-0.3,-0.3){$O$} \rput[t](2,-0.3){$x_0$}
+                    \rput[r](-0.1,4){$f(x_0)$}
+                    \rput[tl](4.,3){$\color{red} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définition}{% id="d130"
+     Soit $I$ un intervalle et $x_0 \in  I$.
+     \par
+     La fonction $f$ admet un \textbf{minimum} en $x_0$ sur l'intervalle $I$ si pour tout réel $x$ de I, $f\left(x\right)\geqslant f\left(x_0\right)$. Le minimum de la fonction $f$ sur $I$ est alors $m=f\left(x_0\right)$
+}
+\begin{center}
+     \begin{extern}%width="250" alt="maximum d'une fonction"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{(x+1)*(x-5)*4/9+6}
+               \def\xmin{-1.2}
+               \def\xmax{5}
+               \def\ymin{-0.9}
+               \def\ymax{5}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{12pt}{12pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red]{0.2}{4}{\fonction}
+                    \psline[linewidth=0.75pt,linecolor=lightgray](2,0)(2,2)(0,2)
+                    \rput[tr](-0.3,-0.3){$O$} \rput[t](2,-0.3){$x_0$}
+                    \rput[r](-0.1,2){$f(x_0)$}
+                    \rput[tl](4.,3.5){$\color{red} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r130"
+     \begin{itemize}
+          \item Un \textbf{extremum} est un maximum ou un minimum
+          \item \textbf{Attention à la rédaction :}
+          Lorsqu'on dit que $f$ admet un maximum (\textit{resp.} minimum) \textbf{en} $x_0$ (ou \textbf{pour $x=x_0$}), $x_0$ correspond à la valeur de la \textbf{variable $x$} et non à la valeur du  maximum (\textit{resp.} minimum).
+          \par
+          Par exemple, dans le tableau de l'exemple ci-dessous, $f$ admet un maximum \textbf{en $0$}. Ce maximum \textbf{est égal à 6} (\textit{Ne pas écrire que le maximum est $0$ !}).
+          \item Les variations d'une fonction peuvent être représentées par un \textbf{tableau de variations}
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e130"
+     Soit $f$ une fonction définie sur $\left[-2;5\right]$, croissante sur $\left[-2;0\right]$ et décroissante sur $\left[0; 5\right]$ avec $f\left(-2\right)=-3$, $f\left(0\right)=6$ et $f\left(5\right)=1$
+     \par
+     Le tableau de variations de la fonction $f$ est :
+     %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+     \begin{center}
+          \begin{extern}%width="350" alt=""
+               \begin{tikzpicture}[scale=0.875]
+                    % Styles
+                    \tikzstyle{cadre}=[thin]
+                    \tikzstyle{fleche}=[->,>=latex,thin]
+                    \tikzstyle{nondefini}=[lightgray]
+                    % Dimensions Modifiables
+                    \def\Lrg{1.5}
+                    \def\HtX{1}
+                    \def\HtY{0.5}
+                    % Dimensions Calculées
+                    \def\lignex{-0.5*\HtX}
+                    \def\lignef{-1.5*\HtX}
+                    \def\separateur{-0.5*\Lrg}
+                    % Largeur du tableau
+                    \def\gauche{-1.5*\Lrg}
+                    \def\droite{4.5*\Lrg}
+                    % Hauteur du tableau
+                    \def\haut{0.5*\HtX}
+                    \def\bas{-1.5*\HtX-2*\HtY}
+                    % Pointillés
+                    \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\bas);
+                    % Ligne de l'abscisse : x
+                    \node at (-1*\Lrg,0) {$x$};
+                    \node at (0*\Lrg,0) {$-2$};
+                    \node at (2*\Lrg,0) {$0$};
+                    \node at (4*\Lrg,0) {$5$};
+                    % Ligne de la fonction : f(x)
+                    \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f(x)$};
+                    \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$-3$};
+                    \node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$6$};
+                    \node (f3) at (4*\Lrg,{-1*\HtX+(-2)*\HtY}) {$1$};
+                    % Flèches
+                    \draw[fleche] (f1) -- (f2);
+                    \draw[fleche] (f2) -- (f3);
+                    % Encadrement
+                    \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                    \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                    \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+               \end{tikzpicture}
+          \end{extern}
+     \end{center}
+}
+\input{_footer}

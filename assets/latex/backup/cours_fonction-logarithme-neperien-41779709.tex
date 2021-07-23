@@ -1,0 +1,137 @@
+\input{_header}
+\meta{url}{/cours/fonction-logarithme-neperien/}
+\meta{pid}{436}
+\meta{titre}{Fonction logarithme népérien en Terminale ES/L}
+\meta{type}{cours}
+\begin{h2}1. Définition de la fonction logarithme népérien\end{h2}
+\cadre{bleu}{Théorème et définition}{%id="t10"
+     Pour tout réel $x>0$, l'équation $e^{y}=x$, d'inconnue $y$, admet une \textbf{unique} solution.
+     \par
+     La fonction \textbf{logarithme népérien}, notée $\ln$, est la fonction définie sur $\left]0;+\infty \right[$ qui à $x > 0$, associe le réel $y$ solution de l'équation $e^{y}=x$.
+}
+\bloc{cyan}{Remarques}{%id="r10"
+     \begin{itemize}
+          \item Pour $x\leqslant 0$, par contre, l'équation $e^{y}=x$ n'a \textbf{pas de solution}.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p20"
+     \begin{itemize}
+          \item Pour tout réel $x > 0$ et tout $y \in \mathbb{R}$ : $ e^{y}=x  \Leftrightarrow y=\ln\left(x\right)$.
+          \item Pour tout réel $x > 0$ : $e^{\ln\left(x\right)}=x$.
+          \item Pour tout réel $x$ : $\ln\left(e^{x}\right)=x$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{%id="r0"
+     \begin{itemize}
+          \item Ces propriétés se déduisent immédiatement de la définition.
+          \item On dit que les fonctions «logarithme népérien» et «exponentielle» sont \textit{réciproques}.
+          \item On en déduit immédiatement : $\ln\left(1\right)=0$ et $\ln\left(e\right)=1$.
+     \end{itemize}
+}
+\begin{h2}2. Etude de la fonction logarithme népérien\end{h2}
+\cadre{rouge}{Théorème}{%id="t30"
+     La fonction logarithme népérien est dérivable sur $\left]0 ;+\infty \right[$ et sa dérivée est définie par :
+     \begin{center}$\ln^{\prime}\left(x\right)=\frac{1}{x}.$\end{center}
+}
+\cadre{vert}{Propriété}{%id="p40"
+     La fonction logarithme népérien est \textbf{strictement croissante} sur $\left]0;+\infty \right[$.
+}
+\bloc{cyan}{Démonstration}{%id="r40"
+     Sa dérivée $\ln^{\prime}\left(x\right)=\frac{1}{x}$ est strictement positive sur $\left]0;+\infty \right[$.
+}
+\bloc{cyan}{Remarques}{%id="r40"
+     \begin{itemize}
+          \item Ces résultats permettent de tracer le tableau de variation et la courbe représentative de la fonction logarithme népérien :
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt="Tableau de variation de la fonction logarithme népérien"
+          \tikzset{double style/.style = {double,double distance=2pt}}
+          \begin{tikzpicture}
+               \tkzTabInit[lgt=3,espcl=10] {$x$ /1, $f'(x)=\dfrac{1}{x}$ /1.5,%
+               $f(x)=\ln x$/2} {$0$ , $+\infty$}%
+               \tkzTabLine{d,+,}%
+               \tkzTabVar{ D- / $-\infty$, + / $+\infty$ }
+               \tkzTabVal[draw]{1}{2}{0.33}{1}{0}
+               \tkzTabVal[draw]{1}{2}{0.66}{e}{1}
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Tableau de variation de la fonction logarithme népérien }
+\end{center}
+\par
+\begin{center}
+     \begin{extern} %width="400" alt="Représentation graphique de la fonction logarithme népérien"
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{x ln }
+               \def\xmin{-0.5}
+               \def\xmax{5.5}
+               \def\ymin{-3.5}
+               \def\ymax{3}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{2}
+               \psset{xunit=\xunit,yunit=\yunit}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{0.01}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](4.8,2){$\color{blue} \mathcal{C}_{\ln}$}
+                    \psline(0,1)(2.7183,1)(2.7183,0)
+                    \rput[t](2.7183,-0.25){$\text{e}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Représentation graphique de la fonction logarithme népérien }
+\end{center}
+\cadre{vert}{Propriété}{%id="p45"
+     Soit $u$ une fonction dérivable et \textbf{strictement positive} sur un intervalle $I$.
+     \par
+     Alors la fonction $ f : x\mapsto \ln\left(u\left(x\right)\right)$ est dérivable sur $I$ et :
+     \begin{center}$f^{\prime}=\frac{u^{\prime}}{u}$.\end{center}
+}
+\bloc{orange}{Exemple}{%id="e45"
+     Soit $f$ définie sur $\mathbb{R}$ par $f\left(x\right)=\ln\left(x^{2}+1\right)$.
+     \par
+     $f$ est dérivable sur $\mathbb{R}$ et $f^{\prime}\left(x\right)=\frac{2x}{x^{2}+1}$.
+}
+\cadre{rouge}{Théorème}{%id="t70"
+     Si $a$ et $b$ sont 2 réels strictement positifs :
+     \begin{itemize}
+          \item $\ln a=\ln b$ si et seulement si $a=b$.
+          \item $\ln a < \ln b$ si et seulement si $a < b$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{%id="r70"
+     \begin{itemize}
+          \item Le théorème précédent résulte de la stricte croissance de la fonction logarithme népérien.
+          \item En particulier, comme $\ln\left(1\right)=0$ : $\ln x < 0 \Leftrightarrow x < 1$. N'oubliez donc pas que \textbf{$\ln\left(x\right)$ peut être négatif} (si $0 < x < 1$); c'est une cause d'erreurs fréquente dans les exercices notamment avec des inéquations !
+     \end{itemize}
+}
+\begin{h2}3. Propriétés algébriques de la fonction logarithme népérien\end{h2}
+\cadre{rouge}{Théorème}{%id="80"
+     Si $a$ et $b$ sont 2 réels strictement positifs et si $n \in \mathbb{Z}$ :
+     \begin{itemize}
+          \item $\ln\left(ab\right)=\ln a+\ln b$.
+          \item $\ln\left(\frac{1}{a}\right)=-\ln a$.
+          \item $\ln\left(\frac{a}{b}\right)=\ln a-\ln b$.
+          \item $\ln\left(a^{n}\right)=n \ln a $.
+          \item $\ln\left(\sqrt{a}\right)=\frac{1}{2} \ln a $.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{%id="e80"
+     \begin{itemize}
+          \item $\ln\left(4\right)=\ln\left(2^{2}\right)=2\ln\left(2\right)$.
+          \item Pour $x > 1$ : $\ln\left(\frac{x+1}{x-1}\right)= \ln\left(x+1\right)-\ln\left(x-1\right)$.
+          \par
+          Cette égalité peut être intéressante (pour calculer la dérivée par exemple) mais il faut que $x > 1$.
+          \par
+          Si $x < -1$, l'expression $\ln\left(\frac{x+1}{x-1}\right)$ est définie mais pas $\ln\left(x+1\right)-\ln\left(x-1\right)$.
+     \end{itemize}
+}
+\input{_footer}

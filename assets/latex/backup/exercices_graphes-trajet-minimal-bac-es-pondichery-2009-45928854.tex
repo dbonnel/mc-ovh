@@ -1,0 +1,67 @@
+\input{_header}
+\meta{url}{/exercices/graphes-trajet-minimal-bac-es-pondichery-2009/}
+\meta{pid}{1148}
+\meta{titre}{Graphes Trajet minimal - Bac ES Pondichéry 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2\end{h2}
+\textit{5 points - \textbf{Pour les candidats ayant suivi l'enseignement de spécialité}}
+\par
+Une agence de voyages organise différentes excursions dans une région du monde et propose la visite de sites incontournables, nommés A, B, C, D, E et F.
+\par
+Ces excursions sont résumées sur le graphe ci-dessous dont les sommets désignent les sites, les arêtes représentent les routes pouvant être empruntées pour relier deux sites et le poids des arêtes désigne le temps de transport (en heures) entre chaque site.
+
+\begin{center}
+\imgsvg{Bac_ES_Pondichery_spe_2009}{0.3}% alt="Bac_ES_Pondichery_spe_2009" style="width:45rem"
+\end{center}
+
+\begin{enumerate}
+     \item
+     Justifier que ce graphe est connexe.
+     \item
+     Un touriste désire aller du site A au site F en limitant au maximum les temps de transport.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          En utilisant un algorithme, déterminer la plus courte chaîne reliant le sommet A au sommet F.
+          \item
+          Déduire le temps de transport minimal pour aller du site A au site F.
+     \end{enumerate}
+     \item
+     Un touriste désirant apprécier un maximum de paysages souhaite suivre un parcours empruntant toutes les routes proposées une et une seule fois.
+     \par
+     Si ce parcours existe, le décrire sans justifier; dans le cas contraire justifier qu'un tel parcours n'existe pas.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Deux sommets quelconques de ce graphe peuvent être reliés par une chaîne donc le graphe est \textbf{connexe}.
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               On utilise l'algorithme de Dijkstra :
+
+               \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+                    \hline
+                    \textbf{A}   &   \textbf{B}     &   \textbf{C}       &  \textbf{D}  &   \textbf{E}    &  \textbf{F}   &    \textbf{Trajet}
+                    \\ \hline
+                    0  &   \textbf{7(A)}  &  $\infty $  &   15(A)  &   $\infty $    &  $\infty $   &  AB
+                    \\ \hline
+                    &      &   19(B)  &   15(A)    &  \textbf{11(B)} &  23(B)   &  ABE
+                    \\ \hline
+                    &      &   19(B)  &   \textbf{13(E)}    &        &  23(B)   &  ABED
+                    \\ \hline
+                    &      &  \textbf{18(D)}   &      &        &  23(B)   &  ABEDC
+                    \\ \hline
+                    &      &    &      &        &  \textbf{21(C)}   &  ABEDCF
+                    \\ \hline
+               \end{tabularx}
+\par
+               La plus courte chaîne reliant le sommet A au sommet F est ABEDCF
+               \item
+               Le temps de transport minimal pour aller du site A au site F est de 21 heures d'après le tableau précédent.
+          \end{enumerate}
+          \item
+          D'après le théorème d'Euler, il est possible d'emprunter toutes les routes une et une seule fois si le nombre de sommets de degré impair est égal à 0 ou à 2 . Ici, le graphe possède 4 sommets de degré impair : C, D, E, F. Un tel parcours n'existe donc pas.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

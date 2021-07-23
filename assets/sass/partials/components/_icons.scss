@@ -1,0 +1,25 @@
+.icon-1em {
+    width: 1em;
+    height: 1em;
+    margin: 0 .5em;
+    fill: $primary;
+    stroke: $primary;
+}
+
+.icon-difficulte {
+    width: 1.3em;
+    height: 1em;
+    margin: 0 .3em 0 0;
+}
+
+.link-icon {
+    &:hover {
+        border: none;
+        cursor: pointer;
+
+        svg {
+            stroke: $secondary;
+            fill: $secondary;
+        }
+    }
+}

@@ -1,0 +1,291 @@
+\input{_header}
+\meta{url}{/exercices/etude-dune-fonction-a-laide-dune-fonction-annexe/}
+\meta{pid}{11404}
+\meta{titre}{Étude d'une fonction à l'aide d'une fonction annexe}
+\meta{type}{exercices}
+%
+\begin{center}
+     \begin{h3} Partie A \end{h3}
+\end{center}
+Soit la fonction $ g $ définie sur $  \mathbb{R}  $ par~:
+\[
+g (x) =2x^{ 3 } +2x^2  - 1.
+\]
+\begin{enumerate}
+     \item
+     Étudier les variations de la fonction $ g $ sur $  \mathbb{R} . $
+     \item
+     Calculer $ g (0)  $ et $ g (1).  $\\
+     On admet que l'équation $ g (x) =0 $ admet une unique solution  $ x_{ 0 }  $ sur $  \mathbb{R}$.  \\
+     Justifier que $ x_{ 0 }  \in  \left] 0 ; 1 \right[$.
+     \item
+     Déterminer le signe de $ g (x)  $ sur $  \mathbb{R}$.
+     \item
+     On considère le programme Python ci-dessous~:
+\begin{lstlisting}[language=Python]
+def g(x) :
+    return 2*x**3 + 2*x**2 - 1
+def solution() :
+    x = 0
+    y = g(x)
+    while y < 0 :
+        x = x + 0.01
+        y = g(x)
+    return x
+\end{lstlisting}
+L'appel de la fonction \texttt{solution() } définie ci-dessus retourne \texttt{0.57}.
+\newpar
+donner un encadrement d'amplitude 0,01 de  $ x_{ 0 }. $
+\end{enumerate}
+\begin{center}
+     \begin{h3} Partie b \end{h3}
+\end{center}
+On considère la fonction $ f $ définie sur  $  \mathbb{R}  \backslash  \{ 0 \}  $ par~: \\
+\[
+f (x) = \frac{ x^{ 3 } +2x^2 +1 }{ x } .
+\]
+\begin{enumerate}
+     \item
+     Montrer que pour tout réel $ x $ non nul~:
+     \[
+     f'  (x)= \frac{ g (x)  }{ x^2  } .
+     \]
+     \item
+     Dresser le tableau de variations de $ f $ sur $  \mathbb{R} . $  (On ne cherchera pas à déterminer la valeur de l’extremum de cette fonction.)
+\end{enumerate}
+%
+\begin{corrige}
+     \begin{center}
+          \begin{h3} Partie A \end{h3}
+     \end{center}
+     \begin{enumerate}
+          \item
+          La fonction $ g $ est une fonction polynôme, donc, elle est dérivable sur  $  \mathbb{R}  $ et~:
+          \newpar
+          $ g'  (x) =2 \times 3x^2+2 \times 2x=6x^2 +4x$\nosp$=2x (3x+2).  $
+          \newpar
+          $ g'  $ possède donc 2 racines~:  $ x_{ 1 } =0 $ et $ x_{ 2 } =  - \frac{ 2 }{ 3 } . $
+          \newpar
+          Le coefficient du terme du second degré est positif donc $ g' $ est négative entre $   - \frac{ 2 }{ 3 }  $ et $ 0 $ et est positive à l'extérieur de ces racines.
+          \newpar
+          $ g (0) = - 1 $
+          \newpar
+          $ g  \left( -  \frac{ 2 }{ 3 }  \right)  =2 \times  \left(  -  \frac{ 2 }{ 3 }  \right) ^{3}$\nosp$ +2 \times  \left(  -  \frac{ 2 }{ 3 }  \right) ^2  - 1$\nosp$= -  \frac{ 19 }{ 27 } . $
+          \newpar
+          On peut alors dresser le tableau de variations  de  $ g $~:  \\
+          \begin{center}
+               \begin{extern}%width="450" alt="tableau de variations de la fonction"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{6.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[dotted,black] (0*\Lrg,\lignex-0.1*\HtX) -- (0*\Lrg,\lignef+0.1*\HtX);
+                         \draw[dotted,black] (0*\Lrg,\lignef-0.1*\HtX) -- (0*\Lrg,\bas+0.1*\HtX);
+                         \draw[dotted,black] (2*\Lrg,\lignex-0.1*\HtX) -- (2*\Lrg,\lignef+0.1*\HtX);
+                         \draw[dotted,black] (2*\Lrg,\lignef-0.1*\HtX) -- (2*\Lrg,\bas+0.1*\HtX);
+                         \draw[dotted,black] (4*\Lrg,\lignex-0.1*\HtX) -- (4*\Lrg,\lignef+0.1*\HtX);
+                         \draw[dotted,black] (4*\Lrg,\lignef-0.1*\HtX) -- (4*\Lrg,\bas+0.1*\HtX);
+                         \draw[dotted,black] (6*\Lrg,\lignex-0.1*\HtX) -- (6*\Lrg,\lignef+0.1*\HtX);
+                         \draw[dotted,black] (6*\Lrg,\lignef-0.1*\HtX) -- (6*\Lrg,\bas+0.1*\HtX);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$ -  \infty $};
+                         \node at (2*\Lrg,0) {$ -  \frac{ 2 }{ 3 } $};
+                         \node at (4*\Lrg,0) {$0$};
+                         \node at (6*\Lrg,0) {$+ \infty $};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$g'(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$$};
+                         \node at (1*\Lrg,-1*\HtX) {$+$};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {$-$};
+                         \node at (4*\Lrg,-1*\HtX) {$0$};
+                         \node at (5*\Lrg,-1*\HtX) {$+$};
+                         \node at (6*\Lrg,-1*\HtX) {$$};
+                         % Ligne de la fonction~: f(x)
+                         \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$g(x)$};
+                         \node (f1) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$$};
+                         \node (f2) at (2*\Lrg,{-2*\HtX+(0)*\HtY}) {$ -  \frac{ 19 }{ 27 } $};
+                         \node (f3) at (4*\Lrg,{-2*\HtX+(-2)*\HtY}) {$-1$};
+                         \node (f4) at (6*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         \draw[fleche] (f3) -- (f4);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          \item
+          On a déjà calculé $ g (0) = - 1 $ qui est strictement négatif. \\
+          $ g (1) =3 $ est strictement positif.   \\
+          $ g $ change de signe entre  $ 0 $  et  $ 1 $ donc s'annule pour un nombre $ x_{ 0 }  $ appartenant à l'intervalle  $  \left] 0 ; 1 \right[ . $
+          \newpar
+          \textbf{Remarque~: } Une démonstration plus rigoureuse nécessiterait l'emploi du théorème des valeurs intermédiaires qui n'est pas au programme de Première. Ici, seule une justification était demandée.
+          \item
+          D'après le tableau de variations, $ g $ est négative sur l'intervalle $  \left] -  \infty   ; 0 \right]  $. \\
+          D'après la question précédente, $ g $ est également négative sur l'intervalle $  \left[ 0 ; x_{ 0 }  \right[  $ mais positive sur l'intervalle $  \left] x_{ 0 }  ; + \infty  \right[.$
+          \newpar
+          Le tableau de signes de $ g $ est donc le suivant~:  \\
+          \begin{center}
+               \begin{extern}%width="390" alt="Exemple tableau de signe 1"
+                    \resizebox{8cm}{!}{
+                         \begin{tikzpicture}[scale=0.875]
+                              % Styles
+                              \tikzstyle{cadre}=[thin]
+                              \tikzstyle{fleche}=[->,>=latex,thin]
+                              \tikzstyle{nondefini}=[lightgray]
+                              % Dimensions modifiables
+                              \def\Lrg{1.8}
+                              \def\HtX{1.2}
+                              \def\HtY{0.5}
+                              % Dimensions calculées
+                              \def\lignex{-0.5*\HtX}
+                              \def\lignef{-1.5*\HtX}
+                              \def\separateur{-0.5*\Lrg}
+                              % Largeur du tableau
+                              \def\gauche{-1.5*\Lrg}
+                              \def\droite{4.5*\Lrg}
+                              % Hauteur du tableau
+                              \def\haut{0.5*\HtX}
+                              \def\bas{-2.5*\HtX-2*\HtY}
+                              % Pointillés
+                              \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                              % Ligne de l'abscisse : x
+                              \node at (-1*\Lrg,0) {$x$};
+                              \node at (0*\Lrg,0) {$-\infty$};
+                              \node at (2*\Lrg,0) {$x_{ 0 } $};
+                              \node at (4*\Lrg,0) {$+\infty$};
+                              % Ligne de la dérivée : f'(x)
+                              \node at (-1*\Lrg,-1*\HtX) {$g (x) $};
+                              \node at (0*\Lrg,-1*\HtX) {$ $};
+                              \node at (1*\Lrg,-1*\HtX) {$-$};
+                              \node at (2*\Lrg,-1*\HtX) {$0$};
+                              \node at (3*\Lrg,-1*\HtX) {$+$};
+                              \node at (4*\Lrg,-1*\HtX) {$ $};
+                              % Ligne de la fonction : f(x)
+                              % Encadrement
+                              \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                              \draw[cadre] (\gauche,\haut) rectangle  (\droite, \lignef);
+                              \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \end{tikzpicture}
+                    }
+               \end{extern}
+          \end{center}
+          \item
+          La fonction  \og \texttt{solution () } \fg{}  calcule les valeurs de $ g (x)  $ pour $ x $ partant de  $ 0$ et augmentant par pas de $0,01.$
+          \newpar
+          La boucle \og  \texttt{while}  \fg{} s'arrête dès que $ g (x)   \geqslant 0$ et la fonction renvoie alors la valeur de la variable $ x. $  \\
+          Ce nombre retourné est donc le plus petit nombre de deux décimales tel que  $ g (x)  \geqslant 0. $
+          \newpar
+          Ce nombre étant égal à $ 0,57 $ d'après l'énoncé, on a donc  $ g (0,57)  \geqslant 0 $ mais  $ g (0,56)  < 0. $
+          \newpar
+          Par conséquent~:  $ 0,56 < x_{ 0 }  \leqslant 0,57. $
+     \end{enumerate}
+     \begin{center}
+          \begin{h3} Partie B \end{h3}
+     \end{center}
+     \begin{enumerate}
+          \item
+          Posons~:  $ u (x) =x^3 +2x^{ 2 } +1$ et $ v (x) =x $.
+          \newpar
+          Alors~:  $ u'  (x) =3x^2 +4x$ et $ v'  (x) =1 $
+          \newpar
+          Donc~:
+          \newpar
+          $ f'  (x) = \frac{ u'  (x) v (x)  - u (x) v'  (x)  }{ v (x) ^2  }  $
+          \newpar
+          $\phantom{ f'  (x) } =  \frac{ x (3x^2 +4x)  -  (x^{ 3 } +2x^2 +1)  }{  x^2  } $
+          \newpar
+          $\phantom{ f'  (x) } =  \frac{ 2x^{ 3 } +2x^2  - 1 }{  x^2  } $
+          \newpar
+          $\phantom{ f'  (x) } =  \frac{ g (x)  }{  x^2  } $
+          \item
+          $ x^2  $ est toujours strictement positif sur $  \mathbb{R} \backslash \{ 0 \}. $  \\
+          $ f'  (x)  $ est donc du signe de  $ g (x)  $ qui est donné par le tableau de la question a.3. \\
+          Toutefois, $ f $ n'est pas définie en $ 0. $
+          \newpar
+          On en déduit le tableau de variations de la fonction $ f $~:
+          \begin{center}
+               \begin{extern}%width="450" alt="tableau de variations de la fonction"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{6.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[dotted,black] (4*\Lrg,\lignex-0.1*\HtX) -- (4*\Lrg,\lignef+0.1*\HtX);
+                         \draw[dotted,black] (4*\Lrg,\lignef-0.1*\HtX) -- (4*\Lrg,\bas+0.1*\HtX);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$ -  \infty $};
+                         \node at (2*\Lrg,0) {$0$};
+                         \node at (4*\Lrg,0) {$x_0$};
+                         \node at (6*\Lrg,0) {$+ \infty $};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$$};
+                         \node at (1*\Lrg,-1*\HtX) {$-$};
+                         \node at (2*\Lrg,-1*\HtX) {$$};
+                         \node at (3*\Lrg,-1*\HtX) {$-$};
+                         \node at (4*\Lrg,-1*\HtX) {$0$};
+                         \node at (5*\Lrg,-1*\HtX) {$+$};
+                         \node at (6*\Lrg,-1*\HtX) {$$};
+                         % Ligne de la fonction~: f(x)
+                         \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node (f1) at (0*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+                         \node (f2) at (1.5*\Lrg,{-2*\HtX+(-2)*\HtY}) {$$};
+                         \node (f5) at (2.5*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+                         \node (f3) at (4*\Lrg,{-2*\HtX+(-2)*\HtY}) {$f(x_0)$};
+                         \node (f4) at (6*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f5) -- (f3);
+                         \draw[fleche] (f3) -- (f4);
+                         % Doubles barres
+                         \draw[double distance=2pt] (2*\Lrg,\lignex) -- (2*\Lrg,\bas);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

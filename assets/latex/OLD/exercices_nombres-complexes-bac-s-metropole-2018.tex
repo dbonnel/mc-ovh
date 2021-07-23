@@ -1,0 +1,45 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Pour les candidats n'ayant pas choisi l'enseignement de spécialité \og Mathématiques \fg{} }
+\bigbreak
+Le plan complexe est muni d'un repère orthonormé direct $(O~;~\overrightarrow{i},~\overrightarrow{j}~,~\overrightarrow{k})$.
+\par
+On pose $z_0 = 8$ et, pour tout entier naturel $n$~:
+\par
+\[z_{n+1} = \dfrac{3 - \text{i}\sqrt{3}}{4}z_n.\]
+\par
+On note $A_n$ le point du plan d'affixe $z_n$.
+\medbreak
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Vérifier que~:
+          \par
+          \[\dfrac{3 - \text{i}\sqrt{3}}{4} = \dfrac{\sqrt{3}}{2}\text{e}^{- \text{i}\frac{\pi}{6}}.\]
+          \item En déduire l'écriture de chacun des nombres complexes $z_1$,  $z_2$ et $z_3$ sous forme exponentielle et vérifier que $z_3$ est un imaginaire pur dont on précisera la partie imaginaire.
+          \item Représenter graphiquement les points $A_0$ , $A_1$ , $A_2$ et $A_3$~; on prendra pour unité le centimètre.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer par récurrence que, pour tout entier naturel $n$,
+          \par
+          \[z_n = 8 \times \left(\dfrac{\sqrt{3}}{2}\right)^n \text{e}^{- \text{i}\frac{n\pi}{6}}.\]
+          \item Pour tout entier naturel $n$, on pose $u_n = \left|z_n\right|$.
+          \par
+          Déterminer la nature et la limite de la suite $\left(u_n\right)$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que, pour tout entier naturel $k$,
+          \par
+          \[\dfrac{z_{k+1} - z_{k}}{z_{k+1}} = - \dfrac{1}{\sqrt{3}}\text{i}.\]
+          \par
+          En déduire que, pour tout entier naturel $k$, on a l'égalité~: $A_kA_{k+1} = \dfrac{1}{\sqrt{3}} \text{O}A_{k+1}$.
+          \item Pour tout entier naturel $n$, on appelle $l_n$ la longueur de la ligne brisée reliant dans cet ordre les points $A_0$,\: $A_1$,\: $A_2$, $\ldots$ , $A_n$.
+          \par
+          On a ainsi~: $l_n = A_0A_1 + A_1A_2 + \ldots + A_{n-1}A_n$.
+          \par
+          Démontrer que la suite $\left(l_n\right)$ est convergente et calculer sa limite.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

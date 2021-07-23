@@ -1,0 +1,90 @@
+\input{_header}
+\begin{h2}Exercice 4 (6 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\medbreak
+\begin{center}
+\begin{extern}%width="350" alt="courbe représentative de f"
+\resizebox{10cm}{!}{
+          \begin{pspicture}(-0.8,-2.3)(5.8,3.2)
+          \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle]{->}(0,0)(-0.8,-2.3)(5.8,3.2)
+          \psplot[linecolor=blue,plotpoints=3000,linewidth=0.75pt]{0}{5}{2 x mul x dup mul add 2.71828 x exp div}
+          \uput[u](3,0.9){$\blue \mathcal{C}_f$}
+     \end{pspicture}
+     }     
+     \end{extern}
+     \par
+     \textit{Courbe} $\mathscr{C}_f$
+     \bigbreak
+\begin{extern}%width="350" alt="courbe représentative de la dérivée de f"
+\resizebox{10cm}{!}{
+     \begin{pspicture}(-0.8,-2.3)(5.8,3.2)
+          \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle]{->}(0,0)(-0.8,-2.3)(5.8,3.2)
+          \psplot[linecolor=blue,plotpoints=3000,linewidth=0.75pt]{0}{5}{2 x dup mul sub 2.71828 x exp div}
+          \uput[d](3.5,-0.4){$\blue \mathcal{C}_{f'}$}
+     \end{pspicture}
+          }     
+          \end{extern}
+          \par
+          \textit{Courbe} $\mathscr{C}_{f'}$
+            \bigbreak
+\begin{extern}%width="350" alt="courbe représentative de la dérivée seconde de f"
+\resizebox{10cm}{!}{
+     \begin{pspicture}(-0.8,-2.3)(5.8,3.2)
+          \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle]{->}(0,0)(-0.8,-2.3)(5.8,3.2)
+          \psplot[linecolor=blue,plotpoints=3000,linewidth=0.75pt]{0}{5}{x dup mul 2 x mul  sub 2 sub  2.71828 x exp div}
+          \uput[u](3.5,0.4){$\blue \mathcal{C}_{f''}$}
+     \end{pspicture}
+          }     
+          \end{extern}
+          \par
+          \textit{Courbe} $\mathscr{C}_{f''}$
+            \bigbreak
+
+\end{center}
+\medbreak
+On donne ci-dessus la courbe $\mathscr{C}_f$ représentative dans un repère donné d'une fonction $f$ définie
+et dérivable sur l'intervalle [0~;~5] ainsi que les courbes représentatives $\mathscr{C}_{f'}$ et $\mathscr{C}_{f''}$ respectivement
+de la dérivée $f'$ et de la dérivée seconde $f''$ de la fonction $f$.
+\medbreak
+\TitreC{Partie A}
+\medbreak
+Dans cette partie les réponses seront obtenues à l'aide de lectures graphiques.
+\medbreak
+\begin{enumerate}
+     \item Donner un encadrement par deux entiers consécutifs du nombre réel pour lequel la
+     fonction $f$ semble atteindre son maximum.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Donner un intervalle défini par deux entiers sur lequel la fonction $f$ semble convexe.
+          \item Expliquer pourquoi on peut conjecturer que la courbe $\mathscr{C}_f$ admet un point d'inflexion.
+          \par
+          Donner un encadrement par deux entiers consécutifs de l'abscisse de ce point d'inflexion.
+     \end{enumerate}
+     \item Parmi les équations suivantes quelle est l'équation de la tangente à la courbe $\mathscr{C}_f$ au point d'abscisse $0$~?
+     \begin{center}
+          \begin{tabularx}{\linewidth}{XX}%class="noborder"
+               \textbf{a.~~}$y=x$&\textbf{b.~~} $y = 2x+ 1$\\
+               \textbf{c.~~} $y= 2x$&\textbf{d.~~} $y= \dfrac{3}{4}x$\\
+          \end{tabularx}
+     \end{center}
+     \item On note $I = \displaystyle\int_0^1 f'(x)\:\text{d}x$ où $f'$ est la fonction dérivée de $f$.
+     \par
+     Comment s'interprète graphiquement ce nombre $I$~?
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B}
+\medbreak
+La fonction $f$ représentée ci-dessus est définie sur l'intervalle [0~;~5] par $f(x) = \left(x^2 + 2x\right)\text{e}^{-x}$.
+\medbreak
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Montrer que la dérivée $f'$ de $f$ est définie par $f'(x) = \left(- x^2 + 2\right)\text{e}^{-x}$ pour tout réel $x$ de l'intervalle [0~;~5].
+          \item Déterminer les variations de $f$ sur [0~;~5] et préciser l'abscisse de son maximum.
+          \item Donner la valeur arrondie au millième du maximum de $f$.
+     \end{enumerate}
+     \item Avec un outil de calcul on obtient, pour $\displaystyle\int_0^1 f'(x)\:\text{d}x$ et $f(1)$, la même valeur approchée 1,10364.
+     \par
+     Ces deux valeurs sont-elles égales~?
+\end{enumerate}
+\input{_footer}

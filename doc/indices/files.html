@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+        integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js"
+        integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+    <script src="js/search.js"></script>
+    <script defer src="js/searchIndex.js"></script>
+</head>
+
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+        <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+        <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+        <label class="phpdocumentor-header__menu-icon" for="menu-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <section data-search-form class="phpdocumentor-search">
+            <label>
+                <span class="visually-hidden">Search for</span>
+                <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2" />
+                    <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3" />
+                </svg>
+                <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .."
+                    disabled />
+            </label>
+        </section>
+
+        <nav class="phpdocumentor-topnav">
+            <ul class="phpdocumentor-topnav__menu">
+            </ul>
+        </nav>
+    </header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button"
+                name="sidebar-button" />
+            <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+                Menu
+            </label>
+            <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+
+                <section class="phpdocumentor-sidebar__category">
+                    <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                    <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr
+                                title="\">Global</abbr></a></h3>
+                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/app.html"><abbr
+                                title="\App">App</abbr></a></h4>
+                    <ul class="phpdocumentor-list">
+                    </ul>
+                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/controllers.html"><abbr
+                                title="\Controllers">Controllers</abbr></a></h4>
+                    <ul class="phpdocumentor-list">
+                    </ul>
+                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/models.html"><abbr
+                                title="\Models">Models</abbr></a></h4>
+                    <ul class="phpdocumentor-list">
+                    </ul>
+                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/utils.html"><abbr
+                                title="\Utils">Utils</abbr></a></h4>
+                    <ul class="phpdocumentor-list">
+                    </ul>
+                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/views.html"><abbr
+                                title="\Views">Views</abbr></a></h4>
+                    <ul class="phpdocumentor-list">
+                    </ul>
+                </section>
+
+                <section class="phpdocumentor-sidebar__category">
+                    <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Default.html"><abbr
+                                title="\Default">Default</abbr></a></h3>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="packages/Ifsnop.html"><abbr
+                                title="\Ifsnop">Ifsnop</abbr></a></h3>
+                    <ul class="phpdocumentor-list">
+                        <li><a href="packages/Ifsnop-Mysqldump.html"><abbr
+                                    title="\Ifsnop\Mysqldump">Mysqldump</abbr></a></li>
+                    </ul>
+                </section>
+
+                <section class="phpdocumentor-sidebar__category">
+                    <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a>
+                    </h3>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+                </section>
+
+                <section class="phpdocumentor-sidebar__category">
+                    <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+                    <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+                </section>
+            </aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+
+                <h2>Files</h2>
+                <h3>A</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/app-app.html"><abbr title="app/App.php">App.php</abbr></a></li>
+                    <li><a href="files/utils-autoloader.html"><abbr
+                                title="utils/Autoloader.php">Autoloader.php</abbr></a></li>
+                    <li><a href="files/templates-include-action-link-tpl.html"><abbr
+                                title="templates/components/action-link.tpl.php">action-link.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-admin-edit-post-tpl.html"><abbr
+                                title="templates/admin-edit-post.tpl.php">admin-edit-post.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-aside-tpl.html"><abbr
+                                title="templates/base/aside.tpl.php">aside.tpl.php</abbr></a></li>
+                </ul>
+                <h3>B</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/controllers-bulkpostcontroller.html"><abbr
+                                title="controllers/BulkPostController.php">BulkPostController.php</abbr></a></li>
+                    <li><a href="files/templates-include-breadcrumb-tpl.html"><abbr
+                                title="templates/components/breadcrumb.tpl.php">breadcrumb.tpl.php</abbr></a></li>
+                </ul>
+                <h3>C</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/app-config.html"><abbr title="app/Config.php">Config.php</abbr></a></li>
+                    <li><a href="files/controllers-controller.html"><abbr
+                                title="controllers/Controller.php">Controller.php</abbr></a></li>
+                    <li><a href="files/utils-crypto.html"><abbr title="utils/Crypto.php">Crypto.php</abbr></a></li>
+                </ul>
+                <h3>D</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/utils-debug.html"><abbr title="utils/Debug.php">Debug.php</abbr></a></li>
+                    <li><a href="files/controllers-debugcontroller.html"><abbr
+                                title="controllers/DebugController.php">DebugController.php</abbr></a></li>
+                    <li><a href="files/templates-debug-tpl.html"><abbr
+                                title="templates/debug.tpl.php">debug.tpl.php</abbr></a></li>
+                </ul>
+                <h3>E</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/controllers-errorcontroller.html"><abbr
+                                title="controllers/ErrorController.php">ErrorController.php</abbr></a></li>
+                    <li><a href="files/app-exceptions.html"><abbr title="app/Exceptions.php">Exceptions.php</abbr></a>
+                    </li>
+                </ul>
+                <h3>F</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/controllers-fichecontroller.html"><abbr
+                                title="controllers/FicheController.php">FicheController.php</abbr></a></li>
+                    <li><a href="files/utils-ftp.html"><abbr title="utils/Ftp.php">Ftp.php</abbr></a></li>
+                    <li><a href="files/templates-fiche-tpl.html"><abbr
+                                title="templates/fiche.tpl.php">fiche.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-field-box-tpl.html"><abbr
+                                title="templates/components/field-box.tpl.php">field-box.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-footer-tpl.html"><abbr
+                                title="templates/include/footer.tpl.php">footer.tpl.php</abbr></a></li>
+                </ul>
+                <h3>H</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/controllers-homecontroller.html"><abbr
+                                title="controllers/HomeController.php">HomeController.php</abbr></a></li>
+                    <li><a href="files/views-htmlview.html"><abbr title="views/HtmlView.php">HtmlView.php</abbr></a>
+                    </li>
+                    <li><a href="files/templates-include-head-tpl.html"><abbr
+                                title="templates/base/head.tpl.php">head.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-header-admin-menu-tpl.html"><abbr
+                                title="templates/components/header.admin-menu.tpl.php">header.admin-menu.tpl.php</abbr></a>
+                    </li>
+                    <li><a href="files/templates-include-header-menu-tpl.html"><abbr
+                                title="templates/components/header.menu.tpl.php">header.menu.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-header-tpl.html"><abbr
+                                title="templates/components/header.tpl.php">header.tpl.php</abbr></a></li>
+                    <li><a href="files/helpers.html"><abbr title="helpers.php">helpers.php</abbr></a></li>
+                    <li><a href="files/templates-include-home-search-tpl.html"><abbr
+                                title="templates/components/home.search.tpl.php">home.search.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-home-tpl.html"><abbr
+                                title="templates/home.tpl.php">home.tpl.php</abbr></a></li>
+                </ul>
+                <h3>I</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/assets-js-index.html"><abbr title="assets/js/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-sass-partials-index.html"><abbr
+                                title="assets/sass/partials/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-sass-partials-components-index.html"><abbr
+                                title="assets/sass/partials/components/index.php">index.php</abbr></a></li>
+                    <li><a href="files/utils-index.html"><abbr title="utils/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-sass-partials-base-index.html"><abbr
+                                title="assets/sass/partials/base/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-sass-index.html"><abbr title="assets/sass/index.php">index.php</abbr></a>
+                    </li>
+                    <li><a href="files/sess-dir-b911bt98670df-index.html"><abbr
+                                title="sess_dir_b911bt98670df/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-index.html"><abbr title="assets/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-scripts-index.html"><abbr
+                                title="assets/scripts/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-img-index.html"><abbr title="assets/img/index.php">index.php</abbr></a>
+                    </li>
+                    <li><a href="files/assets-css-index.html"><abbr title="assets/css/index.php">index.php</abbr></a>
+                    </li>
+                    <li><a href="files/views-index.html"><abbr title="views/index.php">index.php</abbr></a></li>
+                    <li><a href="files/app-index.html"><abbr title="app/index.php">index.php</abbr></a></li>
+                    <li><a href="files/assets-sass-partials-pages-index.html"><abbr
+                                title="assets/sass/partials/pages/index.php">index.php</abbr></a></li>
+                    <li><a href="files/templates-index.html"><abbr title="templates/index.php">index.php</abbr></a></li>
+                    <li><a href="files/templates-include-index.html"><abbr
+                                title="templates/include/index.php">index.php</abbr></a></li>
+                    <li><a href="files/temp-index.html"><abbr title="temp/index.php">index.php</abbr></a></li>
+                    <li><a href="files/controllers-index.html"><abbr title="controllers/index.php">index.php</abbr></a>
+                    </li>
+                    <li><a href="files/db-save-index.html"><abbr title="db-save/index.php">index.php</abbr></a></li>
+                    <li><a href="files/index.html"><abbr title="index.php">index.php</abbr></a></li>
+                    <li><a href="files/models-index.html"><abbr title="models/index.php">index.php</abbr></a></li>
+                    <li><a href="files/vscode-index.html"><abbr title=".vscode/index.php">index.php</abbr></a></li>
+                </ul>
+                <h3>L</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/templates-login-register-tpl.html"><abbr
+                                title="templates/login-register.tpl.php">login-register.tpl.php</abbr></a></li>
+                </ul>
+                <h3>M</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/views-mailview.html"><abbr title="views/MailView.php">MailView.php</abbr></a>
+                    </li>
+                    <li><a href="files/models-model.html"><abbr title="models/Model.php">Model.php</abbr></a></li>
+                    <li><a href="files/utils-mysqldump.html"><abbr title="utils/Mysqldump.php">Mysqldump.php</abbr></a>
+                    </li>
+                </ul>
+                <h3>P</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/utils-pagination.html"><abbr
+                                title="utils/Pagination.php">Pagination.php</abbr></a></li>
+                    <li><a href="files/controllers-postcontroller.html"><abbr
+                                title="controllers/PostController.php">PostController.php</abbr></a></li>
+                    <li><a href="files/models-postmodel.html"><abbr
+                                title="models/PostModel.php">PostModel.php</abbr></a></li>
+                    <li><a href="files/templates-include-popup-tpl.html"><abbr
+                                title="templates/components/popup.tpl.php">popup.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-profile-show-tpl.html"><abbr
+                                title="templates/profile-show.tpl.php">profile-show.tpl.php</abbr></a></li>
+                </ul>
+                <h3>R</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/templates-register-confirm-mail-tpl.html"><abbr
+                                title="templates/register-confirm.mail.tpl.php">register-confirm.mail.tpl.php</abbr></a>
+                    </li>
+                </ul>
+                <h3>S</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/app-session.html"><abbr title="app/Session.php">Session.php</abbr></a></li>
+                    <li><a href="files/utils-sqlrequest.html"><abbr
+                                title="utils/SqlRequest.php">SqlRequest.php</abbr></a></li>
+                    <li><a href="files/controllers-systemcontroller.html"><abbr
+                                title="controllers/SystemController.php">SystemController.php</abbr></a></li>
+                    <li><a href="files/templates-sommaire-tpl.html"><abbr
+                                title="pages-front/sommaire.tpl.php">sommaire.tpl.php</abbr></a></li>
+                </ul>
+                <h3>T</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/models-taxonomymodel.html"><abbr
+                                title="models/TaxonomyModel.php">TaxonomyModel.php</abbr></a></li>
+                    <li><a href="files/app-texts.html"><abbr title="app/Texts.php">Texts.php</abbr></a></li>
+                    <li><a href="files/utils-tools.html"><abbr title="utils/Tools.php">Tools.php</abbr></a></li>
+                    <li><a href="files/templates-include-table-actions-tpl.html"><abbr
+                                title="templates/components/table-actions.tpl.php">table-actions.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-table-posts-tpl.html"><abbr
+                                title="templates/table-posts.tpl.php">table-posts.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-table-users-tpl.html"><abbr
+                                title="templates/table-users.tpl.php">table-users.tpl.php</abbr></a></li>
+                    <li><a href="files/templates-include-table-tpl.html"><abbr
+                                title="templates/components/table.tpl.php">table.tpl.php</abbr></a></li>
+                </ul>
+                <h3>U</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/controllers-usercontroller.html"><abbr
+                                title="controllers/UserController.php">UserController.php</abbr></a></li>
+                    <li><a href="files/models-usermodel.html"><abbr
+                                title="models/UserModel.php">UserModel.php</abbr></a></li>
+                </ul>
+                <h3>V</h3>
+                <ul class="phpdocumentor-list">
+                    <li><a href="files/utils-validator.html"><abbr title="utils/Validator.php">Validator.php</abbr></a>
+                    </li>
+                    <li><a href="files/views-view.html"><abbr title="views/View.php">View.php</abbr></a></li>
+                </ul>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                    <section class="phpdocumentor-search-results__dialog">
+                        <header class="phpdocumentor-search-results__header">
+                            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+                            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+                        </header>
+                        <section class="phpdocumentor-search-results__body">
+                            <ul class="phpdocumentor-search-results__entries"></ul>
+                        </section>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <a href="indices/files.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+
+</html>

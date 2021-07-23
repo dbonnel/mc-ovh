@@ -1,0 +1,149 @@
+\input{_header}
+\begin{h2}1. Définition de la fonction exponentielle\end{h2}
+\cadre{rouge}{Théorème et Définition}{% id="t10"
+     Il existe une unique fonction $f$ dérivable sur $\mathbb{R}$ telle que $f^{\prime}=f$ et $f\left(0\right)=1$
+     \par
+     Cette fonction est appelée \textbf{fonction exponentielle} (de base e) et notée $\text{exp}$.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     L'existence d'une telle fonction est admise.
+     \par
+     Son unicité est démontrée dans l'exercice : \mcLien{/exercices/logarithme-exponentielle/roc-proprietes-fondamentales-exponentielle}{[ROC] Propriétés fondamentales de la fonction exponentielle}
+}
+\cadre{bleu}{Notation}{% id="n20"
+     On note $\text{e}=\text{exp}\left(1\right)$.
+     \par
+     On démontre que pour tout entier relatif $n \in  \mathbb{Z}$ : $\text{exp}\left(n\right)=\text{e}^{n}$
+     \par
+     Cette propriété conduit à noter $\text{e}^{x}$ l'exponentielle de $x$ pour tout $x \in  \mathbb{R}$
+}
+\bloc{cyan}{Remarque}{% id="r20"
+     On démontre (mais c'est hors programme) que $\text{e} \left(\approx 2,71828 . . . \right)$ est un nombre \textbf{irrationnel}, c'est à dire qu'il ne peut s'écrire sous forme de fraction.
+}
+\begin{h2}2. Etude de la fonction exponentielle\end{h2}
+\cadre{vert}{Propriété}{% id="p30"
+     La fonction exponentielle est \textbf{strictement positive} et \textbf{strictement croissante} sur $\mathbb{R}$.
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     Cette propriété très importante est démontrée dans l'exercice : \mcLien{/exercices/logarithme-exponentielle/roc-proprietes-fondamentales-exponentielle}{[ROC] Propriétés fondamentales de la fonction exponentielle}
+}
+\cadre{vert}{Propriété}{% id="p35"
+     Soit $u$ une fonction dérivable sur un intervalle $I$.
+     \par
+     Alors la fonction $ f :  x\mapsto \text{e}^{u\left(x\right)}$ est dérivable sur $I$ et :
+     \begin{center}$f^{\prime}=u^{\prime}\text{e}^{u}$\end{center}
+}
+\bloc{cyan}{Démonstration}{% id="r35"
+     On utilise le  \mcLien{/cours/terminale-s/fonctions-continues-2\#t100}{théorème de dérivation de fonctions composées}.
+}
+\bloc{orange}{Exemple}{% id="e35"
+     Soit $f$ définie sur $\mathbb{R}$ par $f\left(x\right)=\text{e}^{-x}$
+     \par
+     $f$ est dérivable sur $\mathbb{R}$ et $f^{\prime}\left(x\right)=-\text{e}^{-x}$
+}
+\cadre{vert}{Limites}{% id="t40"
+     \begin{itemize}
+          \item $\lim\limits_{x\rightarrow -\infty }\text{e}^{x}=0$
+          \item $\lim\limits_{x\rightarrow +\infty }\text{e}^{x}=+\infty $
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r40"
+     \begin{itemize}
+          \item Ces résultats sont démontrés dans l'exercice : \mcLien{/exercices/logarithme-exponentielle/roc-limites-exponentielle}{[ROC] Limites de la fonction exponentielle}
+          \item On déduit des résultats précédents le tableau de variation et l'allure de la courbe de la fonction exponentielle:
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="600" alt="Fonction exponentielle : tableau de variation"
+          \begin{tikzpicture}
+               \tkzTabInit[lgt=3,espcl=10] {$x$ /1, $f'(x)=\text{e}^{x}$ /1.5,%
+               $f(x)=\text{e}^{x}$/2} {$-\infty$ , $+\infty$}%
+               \tkzTabLine{,+,}%
+               \tkzTabVar{ - / $0$, + / $+\infty$ }
+               \tkzTabVal[draw]{1}{2}{0.33}{0}{1}
+               \tkzTabVal[draw]{1}{2}{0.66}{1}{e}
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\begin{center}
+\textit{Tableau de variation de la fonction exponentielle }
+\end{center}
+\par
+\begin{center}
+     \begin{extern} %width="400" alt="Fonction exponentielle : graphique"
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{EXP(x) }
+               \def\xmin{-3.5}
+               \def\xmax{2.5}
+               \def\ymin{-1.5}
+               \def\ymax{5}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{2}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](1.5,4){$\color{blue} \mathcal{C}_{\text{exp}}$}
+                    \psline(1,0)(1,2.7183)(0,2.7183)
+                    \rput[r](-0.1,2.7183){$\text{e}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+\textit{Graphique de la fonction exponentielle }
+\end{center}
+\cadre{rouge}{Théorème ( «Croissance comparée»)}{% id="t50"
+     \begin{itemize}
+          \item $\lim\limits_{x\rightarrow -\infty }x\text{e}^{x}=0$
+          \item $\lim\limits_{x\rightarrow +\infty }\frac{\text{e}^{x}}{x}=+\infty $
+          \item $\lim\limits_{x\rightarrow 0}\frac{\text{e}^{x}-1}{x}=1$
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r50"
+     \begin{itemize}
+          \item Voir, à nouveau, l'exercice : \mcLien{/exercices/logarithme-exponentielle/roc-limites-exponentielle}{[ROC] Limites de la fonction exponentielle} pour la démonstration des deux premières formules.
+          \item Les deux premières formules peuvent se généraliser de la façon suivante :
+          \par
+          Pour tout entier $n > 0$ :
+          \par
+          $    \lim\limits_{x\rightarrow -\infty }x^{n}\text{e}^{x}=0$
+          \par
+          $    \lim\limits_{x\rightarrow +\infty }\frac{\text{e}^{x}}{x^{n}}=+\infty $
+          \item La troisième formule s'obtient en utilisant la définition du nombre dérivé pour x=0 : (voir \mcLien{/methodes/limites/calcul-limite-nombre-derive}{Calculer une limite à l'aide du nombre dérivé}).
+          \par
+          $\lim\limits_{x\rightarrow 0}\frac{\text{e}^{x}-1}{x}=\text{exp}^{\prime}\left(0\right)=\text{exp}\left(0\right)=1$
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t60"
+     La fonction exponentielle étant strictement \textbf{croissante}, si $a$ et $b$ sont deux réels :
+     \begin{itemize}
+          \item $\text{e}^{a}=\text{e}^{b}$ si et seulement si $a=b$
+          \item $\text{e}^{a} <  \text{e}^{b}$ si et seulement si $ a < b $
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r60"
+     Ces résultats sont extrêmement utiles pour résoudre équations et inéquations.
+}
+\begin{h2}3. Propriétés algébriques de la fonction exponentielle\end{h2}
+\cadre{vert}{Propriétés}{% id="p70"
+     Pour tout réels $a$ et $b$ et tout entier $n \in  \mathbb{Z}$ :
+     \begin{itemize}
+          \item $\text{e}^{a+b}=\text{e}^{a} \times  \text{e}^{b}$
+          \item $\text{e}^{-a}=\frac{1}{\text{e}^{a}}$
+          \item $\text{e}^{a-b}=\frac{\text{e}^{a}}{\text{e}^{b}}$
+          \item $\left(\text{e}^{a}\right)^{n}=\text{e}^{na}$
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r70"
+     \begin{itemize}
+          \item Ces propriétés  sont démontrées dans l'exercice : \mcLien{/exercices/logarithme-exponentielle/roc-proprietes-algebriques-exponentielle}{[ROC] Propriétés algébriques de la fonction exponentielle}
+          Elles sont similaires aux propriétés des puissances vues au collège (et justifient la notation $\text{e}^{x}$)
+          \item Si l'on pose $a=\frac{1}{2}$ et $n=2$ dans la formule $\left(\text{e}^{a}\right)^{n}=\text{e}^{na}$ on obtient $\left(\text{e}^{^{\frac{1}{2}}}\right)^{2}=\text{e}^{1}=\text{e}$ donc comme  $\text{e}^{^{\frac{1}{2}}} > 0$ : $\text{e}^{^{\frac{1}{2}}}=\sqrt{\text{e}}$
+     \end{itemize}
+}
+\input{_footer}

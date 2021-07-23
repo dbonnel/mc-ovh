@@ -1,0 +1,132 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-suites-bac-s-metropole-2008/}
+\meta{pid}{2227}
+\meta{titre}{Nombres complexes et suites - Bac S Métropole 2008}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textit{Candidats \textbf{ayant suivi l'enseignement de spécialité}}
+\par
+Le plan est rapporté à un repère orthonormal direct $\left(O ; \vec{u} , \vec{v} \right)$.
+\par
+Soient A et B les points d'affixes respectives $z_{A}=1-\text{i}$ et $z_{B}=7+\frac{7}{2}\text{i}$.
+\begin{enumerate}
+     \item
+     On considère la droite $\left(d\right)$ d'équation $4x+3y=1$.
+     \par
+     Démontrer que l'ensemble des points de $\left(d\right)$ dont les coordonnées sont entières est l'ensemble des points $M_{k}\left(3k+1 , -4k-1\right)$ lorsque k décrit l'ensemble des entiers relatifs.
+     \item
+     Déterminer l'angle et le rapport de la similitude directe de centre A qui transforme B en $M_{-1}$(-2 , 3).
+     \item
+     Soit $s$ la transformation du plan qui à tout point M d'affixe $z$ associe le point M' d'affixe $ z^{\prime}=\frac{2}{3}\text{i}z+\frac{1}{3}-\frac{5}{3}\text{i}$.
+     \par
+     Déterminer l'image de A par $s$, puis donner la nature et les éléments caractéristiques de $s$.
+     \item
+     On note $B_{1}$ l'image de B par $s$ et pour tout entier naturel $n$ non nul, $B_{n+1}$ l'image de $B_{n}$ par $s$.
+     \begin{enumerate}
+          \item
+          Déterminer la longueur $AB_{n+1}$ en fontion de $AB_{n}$.
+          \item
+          A partir de quel entier $n$ le point $B_{n}$ appartient t-il au disque de centre A et de rayon $10^{-2}$ ?
+          \item
+          Déterminer l'ensemble des entiers $n$ pour lesquels A, $B_{1}$, $B_{n}$ sont alignés.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $4 \times  1+3 \times  \left(-1\right)=1$, donc le point de coordonnées (1 ; -1) appartient à la droite $\left(d\right)$
+          \par
+          Soit M(x,y) un point de $\left(d\right)$ à coordonnées entières.
+          \par
+          $4x+3y=1 \Leftrightarrow  4x+3y=4\times 1+3\times \left(-1\right) \Leftrightarrow  4\left(x-1\right)=-3\left(y+1\right)=0$
+          \par
+          4 et 3 étant premiers entre eux, on en déduit, d'après le théorème de Gauss,  que x-1 est un multiple de 3, c'est à dire qu'il existe $k \in \mathbb{Z}$ tel que $x-1=3k$ c'est à dire $x=3k+1$.
+          \par
+          On a alors $3y=1-4x=-12k-3$ soit $y=-4k-1$
+          \par
+          Réciproquement comme :
+          \par
+          $4\left(3k+1\right)+3\left(-4k-1\right)=1$
+          \par
+          tout point de coordonnées $\left(3k+1;-4k-1\right)$ avec $k \in \mathbb{Z}$ est un point de $\left(d\right)$ à coordonnées entières.
+          \item
+          Le rapport de la similitude directe de centre A qui transforme B en $M_{-1}$ est :
+          \par
+          $k=\frac{AM_{-1}}{AB}=|\frac{z_{\overrightarrow{AM}_{-1}}}{z_{\overrightarrow{AB}}}|$
+          \par
+          or
+          \par
+          $\frac{z_{\overrightarrow{AM}_{-1}}}{z_{\overrightarrow{AB}}}=\frac{-3+4i}{6+\frac{9}{2}i}=\frac{-6+8i}{12+9i}=\frac{\left(-6+8i\right)\left(12-9i\right)}{\left(12+9i\right)\left(12-9i\right)}=\frac{150i}{225}=\frac{2}{3}i$
+          \par
+          donc
+          \par
+          $k=|\frac{2}{3}i|=\frac{2}{3}$
+          \par
+          L'angle de cette similitude est :
+          \par
+          $\theta =\text{arg}\left(\frac{z_{\overrightarrow{AM}_{-1}}}{z_{\overrightarrow{AB}}}\right)=\text{arg}\left(\frac{2}{3}i\right)=\frac{\pi }{2}\ \left(2\pi \right)$
+          \item
+          L'image de A par $s$ est le point A' d'affixe
+          \par
+          $z_{A^{\prime}}=\frac{2}{3}i\left(1-i\right)+\frac{1}{3}-\frac{5}{3}i=1-i=z_{A}$
+          \par
+          Donc A est le centre de la similitude directe $s$.
+          \par
+          Le rapport de $s$ est $k=|\frac{2}{3}i|=\frac{2}{3}$
+          \par
+          L'angle de $s$ est $\theta =\text{arg}\left(\frac{2}{3}i\right)=\frac{\pi }{2}\ \left(2\pi \right)$
+          \item
+          \begin{enumerate}
+               \item
+               La similitude s transforme $B_{n}$ en $B_{n+1}$. Son centre est A et son rapport $\frac{2}{3}$ donc :
+               \par
+               $\frac{AB_{n+1}}{AB_{n}}=\frac{2}{3}$
+               \par
+               c'est à dire:
+               \par
+               $AB_{n+1}=\frac{2}{3}AB_{n}$
+               \item
+               La suite $\left(AB_{n}\right)$ est une suite géométrique de raison 2/3 et de premier terme
+               \par
+               $AB=\sqrt{6^{2}+\left(\frac{9}{2}\right)^{2}}=\frac{15}{2}$
+               \par
+               donc:
+               \par
+               $AB_{n}=\frac{15}{2}\times \left(\frac{2}{3}\right)^{n}$
+               \par
+               $AB_{n}$ est donc inférieur à $10^{-2}$ si et seulement si :
+               \par
+               $\frac{15}{2}\times \left(\frac{2}{3}\right)^{n} < \frac{1}{100}$
+               \par
+               c'est à dire :
+               \par
+               $\left(\frac{2}{3}\right)^{n} < \frac{1}{750}$
+               \par
+               La fonction ln étant croissante cette inégalité équivaut à :
+               \par
+               $\ln\left(\frac{2}{3}\right)^{n} < \ln\left(\frac{1}{750}\right)$
+               \par
+               $n\left(\ln2-\ln3\right) < -\ln750$
+               \par
+               soit comme $\ln2-\ln3$ est négatif :
+               \par
+               $n > \frac{-\ln750}{\ln2-\ln3}\approx 16,3$
+               \par
+               Le point $B_n$ appartient au disque de centre $A$ et de rayon $10^{-2}$ à partir de $n=17$.
+               \item
+               Pour tout entier $n > 0 $, $B_{n+1}$ est l'image de $B_n$ par la similitude $s$ de centre $A$ et d'angle $\frac{\pi }{2}$ donc :
+               \par
+               $\left(\overrightarrow{AB}_{n};\overrightarrow{AB}_{n+1}\right)=\frac{\pi }{2} \  \left(2\pi \right)$
+               \par
+               Donc :
+               \par
+               $\left(\overrightarrow{AB}_{1};\overrightarrow{AB}_{n}\right)=\left(\overrightarrow{AB}_{1};\overrightarrow{AB}_{2}\right)+\left(\overrightarrow{AB}_{2};\overrightarrow{AB}_{3}\right)+. . .+\left(\overrightarrow{AB}_{n-1};\overrightarrow{AB}_{n}\right)\ \left(2\pi \right)$
+               \par
+               $\left(\overrightarrow{AB}_{1};\overrightarrow{AB}_{n}\right)=\frac{\pi }{2}+\frac{\pi }{2} +. . .+\frac{\pi }{2}=\left(n-1\right)\frac{\pi }{2}\ \left(2\pi \right)$
+               \par
+               Les points $A, B_1$ et $B_n$ sont alignés si et seulement si cet angle est un multiple de $\pi $ c'est à dire si et seulement si $n-1$ est pair donc si et seulement si \textbf{$n$ est impair}.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

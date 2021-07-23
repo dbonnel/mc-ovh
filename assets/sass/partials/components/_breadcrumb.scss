@@ -1,0 +1,30 @@
+/*
+  Breadcrumb
+*/
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 1.5rem 0;
+}
+
+.breadcrumb-item {
+    font-size: $font-size-smaller;
+
+    text-transform: uppercase;
+}
+
+.breadcrumb-item+.breadcrumb-item {
+    padding-left: .5rem;
+
+    &::before {
+        display: inline-block;
+
+        padding-right: .5rem;
+
+        content: "/";
+
+        color: $primary;
+    }
+}

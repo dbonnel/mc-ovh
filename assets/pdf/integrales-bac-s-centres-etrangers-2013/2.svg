@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 2 -->
+<svg x="0" y="0" width="712" height="954" viewBox="0 0 712 954" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g1_2{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g2_2{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: square;
+stroke-linejoin: miter;
+}
+
+.s15_2{
+font-size: 10.57px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s11_2{
+font-size: 18.12px;
+font-family: TimesNewRomanPS-ItalicMT_4s;
+fill: #000000;
+}
+.s12_2{
+font-size: 18.12px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s14_2{
+font-size: 18.12px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s16_2{
+font-size: 10.57px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s20_2{
+font-size: 10.82px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s7_2{
+font-size: 10.68px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s6_2{
+font-size: 10.68px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s1_2{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s2_2{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-ItalicMT_4s;
+fill: #000000;
+}
+.s10_2{
+font-size: 18.33px;
+font-family: CambriaMath_4j;
+fill: #000000;
+}
+.s13_2{
+font-size: 22.27px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s18_2{
+font-size: 18.55px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s17_2{
+font-size: 18.55px;
+font-family: TimesNewRomanPS-ItalicMT_4s;
+fill: #000000;
+}
+.s21_2{
+font-size: 10.82px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s19_2{
+font-size: 18.55px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s8_2{
+font-size: 12.28px;
+font-family: TimesNewRomanPS-ItalicMT_4s;
+fill: #000000;
+}
+.s5_2{
+font-size: 18.30px;
+font-family: TimesNewRomanPS-ItalicMT_4s;
+fill: #000000;
+}
+.s9_2{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+.s4_2{
+font-size: 18.30px;
+font-family: SymbolMT_4e;
+fill: #000000;
+}
+.s3_2{
+font-size: 18.30px;
+font-family: TimesNewRomanPSMT_4q;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,954
+L712,954
+L712,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="12" 
+y="23" 
+dx="0,0.1,0,0.1,0.2,-0.4,0,0.2,-0.1" 
+class="s1_2"
+>PARTIE B </text>
+
+<path d="M12.5,26.5l80,0" class="g1_2" />
+<text 
+x="12" 
+y="65" 
+dx="0,0.1,-0.1,0,-0.1,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0.2,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,0" 
+class="s1_2"
+>Remarquons que la droite d'équation </text>
+
+<text 
+x="285" 
+y="65" 
+dx="0" 
+class="s2_2"
+>y</text>
+
+<text 
+x="298" 
+y="65" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="313" 
+y="65" 
+dx="0" 
+class="s2_2"
+>b</text>
+
+<text 
+x="327" 
+y="65" 
+dx="0,-0.1,0,-0.1,0,-0.1,0.2,0,0,0,-0.1,-0.1,-0.1,0,-0.1,0.2,-0.2,0,-0.1,0,0.2,0,-0.1,0,-0.1,-0.1,0.2,0.1,-0.2,-0.1,0,-0.1,0.2,-0.1" 
+class="s1_2"
+>forme un rectangle d'aire égale à </text>
+
+<text 
+x="570" 
+y="65" 
+dx="0" 
+class="s2_2"
+>b</text>
+
+<text 
+x="584" 
+y="65" 
+dx="0,-0.1,0,0.1,-0.1,0,0,0,-0.1,0.2,-0.1,0,0,-0.1,0" 
+class="s1_2"
+>avec l'axe des </text>
+
+<text 
+x="12" 
+y="86" 
+dx="0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0,-0.1,0.2,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,0.2,0,-0.1,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0.2,0,-0.1,0,0,-0.1,0,0,0.2,0" 
+class="s1_2"
+>abscisses, l'axe des ordonnées et la droite d'équation </text>
+
+<text 
+x="399" 
+y="86" 
+dx="0" 
+class="s2_2"
+>x</text>
+
+<text 
+x="411" 
+y="86" 
+dx="0,-0.1,0,0,0.2" 
+class="s1_2"
+>= 1. </text>
+
+<text 
+x="12" 
+y="119" 
+dx="0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0.2,-0.1" 
+class="s1_2"
+>B.1) On note que </text>
+
+<text 
+x="143" 
+y="119" 
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+x="154" 
+y="119" 
+dx="0" 
+class="s4_2"
+>+</text>
+
+<text 
+x="168" 
+y="106" 
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+x="169" 
+y="132" 
+dx="0" 
+class="s5_2"
+>e</text>
+
+<path d="M168.5,113.5l10,0" class="g2_2" />
+<text 
+x="183" 
+y="119" 
+dx="0" 
+class="s4_2"
+>=</text>
+
+<text 
+x="195" 
+y="119" 
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+x="206" 
+y="119" 
+dx="0" 
+class="s4_2"
+>+</text>
+
+<text 
+x="219" 
+y="119" 
+dx="0" 
+class="s5_2"
+>e</text>
+
+<text 
+x="228" 
+y="110" 
+dx="0" 
+class="s6_2"
+>−</text>
+
+<text 
+x="234" 
+y="110" 
+dx="0" 
+class="s7_2"
+>1</text>
+
+<text 
+x="245" 
+y="119" 
+dx="0,-0.1,0,0,0,-0.1,0,0.1,0,-0.1,0,-0.1" 
+class="s1_2"
+>est égale à </text>
+
+<text 
+x="326" 
+y="119" 
+dx="0" 
+class="s2_2"
+>g</text>
+
+<text 
+x="335" 
+y="119" 
+dx="0,-0.1,0,-0.1,0,0,0.1,-0.1,0.2,-0.1,-0.1,0,-0.1,0,0,0,0,0,0,0,0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>(1). Représentons la droite </text>
+
+<text 
+x="534" 
+y="119" 
+dx="0,-0.2,0.1" 
+class="s2_2"
+>(D)</text>
+
+<text 
+x="564" 
+y="119" 
+dx="0,0.2,0,-0.1,0,0,-0.1,0,0,0,0" 
+class="s1_2"
+>d'équation </text>
+
+<text 
+x="12" 
+y="151" 
+dx="0" 
+class="s2_2"
+>y</text>
+
+<text 
+x="29" 
+y="151" 
+dx="0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>= 1 + </text>
+
+<text 
+x="72" 
+y="151" 
+dx="0" 
+class="s2_2"
+>e</text>
+
+<text 
+x="81" 
+y="144" 
+dx="0" 
+class="s8_2"
+>–</text>
+
+<text 
+x="87" 
+y="144" 
+dx="0" 
+class="s9_2"
+>1</text>
+
+<text 
+x="98" 
+y="151" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="112" 
+y="151" 
+dx="0" 
+class="s2_2"
+>g</text>
+
+<text 
+x="122" 
+y="151" 
+dx="0,-0.1,0,-0.1,0,0,0,-0.1,0,0,-0.1,0.2,-0.2,0.1,-0.1,0,0,-0.1,0,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1,0,0.2,-0.1,-0.1,0,0.1,-0.2,-0.1" 
+class="s1_2"
+>(1) sur le graphe ci-dessous. Elle partage </text>
+
+<text 
+x="425" 
+y="151" 
+dx="0" 
+class="s10_2"
+>±</text>
+
+<text 
+x="443" 
+y="151" 
+dx="0,-0.1,0,0,0,-0.1,0,0.2,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,-0.1" 
+class="s1_2"
+>en deux domaines : un domaine </text>
+
+<text 
+x="680" 
+y="151" 
+dx="0" 
+class="s2_2"
+>D</text>
+
+<text 
+x="693" 
+y="152" 
+dx="0" 
+class="s9_2"
+>1</text>
+
+<text 
+x="12" 
+y="172" 
+dx="0,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,-0.1,0,0.2,-0.2,-0.1,0.2,-0.1,0,0,-0.1,0,0,0.1,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>compris entre l'axe des abscisses et la droite </text>
+
+<text 
+x="339" 
+y="172" 
+dx="0,-0.2,0.1" 
+class="s2_2"
+>(D)</text>
+
+<text 
+x="369" 
+y="172" 
+dx="0,0.1,0,0,0,0,0,0,0,0,-0.1,0,0,-0.1" 
+class="s1_2"
+>et un domaine </text>
+
+<text 
+x="477" 
+y="172" 
+dx="0" 
+class="s2_2"
+>D</text>
+
+<text 
+x="490" 
+y="173" 
+dx="0" 
+class="s9_2"
+>2</text>
+
+<text 
+x="501" 
+y="172" 
+dx="0,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>compris entre la droite </text>
+
+<text 
+x="671" 
+y="172" 
+dx="0,-0.1,0.1" 
+class="s2_2"
+>(D)</text>
+
+<text 
+x="12" 
+y="194" 
+dx="0,-0.1,0,0,0,-0.1,0,-0.1,0,0,-0.1,0,-0.1" 
+class="s1_2"
+>et la courbe </text>
+
+<text 
+x="102" 
+y="194" 
+dx="0" 
+class="s10_2"
+>²</text>
+
+<text 
+x="113" 
+y="194" 
+dx="0,0,0.2,-0.2,0,0,-0.1,0,0,0,-0.1,0,0,0.2,-0.1,0,0,0,0,0,-0.1,0,-0.1,-0.1,0,0,0,-0.1,0.2,0,-0.1,-0.1,0,0,-0.1,0,0,0.2,-0.1,0.2,0,0,-0.1" 
+class="s1_2"
+>. Il est évident d'après le graphe que Aire</text>
+
+<text 
+x="413" 
+y="194" 
+dx="0" 
+class="s2_2"
+>D</text>
+
+<text 
+x="426" 
+y="195" 
+dx="0" 
+class="s9_2"
+>1</text>
+
+<text 
+x="437" 
+y="194" 
+dx="0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>&gt; Aire</text>
+
+<text 
+x="484" 
+y="194" 
+dx="0" 
+class="s2_2"
+>D</text>
+
+<text 
+x="497" 
+y="195" 
+dx="0" 
+class="s9_2"
+>2</text>
+
+<text 
+x="504" 
+y="194" 
+dx="0,0,0,-0.1,0,0,0,0,0,-0.1" 
+class="s1_2"
+>, et donc </text>
+
+<text 
+x="12" 
+y="225" 
+dx="0,0,0,-0.1" 
+class="s1_2"
+>Aire</text>
+
+<text 
+x="44" 
+y="225" 
+dx="0" 
+class="s2_2"
+>D</text>
+
+<text 
+x="57" 
+y="227" 
+dx="0" 
+class="s9_2"
+>1</text>
+
+<text 
+x="68" 
+y="225" 
+dx="0,-0.1,0,0,0,-0.1" 
+class="s1_2"
+>= 1 + </text>
+
+<text 
+x="112" 
+y="225" 
+dx="0" 
+class="s2_2"
+>e</text>
+
+<text 
+x="120" 
+y="218" 
+dx="0" 
+class="s8_2"
+>–</text>
+
+<text 
+x="126" 
+y="218" 
+dx="0" 
+class="s9_2"
+>1</text>
+
+<text 
+x="137" 
+y="225" 
+dx="0,-0.1" 
+class="s1_2"
+>&gt; </text>
+
+<text 
+transform="matrix(1.04, 0, 0, 1, 156, 213)"
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+transform="matrix(1.04, 0, 0, 1, 156, 239)"
+dx="0" 
+class="s3_2"
+>2</text>
+
+<path d="M155.5,220.5l11,0" class="g2_2" />
+<text 
+x="168" 
+y="225" 
+dx="0,0,0,-0.1" 
+class="s1_2"
+>Aire</text>
+
+<text 
+x="200" 
+y="225" 
+dx="0" 
+class="s10_2"
+>±</text>
+
+<text 
+x="214" 
+y="225" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="12" 
+y="258" 
+dx="0,0.1,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,0" 
+class="s1_2"
+>Ce qui implique pour la droite d'équation </text>
+
+<text 
+x="318" 
+y="258" 
+dx="0" 
+class="s2_2"
+>y</text>
+
+<text 
+x="330" 
+y="258" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="345" 
+y="258" 
+dx="0" 
+class="s2_2"
+>b</text>
+
+<text 
+x="359" 
+y="258" 
+dx="0,0,0.2,0,0,0,-0.1,-0.1,0,0.1,-0.2,-0.1" 
+class="s1_2"
+>qui partage </text>
+
+<text 
+x="446" 
+y="258" 
+dx="0" 
+class="s10_2"
+>±</text>
+
+<text 
+x="464" 
+y="258" 
+dx="0,-0.1,0,0,0,-0.1,0,0.2,0,0,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,-0.1,0.2,-0.1,0,-0.1,-0.1" 
+class="s1_2"
+>en deux domaines de même aire </text>
+
+<text 
+x="12" 
+y="290" 
+dx="0,0,0,-0.1" 
+class="s1_2"
+>que </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 45, 290)"
+dx="0" 
+class="s5_2"
+>b</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 59, 290)"
+dx="0" 
+class="s4_2"
+>&lt;</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 71, 290)"
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 82, 290)"
+dx="0" 
+class="s4_2"
+>+</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 96, 278)"
+dx="0" 
+class="s3_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 97, 303)"
+dx="0" 
+class="s5_2"
+>e</text>
+
+<path d="M96.5,285.5l10,0" class="g2_2" />
+<text 
+x="107" 
+y="290" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="12" 
+y="849" 
+dx="0,-0.1,0,0,-0.1" 
+class="s1_2"
+>B.2) </text>
+
+<text 
+x="12" 
+y="871" 
+dx="0,-0.2,0,-0.1,0.2,-0.1,-0.1,0,0,0,0,0,0,0,-0.1,0,0,-0.1" 
+class="s1_2"
+>L'aire du domaine </text>
+
+<text 
+x="149" 
+y="871" 
+dx="0" 
+class="s10_2"
+>±</text>
+
+<text 
+x="167" 
+y="871" 
+dx="0,-0.1,0,0,0.2,-0.1,0,-0.1,0,-0.1,0,-0.1" 
+class="s1_2"
+>est égale à </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 251, 871)"
+dx="0" 
+class="s11_2"
+>P</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 267, 871)"
+dx="0" 
+class="s12_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 263, 872)"
+dx="0,0,-1.1" 
+class="s13_2"
+>( )</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 285, 871)"
+dx="0" 
+class="s14_2"
+>−</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 299, 871)"
+dx="0" 
+class="s11_2"
+>P</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 317, 871)"
+dx="0" 
+class="s12_2"
+>0</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 311, 872)"
+dx="0,0,1.9" 
+class="s13_2"
+>( )</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 337, 871)"
+dx="0" 
+class="s14_2"
+>=</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 349, 871)"
+dx="0" 
+class="s12_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 360, 871)"
+dx="0" 
+class="s14_2"
+>−</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 373, 871)"
+dx="0" 
+class="s11_2"
+>e</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 382, 863)"
+dx="0" 
+class="s15_2"
+>−</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 388, 863)"
+dx="0" 
+class="s16_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 397, 871)"
+dx="0" 
+class="s14_2"
+>+</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 409, 871)"
+dx="0" 
+class="s12_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 421, 871)"
+dx="0" 
+class="s14_2"
+>=</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 435, 871)"
+dx="0" 
+class="s12_2"
+>2</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 448, 871)"
+dx="0" 
+class="s14_2"
+>−</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 461, 871)"
+dx="0" 
+class="s11_2"
+>e</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 470, 863)"
+dx="0" 
+class="s15_2"
+>−</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 476, 863)"
+dx="0" 
+class="s16_2"
+>1</text>
+
+<text 
+x="486" 
+y="871" 
+dx="0,-0.1,-0.1,-0.1,0,0.2,0,0,0,0,-0.1,-0.1,0.2" 
+class="s1_2"
+>(cf. A.1.a). </text>
+
+<text 
+x="12" 
+y="910" 
+dx="0,0.1,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1" 
+class="s1_2"
+>Ce qui nous donne </text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 156, 910)"
+dx="0" 
+class="s17_2"
+>b</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 169, 910)"
+dx="0" 
+class="s18_2"
+>=</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 184, 897)"
+dx="0" 
+class="s19_2"
+>2</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 197, 897)"
+dx="0" 
+class="s18_2"
+>−</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 210, 897)"
+dx="0" 
+class="s17_2"
+>e</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 219, 889)"
+dx="0" 
+class="s20_2"
+>−</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 225, 889)"
+dx="0" 
+class="s21_2"
+>1</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 203, 923)"
+dx="0" 
+class="s19_2"
+>2</text>
+
+<path d="M184.5,904.5l48,0" class="g2_2" />
+<text 
+x="234" 
+y="910" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<image x="86" y="348" width="559" height="467" xlink:href="2/img/1.png" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: CambriaMath_4j;
+	src: url("fonts/CambriaMath_4j.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_4e;
+	src: url("fonts/SymbolMT_4e.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_4q;
+	src: url("fonts/TimesNewRomanPSMT_4q.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-ItalicMT_4s;
+	src: url("fonts/TimesNewRomanPS-ItalicMT_4s.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

@@ -1,0 +1,114 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-es-pondichery-2013/}
+\meta{pid}{2034}
+\meta{titre}{Probabilités - Bac ES/L Pondichéry 2013}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2   (5 points)\end{h2}
+\textbf{Candidats de la série ES n'ayant pas suivi l'enseignement de spécialité et candidats de L.}
+Une enquête a été réalisée auprès des élèves d'un lycée afin de connaître leur point de vue sur la durée de la pause du midi ainsi que sur les rythmes scolaires.
+\par
+L'enquête révèle que 55\% des élèves sont favorables à une pause plus longue le midi et parmi ceux qui souhaitent une pause plus longue, 95\% sont pour une répartition des cours plus étalée sur l'année scolaire.
+\par
+Parmi ceux qui ne veulent pas de pause plus longue le midi, seulement 10\% sont pour une répartition des cours plus étalée sur l'année scolaire.
+\par
+On choisit un élève au hasard dans le lycée. On considère les évènements suivants :
+\begin{itemize}
+     \item
+     $L$ : l'élève choisi est favorable à une pause plus longue le midi ;
+     \item
+     $C$ : l'élève choisi souhaite une répartition des cours plus étalée sur l'année scolaire.
+\end{itemize}
+\begin{enumerate}
+     \item
+     Construire un arbre pondéré décrivant la situation.
+     \item
+     Calculer $P\left(L \cap C\right)$ la probabilité de l'évènement $L \cap C$.
+     \item
+     Montrer que $P\left(C\right)=0,5675$.
+     \item
+     Calculer $P_{C}\left(L\right)$, la probabilité de l'évènement $L$ sachant l'évènement $C$ réalisé. En donner une valeur arrondie à $10^{-4}$ près.
+     \item
+     On interroge successivement et de façon indépendante quatre élèves pris au hasard parmi les élèves de l'établissement. Soit $X$ la variable aléatoire qui donne le nombre d'élèves favorables à une répartition des cours plus étalée sur l'année scolaire. Le nombre d'élèves étant suffisamment grand, on considère que $X$ suit une loi binomiale.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Préciser les paramètres de cette loi binomiale.
+          \item
+          Calculer la probabilité qu'aucun des quatre élèves interrogés ne soit favorable à une répartition des cours plus étalée sur l'année scolaire. En donner une valeur arrondie à $10^{-4}$ près.
+          \item
+          Calculer la probabilité qu'exactement deux élèves soient favorables à une répartition des cours plus étalée sur l'année scolaire.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+%##
+% type=arbre; width=25; wcell=3.5; hcell=1.5
+%--
+% >L:0,55
+% >>C:0,95
+% >>\overline{C}:0,05
+% >\overline{L}:0,45
+% >>C:0,1
+% >>\overline{C}:0,9
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-1.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-0.5*\height}) {$L$};
+     \draw (r) -- (ra) node [poids] {$0,55$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$C$};
+     \draw (ra) -- (raa) node [poids] {$0,95$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$\overline{C}$};
+     \draw (ra) -- (rab) node [poids] {$0,05$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$\overline{L}$};
+     \draw (r) -- (rb) node [poids] {$0,45$};
+    \node[noeud] (rba) at ({3*\width},{-2*\height}) {$C$};
+     \draw (rb) -- (rba) node [poids] {$0,1$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{C}$};
+     \draw (rb) -- (rbb) node [poids] {$0,9$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img class="aligncenter size-full img-pc" src="/wp-content/uploads/mc-0038.png" alt="" />
+          \item
+          D'après la formule des probabilités conditionnelles :
+          \par
+          $p\left(L \cap C\right)=p\left(L\right)\times p_{L}\left(C\right)=0,55\times 0,95=0,5225$
+          \item
+          D'après la formule des probabilités totales :
+          \par
+          $p\left(C\right)=p\left(C \cap L\right)+p\left(C \cap \overline{L}\right)=p\left(L\right)\times p_{L}\left(C\right)+p\left(\overline{L}\right)\times p_{\overline{L}}\left(C\right)$
+          \par
+          $p\left(C\right)=0,5225+0,45\times 0,10=0,5675$.
+          \item
+          D'après la formule des probabilités conditionnelles :
+          \par
+          $P_{C}\left(L\right)=\frac{p\left(L \cap C\right)}{p\left(C\right)}=\frac{0,5225}{0,5675}\approx 0.9207$ à $10^{-4}$ près.
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $n$ est le nombre d'élèves choisis : $n=4$
+               \par
+               $p$ est la probabilité qu'un élève choisi souhaite une répartition des cours plus étalée sur l'année scolaire : $p=0,5675$ (d'après \textbf{3.})
+               \item
+               On recherche $p\left(X=0\right)$
+               \par
+               $p\left(X=0\right)=\begin{pmatrix} 4 \\ 0 \end{pmatrix}\times p^{0}\times \left(1-p\right)^{4}=0,4325^{4}\approx 0,0350$ à $10^{-4}$ près.
+               \item
+               On recherche $p\left(X=2\right)$
+               \par
+               $p\left(X=2\right)=\begin{pmatrix} 4 \\ 2 \end{pmatrix}\times p^{2}\times \left(1-p\right)^{2}=6\times 0,5675^{2}\times 0,4325^{2}\approx 0,3615$ à $10^{-4}$ près.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

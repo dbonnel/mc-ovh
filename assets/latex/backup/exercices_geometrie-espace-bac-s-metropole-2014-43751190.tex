@@ -1,0 +1,151 @@
+\input{_header}
+\meta{url}{/exercices/geometrie-espace-bac-s-metropole-2014/}
+\meta{pid}{1506}
+\meta{titre}{Géométrie dans l'espace - Bac S  Métropole 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textit{Candidats n'ayant pas suivi l'enseignement de spécialité}
+\par
+Dans l'espace, on considère un tétraèdre $ABCD$ dont les faces $ABC, ACD$ et $ABD$ sont des triangles rectangles et isocèles en $A$. On désigne par $E, F$ et $G$ les milieux respectifs des côtés $\left[AB\right], \left[BC\right]$ et $\left[CA\right]$.
+\par
+On choisit $AB$ pour unité de longueur et on se place dans le repère orthonormé $\left(A ; \overrightarrow{AB}, \overrightarrow{AC}, \overrightarrow{AD}\right)$ de l'espace.
+\begin{enumerate}
+     \item
+     On désigne par $\mathscr P$ le plan qui passe par $A$ et qui est orthogonal à la droite $\left(DF\right)$.
+     \par
+     On note $H$ le point d'intersection du plan $\mathscr P$ et de la droite $\left(DF\right)$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Donner les coordonnées des points $D$ et $F$.
+          \item
+          Donner une représentation paramétrique de la droite $\left(DF\right)$.
+          \item
+          Déterminer une équation cartésienne du plan $\mathscr P$.
+          \item
+          Calculer les coordonnées du point $H$.
+          \item
+     Démontrer que l'angle $\widehat{EHG}$ est un angle droit.\end{enumerate}
+     \item
+     On désigne par $M$ un point de la droite $\left(DF\right)$ et par $t$ le réel tel que $\overrightarrow{DM}=t \overrightarrow{DF}$. On note $\alpha $ la mesure en radians de l'angle géométrique $\widehat{EMG}$.
+     \par
+     Le but de cette question est de déterminer la position du point $M$ pour que $\alpha $ soit maximale.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que $ME^{2}=\frac{3}{2}t^{2}-\frac{5}{2}t+\frac{5}{4}$.
+          \item
+          Démontrer que le triangle $MEG$ est isocèle en $M$.
+          \par
+          En déduire que $ME \sin \left(\frac{\alpha }{2}\right)=\frac{1}{2\sqrt{2}}$.
+          \item
+          Justifier que $\alpha $ est maximale si et seulement si $\sin\left(\frac{\alpha }{2}\right)$ est maximal.
+          \par
+          En déduire que $\alpha $ est maximale si et seulement si $ME^{2}$ est minimal.
+          \item
+     Conclure.\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Vu le choix du repère, $D$ a pour coordonnées $\left(0;0;1\right)$
+               \par
+               $F$ est le milieu de $\left[BC\right]$ avec $B\left(1;0;0\right)$ et $C\left(0;1;0\right)$ donc $F$ a pour coordonnées
+               \par
+               $\left(\frac{1}{2};\frac{1}{2};0\right)$
+               \item
+               La droite $\left(DF\right)$ a pour vecteur directeur $\overrightarrow{DF}\left(\frac{1}{2};\frac{1}{2};-1\right)$ et passe par le point  $D\left(0;0;1\right)$
+               \par
+               Une représentation paramétrique de $\left(DF\right)$ est donc :
+               \par
+               $\left\{ \begin{matrix} x=1/2 t  \\ y=1/2 t  \\ z=1-t \end{matrix}\right.$    $       t\in \mathbb{R}$
+                    \textbf{Remarque : }
+                    Cette représentation n'est pas unique; ce n'est donc pas la seule réponse possible ! On peut, en particulier, obtenir une représentation plus simple en choisissant comme vecteur directeur $2\overrightarrow{DF}\left(1;1;-2\right)$ ce qui donne :
+                    \par
+                    $\left\{ \begin{matrix} x=t  \\ y=t  \\ z=1-2t \end{matrix}\right.$    $       t\in \mathbb{R}$
+                         \item
+                         Le vecteur $2\overrightarrow{DF}\left(1;1;-2\right)$ est normal au plan $\mathscr P$. L'équation de $\mathscr P$ est donc du type :
+                         \par
+                         $x+y-2z+d=0$
+                         \par
+                         Ce plan passe par $A$ donc les coordonnées de $A\left(0;0;0\right)$ vérifient l'équation du plan :
+                         \par
+                         $0+0-2\times 0+d=0$ soit $d=0$.
+                         \par
+                         Une équation cartésienne de $\mathscr P$ est donc :
+                         \par
+                         $x+y-2z=0$
+                         \textbf{Remarque : }
+                         Là encore, ce n'est pas la seule réponse possible !
+                         \item
+                         $H$ appartient a l'intersection du plan $\mathscr P$ et de la droite $\left(DF\right)$. Ses coordonnées sont donc de la forme :
+                         \par
+                         $\left\{ \begin{matrix} x_{H}=t  \\ y_{H}=t  \\ z_{H}=1-2t \end{matrix}\right.$
+                              \par
+                              avec $t$ tel que
+                              \par
+                              $t+t-2\left(1-2t\right)=0$ (équation obtenue en remplaçant $x$, $y$, et $z$ par les coordonnées ci-dessus dans l'équation cartésienne de $\mathscr P$).
+                              \par
+                              Cette équation donne $6t=2$ donc $t=\frac{1}{3}$ et $H \left(\frac{1}{3};\frac{1}{3};\frac{1}{3}\right)$.
+                              \item
+                              $E\left(\frac{1}{2};0;0\right)$ et $G\left(0;\frac{1}{2};0\right)$ donc :
+                              \par
+                              $\overrightarrow{EH}\left(-\frac{1}{6};\frac{1}{3};\frac{1}{3}\right)$ et $\overrightarrow{GH}\left(\frac{1}{3};-\frac{1}{6};\frac{1}{3}\right)$
+                              \par
+                              $\overrightarrow{EH}.\overrightarrow{GH} =\frac{1}{3}\times \left(-\frac{1}{6}\right)-\frac{1}{6}\times \frac{1}{3}+\frac{1}{3}\times \frac{1}{3}=0$
+                              \par
+                              Les vecteurs $\overrightarrow{EH}$ et $\overrightarrow{GH}$ sont donc orthogonaux et l'angle $\widehat{EHG}$ est un angle droit.
+                         \end{enumerate}
+                         \item
+                         \begin{enumerate}[label=\alph*.]
+                              \item
+                              Soit $M\left(x;y;z\right)$.
+                              \par
+                              $\overrightarrow{DM}=t\overrightarrow{DF}$ avec $\overrightarrow{DF}\left(\frac{1}{2};\frac{1}{2};-1\right)$ et $\overrightarrow{DM}\left(x;y;z-1\right)$
+                              \par
+                              Donc $x=\frac{1}{2}t$, $y=\frac{1}{2}t$ et $z=1-t$.
+                              \par
+                              $ME^{2}=\left(x-\frac{1}{2}\right)^{2}+y^{2}+z^{2}=\left(\frac{1}{2}t-\frac{1}{2}\right)^{2}+\left(\frac{1}{2}t\right)^{2}+\left(1-t\right)^{2}$
+                              \par
+                              $ME^{2}=\frac{1}{4}t^{2}-\frac{1}{2}t+\frac{1}{4}+\frac{1}{4}t^{2}+1-2t+t^{2}=\frac{3}{2}t^{2}-\frac{5}{2}t+\frac{5}{4}$
+                              \par
+                              Un calcul similaire pour $MG^{2}$ (il suffit de permuter $x$ et $y$ dans les calculs!) conduit également à :
+                              \par
+                              $MG^{2}=\frac{3}{2}t^{2}-\frac{5}{2}t+\frac{5}{4}$
+                              \par
+                              Donc $MG=ME$ et le triangle $MEG$ est isocèle en $M$.
+                              \item
+                              Soit $I$ le milieu de $\left[EG\right]$. $EI$ est une médiane donc une hauteur du triangle isocèle $MEG$
+
+\begin{center}
+\imgsvg{mc-0302}{0.3}% alt="Géométrie - Bac S  Métropole 2014" style="width:30rem"
+\end{center}
+                              <img src="/wp-content/uploads/mc-0302.png" alt="" class="aligncenter size-full  img-pc" />
+                              $EG=2 EI=2 ME \sin\left(\frac{ \alpha}{2}\right)$
+                              \par
+                              Or, à partir des coordonnées de $E$ et de $G$ : $EG^{2}=\frac{1}{4}+\frac{1}{4}+0=\frac{1}{2}$
+                              \par
+                              Donc
+                              \par
+                              $2ME \sin \left(\frac{\alpha }{2}\right)=\frac{1}{\sqrt{2}}$
+                              \par
+                              c'est à dire :
+                              \par
+                              $ME \sin \left(\frac{\alpha }{2}\right)=\frac{1}{2\sqrt{2}}$
+                              \item
+                              La fonction $\alpha  \mapsto  \sin\left(\frac{\alpha}{2}\right)$ est strictement croissante sur l'intervalle $\left[0; \pi \right]$
+                              \par
+                              $\sin\left(\frac{\alpha}{2}\right)$ est donc maximal lorsque la mesure $\alpha $ est maximale;
+                              \par
+                              Le produit $ME \sin \left(\frac{\alpha }{2}\right)$ étant constant  $\sin \left(\frac{\alpha }{2}\right)$ est maximal lorsque $ME$ est minimal, c'est à dire lorsque $ME^{2}$ est minimal (la fonction \textit{carrée} étant strictement croissante sur $\left[0;+\infty \right[$)
+                              \item
+                              La fonction $t \mapsto  \frac{3}{2}t^{2}-\frac{5}{2}t+\frac{5}{4}$ est une fonction polynôme qu second degré qui atteint son minimum pour $t=-\frac{b}{2a}=\frac{5}{6}$.
+                              \par
+                              Le point $M$ pour lequel la mesure $\alpha $ est maximale est donc situé au $\frac{5}{6}$ du segment $\left[DF\right]$ en partant de $D$.
+                              \par
+                              Les coordonnées de $M$ sont alors $\left(\frac{5}{12};\frac{5}{12};\frac{1}{6}\right)$ (cf. \textbf{2.a.})
+                         \end{enumerate}
+                    \end{enumerate}
+          \end{corrige}
+\input{_footer}

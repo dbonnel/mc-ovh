@@ -1,0 +1,160 @@
+\input{_header}
+$ ABC $ est un triangle quelconque tel que $ AB = 7 $cm, $ AC= 5 $cm et $ BC = 4 $cm.
+\\
+$ M$ est un point du segment $ \left[ BC \right] . $
+\\
+La parallèle à la droite $ \left( AB \right) $ passant par $ M $ coupe le côté $ [AC] $ en $ N.$
+\\
+La parallèle à la droite $ \left( AC \right) $ passant par $ M $ coupe le côté $ [AB] $ en $ P.$
+\begin{center}
+     \begin{extern}%width="500" alt="Thalès et losange"
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,0.)(9.,5.)
+               \psline[linewidth=0.4pt,linecolor=grey](1.,1.)(8.,1.)
+               \psline[linewidth=0.4pt,linecolor=grey](8.,1.)(5.142857142857143,3.79941684889506)
+               \psline[linewidth=0.4pt,linecolor=grey](5.142857142857143,3.79941684889506)(1.,1.)
+               \psline[linewidth=0.4pt,linecolor=red](3.6425664347163558,2.785638448678848)(6.1775403898507895,2.7856384486788484)
+               \psline[linewidth=0.4pt,linecolor=red](6.1775403898507895,2.7856384486788484)(3.5349739551344332,1.)
+               \psline[linewidth=0.4pt,linecolor=red](3.5349739551344332,1.)(1.,1.)
+               \psline[linewidth=0.4pt,linecolor=red](1.,1.)(3.6425664347163558,2.785638448678848)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](1.,1.)
+                    \rput[bl](0.855296988302761,0.7186720182506175){\grey{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](8.,1.)
+                    \rput[bl](8.06583327519023,0.7186720182506175){\grey{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](5.142857142857143,3.79941684889506)
+                    \rput[bl](5.1767631804440715,3.835885016525611){\grey{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](6.1775403898507895,2.7856384486788484)
+                    \rput[bl](6.212620245227008,2.822036562804175){$M$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.6425664347163558,2.785638448678848)
+                    \rput[bl](3.5096807168090343,2.854479713323261){\grey{$N$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.5349739551344332,1.)
+                    \rput[bl](3.533958616764884,0.7186720182506175){\grey{$P$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item
+     À quelle distance du point $ C $ faut-il placer le point $ M $ pour que le quadrilatère $ APMN $ soit un parallélogramme~?
+     \item
+     Sans utiliser le résultat de la question précédente, construire le point $ M$ à l'aide d'une règle non graduée et d'un compas.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          On sait déjà que $ APMN $ est un parallélogramme car les droites $ \left( MN \right) $ et $ \left( AP \right) $ sont parallèles ainsi que les droites $ \left( MP \right) et \left( AN \right).$
+          \par
+          Pour que ce soit un losange il faut et il suffit que $ MN = MP. $
+          \par
+          Calculons $ MP $ puis $ MN $ en utilisant le théorème de Thalès~:
+          \begin{itemize}
+               \item
+               \textbf{Calcul de $ MP$ }
+               \par
+               Posons $ x = MC. $
+               \par
+               On a alors~:
+               \\
+               $ BM = BC - MC = 4 - x $
+               \par
+               Les droites $ \left( MP \right) $ et $ \left( AC \right) $ sont parallèles~; les points $ B, M, C $ et les points $ B, P, A $ sont alignés.
+               \par
+               Donc, d'après le théorème de Thalès~:
+               \begin{center}
+                    $ \frac{ BM }{ BC } = \frac{ MP }{ AC } = \frac{ BP }{ AB } $
+               \end{center}
+               La première égalité donne~:
+               \par
+               $ \frac{ 4-x }{ 4 } = \frac{ MP }{ 5 } $
+               \par
+               donc, avec un produit en croix~:
+               \par
+               $ 4 MP = 5 \left( 4-x \right) $
+               \par
+               $ MP = \frac{ 5 \left( 4-x \right) }{ 4 }. $
+               \\
+               \item
+               \textbf{Calcul de MN}
+               \par
+               De même, les droites $ \left( MN \right) $ et $ \left( AB \right) $ sont parallèles et les points $ C, M, B$ et $ C, N, A $ sont alignés.
+               \par
+               Par conséquent~:
+               \begin{center}
+                    $ \frac{ CM }{ BC } = \frac{ MN }{ AB } = \frac{ CN }{ CA } $
+               \end{center}
+               L'égalité des deux premiers quotients équivaut à~:
+               \par
+               $ \frac{ x }{ 4 } = \frac{ MN }{ 7 } $
+               \par
+               soit~:
+               $ 4 MN = 7x $
+               \\
+               $ MN = \frac{ 7x }{ 4 }. $
+               \item
+               \textbf{Conclusion }
+               \par
+               $ APMN $ est donc un losange si et seulement si~:
+               \par
+               $ MP = MN $
+               \par
+               $ \frac{ 5(4-x) }{ 4 } = \frac{ 7x }{ 4 } $
+               \par
+               $ 5 \left( 4 - x \right) = 7x $
+               \\
+               $ 20 - 5x = 7x $
+               \\
+               $ 20 = 7x + 5x $
+               \\
+               $ 12x = 20$
+               \par
+               $ x = \frac{ 5 }{ 3 } $
+               \par
+               Il faut placer le point $ M $ à $ \frac{ 5 }{ 3 } $cm ( $    \approx 1,67  $ cm) de $C$ pour que le quadrilatère $ APMN $ soit un parallélogramme.
+          \end{itemize}
+          \item
+          Les diagonales d'un losange sont des axes de symétrie de ce losange.
+          \par
+          Donc, si $ APMN $ est un losange, la droite $ \left( AM \right) $ est un axe de symétrie donc une bissectrice de l'angle $ \widehat{ PAN } $ qui est aussi l'angle $ \widehat{ BAC }.$
+          \par
+          Pour placer le point $M$, il suffit donc de construire au compas la bissectrice de l'angle $ \widehat{ BAC }. $
+          \par
+          $M$ est alors le point d'intersection de cette bissectrice avec le côté $ \left[ BC \right] $~:
+          \begin{center}
+               \begin{extern}%width="500" alt=""
+                    \newrgbcolor{grey}{0.2 0.2 0.2}
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0.,0.)(9.,5.)
+                         \psline[linewidth=0.4pt,linecolor=grey](1.,1.)(8.,1.)
+                         \psline[linewidth=0.4pt,linecolor=grey](8.,1.)(5.142857142857143,3.79941684889506)
+                         \psline[linewidth=0.4pt,linecolor=grey](5.142857142857143,3.79941684889506)(1.,1.)
+                         \psline[linewidth=0.4pt,linecolor=red](3.382592586423977,2.609968579772903)(6.356832699017947,2.609968579772903)
+                         \psline[linewidth=0.4pt,linecolor=red](6.356832699017947,2.609968579772903)(3.97424011259397,1.)
+                         \psline[linewidth=0.4pt,linecolor=red](3.97424011259397,1.)(1.,1.)
+                         \psline[linewidth=0.4pt,linecolor=red](1.,1.)(3.382592586423977,2.609968579772903)
+                         \parametricplot[linewidth=0.4pt,linecolor=grey]{0.4430230091369528}{0.7809029873351472}{1.*1.500369888604726*cos(t)+0.*1.500369888604726*sin(t)+1.|0.*1.500369888604726*cos(t)+1.*1.500369888604726*sin(t)+1.}
+                         \parametricplot[linewidth=0.4pt,linecolor=grey]{-0.18351779158694992}{0.18839081772518879}{1.*1.5003698886047259*cos(t)+0.*1.5003698886047259*sin(t)+1.|0.*1.5003698886047259*cos(t)+1.*1.5003698886047259*sin(t)+1.}
+                         \parametricplot[linewidth=0.4pt,linecolor=grey]{-0.14893404425129297}{0.16320932683782904}{1.*1.5086156333068808*cos(t)+0.*1.5086156333068808*sin(t)+2.2499958104542728|0.*1.5086156333068808*cos(t)+1.*1.5086156333068808*sin(t)+1.8446488044771545}
+                         \parametricplot[linewidth=0.4pt,linecolor=grey]{0.4243963995945869}{0.7436288249084765}{1.*1.506194185300565*cos(t)+0.*1.506194185300565*sin(t)+2.5061941853005654|0.*1.506194185300565*cos(t)+1.*1.506194185300565*sin(t)+1.}
+                         \psplot[linewidth=0.4pt,linecolor=grey]{0.}{9.}{(--3.7468641192450445--1.6099685797729029*x)/5.356832699017947}
+                         \begin{scriptsize}
+                              \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](1.,1.)
+                              \rput[bl](0.855296988302761,0.7186720182506175){\grey{$A$}}
+                              \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](8.,1.)
+                              \rput[bl](8.06583327519023,0.7186720182506175){\grey{$B$}}
+                              \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](5.142857142857143,3.79941684889506)
+                              \rput[bl](5.1767631804440715,3.835885016525611){\grey{$C$}}
+                              \psdots[dotsize=2pt 0,dotstyle=*](6.356832699017947,2.609968579772903)
+                              \rput[bl](6.4,2.68){$M$}
+                              \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.382592586423977,2.609968579772903)
+                              \rput[bl](3.2507164506133,2.676042385468288){\grey{$N$}}
+                              \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.97424011259397,1.)
+                              \rput[bl](3.9709608159701855,0.8186720182506175){\grey{$P$}}
+                         \end{scriptsize}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

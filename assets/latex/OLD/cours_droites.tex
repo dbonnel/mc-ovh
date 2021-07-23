@@ -1,0 +1,158 @@
+\input{_header}
+\begin{h2}1. Équation réduite d'une droite\end{h2}
+\cadre{vert}{Propriété}{%
+     Une droite du plan peut être caractérisée une équation de la forme :
+     \begin{itemize}
+          \item $x=c$ si cette droite est parallèle à l'axe des ordonnées (\textit{« verticale »})
+          \item $y=mx+p$ si cette droite n'est pas parallèle à l'axe des ordonnées.
+     \end{itemize}
+     Dans le second cas, $m$ est appelé coefficient directeur et $p$ ordonnée à l'origine.
+}
+\bloc{orange}{Exemples}{%
+\begin{center}
+     \begin{extern}%width="550" alt="équations de droites"
+          \begin{tabular}{c c c}
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{1+0.2*x*x }
+                    \def\xmin{-2.5}
+                    \def\xmax{3.5}
+                    \def\ymin{-2.5}
+                    \def\ymax{4.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                            \psline[linewidth=0.75pt,linecolor=red](1,\ymin)(1,\ymax)
+                        \rput[tr](-0.3,-0.3){$O$}
+                         \rput[l](1.2,4){$\color{red} x=1$}
+                    \end{pspicture*}
+               }
+               & ~~~~ &%
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{2*x-1 }
+                    \def\xmin{-2.5}
+                    \def\xmax{3.5}
+                    \def\ymin{-2.5}
+                    \def\ymax{4.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{\xmin}{\xmax}{\fonction}
+                          \rput[tr](-0.3,-0.3){$O$} 
+                         \rput[tl](2.7,4){$\color{red} y=2x+1$}
+                    \end{pspicture*}
+               }
+               \\
+               Droite d'équation $x=1$ & ~~~~ & Droite d'équation $y=2x-1$ %
+               \\
+          \end{tabular}
+     \end{extern}
+\end{center}
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item L'équation d'une droite peut s'écrire sous plusieurs formes. Par exemple $y=2x-1$ est équivalente à $y-2x+1=0$ ou $2y-4x+2=0$, etc.
+          \par
+          Les formes $x=c$ et $y=mx+p$ sont appelées \textbf{équation réduite} de la droite.
+          \item Cette propriété indique que toute droite qui n'est pas parallèle à l'axe des ordonnées est la représentation graphique d'une fonction affine.(Voir chapitre \mcLien{/seconde/fonctions-lineaires-affines}{Fonctions linéaires et affines})
+          \item Une droite parallèle à l'axe des abscisses a un coefficient direct $m$ égal à zéro. Son équation est donc de la forme $y=p$. C'est la représentation graphique d'une fonction constante.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     Soient $A$ et $B$ deux points du plan tels que $x_A\neq x_B$.
+     \par
+     Le coefficient directeur de la droite $\left(AB\right)$ est :
+     \begin{center}$m = \frac{y_B-y_A}{x_B-x_A}$\end{center}
+}
+\bloc{cyan}{Remarque}{%
+     Une fois que le coefficient directeur de la droite $\left(AB\right)$ est connu, on peut trouver l'ordonnée à l'origine en sachant que la droite $\left(AB\right)$ passe par le point $A$ donc que les coordonnées de $A$ vérifient l'équation de la droite.
+}
+\bloc{orange}{Exemple}{%
+     On recherche l'équation de la droite passant par les points $A\left(1 ; 3\right)$ et $B\left(3 ; 5\right)$.
+     \par
+     Les points $A$ et $B$ n'ayant pas la même abscisse, cette équation est du type $y=mx+p$ avec :
+     \par
+     $m = \frac{y_B-y_A}{x_B-x_A}=\frac{5-3}{3-1}=\frac{2}{2}=1$
+     \par
+     Donc l'équation de $\left(AB\right)$ est de la forme $y=x+p$. Comme cette droite passe par $A$, l'équation est vérifiée si on remplace $x$ et $y$ par les coordonnées de $A$ donc :
+     \par
+     $3=1+p$ soit $p=2$.
+     \par
+     L'équation de $\left(AB\right)$ est donc $y=x+2$.
+}
+\begin{h2}2. Droites parallèles - Droites sécantes\end{h2}
+\cadre{vert}{Propriété}{%
+     Deux droites d'équations respectives $y=mx+p$ et $y=m^{\prime}x+p^{\prime}$ sont \textbf{parallèles} si et seulement si elles ont le même coefficient directeur : $m=m^{\prime}$.
+}
+\bloc{orange}{Exemple}{%
+\begin{center}
+\begin{extern}%width="320" alt="Droites parallèles"
+               \resizebox{6cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{2*x-1 }
+                     \def\g{2*x+3 }
+                    \def\xmin{-4.5}
+                    \def\xmax{3.5}
+                    \def\ymin{-2.5}
+                    \def\ymax{4.5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{\xmin}{\xmax}{\fonction}
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\g}
+                          \rput[tr](-0.3,-0.3){$O$} 
+                         \rput[tl](2.6,4){$\color{red} y=2x-1$}
+                         \rput[tr](-2.8,-2){$\color{blue} y=2x+3$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center}
+\begin{center}
+\'Equations de droites parallèles
+\end{center}
+}
+\cadre{vert}{Méthode}{%
+     Soient $\mathscr D$ et $\mathscr D^{\prime}$ deux droites sécantes d'équations respectives $y=mx+p$ et $y=m^{\prime}x+p^{\prime}$.
+     \par
+     Les coordonnées $\left(x ; y\right)$ du point d'intersection des droites $\mathscr D$ et $\mathscr D^{\prime}$ s'obtiennent en résolvant le système :
+     \par
+     $\left\{ \begin{matrix} y=mx+p \\ y=m^{\prime}x+p^{\prime} \end{matrix}\right.$
+     }
+     \bloc{cyan}{Remarque}{%
+          Ce système se résout simplement par substitution. Il est équivalent à :
+          \par
+          $\left\{ \begin{matrix} mx+p=m^{\prime}x+p^{\prime} \\ y=mx+p \end{matrix}\right.$
+          }
+          \bloc{orange}{Exemple}{%
+               On cherche les coordonnées du point d'intersection des droites $\mathscr D$ et $\mathscr D^{\prime}$ d'équations respectives $y=2x+1$ et $y=3x-1$.
+               \par
+               Ces droites n'ont pas le même coefficient directeur donc elles sont sécantes.
+               \par
+               Les coordonnées du point d'intersection vérifient le système :
+               \par
+               $\left\{ \begin{matrix} y=2x+1 \\ y=3x-1 \end{matrix}\right.$
+                    \par
+                    qui équivaut à :
+                    \par
+                    $\left\{ \begin{matrix} y=2x+1 \\ y=3x-1 \end{matrix}\right. \Leftrightarrow \left\{ \begin{matrix} 2x+1=3x-1 \\ y=3x-1 \end{matrix}\right.$
+                              \par
+                              $\phantom{\left\{ \begin{matrix} y=2x+1 \\ y=3x-1 \end{matrix}\right.} \Leftrightarrow \left\{ \begin{matrix} x=2 \\ y=3x-1 \end{matrix}\right.$
+                                        \par
+                                        $\phantom{\left\{ \begin{matrix} y=2x+1 \\ y=3x-1 \end{matrix}\right.} \Leftrightarrow \left\{ \begin{matrix} x=2 \\ y=5 \end{matrix}\right.$
+                                                  \par
+                                                  Le point d'intersection a pour coordonnées $\left(2 ; 5\right)$.
+                                             }
+                                             \input{_footer}

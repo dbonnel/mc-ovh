@@ -1,0 +1,77 @@
+\input{_header}
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\textbf{Candidats de ES ayant  choisi l'enseignement de spécialité}
+\medbreak
+\emph{Les parties} A \emph{et} B \emph{sont indépendantes}
+\medbreak
+Franck joue en ligne sur internet.
+\medbreak
+\TitreC{Partie A}
+\medbreak
+Après plusieurs semaines, des statistiques données par le logiciel lui permettent de dire que~:
+\begin{indent}
+     \begin{itemize}
+          \item quand il gagne une partie, la probabilité qu'il gagne la suivante est égale à $0,65$~;
+          \item quand il perd une partie, la probabilité qu'il gagne la suivante est égale à $0,42$.
+     \end{itemize}
+\end{indent}
+\medbreak
+On note G l'état~: \og Franck gagne la partie \fg{} et P l'état~: \og Franck perd la partie \fg.
+\par
+Sur une période donnée, on note, pour tout entier naturel $n$ non nul~:
+\begin{indent}
+     \begin{itemize}
+          \item $g_n$ la probabilité que Franck gagne la $n$-ième partie~;
+          \item $p_n$ la probabilité que Franck perde la $n$-ième partie.
+     \end{itemize}
+\end{indent}
+\medbreak
+Dans cette période, Franck a gagné la première partie.
+\medbreak
+\begin{enumerate}
+     \item Représenter la situation par un graphe probabiliste de sommets notés G et P.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Écrire la matrice de transition $M$ dans l'ordre G-P.
+          \item Calculer la probabilité que Franck gagne la troisième partie.
+     \end{enumerate}
+     \item  Déterminer l'état stable du système et interpréter le résultat dans le contexte de l'exercice,
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B}
+\medbreak
+Dans ce jeu vidéo, Franck circule dans des catacombes infestées de monstres qu'il doit combattre.
+\smallbreak
+On a représenté ci-dessous le graphe modélisant ces
+catacombes.
+\par
+Les sommets représentent les salles et les arêtes représentent les couloirs.
+\par
+Les étiquettes du graphe correspondent au nombre de monstres présents dans chaque couloir.
+\begin{center}
+     \begin{extern}%width="320" alt="Graphe probabiliste Bac ES Antilles-Guyane 2018"
+          {\psset{unit=0.8cm}
+               \begin{pspicture}(8,6)
+                    \psset{arcangle=15} \cnodeput(0.2,3){A}{A} \cnodeput(2.2,5){B}{B} \cnodeput(2.5,0.5){C}{C} \cnodeput(4.5,3){D}{D} \cnodeput(6,0.6){E}{E} \cnodeput(6.8,4.5){F}{F} \cnodeput(8.6,2.8){G}{G}
+                    \ncarc{A}{B} \ncput*{11}\ncarc{C}{A} \ncput*{12}\ncarc{C}{B} \ncput*{18}\ncarc{B}{D} \ncput*{7}\ncarc{B}{F} \ncput*{22}\ncarc{D}{E} \ncput*{4}\ncarc{D}{F} \ncput*{3}\ncarc{F}{E} \ncput*{11}\ncarc{G}{E} \ncput*{7}
+                    \ncarc{F}{G} \ncput*{5}\ncarc{C}{D} \ncput*{5}\ncarc{E}{C} \ncput*{19}
+          \end{pspicture}}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier qu'il est possible, au départ d'une salle quelconque, d'y revenir après
+          avoir parcouru tous les couloirs une et une seule fois.
+          \item Donner un tel chemin.
+     \end{enumerate}
+     \item Franck débute le jeu dans la salle A et doit atteindre l'adversaire final en salle G.
+     \par
+     Existe-t-il un chemin permettant de se rendre de la salle A à la salle G en passant une
+     et une seule fois par tous les couloirs~?
+     \item Une fois arrivé en salle G, Franck souhaite revenir en salle A en affrontant le moins de
+     monstres possible afin de recommencer une nouvelle partie.
+     \par
+     Déterminer ce trajet minimal et préciser le nombre de monstres affrontés.
+\end{enumerate}
+\input{_footer}

@@ -1,0 +1,221 @@
+%sub-menu {
+    display: block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+     z-index: 999;
+    transition: all .3s;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    li {
+        border-bottom: 1px solid $gray-200;
+        display: block;
+
+        &:hover {
+            &>a {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+%main-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    &>li {
+        position: relative;
+
+        a {
+            padding: 1.5rem 2rem;
+            display: block;
+            text-decoration: none;
+            color: $primary;
+            text-transform: uppercase;
+            font-size: $font-size-small;
+            letter-spacing: .025em;
+            transition: all .3s linear;
+            border: none;
+
+            &:hover {
+                border: none;
+            }
+
+            &.active {
+                color: $secondary;
+            }
+        }
+
+        &.has-children>a::after {
+            @extend %chevron;
+        }
+
+        &.has-children:hover>a::after {
+            border-color: $white;
+        }
+
+        .sub-menu {
+            @extend %sub-menu;
+            width: 23rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: $white;
+        }
+
+        &:hover {
+            &>a {
+                color: white;
+                background-color: $secondary;
+            }
+
+            .sub-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0);
+            }
+        }
+
+    }
+}
+
+%chevron {
+    content: '';
+    margin: 0 0 .3rem 1.2rem;
+    border: solid $primary;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: .4rem;
+    transform: rotate(45deg);
+    &:hover {
+        border-color: $white;
+    }
+    transition: all .3s linear;
+}
+
+.h-menu {
+    @extend %main-menu;
+}
+
+.icon-menu {
+    display: flex;
+    margin: 0 0 -3rem 0;
+    padding: 0;
+    justify-content: flex-end;
+    &>li {
+        position: relative;
+
+        a {
+            padding: 1.5rem 1rem;
+            display: block;
+            text-decoration: none;
+            transition: all .3s linear;
+            border: none;
+        }
+    }
+}
+
+
+.admin {
+    .h-menu {
+        @extend %main-menu;
+
+        &>li {
+            a {
+                color: $white;
+            }
+        }
+
+        .sub-menu {
+            &>li {
+                a {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+    .header-menu-inner li a {
+        color: $white;
+    }
+
+
+}
+
+
+.v-menu {
+    border-top: 1px solid $gray-800;
+
+    &>li {
+        position: relative;
+
+        .mobile-menu-expand {
+            position: absolute;
+            right: 7px;
+            top: 13px;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: $white;
+            }
+
+            &::before {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::after {
+                left: 50%;
+                bottom: 0;
+                transition: all .3s linear;
+                transform: translateX(-50%);
+            }
+        }
+
+        &.active-expand>.mobile-menu-expand::after {
+            height: 0;
+        }
+
+        a {
+            padding: 1rem;
+            display: block;
+            font-weight: bold;
+            color: $white;
+            text-transform: uppercase;
+            border-bottom: 1px solid $gray-800;
+            transition: all .3s linear;
+        }
+
+        ul {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s linear;
+
+            li a {
+                padding-left: 10%;
+            }
+        }
+
+    }
+
+    .sub-menu {
+        @extend %sub-menu;
+        background: $primary;
+    }
+
+    .sub-open ul {
+        display: block;
+        max-height: 50rem;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+    }
+}

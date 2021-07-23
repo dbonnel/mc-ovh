@@ -1,0 +1,91 @@
+\input{_header}
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\smallbreak
+\textit{Commun à tous les candidats}
+\bigbreak
+Un artiste souhaite réaliser une sculpture composée d'un tétraèdre posé sur un cube de 6 mètres d'arête.
+\par
+Ces deux solides sont représentés par le cube $ABCDEFGH$ et par le tétraèdre $SELM$ ci-dessous.
+\begin{center}
+\begin{extern}%width="300" alt="Section cube Bac S Antilles-Guyane"
+     \psset{unit=1.3cm}
+\resizebox{7cm}{!}{
+     \begin{pspicture}(0,0)(8,8)
+          \pstGeonode[PosAngle=-135, dotscale=0.6](0,0){B}
+          \pstGeonode[PosAngle=135, dotscale=0.6](0,4){F}
+          \pstGeonode[PosAngle=-45, dotscale=0.6](4,0){C}
+          \pstGeonode[PosAngle=0, dotscale=0.6](4,4){G}
+          \pstGeonode[PosAngle=45, dotscale=0.6](2,2){A}
+          \pstTranslation[PosAngle=-45, dotscale=0.6]{B}{A}{C}[D]
+          \pstTranslation[PosAngle=45, dotscale=0.6]{B}{A}{G}[H]
+          \pstTranslation[PosAngle=45, dotscale=0.6]{B}{A}{F}[E]
+          \pstHomO[HomCoef=0.166666666667,PosAngle=-45, dotscale=0.6]{A}{B}[I]
+          \pstHomO[HomCoef=0.166666666667,PosAngle=-45, dotscale=0.6]{A}{D}[J]
+          \pstHomO[HomCoef=0.166666666667,PosAngle=135, dotscale=0.6]{A}{E}[K]
+          \par
+          \psline(B)(C)(G)(F)(B)
+          \psline[linestyle=dashed](B)(A)(E)
+          \psline[linestyle=dashed](A)(D)
+          \psline(G)(H)(D)(C)
+          \pstHomO[HomCoef=.3333333,PosAngle=45, dotscale=0.6]{E}{H}[M]
+          \pstHomO[HomCoef=.3333333,PosAngle=135, dotscale=0.6]{E}{F}[L]
+          \pstInterLL[PosAngle=90]{B}{L}{M}{D}{S}
+          \psline[linecolor=red](S)(L)(M)(S)
+          \psline(F)(L)
+          \psline(M)(H)
+          \psline[linestyle=dashed](L)(E)(S)
+          \psline[linestyle=dashed](E)(M)
+          \psline[linestyle=dashed,linecolor=red](L)(B)(D)(M)
+          \psline[linecolor=blue]{->}(A)(I)
+          \psline[linecolor=blue]{->}(A)(J)
+          \psline[linecolor=blue]{->}(A)(K)
+          \end{pspicture}
+}
+\end{extern}
+     \end{center}
+On munit l'espace du repère orthonormé $\left(A~;\overrightarrow{AI},\overrightarrow{AJ},\overrightarrow{AK}\right)$ tel que~: $I\in[AB]$, $J\in[AD]$, $K\in[AE]$ et
+\par
+$AI=AJ=AK=1$, l'unité graphique représentant 1 mètre.
+\par
+Les points $L$, $M$ et $S$ sont définis de la façon suivante~:
+\begin{itemize}
+     \item $L$ est le point tel que $\overrightarrow{FL}=\frac23\overrightarrow{FE}$~;
+     \item $M$ est le point d'intersection du plan $(BDL)$ et de la droite $(EH)$~;
+     \item $S$ est le point d'intersection des droites $(BL)$ et $(AK)$.
+\end{itemize}
+\begin{enumerate}
+     \item Démontrer, sans calcul de coordonnées, que les droites $(LM)$ et $(BD)$ sont parallèles.
+     \item Démontrer que les coordonnées du point $L$ sont $(2~;~0~;~6)$.
+     \item \begin{enumerate}[label=\alph*.]
+          \item Donner une représentation paramétrique de la droite $(BL)$.
+          \item Vérifier que les coordonnées du point $S$ sont $(0~;~0~;~9)$.
+     \end{enumerate}
+     \item Soit $\overrightarrow{n}$ le vecteur de coordonnées $(3~;~3~;~2)$.
+     \begin{enumerate}[label=\alph*.]
+          \item Vérifier que $\overrightarrow{n}$ est normal au plan $(BDL)$.
+          \item Démontrer qu'une équation cartésienne du plan $(BDL)$ est~:
+          \[
+          3x+3y+2z-18=0.
+          \]
+          \item On admet que la droite $(EH)$ a pour représentation paramétrique~:
+
+\begin{center}
+         $ \left\{
+               \begin{array}{rcl}
+                    x&=&0\\
+                    y&=&s\\
+                    z&=&6
+               \end{array}
+          \right.~~~~s\in\mathbb{R}$
+\end{center}
+
+          Calculer les coordonnées du point $M$.
+     \end{enumerate}
+     \item Calculer le volume du tétraèdre $SELM$. On rappelle que le volume $V$ d'un tétraèdre est donné par la formule suivante~:
+     \[
+     V=\frac13\times\text{Aire de la base}\times\text{Hauteur}.
+     \]
+     \item L'artiste souhaite que la mesure de l'angle $\widehat{SLE}$ soit comprise entre 55° et 60°.\\
+     Cette contrainte d'angle est-elle respectée~?
+\end{enumerate}
+\input{_footer}

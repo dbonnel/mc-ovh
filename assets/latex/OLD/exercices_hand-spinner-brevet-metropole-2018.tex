@@ -1,0 +1,59 @@
+\input{_header}
+     \begin{h2}Exercice 7 (17 points)\end{h2}
+     \medbreak
+    Le \og hand-spinner \fg{} est une sorte de toupie plate qui tourne sur elle-même.
+\begin{center}
+\img{handspinner}{0.2}%width="150" alt="hand-spinner"
+\end{center}      
+          On donne au \og hand-spinner \fg{} une vitesse de rotation initiale au temps $t = 0$, puis, au cours du temps, sa vitesse de rotation diminue jusqu'à l'arrêt complet du \og hand-spinner \fg{}.
+          \par
+          Sa vitesse de rotation est alors égale à $0$.
+          \par
+          Grâce à un appareil de mesure, on a relevé la vitesse de rotation exprimée en
+     nombre de tours par seconde.
+     \medbreak
+     Sur le graphique ci-dessous, on a représenté cette vitesse en fonction du temps exprimé en seconde~:
+     \begin{center}
+\begin{extern}%width="560" alt="Fonction vitesse Brevet Métropole 2018 "
+          \psset{xunit=0.11cm,yunit=0.44cm}
+          \begin{pspicture}(-20,-1)(100,25)
+               \rput{90}(-8,12.5){\footnotesize Vitesse de rotation (en nombre de tours par seconde) }
+               \uput[d](50,-1){\footnotesize Temps (en s)}
+               \multido{\n=0+4}{26}{\psline[linewidth=0.6pt,linecolor=lightgray](\n,0)(\n,25)}
+               \multido{\n=0+1}{26}{\psline[linewidth=0.6pt,linecolor=lightgray](0,\n)(100,\n)}
+               \psaxes[linewidth=1pt,Dx=20,Dy=5,labelFontSize=\scriptstyle](0,0)(0,0)(100,25)
+               \psline[linewidth=1.2pt,linecolor=blue](0,20)(94,0)
+          \end{pspicture}
+\end{extern}
+
+     \end{center}
+          \emph{Inspiré de~: \Lien{https://www.sciencesetavenir.fr/fondamental/combien-de-temps-peut-tourner-votre-hand-spinner_112808}{Sciences et avenir : Combien de temps peut tourner votre Hand Spinner ?}}
+
+     \medbreak
+     \begin{enumerate}
+          \item Le temps et la vitesse de rotation du \og hand-spinner \fg{} sont-ils proportionnels~? Justifier.
+          \item Par \textbf{lecture graphique}, répondre aux questions suivantes~:
+          \begin{enumerate}[label=\alph*.]
+               \item Quelle est la vitesse de rotation initiale du \og hand-spinner \fg{} (en nombre de tours par seconde)~?
+               \item Quelle est la vitesse de rotation du \og hand-spinner \fg{} (en nombre de tours par seconde) au bout d'une minute et vingt secondes~?
+               \item Au bout de combien de temps, le \og hand-spinner \fg{} va-t-il s'arrêter~?
+          \end{enumerate}
+          \item  Pour calculer la vitesse de rotation du \og hand-spinner \fg{} en fonction du temps $t$, notée $V(t)$, on utilise la fonction suivante~:
+          \par
+          \[V(t) = - 0,214 \times t + V_{\text{initiale}}.\]
+          \par
+          $\bullet~~$ $t$ est le temps (exprimé en s) qui s'est écoulé depuis le début de rotation du \og hand-spinner \fg{}~;
+          \par
+          $\bullet~~$ $V_{\text{initiale}}$ est la vitesse de rotation à laquelle on a lancé le \og hand-spinner \fg{} au départ.
+          \begin{enumerate}[label=\alph*.]
+               \item On lance le \og hand-spinner \fg{} à une vitesse initiale de $20$ tours par seconde. Sa vitesse de rotation est donc donnée par la formule~:
+               \par
+               \[V(t) = - 0,214 \times t + 20.\]
+               \par
+               Calculer sa vitesse de rotation au bout de $30$~s.
+               \item Au bout de combien de temps le hand-spinner va-t-il s'arrêter~? Justifier par un calcul.
+               \item Est-il vrai que, d'une manière générale, si l'on fait tourner le hand-spinner deux fois plus vite au départ, il tournera deux fois plus longtemps~? Justifier.
+          \end{enumerate}
+     \end{enumerate}
+
+\input{_footer}

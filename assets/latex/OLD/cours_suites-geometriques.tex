@@ -1,0 +1,185 @@
+\input{_header}
+\begin{h2}1. Suites arithmétiques\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     On dit qu'une suite $\left(u_{n}\right)$ est une \textbf{suite arithmétique} s'il existe un nombre $r$ tel que, pour tout $n\in \mathbb{N}$ :
+     \begin{center}$u_{n+1}=u_{n}+r$\end{center}
+     Le réel $r$ s'appelle la \textbf{raison} de la suite arithmétique.
+}
+\bloc{cyan}{Remarque}{%id="r10"
+     Pour démontrer qu'une suite $\left(u_{n}\right)$ est arithmétique, on pourra calculer la différence $u_{n+1}-u_{n}$.
+     \par
+     Si on constate que la différence est une constante $r$, on pourra affirmer que la suite est arithmétique de raison $r$.
+}
+\bloc{orange}{Exemple}{%id="e10"
+     Soit la suite $\left(u_{n}\right)$ définie par $u_{n}=3n+5$.
+     \par
+     $u_{n+1}-u_{n}=3\left(n+1\right)+5-\left(3n+5\right)$\nosp$=3n+3+5-3n-5=3$
+     \par
+     La suite $\left(u_{n}\right)$ est une suite arithmétique de raison $r=3$
+}
+\cadre{vert}{Propriété}{%id="p20"
+     Si la suite $\left(u_{n}\right)$ est arithmétique de raison $r$ alors pour tous entiers naturels $n$ et $k$ :
+     \begin{center}$u_{n}=u_{k}+\left(n-k\right)\times r$\end{center}
+     En particulier :
+     \begin{center}$u_{n}=u_{0}+n\times r$\end{center}
+}
+\bloc{orange}{Exemple}{%id="e20"
+     Soit $\left(u_{n}\right)$ la suite arithmétique de raison $2$ et de premier terme $u_{0}=5$.
+     \par
+     $u_{100}=5+2\times 100=205$
+}
+\cadre{vert}{Propriété}{%id="p30"
+     Réciproquement, si $a$ et $b$ sont deux nombres réels et si la suite $\left(u_{n}\right)$ est définie par $u_{n}=a\times n+b$ alors cette suite est une suite arithmétique de raison $r=a$ et de premier terme $u_{0}=b$.
+}
+\bloc{cyan}{Démonstration}{%id="m30"
+     $u_{n+1}-u_{n}=a\left(n+1\right)+b-\left(an+b\right)$\nosp$=an+a+b-an-b=a$
+     \par
+     et
+     \par
+     $u_{0}=a\times 0+b=b$
+}
+\cadre{vert}{Propriété}{%id="p40"
+     La représentation graphique d'une suite arithmétique est formée de points alignés.
+}
+\bloc{cyan}{Remarque}{%id="r40"
+     Cela se déduit immédiatement du fait que, pour tout $n \in \mathbb{N}$, $u_{n}=u_{0}+n\times r$ donc les points représentant la suite sont sur la droite d'équation $y=rx+u_{0}$
+}
+\bloc{orange}{Exemple}{%id="e40"
+     \begin{center}
+          \begin{extern}%width="300" alt="représentation graphique d'une suite"
+               % -+-+-+ variables modifiables
+               \resizebox{6cm}{!}{%
+                    \def\xmin{-0.8}
+                    \def\xmax{7.5}
+                    \def\ymin{-0.8}
+                    \def\ymax{4.8}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[Dx=1,Dy=1,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.2,-0.3){$O$}
+                         \multido{\n=0.0+1}{8}{
+                              \FPeval{\suite}{1+n/2}
+                              \psdots[linecolor=blue](\n,\suite)
+                         }
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Suite arithmétique de premier terme $u_{0}=1$ et de raison $r=\frac{1}{2}$}
+     \end{center}
+}
+\cadre{rouge}{Théorème}{%id="t50"
+     Soit $\left(u_{n}\right)$ une suite arithmétique de raison $r$ :
+     \begin{itemize}
+          \item si $r > 0$ alors $\left(u_{n}\right)$ est strictement croissante
+          \item si $r=0$ alors $\left(u_{n}\right)$ est constante
+          \item si $r < 0$ alors $\left(u_{n}\right)$ est strictement décroissante.
+     \end{itemize}
+}
+\bloc{cyan}{Démonstration}{%id="m50"
+     Ce résultat découle immédiatement de $u_{n+1}-u_{n}=r$
+}
+\cadre{rouge}{Théorème (Somme des premiers entiers)}{%id="t60"
+     Pour tout entier $n \in \mathbb{N}$ :
+     \begin{center}$0+1+. . .+n=\frac{n\left(n+1\right)}{2}$\end{center}
+}
+\bloc{cyan}{Démonstration}{%id="m60"
+     Une démonstration astucieuse consiste à réécrire la somme en inversant l'ordre des termes :
+     \par
+     $S = 0 + 1 + 2 + . . . + n $\textbf{(1)} \\
+     $S = n + n-1 + n-2 + . . . + 0 $\textbf{(2)}
+     \par
+     Puis on additionne les lignes \textbf{(1)} et \textbf{(2)} termes à termes. Dans le membre de gauche on trouve que tous les termes sont égaux à $n$ ($0+n=n$ ; $1+n-1=n$ ; $2 + n-2=n$, etc.). Comme en tout il y a $n+1$ termes on trouve :
+     \par
+     $S+S = n + n + n + . . . + n$
+     \par
+     $2S = n\left(n+1\right)$
+     \par
+     $S = \frac{n\left(n+1\right)}{2}$
+}
+\bloc{orange}{Exemple}{%id="e60"
+     Soit à calculer la somme $S_{100}=1+2+. . .+100$.
+     \par
+     $S_{100}=\frac{100\times 101}{2}=50\times 101=5050$
+}
+\begin{h2}2. Suites géométriques\end{h2}
+\cadre{bleu}{Définition}{%id="d100"
+     On dit qu'une suite $\left(u_{n}\right)$ est une \textbf{suite géométrique} s'il existe un nombre réel $q$ tel que, pour tout $n\in \mathbb{N}$ :
+     \begin{center}$u_{n+1}=q \times u_{n}$\end{center}
+     Le réel $q$ s'appelle la \textbf{raison} de la suite géométrique $\left(u_{n}\right)$.
+}
+\bloc{cyan}{Remarque}{%id="r100"
+     Pour démontrer qu'une suite $\left(u_{n}\right)$ dont les termes sont non nuls est une suite géométrique, on pourra calculer le rapport $\frac{u_{n+1}}{u_{n}}$.
+     \par
+     Si ce rapport est une constante $q$, on pourra affirmer que la suite est une suite géométrique de raison $q$.
+}
+\bloc{orange}{Exemple}{%id="e100"
+     Soit la suite $\left(u_{n}\right)_{n\in \mathbb{N}}$ définie par $u_{n}=\frac{3}{2^{n}}$.
+     \par
+     Les termes de la suite sont tous strictement positifs et
+     \par
+     $\frac{u_{n+1}}{u_{n}}=\frac{3}{2^{n+1}}$÷$\frac{3}{2^{n}}$\nosp$=\frac{3}{2^{n+1}}\times \frac{2^{n}}{3}$\nosp$=\frac{2^{n}}{2^{n+1}}$\nosp$=\frac{2^{n}}{2\times 2^{n}}=\frac{1}{2}$
+     \par
+     La suite $\left(u_{n}\right)$ est une suite géométrique de raison $\frac{1}{2}$
+}
+\cadre{vert}{Propriété}{%id="p110"
+     Si la suite $\left(u_{n}\right)$ est géométrique de raison $q$, pour tous entiers naturels $n$ et $k$ :
+     \begin{center}$u_{n}=u_{k}\times q^{n-k}$.\end{center}
+     En particulier :
+     \begin{center}$u_{n}=u_{0}\times q^{n}$.\end{center}
+}
+\cadre{vert}{Propriété}{%id="p120"
+     Réciproquement, soient $a$ et $b$ deux nombres réels. La suite $\left(u_{n}\right)$ définie par $u_{n}=a\times b^{n}$ suite est une suite géométrique de raison $q=b$ et de premier terme $u_{0}=a$.
+}
+\bloc{cyan}{Démonstration}{%id="m120"
+     $u_{n+1}=a\times b^{n+1}=a\times b^{n}\times b=u_{n}\times b$
+     \par
+     et
+     \par
+     $u_{0}=a\times b^{0}=a\times 1=a$
+}
+\cadre{rouge}{Théorème}{%id="t130"
+     Soit $\left(u_{n}\right) $une suite géométrique de raison $q > 0$ et de premier terme strictement positif :
+     \begin{itemize}
+          \item Si q  > 1, la suite $\left(u_{n}\right) $ est strictement croissante
+          \item Si 0 < q  < 1, la suite $\left(u_{n}\right) $ est strictement décroissante
+          \item Si q=1, la suite $\left(u_{n}\right) $est constante
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{%id="r130"
+     \begin{itemize}
+          \item Si le premier terme est strictement négatif, le sens de variation est inversé.
+          \item Si la raison est strictement négative, la suite n'est ni croissante ni décroissante.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{%id="t140"
+     Pour tout entier $n \in \mathbb{N}$ et tout réel $q\neq 1$
+     \begin{center}$1+q+q^{2}+. . . +q^{n}=\frac{1-q^{n+1}}{1-q}$\end{center}
+}
+\bloc{cyan}{Remarque}{%id="r140"
+     Cette formule n'est pas valable pour $q=1$. Mais dans ce cas tous les termes de la somme valent 1; la somme est donc égale au nombre de termes $n+1$
+}
+\bloc{cyan}{Démonstration}{%id="d140"
+     On multiplie chaque membre par $q$. Cela incrémente chacun des exposants de $q$ :
+     \par
+     $S = 1 + q + q^{2} + . . . + q^{n} $\textbf{(1)} \\
+     $qS = q + q^{2} + q^{3} + . . . + q^{n+1} $\textbf{(2)}
+     \par
+     On soustrait termes à termes les égalités \textbf{(1)} et \textbf{(2)}; tous les termes se simplifient sauf le premier et le dernier~:
+     \par
+     $S-qS = 1-q+q-q^{2}+q^{2}-q^{3}+ . . .$\nosp$ +q^{n}-q^{n+1} $
+     \par
+     $\left(1-q\right)S = 1-q^{n+1} $
+     \par
+     $S = \frac{1-q^{n+1}}{1-q}$
+}
+\bloc{orange}{Exemple}{%id="e140"
+     Soit à calculer la somme $S=1+2+4+8+16. . .+2^{10}$
+     \par
+     $S=\frac{1-2^{10+1}}{1-2}=\frac{1-2048}{1-2}$\nosp$=\frac{-2047}{-1}=2047$
+}
+\input{_footer}

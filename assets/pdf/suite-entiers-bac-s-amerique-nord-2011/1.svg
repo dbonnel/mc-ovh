@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="766" height="1111" viewBox="0 0 766 1111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_1{
+fill: #FFFFFF;
+}
+
+.s6_1{
+font-size: 21.39px;
+font-family: TimesNewRomanPSMT_1e;
+fill: #000000;
+}
+.s4_1{
+font-size: 21.39px;
+font-weight: bold;
+font-family: TimesNewRomanPS-BoldMT;
+fill: #000000;
+}
+.s5_1{
+font-size: 21.39px;
+font-family: CambriaMath_q;
+fill: #000000;
+}
+.s7_1{
+font-size: 13.75px;
+font-family: TimesNewRomanPSMT;
+fill: #000000;
+}
+.s1_1{
+font-size: 24.44px;
+font-family: TimesNewRomanPSMT;
+fill: #333333;
+}
+.s2_1{
+font-size: 24.44px;
+font-family: TimesNewRomanPSMT_f;
+fill: #333333;
+}
+.s3_1{
+font-size: 21.39px;
+font-family: TimesNewRomanPSMT;
+fill: #000000;
+}
+.s8_1{
+font-size: 21.39px;
+font-family: TimesNewRomanPSMT_f;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1111
+L766,1111
+L766,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<path fill-rule="evenodd" d="M34,56l676,0l0,-29L34,27l0,29Z" class="g1_1" />
+<text 
+x="34" 
+y="51" 
+dx="0,-0.5,0.5,-0.5,0.3,-0.1,0,0,0.3,-0.5,-0.1,-0.1,0,0.3,-0.3,0,0.1,0.3,-0.5,0.3,0.2" 
+class="s1_1"
+>ARITHMÉTIQUE : SUITE </text>
+
+<text 
+x="313" 
+y="51" 
+dx="0,-0.1,0.2,0,-0.1,0.3,-0.5,0.3,0.1,0.1,0.2" 
+class="s2_1"
+>D’ENTIERS –</text>
+
+<text 
+x="464" 
+y="51" 
+dx="0,-0.3,-0.5,0.1,0,0.1,0.4,-0.4,0,0,0.5,-0.5,-0.1,-0.1,0,0,0.2,-0.1" 
+class="s1_1"
+>BAC S AMÉRIQUE DU </text>
+
+<path fill-rule="evenodd" d="M310,85l124,0l0,-29L310,56l0,29Z" class="g1_1" />
+<text 
+x="310" 
+y="79" 
+dx="0,-0.1,-0.1,0.1,-0.1,0,0,0,0,0.1" 
+class="s1_1"
+>NORD 2011 </text>
+
+<text 
+x="26" 
+y="129" 
+dx="0,0.3,-0.6,-0.1,0.3,0.1,-0.1,0,0" 
+class="s3_1"
+>PARTIE A </text>
+
+<path d="M26.5,132.5l95,0" class="g2_1" />
+<text 
+x="26" 
+y="179" 
+dx="0,-0.1,0,0,0,0,0.1,0.5,0,0,0,0,0,-0.2,0,0,0" 
+class="s4_1"
+>Théorème de Gauss</text>
+
+<text 
+x="212" 
+y="179" 
+dx="0,-0.2,0,-0.4,0,-0.2,0.1,0,0,0,0,0,0,0.1,0.1,0,0,0,0.2,0.1,0,-0.2,0.1,0,0,0,-0.2,0,0.1,0,0.1" 
+class="s3_1"
+>: Soit a, b et c trois nombres </text>
+
+<text 
+x="458" 
+y="179" 
+dx="0" 
+class="s5_1"
+>∈</text>
+
+<text 
+x="474" 
+y="179" 
+dx="0,-0.1" 
+class="s4_1"
+>Z*</text>
+
+<text 
+x="498" 
+y="179" 
+dx="0,0,0,0,-0.3,0,0,0,0,0.2,0,-0.2,0.1,0,0,-0.2,0,0,0,0.2,0,0,0,-0.2,0.1,0,0,0,0" 
+class="s3_1"
+>. Si a divise le produit b c </text>
+
+<text 
+x="26" 
+y="204" 
+dx="0,0,0.2,0,0.1,-0.2,0,0,0,0.1,0.1,0,0,0,0.1,0,-0.4,0.1,0,0,0.1,0,-0.2,-0.2,0,0.2,0.1,0,0,0,-0.2,0.1,0,0,0.1,0,0,0,0,0,-0.2,0,0.1,0.1,0,0,0,0,-0.6,0,-0.2,0.1,0,0,0.1,0.5" 
+class="s3_1"
+>et si a et b sont premiers entre eux, alors a divise c. </text>
+
+<text 
+x="26" 
+y="253" 
+dx="0,-0.1,0,0,0,0,0.1,0.5,0,0,0,0,-0.3,0.2,0,-0.3,0,0" 
+class="s4_1"
+>Théorème de Bézout</text>
+
+<text 
+x="219" 
+y="253" 
+dx="0,-0.2,0,-0.2,0,0,0,0,0.1,0,0.1,-0.2,0,0.2,0.1,0,0.1,0,-0.2,0,0.2,-0.2,0.1,0.1,-0.4,0.1,0,0,0.1,0,0,0.1,0,-0.2,-0.2,0,0.2,0.1,0,0,0,-0.2,0.1,0,0,0.1,0,0,0,0.1,-0.2,0,0,0,0.2" 
+class="s3_1"
+>: Deux entiers relatifs sont premiers entre eux si, et </text>
+
+<text 
+x="26" 
+y="278" 
+dx="0,0.1,0,0,-0.2,0,-0.2,0,0,0.2,0,0.1,-0.2,0,0,0.1,-0.2,0,0,0,-0.2,0.1,0.1,0,0,0,0.1,0,0,0,0,0,0.2,-0.2,0,0.2,0.1,0,0.1,0,-0.2,0,0.2,-0.2,0.1,0.1,0,0,0,-0.3,0.1,0,-0.4,0,0.1,0,-0.2,0.1,0,0,0,0,0,0.1,0,0,0,0.1,0,0,0,-0.4,0,0.1,0,0,0.7" 
+class="s3_1"
+>seulement si, il existe deux entiers relatifs u et v tels que a u + b v = 1. </text>
+
+<text 
+x="26" 
+y="327" 
+dx="0,0,0,-0.3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,-0.2,0,0,0,0,0,0,-0.2,0,0,-0.2,0,0,0,0,0,0,-0.2,0,0,0,0,0,0,0,0.7,0,-0.4,0,0,0,-0.2,0,0,0,0.4,0,-0.4,0,0,0,0.2,0,0,0" 
+class="s3_1"
+>Si a divise le produit b c, il existe un nombre relatif k tel que k a = b c </text>
+
+<text 
+x="26" 
+y="352" 
+dx="0,0,0,-0.3,0,0,0,0,0.1,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0.1,0,0,0,0,0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,-0.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0.1,0,0.3,0" 
+class="s3_1"
+>Si a et b sont premiers entre eux, ils satisfont à l'égalité de Bézout : a </text>
+
+<text 
+x="26" 
+y="377" 
+dx="0,0,0,0,0.2,0,0,0,-0.4,0,0.1,0,0" 
+class="s3_1"
+>u + b v = 1. </text>
+
+<text 
+x="26" 
+y="401" 
+dx="0,0.1,0.1,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0.3,0,0,0,0,0,0,0,0.1,0,0,0,0.2,0,0,0" 
+class="s3_1"
+>Multiplions les deux membres de cette égalité par c : </text>
+
+<text 
+x="26" 
+y="426" 
+dx="0,0,0,0,0.1,0,0,0,0.1,0,0,0,0,0,-0.3,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0,0.1,0,-0.4,0,0,0,0,0,0,0,0.4,0" 
+class="s3_1"
+>a c u + b c v = c. Comme b c = k a, on a : </text>
+
+<text 
+x="26" 
+y="451" 
+dx="0,0,0,0,0.1,0,0,0,0.1,0,-0.4,0,0,0,-0.3,0,0.1,0" 
+class="s3_1"
+>a c u + k a v = c </text>
+
+<text 
+x="26" 
+y="476" 
+dx="0,0,0,0,0,0,0,0,0,0.2,0,-0.4,0,0,0.1,0,0.1,0" 
+class="s3_1"
+>a (c u + k v) = c </text>
+
+<text 
+x="26" 
+y="501" 
+dx="0,0,0,0,0" 
+class="s6_1"
+>donc </text>
+
+<text 
+x="73" 
+y="501" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>a divise c. </text>
+
+<text 
+x="26" 
+y="550" 
+dx="0,0.3,-0.6,-0.1,0.3,0.1,-0.1,0,0" 
+class="s3_1"
+>PARTIE B </text>
+
+<path d="M26.5,553.5l94,0" class="g2_1" />
+<text 
+x="26" 
+y="599" 
+dx="0,0,0,0.1" 
+class="s3_1"
+>1) u</text>
+
+<text 
+x="60" 
+y="601" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="72" 
+y="599" 
+dx="0,0.1,0" 
+class="s3_1"
+>= 2</text>
+
+<text 
+x="100" 
+y="592" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="112" 
+y="599" 
+dx="0,0.1,0" 
+class="s3_1"
+>+ 3</text>
+
+<text 
+x="140" 
+y="592" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="152" 
+y="599" 
+dx="0,0.1,0" 
+class="s3_1"
+>+ 6</text>
+
+<text 
+x="181" 
+y="592" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="192" 
+y="599" 
+dx="0" 
+class="s8_1"
+>–</text>
+
+<text 
+x="208" 
+y="599" 
+dx="0" 
+class="s3_1"
+>1</text>
+
+<text 
+x="65" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>n </text>
+
+<text 
+x="166" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>1 </text>
+
+<text 
+x="263" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>2 </text>
+
+<text 
+x="364" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>3 </text>
+
+<text 
+x="464" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>4 </text>
+
+<text 
+x="565" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>5 </text>
+
+<text 
+x="665" 
+y="625" 
+dx="0,0" 
+class="s3_1"
+>6 </text>
+
+<path d="M18.5,605.5l105,0" class="g2_1" />
+<path d="M124.5,605.5l94,0" class="g2_1" />
+<path d="M219.5,605.5l99,0" class="g2_1" />
+<path d="M319.5,605.5l100,0" class="g2_1" />
+<path d="M420.5,605.5l100,0" class="g2_1" />
+<path d="M520.5,605.5l100,0" class="g2_1" />
+<path d="M621.5,605.5l100,0" class="g2_1" />
+<path d="M17.5,630.5l0,-25" class="g2_1" />
+<path d="M123.5,630.5l0,-25" class="g2_1" />
+<path d="M218.5,630.5l0,-25" class="g2_1" />
+<path d="M318.5,630.5l0,-25" class="g2_1" />
+<path d="M419.5,630.5l0,-25" class="g2_1" />
+<path d="M520.5,630.5l0,-25" class="g2_1" />
+<path d="M620.5,630.5l0,-25" class="g2_1" />
+<path d="M721.5,630.5l0,-25" class="g2_1" />
+<text 
+x="62" 
+y="650" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="73" 
+y="651" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="160" 
+y="650" 
+dx="0,0,0" 
+class="s3_1"
+>10 </text>
+
+<text 
+x="258" 
+y="650" 
+dx="0,0,0" 
+class="s3_1"
+>48 </text>
+
+<text 
+x="353" 
+y="650" 
+dx="0,0,0,0" 
+class="s3_1"
+>250 </text>
+
+<text 
+x="448" 
+y="650" 
+dx="0,0,0,0,0" 
+class="s3_1"
+>1392 </text>
+
+<text 
+x="549" 
+y="650" 
+dx="0,0,0,0,0" 
+class="s3_1"
+>8050 </text>
+
+<text 
+x="644" 
+y="650" 
+dx="0,0,0,0,0,0" 
+class="s3_1"
+>47448 </text>
+
+<path d="M17.5,631.5l0,-1" class="g2_1" />
+<path d="M18.5,631.5l105,0" class="g2_1" />
+<path d="M123.5,631.5l0,-1" class="g2_1" />
+<path d="M124.5,631.5l94,0" class="g2_1" />
+<path d="M218.5,631.5l0,-1" class="g2_1" />
+<path d="M219.5,631.5l99,0" class="g2_1" />
+<path d="M318.5,631.5l0,-1" class="g2_1" />
+<path d="M319.5,631.5l100,0" class="g2_1" />
+<path d="M419.5,631.5l0,-1" class="g2_1" />
+<path d="M420.5,631.5l100,0" class="g2_1" />
+<path d="M520.5,631.5l0,-1" class="g2_1" />
+<path d="M520.5,631.5l100,0" class="g2_1" />
+<path d="M620.5,631.5l0,-1" class="g2_1" />
+<path d="M621.5,631.5l100,0" class="g2_1" />
+<path d="M721.5,631.5l0,-1" class="g2_1" />
+<path d="M17.5,656.5l0,-25" class="g2_1" />
+<path d="M18.5,656.5l105,0" class="g2_1" />
+<path d="M123.5,656.5l0,-25" class="g2_1" />
+<path d="M124.5,656.5l94,0" class="g2_1" />
+<path d="M218.5,656.5l0,-25" class="g2_1" />
+<path d="M219.5,656.5l99,0" class="g2_1" />
+<path d="M318.5,656.5l0,-25" class="g2_1" />
+<path d="M319.5,656.5l100,0" class="g2_1" />
+<path d="M419.5,656.5l0,-25" class="g2_1" />
+<path d="M420.5,656.5l100,0" class="g2_1" />
+<path d="M520.5,656.5l0,-25" class="g2_1" />
+<path d="M520.5,656.5l100,0" class="g2_1" />
+<path d="M620.5,656.5l0,-25" class="g2_1" />
+<path d="M621.5,656.5l100,0" class="g2_1" />
+<path d="M721.5,656.5l0,-25" class="g2_1" />
+<text 
+x="26" 
+y="700" 
+dx="0,0,0,0.1,0.3,0,-0.4,0.1,0,0,0,0.1,0,0,0,0,0.2,0,0,0,0,-0.2,0,0.1,0,0,-0.3,0,-0.2,-0.2,0.1,0,0.1,0,0.1,0,-0.2,-0.4,0,0,0.2,0,0.1,0,-0.2,0,0.4,0,-0.2,0,0,0.1,0,0.1,0" 
+class="s3_1"
+>2) Pour n &gt; 0, on a les égalités suivantes modulo (2) :</text>
+
+<text 
+x="26" 
+y="725" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="36" 
+y="717" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="48" 
+y="725" 
+dx="0,0,0.2,0,0,0,0.2,0,0,0,0.1,0,0,0,0,0,0,0" 
+class="s3_1"
+>= 0 ; 3 = 1 d'où 3</text>
+
+<text 
+x="195" 
+y="717" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="206" 
+y="725" 
+dx="0,0,0.1,0,0,0,0.2" 
+class="s3_1"
+>= 1 ; 6</text>
+
+<text 
+x="262" 
+y="717" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="274" 
+y="725" 
+dx="0,0,0.1,0,0" 
+class="s3_1"
+>= 0. </text>
+
+<text 
+x="26" 
+y="751" 
+dx="0,0,0,0,0,0.1" 
+class="s3_1"
+>Donc u</text>
+
+<text 
+x="88" 
+y="752" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="100" 
+y="751" 
+dx="0,0,0.1" 
+class="s3_1"
+>= 2</text>
+
+<text 
+x="128" 
+y="743" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="140" 
+y="751" 
+dx="0,0,0.1" 
+class="s3_1"
+>+ 3</text>
+
+<text 
+x="168" 
+y="743" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="179" 
+y="751" 
+dx="0,0,0.1" 
+class="s3_1"
+>+ 6</text>
+
+<text 
+x="208" 
+y="743" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="220" 
+y="751" 
+dx="0" 
+class="s8_1"
+>–</text>
+
+<text 
+x="236" 
+y="751" 
+dx="0,0,0,0,0.1,0,0,0,0.1,0,0,0,0.1,0" 
+class="s3_1"
+>1 = 0 + 1 + 0 </text>
+
+<text 
+x="353" 
+y="751" 
+dx="0" 
+class="s8_1"
+>–</text>
+
+<text 
+x="369" 
+y="751" 
+dx="0,0,0,0,0.1,0" 
+class="s3_1"
+>1 = 0 </text>
+
+<text 
+x="418" 
+y="751" 
+dx="0,0,0,0,0" 
+class="s6_1"
+>donc </text>
+
+<text 
+x="465" 
+y="751" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="475" 
+y="752" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="487" 
+y="751" 
+dx="0,0,0,0,0.1,0,0,0,0,0.1,0,0,0,0,0.1,0,0,0,0,0.1,0,0,0" 
+class="s3_1"
+>est pair pour tout n &gt; </text>
+
+<text 
+x="26" 
+y="777" 
+dx="0,0,0" 
+class="s3_1"
+>0. </text>
+
+<text 
+x="26" 
+y="800" 
+dx="0,0,0,0.1,0.3,0,0.1,0,-0.4,0.1,0,0,0,0.1,0,0,-0.4,0,0,-0.4,0,0,0.2,0,0,0.2,0,0,0,0,0,0,0.2,-0.2,0,0.2,0,0,0,0.2,-0.4,0.1,0,-0.2,0,0,0,0,0,0,0,-0.2" 
+class="s3_1"
+>3) Posons n = 2k, k étant un entier naturel non nul.</text>
+
+<text 
+x="26" 
+y="824" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="36" 
+y="826" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="48" 
+y="824" 
+dx="0,0,0.1" 
+class="s3_1"
+>= 2</text>
+
+<text 
+x="76" 
+y="817" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="88" 
+y="824" 
+dx="0,0,0.1" 
+class="s3_1"
+>+ 3</text>
+
+<text 
+x="116" 
+y="817" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="128" 
+y="824" 
+dx="0,0,0.1" 
+class="s3_1"
+>+ 6</text>
+
+<text 
+x="156" 
+y="817" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="168" 
+y="824" 
+dx="0" 
+class="s8_1"
+>–</text>
+
+<text 
+x="184" 
+y="824" 
+dx="0,0,0,0,0.2,0" 
+class="s3_1"
+>1 = (2</text>
+
+<text 
+x="235" 
+y="817" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="242" 
+y="824" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="249" 
+y="817" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="261" 
+y="824" 
+dx="0,0.2,0,0.2" 
+class="s3_1"
+>+ (3</text>
+
+<text 
+x="297" 
+y="817" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="304" 
+y="824" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="311" 
+y="817" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="323" 
+y="824" 
+dx="0,0.2,0,0" 
+class="s3_1"
+>+ (6</text>
+
+<text 
+x="358" 
+y="817" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="365" 
+y="824" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="372" 
+y="817" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="384" 
+y="824" 
+dx="0" 
+class="s8_1"
+>–</text>
+
+<text 
+x="400" 
+y="824" 
+dx="0,0,0" 
+class="s3_1"
+>1. </text>
+
+<text 
+x="26" 
+y="850" 
+dx="0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0.1,0,0,0,0,0" 
+class="s3_1"
+>On a les égalités suivantes modulo (4) : </text>
+
+<text 
+x="26" 
+y="875" 
+dx="0,0" 
+class="s3_1"
+>(2</text>
+
+<text 
+x="44" 
+y="867" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="50" 
+y="875" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="58" 
+y="867" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="70" 
+y="875" 
+dx="0,0,0.1,0,-0.4,0,0.2" 
+class="s3_1"
+>= 0 ; 3</text>
+
+<text 
+x="125" 
+y="867" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="137" 
+y="875" 
+dx="0,0,0.1,0,0,0,0,0,0,0.1,0" 
+class="s3_1"
+>= 1 d'où (3</text>
+
+<text 
+x="230" 
+y="867" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="237" 
+y="875" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="244" 
+y="867" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="256" 
+y="875" 
+dx="0,0,0.1,0,0,0.2,-0.4,0" 
+class="s3_1"
+>= 1 ; (6</text>
+
+<text 
+x="319" 
+y="867" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="326" 
+y="875" 
+dx="0" 
+class="s3_1"
+>)</text>
+
+<text 
+x="333" 
+y="867" 
+dx="0" 
+class="s7_1"
+>k</text>
+
+<text 
+x="345" 
+y="875" 
+dx="0,0,0.1,0" 
+class="s3_1"
+>= 0 </text>
+
+<text 
+x="378" 
+y="875" 
+dx="0,0,0,0,0" 
+class="s6_1"
+>donc </text>
+
+<text 
+x="425" 
+y="875" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="436" 
+y="876" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="448" 
+y="875" 
+dx="0,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0.1,0,0,0,-0.1,0,0,0,0,0,0,0.1,0,0,0,0,0.1,0" 
+class="s3_1"
+>est divisible par 4 pour tout n </text>
+
+<text 
+x="26" 
+y="900" 
+dx="0,0,0,0,0,0.1,0,0,0.2,0,0,0,0,0,0,0,0" 
+class="s3_1"
+>pair et non nul. </text>
+
+<text 
+x="26" 
+y="949" 
+dx="0,0,0,0.1,-0.2,-0.4,0,0,0.2,0,0.2,0,-0.2,0,0,0.2,0,0,-0.2,0,0.1,0,0,0,0,0,0,0.2,0,-0.1" 
+class="s3_1"
+>4) D'après le tableau en 1) : </text>
+
+<text 
+x="272" 
+y="949" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="283" 
+y="951" 
+dx="0" 
+class="s7_1"
+>1</text>
+
+<text 
+x="295" 
+y="949" 
+dx="0,0.1,0,0,0.1,0,0,0,0.1,-0.4,-0.2,0.4,-0.2,0,0.1,0,0,0,0.1,0.1,0,0,0,0.1,0" 
+class="s3_1"
+>= 10, divisible par 2 ; u</text>
+
+<text 
+x="495" 
+y="951" 
+dx="0" 
+class="s7_1"
+>2</text>
+
+<text 
+x="507" 
+y="949" 
+dx="0,0.1,0,0,0.1,0,0,0,-0.2,-0.4,-0.2,0.1,-0.2,0.4,-0.2,0,0,0,0.1,0.1,0,0,0,0.1,0" 
+class="s3_1"
+>= 48, divisible par 3 ; u</text>
+
+<text 
+x="706" 
+y="951" 
+dx="0" 
+class="s7_1"
+>3</text>
+
+<text 
+x="26" 
+y="974" 
+dx="0,0.1,0,0,0,0.1,0,0,0,-0.2,0,-0.2,0.1,-0.2,0.4,-0.2,0,0,0,0.1,0.1,0,0,0,0.1,0,0,0.2,0" 
+class="s3_1"
+>= 250, divisible par 5 ; et u</text>
+
+<text 
+x="257" 
+y="975" 
+dx="0" 
+class="s7_1"
+>5</text>
+
+<text 
+x="269" 
+y="974" 
+dx="0,0.1,0,0,0,0,0,0,0,0,-0.2,-0.4,-0.2,0.1,-0.2,0.4,-0.2,0,0,0,0.1,0.1,0,0,0.1" 
+class="s3_1"
+>= 8050, divisible par 7. </text>
+
+<text 
+x="26" 
+y="999" 
+dx="0,-0.2,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.1,0,0" 
+class="s3_1"
+>Donc 2, 3, 5 et 7 </text>
+
+<text 
+x="173" 
+y="999" 
+dx="0" 
+class="s5_1"
+>∈</text>
+
+<text 
+x="189" 
+y="999" 
+dx="0,0.1,-0.1,0.1,0.1" 
+class="s3_1"
+>(E). </text>
+
+<text 
+x="26" 
+y="1049" 
+dx="0,0,0,0.1,-0.1,0,-0.2,0,0.2,0,0,0,0,0.1,0,0,0,0,0,0.1,-0.2,0,0,0,0,0.1,0.1,0,0,0,0,0,0,-0.2,0,0.1,0,0,0,0.2,0,-0.2,-0.2,0,0.2,0,0.1,0,0,0,0,-0.2,-0.2,0,0,0.1,0.1,0,0,0.1,0,-0.2,-0.2,0,0.2,0,0,-0.3,0,0.1,0,0,0,0,0,-0.3,0,0.1,0" 
+class="s3_1"
+>5) Remarquons que si p est un nombre premier &gt; 3, il est premier avec 2, avec 3</text>
+
+<text 
+x="26" 
+y="1074" 
+dx="0,0,0.2,0,0,-0.3,0,0.1,0,0,0.1" 
+class="s3_1"
+>et avec 6. </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPSMT_1e;
+	src: url("fonts/TimesNewRomanPSMT_1e.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_f;
+	src: url("fonts/TimesNewRomanPSMT_f.woff") format("woff");
+}
+
+@font-face {
+	font-family: CambriaMath_q;
+	src: url("fonts/CambriaMath_q.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

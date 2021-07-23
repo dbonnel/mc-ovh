@@ -1,0 +1,268 @@
+\input{_header}
+\begin{h2} Méthode~: \end{h2}
+$ ABC $ et $ DCE $ sont deux triangles tels que~:
+\begin{itemize}
+     \item
+     les points $ C, A, E $ et les points $ C, B, D $ sont alignés
+     \item
+     les droites $ \left( AB \right) $ et $ \left( ED \right) $ sont \textbf{ parallèles}.
+\end{itemize}
+\medskip
+Deux cas de figure sont possibles~:
+\begin{multicols}{2}
+     \begin{center}
+          \begin{extern}%width="300" alt="configuration de Thalès n°1"
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \newrgbcolor{tttttt}{0.2 0.2 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(5.,1.)(11.,9.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](6.,5.)(8.,4.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](6.,3.)(10.,5.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](10.,5.)(6.,7.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](6.,7.)(6.,3.)
+                    \begin{scriptsize}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,5.)
+                         \rput[bl](5.677819005765453,5.027022512141235){\tttttt{$A$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](8.,4.)
+                         \rput[bl](8.150994540838274,3.9073261256157292){\tttttt{$B$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,7.)
+                         \rput[bl](5.727036429348992,7.06954559085809){\tttttt{$E$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*](10.,5.)
+                         \rput[bl](10.045865348804515,5.051631223933004){\tttttt{$D$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,3.)
+                         \rput[bl](5.628601582181914,2.7999340949861087){\tttttt{$C$}}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \columnbreak
+     \begin{center}
+          \begin{extern}%width="300" alt="configuration de Thalès n°2"
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \newrgbcolor{tttttt}{0.2 0.2 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(4.,1.)(11.,8.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](5.,3.)(7.,2.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](6.,7.)(7.,2.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](5.,3.)(8.673155137107534,5.663422431446233)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](8.673155137107534,5.663422431446233)(6.,7.)
+                    \begin{scriptsize}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](5.,3.)
+                         \rput[bl](4.681166178198794,3.021412501112033){\tttttt{$A$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](7.,2.)
+                         \rput[bl](7.14203735737573,1.9017161145865278){\tttttt{$B$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,7.)
+                         \rput[bl](5.727036429348992,7.06954559085809){\tttttt{$D$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*](8.673155137107534,5.663422431446233)
+                         \rput[bl](8.864647182799585,5.543805459768391){\tttttt{$E$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.572023624013923,4.139881879930384)
+                         \rput[bl](6.723689256915651,3.9196304815116143){\tttttt{$C$}}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+\end{multicols}
+Le \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#d10}{ \textbf{théorème de Thalès}} conclut que les longueurs des côtés du triangle $ ABC $ et les longueurs des côtés du triangle $ CDE $ sont proportionnelles, c'est à dire que~:
+\begin{center}
+     $ \frac{ CA }{ CE } = \frac{ CB }{ CD } = \frac{ AB }{ DE } $
+\end{center}
+\medskip
+\par \textbf{Attention} à l'ordre des côtés - voir \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#r10}{cours}~!
+\medskip
+En général, l'un des trois rapports sera inutile pour résoudre l'exercice.
+\par
+À partir des deux autres rapports, on peut calculer le côté recherché en effectuant, par exemple, un produit en croix.
+\par
+\begin{h2}Exemple 1\end{h2}
+\begin{center}
+     \begin{extern}%width="500" alt="Thalès exercice 1"
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.,4.)(10.,9.)
+               \psline[linewidth=0.4pt,linecolor=grey](2.,8.)(6.,8.)
+               \psline[linewidth=0.4pt,linecolor=grey](6.,8.)(3.,5.)
+               \psline[linewidth=0.4pt,linecolor=grey](3.,5.)(8.,5.)
+               \psline[linewidth=0.4pt,linecolor=grey](8.,5.)(2.,8.)
+               \rput[tl](7.338907051709888,7.241806573400475){$\grey{(MN)//(RS)}$}
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](2.,8.)
+                    \rput[bl](1.7281207631864715,8.053894062528864){\grey{$R$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](6.,8.)
+                    \rput[bl](6.046949682641996,8.053894062528864){\grey{$S$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.,5.)
+                    \rput[bl](2.675556167169592,5.076239935724772){\grey{$M$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](8.,5.)
+                    \rput[bl](8.0525596936712,5.051631223933002){\grey{$N$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](4.666666666666667,6.666666666666667)
+                    \rput[bl](4.71807924588645,6.318979881209124){\grey{$I$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+Calculer $ MI $ sachant que $ RS = 4 \texttt{cm} $ , $ MN = 5 \texttt{cm} $ et $ IS = 2 \texttt{cm} . $
+\bloc{orange}{Solution~:}{ % id=s010
+     \par
+     On se place dans les triangles $ RSI $ et $ MNI $~;
+     \par
+     On précise les conditions d'alignement et de parallélisme~:
+     \begin{itemize}
+          \item
+          les points $ R, I, N $ ainsi que les points $ M, I, S $ sont alignés
+          \item
+          les droites $ \left( MN \right) $ et $ \left( RS \right) $ sont parallèles.
+     \end{itemize}
+     Par conséquent, d'après le théorème de Thalès, on peut écrire~:
+     \begin{center}
+          $ \frac{ RI }{ IN} = \frac{ SI }{ IM } = \frac{ RS }{ MN } $
+     \end{center}
+     Ici, le rapport $ \frac{ RI }{ IN } $ ne nous intéresse pas car on ne connait ni la longueur $ RI $ ni la longueur $ IN $ .
+     \par
+     On utilise les deux autres rapports en remplaçant les longueurs connues par leurs valeurs~:
+     \par
+     $ \frac{ 2 }{ MI } $ = $\frac{4 }{ 5 } $
+     \par
+     En effectuant le produit en croix, on obtient~:
+     \par
+     $ 4MI = 2 \times 5 $
+     \\
+     $ 4MI=10 $
+     \\
+     $ MI= \frac{ 10}{ 4 } = 2,5 \texttt{cm} $
+} % fin solution
+\par
+\begin{h2}Exemple 2 \end{h2}
+\begin{center}
+     \begin{extern}%width="500" alt="Thalès exercice 2"
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,3.)(10.,8.)
+               \rput[tl](7.77199779622993,6.47589412117782){$\grey{(BC)//(DE)}$}
+               \psline[linewidth=.4pt,linecolor=grey](0.9365246496171764,3.624349766411451)(6.,7.)
+               \psline[linewidth=.4pt,linecolor=grey](6.,7.)(9.37565023358855,3.624349766411451)
+               \psline[linewidth=.4pt,linecolor=grey](9.37565023358855,3.624349766411451)(0.9365246496171764,3.624349766411451)
+               \psline[linewidth=.4pt,linecolor=grey](3.,5.)(8.,5.)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](6.,7.)
+                    \rput[bl](5.858511062628407,7.186290393532876){\grey{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.,5.)
+                    \rput[bl](2.684643845816301,5.0207275632892365){\grey{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](8.,5.)
+                    \rput[bl](8.046989901657694,5.043643572074884){\grey{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.9365246496171764,3.624349766411451)
+                    \rput[bl](0.6565770682865436,3.4166069482939485){$D$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](9.37565023358855,3.624349766411451)
+                    \rput[bl](9.5136144639391,3.4395229570795953){\grey{$E$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+On donne~: $ AC =3 \texttt{cm} $, $ AD = 5 \texttt{cm} $ et $ AE = 4 \texttt{cm} $.
+\\
+Calculer $ BD. $
+\bloc{orange}{Solution~:}{ % id=s040
+     \par
+     Les triangles $ ABC $ et $ ADE$ sont en situation de Thalès car~:
+     \begin{itemize}
+          \item
+          les points $ A, B, D $ ainsi que les points $ A, C, E $ sont alignés
+          \item
+          les droites $ \left( BC \right) $ et $ \left( DE \right) $ sont parallèles.
+          \par
+          En utilisant le théorème de Thalès, on obtient~:
+          \begin{center}
+               $ \frac{ AB }{ AD } = \frac{ AC }{ AE } = \frac{ BC }{ DE } $
+          \end{center}
+          \bloc{cyan}{Remarque}{ % id=r020
+               Il ne faut pas chercher à tout prix à faire figurer la longueur recherchée (ici $ BD $) dans l'égalité des rapports.
+               \\
+               En effet, $ \left[ BD \right] $ n'est \textbf{pas} un côté de l'un des triangles $ ABC $ ou $ ADE $. Toutefois, il sera facile de calculer $ BD $ une fois la longueur $ AB$ connue.
+          } % fin remarque
+          \par
+          L'égalité des deux premiers quotients donne~:
+          \par
+          $ \frac{ AB }{ 5 } = \frac{ 3 }{ 4 } $
+          \par
+          Avec le produit en croix~:
+          \par
+          $ 4AB = 3 \times 5 $
+          \\
+          $ 4 AB = 15 $
+          \par
+          $ AB = \frac{ 15 }{ 4 } = 3,75 $
+          \par
+          Pour calculer la distance $ BD $, il suffit maintenant de faire~:
+          \\
+          $ BD = AD - AB = 5 - 3,75 = 1,25.$
+          \par
+          Donc le segment $ \left[ BD \right] $ mesure $ 1,25 $cm.
+     \end{itemize}
+} % fin solution
+\par
+\begin{h2}Exemple 3 \end{h2}
+\begin{center}
+     \begin{extern}%width="500" alt="Thalès exercice 2"
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,3.)(10.,8.)
+               \rput[tl](7.77199779622993,6.47589412117782){$\grey{(BC)//(DE)}$}
+               \psline[linewidth=.4pt,linecolor=grey](0.9365246496171764,3.624349766411451)(6.,7.)
+               \psline[linewidth=.4pt,linecolor=grey](6.,7.)(9.37565023358855,3.624349766411451)
+               \psline[linewidth=.4pt,linecolor=grey](9.37565023358855,3.624349766411451)(0.9365246496171764,3.624349766411451)
+               \psline[linewidth=.4pt,linecolor=grey](3.,5.)(8.,5.)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](6.,7.)
+                    \rput[bl](5.858511062628407,7.186290393532876){\grey{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](3.,5.)
+                    \rput[bl](2.684643845816301,5.0207275632892365){\grey{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](8.,5.)
+                    \rput[bl](8.046989901657694,5.043643572074884){\grey{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.9365246496171764,3.624349766411451)
+                    \rput[bl](0.6565770682865436,3.4166069482939485){$D$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](9.37565023358855,3.624349766411451)
+                    \rput[bl](9.5136144639391,3.4395229570795953){\grey{$E$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+La figure est similaire à celle de ll'exercice précédent mais, cette fois, on connait~: $ BD = 8\texttt{cm} $, $ AE = 9\texttt{cm} $ et $ AC = 4 \texttt{cm} $.
+\\
+On cherche à calculer la longueur $ AB. $
+\bloc{orange}{Solution~:}{ %
+     \par
+     Le raisonnement précédent donne, là aussi~:
+     \begin{center}
+          $ \frac{ AB }{ AD } = \frac{ AC }{ AE } = \frac{ BC }{ DE } $
+     \end{center}
+     Cette fois, le calcul est légèrement plus compliqué car on ne connait ni $ AD $ ni $ AB $ (que l'on recherche).
+     \par
+     On pose alors~: $ AB = x $. Par conséquent~:
+     \\
+     $ AD = AB + BD = x + 8 $
+     \par
+     À partir de l'égalité~:
+     \par
+     $ \frac{ AB }{ AD } = \frac{ AC }{ AE } $
+     \par
+     on obtient l'équation~:
+     \par
+     $ \frac{ x }{ x+8 } = \frac{ 4 }{ 9 } $
+     \par
+     et en effectuant le produit en croix~:
+     \par
+     $ 9x = 4 \left( x+8 \right) $
+     \\
+     $ 9x = 4x + 32 $
+     \\
+     $ 9x - 4x = 32 $
+     \\
+     $ 5x = 32 $
+     \\
+     $ x = \frac{ 32 }{ 5 } = 6,4$
+     \par
+     La longueur $ AB $ est donc $ 6,4 $ cm.
+} % fin solution
+\input{_footer}

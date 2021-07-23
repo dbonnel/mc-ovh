@@ -1,0 +1,101 @@
+\input{_header}
+\meta{url}{/enigme/un-triangle-dans-un-carre}
+\meta{pid}{4937}
+\meta{titre}{Un triangle dans un carré}
+\meta{type}{enigme}
+%
+[Niveau: Troisième et +]
+<img src="/wp-content/uploads/triangle-dans-carre.png" alt="" class="aligncenter" style="width:300px;" rel="image_src" />
+Sur la figure ci-dessus, ABCD est un carré d'aire 1m² et AEF est un triangle équilatéral (E et F sont situés sur les côtés [BC] et [CD]).
+\par
+Quelle est l'aire exacte du triangle AEF ?
+\begin{solution}
+     \begin{note}
+          La bonne réponse est $2 \sqrt{3}-3 \ \ ( \approx 0,46) $
+          \par
+          Deux solutions ont été retenues.
+          \begin{itemize}
+               \item
+               Celle proposée par Edav utilise le théorème de Pythagore mais nécessite de savoir résoudre une équation du second degré (niveau Première)
+               \item
+               Celle proposée par Olivier utilise la trigonométrie. Elle a l'avantage d'être accessible à un élève de troisième mais elle ne fournit qu'une valeur approchée (sauf si l'on sait que $\tan 15^{\circ}=  2-\sqrt{3}$ - voir exercice \mcLien{/exercices/calcul-de-tan15/}{Calcul de tan(15°) })
+          \end{itemize}
+     \end{note}
+     Solution rédigée par Edav
+\begin{note}
+  D'après le théorème de Pythagore dans le triangle $ ADF $ rectangle en $ D $~:
+\\
+$ AF^2 = AD^2 + DF^2 $
+\\
+donc
+\\
+$ DF^2 = AF^2 - AD^2 $.
+\par
+De même, dans le triangle $ ABE $ rectangle en $ B $~:
+\\
+$ AE^2 = AB^2 + BE^2 $
+\\
+donc
+\\
+$ BE^2 = AE^2 - AB^2 $.
+\par
+Comme $ AE = AF $ (triangle équilatéral) et $ AD = AB $ (carré), alors $ DF^2 = BE^2 $ donc $  DF = BE $.
+\par
+Notons $ x $ cette distance~: $ x = DF = BE $.
+\par
+Alors $ FC = EC = 1 - x $ puisque l'aire du carré est $ 1\ m^2 $ donc le côté mesure $ 1\ m. $
+\par
+Dans le triangle $ FCE $ rectangle en $ C$~:
+\\
+$ EF^2 = EC^2 + CF^2 = 2(1-x)^2 $.
+\\
+Comme le triangle $ AFE $ est équilatéral $ AF^2 = FE^2 $, ce qui donne~:
+\\
+$ 1+x^2 = 2(1-x)^2 $
+\\
+$ 1+x^2 = 2(1-2x+x^2) $
+\\
+$ 1+x^2 = 2-4x+2x^2$
+\\
+$ 0 = x^2 - 4x +1 $
+\par
+Le discriminant vaut~:
+\\
+$ \Delta = 16 - 4 = 12 $
+\par
+Les solutions sont :
+\par
+$ x_1= \frac{  4-2 \sqrt{ 3 } }{ 2 }= 2 - \sqrt{ 3 }   $ et $ x_1= \frac{  4+2 \sqrt{ 3 } }{ 2 }= 2 + \sqrt{ 3 }   $
+\par
+Comme $ x $ est inférieur à 1 on a donc $ x = 2 - \sqrt{ 3  }  $.
+\par
+L'aire des triangles $ ADF $ et $ ABE $ est alors~:
+\\
+$ \mathscr{A}_1 = \frac{ 1  \times x }{ 2 } = \frac{  2 - \sqrt{ 3  }} {  2   }  $ 
+\par
+et l'aire du triangle $ FEC $ :
+$ \mathscr{A}_2 = \frac{ 1  - x }{ 2 } = \frac{  2 - \sqrt{ 3  }} {  2   }  $ 
+\end{note}
+\medskip
+     \par
+
+
+
+     Solution rédigée par Olivier
+     \begin{note}
+          Il est aisé de démontrer que les triangles ADF et ABE sont égaux ; et que l'angle EAB (=(90°-60°)/2) est de 15°
+          \par
+          Dans le triangle ABE, tan A = EB/AB donc comme AB=1, EB=tan 15°=0,268 ; et l'aire = AB x EB/2 = 0,268/2 = 0,1339
+          \par
+          Même chose dans le triangle ADF qui lui est égal
+          \par
+          Donc l'aire des 2 triangles (ADF + ABE) est égale à 0,1339 x 2 =0,268m2
+          \par
+          L'aire du triangle FCE =FC x CE/2 ; or FC=CE=1-EB=1-0,268 =0,7321 ; donc aire FCE = 0,7321 x 0,7321/2 = 0,268m2
+          \par
+          L'aire de la partie non grisée (ADF + ABE + FCE) est donc égale à 0,268 +0,268 = 0,535m2
+          \par
+          L'aire grisée (le triangle AFE) est donc égale à 1-0,535 = \textbf{0,465m2}
+\end{note}}
+\end{solution}
+\input{_footer}

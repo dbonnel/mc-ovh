@@ -1,0 +1,86 @@
+\input{_header}
+\boite{mcvert}{
+     L'objectif de cet exercice est de démontrer que l'espérance mathématique de la loi exponentielle de paramètre $\lambda$ est $\dfrac{1}{\lambda }$.
+}
+\par
+Soient $a$ et $b$ deux réels quelconques et $\lambda$ un réel strictement positif. On considère la fonction $f$ définie sur l'intervalle $[0~;~+\infty[$ par :
+\[f(x)=(ax+b)\text{e}^{-\lambda x}.\]
+\begin{enumerate}
+     \item %
+     Calculer $f'(x)$.
+     \item %
+     Montrer qu'il existe une valeur de $a$ et une valeur de $b$ pour lesquelles, pour tout réel $x \geqslant 0$, $f'(x)=x\text{e}^{-\lambda x}$ et déterminer ces valeurs.
+     \item %
+     L'espérance mathématique d'une variable aléatoire continue $X$ qui suit une loi de densité $f$ sur l'intervalle $\left[a;b\right]$ est $E\left(X\right)=\int_{a}^{b}xf\left(x\right)dx$.
+     \par
+     En particulier, dans le cas de la loi exponentielle de paramètre $\lambda > 0$ :
+     \begin{center}
+          $E(X)=\displaystyle\int_{0}^{+\infty}\lambda x \text{e}^{-\lambda x}dx$\nosp$=\lim\limits_{t \rightarrow +\infty}\displaystyle\int_{0}^{t}\lambda x \text{e}^{-\lambda x}dx$.
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item %
+          Calculer, en fonction de $t$,  $I(t)=\displaystyle\int_{0}^{t}\lambda x \text{e}^{-\lambda x}dx$.
+          \item %
+          En déduire que, pour la loi exponentielle de paramètre $\lambda$ :
+          \begin{center}
+               $E(X)=\dfrac{1}{\lambda }$.
+          \end{center}
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item %
+          Posons $u(x)=ax+b$ et $v(x)=\text{e}^{-\lambda x}$ ; alors :
+          \par
+          $u'(x)=a$ et $v'(x)=-\lambda \text{e}^{-\lambda x}$.
+          \par
+          Par conséquent :
+          \par
+          $f'(x)= u'(x)v(x)+u(x)v'(x)$\\
+          $\phantom{f'(x)}=a\text{e}^{-\lambda x}-\lambda (ax+b)\text{e}^{-\lambda x}$\\
+          $\phantom{f'(x)}=(-\lambda ax+a-\lambda b)\text{e}^{-\lambda x}$.
+          \item %
+          $f'(x)=x\text{e}^{-\lambda x}$, pour tout réel $x \geqslant 0$, si et seulement si $-\lambda ax+a-\lambda b$ est identique à $x$, c'est à dire si et seulement si le couple $(a~;~b)$ est solution du système :
+          \par
+          $\begin{cases}
+               -\lambda a = 1\\
+               a-\lambda b = 0
+          \end{cases}$
+          \par
+          La première équation donne immédiatement $a=-\dfrac{1}{\lambda }$ ; puis, en remplaçant $a$ dans la seconde, on obtient $b=-\dfrac{1}{\lambda^2 }$.
+          \par
+          Finalement, la fonction $f$ définie par :
+          \begin{center}
+               $f(x)=\left(-\dfrac{1}{\lambda }x-\dfrac{1}{\lambda ^2}\right)\text{e}^{-\lambda x}$
+          \end{center}
+          a pour dérivée la fonction $x \longmapsto x\text{e}^{-\lambda x}$.
+          \item %
+          \begin{enumerate}[label=\alph*.]
+               \item %
+               D'après la question précédente, la fonction $x \longmapsto \left(-\dfrac{1}{\lambda }x-\dfrac{1}{\lambda ^2}\right)\text{e}^{-\lambda x}$ est une primitive sur $[0~;~+\infty[$ de la fonction $x \longmapsto x\text{e}^{-\lambda x}$.
+               \par
+               On en déduit que :\\
+               $I(t)=\displaystyle\int_{0}^{t}\lambda x \text{e}^{-\lambda x}dx$\\
+               $\phantom{I(t)} = \lambda\displaystyle\int_{0}^{t} x \text{e}^{-\lambda x}dx$\\
+               $\phantom{I(t)} = \lambda \left[\left(-\dfrac{1}{\lambda }x-\dfrac{1}{\lambda ^2}\right)\text{e}^{-\lambda x}\right]_0^t$\\
+               $\phantom{I(t)} = \lambda \left(-\dfrac{1}{\lambda }t-\dfrac{1}{\lambda ^2}\right)\text{e}^{-\lambda t} - \lambda\left(-\dfrac{1}{\lambda ^2}\right)\text{e}^{-\lambda 0}$\\
+               $\phantom{I(t)} = -t\text{e}^{-\lambda t} - \dfrac{1}{\lambda } \text{e}^{-\lambda t} +\dfrac{1}{\lambda }$.
+               \item %
+               Lorsque  $t$ tend vers $+\infty $, comme $\lambda $ est strictement positif $-\lambda t$ tend vers $-\infty$.
+               \par
+               Alors :
+               \begin{itemize}
+                    \item %
+                    $\lim\limits_{t \rightarrow +\infty} \text{e}^{-\lambda t} =0$ (par composition)
+                    \item %
+                    $\lim\limits_{t \rightarrow +\infty} t\text{e}^{-\lambda t} =0$ (croissance comparée)
+               \end{itemize}
+               donc, par somme :
+               $\lim\limits_{t \rightarrow +\infty}-t\text{e}^{-\lambda t} - \dfrac{1}{\lambda } \text{e}^{-\lambda t} +\dfrac{1}{\lambda } = \dfrac{1}{\lambda }$.
+               \par
+               On a donc bien :
+               \[ E(X) = \dfrac{1}{\lambda }. \]
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

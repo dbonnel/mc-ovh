@@ -1,0 +1,167 @@
+\input{_header}
+\begin{h2}Exercice 1 (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\medskip
+\emph{Cet exercice est un QCM (questionnaire à choix multiples). Pour chacune des questions posées, une seule des trois réponses est exacte. Recopier le numéro de la question et la réponse exacte. Aucune justification n'est demandée. Une réponse exacte rapporte 1~point, une réponse fausse ou l'absence de réponse ne rapporte ni n'enlève de point. Une réponse multiple ne rapporte aucun point.}
+\medskip
+On considère la fonction $f$ définie sur l'intervalle [0,5~;~5] par~:
+\par
+\[f(x) = \dfrac{5 + 5\ln x}{x}.\]
+\par
+Sa représentation graphique est la courbe $\mathcal{C}$ donnée ci-dessous dans un repère d'origine O.
+\par
+On admet que le point A placé sur le graphique est le seul point d'inflexion de la courbe $\mathcal{C}$ sur l'intervalle [0,5~;~5].
+\par
+On note B le point de cette courbe d'abscisse e.
+\par
+On admet que la fonction $f$ est deux fois dérivable sur cet intervalle.
+\par
+On rappelle que $f'$ désigne la fonction dérivée de la fonction $f$ et $f''$ sa fonction dérivée seconde.
+\begin{center}
+     \begin{extern}%alt="courbe représentative fonction"
+          \definecolor{darkgreen}{rgb}{0.,0.4,0.}
+          \psset{xunit=2cm,yunit=1cm,arrowsize=2pt 3}
+          \begin{pspicture}(-0.5,-1)(6,7)
+               \psgrid[unit=1cm,gridwidth=0.1pt,gridcolor=darkgray,subgriddiv=0,gridlabels=0](0,0)(-1,-1)(12,7)
+               \psaxes[linewidth=1pt,ticksize=-2pt 2pt,Dx=1,Dy=1](0,0)(0,0)(5.5,6.5)[$x$,-45][$y$,45]
+               \psplot[plotpoints=500,linewidth=1.25pt, linecolor=darkgreen]{0.5}{5}{5 5 x ln mul add x div}
+               \uput[dl](-0.05,-0.15){O}
+               \psdots[linecolor=black](1.649,4.549)(2.718,3.679)
+               \psline[linecolor=black,linestyle=dashed](2.718,3.679)(2.718,0)
+               \uput[dl](1.649,4.549){\black A} \uput[dl](2.718,3.679){\black B}
+               \uput[d](2.718,0){\black e}
+               \uput[u](4.5,2.9){\color{darkgreen} \large $\mathcal{C}$}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+On admet que pour tout $x$ de l'intervalle [0,5~;~5] on a~:
+\par
+$f'(x) = \dfrac{- 5\ln x}{x^2}$ $\qquad\qquad$ $f''(x) = \dfrac{10\ln x - 5}{x^3}$.
+\medskip
+\begin{enumerate}
+     \item La fonction $f'$ est~:
+     \begin{enumerate}[label=\alph*.]
+          \item positive ou nulle sur l'intervalle [0,5~;~5]
+          \item négative ou nulle sur l'intervalle [1~;~5]
+          \item négative ou nulle sur l'intervalle [0,5~;~1]
+     \end{enumerate}
+     \medskip
+     \item  Le coefficient directeur de la tangente à la courbe $\mathcal{C}$ au point B est égal à~:
+     \begin{tabularx}{\linewidth}{*{3}X}  %class="noborder"
+          \textbf{a.~~}$- \dfrac{5}{\text{e}^2}$&\textbf{b.~~}$\dfrac{10}{\text{e}}$&\textbf{c.~~}$ \dfrac{5}{\text{e}^3}$
+     \end{tabularx}
+     \medskip
+     \item  La fonction $f'$ est~:
+     \begin{enumerate}[label=\alph*.]
+          \item croissante sur l'intervalle [0,5~;~1]
+          \item décroissante sur l'intervalle [1~;~5]
+          \item croissante sur l'intervalle [2~;~5]
+     \end{enumerate}
+     \medskip
+     \item  La valeur exacte de l'abscisse du point A de la courbe $\mathcal{C}$ est égale à~:
+     \begin{tabularx}{\linewidth}{*{3}X} %class="noborder"
+          \textbf{a.~~} 1,65 &\textbf{b.~~} 1,6 &\textbf{c.~~} $\text{e}^{0,5}$
+     \end{tabularx}
+     \medskip
+     \item  On note $\mathcal{A}$ l'aire, mesurée en unités d'aire, du domaine plan délimité par la courbe $\mathcal{C}$, l'axe des abscisses et les droites d'équation $x = 1$ et $x = 4$. Cette aire vérifie~:
+     \begin{enumerate}[label=\alph*.]
+          \item $20 \leqslant \mathcal{A} \leqslant 30$
+          \item $10\leqslant \mathcal{A} \leqslant 15$
+          \item $5 \leqslant \mathcal{A} \leqslant 8$
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \textbf{Réponse correcte~:\quad b.}
+          \par
+          On peut utiliser le graphique ou la formule pour répondre à cette question.
+          \begin{itemize}
+               \item
+               \textbf{\`A l'aide du graphique~:}
+               \par
+               On voit que la fonction $f$ est décroissante sur l'intervalle $[1~;~5]$. Sa dérivée $f'$ est donc négative ou nulle sur cet intervalle.
+               \item
+               \textbf{\`A partir de la formule~:}
+               \par
+               $f'(x) = \dfrac{- 5\ln x}{x^2}$ $\qquad\qquad$
+               \par
+               Le dénominateur est strictement positif sur l'intervalle $[1~;~5]$.
+               \par
+               Pour $x \geqslant 1$, $\ln x \geqslant \ln 1 = 0$, donc le numérateur est négatif ou nul.
+               \par
+               $f'$ est donc négative ou nulle sur l'intervalle $[1~;~5]$.
+          \end{itemize}
+          \item
+          \textbf{Réponse correcte~:\quad a.}
+          \par
+          Le coefficient directeur de la tangente en $B$ d'abscisse $\text{e}$ à la courbe $\mathscr{C}$ est égal à $f'(e)$.
+          \par
+          $f'(e)== \dfrac{- 5\ln \text{e}}{\text{e}^2} = - \dfrac{5}{\text{e}^2}$
+          \item
+          \textbf{Réponse correcte~:\quad\textbf{ c.}}
+          \par
+          Là encore, on peut utiliser le graphique ou la formule pour répondre à cette question.
+          \begin{itemize}
+               \item
+               \textbf{\`A l'aide du graphique~:}
+               \par
+               La fonction $f'$ est croissante sur l'intervalle $[2~;~5]$ si et seulement si la courbe $\mathscr{C}$ est convexe sur cet intervalle.
+               \par
+               On vérifie sur le graphique que c'est bien le cas.
+               \item
+               \textbf{\`A partir de la formule~:}
+               \par
+               La fonction $f'$ est croissante sur l'intervalle $[2~;~5]$ si et seulement si sa fonction dérivée $f''$ est positive ou nulle sur cet intervalle.
+               \par
+               Or pour $x \geqslant 2$~:
+               \par
+               $x \geqslant 2 \Leftrightarrow \ln x \geqslant \ln 2$ (car la fonction $\ln$ est croissante sur $]0~;~+oo[$)\\
+               $\phantom{x \geqslant 2} \Leftrightarrow 10\ln x \geqslant 10\ln 2$\\
+               $\phantom{x \geqslant 2} \Leftrightarrow 10\ln x-5 \geqslant 10\ln 2-5 $\\
+               \par
+               Or,  $10\ln 2-5 ~=1,9$ est positif donc le numérateur de $f''$ est positif sur l'intervalle $[2~;~5]$. Comme son dénominateur est également strictement positif sur cet intervalle, $f''$ est positive sur $[2~;~5]$.
+               \par
+               La fonction $f'$ est donc croissante sur l'intervalle $[2~;~5]$.
+          \end{itemize}
+          \item
+          \textbf{Réponse correcte~:\quad c.}
+          \par
+          $A$ est l'unique point d'inflexion de la courbe $\mathscr{C}$. Son abscisse est donc la solution de l'équation $f''(x)=0$.
+          \par
+          $f''(x)=0 \Leftrightarrow  \dfrac{10\ln x - 5}{x^3}=0$\\
+          $\phantom{f''(x)=0} \Leftrightarrow 10\ln x - 5=0$\\
+          $\phantom{f''(x)=0} \Leftrightarrow \ln x =\dfrac{5}{10}=0,5$\\
+          $\phantom{f''(x)=0} \Leftrightarrow x =\text{e}^{0,5}$\\
+          \item
+          Réponse correcte~:\quad\textbf{ b.}
+          \par
+          On compte le nombre de carreaux de la surface colorée ci-dessous.
+          \begin{center}
+               \begin{extern}%alt="aire sous la courbe"
+                    \definecolor{darkgreen}{rgb}{0.,0.4,0.}
+                    \psset{xunit=2cm,yunit=1cm,arrowsize=2pt 3}
+                    \begin{pspicture}(-0.5,-1)(6,7)
+                         \psgrid[unit=1cm,gridwidth=0.1pt,gridcolor=darkgray,subgriddiv=0,gridlabels=0](0,0)(-1,-1)(12,7)
+                         \psaxes[linewidth=1pt,ticksize=-2pt 2pt,Dx=1,Dy=1](0,0)(0,0)(5.5,6.5)[$x$,-45][$y$,45]
+                         \pscustom[fillstyle=solid,fillcolor=darkgreen,opacity=0.1]{
+                              \psplot[plotpoints=500,linewidth=1.25pt, linecolor=darkgreen]{1}{4}{5 5 x ln mul add x div}
+                         \psline[linewidth=0.75pt,linecolor=darkgreen](4,0)(1,0)(1,5)}
+                         \psplot[plotpoints=500,linewidth=1.25pt, linecolor=darkgreen]{0.5}{5}{5 5 x ln mul add x div}
+                         \uput[dl](-0.05,-0.15){O}
+                         \psdots[linecolor=black](1.649,4.549)(2.718,3.679)
+                         \psline[linecolor=black,linestyle=dashed](2.718,3.679)(2.718,0)
+                         \uput[dl](1.649,4.549){\black A} \uput[dl](2.718,3.679){\black B}
+                         \uput[d](2.718,0){\black e}
+                         \uput[u](4.5,2.9){\color{darkgreen} \large $\mathcal{C}$}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          On trouve approximativement 24 carreaux.
+          \par
+          Chaque carreau a une aire de 0,5 unité d'aire.
+          \par
+          L'aire cherchée est donc approximativement égale à 12.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

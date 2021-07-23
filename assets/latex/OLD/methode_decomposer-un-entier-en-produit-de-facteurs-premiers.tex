@@ -1,0 +1,171 @@
+\input{_header}
+
+\cadre{rouge}{Méthode}{ % id=m010 
+
+\begin{itemize}
+\item
+Pour décomposer un entier naturel en produits de facteurs premiers, on essaie de le diviser par les nombres premiers en allant du plus petit au plus grand~: 2, 3, 5, 7, 11, etc. 
+
+\item
+On présente souvent les calculs en deux colonnes~: la colonne de droite contient les nombres premiers et la colonne de gauche, les quotients successifs.
+
+\item
+Si pour un entier $n$ on n'a trouvé aucun diviseur premier inférieur ou égal à $ \sqrt{ n }  $, on peut arrêter la recherche. Le nombre $n$ est alors premier~; son seul diviseur premier est alors $n$ lui-même.    
+\end{itemize} 
+
+} % fin Méthode 
+
+\bloc{orange}{Exemple détaillé}{ % id=e20 
+\begin{h3} Décomposition de 4440 en produit de facteurs premiers~:  \end{h3}
+ 
+\begin{itemize}
+\item
+Première étape~: 
+\par
+On trace un barre verticale pour former deux colonnes et on place le nombre à décomposer dans la colonne de gauche.
+\begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape 0" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,4.7)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3,4.7)(3.,5.)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](3.12,4.9){$\white{2} $ }
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item
+Deuxième étape~: 
+\par 
+On cherche si 4440 est divisible par 2. C'est le cas ici (4440 se termine par un chiffre pair).
+\par
+On inscrit donc le nombre 2 dans la colonne de droite et le quotient de 4440 par 2 (soit 2220) sous 4440 dans la colonne de gauche~: 
+\begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape 1" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,4.5)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3,4.5)(3.,5.)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](2.6,4.7){$\tttttt{2220}$}
+               \rput[tl](3.12,4.9){$\tttttt{2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item
+Troisième étape~: 
+\par 
+On recommence le procédé pour 2220 qui est divisible par 2 et donne 1110 comme quotient puis pour 1110 qui est aussi divisible par 2 et donne le quotient 555~:  
+\begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape 2" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,4.1)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3,4.1)(3.,5.)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](2.6,4.7){$\tttttt{2220}$}
+               \rput[tl](2.6,4.5){$\tttttt{1110}$}
+               \rput[tl](2.65,4.3){$\tttttt{555}$}
+               \rput[tl](3.12,4.5){$\tttttt{2}$}
+               \rput[tl](3.12,4.7){$\tttttt{2}$}
+               \rput[tl](3.12,4.9){$\tttttt{2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item 
+Quatrième étape~: 
+ \par 
+555 est impair donc n'est pas divisible par 2. On essaie alors de le diviser par le nombre premier qui suit  2 c'est à dire 3. 555 est divisible par 3 (la somme des chiffres vaut 15). Le quotient est égal à 185~: 
+\begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape 3" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,3.9)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3.,3.9)(3,5)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](2.6,4.7){$\tttttt{2220}$}
+               \rput[tl](2.6,4.5){$\tttttt{1110}$}
+               \rput[tl](2.65,4.3){$\tttttt{555}$}
+               \rput[tl](2.65,4.1){$\tttttt{185}$}
+               \rput[tl](3.12,4.3){$\tttttt{3}$}
+               \rput[tl](3.12,4.5){$\tttttt{2}$}
+               \rput[tl](3.12,4.7){$\tttttt{2}$}
+               \rput[tl](3.12,4.9){$\tttttt{2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item
+Cinquième étape~: 
+\par
+185 n'est pas divisible par 3 (1+8+5=14). Il est, par contre, divisible par 5 (le chiffre des unités est 5). Le quotient vaut alors 37~: 
+\begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape 4" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,3.7)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3.,5.)(3,3.7)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](2.6,4.7){$\tttttt{2220}$}
+               \rput[tl](2.6,4.5){$\tttttt{1110}$}
+               \rput[tl](2.65,4.3){$\tttttt{555}$}
+               \rput[tl](2.65,4.1){$\tttttt{185}$}
+               \rput[tl](2.7,3.9){$\tttttt{37}$}
+               \rput[tl](3.12,4.1){$\tttttt{5}$}
+               \rput[tl](3.12,4.3){$\tttttt{3}$}
+               \rput[tl](3.12,4.5){$\tttttt{2}$}
+               \rput[tl](3.12,4.7){$\tttttt{2}$}
+               \rput[tl](3.12,4.9){$\tttttt{2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item
+Sixième étape~: 
+\par
+37 n'est pas divisible par 5. Comme $ \sqrt{ 37 }  \approx 6,08    $, ce n'est pas la peine d'essayer de diviser par 7 (qui est supérieur à 6,08) ou par des nombres supérieurs. Par conséquent, 37 est un nombre premier et le dernier facteur premier est donc 37. 
+\par 
+Le quotient est alors 1 et le calcul est terminé~: 
+ \begin{center}
+     \begin{extern}%alt="Décomposition facteurs premiers - étape finale" style="width:10rem"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=.3pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.47,3.5)(3.48,5.00)
+               \fontsize{4}{4}
+               \psline[linewidth=0.3pt,linecolor=tttttt](3.,5.)(3,3.5)
+               \rput[tl](2.6,4.9){$\tttttt{4440}$}
+               \rput[tl](2.6,4.7){$\tttttt{2220}$}
+               \rput[tl](2.6,4.5){$\tttttt{1110}$}
+               \rput[tl](2.65,4.3){$\tttttt{555}$}
+               \rput[tl](2.65,4.1){$\tttttt{185}$}
+               \rput[tl](2.7,3.9){$\tttttt{37}$}
+               \rput[tl](2.77,3.7){$\tttttt{1}$}
+               \rput[tl](3.07,3.9){$\tttttt{37}$}
+               \rput[tl](3.12,4.1){$\tttttt{5}$}
+               \rput[tl](3.12,4.3){$\tttttt{3}$}
+               \rput[tl](3.12,4.5){$\tttttt{2}$}
+               \rput[tl](3.12,4.7){$\tttttt{2}$}
+               \rput[tl](3.12,4.9){$\tttttt{2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+
+\item
+Conclusion~: 
+On obtient la décomposition suivante~: 
+
+\begin{center}
+$4440 = 2  \times 2 \times 2 \times 3 \times 5 \times 37 $\nosp$ = 2^3 \times 3 \times 5 \times 37$
+\end{center}  
+\end{itemize} 
+} % fin exemple 
+
+\input{_footer}

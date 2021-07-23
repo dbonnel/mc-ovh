@@ -1,0 +1,328 @@
+\input{_header}
+\meta{url}{/exercices/graphes-probabilistes-bac-blanc-es-sujet-6-maths-cours-2018-spe/}
+\meta{pid}{10600}
+\meta{titre}{Graphes probabilistes - Bac blanc ES Sujet 6 - Maths-cours 2018 (spé)}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 5 (5 points)\end{h2}
+\par
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\par
+Pour le paiement des cotisations, une société d'assurance propose à ces clients le choix entre deux types de règlement :
+\par
+\begin{itemize}
+     \item
+     le prélèvement automatique mensuel ;
+     \item
+     le règlement annuel par chèque.
+\end{itemize}
+\par
+En 2016, 50\% des clients avaient opté pour le prélèvement mensuel.
+\par
+Chaque année :
+\begin{itemize}
+     \item
+     90\% des clients payant par prélèvement mensuel conservent ce mode de paiement l'année suivante ;
+     \item
+     25\% des clients réglant leur cotisation par chèque annuel choisissent le prélèvement mensuel l'année suivante ;
+\end{itemize}
+\par
+Pour tout entier naturel $n$, on note :
+\begin{itemize}
+     \item
+     $m_{n}$, la proportion de clients ayant choisi le prélèvement mensuel pour l'année $2016 + n$ ;
+     \item
+     $a_{n}$, la proportion de clients ayant choisi le règlement annuel pour l'année $2016 + n$ ;
+     \item
+     $P_{n}$, la matrice-ligne $\left(m_{n} \quad a_{n}\right)$ donnant l'état probabiliste de l'année $2016 + n$.
+\end{itemize}
+\par
+On choisit au hasard un client de cet assureur.
+\par
+On note :
+\begin{itemize}
+     \item %
+     $M$ l'état \og le client a opté pour le prélèvement mensuel \fg{} ;
+     \item %
+     $A$ l'état \og le client a opté pour le règlement annuel \fg{} .
+\end{itemize}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie A}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item %1
+     Traduire la situation par un graphe probabiliste.
+     \item %2
+     Déterminer la matrice de transition $T$ associée à ce graphe, les sommets étant classés dans l'ordre $M, A$.
+     \item %3
+     Déterminer les matrices-ligne $P_0, P_1$ et $P_2$ (\textit{Si nécessaire, on arrondira les résultats au millième}).\\
+     Quel est le pourcentage de clients ayant choisi le prélèvement mensuel en 2018 ?
+     \item %4
+     Déterminer l'état stable de ce graphe. \\
+     Interpréter ce résultat.
+     \par
+\end{enumerate}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item %1
+     Montrer que pour tout entier naturel $n$ :
+     \[ m_{n+1}=0,65m_n + 0,25. \]
+     \item %2
+     Le directeur d'agence souhaite connaître la proportion des clients qui optera pour le prélèvement mensuel pour l'année 2016+n où $n$ est un entier naturel non nul.
+     \par
+     On lui a proposé les trois algorithmes suivants :
+     \par
+     \begin{center}
+          \begin{extern}%width="400" alt="algorithme n°1"
+               \begin{tabular}{|l l|}\hline
+                    \textbf{Entrée :}	& 	Saisir $n$\\
+                    \textbf{Traitement :}	& Affecter à $i$ la valeur 1 \\
+                    & Affecter à $m$ la valeur 0.5\\
+                    & Tant que $i < n$\\
+                    &\qquad Affecter à $m$ la valeur $0,65m + 0,25$ \\
+                    &Fin Tant que\\
+                    \textbf{Sortie :}		&Afficher $m$ \\ \hline
+               \end{tabular}
+          \end{extern}
+          \par
+          \textbf{Algorithme 1}
+     \end{center}
+     \begin{center}
+          \begin{extern}%width="400" alt="algorithme n°2"
+               \begin{tabular}{|l l|}\hline
+                    \textbf{Entrée :}	& 	Saisir $n$\\
+                    \textbf{Traitement :} & Affecter à $m$ la valeur 0,5\\
+                    & Pour $i$ allant de $1$ à $n$\\
+                    &\qquad Affecter à $m$ la valeur $0,65m + 0,25$ \\
+                    &Fin Pour\\
+                    \textbf{Sortie :}		&Afficher $m$ \\ \hline
+               \end{tabular}
+          \end{extern}
+          \par
+          \textbf{Algorithme 2}
+     \end{center}
+     \begin{center}
+          \begin{extern}%width="400" alt="algorithme n°3"
+               \begin{tabular}{|l l|}\hline
+                    \textbf{Entrée :}	& 	Saisir $n$\\
+                    \textbf{Traitement :} & Affecter à $m$ la valeur 0,5\\
+                    & Pour $i$ allant de $1$ à $n$\\
+                    &\qquad Affecter à $m$ la valeur $0,65m + 0,25$ \\
+                    &Fin Pour\\
+                    \textbf{Sortie :}		&Afficher $n$ \\ \hline
+               \end{tabular}
+          \end{extern}
+          \par
+          \textbf{Algorithme 3}
+     \end{center}
+     \par
+     Parmi ces trois algorithmes, un seul répond correctement à la demande du directeur. Lequel ?\\
+     Justifier votre réponse en indiquant les erreurs présentes dans les deux autres algorithmes.
+     \item %3
+     Pour tout entier naturel $n$, on pose $u_n=m_n-\dfrac{5}{7}$.
+     \par
+     \begin{enumerate}[label=\alph*.]
+          \item %3a
+          Montrer que la suite $(u_n)$ est une suite géométrique dont on précisera le premier terme et la raison.
+          \item %3b
+          En déduire que pour tout entier naturel $n$ :
+          \[ m_n=\dfrac{5}{7}-\dfrac{3}{14} \times 0,65^n. \]
+     \end{enumerate}
+     \item %4
+     Quelle est la limite de la suite $(m_n)$ ? \\
+     Interpréter et comparer ce résultat à celui de la question \textbf{4.} de la \textbf{Partie A}.
+     \par
+\end{enumerate}
+\begin{corrige}
+     %============================================================================================================================
+     %
+     \TitreC{Partie A}
+     %
+     %============================================================================================================================
+     \begin{enumerate}
+          \item On traduit les données de l'énoncé par un graphe probabiliste de sommets $M$ et $A$:
+          \begin{center}
+               \begin{extern}%width="400" alt="Graphe probabiliste à deux états"
+                    \begin{pspicture}(-2,-0.5)(4,1)
+                         \circlenode{M}{$M$} \hskip 4cm \circlenode{A}{$A$}% définition des sommets
+                         \psset{arcangle=15,arrowsize=2pt 3}%  différents paramètres
+                         \ncarc{->}{M}{A} \Aput{0,1}%
+                         \ncarc{->}{A}{M} \Aput{0,25}%
+                         \nccircle[angleA=90]{->}{M}{4mm}   \Bput{0,9}%    boucle autour de T
+                         \nccircle[angleA=-90]{->}{A}{.4cm} \Bput{0,75}%    boucle autour de B
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \item  La matrice de transition de ce graphe en plaçant les sommets dans l'ordre $M$, $A$ est :
+          \[ T=
+          \begin{pmatrix}
+               0,9 & 0,1\\
+               0,25 & 0,75
+          \end{pmatrix}. \]
+          \item
+          D'après l'énoncé, en 2016, 50\% des clients avaient opté pour le prélèvement mensuel donc $m_0=0,5$ et $p_0=1-m_0=0,5$.
+          \par
+          Par conséquent $P_0=(0,5 \quad 0,5)$.
+          \par
+          On en déduit :
+          \par
+          $P_1 = P_0 \times T = (0,5 \quad 0,5) \times \begin{pmatrix}
+               0,9 & 0,1\\
+               0,25 & 0,75
+          \end{pmatrix} = (0,575 \quad 0,425)$ ;
+          \par
+          $P_2 = P_1 \times T = (0,575 \quad 0,425) \times \begin{pmatrix}
+               0,9 & 0,1\\
+               0,25 & 0,75
+          \end{pmatrix} = (0,624 \quad 0,376)$ \\(arrondi au millième).
+          \item
+          Une matrice $P = (a\quad b)$ est un état stable si et seulement si ${a + b = 1}$ et $PT = P$.
+          \par
+          $PT=P \Leftrightarrow \begin{pmatrix} a&b\end{pmatrix}
+          \times \begin{pmatrix} 0,9 & 0,1\\0,25 & 0,75 \end{pmatrix}
+          =\begin{pmatrix} a&b\end{pmatrix}$
+          \par
+          $\phantom{PT=P} \Leftrightarrow \begin{pmatrix} 0,9a+0,25b & 0,1a+0,75b\end{pmatrix}
+          =\begin{pmatrix} a&b\end{pmatrix}$
+          \par
+          $\phantom{PT=P} \Leftrightarrow
+          \left\lbrace
+          \begin{array}{r c l}
+               0,9a+0,25b  &=& a\\
+               0,1a+0,75b  &=& b
+          \end{array}
+     \right.$
+     \par
+     $\phantom{PM=P} \Leftrightarrow
+     \left\lbrace
+     \begin{array}{r c l}
+          -0,1a+0,25b  &=& 0\\
+          0,1a-0,25b  &=& 0
+     \end{array}
+\right.$
+\par
+$\phantom{PM=P}
+\Leftrightarrow
+0,1a-0,25b = 0$
+\par
+Comme $a+b=1$ : $b=1-a$. Par conséquent :
+\par
+$0,1a-0,25(1-a) = 0$
+\par
+$0,35a-0,25 = 0$
+\par
+$a = \dfrac{0,25}{0.35}=\dfrac{5}{7}$
+\par
+et $b=1-a=1-\dfrac{5}{7}=\dfrac{2}{7}$.
+\par
+On peut donc en déduire que
+\[ P=\begin{pmatrix} \dfrac{5}{7} & \dfrac{2}{7} \end{pmatrix} \]
+est l'état stable du graphe.
+\par
+Au cours du temps, la proportion des clients qui opteront pour le prélèvement mensuel se rapprochera de cinq septièmes.
+\end{enumerate}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item %B1
+     Pour tout entier naturel $n$ :
+     \par
+     Par conséquent $P_0=(0,5 \quad 0,5)$.
+     \par
+     $T$ étant la matrice de transition du graphe, pour tout entier naturel $n$ :
+     \par
+     $P_{n+1} = P_n \times T$.
+     \par
+     Donc :
+     \par
+     $(m_{n+1} \quad a_{n+1}) = (m_n \quad a_n) \times \begin{pmatrix}
+          0,9 & 0,1\\
+          0,25 & 0,75
+     \end{pmatrix} = (0,575 \quad 0,425)$
+     \par
+     $\phantom{(m_{n+1} \quad a_{n+1})} = \begin{pmatrix} 0,9m_n+0,25a_n & 0,1m_n+0,75a_n\end{pmatrix} $.
+     \par
+     En comparant les termes situés en première colonne, on obtient :
+     \par
+     $m_{n+1} = 0,9m_n+0,25a_n$.
+     \par
+     Or, pour tout entier naturel $n$, $m_n$ et $a_n$ sont les probabilités de deux événements contraires donc ${a_n=1-m_n}$.
+     \par
+     Par conséquent :
+     \par
+     \par
+     $m_{n+1}  = 0,9m_n+0,25(1-m_n)$\\
+     $\phantom{m_{n+1}	}	 = 0,9m_n+0,25-0,25m_n$\\
+     $\phantom{m_{n+1}	}	 		 = 0,65m_n+0,25.$
+     \par
+     \item %B2
+     L'algorithme correct est l'\textbf{algorithme 2}.
+     \par
+     L'algorithme 1 est incorrect car il manque l'instruction \og Affecter à $i$ la valeur $i+1$ \fg{} (incrémentation de $i$) à l'intérieur de la boucle \og Tant que \fg{}.
+     \par
+     L'algorithme 3 est incorrect car il affiche, en sortie, la valeur de $n$ (qui correspond au nombre saisi par l'utilisateur) et non le résultat souhaité qui est stocké dans la variable $m$.
+     \item %B3
+     \textit{Reportez-vous à la \hyperlink{suite-ag-pap}{page \pageref*{suite-ag-pap}}  \og \'Etude d'une suite arithmético-géométrique étape par étape  \fg{} si vous souhaitez plus d'informations sur la méthode utilisée dans cette question.
+     }
+     \begin{enumerate}[label=\alph*.]
+          \item %3a
+          Pour tout entier naturel $n$, $u_{n}= m_{n}-\dfrac{5}{7}$, donc :
+          \par
+          $u_{n+1}= m_{n+1}-\dfrac{5}{7}$.
+          \par
+          Or, pour tout entier naturel $n$, $m_{n+1}=0,65m_n+0,25$ ; par conséquent :
+          \par
+          $u_{n+1}= 0,65m_n+0,25-\dfrac{5}{7}$\\
+          $\phantom{u_{n+1}}=0,65m_n+\dfrac{1}{4}-\dfrac{5}{7}$\\
+          $\phantom{u_{n+1}}=0,65m_n+\dfrac{1}{4}-\dfrac{13}{28}.$
+          \par
+          \par
+          Or, puisque $u_{n}= m_{n}-\dfrac{5}{7}$ : $m_{n}= u_{n}+\dfrac{5}{7}$.
+          \par
+          On en déduit :
+          \par
+          $u_{n+1}= 0,65\left(u_{n}+\dfrac{5}{7}\right)-\dfrac{13}{28}$\\
+          $\phantom{u_{n+1}}= 0,65u_{n}+\dfrac{3,25}{7}-\dfrac{13}{28}$\\
+          $\phantom{u_{n+1}}= 0,65u_{n}+\dfrac{13}{28}-\dfrac{13}{28}$\\
+          $\phantom{u_{n+1}}= 0,65u_{n}.$
+          \par
+          \par
+          Comme $u_{0}= m_{0}-\dfrac{5}{7}=\dfrac{1}{2}-\dfrac{5}{7}=-\dfrac{3}{14}$, la suite $(u_n)$ est une suite géométrique de premier terme ${u_0=-\dfrac{3}{14}}$ et de raison $0,65$.
+          \item %3b
+          La suite $(u_n)$ étant une suite géométrique de premier terme ${u_0=-\dfrac{3}{14}}$ et de raison $0,65$, pour tout entier naturel $n$ :
+          \par
+          $u_n=u_0q^n=-\dfrac{3}{14} \times 0,65^n$.
+          \par
+          Par conséquent :
+          \par
+          $m_{n}= u_n + \dfrac{5}{7}=\dfrac{5}{7}-\dfrac{3}{14} \times 0,65^n$.
+          \par
+     \end{enumerate}
+     \item %B4
+     ${0 \leqslant 0,65 < 1}\ $ donc $\ \lim\limits_{n \rightarrow +\infty } 0,65^n = 0$.
+     \par
+     On en déduit que :
+     \par
+     $\lim\limits_{n \rightarrow +\infty}\dfrac{3}{14} \times 0,65^n = 0\ $ et $\ \lim\limits_{n \rightarrow +\infty}\dfrac{5}{7}-\dfrac{3}{14} \times 0,65^n = \dfrac{5}{7}$.
+     \par
+     La suite $(m_n)$ converge donc vers $\dfrac{5}{7}$.
+     \par
+     On retrouve le résultat de la \textbf{partie A}, à savoir que la proportion de clients choisissant le prélèvement mensuel tendra vers $\dfrac{5}{7}$.
+\end{enumerate}
+\end{corrige}
+\input{_footer}

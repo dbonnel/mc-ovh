@@ -1,0 +1,82 @@
+\input{_header}
+\meta{url}{exercices/tableau-a-double-entree-et-probabilites/}
+\meta{pid}{9954}
+\meta{titre}{Tableau à double entrée et probabilités}
+\meta{type}{exercices}
+%
+Dans une classe de 24 élèves, chaque élève doit choisir une et une seule langue vivante parmi~: anglais, allemand et espagnol.
+\par
+Le tableau incomplet ci-dessous présente la répartition des langues choisie en fonction du sexe de l'élève~:
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|} %class="compact"
+          \hline
+          & Anglais & Allemand & Espagnol & Total \\
+          \hline
+          Garçons & 10 & 2 &   & 15 \\
+          \hline
+          Filles &   &   & 1 &   \\
+          \hline
+          Total & 16  &   &  &  24 \\
+          \hline
+     \end{tabular}
+\end{center}
+\begin{enumerate}
+     \item %
+     Recopier et compléter le tableau ci-dessus.
+     \item %
+     On choisit un élève au hasard.\\
+     Quelle est la probabilité :
+     \begin{enumerate}[label=\alph*.]
+          \item %
+          que l'élève soit un garçon ayant choisi l'anglais~?
+          \item %
+          que l'élève soit une fille~?
+     \end{enumerate}
+     \item %
+     On interroge une fille choisie au hasard. \\
+     Quelle est la probabilité qu'elle ait choisi l'allemand~?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item %
+          ~\\
+          \begin{center}
+               \begin{tabular}{|c|c|c|c|c|} %class="compact"
+                    \hline
+                    & Anglais & Allemand & Espagnol & Total \\
+                    \hline
+                    Garçons & 10 & 2 & $\red 3$   & 15 \\
+                    \hline
+                    Filles & $\red 6$   & $\red 2$   & 1 &  $\red 9$  \\
+                    \hline
+                    Total & 16  &  $\red 4$  & $\red 4$  &  24 \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          \item %
+          L'expression \og au hasard \fg{} indique que l'on est en situation d'\textbf{équiprobabilité}.
+          \par
+          Dans chacune des questions suivantes, on calculera donc les probabilités en utilisant la formule~:
+          \begin{center}
+               $p=\dfrac{\text{nombre d'issues favorables à l}'\text{événement}}{\text{nombre total d'issues possibles}}.$
+          \end{center}
+          \begin{enumerate}[label=\alph*.]
+               \item %
+               Il y a 10 garçons ayant choisi l'anglais sur un total de 24 élèves.
+               \par
+               La probabilité demandée est donc~:\\
+               $p=\dfrac{10}{24}=\dfrac{5}{12}.$
+               \item %
+               Il y a 9 filles  sur un total de 24 élèves.
+               \par
+               La probabilité cherchée est alors~:\\
+               $p=\dfrac{9}{24}.$
+          \end{enumerate}
+          \item %
+          2 filles ont choisi l'allemand sur un total de 9 filles.
+          \par
+          La probabilité que la fille interrogée ait choisi l'allemand est donc~:\\
+          $p=\dfrac{2}{9}.$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

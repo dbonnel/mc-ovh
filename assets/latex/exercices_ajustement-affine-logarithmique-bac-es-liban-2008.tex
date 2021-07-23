@@ -1,0 +1,59 @@
+\input{_header}
+\meta{url}{/exercices/ajustement-affine-logarithmique-bac-es-liban-2008/}
+\meta{pid}{1886}
+\meta{titre}{Ajustements affine et logarithmique - Bac ES Liban 2008}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4\end{h2}
+\textit{4 points - Commun à tous les candidats}
+\par
+Le tableau ci-dessous donne la production d'électricité d'origine nucléaire en France, exprimée en milliards de kWh, entre 1979 et 2004.
+\par
+Les rangs des années sont calculés par rapport à l'année 1975.
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+     \hline
+     Année     &  1979     &  1985     &  1990     &  1995     &  2000     &  2001     &  2002     &  2003     &  2004
+     \\ \hline
+     Rang de l'année $x_{i}$    &  4     &  10     &  15     &  20     &  25     &  26     &  27     &  28     &  29
+     \\ \hline
+     Production $y_{i}$   &  37,9     &  213,1     &  297,9     &  358,8     &  395,2     &  401,3     &  416,5     &  420,7     &  427,7
+     \\ \hline
+\end{tabularx}
+\textit{Source : site Internet ministère de l'industrie}
+\par
+Ces données sont représentées par le nuage de points ci-dessous :
+
+\begin{center}
+\imgsvg{copie-0026}{0.3}% alt="Ajustements affine et logarithmique - Bac ES Liban 2008" style="width:50rem"
+\end{center}
+\begin{h3}A - Recherche d'un ajustement affine\end{h3}
+\begin{enumerate}
+     \item
+     Donner à l'aide de la calculatrice, une équation de la droite d'ajustement affine de y en x par la méthode des moindres carrés (les coefficients seront arrondis au dixième).
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          D'après cet ajustement, quelle serait la production d'électricité nucléaire en France en 2005 ?
+          \item
+          En réalité, en 2005, la production d'électricité nucléaire a été de 430 milliards de kWh. Calculer le pourcentage de l'erreur commise par rapport à la valeur réelle, arrondi à 0,1 \% près, lorsqu'on utilise la valeur fournie par l'ajustement affine.
+     \end{enumerate}
+\end{enumerate}
+\begin{h3}B - Un autre modèle\end{h3}
+Compte tenu de l'allure du nuage de points, on choisit un ajustement logarithmique et on modélise la production d'électricité nucléaire par la fonction f définie pour tout x de $\left[4 ;+\infty \right[$ par :
+
+\begin{center}
+$f\left(x\right)=197 \ln x-237$.
+\end{center}
+
+\begin{enumerate}
+     \item
+     Calculer la production d'électricité nucléaire prévisible avec ce modèle pour l'année 2005. Quelle conclusion peut-on en tirer ?
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Résoudre dans $\left[4 ;+\infty \right[$ l'inéquation $f\left(x\right) \geqslant 460$.
+          \item
+          Avec ce modèle, en quelle- année peut-on prévoir que la production d'énergie nucléaire dépassera 460 milliards de kWh ?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

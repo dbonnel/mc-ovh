@@ -1,0 +1,90 @@
+\input{_header}
+\meta{url}{/exercices/graphes-probabilistes-bac-es-l-amerique-du-nord-2018/}
+\meta{pid}{7887}
+\meta{titre}{Graphes probabilistes - Bac ES/L Amérique du Nord  2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Candidats de ES ayant choisi la spécialité \og mathématiques \fg{}}
+\medskip
+Deux entreprises concurrentes \og Alphacopy \fg{} et \og Betacopy \fg{} proposent des contrats annuels d'entretien de photocopieurs. Ces deux entreprises se partagent le marché des contrats d'entretien sur un secteur donné.
+\par
+\smallskip
+\par
+Le patron de Alphacopy remarque que, chaque année~:
+\begin{itemize}
+     \item 15\,\% des clients qui avaient souscrit un contrat d'entretien chez Alphacopy décident de souscrire un contrat d'entretien chez Betacopy. Les autres restent fidèles à Alphacopy~:
+     \item 25\,\% des clients qui avaient souscrit un contrat d'entretien chez Betacopy décident de souscrire un contrat d'entretien chez Alphacopy. Les autres restent fidèles à Betacopy.
+\end{itemize}
+\smallskip
+\par
+On définit les événements suivants~:
+\begin{itemize}
+     \item $A$~: \og le client est sous contrat avec  l'entreprise Alphacopy \fg{}~:
+     \item $B$~: \og le client est sous contrat avec l'entreprise Betacopy \fg{}.
+\end{itemize}
+\smallskip
+\par
+À partir de 2017, on choisit au hasard un client ayant un contrat d'entretien de photocopieurs et on note, pour tout entier naturel $n$~:
+\par
+\smallskip
+\par
+\begin{itemize}
+     \item $a_n$ la probabilité que le client soit sous contrat avec l'entreprise Alphacopy l'année $2017+n$~:
+     \item $b_n$ la probabilité que le client soit sous contrat avec l'entreprise Betacopy l'année $2017+ n$.
+\end{itemize}
+On note $P_n=\begin{pmatrix} a_n & b_n\end{pmatrix}$ la matrice ligne de l'état probabiliste pour l'année $2017+n$.
+\par
+\smallskip
+\par
+L'objectif de l'entreprise Alphacopy est d'obtenir au moins 62\,\% des contrats d'entretien des photocopieurs.
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+\begin{enumerate}
+     \item Représenter le graphe probabiliste de cette situation et donner la matrice de transition $M$ associée à ce graphe dont les sommets sont pris dans l'ordre alphabétique.
+     \item Montrer que $P = \begin{pmatrix} 0,625 & 0,375\end{pmatrix}$ est un état stable de la matrice.
+     \item À votre avis, l'entreprise Alphacopy peut-elle espérer atteindre son objectif~?
+\end{enumerate}
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+En 2017, on sait que 46\,\% des clients ayant un contrat d'entretien de photocopieurs étaient sous contrat avec l'entreprise Alphacopy.
+\par
+On a ainsi $P_0=\begin{pmatrix} 0,46 & 0,54\end{pmatrix}$.
+\begin{enumerate}
+     \item On rappelle que pour tout entier naturel $n$, $P_{n+1}=P_n \times M$.
+     \par
+     Démontrer que, pour tout entier naturel $n$, $a_{n+1}= 0,85 a_n + 0,25 b_n$ puis que
+     \par
+     \[a_{n+1} = 0,60 a_n + 0,25.\]
+     \par
+     \item À l'aide de l'algorithme ci-dessous, on cherche à déterminer en quelle année l'entreprise Alphacopy atteindra son objectif.
+     \begin{center}
+          \begin{extern}%width="10"
+               \begin{tabular}{|p{3.5cm}|}
+                    \hline
+                    $n \leftarrow 0$\\
+                    $a\leftarrow 0,46$\\
+                    Tant que \ldots\ldots\ldots\\
+                    \hspace*{1cm} $n\leftarrow n+1$\\
+                    \hspace*{1cm} \ldots\ldots\ldots\\
+                    Fin Tant que\\
+                    Afficher $2017+n$\\
+                    \hline
+               \end{tabular}
+          \end{extern}
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item Recopier et compléter l'algorithme ci-dessus.
+          \item Quelle est l'année en sortie de l'algorithme~? Interpréter cette valeur dans le contexte de l'exercice.
+     \end{enumerate}
+     \item On définit la suite $\left(u_n\right)$ par $u_n=a_n-0,625$ pour tout entier naturel $n$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $\left(u_n\right)$ est une suite géométrique dont on précisera la raison et le premier terme $u_0$.
+          \item Exprimer $u_n$ en fonction de $n$ puis démontrer que, pour tout entier $n$,
+          \par
+          \[a_n=-0,165 \times 0,60^n + 0,625.\]
+          \par
+          \item Résoudre par le calcul l'inéquation $a_n \geqslant 0,62$.
+          \par
+          Quel résultat de la question \textbf{2.} retrouve-t-on~?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

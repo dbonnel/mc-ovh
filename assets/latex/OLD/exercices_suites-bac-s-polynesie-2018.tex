@@ -1,0 +1,77 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas choisi  l'enseignement de spécialité \og mathématiques \fg{} }
+\medbreak
+Un lapin se déplace dans un terrier composé de trois galeries, notées A, B et C, dans chacune desquelles il est confronté à un stimulus particulier.
+\par
+À chaque fois qu'il est soumis à un stimulus, le lapin reste dans la galerie où il se trouve ou change de galerie. Cela constitue une étape.
+\smallbreak
+Soit $n$ un entier naturel.
+\par
+On note $a_n$ la probabilité de l'événement~: \og le lapin est dans la galerie A à l'étape $n$ \fg.\\
+On note $b_n$ la probabilité de l'événement~: \og le lapin est dans la galerie B à l'étape $n $\fg.\\
+On note $c_n$ la probabilité de l'événement~: \og le lapin est dans la galerie C à l'étape $n $\fg.
+\par
+À l'étape $n = 0$, le lapin est dans la galerie A.
+\par
+Une étude antérieure des réactions du lapin face aux différents stimuli permet de modéliser ses déplacements par le système suivant~:
+\par
+\[\left\{\begin{array}{l c r}
+          a_{n+1}&=&\dfrac{1}{3}a_n + \dfrac{1}{4} b_n \phantom{+ \dfrac{2}{3}c_n}\\
+          \\
+          b_{n+1}&=&\dfrac{2}{3}a_n + \dfrac{1}{2} b_n + \dfrac{2}{3}c_n\\
+          \\
+          c_{n+1}&=&\dfrac{1}{4}b_n + \dfrac{1}{3} c_n
+\end{array}\right.\]
+\medbreak
+L'objectif de cet exercice est d'estimer dans quelle galerie le lapin a la plus grande probabilité de se trouver à long terme.
+\bigbreak
+\TitreC{Partie A}
+\medbreak
+À l'aide d'un tableur, on obtient le tableau de valeurs suivant~:
+\begin{center}
+     \begin{tabularx}{0.75\linewidth}{|c|*{4}{>{\centering \arraybackslash}X|}}\hline%class="compact"
+          &A &B &C &D\\ \hline
+          1 	&$n$ &$a_n$ &$b_n$ &$c_n$\\ \hline
+          2 	&0	& 1 	&0	&0\\ \hline
+          3	&1	&0,333 	&0,667 	&0\\ \hline
+          4 	&2 	&0,278 &0,556 &0,167\\ \hline
+          5 	&3 &0,231 &0,574 &0,194\\ \hline
+          6 	&4 &0,221 &0,571 &0,208\\ \hline
+          7 	&5 &0,216 &0,572 &0,212\\ \hline
+          8 	&6 &0,215 &0,571 &0,214\\ \hline
+          9 	&7 &0,215 &0,571 &0,214\\ \hline
+          10 	&8 &0,214 &0,571 &0,214\\ \hline
+          11 	&9 &0,214 &0,571 &0,214\\ \hline
+          12 	&10 &0,214 &0,571 &0,214\\ \hline
+     \end{tabularx}
+\end{center}
+\medbreak
+\begin{enumerate}
+     \item Quelle formule faut-il entrer dans la cellule C3 et recopier vers le bas pour remplir la colonne C~?
+     \item  Quelle conjecture peut-on émettre~?
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B}
+\medbreak
+\begin{enumerate}
+     \item On définit la suite $\left(u_n\right)$, pour tout entier naturel $n$, par $u_n = a_n - c_n$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $\left(u_n\right)$ est géométrique en précisant sa raison.
+          \item Donner, pour tout entier naturel $n$, l'expression de $u_n$ en fonction de $n$.
+     \end{enumerate}
+     \item  On définit la suite $\left(v_n\right)$ par $v_n = b_n - \dfrac{4}{7}$ pour tout entier naturel $n$.
+     \begin{enumerate}[label=\alph*.]
+          \item Expliquer pourquoi pour tout entier naturel $n$,\: $a_n + b_n + c_n = 1$ et en déduire que pour tout
+          entier naturel $n$,\: $v_{n+1} = - \dfrac{1}{6}v_n$.
+          \item En déduire, pour tout entier naturel $n$, l'expression de $v_n$ en fonction de $n$.
+     \end{enumerate}
+     \item  En déduire que pour tout entier naturel $n$, on a~:
+     
+\begin{center}
+     $a_{n} = \dfrac{3}{14} +\dfrac{1}{2}\left(\dfrac{1}{3}\right)^n + \dfrac{2}{7}\left(- \dfrac{1}{6}\right)^n$, \\ $b_{n} = \dfrac{4}{7} - \dfrac{4}{7}\left(- \dfrac{1}{6}\right)^n $ \\et $c_{n} = \dfrac{3}{14} -\dfrac{1}{2}\left(\dfrac{1}{3}\right)^n + \dfrac{2}{7}\left(- \dfrac{1}{6}\right)^n.$
+\end{center}
+     \item  Que peut-on en déduire sur la position du lapin après un très grand nombre d'étapes~?
+\end{enumerate}
+
+\input{_footer}

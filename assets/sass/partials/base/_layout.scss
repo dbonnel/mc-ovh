@@ -1,0 +1,168 @@
+%top-page {
+  @media only screen and(max-width: $breakpoints-lg - 1) {
+    padding-top: 8.5rem;
+  }
+
+  @media(max-width: $breakpoints-md - 1) {
+    padding-top: 5.5rem;
+  }
+}
+
+%wrapper {
+  position: relative;
+
+  margin: 0;
+
+  text-align: left;
+}
+
+.box-wrapper {
+  @extend %wrapper;
+  padding: 4rem 6rem;
+
+  @media only screen and(max-width: $breakpoints-xl - 1) {
+    padding: 3rem 4.5rem;
+  }
+}
+
+.full-wrapper {
+  @extend %wrapper;
+  padding: 3rem 0;
+}
+
+.container {
+  width: 96%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media(min-width: $breakpoints-xl) {
+    max-width: 114rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-breadcrumb-area {
+  @extend %top-page;
+}
+
+.fields-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.fields-group-top {
+  @extend .fields-group;
+  align-items: flex-start;
+}
+
+%col-xl1 {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+%col-sm1-xl2 {
+  @extend %col-xl1;
+
+  @media(min-width: $breakpoints-sm) {
+    width: 49%;
+  }
+}
+
+%col-sm1-lg2-xl5 {
+  @extend %col-xl1;
+
+  @media(min-width: $breakpoints-sm) {
+    width: 49%;
+  }
+
+  @media(min-width: $breakpoints-lg) {
+    width: 19.5%;
+  }
+}
+
+%col-lg1-xl6 {
+  @extend %col-xl1;
+
+  @media(min-width: $breakpoints-lg) {
+    width: 16%;
+  }
+}
+
+%col-sm1-lg3 {
+  @extend %col-xl1;
+
+  @media(min-width: $breakpoints-sm) {
+    width: 32%;
+  }
+}
+
+%col-sm1-lg4 {
+  @extend %col-xl1;
+
+  @media(min-width: $breakpoints-sm) {
+    width: 24.5%;
+  }
+}
+
+.align-right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.title-with-button {
+  display: flex;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  a,
+  h3 {
+    margin: 0 0 3rem;
+  }
+}
+
+.std-layout {
+  display: flex;
+  padding-top: 6rem;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $breakpoints-md) {
+    padding: 6rem 4rem;
+  }
+
+  @media (min-width: $breakpoints-lg) {
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+
+}
+
+.aside-bar {
+  width: 36rem;
+  flex-shrink: 0;
+  padding-right: 2rem;
+}
+
+.content {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+
+  img {
+    padding: 1rem 0;
+  }
+}

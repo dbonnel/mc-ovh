@@ -1,0 +1,61 @@
+\input{_header}
+\meta{url}{/enigme/la-fontaine-et-les-arbres}
+\meta{pid}{4304}
+\meta{titre}{La fontaine et les arbres}
+\meta{type}{enigme}
+%
+\begin{center}
+\imgsvg{fontaine-1}{0.3}% alt="La fontaine et les arbres" style="width:40rem"
+\end{center}
+\medskip
+[Difficulté: Moyenne – Niveau: 3ème et +]
+\par
+
+Dans un parc, quatre arbres A, B, C et D sont disposés en rectangle.
+\par
+Une fontaine F est située à 80 mètres de l'arbre A, à 125 mètres de l'arbre B et à 110 mètres de l'arbre C.
+\par
+A quelle distance est-elle de l'arbre D ? (on arrondira au mètre près).
+\par
+
+\begin{solution}
+\begin{note}La bonne réponse est : \textbf{La fontaine F est située à environ 54 mètres de l'arbre D}\end{note}
+Représentons la situation par le diagramme ci-dessous :
+\begin{center}
+\imgsvg{fontaine}{0.3}% alt="La fontaine et les arbres - Solution" style="width:60rem"
+\end{center}
+D'après le théorème de Pythagore :
+\par
+$AF^2=a^2+c^2\qquad(1)$
+\par
+$CF^2=b^2+d^2\qquad(2)$
+\par
+$BF^2=b^2+c^2\qquad(3)$
+\par
+$DF^2=a^2+d^2\qquad(4)$
+\par
+En ajoutant $(1)$ et $(2)$ on obtient :
+\par
+$AF^2+CF^2=a^2+b^2+c^2+d^2$
+\par
+De même, en ajoutant $(3)$ et $(4)$ on obtient :
+\par
+$BF^2+DF^2=a^2+b^2+c^2+d^2$
+\par
+Par conséquent :
+\par
+$AF^2+CF^2=BF^2+DF^2$
+\par
+c'est à dire :
+\par
+$DF^2=AF^2+CF^2-BF^2$
+\medskip
+\textbf{Application numérique :}
+\par
+$DF^2=80^2+110^2-125^2=2875$
+\par
+$DF=\sqrt{2875} \approx 54$ mètres (au mètre près)
+\end{solution}
+
+
+\input{_footer}

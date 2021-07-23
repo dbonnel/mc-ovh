@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 3 -->
+<svg x="0" y="0" width="909" height="1286" viewBox="0 0 909 1286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_3{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: round;
+}
+.g1_3{
+fill: none;
+stroke: #000000;
+stroke-width: 2;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+
+.s2_3{
+font-size: 22.92px;
+font-family: TimesNewRomanPSMT_u;
+fill: #000000;
+}
+.s1_3{
+font-size: 30.56px;
+font-family: TimesNewRomanPS-BoldItalicMT_3;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1286
+L909,1286
+L909,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="86" 
+y="115" 
+dx="0,-0.1,0,0,0,-0.1,0.1,0,0.1,0,0,0,0,0" 
+class="s1_3"
+>Question bonus</text>
+
+<path d="M86,117l198,0" class="g1_3" />
+<text 
+x="290" 
+y="115" 
+dx="0" 
+class="s2_3"
+>:</text>
+
+<text 
+x="109" 
+y="195" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.4,0,0,0,0,-0.1,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0.2,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0.2,0,0,0,0,0,0.1,0" 
+class="s2_3"
+>D'après la méthode utilisée pour trouver notre ensemble, on montre qu'il y </text>
+
+<text 
+x="86" 
+y="222" 
+dx="0,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.3,0,0,0,0,0,0,0,0,0,0,0,0.4,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.3,0,0,0,0,0.1,0,0,0,0" 
+class="s2_3"
+>a unicité. Cependant l'addition est commutative ( c'est-à-dire que l'on peut </text>
+
+<text 
+x="86" 
+y="248" 
+dx="0,0.1,0,0,-0.1,0.1,0.1,0,0,-0.2,0.1,0,0,-0.2,0.1,0,0,0,0,0,-0.1,0,0,0.1,0,0,0,0.1,0,0,-0.1,0.1,0,0,0,0,-0.1,0,0.1,0,-0.2,0.1,0,0,-0.1,0,0.1,0,0,0,0,0,0,0,0,0.1,0,-0.1,0,0,0,0.1,0,0,0,0" 
+class="s2_3"
+>additionner deux nombres dans l'ordre qu'on veut : a + b = b + a).</text>
+
+<path d="M400,222l119,0" class="g1_3" />
+<text 
+x="103" 
+y="301" 
+dx="0,-0.1,0,0,0,-0.1,0.1,-0.1,0,0,0,0.1,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0.1,-0.2,0,0.1,-0.1,0.1,0,0,-0.1,0,0.1,0,0,-0.1,0,0.1,0,0,0,-0.1,0.1,0,0,0,0,0,0,0,0,0,-0.1,0.1,0.1,-0.1,0,0,0,-0.1,0,0,0,0,0" 
+class="s2_3"
+>Il y a donc au total seulement deux résultats possibles qui sont :</text>
+
+<text 
+x="178" 
+y="353" 
+dx="0,0,0,0,0,-0.1,0,0,0,-0.2,0,0,-0.2,0,0,0,0,0,-0.1,-0.9,0,0,0,-0.2,0,0,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.2,0,0,0,-0.2,0,0,0,0,0,-0.1,0,0,-0.1,0" 
+class="s2_3"
+>{16; 9; 7; 2; 14; 11; 5; 4; 12; 13; 3; 6; 10; 15; 1; 8}</text>
+
+<text 
+x="86" 
+y="459" 
+dx="0,0.1,0" 
+class="s2_3"
+>et </text>
+
+<text 
+x="177" 
+y="459" 
+dx="0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,-0.2,0,0,-0.2,0,0,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.2,0,0,-0.9,0,0,-0.1,0,0,0,-0.1,0,0,0,-0.2,0,0,-0.2,0,0,0,0,0" 
+class="s2_3"
+>{8; 1; 15; 10; 6; 3; 13; 12; 4; 5; 11; 14; 2; 7; 9; 16} </text>
+
+<text 
+x="677" 
+y="459" 
+dx="0" 
+class="s2_3"
+>.</text>
+
+<path d="M417.5,383.5l-249,0l0,-67l499,0l0,67l-250,0Z" class="g2_3" />
+<path d="M417.5,483.5l-249,0l0,-67l499,0l0,67l-250,0Z" class="g2_3" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldItalicMT_3;
+	src: url("fonts/TimesNewRomanPS-BoldItalicMT_3.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_u;
+	src: url("fonts/TimesNewRomanPSMT_u.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

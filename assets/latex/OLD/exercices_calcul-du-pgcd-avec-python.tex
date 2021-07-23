@@ -1,0 +1,176 @@
+\input{_header}
+\begin{enumerate}
+\item
+Ecrire une fonction Python nommée  \texttt{diviseurs} qui prend en argument un nombre entier naturel non nul  \texttt{n} et qui retourne la liste de ses diviseurs triés par ordre croissant.
+\par
+Tester votre fonction à l'aide des instructions suivantes :
+\begin{lstlisting}[language=Python]
+>>> diviseurs(1)
+>>> diviseurs(2)
+>>> diviseurs(100)
+>>> diviseurs(101)
+\end{lstlisting}
+\par
+ \textit{Rappel} : 
+\\
+L'opérateur  \texttt{\%}  renvoie le reste de la division euclidienne de deux entiers.  
+
+\item
+En utilisant la fonction \texttt{diviseurs} de la question précédente, écrire une fonction  \texttt{est_premier} qui prend un argument entier et retourne un booléen valant  \texttt{True} si l'argument est un nombre premier et  \texttt{False} dans le cas contraire.
+\par
+Tester votre fonction à l'aide des instructions suivantes :
+\begin{lstlisting}[language=Python]
+>>> est_premier(1)
+>>> est_premier(2)
+>>> est_premier(100)
+>>> est_premier(101)
+\end{lstlisting}
+
+\item
+L'opérateur Python  \texttt{in} permet de savoir si un élément appartient ou non à une liste. 
+\\
+On l'utilise de la manière suivante~: 
+\begin{lstlisting}[language=Python]
+liste = ['rouge', 'vert', 'jaune']
+print('rouge' in liste) # affiche True
+print('bleu' in liste) # affiche False
+\end{lstlisting}
+\\
+ À l'aide de la fonction \texttt{diviseurs} de la première question et de l'opérateur  \texttt{in} écrire une fonction nommée  \texttt{inter} qui prend deux listes en arguments et qui renvoie une troisième liste contenant les éléments communs aux deux listes.
+\par
+Par exemple on souhaite que l'instruction \texttt{inter(['a', 'b', 'c'], ['b', 'c', 'd', 'e']) } retourne la liste  \texttt{['b', 'c']}.  
+ \par
+Tester votre fonction à l'aide des instructions suivantes :
+\begin{lstlisting}[language=Python]
+>>> inter(['a', 'b', 'c'], ['b', 'c', 'd', 'e'])
+>>> inter([1,2,4], [1, 2, 3, 6])
+>>> inter([1,2,3], [4,5,6])
+\end{lstlisting}
+
+\item
+ À l'aide des fonctions définies aux questions  \textbf{1} et  \textbf{3},  écrire une fonction nommée  \texttt{pgcd} qui prend deux entiers naturels en arguments et qui retourne leur PGCD.
+\par
+Tester votre fonction à l'aide des instructions suivantes :
+\begin{lstlisting}[language=Python]
+>>> pgcd(10, 11)
+>>> pgcd(15,20)
+>>> pgcd(501,666)
+>>> pgcd(110,121)
+\end{lstlisting} 
+\end{enumerate} 
+
+\begin{corrige}
+
+\begin{enumerate}
+\item
+
+On peut coder la fonction à l'aide d'une boucle  \texttt{for}.
+\par
+L'instruction  \texttt{range(1, n+1)} retourne les entiers naturels compris, au sens large, entre  \texttt{1} et  \texttt{n}. On teste ensuite si l'entier  \texttt{i} divise  \texttt{n} grâce à l'instruction   \texttt{if n % i == 0 :} et, si c'est le cas, on ajoute  \texttt{i} à la liste des diviseurs~: 
+\\  
+\begin{lstlisting}[language=Python]
+ 
+def diviseurs(n) :
+    liste = []
+    for i in range(1, n+1) :
+        if n % i == 0 :
+            liste.append(i)
+    return liste
+
+\end{lstlisting} 
+\\
+Le mode de construction de cette liste fait que celle-ci est automatiquement triée par ordre croissant.
+\par
+Il est également possible et plus concis d'utiliser une définition de la liste en  \textit{compréhension}~:  
+\begin{lstlisting}[language=Python]
+def diviseurs(n) :
+    return [i for i in range(1,n+1) if n % i == 0]
+\end{lstlisting} 
+\par
+Les tests proposés dans l'énoncé donnent les résultats suivants~: 
+\\
+\begin{lstlisting}[language=Python]
+>>> diviseurs(12)
+[1, 2, 3, 4, 6, 12]
+>>> diviseurs(1)
+[1]
+>>> diviseurs(2)
+[1, 2]
+>>> diviseurs(100)
+[1, 2, 4, 5, 10, 20, 25, 50, 100]
+>>> diviseurs(101)
+[1, 101]
+\end{lstlisting} 
+\item
+Un nombre entier naturel est premier si et seulement s'il possède exactement deux diviseurs~: 1 et lui-même. 
+\par
+Il suffit donc de tester la longueur de la liste retournée par la fonction  \texttt{diviseurs()} pour déterminer si l'argument est premier. La commande  \texttt{len(diviseurs(n)) == 2} renvoie  \texttt{True} si cette liste contient deux nombres et  \texttt{False} sinon~:   
+ 
+\begin{lstlisting}[language=Python]
+def est_premier(n) :
+    return len(diviseurs(n)) == 2
+\end{lstlisting} 
+\par
+Cette fonction donne les résultats suivants~: 
+\begin{lstlisting}[language=Python]
+>>> est_premier(1)
+False
+>>> est_premier(2)
+True
+>>> est_premier(100)
+False
+>>> est_premier(101)
+True
+\end{lstlisting}
+
+\item
+Voici un exemple de fonction qui donne le résultat souhaité (mais qui n'est pas le plus concis~: 
+\\
+\begin{lstlisting}[language=Python]
+def inter(liste1, liste2) :
+    liste3=[]
+    for i in range(len(liste1)) :
+        a = liste1[i]
+        if a in liste2 :
+            liste3.append(a)
+    return liste3
+\end{lstlisting} 
+\\ 
+Pour chaque élément de la première liste, on regarde s'il appartient à la seconde liste grâce à l'opérateur  \texttt{in}~; si c'est le cas, on ajoute cet élément à la réponse.  
+\par
+Voici le résultat des tests~: 
+\begin{lstlisting}[language=Python]
+>>> inter(['a', 'b', 'c'], ['b', 'c', 'd', 'e'])
+['b', 'c']
+>>> inter([1,2,4], [1, 2, 3, 6])
+[1, 2]
+>>> inter([1,2,3], [4,5,6])
+[]
+\end{lstlisting} 
+
+\item
+La liste des diviseurs étant ordonnées par ordre croissant, il suffit de retourner le dernier élément de la liste des diviseurs communs (obtenue en faisant l'intersection des deux listes de diviseurs)~:   
+\par
+\textbf{Attention :} les éléments d'une liste sont indexés de  \texttt{0} à  \texttt{len(liste)-1}.  L'indice du dernier élément est donc \texttt{len(liste)-1}. 
+\par
+\begin{lstlisting}[language=Python]
+def pgcd(a, b) :
+    diviseurs_communs = inter(diviseurs(a), diviseurs(b))
+    return diviseurs_communs[len(diviseurs_communs)-1]
+\end{lstlisting}  
+\par
+Les tests demandés donnent les résultats ci-dessous~: 
+\\
+\begin{lstlisting}[language=Python]
+>>> pgcd(10, 11)
+1
+>>> pgcd(15,20)
+5
+>>> pgcd(501,666)
+3
+>>> pgcd(110,121)
+11
+\end{lstlisting} 
+\end{enumerate} 
+\end{corrige} 
+\input{_footer}

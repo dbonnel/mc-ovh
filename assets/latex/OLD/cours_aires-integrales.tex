@@ -1,0 +1,245 @@
+\input{_header}
+\begin{h2}1. Primitives d'une fonction\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soit $f$ une fonction définie sur $I$.
+     \par
+     On dit que $F$  est une primitive de  $f$  sur l'intervalle $I$, si et seulement si $F$ est dérivable sur $I$ et pour tout $x$ de $I$, $F^{\prime}\left(x\right)=f\left(x\right)$.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     La fonction $F :  x\mapsto x^{2}$ est une primitive de la fonction $f :  x\mapsto 2x$ sur $\mathbb{R}$.
+     \par
+     La fonction $G :  x\mapsto x^{2}+1$ est aussi une primitive de cette même fonction $f$.
+}
+\cadre{vert}{Propriété}{% id="p20"
+     Si $F$ est une primitive de $f$ sur $I$, alors les autres primitives de $f$ sur $I$ sont les fonctions de la forme $F+k$ où $k\in \mathbb{R}$.
+}
+\bloc{vert}{Remarque}{% id="r20"
+     Une fonction continue ayant une infinité de primitives, il ne faut pas dire \textbf{la} primitive de $f$ mais \textbf{une} primitive de $f$.
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Les primitives de la fonction $f : x\mapsto 2x$ sont les fonctions $F :  x\mapsto x^{2}+k$ où $k \in  \mathbb{R}$.
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Toute fonction continue sur un intervalle $I$ admet des primitives sur $I$.
+}
+\cadre{vert}{Propriétés (Primitives des fonctions usuelles) }{% id="p40"
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{Fonction $f$} & \textbf{Primitives $F$} & \textbf{Ensemble de validité}
+          \\ \hline
+          $0$ & $k$ & $\mathbb{R}$
+          \\ \hline
+          $a$ & $ax+k$ & $\mathbb{R}$
+          \\ \hline
+          $x^{n} ~ \left(n\in \mathbb{N}\right)$ & $\frac{x^{n+1}}{n+1}+k$ & $\mathbb{R}$
+          \\ \hline
+          $\frac{1}{x}$ & $\ln x+k$ & $\left]0;+\infty \right[$
+          \\ \hline
+          $e^{x}$ & $e^{x}+k$ & $\mathbb{R}$
+          \\ \hline
+     \end{tabularx}
+}
+\cadre{vert}{Propriétés}{% id="p50"
+     Si $f$ et $g$ sont deux fonctions définies sur $I$ et admettant respectivement $F$ et $G$ comme primitives sur $I$ et $k$ un réel quelconque.
+     \begin{itemize}
+          \item $F+G$ est une primitive de la fonction $f+g$ sur $I$.
+          \item $k F$ est une primitive de la fonction $k f$ sur $I$.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{% id="p60"
+     Soit $u$ une fonction définie et dérivable sur un intervalle $I$.
+     \par
+     Les primitives de la fonction $x \mapsto  u^{\prime}\left(x\right)e^{u\left(x\right)}$ sont les fonctions $x \mapsto  e^{u\left(x\right)}+k$ (où $k \in  \mathbb{R}$)
+}
+\bloc{orange}{Exemple}{% id="e60"
+     La fonction $x\mapsto 2xe^{\left(x^{2}\right)}$ est de la forme $u^{\prime}e^{u}$ avec $u\left(x\right)=x^{2}$.
+     \par
+     Ses primitives sont donc les fonctions $x\mapsto e^{\left(x^{2}\right)}+k   \left(k \in  \mathbb{R}\right)$
+}
+\begin{h2}2. Intégrales\end{h2}
+\cadre{bleu}{Définition}{% id="d90"
+     Soit $f$ une fonction continue sur un intervalle $\left[a ; b\right]$ et $F$ une primitive de $f$ sur $\left[a;b\right]$.
+     \textbf{L'intégrale de $a$ à $b$ de $f$} est le nombre réel noté $\int_{a}^{b}f\left(x\right)dx$ défini par:
+     \par
+     $\int_{a}^{b}f\left(x\right)dx=F\left(b\right)-F\left(a\right)$
+}
+\bloc{vert}{Remarque}{% id="e90"
+     L'intégrale ne dépend pas de la primitive de $f$ choisie.
+     \par
+     En effet si $G$ est une autre primitive de $f$, on a $G=F+k$ donc :
+     \par
+     $G\left(b\right)-G\left(a\right)=F\left(b\right)+k-\left(F\left(a\right)+k\right)=F\left(b\right)-F\left(a\right)$
+}
+\bloc{vert}{Notations}{% id="n90"
+     On note souvent : $F\left(b\right)-F\left(a\right)=\left[F\left(x\right)\right]_{a}^{b}$
+     \par
+     On obtient avec cette notation :
+     \par
+     $\int_{a}^{b}f\left(x\right)dx=\left[F\left(x\right)\right]_{a}^{b}$
+}
+\bloc{orange}{Exemple}{% id="e90"
+     La fonction $F$ définie par $F\left(x\right)=\frac{x^{3}}{3}$ est une primitive de la fonction carré.
+     \par
+     On a donc :
+     \par
+     $\int_{0}^{1}x^{2}dx=\left[\frac{x^{3}}{3}\right]_{0}^{1}=\frac{1}{3}-\frac{0}{3}=\frac{1}{3}$
+}
+\begin{h2}3. Propriétés de l'intégrale\end{h2}
+\cadre{vert}{Propriété}{% id="p110"
+     \textbf{Relation de Chasles}
+     Soit $f$ une fonction continue sur $\left[a;b\right]$ et $c\in \left[a;b\right]$.
+     \par
+     $\int_{a}^{b}f\left(x\right)dx=\int_{a}^{c}f\left(x\right)dx+\int_{c}^{b}f\left(x\right)dx$
+}
+\cadre{vert}{Propriété}{% id="p120"
+     \textbf{Linéarité de l'intégrale}
+     Soit $f$ et $g$ deux fonctions continues sur $\left[a;b\right]$ et $\lambda \in \mathbb{R}$.
+     \begin{itemize}
+          \item $\int_{a}^{b}f\left(x\right)+g\left(x\right)dx=\int_{a}^{b}f\left(x\right)dx+\int_{a}^{b}g\left(x\right)dx$
+          \item $\int_{a}^{b} \lambda  f\left(x\right)dx=\lambda  \int_{a}^{b}f\left(x\right)dx$
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p130"
+     \textbf{Comparaison d'intégrales}
+     Soit $f$ et $g$ deux fonctions continues sur $\left[a;b\right]$ telles que $f\geqslant g$ sur $\left[a;b\right]$.
+     \par
+     $\int_{a}^{b}f\left(x\right)dx\geqslant \int_{a}^{b}g\left(x\right)dx$
+}
+\bloc{vert}{Remarque}{% id="r130"
+     En particulier, en prenant pour $g$ la fonction nulle on obtient si $f\left(x\right)\geqslant 0$ sur $\left[a;b\right]$:
+     \par
+     $\int_{a}^{b}f\left(x\right)dx\geqslant 0$
+}
+\begin{h2}4. Interprétation graphique\end{h2}
+\cadre{bleu}{Définition}{% id="d150"
+     Le plan $P$ est rapporté à un repère orthogonal $\left(O,\vec{i},\vec{j}\right)$.
+     \par
+     On appelle \textbf{unité d'aire (u.a.)} l'aire d'un rectangle dont les côtés mesurent $||\vec{i}||$ et $||\vec{j}||$.
+}
+\begin{center}
+     \begin{extern} %width="400" alt="unité d'aire"
+          \resizebox{6cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\xmin{-1.2}
+               \def\xmax{4.2}
+               \def\ymin{-0.9}
+               \def\ymax{1.8}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{2}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[gridcolor=mcgris, subgriddiv=1, gridlabels=0pt](-2,-1)(5,2)
+                    \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \pscustom[fillstyle=solid,fillcolor=vert,linecolor=vert,linewidth=0.75pt,opacity=0.2]{%
+                         \psline(0,0)(1,0)(1,1)(0,1)
+                         \closepath
+                    }
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \psline[linewidth=1.25pt]{->}(0,0)(0,1)
+                    \psline[linewidth=1.25pt]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.03){$\vect{i}$}
+                    \rput[r](-0.03,0.5){$\vect{j}$}
+                    %                        \rput[l](1.1){ unité d'aire}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Unité d'aire dans le cas d'un repère orthonormé}
+\end{center}
+\cadre{vert}{Propriété}{% id="p160"
+     Si $f$ est une fonction continue et \textbf{positive} sur $\left[a;b\right]$, alors l'intégrale $\int_{a}^{b}f\left(x\right)dx$ est l'aire, en unités d'aire, de la surface délimitée par :
+     \begin{itemize}
+          \item la courbe $C_{f}$
+          \item l'axe des abscisses
+          \item les droites (verticales) d'équations $x=a$ et $x=b$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e160"
+    \begin{center}
+          \begin{extern} %width="600" alt="aire et intégrale"
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{ln(1+x*x) }
+                    \def\xmin{-2.2}
+                    \def\xmax{6.2}
+                    \def\ymin{-1.8}
+                    \def\ymax{3.8}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psgrid[gridcolor=mcgris, subgriddiv=1, gridlabels=0pt](-3,-1.8)(7,4)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \pscustom[fillstyle=solid,fillcolor=vert,linecolor=vert,linewidth=0.75pt,opacity=0.2]{%
+                              \psplot{1}{3}{\fonction}
+                              \psline(3,0)(1,0)
+                              \closepath
+                         }
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput[l](5.5,3.2){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     L'aire colorée ci-dessus est égale (en unités d'aire) à $\int_{1}^{3}f\left(x\right)dx$
+}
+\bloc{vert}{Remarques}{% id="r160"
+     \begin{itemize}
+          \item Si $f$ est négative sur $\left[a;b\right]$, la propriété précédente appliquée à la fonction $-f$ montre que
+          \par
+          $\int_{a}^{b}f\left(x\right)dx$ est égale à l'\textbf{opposé} de l'aire délimitée par la courbe $C_{f}$, l'axe des abscisses, les droites d'équations $x=a$ et $x=b$
+          \item Si le signe de $f$ varie sur $\left[a;b\right]$, on découpe $\left[a;b\right]$ en sous-intervalles sur lesquels $f$ garde un signe constant.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p170"
+     Si $f$ et $g$ sont des fonctions continues et telles que $f\leqslant g$ sur $\left[a;b\right]$, alors l'aire de la surface délimitée par :
+     \begin{itemize}
+          \item la courbe $C_{f}$
+          \item la courbe $C_{g}$
+          \item les droites (verticales) d'équations $x=a$ et $x=b$
+     \end{itemize}
+     est égale (en unités d'aire) à :
+     \par
+     $A=\int_{a}^{b}g\left(x\right)-f\left(x\right)dx$
+}
+\bloc{orange}{Exemple}{% id="e170"
+     $f$ et $g$ définies par $f\left(x\right)=x^{2}-x$ et $g\left(x\right)=3x-x^{2}$ sont représentées par les paraboles ci-dessous :
+      \begin{center}
+          \begin{extern} %width="600" alt="aire entre deux courbes"
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x*x-x }
+                    \def\g{3*x-x*x }
+                    \def\xmin{-2.2}
+                    \def\xmax{6.2}
+                    \def\ymin{-1.8}
+                    \def\ymax{3.8}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psgrid[gridcolor=mcgris, subgriddiv=1, gridlabels=0pt](-3,-3)(7,4)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \pscustom[fillstyle=solid,fillcolor=vert,linestyle=solid,linewidth=0.2pt,opacity=0.2]{%
+                              \psplot{0}{2}{\fonction}
+                              \psplot{2}{0}{\g}
+                         }
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                         \psplot[plotpoints=2000,linecolor=red]{\xmin}{\xmax}{\g}
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput(-1.6,3){$\color{blue} \mathcal{C}_f$}
+                         \rput(3.6,-1){$\color{red} \mathcal{C}_g$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+    L'aire colorée est égale (en unités d'aire) à :
+     \par
+     $A=\int_{0}^{2}g\left(x\right)-f\left(x\right)dx=\int_{0}^{2} 4x-2x^{2}=\left[2x^{2}-\frac{2}{3}x^{3}\right]_{0}^{2}=\frac{8}{3} \text{u.a.}$
+}
+\input{_footer}

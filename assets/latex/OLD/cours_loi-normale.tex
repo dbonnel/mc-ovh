@@ -1,0 +1,400 @@
+\input{_header}
+\begin{h2}1. Loi normale centrée réduite\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     On dit qu'une variable aléatoire $X$ suit la \textbf{loi normale centrée réduite} sur $\mathbb{R}$ (notée $\mathscr N \left(0;1\right)$) si sa densité de probabilité $f$ est définie par :
+     \begin{center}$f\left(x\right)=\frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$\end{center}
+     Cela signifie que, pour tous réels $a$ et $b$ tels que $a\leqslant b$:
+     \begin{center}$p\left(a\leqslant X\leqslant b\right)=\int_{a}^{ b}\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt$\end{center}
+}
+\bloc{cyan}{Remarques}{%id="r10"
+     \begin{itemize}
+          \item On admet que $f$ définit bien une densité, c'est à dire que l'aire comprise entre l'axe des abscisses et la courbe représentative de $f$ est égale à 1
+          \item On a également :
+          \par
+          $p\left(X\geqslant a\right) =\lim\limits_{x\rightarrow +\infty }\int_{a}^{ x}\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt $ (limite que l'on peut noter : $\int_{a}^{ +\infty }\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt $)
+          \par
+          $p\left(X\leqslant b\right) =\lim\limits_{x\rightarrow -\infty }\int_{x}^{b}\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt $ (limite que l'on peut noter : $\int_{-\infty }^{ b}\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt $)
+          \item La fonction $f : x\mapsto \frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$ est dérivable sur $\mathbb{R}$, paire, positive, son tableau de variation est :
+          %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="350"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Ligne de l'abscisse : x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$0$};
+                         \node at (4*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée : f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$$};
+                         \node at (1*\Lrg,-1*\HtX) {$+$};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {$-$};
+                         \node at (4*\Lrg,-1*\HtX) {$$};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node (f1) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$0$};
+                         \node (f2) at (2*\Lrg,{-2*\HtX+(-0.5)*\HtY}) {$\dfrac{1}{\sqrt{2\pi}}$};
+                         \node (f3) at (4*\Lrg,{-2*\HtX+(-2)*\HtY}) {$0$};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          et sa courbe représentative :
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale centrée réduite"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                       \rput[br](-0.1,-0.045){$O$}
+                      \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \item $p\left(a\leqslant X\leqslant b\right)$ est l'aire du domaine coloré ci-dessous :
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale probabilité"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                              \moveto(1.14,0)
+                              \psplot[plotpoints=3000,linewidth=0.75pt]{1.14}{2.24}{\fonction}
+                              \psline(2.24,0)(1.14,0)
+                         }
+                         \rput[b](1.14,-0.045){$\color{blue} a$}
+                         \rput[b](2.24,-0.045){$\color{blue} b$}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \item $p\left(X\leqslant a\right)$ est l'aire du domaine coloré ci-dessous :
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale probabilité"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                              \psplot[plotpoints=3000,linewidth=0.75pt]{-4}{1.14}{\fonction}
+                              \psline(1.14,0)(-4,0)
+                         }
+                         \rput[b](1.14,-0.045){$\color{blue} a$}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p20"
+     Soit $X$ une variable aléatoire qui suit la loi normale centrée réduite :
+     \begin{itemize}
+          \item L'espérance mathématique de $X$ est $E\left(X\right)=0$ (loi \textit{centrée})~;
+          \item La variance de $X$ est $\sigma \left(X\right)=1$ (loi \textit{réduite}).
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p30"
+     Soit $X$ une variable aléatoire qui suit la loi normale centrée réduite et $\alpha $ un réel quelconque :
+     \begin{itemize}
+          \item $p\left(X\leqslant 0\right)=p\left(X\geqslant 0\right)=0,5$
+          \item $p\left(X\leqslant -a\right)=p\left(X\geqslant a\right)$
+          \item $p\left(-\alpha \leqslant X\leqslant a\right)=1-2\times p\left(X\geqslant a\right)$\nosp$=2\times p\left(X\leqslant a\right)-1$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%id="r30"
+     Ces propriétés résultent du fait que :
+     \begin{itemize}
+          \item  la courbe de la fonction $x\mapsto \frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$ est symétrique par rapport à l'axe des ordonnées
+          \item l'aire comprise entre l'axe des abscisses et la courbe est égale à 1.
+     \end{itemize}
+     On retrouve facilement ces propriétés à l'aide d'une figure par exemple pour la seconde formule :
+     \begin{center}
+          \begin{extern} %width="550" alt="loi normale symétrie"
+               % -+-+-+ variables modifiables
+               \def\e{2.7182818}
+               \def\pi{3.1415926}
+               \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+               \def\xmin{-3.5}
+               \def\xmax{3.5}
+               \def\ymin{0}
+               \def\ymax{0.5}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{12}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                    \pscustom[fillcolor=vert,fillstyle=solid,opacity=0.2,linecolor=vert]{
+                         \psplot[plotpoints=3000,linewidth=0.75pt]{-4}{-1.14}{\fonction}
+                         \psline(-1.14,0)(-4,0)
+                    }
+                    \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                         \moveto(1.14,0)
+                         \psplot[plotpoints=3000,linewidth=0.75pt]{1.14}{4}{\fonction}
+                         \psline(4,0)(1.14,0)
+                    }
+                    \rput[br](-1.14,-0.045){$\color{vert} -a$}
+                    \rput[b](1.14,-0.045){$\color{blue} a$}
+                    \rput[br](-0.1,-0.045){$O$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}$p\left(X\leqslant -a\right)=p\left(X\geqslant a\right)$\end{center}
+}
+\cadre{vert}{Propriété («Loi normale inverse»)}{%id="p50"
+     Soient $X$ une variable aléatoire qui suit la loi normale centrée réduite et un réel $k \in \left]0;1\right[ $.
+     \par
+     Il existe un \textbf{unique} réel $m_{k}$ tel que $p\left(X\leqslant m_{k}\right)=k$.
+}
+\bloc{cyan}{Remarque}{%id="r50"
+     On peut calculer les valeurs de $m_{k}$ à la calculatrice.
+}
+\cadre{rouge}{Théorème}{%id="t60"
+     Soient $X$ une variable aléatoire qui suit la loi normale centrée réduite et un réel $\alpha \in \left]0;1\right[ $.
+     \par
+     Il existe un \textbf{unique} réel $u_\alpha $ tel que :
+\begin{center}
+     $p\left(-u_\alpha \leqslant X\leqslant u_\alpha \right)=1-\alpha$.
+\end{center}
+}
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale seuil"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.1,linecolor=blue]{
+                              \moveto(-1.6,0)
+                              \psplot[plotpoints=3000,linewidth=0.75pt]{-1.6}{1.6}{\fonction}
+                              \psline(1.6,0)(-1.6,0)
+                         }
+                         \rput[b](-1.6,-0.045){$\color{blue} -u_{\alpha}$}
+                         \rput[b](1.6,-0.045){$\color{blue} u_{\alpha}$}
+                          \rput[b](0.6,0.1){$\color{blue} 1-\alpha$}
+                           \rput[b](1.9,0.02){$\color{gray} \alpha/2$}
+                           \rput[b](-1.9,0.02){$\color{gray} \alpha/2$}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}               
+          \end{center}
+          \begin{center}
+          $p\left(-u_\alpha \leqslant X\leqslant u_\alpha \right)=1-\alpha $
+          \end{center}
+\bloc{cyan}{Remarques}{%id="r60"
+     \begin{itemize}
+          \item En utilisant la formule $p\left(-\alpha \leqslant X\leqslant a\right)=2\times p\left(X\leqslant a\right)-1$ et la \textit{«loi normale inverse»} on peut calculer les valeurs de $u_\alpha $ à la calculatrice.
+          \item Deux valeurs à retenir :
+          \par
+          $u_{0,05}=1,96 $ c'est à dire que $p\left(-1.96\leqslant X\leqslant 1.96\right)=0,95$
+          \par
+          $u_{0,01}=2,58 $ c'est à dire que $p\left(-2,58\leqslant X\leqslant 2,58\right)=0,99$
+     \end{itemize}
+}
+\begin{h2}2. Loi normale générale\end{h2}
+\cadre{bleu}{Définition et théorème}{%id="d70"
+     Soient deux réels $\mu $ et $\sigma  > 0$.
+     \par
+     On dit qu'une variable aléatoire $X$ suit une \textbf{loi normale de paramètres $\mu $ et $\sigma ^{2}$} (notée $\mathscr N \left(\mu ; \sigma ^{2}\right)$) si la variable aléatoire $Y=\frac{X-\mu }{\sigma} $ suit la loi normale centrée réduite.
+     \par
+     L'espérance mathématique de $X$ est $\mu $ et son écart-type $\sigma $ (et donc sa variance $\sigma ^{2}$).
+}
+\bloc{cyan}{Remarque}{%id="r70"
+     La courbe représentative de la distribution d'une loi $\mathscr N \left(\mu ; \sigma ^{2}\right)$ est une courbe «~en cloche~» qui admet la droite d'équation $x=\mu $ comme axe de symétrie. Elle est plus ou moins «~étirée~» selon les valeurs de $\sigma $
+     \begin{center}
+          \begin{extern} %width="500" alt="loi normale différents écarts-types"
+               % -+-+-+ variables modifiables
+               \def\e{2.7182818}
+               \def\pi{3.1415926}
+               \def\f{2/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/0.5)  }
+               \def\g{1/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/2)  }
+               \def\h{0.5/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/8)  }
+               \def\xmin{-2.3}
+               \def\xmax{8.3}
+               \def\ymin{0}
+               \def\ymax{0.85}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{10}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue,linewidth=0.75pt]{\xmin}{\xmax}{\f}
+                    \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\g}
+                    \psplot[plotpoints=2000,linecolor=vert,linewidth=0.75pt]{\xmin}{\xmax}{\h}
+                    \psline[linecolor=mauve,linewidth=0.5pt](3,10)(3,-1)
+                    \rput[br](2.9,0.02){$\color{mauve} \mu$}
+                   \rput[br](5,0.5){$\color{blue} \sigma=0,5$}
+                   \rput[br](5.2,0.3){$\color{red} \sigma=1$}
+                   \rput[br](6,0.15){$\color{vert} \sigma=2$}
+                   \rput[br](-0.1,-0.045){$O$}
+                  \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}$\mu =3$ et $ \sigma =0,5$ ; $1$ ; $2$\end{center}
+}
+\cadre{vert}{Propriété (Règle des trois sigmas)}{%id="p80"
+     Si $X$ suit une loi normale $\mathscr N \left(\mu ; \sigma ^{2}\right)$ alors :
+     \begin{itemize}
+          \item
+          $p\left(\mu -\sigma \leqslant X\leqslant \mu + \sigma \right)\approx 0,68$ (à $10^{-2}$ près)
+          \item
+          $p\left(\mu -2\sigma \leqslant X\leqslant \mu + 2\sigma \right)\approx 0,95$ (à $10^{-2}$ près)
+          \item
+          $p\left(\mu -3\sigma \leqslant X\leqslant \mu + 3\sigma \right)\approx 0,997$ (à $10^{-3}$ près)
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e80"
+     Si $X$ suit une loi normale $\mathscr N \left(11 ; 3^{2}\right)$ alors :
+     \par
+     $p\left(5\leqslant X\leqslant 17\right)\approx 0,95$
+}
+\begin{h2}3. Théorème de Moivre-Laplace\end{h2}
+\cadre{rouge}{Théorème (Moivre-Laplace)}{%id="t90"
+     Soit $X_{n}$ une variable aléatoire qui suit une loi \textbf{binomiale} $\mathscr B \left(n;p\right)$.
+     \par
+     On pose $Z_{n}=\frac{X_{n}-E\left(X_{n}\right)}{\sigma \left(X_{n}\right)}$.
+     \par
+     Alors pour tous réels $a$ et $b$ :
+     \begin{center}$\lim\limits_{n\rightarrow +\infty }p\left(a\leqslant Z_{n}\leqslant b\right)=\int_{a}^{ b}\frac{1}{\sqrt{2\pi }}e^{^{-\frac{t^{2}}{2}}}dt$\end{center}
+}
+\bloc{cyan}{Remarques}{%id="r90"
+     \begin{itemize}
+          \item On rappelle que pour une loi binomiale $X$ de paramètres $n$ et $p$ :$E\left(X\right)=np$ et $\sigma \left(X\right)^{2}=np\left(1-p\right)$. $Z_{n}$ peut donc aussi s'écrire : $Z_{n}=\frac{X_{n}-np}{\sqrt{np\left(1-p\right)}}$
+          \item Ce théorème signifie que pour $n$ élevé, la loi de $Z_{n}$ est proche de la loi normale centrée réduite :
+          \begin{center}
+               \begin{extern} %width="550" alt="comparaison loi normale loi binomiale"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true,dimen=middle,}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-0.612,0)(-1.021,0.2863)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-1.021,0)(-1.429,0.1909)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-1.429,0)(-1.837,0.1073)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-1.837,0)(-2.245,0.0505)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-2.245,0)(-2.654,0.0196)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-2.654,0)(-3.062,0.0062)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-3.062,0)(-3.47,0.0015)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-0.204,0)(-0.612,0.3644)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](-0.204,0)(0.204,0.3948)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](0.204,0)(0.612,0.3644)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](0.612,0)(1.021,0.2863)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](1.021,0)(1.429,0.1909)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](1.429,0)(1.837,0.1073)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](1.837,0)(2.245,0.0505)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](2.245,0)(2.654,0.0196)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](2.654,0)(3.062,0.0062)
+                         \psframe[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](3.062,0)(3.47,0.0015)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                    \end{pspicture*}
+               \end{extern}
+               \par
+               \textit{Histogramme de $Z_{n}$ pour $n=24$ et $p=0,5$ et loi $\mathscr N \left(0;1\right)$}
+          \end{center}
+          \item En pratique, on considèrera que «$n$ est suffisamment élevé» si $n\geqslant 30$ ; $np\geqslant 5$ ; $n\left(1-p\right)\geqslant 5$.
+          \par
+          La loi binomiale $X$ pourra alors être approximée par la loi normale $\mathscr N \left(E\left(X\right);\sigma \left(X\right)^{2}\right)$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e90"
+     $X$ suit une loi binomiale $\mathscr B \left(30 ; 0,4\right)$.
+     \par
+     On cherche à calculer $p\left(7 < X \leqslant 17\right)$.
+     \par
+     Posons $Z=\frac{X-30\times 0.4}{\sqrt{30\times 0.4\times 0.6}}=\frac{X-12}{\sqrt{7,2}}$.
+     \bigskip
+     Alors :
+     \par
+     $7 < X \leqslant 17 \Leftrightarrow -5 < X-12\leqslant 5 $
+     \smallskip
+     $\phantom{7 < X \leqslant 17} \Leftrightarrow -\frac{5}{\sqrt{7,2}} < \frac{X-12}{\sqrt{7,2}}\leqslant \frac{5}{\sqrt{7,2}}$
+     \smallskip
+     $\phantom{7 < X \leqslant 17}\Leftrightarrow -1,86 < Z\leqslant 1,86$
+     \bigskip
+     On a bien $n\geqslant 30$ ; $np\geqslant 5$ ; $n\left(1-p\right)\geqslant 5$. On peut donc approximer $Z$ par une loi normale centrée réduite.
+     \par
+     A la calculatrice on trouve alors :
+     \par
+     $p\left(-1,86 < Z \leqslant 1,86\right)\approx 0,937 $(un calcul direct avec la loi binomiale donne $0,935$)
+}
+\input{_footer}

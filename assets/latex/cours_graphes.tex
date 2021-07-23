@@ -1,0 +1,317 @@
+\input{_header}
+\meta{url}{/cours/graphes/}
+\meta{pid}{474}
+\meta{titre}{Graphes : Généralités [spé]}
+\meta{type}{cours}
+\begin{h2}1. Vocabulaire\end{h2}
+\cadre{bleu}{Définition}{%
+     Un \textbf{graphe} est composé de \textbf{sommets} et d'\textbf{arêtes} (ou \textbf{arcs}) reliant certains de ces sommets.
+}
+\bloc{orange}{Exemple}{%
+     Le diagramme ci-dessous représente un graphe comportant 4 sommets et 5 arêtes.
+     \begin{center}
+          \begin{extern}%width="350"
+               \psset{unit=1.5cm}
+               \begin{pspicture}(-1,0)(6,3)
+                    \rput(0,2){\circlenode{A}{A}}
+                    \rput(2,2){\circlenode{B}{B}}
+                    \rput(5,2){\circlenode{C}{C}}
+                    \rput(3.5,0.5){\circlenode{D}{D}}
+                    \ncarc[arcangle=-20]{A}{B}
+                    \ncarc[arcangle=-20]{B}{C}
+                    \ncarc[arcangle=-20]{B}{D}
+                    \ncarc[arcangle=20]{C}{D}
+                    \nccircle[angleA=-50]{C}{.5cm}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+}
+\cadre{bleu}{Définitions}{%
+     \begin{itemize}
+          \item L'\textbf{ordre} d'un graphe est le nombre de sommets de ce graphe.
+          \item Le \textbf{degré} d'un sommet est le nombre d'arêtes dont ce sommet est une extrémité.
+          \item Deux sommets reliés par une arête sont \textbf{adjacents}.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     \begin{itemize}
+          \item Le graphe représenté ci-dessus est d'ordre 4.
+          \item Le degré du sommet B est 3. Celui de C est 4 (la boucle compte 2 fois).
+          \item A et B sont adjacents. A et D ne le sont pas.
+     \end{itemize}
+}
+\cadre{bleu}{Définitions}{%
+     Une \textbf{chaîne} (ou un \textbf{chemin}) est une suite de sommets telle que chaque sommet est relié au suivant par une arête.
+     \par
+     La \textbf{longueur} d'une chaîne est le nombre d'arêtes composant cette chaîne.
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="350"
+               \psset{unit=1.5cm}
+               \begin{pspicture}(-1,0)(6,3)
+                    \rput(0,2){\circlenode{A}{A}}
+                    \rput(2,2){\circlenode{B}{B}}
+                    \rput(5,2){\circlenode{C}{C}}
+                    \rput(3.5,0.5){\circlenode{D}{D}}
+                    \ncarc[linecolor=red,arcangle=-20]{A}{B}
+                    \ncarc[linecolor=red,arcangle=-20]{B}{C}
+                    \ncarc[arcangle=-20]{B}{D}
+                    \ncarc[linecolor=red,arcangle=20]{C}{D}
+                    \nccircle[angleA=-50]{C}{.5cm}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     (A; B; C; D) est une chaîne de longueur 3.
+}
+\cadre{bleu}{Définition}{%
+     Un \textbf{cycle} est une chaîne \textbf{fermée} (c'est à dire dont l'origine et l'extrémité sont identiques) dont toutes les arêtes sont distinctes.
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="350"
+               \psset{unit=1.5cm}
+               \begin{pspicture}(-1,0)(6,3)
+                    \rput(0,2){\circlenode{A}{A}}
+                    \rput(2,2){\circlenode{B}{B}}
+                    \rput(5,2){\circlenode{C}{C}}
+                    \rput(3.5,0.5){\circlenode{D}{D}}
+                    \ncarc[arcangle=-20]{A}{B}
+                    \ncarc[linecolor=red,arcangle=-20]{B}{C}
+                    \ncarc[linecolor=red,arcangle=-20]{B}{D}
+                    \ncarc[linecolor=red,arcangle=20]{C}{D}
+                    \nccircle[linecolor=red,angleA=-50]{C}{.5cm}
+               \end{pspicture}
+          \end{extern}
+     \end{center}     (B; C; C; D; B) est un cycle.
+}
+\cadre{bleu}{Définition}{%
+     On dit qu'un graphe est \textbf{connexe} si deux sommets quelconques peuvent être reliés par une chaîne.
+}
+\bloc{cyan}{Remarque}{%
+     Intuitivement, cela signifie que le graphe comporte un seul "morceau"
+}
+\bloc{orange}{Exemple}{%
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="300"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,2){\circlenode{A}{A}}
+                         \rput(2,2){\circlenode{B}{B}}
+                         \rput(5,2){\circlenode{C}{C}}
+                         \rput(3.5,0.5){\circlenode{D}{D}}
+                         \ncarc[arcangle=-20]{A}{B}
+                         \ncarc[arcangle=-20]{B}{C}
+                         \ncarc[arcangle=-20]{B}{D}
+                         \ncarc[arcangle=20]{C}{D}
+                         \nccircle[angleA=-50]{C}{.5cm}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               Graphe connexe
+          \end{center}
+     \end{vbloc}
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="300"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,2){\circlenode{A}{A}}
+                         \rput(2,2){\circlenode{B}{B}}
+                         \rput(5,2){\circlenode{C}{C}}
+                         \rput(3.5,0.5){\circlenode{D}{D}}
+                         \ncarc[arcangle=-20]{A}{B}
+                         \ncarc[arcangle=20]{C}{D}
+                         \nccircle[angleA=-50]{C}{.5cm}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               Graphe non connexe
+          \end{center}
+     \end{vbloc}
+}
+\begin{h2}2. Chaînes et cycles eulériens\end{h2}
+\cadre{bleu}{Définition}{%
+     Une \textbf{chaîne eulérienne} est une chaîne qui contient une fois et une seule chacune des arêtes du graphe.
+     \par
+     Si cette chaîne est un cycle, on parle de \textbf{cycle eulérien}.
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="350"
+               \psset{unit=1.5cm}
+               \begin{pspicture}(-1,0)(6,3)
+                    \rput(0,2){\circlenode{A}{A}}
+                    \rput(2,2){\circlenode{B}{B}}
+                    \rput(5,2){\circlenode{C}{C}}
+                    \rput(3.5,0.5){\circlenode{D}{D}}
+                    \ncarc[arcangle=-20]{A}{B}
+                    \ncarc[arcangle=-20]{B}{C}
+                    \ncarc[arcangle=-20]{B}{D}
+                    \ncarc[arcangle=20]{C}{D}
+                    \nccircle[angleA=-50]{C}{.5cm}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     (A; B; C; C; D; B) est une chaîne eulérienne.
+     \par
+     Ce graphe ne contient aucun cycle eulérien.
+}
+\bloc{cyan}{Remarque}{%
+     \begin{itemize}
+          \item Un graphe connexe contient une chaîne eulérienne si et seulement si on peut le tracer "\textit{sans lever le crayon}". Le théorème d'Euler (ci-dessous) permet de déterminer facilement ce type de graphe.
+          \item On ne peut jamais tracer un graphe \textbf{non connexe} sans lever le crayon !
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{%
+     \textbf{Théorème d'Euler.}
+     Un graphe connexe contient une chaîne eulérienne si et seulement si il possède 0 ou 2 sommets de degré impair.
+     \par
+     Un graphe connexe contient un cycle eulérien si et seulement si il ne possède aucun sommet de degré impair (autrement dit tous ses sommets sont de degré pair)
+}
+\bloc{orange}{Exemples}{%
+     %     <img src="/wp-content/uploads/th_euler.png" alt="" class="aligncenter size-full  img-bpc" />
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="350"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,2){\circlenode{A}{A}}
+                         \rput(2,2){\circlenode{B}{B}}
+                         \rput(5,2){\circlenode{C}{C}}
+                         \rput(3.5,0.5){\circlenode{D}{D}}
+                         \ncarc[arcangle=-20]{A}{B}
+                         \ncarc[arcangle=-20]{B}{C}
+                         \ncarc[arcangle=-20]{B}{D}
+                         \ncarc[arcangle=20]{C}{D}
+                         \nccircle[angleA=-50]{C}{.5cm}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               \textit{Exemple 1}
+          \end{center}
+     \end{vbloc}
+     Dans l'\textit{exemple 1}, il y a deux sommets de degré impair (A:1 et B:3). Le graphe contient une chaîne eulérienne, par exemple (A; B; C; C; D; B) mais pas de cycle eulérien.
+     \par
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="280"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,0){\circlenode{A}{A}}
+                         \rput(0,2){\circlenode{B}{B}}
+                         \rput(2,3){\circlenode{C}{C}}
+                         \rput(4,2){\circlenode{D}{D}}
+                         \rput(4,0){\circlenode{E}{E}}
+                         \rput(2,1){\circlenode{F}{F}}
+                         \ncline{A}{B} \ncline{B}{C}\ncline{C}{D}\ncline{D}{E}\ncline{E}{A}\ncline{B}{D}
+                         \ncline{A}{F} \ncline{B}{F}\ncline{F}{D}\ncline{F}{E}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               \textit{Exemple 2}
+          \end{center}
+     \end{vbloc}
+     Dans l'\textit{exemple 2}, il y a deux sommets de degré impair (A:3 et E:3). Le graphe contient une chaîne eulérienne, par exemple (A; F; D; B; F; E; D; C; B; A; E) mais pas de cycle eulérien.
+     \par
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="280"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,0){\circlenode{B}{B}}
+                         \rput(2,3.4){\circlenode{A}{A}}
+                         \rput(4,0){\circlenode{C}{C}}
+                         \rput(3,1.7){\circlenode{D}{D}}
+                         \rput(2,0){\circlenode{E}{E}}
+                         \rput(2,1.1){\circlenode{F}{F}}
+                         \ncline{A}{B} \ncline{B}{E}\ncline{D}{A}\ncline{D}{C}\ncline{E}{C}
+                         \ncline{A}{F} \ncline{B}{F}\ncline{F}{D}\ncline{F}{E}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               \textit{Exemple 3}
+          \end{center}
+          Dans l'\textit{exemple 3}, il y a 4 sommets de degré impair (A:3, B:3, D:3 et E:3). Le graphe ne contient pas de chaîne eulérienne.
+     \end{vbloc}
+     \par
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="350"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,-2)(7,5)
+                         \rput(3,4){\circlenode{A}{A}}
+                         \rput(0,1){\circlenode{B}{B}}
+                         \rput(6,1){\circlenode{C}{C}}
+                         \rput(3,-0){\circlenode{D}{D}}
+                         \rput(0,3){\circlenode{E}{E}}
+                         \rput(6,3){\circlenode{F}{F}}
+                         \rput(2,3){\circlenode{G}{G}}
+                         \rput(4,3){\circlenode{H}{H}}
+                         \rput(5,2){\circlenode{I}{I}}
+                         \rput(4,1){\circlenode{J}{J}}
+                         \rput(2,1){\circlenode{K}{K}}
+                         \rput(1,2){\circlenode{L}{L}}
+                         \ncline{D}{K} \ncline{K}{J}\ncline{J}{D}
+                         \ncline{B}{K}\ncline{K}{L}\ncline{L}{B}
+                         \ncline{E}{G} \ncline{G}{L}\ncline{L}{E}
+                         \ncline{A}{G}\ncline{G}{H}\ncline{H}{A}
+                         \ncline{H}{F} \ncline{F}{I}\ncline{I}{H}
+                         \ncline{I}{C}\ncline{C}{J}\ncline{J}{I}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               \textit{Exemple 4}
+          \end{center}
+     \end{vbloc}
+     Dans l'\textit{exemple 4}, tous les sommets sont de degré pair . Le graphe contient un cycle eulérien, par exemple: (G; A; H; F; I; C; J; D; K; B; L; E; G; H; I; J; K; L; G).
+}
+\begin{h2}3. Coloration d'un graphe\end{h2}
+\cadre{bleu}{Définition}{%
+     \textbf{Colorier un graphe} c'est associer à tout sommet une couleur telle que deux sommets adjacents n'aient pas la même couleur.
+     \par
+     Le plus petit nombre de couleurs nécessaire pour colorier un graphe s'appelle le \textbf{nombre chromatique} du graphe.
+}
+\bloc{orange}{Exemple}{%
+     \begin{vbloc}
+          \begin{center}
+               \begin{extern}%width="280"
+                    \psset{unit=1.5cm}
+                    \begin{pspicture}(-1,0)(6,3)
+                         \rput(0,0){\circlenode[fillstyle=solid,fillcolor=blue]{A}{}}
+                         \rput(0,2){\circlenode[fillstyle=solid,fillcolor=green]{B}{}}
+                         \rput(2,3){\circlenode[fillstyle=solid,fillcolor=red]{C}{}}
+                         \rput(4,2){\circlenode[fillstyle=solid,fillcolor=blue]{D}{}}
+                         \rput(4,0){\circlenode[fillstyle=solid,fillcolor=green]{E}{}}
+                         \rput(2,1){\circlenode[fillstyle=solid,fillcolor=red]{F}{}}
+                         \ncline{A}{B} \ncline{B}{C}\ncline{C}{D}\ncline{D}{E}\ncline{E}{A}\ncline{B}{D}
+                         \ncline{A}{F} \ncline{B}{F}\ncline{F}{D}\ncline{F}{E}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \begin{center}
+               \textit{Exemple 2}
+          \end{center}
+     \end{vbloc}
+     Le graphe ci-dessus a été colorié a l'aide de 3 couleurs différentes. Il n'est pas possible de le colorier avec seulement 2 couleurs. Le nombre chromatique du graphe est donc 3.
+}
+\cadre{rouge}{Théorème}{%
+     Le nombre chromatique d'un graphe est inférieur ou égal à $d_{max}+1$ où $d_{max}$ est le plus grand degré des sommets.
+}
+\bloc{orange}{Exemple}{%
+     Dans l'exemple précédent le plus grand degré est 4. Le nombre chromatique du graphe est donc inférieur ou égal à 5 (On a vu que c'était 3).
+}
+\begin{h2}4. Algorithme de Dijkstra\end{h2}
+L'algorithme de Dijkstra (\textit{prononcer approximativement \og Dextra \fg{}}) permet de trouver \textbf{le plus court chemin entre deux sommets d'un graphe} (orienté ou non orienté).
+\par
+Le fonctionnement de l'algorithme de Dijkstra est généralement présenté sous forme d'un tableau dans lequel chaque ligne représente une étape.
+\par
+La construction d'un tel tableau est détaillée dans la fiche méthode~:  \mcLien{/methode/algorithme-de-dijkstra-etape-par-etape/}{Algorithme de Dijkstra - Étape par étape}.
+\input{_footer}

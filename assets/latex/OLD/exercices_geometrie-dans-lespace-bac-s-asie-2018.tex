@@ -1,0 +1,51 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Commun  à tous les candidats}
+\bigbreak
+On se place dans un repère orthonormé d'origine O et d'axes (O$x$), (O$y$) et (O$z$).
+\par
+Dans ce repère, on donne les points A$(- 3~;~0~;~0)$, B(3~;~0~;~0) , C$\left(0~;~3\sqrt{3}~;~0\right)$ et D$\left(0~;~\sqrt{3}~;~2\sqrt{6}\right)$.
+\par
+On note H le milieu du segment [CD] et I le milieu du segment [BC].
+\begin{center}
+  \begin{extern}%width="500" alt="Tétraèdre Bac S Asie 2018"
+\resizebox{10cm}{!}{
+\psset{unit=1cm,arrowsize=2pt 4}
+     \begin{pspicture}(13.5,11)
+          \psline[linestyle=solid,linecolor=lightgray]{->}(0,3)(13.5,3)
+          \psline[linestyle=solid,linecolor=lightgray]{->}(3.2,0)(3.2,9.7)
+          \psline[linestyle=solid,linecolor=lightgray]{->}(0,4.9)(7,0.7)
+          \pspolygon(1.5,4)(5,1.9)(10.8,3)(5.6,10.3)%ABCDA
+          \psline(5,1.92)(5.6,10.3)
+          \psline(1.5,4)(10.8,3)
+          \uput[dl](1.5,4){A} \uput[d](5,1.9){B} \uput[dr](10.8,3){C}
+          \uput[u](5.6,10.3){D} \uput[ur](8.2,6.65){H} \uput[dr](7.9,2.45){I}
+          \psdots[dotsize=2pt](8.2,6.65)(7.9,2.45)
+          \uput[dl](3.2,3){O}\uput[dr](13.5,3){\lightgray $y$} \uput[r](7,0.3){\lightgray $x$}
+          \uput[ul](3.2,9.7){\lightgray $z$}
+
+     \end{pspicture}
+}
+  \end{extern}
+  \end{center}
+\medbreak
+\begin{enumerate}
+     \item Calculer les longueurs AB et AD.
+     \par
+\begin{margeneg}
+On admet pour la suite que toutes les arêtes du solide ABCD ont la même longueur, c'est-à-dire que le tétraèdre ABCD est un tétraèdre régulier.\\
+On appelle $\mathscr{P}$ le plan de vecteur normal $\overrightarrow{\text{OH}}$ et passant par le point I.
+\end{margeneg}
+     \par
+     \item  Étude de la section du tétraèdre ABCD par le plan $\mathscr{P}$
+     \begin{enumerate}[label=\alph*.]
+          \item Montrer qu'une équation cartésienne du plan $\mathscr{P}$ est~: $2y\sqrt{3} + z\sqrt{6} - 9 = 0$.
+          \item Démontrer que le milieu J de [BD] est le point d'intersection de la droite (BD) et du plan $\mathscr{P}$.
+          \item  Donner une représentation paramétrique de la droite (AD), puis démontrer que le plans $\mathscr{P}$ et la droite (AD) sont sécants en un point K dont on déterminera les coordonnées.
+          \item  Démontrer que les droites (IJ) et (JK) sont perpendiculaires.
+          \item  Déterminer précisément la nature de la section du tétraèdre ABCD par le plan $\mathscr{P}$.
+     \end{enumerate}
+     \item  Peut-on placer un point M sur l'arête [BD] tel que le triangle OIM soit rectangle en M~?
+\end{enumerate}
+
+\input{_footer}

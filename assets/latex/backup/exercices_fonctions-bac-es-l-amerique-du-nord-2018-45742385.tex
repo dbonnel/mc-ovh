@@ -1,0 +1,97 @@
+\input{_header}
+\meta{url}{/exercices/fonctions-bac-es-l-amerique-du-nord-2018/}
+\meta{pid}{7892}
+\meta{titre}{Fonctions - Bac ES/L Amérique du Nord  2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (6 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+On appelle fonction \og \emph{satisfaction} \fg{} toute fonction dérivable qui prend ses valeurs entre 0 et 100. Lorsque la fonction  \og \emph{satisfaction} \fg{} atteint la valeur $100$, on dit qu'il y a \og \emph{saturation} \fg{}.
+\par
+On définit aussi la fonction \og \emph{envie} \fg{} comme la fonction dérivée de la fonction \og \emph{satisfaction} \fg{}. On dira qu'il y a \og \emph{souhait} \fg{} lorsque la fonction \og \emph{envie} \fg{} est positive ou nulle et qu'il y a \og \emph{rejet} \fg{}  lorsque la fonction \og \emph{envie} \fg{} est strictement négative.
+\medskip
+\textbf{Dans chaque partie, on teste un modèle de fonction \og \emph{\textbf{satisfaction}} \fg{} différent.} \\
+\textbf{Les parties A, B et C sont indépendantes.}
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+Un étudiant prépare un concours, pour lequel sa durée de travail varie entre 0 et 6 heures par jour. Il modélise sa satisfaction en fonction de son temps de travail quotidien par la fonction \og \emph{satisfaction} \fg{} $f$ dont la courbe représentative est donnée ci-dessous ($x$ est exprimé en heures).
+\begin{center}
+     \begin{extern}%width="370"
+          \psset{xunit=1cm,yunit=0.05cm,arrowsize=2pt 2}
+          \def\xmin {-1}   \def\xmax {7}
+          \def\ymin {-20}   \def\ymax {120}
+          \begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+               \psgrid[unit=1cm,subgriddiv=1,  gridlabels=0, gridcolor=lightgray](0,0)(8,6)
+               \psaxes[ticksize=-2pt 2pt,Dy=20]{->}(0,0)(0,0)(\xmax,\ymax)%[$x$,-110][$y$,200]
+               \def\f{x x -100 mul 600 add mul 9 div}                           % définition de la fonction
+               \psplot[linewidth=0.75pt,plotpoints=2000,linecolor=red]{0}{6}{\f}
+               \uput[ur](5.7,20){\red $\mathcal{C}_f$}
+               \psdots[dotstyle=*,dotscale=1,linecolor=red](3,100)
+               \psline[linewidth=0.75pt,linecolor=red]{<->}(2,100)(4,100)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\par
+\textbf{Par lecture graphique, répondre aux questions suivantes.}
+\begin{enumerate}
+     \item Lire la durée de travail quotidien menant à \og \emph{saturation} \fg{}.
+     \item Déterminer à partir de quelle durée de travail il y a \og \emph{rejet} \fg{}.
+\end{enumerate}
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+Le directeur d'une agence de trekking modélise la satisfaction de ses clients en fonction de la durée de leur séjour. On admet que la fonction \og \emph{satisfaction} \fg{} $g$ est définie sur l'intervalle $[0\,~:\,30]$ par
+$g(x)=12,5 x \text{e}^{-0,125x+1}$ ($x$ est exprimé en jour).
+\begin{enumerate}
+     \item Démontrer que, pour tout $x$ de l'intervalle   $[0~;~30]$,
+     \par
+     \[g'(x)=(12,5-1,562~5 x) \text{e}^{-0,125x+1}.\]
+     \par
+     \item \'Etudier le signe de $g'(x)$ sur l'intervalle  $[0~;~30]$ puis dresser le tableau des variations de $g$ sur cet intervalle.
+     \item Quelle durée de séjour correspond-elle à l'effet \og \emph{saturation} \fg{}~?
+\end{enumerate}
+\begin{center}\begin{h3}Partie C \end{h3}\end{center}
+La direction des ressources humaines d'une entreprise modélise la satisfaction d'un salarié en fonction du salaire annuel qu'il perçoit. On admet que la fonction \og \emph{satisfaction} \fg{} $h$, est définie sur l'intervalle $[10~;~50]$ par
+\par
+\[h(x)=\dfrac{90}{1+\text{e}^{-0,25 x +6}}\]
+\par
+($x$ est exprimé en millier d'euros).
+\par
+La courbe $\mathcal{C}_h$ de la fonction $h$ est représentée ci-dessous~:
+\begin{center}
+     \begin{extern}
+          \psset{xunit=0.2cm,yunit=0.1cm,arrowsize=3pt 3}
+          \def\xmin {-3}   \def\xmax {55}
+          \def\ymin {-5}   \def\ymax {100}
+          \begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+               \psgrid[unit=1cm,subgriddiv=1,  gridlabels=0, gridcolor=lightgray](0,0)(0,0)(11,10)
+               \psaxes[ticksize=-2pt 2pt,Dy=10,Dx=5]{->}(0,0)(0,0)(\xmax,\ymax)
+               \def\f{90 1 2.7183 x -0.25 mul 6 add exp add div}                           % définition de la fonction
+               \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{10}{50}{\f}
+               \uput[ur](30,70){\red $\mathcal{C}_h$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+Un logiciel de calcul formel donne les résultats suivants~:
+\begin{center}
+     \begin{extern}%width="600"
+          \renewcommand{\arraystretch}{1.5}
+          \begin{tabular}{|l|l|}
+               \hline
+               & \verb!Dériver(90/(1 + exp(-0.25 * x + 6))) !\\
+               1 & \\
+               & \hfill{}$\dfrac{22,5 \text{e}^{-0,25x+6}}{\left(1+\text{e}^{-0,25x+6}\right)^2}$\rule[-20pt]{0pt}{0pt}\\
+               \hline
+               & \verb!Dériver(22.5 * exp(-0,25 x + 6)/(1 + exp(-0,25 * x + 6))^2) !\\
+               2 & \\
+               & \hfill{}$\dfrac{5,625 \text{e}^{-0,25x+6} \left(\text{e}^{-0,25x + 6} -1\right)}{\left(1+\text{e}^{-0,25x+6}\right)^3}$\rule[-20pt]{0pt}{0pt}\\
+               \hline
+          \end{tabular}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item Donner sans justification une expression de $h''(x)$.
+     \item Résoudre dans l'intervalle $[10\,~:\,50]$ l'inéquation $\text{e}^{-0,25x+6}-1>0$.
+     \item \'Etudier la convexité de la fonction $h$ sur l'intervalle $[10\,~:\,50]$.
+     \item À partir de quel salaire annuel peut-on estimer que la fonction \og \emph{envie} \fg{} décroît~? Justifier.
+     \item Déterminer, en le justifiant, pour quel salaire annuel la fonction \og \emph{satisfaction} \fg{} atteint 80.\\ \emph{Arrondir au millier d'euros.}
+\end{enumerate}
+\input{_footer}

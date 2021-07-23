@@ -1,0 +1,105 @@
+\input{_header}
+\meta{url}{/exercices/qcm-bac-es-l-liban-2018/}
+\meta{pid}{7793}
+\meta{titre}{QCM - Bac ES/L Liban 2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 (4 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre propositions est exacte. 
+\\
+Aucune justification n'est demandée. 
+\\
+Une bonne réponse rapporte un point. Une mauvaise réponse, plusieurs réponses ou l'absence de réponse à une question ne rapportent ni n'enlèvent de point. Pour répondre, vous recopierez \textbf{sur votre copie} le numéro de la question et indiquerez la seule bonne réponse.}
+\par
+Pour les questions \textbf{1.} et \textbf{2.} et \textbf{3.}, on a représenté ci-dessous la courbe représentative d'une fonction $f$ ainsi que deux de ses tangentes aux points d'abscisses respectives 2 et 4.
+\begin{center}
+     \begin{extern}
+          \psset{unit=0.8cm}
+          \def\xmin {-5}   \def\xmax {9}
+          \def\ymin {-4}   \def\ymax {7}
+          \begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+               \psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray]
+               \psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+               \def\f{x x x 6 sub mul 4 add mul 32 add 8 div}                           % définition de la fonction
+               \psplot[plotpoints=2000,linecolor=red]{\xmin}{\xmax}{\f}
+               \rput(-3,-3.5){$\red \mathcal{C}_f$}
+               \psplot[plotpoints=2000,linecolor=mcvert]{\xmin}{\xmax}{x 2 div}% Tangente en x = 4
+               \psplot[plotpoints=2000,linecolor=mcvert]{\xmin}{\xmax}{x neg 5 add}% Tangente en x = 2
+               \psdots[dotstyle=*, dotscale=0.5, linecolor=mcvert](4,2)(2,3)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item $f'(4)$ est égal à~:
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|X|X|}%class="cel50 noborder"
+               \hline
+               \textbf{A.} \quad $2$ & \textbf{B.} \quad $-1$\\
+               \hline
+               \textbf{C.} \quad $0,5$ & \textbf{D.} \quad $0$\\
+               \hline
+          \end{tabularx}
+     \end{center}
+     \item $f$ est convexe sur l'intervalle~:
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|X|X|}%class="cel50 noborder"
+               \hline
+               \textbf{A.} \quad $]-\infty\,;\,2]$ & \textbf{B.} \quad $]-\infty\,;\,0,5]$\\
+               \hline
+               \textbf{C.} \quad $[0\,;\,4]$ & \textbf{D.} \quad $[2\,;\,5]$\\
+               \hline
+          \end{tabularx}
+     \end{center}
+     \item Une valeur approchée au dixième de la valeur moyenne de $f$ sur l'intervalle $[0\,;\,5]$ est~:
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|X|X|}%class="cel50 noborder"
+               \hline
+               \textbf{A.} \quad $-0,1$ & \textbf{B.} \quad $2,5$\\
+               \hline
+               \textbf{C.} \quad $2,9$ & \textbf{D.} \quad $14,5$\\
+               \hline
+          \end{tabularx}
+     \end{center}
+     \item Dans le repère ci-dessous, on a tracé la courbe représentative de la fonction de densité de probabilité d'une variable aléatoire $X$ qui suit une loi normale et telle que
+     \par
+     \[P(X \leqslant 649) \approx 0,158~7.\]
+     \par
+     On note respectivement $\mu$ et $\sigma$ l'espérance et l'écart-type de cette loi normale.
+     \begin{center}
+          \begin{extern}
+               \psset{xunit=0.07cm, yunit=200cm, runit=1cm, arrowsize=3pt 3, algebraic=true}
+               \def\xmin {-10}   \def\xmax {170}
+               \def\ymin {-0.005} \def\ymax {0.025}
+               \begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+                    \psline(-5,0)(165,0)
+                    \def\m{80}% moyenne
+                    \def\s{20}% écart type
+                    \def\f{1/(\s*sqrt(2*PI))*EXP((-((x-\m)/\s)^2)/2)}
+                    \def\inf{\xmin} \def\sup{60}
+                    \pscustom[fillstyle=solid,fillcolor=mcvert!20]
+                    {
+                         \psplot{\inf}{\sup}{\f} % courbe de f sur [inf ; sup]
+                         \lineto(\sup,0)\lineto(\inf,0)
+                         \closepath % indispensable !
+                    }
+                    \psline[linecolor=mcvert,linestyle=dashed,dash=2pt 2pt](80,0)(80,0.4)
+                    \psplot[plotpoints=1000,linecolor=red]{\xmin}{\xmax}{\f}
+                    \multido{\n=646+1,\i=0+20}{9}
+                    {
+                         \uput[d](\i,0){\n}
+                         \psline(\i,0.0005)(\i,-0.0005)
+                    }
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \textbf{A.} \quad $P(X\leqslant 651) $\nosp$\approx 0,658~7$
+     \par
+     \textbf{B.} \quad $P( 649  \leqslant X\leqslant 651) $\nosp$ \approx 0,683$
+     \par
+     \textbf{C.} \quad $\sigma=650$
+     \par
+     \textbf{D.} \quad $\mu=649$
+\end{enumerate}
+\input{_footer}

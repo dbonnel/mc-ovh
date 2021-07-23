@@ -1,0 +1,107 @@
+\input{_header}
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\textbf{Candidats ES n'ayant pas choisi l'enseignement de spécialité \og Mathématiques \fg{}  et candidats L}
+\par
+\medbreak
+\par
+\emph{Dans tout cet exercice les résultats seront arrondis au centième si nécessaire.}
+\par
+\medbreak
+\par
+\textbf{Les parties A et B sont indépendantes.}
+\par
+\medbreak
+\TitreC{Partie A}
+\medbreak
+\par
+Victor a téléchargé un jeu sur son téléphone. Le but de ce jeu est d'affronter des obstacles à l'aide de personnages qui peuvent être de trois types~: \og Terre \fg, \og Air\fg{} ou \og Feu \fg.
+\par
+Au début de chaque partie, Victor obtient de façon aléatoire un personnage d'un des trois
+types et peut, en cours de partie, conserver ce personnage ou changer une seule fois de type de personnage.
+\par
+Le jeu a été programmé de telle sorte que~:
+\begin{itemize}
+     \item la probabilité que la partie débute avec un personnage de type \og Terre\fg{} est $0,3$~;
+     \item la probabilité que la partie débute avec un personnage de type \og Air\fg{} est $0,5$~;
+     \item si la partie débute avec un personnage de type \og Terre \fg, la probabilité que celui-ci soit conservé est $0,5$~;
+     \item si la partie débute avec un personnage de type \og Air\fg, la probabilité que celui-ci soit conservé est $0,4$~;
+     \item si la partie débute avec un personnage de type \og Feu \fg, la probabilité que celui-ci soit conservé est $0,9$.
+\end{itemize}
+\par
+On note les événements suivants~:
+\begin{itemize}
+     \item $T$~: la partie débute avec un personnage de type \og Terre \fg{}~;
+     \item $A$~: la partie débute avec un personnage de type \og Air\fg{}~;
+     \item $F$~: la partie débute avec un personnage de type \og Feu \fg{}~;
+     \item $C$~: Victor conserve le même personnage tout au long de la partie.
+\end{itemize}
+\medbreak
+\begin{enumerate}
+     \item Recopier et compléter l'arbre de probabilités ci-dessous.
+     \begin{center}
+\begin{extern}%width="250" alt="Arbre de probabilités Bac ES/L Antilles-Guyane 2018"
+%:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+% Racine à Gauche, développement vers la droite
+\begin{tikzpicture}[xscale=1,yscale=1]
+% Styles (MODIFIABLES)
+\tikzstyle{fleche}=[-,>=latex,thick]
+\tikzstyle{noeud}=[circle,draw]
+\tikzstyle{feuille}=[circle,draw]
+\tikzstyle{etiquette}=[midway,fill=white]
+% Dimensions (MODIFIABLES)
+\def\DistanceInterNiveaux{2.2}
+\def\DistanceInterFeuilles{1}
+% Dimensions calculées (NON MODIFIABLES)
+\def\NiveauA{(0)*\DistanceInterNiveaux}
+\def\NiveauB{(1.5)*\DistanceInterNiveaux}
+\def\NiveauC{(2.5)*\DistanceInterNiveaux}
+\def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+% Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+\node[noeud] (R) at ({\NiveauA},{(2.5)*\InterFeuilles}) {$ $};
+\node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$T$};
+\node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$C$};
+\node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{C}$};
+\node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$A$};
+\node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$C$};
+\node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{C}$};
+\node[noeud] (Rc) at ({\NiveauB},{(4.5)*\InterFeuilles}) {$F$};
+\node[feuille] (Rca) at ({\NiveauC},{(4)*\InterFeuilles}) {$C$};
+\node[feuille] (Rcb) at ({\NiveauC},{(5)*\InterFeuilles}) {$\overline{C}$};
+% Arcs (MODIFIABLES : Styles)
+\draw[fleche] (R)--(Ra) ;
+\draw[fleche] (Ra)--(Raa) ;
+\draw[fleche] (Ra)--(Rab) ;
+\draw[fleche] (R)--(Rb) ;
+\draw[fleche] (Rb)--(Rba) ;
+\draw[fleche] (Rb)--(Rbb) ;
+\draw[fleche] (R)--(Rc) ;
+\draw[fleche] (Rc)--(Rca) ;
+\draw[fleche] (Rc)--(Rcb) ;
+\end{tikzpicture}
+\end{extern}
+
+          \end{center}
+     \item Calculer la probabilité que Victor obtienne et conserve un personnage de type \og Air \fg.
+     \item  Justifier que la probabilité que Victor conserve le personnage obtenu en début de partie est $0,53$.
+     \item  On considère une partie au cours de laquelle Victor a conservé le personnage obtenu
+     en début de partie.
+     \par
+     Quelle est la probabilité que ce soit un personnage de type \og Air\fg{}~?
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B}
+\medbreak
+\par
+On considère $10$ parties jouées par Victor, prises indépendamment les unes des autres.
+On rappelle que la probabilité que Victor obtienne un personnage de type \og Terre\fg{} est $0,3$.
+\par
+$Y$ désigne la variable aléatoire qui compte le nombre de personnages de type \og Terre\fg{} obtenus au début de ses $10$ parties.
+\par
+\medbreak
+\begin{enumerate}
+     \item Justifier que cette situation peut être modélisée par une loi binomiale dont on précisera les paramètres.
+     \item Calculer la probabilité que Victor ait obtenu exactement 3 personnages de type \og Terre\fg{} au début de ses $10$ parties.
+     \item Calculer la probabilité que Victor ait obtenu au moins une fois un personnage de type
+     \og Terre\fg au début de ses $10$parties.
+\end{enumerate}
+\input{_footer}

@@ -1,0 +1,161 @@
+\input{_header}
+\meta{url}{/methode/limites-du-type-k0/}
+\meta{pid}{1302}
+\meta{pi_}{1302}
+\meta{titre}{Limites du type "k/0"}
+\meta{type}{methode}
+\cadre{vert}{Situation}{%id=s100
+     On cherche à calculer la limite d'une fraction rationnelle lorsque$x$ tend vers une valeur $a$ qui annule le dénominateur; par exemple $\lim\limits_{x\rightarrow 1} \frac{x+2}{x^{2}-1}. $
+}
+\cadre{rouge}{Méthode}{%id=m100
+     \begin{itemize}
+          \item Si on a affaire à une limite du type \og $\frac{0}{0}$ \fg{} (forme indéterminée), on lève l'indétermination en factorisant le numérateur et le dénominateur puis en simplifiant la fraction
+          \item Si on a affaire à une limite du type \og  $\frac{k}{0}$ \fg{} avec $k \neq 0$:\begin{itemize}
+               \item on distingue les limites à gauche et à droite :
+               \newpar
+               $\lim\limits_{x\rightarrow  a^-} f\left(x\right)$ et $\lim\limits_{x\rightarrow  a^+} f\left(x\right)$
+               \item les limites seront égales à $+\infty $ ou $-\infty $
+               \item pour déterminer le signe de la limite on étudie le signe du quotient. On peut toutefois se limiter à l'étude de signe au voisinage de $a$ (voir exemple 3)
+          \end{itemize}
+     \end{itemize}
+}
+\par
+\bloc{orange}{Exemple 1}{%id=e100
+     Calculer $\lim\limits_{x\rightarrow 2} \frac{x^{2}-3x+2}{x^{2}-4}$
+     \newpar
+     En remplaçant $x$ par 2 dans la fraction rationnelle on obtient \og $\frac{0}{0}$ \fg{}.
+     \newpar
+     On lève l'indétermination en simplifiant la fraction.
+     \newpar
+     2 est racine de $x^{2}-3x+2$ comme on vient de le voir. Le produit des racines vaut $\frac{c}{a}=2$ donc l'autre racine est 1 (on peut, si l'on préfère, calculer le discriminant puis les racines, mais c'est plus long…).
+     \newpar
+     $x^{2}-3x+2$ peut donc se factoriser sous la forme $\left(x-1\right)\left(x-2\right)$.
+     \newpar
+     $x^{2}-4=\left(x-2\right)\left(x+2\right)$ (identité remarquable)
+     \newpar
+     Donc :
+     \newpar
+     $\lim\limits_{x\rightarrow 2} \frac{x^{2}-3x+2}{x^{2}-4} = \lim\limits_{x\rightarrow 2} \frac{\left(x-1\right)\left(x-2\right)}{\left(x-2\right)\left(x+2\right)}=\lim\limits_{x\rightarrow 2} \frac{x-1}{x+2} = \frac{1}{4}$
+}
+\bloc{orange}{Exemple 2}{%id=e200
+     Calculer $\lim\limits_{x\rightarrow -1} \frac{2}{1+x}$
+     \newpar
+     En remplaçant $x$ par -1 dans la fraction rationnelle on obtient \og $\frac{2}{0}$  \fg{}.
+     \newpar
+     La limite est donc infinie.
+     \newpar
+     Pour \textbf{l'étude du signe} on distingue les limites à gauche et à droite.
+     \newpar
+     Le numérateur est toujours positif.
+     \begin{itemize}
+          \item si $x < -1$, $1+x$ est strictement négatif
+          \item si $x > -1$, $1+x$ est strictement positif donc :
+     \end{itemize}
+     $\lim\limits_{x\rightarrow -1^-} \frac{2}{1+x}=-\infty $
+     \newpar
+     $\lim\limits_{x\rightarrow -1^+} \frac{2}{1+x}=+\infty $
+}
+\bloc{orange}{Exemple 3}{%id=e300
+     Calculer $\lim\limits_{x\rightarrow 0} \frac{x^{3}+x-3}{x^{2}-x}$
+     \newpar
+     En «remplaçant $x$ par 0» dans la fraction rationnelle on obtient «$-\frac{3}{0}$».
+     \newpar
+     La limite sera donc infinie. On distingue les limites à gauche et à droite.
+     \newpar
+     Il n'est pas facile de factoriser le numérateur qui est du troisième degré. Heureusement, cela ne sera pas nécessaire ici !
+     \newpar
+     On ne va pas construire le tableau de signes sur $\mathbb{R}$ tout entier mais \textbf{seulement au voisinage de zéro}.
+     \newpar
+     Si $x$ est proche de zéro le numérateur sera proche de $-3$ donc négatif.
+     \newpar
+     Le dénominateur se factorise $x^{2}-x=x\left(x-1\right)$ et $x-1$ est proche de $-1$ (donc négatif) lorsque $x$ est proche de 0.
+     \newpar
+     On obtient alors le tableau de signe au voisinage de $0$ :
+     \begin{center}
+          \begin{extern}%width="500" alt="Exemple tableau de signes d'un quotient"
+               \resizebox{11cm}{!}{
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignea{-1.5*\HtX}
+                         \def\ligneb{-2.5*\HtX}
+                         \def\lignec{-3.5*\HtX}
+                         \def\ligned{-4.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-3.1*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignec); les tensions
+                         \draw[double distance=2pt] (2*\Lrg,\lignec) -- (2*\Lrg,\ligned);
+                         % Ligne de l'abscisse : x
+                         \node at (-1.8*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$\cdots$};
+                         \node at (2*\Lrg,0) {$0$};
+                         \node at (4*\Lrg,0) {$\cdots$};
+                         % Ligne a
+                         \node at (-1.8*\Lrg,-1*\HtX) {$x^{3}+x-3$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {$-$};
+                         \node at (2*\Lrg,-1*\HtX) {$ $};
+                         \node at (3*\Lrg,-1*\HtX) {$-$};
+                         % Ligne b
+                         \node at (-1.8*\Lrg,-2*\HtX) {$x$};
+                         \node at (2*\Lrg,-2*\HtX) {$ $};
+                         \node at (1*\Lrg,-2*\HtX) {$-$};
+                         \node at (2*\Lrg,-2*\HtX) {$0$};
+                         \node at (3*\Lrg,-2*\HtX) {$+$};
+                         % Ligne c
+                         \node at (-1.8*\Lrg,-3*\HtX) {$x-1$};
+                         \node at (0*\Lrg,-3*\HtX) {$ $};
+                         \node at (1*\Lrg,-3*\HtX) {$-$};
+                         \node at (2*\Lrg,-3*\HtX) {$ $};
+                         \node at (3*\Lrg,-3*\HtX) {$-$};
+                         % Ligne d
+                         \node at (-1.8*\Lrg,-4*\HtX) {$\frac{x^{3}+x-3}{x^{2}-x}$};
+                         \node at (0*\Lrg,-4*\HtX) {$ $};
+                         \node at (1*\Lrg,-4*\HtX) {$-$};
+                         \node at (2*\Lrg,-4*\HtX) {$ $};
+                         \node at (3*\Lrg,-4*\HtX) {$+$};
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \ligned);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite, \ligned);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignea) -- (\droite,\lignea);
+                         \draw[cadre] (\gauche,\ligneb) -- (\droite,\ligneb);
+                         \draw[cadre] (\gauche,\lignec) -- (\droite,\lignec);
+                    \end{tikzpicture}
+               }
+          \end{extern}
+     \end{center}
+     Donc~:
+     \newpar
+     $\lim\limits_{x\rightarrow 0^-}\frac{x^{3}+x-3}{x^{2}-x}=-\infty $
+     \newpar
+     $\lim\limits_{x\rightarrow 0^+}\frac{x^{3}+x-3}{x^{2}-x}=+\infty $
+}
+\bloc{cyan}{Remarque}{%id=r400
+     Une petite astuce pour vérifier votre résultat \textbf{à la calculatrice}.
+     \newpar
+     Pour avoir une idée de la valeur de $\lim\limits_{x\rightarrow  a}f\left(x\right)$, donnez à $x$ des valeurs proches de $a$ et calculer $f\left(x\right)$
+     \newpar
+     Par exemple, pour l'exemple 3, on saisit la fonction $x\mapsto \frac{x^{3}+x-3}{x^{2}-x}$ et on calcule :
+     \newpar
+     $f\left(-0,0000000001\right)\approx -3\times 10^{10}$
+     \newpar
+     $f\left(0,0000000001\right)\approx 3\times 10^{10}$
+     \newpar
+     ce qui confirme les valeurs ( et surtout les signes ! ) que nous avons trouvées ($-\infty $ et $+\infty $).
+}
+\input{_footer}

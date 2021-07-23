@@ -1,0 +1,78 @@
+\input{_header}
+\par
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\medskip
+\textit{Les différentes parties de cet exercice peuvent être traitées de façon indépendante.}\\
+\textit{Les résultats numériques seront donnés, si nécessaire, sous forme approchée à 0,01~près.}
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+Un commerçant dispose dans sa boutique d'un terminal qui permet à ses clients, s'ils souhaitent
+régler leurs achats par carte bancaire, d'utiliser celle-ci en mode sans contact (quand le montant de
+la transaction est inférieur ou égal à 30~\euro) ou bien en mode code secret (quel que soit le montant
+de la transaction).
+\smallskip
+Il remarque que~:
+\begin{itemize}
+     \item 80\,\% de ses clients règlent des sommes inférieures ou égales à 30~\euro. Parmi eux~:
+     \begin{itemize}[label=---]
+          \item 40\,\% paient en espèces~;
+          \item 40\,\% paient avec une carte bancaire en mode sans contact~;
+          \item les autres paient avec une carte bancaire en mode code secret.
+     \end{itemize}
+     \item 20\,\% de ses clients règlent des sommes strictement supérieures à 30~\euro. Parmi eux~:
+     \begin{itemize}[label=---]
+          \item 70\,\% paient avec une carte bancaire en mode code secret~;
+          \item les autres paient en espèces.
+     \end{itemize}
+\end{itemize}
+\smallskip
+On interroge au hasard un client qui vient de régler un achat dans la boutique.
+\medskip
+On considère les événements suivants~:
+\begin{itemize}
+     \item
+     $V$~: \og pour son achat, le client a réglé un montant inférieur ou égal à 30~\euro \fg~;
+     \item
+     $E$~: \og pour son achat, le client a réglé en espèces \fg~;
+     \item
+     $C$~: \og pour son achat, le client a réglé avec sa carte bancaire en mode code secret \fg~;
+     \item
+     $S$~: \og pour son achat, le client a réglé avec sa carte bancaire en mode sans contact \fg.
+\end{itemize}
+\bigskip
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Donner la probabilité de l'événement $V$, notée $P(V)$, ainsi que la probabilité de $S$ sachant
+          $V$ notée $P_V(S)$.
+          \item Traduire la situation de l'énoncé à l'aide d'un arbre pondéré.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Calculer la probabilité que pour son achat, le client ait réglé un montant inférieur ou égal à
+          30~\euro{} et qu'il ait utilisé sa carte bancaire en mode sans contact.
+          \item Montrer que la probabilité de l'événement~: \og pour son achat, le client a réglé avec sa carte
+          bancaire en utilisant l'un des deux modes\fg{} est égale à $0,62$.
+     \end{enumerate}
+\end{enumerate}
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+On note $X$ la variable aléatoire qui prend pour valeur la dépense en euros d'un client suite à un
+achat chez ce commerçant.
+\par
+On admet que $X$ suit la loi normale de moyenne $27,5$ et d'écart-type $3$.
+\par
+On interroge au hasard un client qui vient d'effectuer un achat dans la boutique.
+\medskip
+\begin{enumerate}
+     \item Calculer la probabilité que ce client ait dépensé moins de 30~\euro.
+     \item Calculer la probabilité que ce client ait dépensé entre 24,50~\euro{} et 30,50~\euro.
+\end{enumerate}
+\begin{center}\begin{h3}Partie C \end{h3}\end{center}
+Une enquête de satisfaction a été réalisée auprès d'un échantillon de $200$ clients de cette boutique.
+\par
+Parmi eux, 175 trouvent que le dispositif sans contact du terminal est pratique.
+\par
+Déterminer, avec un niveau de confiance de $0,95$, l'intervalle de confiance de la proportion $p$ de
+clients qui trouvent que le dispositif sans contact est pratique.
+\par
+\input{_footer}

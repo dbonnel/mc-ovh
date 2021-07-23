@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 2 -->
+<svg x="0" y="0" width="730" height="805" viewBox="0 0 730 805" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+
+.s22_2{
+font-size: 27.63px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s8_2{
+font-size: 18.36px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s12_2{
+font-size: 18.22px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s14_2{
+font-size: 18.36px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s9_2{
+font-size: 18.36px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s17_2{
+font-size: 24.15px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s18_2{
+font-size: 10.67px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s24_2{
+font-size: 24.38px;
+font-family: CambriaMath_1b;
+fill: #FF0000;
+}
+.s5_2{
+font-size: 29.00px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s11_2{
+font-size: 18.22px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s16_2{
+font-size: 18.36px;
+font-family: TimesNewRoman_o;
+fill: #000000;
+}
+.s3_2{
+font-size: 18.33px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s1_2{
+font-size: 18.33px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s2_2{
+font-size: 18.33px;
+font-family: CambriaMath_1b;
+fill: #000000;
+}
+.s19_2{
+font-size: 18.41px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s15_2{
+font-size: 18.33px;
+font-family: TimesNewRoman_o;
+fill: #000000;
+}
+.s10_2{
+font-size: 10.54px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s23_2{
+font-size: 27.50px;
+font-family: CambriaMath_1b;
+fill: #000000;
+}
+.s21_2{
+font-size: 18.41px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s20_2{
+font-size: 18.41px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s13_2{
+font-size: 12.28px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s6_2{
+font-size: 10.64px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s4_2{
+font-size: 24.07px;
+font-family: Symbol_j;
+fill: #000000;
+}
+.s7_2{
+font-size: 10.64px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,805
+L730,805
+L730,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="25" 
+y="26" 
+dx="0,0,-0.1,0,0,-0.1,0,0,-0.1,0,-0.1,0,0.2,-0.1,0,0.1,0,0,0,-0.2,0.1,-0.1,0,0,0.2,0,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0.2,0,0,-0.1" 
+class="s1_2"
+>4) Représentation graphique de la courbe </text>
+
+<text 
+x="332" 
+y="26" 
+dx="0" 
+class="s2_2"
+>°</text>
+
+<text 
+x="347" 
+y="26" 
+dx="0,0.2" 
+class="s1_2"
+>: </text>
+
+<text 
+x="25" 
+y="473" 
+dx="0,0,0,0,0,0,0,-0.1,0,0" 
+class="s1_2"
+>5) Soient </text>
+
+<text 
+x="97" 
+y="473" 
+dx="0,0,0,0,0" 
+class="s3_2"
+>a, b </text>
+
+<text 
+x="133" 
+y="473" 
+dx="0,-0.1,0" 
+class="s1_2"
+>et </text>
+
+<text 
+x="151" 
+y="473" 
+dx="0" 
+class="s3_2"
+>c</text>
+
+<text 
+x="164" 
+y="473" 
+dx="0,0,0,0,0,0,0,0.1,-0.1,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0.2,-0.1,0,0.1,0,0" 
+class="s1_2"
+>trois réels et la fonction </text>
+
+<text 
+x="342" 
+y="473" 
+dx="0" 
+class="s3_2"
+>F</text>
+
+<text 
+x="357" 
+y="473" 
+dx="0,0,-0.1,0,0.1,0,0,0,0,0,0,-0.1" 
+class="s1_2"
+>définie sur </text>
+
+<image x="443" y="450" width="74" height="38" xlink:href="2/img/1.png" />
+<text 
+x="464" 
+y="473" 
+dx="0,0,-0.1,0" 
+class="s1_2"
+>par </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 511, 475)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 529, 475)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(0.63, 0, 0, 1, 553, 476)"
+dx="0" 
+class="s5_2"
+></text>
+
+<text 
+transform="matrix(0.63, 0, 0, 1, 645, 476)"
+dx="0" 
+class="s5_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 578, 465)"
+dx="0" 
+class="s6_2"
+>2</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 662, 465)"
+dx="0" 
+class="s7_2"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 496, 474)"
+dx="0,0,7.3" 
+class="s8_2"
+>F x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 560, 474)"
+dx="0,-0.1" 
+class="s8_2"
+>ax</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 601, 474)"
+dx="0,-0.1" 
+class="s8_2"
+>bx</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 635, 474)"
+dx="0,0,4.6" 
+class="s8_2"
+>c e</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 539, 474)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 589, 474)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 622, 474)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+x="670" 
+y="473" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="25" 
+y="506" 
+dx="0,0,0,-0.1,0,0,-0.1" 
+class="s1_2"
+>5.a) ) </text>
+
+<text 
+x="68" 
+y="506" 
+dx="0" 
+class="s3_2"
+>F</text>
+
+<text 
+x="80" 
+y="506" 
+dx="0" 
+class="s1_2"
+>(</text>
+
+<text 
+x="86" 
+y="506" 
+dx="0" 
+class="s3_2"
+>x</text>
+
+<text 
+x="94" 
+y="506" 
+dx="0,0,0,-0.1" 
+class="s1_2"
+>) = </text>
+
+<text 
+x="119" 
+y="506" 
+dx="0,0.2" 
+class="s3_2"
+>uv</text>
+
+<text 
+x="141" 
+y="506" 
+dx="0,-0.1,0.2,-0.1,-0.1" 
+class="s1_2"
+>avec </text>
+
+<text 
+x="229" 
+y="497" 
+dx="0" 
+class="s10_2"
+>2</text>
+
+<text 
+x="182" 
+y="506" 
+dx="0" 
+class="s11_2"
+>u</text>
+
+<text 
+x="210" 
+y="506" 
+dx="0,0" 
+class="s11_2"
+>ax</text>
+
+<text 
+x="252" 
+y="506" 
+dx="0,0" 
+class="s11_2"
+>bx</text>
+
+<text 
+x="286" 
+y="506" 
+dx="0" 
+class="s11_2"
+>c</text>
+
+<text 
+x="196" 
+y="506" 
+dx="0" 
+class="s12_2"
+></text>
+
+<text 
+x="239" 
+y="506" 
+dx="0" 
+class="s12_2"
+></text>
+
+<text 
+x="272" 
+y="506" 
+dx="0" 
+class="s12_2"
+></text>
+
+<text 
+x="302" 
+y="506" 
+dx="0,-0.1,0" 
+class="s1_2"
+>et </text>
+
+<text 
+x="320" 
+y="506" 
+dx="0" 
+class="s3_2"
+>v</text>
+
+<text 
+x="333" 
+y="506" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="348" 
+y="506" 
+dx="0" 
+class="s3_2"
+>e</text>
+
+<text 
+x="356" 
+y="499" 
+dx="0" 
+class="s13_2"
+>x</text>
+
+<text 
+x="361" 
+y="506" 
+dx="0,0,0,0,0,0,-0.1,0" 
+class="s1_2"
+>. Alors </text>
+
+<text 
+x="416" 
+y="506" 
+dx="0" 
+class="s3_2"
+>u</text>
+
+<text 
+x="425" 
+y="506" 
+dx="0,-0.2,0,-0.1" 
+class="s1_2"
+>' = </text>
+
+<text 
+x="448" 
+y="506" 
+dx="0,0,0" 
+class="s3_2"
+>2ax</text>
+
+<text 
+x="479" 
+y="506" 
+dx="0,-0.1" 
+class="s1_2"
+>+ </text>
+
+<text 
+x="494" 
+y="506" 
+dx="0" 
+class="s3_2"
+>b</text>
+
+<text 
+x="503" 
+y="506" 
+dx="0,0" 
+class="s1_2"
+>, </text>
+
+<text 
+x="512" 
+y="506" 
+dx="0" 
+class="s3_2"
+>v</text>
+
+<text 
+x="520" 
+y="506" 
+dx="0,-0.2,0.2,-0.1" 
+class="s1_2"
+>' = </text>
+
+<text 
+x="543" 
+y="506" 
+dx="0" 
+class="s3_2"
+>e</text>
+
+<text 
+x="551" 
+y="499" 
+dx="0" 
+class="s13_2"
+>x</text>
+
+<text 
+x="561" 
+y="506" 
+dx="0,-0.1,0,0,0.3" 
+class="s1_2"
+>et : </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 49, 533)"
+dx="0,0,9.5" 
+class="s4_2"
+> </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 222, 533)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 275, 533)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 308, 533)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 350, 533)"
+dx="0" 
+class="s4_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 199, 523)"
+dx="0" 
+class="s6_2"
+>2</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 44, 532)"
+dx="0" 
+class="s14_2"
+>'</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 102, 532)"
+dx="0" 
+class="s14_2"
+>'</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 151, 532)"
+dx="0" 
+class="s14_2"
+>'</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 229, 532)"
+dx="0" 
+class="s14_2"
+>2</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 376, 523)"
+dx="0" 
+class="s7_2"
+>x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 29, 532)"
+dx="0" 
+class="s8_2"
+>F</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 57, 532)"
+dx="0" 
+class="s8_2"
+>x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 90, 532)"
+dx="0,0,2.8" 
+class="s8_2"
+>u v</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 131, 532)"
+dx="0,-0.2" 
+class="s8_2"
+>uv</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 180, 532)"
+dx="0,-0.2" 
+class="s8_2"
+>ax</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 239, 532)"
+dx="0" 
+class="s8_2"
+>a</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 264, 532)"
+dx="0,0,5.5" 
+class="s8_2"
+>b x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 315, 532)"
+dx="0" 
+class="s8_2"
+>b</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 341, 532)"
+dx="0" 
+class="s8_2"
+>c</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 367, 532)"
+dx="0" 
+class="s8_2"
+>e</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 173, 531)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 357, 531)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 77, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 119, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 158, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 209, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 251, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 295, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 328, 532)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 173, 539)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 357, 539)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+x="384" 
+y="532" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="25" 
+y="581" 
+dx="0,0,0,0,0" 
+class="s1_2"
+>5.b) </text>
+
+<text 
+x="59" 
+y="581" 
+dx="0" 
+class="s3_2"
+>F</text>
+
+<text 
+x="75" 
+y="581" 
+dx="0,0" 
+class="s1_2"
+>'(</text>
+
+<text 
+x="84" 
+y="581" 
+dx="0" 
+class="s3_2"
+>x</text>
+
+<text 
+x="92" 
+y="581" 
+dx="0,0,0.1,-0.1" 
+class="s1_2"
+>) = </text>
+
+<text 
+x="118" 
+y="581" 
+dx="0" 
+class="s3_2"
+>f</text>
+
+<text 
+x="128" 
+y="581" 
+dx="0,-0.2" 
+class="s1_2"
+>'(</text>
+
+<text 
+x="137" 
+y="581" 
+dx="0" 
+class="s3_2"
+>x</text>
+
+<text 
+x="145" 
+y="581" 
+dx="0,0,0,0,0,0,0,0,0,0,0" 
+class="s1_2"
+>) implique </text>
+
+<text 
+x="226" 
+y="581" 
+dx="0" 
+class="s3_2"
+>a</text>
+
+<text 
+x="239" 
+y="581" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="254" 
+y="581" 
+dx="0" 
+class="s15_2"
+>–</text>
+
+<text 
+x="263" 
+y="581" 
+dx="0,0,0,0" 
+class="s1_2"
+>1, 2</text>
+
+<text 
+x="291" 
+y="581" 
+dx="0" 
+class="s3_2"
+>a</text>
+
+<text 
+x="305" 
+y="581" 
+dx="0,-0.1" 
+class="s1_2"
+>+ </text>
+
+<text 
+x="320" 
+y="581" 
+dx="0" 
+class="s3_2"
+>b</text>
+
+<text 
+x="333" 
+y="581" 
+dx="0,-0.1,0,0,0,-0.1,0" 
+class="s1_2"
+>= 0 et </text>
+
+<text 
+x="380" 
+y="581" 
+dx="0" 
+class="s3_2"
+>b</text>
+
+<text 
+x="394" 
+y="581" 
+dx="0,-0.1" 
+class="s1_2"
+>+ </text>
+
+<text 
+x="409" 
+y="581" 
+dx="0" 
+class="s3_2"
+>c</text>
+
+<text 
+x="421" 
+y="581" 
+dx="0,-0.1,0,0,0.2" 
+class="s1_2"
+>= 1. </text>
+
+<text 
+x="25" 
+y="602" 
+dx="0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s1_2"
+>Ce qui donne : </text>
+
+<text 
+x="137" 
+y="602" 
+dx="0" 
+class="s3_2"
+>a</text>
+
+<text 
+x="151" 
+y="602" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="166" 
+y="602" 
+dx="0" 
+class="s15_2"
+>–</text>
+
+<text 
+x="175" 
+y="602" 
+dx="0,0,0" 
+class="s1_2"
+>1, </text>
+
+<text 
+x="194" 
+y="602" 
+dx="0" 
+class="s3_2"
+>b</text>
+
+<text 
+x="207" 
+y="602" 
+dx="0,-0.1,0,0,0,-0.1,0" 
+class="s1_2"
+>= 2 et </text>
+
+<text 
+x="254" 
+y="602" 
+dx="0" 
+class="s3_2"
+>c</text>
+
+<text 
+x="267" 
+y="602" 
+dx="0,-0.1" 
+class="s1_2"
+>= </text>
+
+<text 
+x="281" 
+y="602" 
+dx="0" 
+class="s15_2"
+>–</text>
+
+<text 
+x="291" 
+y="602" 
+dx="0,0,0.2" 
+class="s1_2"
+>1. </text>
+
+<text 
+x="25" 
+y="628" 
+dx="0,0,0,0,0,0" 
+class="s1_2"
+>Alors </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 89, 630)"
+dx="0,0,9.5" 
+class="s4_2"
+> </text>
+
+<text 
+transform="matrix(0.63, 0, 0, 1, 131, 631)"
+dx="0" 
+class="s5_2"
+></text>
+
+<text 
+transform="matrix(0.63, 0, 0, 1, 224, 631)"
+dx="0" 
+class="s5_2"
+></text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 159, 620)"
+dx="0" 
+class="s6_2"
+>2</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 182, 628)"
+dx="0" 
+class="s16_2"
+>2</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 205, 628)"
+dx="0,1.5" 
+class="s16_2"
+>–1</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 242, 620)"
+dx="0" 
+class="s7_2"
+>x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 74, 628)"
+dx="0,0,7.2" 
+class="s8_2"
+>F x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 150, 628)"
+dx="0" 
+class="s8_2"
+>x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 193, 628)"
+dx="0" 
+class="s8_2"
+>x</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 232, 628)"
+dx="0" 
+class="s8_2"
+>e</text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 117, 628)"
+dx="0,0,6.3" 
+class="s9_2"
+> </text>
+
+<text 
+transform="matrix(1.02, 0, 0, 1, 169, 628)"
+dx="0" 
+class="s9_2"
+></text>
+
+<text 
+x="249" 
+y="628" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="25" 
+y="678" 
+dx="0,0,0,0,-0.1,-0.1,0,0.1,-0.1,0,0,0,0,0,0,0,0.1,-0.1,-0.1,0,-0.1,0,0,0,0.2,0.1,0,0,-0.1,0,0,0.1,0,0,0,-0.1" 
+class="s1_2"
+>6) De ce qui précède on conclut que </text>
+
+<text 
+x="294" 
+y="678" 
+dx="0" 
+class="s3_2"
+>F</text>
+
+<text 
+x="305" 
+y="678" 
+dx="0" 
+class="s1_2"
+>(</text>
+
+<text 
+x="311" 
+y="678" 
+dx="0" 
+class="s3_2"
+>x</text>
+
+<text 
+x="320" 
+y="678" 
+dx="0,0,0.1,-0.1,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0.1,0,-0.1,0,0,-0.1" 
+class="s1_2"
+>) est une primitive de </text>
+
+<text 
+x="480" 
+y="678" 
+dx="0" 
+class="s3_2"
+>f</text>
+
+<text 
+x="485" 
+y="678" 
+dx="0" 
+class="s1_2"
+>(</text>
+
+<text 
+x="491" 
+y="678" 
+dx="0" 
+class="s3_2"
+>x</text>
+
+<text 
+x="499" 
+y="678" 
+dx="0,-0.1,0.2" 
+class="s1_2"
+>). </text>
+
+<text 
+x="25" 
+y="715" 
+dx="0,0,0,0,0,0,0" 
+class="s1_2"
+>Alors, </text>
+
+<text 
+x="75" 
+y="715" 
+dx="0" 
+class="s2_2"
+>±</text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 139, 716)"
+dx="0,0,9.6" 
+class="s17_2"
+> </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 220, 716)"
+dx="0,0,4.7" 
+class="s17_2"
+> </text>
+
+<text 
+transform="matrix(0.76, 0, 0, 1, 272, 716)"
+dx="0,0,8.9" 
+class="s17_2"
+> </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 115, 694)"
+dx="0" 
+class="s18_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 115, 735)"
+dx="0" 
+class="s18_2"
+>0</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 165, 715)"
+dx="0" 
+class="s19_2"
+>d</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 225, 715)"
+dx="0" 
+class="s19_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 279, 715)"
+dx="0" 
+class="s19_2"
+>0</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 311, 715)"
+dx="0" 
+class="s19_2"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 127, 715)"
+dx="0" 
+class="s20_2"
+>f</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 147, 715)"
+dx="0" 
+class="s20_2"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 178, 715)"
+dx="0" 
+class="s20_2"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 205, 715)"
+dx="0" 
+class="s20_2"
+>F</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 257, 715)"
+dx="0" 
+class="s20_2"
+>F</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 99, 715)"
+dx="0" 
+class="s21_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 190, 715)"
+dx="0" 
+class="s21_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 243, 715)"
+dx="0" 
+class="s21_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 299, 715)"
+dx="0" 
+class="s21_2"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 114, 722)"
+dx="0" 
+class="s22_2"
+></text>
+
+<text 
+x="322" 
+y="715" 
+dx="0,0" 
+class="s1_2"
+>. </text>
+
+<text 
+x="25" 
+y="756" 
+dx="0,0,0,0,-0.1,0,-0.1,0,0,0,0,0,0,0.2,-0.1,0,0,0" 
+class="s1_2"
+>7) Graphiquement, </text>
+
+<text 
+x="168" 
+y="756" 
+dx="0" 
+class="s2_2"
+>±</text>
+
+<text 
+x="189" 
+y="756" 
+dx="0,-0.1,0,0.2,0,0,-0.1,-0.1,0,0.1,-0.1,0,-0.1,0,0,0,0,0,0,0,0.1,-0.1,0,0,0,-0.1,0,0,0,0.1,0.1,0,0,0,0,-0.1" 
+class="s1_2"
+>est l'aire comprise entre la courbe </text>
+
+<text 
+x="440" 
+y="756" 
+dx="0" 
+class="s2_2"
+>°</text>
+
+<text 
+x="451" 
+y="756" 
+dx="0,0,0,0.2,-0.2,-0.1,0.2,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0.2,-0.1,0,0,-0.1,0,0,0.1,0,-0.1,0.2,-0.1,0,0,-0.1,0" 
+class="s1_2"
+>, l'axe des abscisses et l'axe des </text>
+
+<text 
+x="25" 
+y="777" 
+dx="0,0,0,0,0,-0.1,0,-0.1,-0.1,0,0,0,0.2,-0.1,0,0.1,0,0.1,0,0,-0.1,0,-0.1,0,0,0.1,0,0,-0.2,-0.1,0,0,0.2,0,0,0,-0.1,0,0,0.1,-0.2,0,0.1,-0.1,0,-0.1,0.2,0,0,-0.1,0,0.2,0,0,0" 
+class="s1_2"
+>ordonnées (délimitée en rouge sur la figure ci-dessus).</text>
+
+<image x="45" y="51" width="669" height="353" xlink:href="2/img/2.png" />
+<text 
+x="442" 
+y="195" 
+dx="0" 
+class="s23_2"
+>°</text>
+
+<text 
+x="559" 
+y="193" 
+dx="0" 
+class="s24_2"
+>±</text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: CambriaMath_1b;
+	src: url("fonts/CambriaMath_1b.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRoman_o;
+	src: url("fonts/TimesNewRoman_o.woff") format("woff");
+}
+
+@font-face {
+	font-family: Symbol_j;
+	src: url("fonts/Symbol_j.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

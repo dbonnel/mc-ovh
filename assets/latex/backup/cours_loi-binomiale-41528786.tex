@@ -1,0 +1,225 @@
+\input{_header}
+\meta{url}{/cours/loi-binomiale/}
+\meta{pid}{306}
+\meta{titre}{Schéma de Bernoulli - Loi binomiale}
+\meta{type}{cours}
+\begin{h2}1. Loi de Bernoulli\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     On appelle \textbf{épreuve de Bernoulli} de paramètre $p$ (avec $0 < p < 1$) une expérience aléatoire ayant deux issues :
+     \begin{itemize}
+          \item l'une appelée \textbf{succès} (généralement notée $S$) de probabilité $p$,
+          \item l'autre appelée \textbf{échec} (généralement notée $\overline S$) de probabilité $1-p$.
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%id="d20"
+     On considère la variable aléatoire $X$ qui vaut $1$ en cas de succès et $0$ en cas d'échec.
+     \par
+     Cette variable aléatoire suit la \textbf{loi de Bernoulli de paramètre $p$}, définie par le tableau suivant:
+     \begin{center}
+          \begin{tabularx}{0.4\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               \textbf{$x_{i}$} & $0$ & $1$\\ \hline
+               \textbf{$p\left(X=x_{i}\right)$} & $1-p$ & $p$\\ \hline
+          \end{tabularx}
+     \end{center}
+}
+\bloc{orange}{Exemple}{%id="e20"
+     Au bonneteau, deux cartes noires et une carte rouge sont présentées, faces cachées, sur la table.
+     \begin{center}
+          \imgsvg{bonneteau}{0.25}%width="250" alt="Bonneteau"
+     \end{center}
+     On suppose qu'un joueur choisit une carte complètement au hasard.
+     \par
+     On a affaire à une loi de Bernoulli de paramètre $p=\frac{1}{3}$.
+     \par
+     La probabilité de succès est : $p\left(S\right)=p=\frac{1}{3}$ et la probabilité d'échec $p\left(\overline S\right)=1-p=\frac{2}{3}$
+}
+\cadre{vert}{Propriété}{%id="p30"
+     L'espérance mathématique d'une variable aléatoire $X$ qui suit une loi de Bernoulli de paramètre $p$ est :
+     \begin{center}
+          $E\left(X\right)=p.$
+     \end{center}
+}
+\bloc{cyan}{Démonstration}{%id="m30"
+     D'après la définition de l'espérance mathématique :
+     \par
+     $E\left(X\right)=0\times \left(1-p\right)+1\times p=p.$
+}
+\begin{h2}2. Schéma de Bernoulli - Loi binomiale\end{h2}
+\cadre{bleu}{Définition}{%id="d40"
+     On appelle \textbf{schéma de Bernoulli} la répétition d'épreuves de Bernoulli \textbf{identiques} et \textbf{indépendantes}.
+}
+\bloc{orange}{Exemple}{%id="e40"
+     Une urne contient 2 boules rouges et 3 boules blanches. On tire 3 boules au hasard.
+     \begin{itemize}
+          \item Si l'épreuve s'effectue sans remise, les tirages ne sont ni identiques, ni indépendants. En effet, le fait d'avoir retiré une boule lors du premier tirage fait que le second tirage n'est pas identique au premier.
+          \item Si l'épreuve s'effectue avec remise, on pourra, par contre, considérer que les tirages sont identiques et indépendants. On a donc bien, dans ce cas, un schéma de Bernoulli.
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%id="d50"
+     Soit $X$ la variable aléatoire qui \textbf{compte le nombre de succès} dans un schéma de Bernouilli constitué de $n$ épreuves ayant chacune une probabilité de succès égale à $p$.
+     \par
+     La variable aléatoire X suit une loi appelée \textbf{loi binomiale de paramètres $n$ et $p$}, souvent notée $\mathscr B \left(n ; p\right)$.
+}
+\bloc{orange}{Exemple}{%id="e50"
+     On reprend l'exemple précédent : tirage au hasard et avec remise de 3 boules parmi 5 boules comportant 2 boules rouges et 3 boules blanches. On considère la variable aléatoire $X$ qui compte le nombre de boules rouges obtenues. La variable $X$ sur une loi binomiale de paramètres 3 (nombre d'épreuves) et $\frac{2}{5}$ (probabilité d'obtenir une boule rouge lors d'une épreuve).
+     \par
+     Ce schéma peut être représenté par l'arbre suivant :
+     \begin{center}
+          \begin{extern}%width="420" alt="Arbre schéma de Bernoulli"
+               %:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+               % Racine à Gauche, développement vers la droite
+               \resizebox{8cm}{!}{
+                    \begin{tikzpicture}[xscale=1,yscale=1]
+                         % Styles (MODIFIABLES)
+                         \tikzstyle{fleche}=[>=latex,thick]
+                         \tikzstyle{noeud}=[circle,draw]
+                         \tikzstyle{feuille}=[circle,draw]
+                         \tikzstyle{etiquette}=[midway,fill=white]
+                         % Dimensions (MODIFIABLES)
+                         \def\DistanceInterNiveaux{3}
+                         \def\DistanceInterFeuilles{2}
+                         % Dimensions calculées (NON MODIFIABLES)
+                         \def\NiveauA{(0)*\DistanceInterNiveaux}
+                         \def\NiveauB{(1.6666666666666665)*\DistanceInterNiveaux}
+                         \def\NiveauC{(3)*\DistanceInterNiveaux}
+                         \def\NiveauD{(4)*\DistanceInterNiveaux}
+                         \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                         % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                         \node[noeud] (R) at ({\NiveauA},{(3.5)*\InterFeuilles}) {$ $};
+                         \node[noeud] (Ra) at ({\NiveauB},{(1.5)*\InterFeuilles}) {$S$};
+                         \node[noeud] (Raa) at ({\NiveauC},{(0.5)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Raaa) at ({\NiveauD},{(0)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Raab) at ({\NiveauD},{(1)*\InterFeuilles}) {$\overline{S}$};
+                         \node[noeud] (Rab) at ({\NiveauC},{(2.5)*\InterFeuilles}) {$\overline{S}$};
+                         \node[feuille] (Raba) at ({\NiveauD},{(2)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rabb) at ({\NiveauD},{(3)*\InterFeuilles}) {$\overline{S}$};
+                         \node[noeud] (Rb) at ({\NiveauB},{(5.5)*\InterFeuilles}) {$\overline{S}$};
+                         \node[noeud] (Rba) at ({\NiveauC},{(4.5)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rbaa) at ({\NiveauD},{(4)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rbab) at ({\NiveauD},{(5)*\InterFeuilles}) {$\overline{S}$};
+                         \node[noeud] (Rbb) at ({\NiveauC},{(6.5)*\InterFeuilles}) {$\overline{S}$};
+                         \node[feuille] (Rbba) at ({\NiveauD},{(6)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rbbb) at ({\NiveauD},{(7)*\InterFeuilles}) {$\overline{S}$};
+                         % Arcs (MODIFIABLES : Styles)
+                         \draw[fleche] (R)--(Ra) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Ra)--(Raa) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Raa)--(Raaa) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Raa)--(Raab) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (Ra)--(Rab) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (Rab)--(Raba) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Rab)--(Rabb) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (R)--(Rb) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (Rb)--(Rba) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Rba)--(Rbaa) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Rba)--(Rbab) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (Rb)--(Rbb) node[etiquette] {$\dfrac{3}{5}$};
+                         \draw[fleche] (Rbb)--(Rbba) node[etiquette] {$\dfrac{2}{5}$};
+                         \draw[fleche] (Rbb)--(Rbbb) node[etiquette] {$\dfrac{3}{5}$};
+                    \end{tikzpicture}
+                    %:-+-+-+-+- Fin
+               }
+          \end{extern}
+     \end{center}
+     Grâce à l'arbre on voit que :
+     \begin{itemize}
+          \item la probabilité d'avoir 3 succès (c'est à dire 3 boules rouges) est $p\left(X=3\right) =\left(\frac{2}{5}\right)^{3}=\frac{8}{125}$ ;
+          \item il y a 3 chemins qui correspondent à 2 succès ($SS\overline S, S\overline SS, \overline SSS$). La probabilité d'obtenir 2 boules rouges est donc :
+          \par
+          $p\left(X=2\right) =\left(\frac{2}{5}\right)^{2}\times \frac{3}{5}+\left(\frac{2}{5}\right)^{2}\times \frac{3}{5}+\left(\frac{2}{5}\right)^{2}\times \frac{3}{5}$\nosp$=3\times \left[\left(\frac{2}{5}\right)^{2}\times \frac{3}{5}\right]=\frac{36}{125}$ ;
+          \item il y a également 3 chemins qui correspondent à un unique succès ($S\overline S\overline S, \overline SS\overline S, \overline S\overline SS$). La probabilité d'obtenir une unique boule rouge est donc :
+          \par
+          $p\left(X=1\right) = \frac{2}{5}\times \left(\frac{3}{5}\right)^{2}+ \frac{2}{5}\times \left(\frac{3}{5}\right)^{2}+ \frac{2}{5}\times \left(\frac{3}{5}\right)^{2}$\nosp$=3\times \left[ \frac{2}{5}\times \left(\frac{3}{5}\right)^{2}\right]=\frac{54}{125}$ ;
+          \item la probabilité de n'avoir aucune boule rouge est $p\left(X=0\right) =\left(\frac{3}{5}\right)^{3}=\frac{27}{125}$.
+     \end{itemize}
+     La loi de $X$ est donc donnée par le tableau suivant :
+     \begin{center}
+          \begin{tabularx}{0.8\linewidth}{|*{5}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               \textbf{$x_{i}$} & $0$ & $1$ & $2$ & $3$\\ \hline
+               \textbf{$p\left(X=x_{i}\right)$} & $\frac{27}{125}$ & $\frac{54}{125}$ & $\frac{36}{125}$ & $\frac{8}{125}$\\ \hline
+          \end{tabularx}
+     \end{center}
+     On vérifie bien que $\frac{27}{125}+\frac{54}{125}+\frac{36}{125}+\frac{8}{125}=1$.
+}
+\cadre{vert}{Propriété}{%id="p60"
+     L'espérance mathématique d'une variable aléatoire $X$ qui suit une loi binomiale $\mathscr B \left(n ; p\right)$ est :
+     \begin{center}
+          $E\left(X\right)=np.$
+     \end{center}
+}
+\bloc{orange}{Exemple}{%id="e60"
+     Dans l'exemple précédent, la variable X suit une loi binomiale $\mathscr B (3 ; \dfrac{2}{5})$.
+     \par
+     Son espérance mathématique est donc $E\left(X\right)=3\times \frac{2}{5}=\frac{6}{5}=1,2$.
+     \par
+     On vérifie que l'on obtient bien le même résultat en utilisant le tableau de la loi de $X$ et la définition de l'espérance mathématique :
+     \par
+     $E\left(X\right)=0\times \frac{27}{125}+1\times \frac{54}{125}+2\times \frac{36}{125}+3\times \frac{8}{125}$\nosp$=\frac{150}{125}=1,2$.
+}
+\begin{h2}3. Coefficients binomiaux\end{h2}
+\cadre{bleu}{Définition}{%id="d70"
+     On considère un arbre pondéré représentant une loi binomiale $\mathscr B \left(n ; p\right)$.
+     \par
+     Le \textbf{coefficient binomial} $\begin{pmatrix} n \\ k \end{pmatrix}$ (lire \textit{$k$ parmi $n$}) est le nombre de chemins qui correspondent à $k$ succès.
+}
+\bloc{orange}{Exemple}{%id="e70"
+     On reprend le même exemple que précédemment. On a vu, par exemple, qu'il y avait 3 chemins correspondant à 2 succès. On a donc $\begin{pmatrix} 3 \\ 2 \end{pmatrix}= 3$.
+}
+\bloc{cyan}{Remarques}{%id="r70"
+     \begin{itemize}
+          \item On peut aussi employer le mot \textbf{combinaisons} pour désigner un coefficient binomial;
+          \item Pour calculer un coefficient binomial, sur la plupart des calculatrices, on utilise la commande \textbf{nCr}. Dans un tableur, on utilise la formule \textbf{=COMBIN(n;k)}.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p80"
+     \begin{itemize}
+          \item %
+          Pour tout entier naturel $n$ :
+          \begin{center}
+               $\begin{pmatrix} n \\ 0 \end{pmatrix}=1$ et $\begin{pmatrix} n \\ n \end{pmatrix}=1$.
+          \end{center}
+          \item %
+          Pour tout entier naturel $n$ et tout entier naturel $k$ ($0\leqslant k < n$) :
+          \begin{center}$\begin{pmatrix} n \\ k \end{pmatrix}+\begin{pmatrix} n \\ k+1 \end{pmatrix}=\begin{pmatrix} n+1 \\ k+1 \end{pmatrix}$.\end{center}
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%id="r80"
+     Ces propriétés permettent de calculer les coefficients binomiaux de proches en proches, grâce au \textit{Triangle de Pascal.}
+     La figure ci-dessous représente ce triangle pour $n\leqslant 10$
+     \begin{center}
+          \img{triangle_pascal}{0.4}%width="450" alt="triangle de Pascal"
+     \end{center}
+     Pour construire ce triangle on procède de la manière suivante :
+     \begin{itemize}
+          \item On place des «1» dans la colonne $k=0$.
+          \item On place des «1» sur la diagonale (qui correspond à $k=n$).
+          \item On utilise la formule $\begin{pmatrix} n \\ k \end{pmatrix}+\begin{pmatrix} n \\ k+1 \end{pmatrix}=\begin{pmatrix} n+1 \\ k+1 \end{pmatrix}$ pour calculer les autres coefficients.
+          \par
+          Par exemple, pour trouver $\begin{pmatrix} 7 \\ 4 \end{pmatrix}=35$ on fait la somme des deux coefficients $\begin{pmatrix} 6 \\ 3 \end{pmatrix}=20$ et $\begin{pmatrix} 6 \\ 4 \end{pmatrix}=15$ de la ligne précédente.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{%id="t90"
+     Soit $X$ une variable aléatoire de loi $\mathscr B \left(n ; p\right)$.
+     \par
+     Pour tout entier $k$ compris entre $0$ et $n$ :
+     \begin{center}
+          $p\left(X=k\right)=\begin{pmatrix} n \\ k \end{pmatrix} p^{k} \left(1-p\right)^{n-k}$.
+     \end{center}
+}
+\bloc{orange}{Exemple}{%id="e90"
+     On lance 8 fois une pièce équilibrée et on appelle $X$ la variable aléatoire qui compte le nombre de fois où l'on obtient \textit{Pile}.
+     \par
+     $X$ suit une loi binomiale de paramètres $n=8$ et $p=\frac{1}{2}$.
+     \par
+     La probabilité d'obtenir \textbf{4 fois} \textit{Pile} (par exemple) est :
+     \par
+     $p\left(X=4\right) = \begin{pmatrix} 8 \\ 4 \end{pmatrix}\times \left(\frac{1}{2}\right)^{4}\times \left(\frac{1}{2}\right)^{4}$.
+     \par
+     $\begin{pmatrix} 8 \\ 4 \end{pmatrix}= 70$ ~ (à la calculatrice).
+     \par
+     Donc :
+     \par
+     $p\left(X=4\right)=70\times \frac{1}{16}\times \frac{1}{16}=\frac{70}{256}=\frac{35}{128}$.
+}
+\input{_footer}

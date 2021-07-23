@@ -1,0 +1,198 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-bac-s-pondichery-2018/}
+\meta{pid}{7157}
+\meta{titre}{Nombres complexes – Bac S Pondichéry 2018}
+\meta{type}{exercice}
+\begin{h2}Exercice 2 (4 points)\end{h2}
+\textbf{Commun  à tous les candidats}
+\medskip
+Le plan est muni d'un repère orthonormé $(O~;~\overrightarrow{u},~\overrightarrow{v})$.
+\smallskip
+Les points A, B et C ont pour affixes respectives $a = -4,\: b = 2$ et $c = 4$.
+\medskip
+\begin{enumerate}
+     \item On considère les trois points A$'$, B$'$ et C$'$ d'affixes respectives $a'= ja$, $b'= jb$ et $c'= jc$ où $j$ est le nombre complexe $-\dfrac{1}{2} + \text{i}\dfrac{\sqrt{3}}{2}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Donner la forme trigonométrique et la forme exponentielle de $j$.
+          \par
+          En déduire les formes algébriques et exponentielles de $a'$, $b'$ et $c'$.
+          \item Les points A, B et C ainsi que les cercles de centre O et de rayon 2, 3 et 4 sont
+          représentés sur le graphique fourni en \textbf{Annexe}.
+          \par
+          Placer les points A$'$, B$'$ et C$'$ sur ce graphique.
+     \end{enumerate}
+     \item  Montrer que les points A$'$, B$'$ et C$'$ sont alignés.
+     \item  On note M le milieu du segment [A$'$C], N le milieu du segment [C$'$C] et P le milieu du
+     segment $[\text{C}'\text{A}]$.
+     \par
+     Démontrer que le triangle MNP est isocèle.
+\end{enumerate}
+\begin{center}
+     \bigskip
+     \textbf{ANNEXE}
+     \par
+     \textit{À compléter et à remettre avec la copie}
+     \bigskip
+     \begin{extern}%width="400px"
+          % src~:nombres-complexes-bac-s-pondichery-2018-1.ggb
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=0.5pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-4.74,-4.846666666666671)(4.86,4.713333333333333)
+               \multips(0,-4)(0,1.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.74,0)(4.86,0)}
+               \multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.846666666666671)(0,4.713333333333333)}
+               \psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=1.,Dy=1.,ticksize=-0.5pt 0,subticks=2]{->}(0,0)(-4.74,-4.846666666666671)(4.86,4.713333333333333)
+               \pscircle[linewidth=0.5pt](0.,0.){2.}
+               \pscircle[linewidth=0.5pt](0.,0.){4.}
+               \psline[linewidth=0.5pt]{->}(0.,0.)(1.,0.)
+               \psline[linewidth=0.5pt]{->}(0.,0.)(0.,1.)
+               \pscircle[linewidth=0.5pt](0.,0.){3.}
+               \begin{scriptsize}
+                    \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](2.,0.)
+                    \rput[bl](2.1,0.19333333333333094){\normalsize \darkgray{$B$}}
+                    \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](4.,0.)
+                    \rput[bl](4.14,0.21333333333333096){\normalsize \darkgray{$C$}}
+                    \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](0.,0.)
+                    \rput[bl](-0.64,-0.5266666666666694){\normalsize \darkgray{$O$}}
+                    \rput[bl](0.24,-0.6266666666666693){\normalsize $\overrightarrow{u}$}
+                    \rput[bl](-0.6,0.25333333333333097){\normalsize $\overrightarrow{v}$}
+                    \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](-4.,0.)
+                    \rput[bl](-4.48,0.21333333333333096){\normalsize \darkgray{$A$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $j=-\dfrac{1}{2} + \text{i}\dfrac{\sqrt{3}}{2}$\\
+               $\left| j \right| = \sqrt{\left(-\dfrac{1}{2}\right)^2+\left(\dfrac{\sqrt{3}}{2}\right)^2} = \sqrt{\dfrac{1}{4}+\dfrac{3}{4}}=1$\\
+               $\theta$ est un argument de $j$ si et seulement si $\cos \theta = -\dfrac{1}{2}$ et $\sin \theta = \dfrac{\sqrt{3}}{2}$. Donc $\dfrac{2\pi}{3}$ est un argument de $j$.
+               \par
+               La forme trigonométrique de $j$ est~:
+               \par
+               $j=\cos\left(\dfrac{2\pi}{3}\right) + \text{i}\sin\left(\dfrac{2\pi}{3}\right)$
+               \par
+               et sa forme exponentielle~:
+               \par
+               $j= \text{e}^{\frac{2\text{i}\pi}{3}}$.
+               \par
+               La forme algébrique de $a'$ est~:
+               \par
+               $a'=aj=-4j=2-2\text{i}\sqrt{3}$.
+               \par
+               Par ailleurs~:
+               \par
+               $a'=-4j= -4\text{e}^{\frac{2\text{i}\pi}{3}}$
+               \par
+               Toutefois $-4$ étant négatif, l'écriture ci-dessus n'est pas la forme exponentielle de $a'$.
+               \par
+               Pour obtenir la forme exponentielle de $a'$ on utilise le fait que $-1=\text{e}^{\text{i}\pi}$~; par conséquent~:
+               \par
+               $a'=-4\left( \text{e}^{\frac{2\text{i}\pi}{3}}\right)$\\
+               $\phantom{a'}=4 \text{e}^{\text{i}\pi}\text{e}^{\frac{2\text{i}\pi}{3}}$\\
+               $\phantom{a'}=4\text{e}^{\text{i}\left( \pi+\frac{2\pi}{3}\right)  }$.
+               \par
+               La forme exponentielle de $a'$ est donc~:
+               \par
+               $a'=4\text{e}^{\frac{5\text{i}\pi}{3}}$.
+               \smallskip
+               La forme algébrique de $b'$ est~:
+               \par
+               $b'= bj=2j=-1+\text{i}\sqrt{3}$
+               \par
+               et sa forme exponentielle~:
+               \par
+               $b'=2j=2\text{e}^{\frac{2\text{i}\pi}{3}}$.
+               \par
+               Enfin, la forme algébrique de $c'$ est~:
+               \par
+               $c'= cj=4j=-2+2\text{i}\sqrt{3}$
+               \par
+               et sa forme exponentielle~:
+               \par
+               $c'=4j=4\text{e}^{\frac{2\text{i}\pi}{3}}$.
+               \item
+               Voir figure ci-après.
+          \end{enumerate}
+          \item
+          L'affixe du vecteur $\overrightarrow{A'B'}$ est~:
+          \par
+          $b'-a'=2j-(-4j)=6j$.
+          \par
+          L'affixe du vecteur $\overrightarrow{B'C'}$ est~:
+          \par
+          $c'-b'=4j-2j=2j$.
+          \par
+          Par conséquent $\overrightarrow{A'B'}$ =3$\overrightarrow{B'C'}$.
+          \par
+          Les vecteurs $\overrightarrow{A'B'}$ et $\overrightarrow{B'C'}$ sont colinéaires donc les points $A'$, $B'$ et $C'$ sont alignés.
+          \item
+          ~
+          \begin{center}
+               \begin{extern}%width="400px"
+                    % src~:nombres-complexes-bac-s-pondichery-2018-2.ggb
+                    \newrgbcolor{qqwuqq}{0. 0.39215686274509803 0.}
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=3pt 0,linewidth=0.5pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-4.74,-4.846666666666671)(4.86,4.713333333333333)
+                         \multips(0,-4)(0,1.0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(-4.74,0)(4.86,0)}
+                         \multips(-4,0)(1.0,0){10}{\psline[linestyle=dashed,linecap=1,dash=1.5pt 1.5pt,linewidth=0.4pt,linecolor=lightgray]{c-c}(0,-4.846666666666671)(0,4.713333333333333)}
+                         \psaxes[labelFontSize=\scriptstyle,xAxis=true,yAxis=true,labels=none,Dx=1.,Dy=1.,ticksize=-2pt 0,subticks=2]{->}(0,0)(-4.74,-4.846666666666671)(4.86,4.713333333333333)
+                         \pscircle[linewidth=0.5pt](0.,0.){2.}
+                         \pscircle[linewidth=0.5pt](0.,0.){4.}
+                         \psline[linewidth=0.5pt]{->}(0.,0.)(1.,0.)
+                         \psline[linewidth=0.5pt]{->}(0.,0.)(0.,1.)
+                         \pscircle[linewidth=0.5pt](0.,0.){3.}
+                         \psline[linecolor=qqwuqq](-2.995923759375434,1.734397839456537)(1.004076240624566,1.7343978394565367)
+                         \psline[linecolor=qqwuqq](1.004076240624566,1.7343978394565367)(2.9810026048630416,-1.7428809165436194)
+                         \psline[linecolor=qqwuqq](2.9810026048630416,-1.7428809165436194)(-2.995923759375434,1.734397839456537)
+                         \begin{scriptsize}
+                              \normalsize
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](2.,0.)
+                              \rput[bl](2.1,0.19333333333333094){\darkgray{$B$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](4.,0.)
+                              \rput[bl](4.14,0.21333333333333096){\darkgray{$C$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](0.,0.)
+                              \rput[bl](-0.74,-0.6266666666666694){\darkgray{$O$}}
+                              \rput[bl](0.24,-0.7266666666666693){$\overrightarrow{u}$}
+                              \rput[bl](-0.6,0.25333333333333097){$\overrightarrow{v}$}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=darkgray](-4.,0.)
+                              \rput[bl](-4.48,0.21333333333333096){\darkgray{$A$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](1.9620052097260836,-3.485761833087239)
+                              \rput[bl](1.78,-3.24666666666667){\blue{$A'$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-0.9508987680858454,1.7594861559139423)
+                              \rput[bl](-1.02,2.0733333333333315){\blue{$B'$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=blue](-1.9918475187508682,3.4687956789130734)
+                              \rput[bl](-2.08,3.753333333333332){\blue{$C'$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=qqwuqq](2.9810026048630416,-1.7428809165436194)
+                              \rput[bl](3.06,-1.6666666666666698){\qqwuqq{$M$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=qqwuqq](1.004076240624566,1.7343978394565367)
+                              \rput[bl](1.08,1.8133333333333315){\qqwuqq{$N$}}
+                              \psdots[dotsize=3pt 0,dotstyle=*,linecolor=qqwuqq](-2.995923759375434,1.734397839456537)
+                              \rput[bl](-3.02,1.9133333333333316){\qqwuqq{$P$}}
+                         \end{scriptsize}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          L'affixe de M est~:
+          \par
+          $m=\dfrac{a'+c}{2}=3-\text{i}\sqrt{3}$
+          \par
+          L'affixe de N est~:
+          \par
+          $n=\dfrac{c'+c}{2}=1+\text{i}\sqrt{3}$
+          \par
+          L'affixe de P est~:
+          \par
+          $p=\dfrac{c'+a}{2}=-3+\text{i}\sqrt{3}$
+          \par
+          Montrons que $MN=PN$\\
+          $MN=\left|m-n \right| = \left|2-2\text{i}\sqrt{3} \right| $\\
+          $\phantom{MN}=\sqrt{2^2+\left(2 \sqrt{3}\right)^2}=\sqrt{4+12}=4$\\
+          $PN=\left|n-p \right| =\left|4 \right| = 4$
+          \par
+          Le triangle $MNP$ est donc isocèle en $N$.
+     \end{enumerate}
+\end{corrige}
+\par
+\input{_footer}

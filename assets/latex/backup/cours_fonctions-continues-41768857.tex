@@ -1,0 +1,109 @@
+\input{_header}
+\meta{url}{/cours/fonctions-continues/}
+\meta{pid}{421}
+\meta{titre}{Fonctions continues}
+\meta{type}{cours}
+\begin{h2}1. Fonctions continues\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une fonction définie sur un intervalle $I$ est \textit{\textbf{continue}} sur $I$ si l'on peut tracer sa courbe représentative \textit{sans lever le crayon}
+}
+\bloc{orange}{Exemples}{% id="e10"
+     \begin{itemize}
+          \item Les fonctions polynômes sont continues sur $\mathbb{R}$.
+          \item Les fonctions rationnelles sont continues sur chaque intervalle contenu dans leur ensemble de définition.
+          \item La fonction \textit{racine carrée} est continue sur $\mathbb{R}^+$.
+          \item Les fonctions \textit{sinus} et \textit{cosinus} sont continues sur $\mathbb{R}$
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t20"
+     Si $f$ et $g$ sont continues sur $I$, les fonctions $f+g$, $kf$ ( $k\in \mathbb{R}$ ) et $f\times g$ sont continues sur $I$.
+     \par
+     Si, de plus, $g$ ne s'annule pas sur $I$, la fonction $\frac{f}{g}$, est continue sur $I$.
+}
+\cadre{rouge}{Théorème (lien entre continuité et dérivabilité)}{% id="t30"
+     Toute fonction \textbf{dérivable} sur un intervalle $I$ est \textbf{continue} sur $I$.
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     \textbf{Attention !} La réciproque est fausse.
+     \par
+     Par exemple, la fonction valeur absolue ($x\mapsto |x|$) est continue sur $\mathbb{R}$ tout entier mais n'est pas dérivable en 0.
+}
+\begin{h2}2. Théorème des valeurs intermédiaires\end{h2}
+\cadre{rouge}{Théorème des valeurs intermédiaires}{% id="t60"
+     Si $f$ est une fonction \textbf{continue} sur un intervalle $\left[a;b\right]$ et si $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$, alors l'équation $f\left(x\right)=y_{0}$ admet \textbf{au moins une} solution sur l'intervalle $\left[a;b\right]$.
+}
+\bloc{cyan}{Remarques}{% id="r60"
+     \begin{itemize}
+          \item Ce théorème dit que l'équation $f\left(x\right)=y_{0}$ admet \textbf{une ou plusieurs solutions} mais ne permet pas de déterminer le nombre de ces solutions. Dans les exercices où l'on recherche le nombre de solutions, il faut utiliser le corollaire ci-dessous.
+          \item \textbf{Cas particulier fréquent : } Si $f$ est continue et si $f\left(a\right)$ et $f\left(b\right)$ sont de signes contraires, l'équation $f\left(x\right)=0$ admet au moins une solution sur l'intervalle $\left[a;b\right]$ (en effet,  si $f\left(a\right)$ et $f\left(b\right)$ sont de signes contraires, $0$ est compris entre $f\left(a\right)$ et $f\left(b\right)$)
+     \end{itemize}
+}
+\cadre{rouge}{Corollaire (du théorème des valeurs intermédiaires)}{% id="t70"
+     Si $f$ est une fonction \textbf{continue} et \textbf{strictement monotone} sur un intervalle $\left[a;b\right]$ et si $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$, l'équation $f\left(x\right)=y_{0}$ admet une \textbf{unique} solution sur l'intervalle $\left[a;b\right]$.
+}
+\bloc{cyan}{Remarques}{% id="r70"
+     \begin{itemize}
+          \item
+          Il faut vérifier \textbf{3 conditions} pour pouvoir appliquer ce corollaire:
+          \begin{itemize}
+               \item $f$ est continue sur $\left[a;b\right]$
+               \item $f$ est strictement croissante ou strictement décroissante sur $\left[a;b\right]$
+               \item $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$
+          \end{itemize}
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     Soit une fonction $f$ définie sur $[0 ; 4]$ dont le tableau de variations est fourni ci-dessous :
+     \begin{center}
+          \begin{extern}%width="220" alt="tableau de variations - théorème des valeurs intermédiaires"
+               \begin{tikzpicture}[scale=0.875]
+                    % Styles
+                    \tikzstyle{cadre}=[thin]
+                    \tikzstyle{fleche}=[->,>=latex,thin]
+                    \tikzstyle{nondefini}=[lightgray]
+                    % Dimensions Modifiables
+                    \def\Lrg{1.5}
+                    \def\HtX{1}
+                    \def\HtY{0.5}
+                    % Dimensions Calculées
+                    \def\lignex{-0.5*\HtX}
+                    \def\lignef{-1.5*\HtX}
+                    \def\separateur{-0.5*\Lrg}
+                    % Largeur du tableau
+                    \def\gauche{-1.5*\Lrg}
+                    \def\droite{2.5*\Lrg}
+                    % Hauteur du tableau
+                    \def\haut{0.5*\HtX}
+                    \def\bas{-2.5*\HtX-2*\HtY}
+                    % Ligne de l'abscisse : x
+                    \node at (-1*\Lrg,0) {$x$};
+                    \node at (0*\Lrg,0) {$0$};
+                    \node at (2*\Lrg,0) {$4$};
+                    % Ligne de la dérivée : f'(x)
+                    \node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+                    \node at (0*\Lrg,-1*\HtX) {$$};
+                    \node at (1*\Lrg,-1*\HtX) {$+$};
+                    \node at (2*\Lrg,-1*\HtX) {$$};
+                    % Ligne de la fonction : f(x)
+                    \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+                    \node (f1) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$-3$};
+                    \node (f2) at (2*\Lrg,{-2*\HtX+(0)*\HtY}) {$1$};
+                    % Flèches
+                    \draw[fleche] (f1) -- (f2);
+                    % Encadrement
+                    \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                    \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                    \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+               \end{tikzpicture}
+          \end{extern}
+     \end{center}
+     On cherche à déterminer le nombre de solutions de l'équation $f\left(x\right)=-1$
+     \par
+     L'unique flèche oblique montre que la fonction $f$ est \textbf{continue} et \textbf{strictement croissante} sur $\left[0;4\right]$.
+     \par
+     $-1$ est compris entre $f\left(0\right)=-3 $ et  $f\left(4\right)=1 $ .
+     \par
+     Par conséquent, l'équation $f\left(x\right)=-1$ admet une \textbf{unique} solution sur l'intervalle $[0 ; 4]$.
+}
+\input{_footer}

@@ -1,0 +1,77 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-bac-s-pondichery-2017/}
+\meta{pid}{6271}
+\meta{titre}{Nombres complexes - Bac S Pondichéry 2017}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2\end{h2}
+\textit{(3 points) - Commun à tous les candidats}
+\par
+On munit le plan complexe d'un repère orthonormé direct $(O~;~\vec{u};~\vec{v})$.
+\begin{enumerate}
+     \item
+     On considère l'équation
+     \begin{center}$(E) :\qquad  z^2-6z+c = 0$\end{center}
+     où $c$ est un réel strictement supérieur à $9$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Justifier que $(E)$ admet deux solutions complexes non réelles.
+          \item
+          Justifier que les solutions de $(E)$ sont $z_{A} = 3+\text{i}\sqrt{c-9}$  et $z_{B} = 3-\text{i}\sqrt{c-9}$.
+     \end{enumerate}
+     \item
+     On note $A$ et $B$ les points d'affixes respectives $z_{A}$ et $z_{B}$.
+     \par
+     Justifier que le triangle $OAB$ est isocèle en $O$.
+     \item
+     Démontrer qu'il existe une valeur du réel $c$ pour laquelle le triangle $OAB$ est rectangle et déterminer cette valeur.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Le discriminant de l'équation est :
+               \par
+               $\Delta = b^2-4ac=36-4c = 4(9-c)$
+               \par
+               Ce discriminant est strictement négatif puisque $c > 9$.
+               \par
+               L'équation $(E)$ admet donc deux solutions complexes non réelles conjuguées.
+               \item
+               $z_1=\dfrac{-b+\text{i}\sqrt{-\Delta}}{2a}$
+               \par
+               $z_1=\dfrac{6+2\text{i}\sqrt{c-9}}{2}$
+               \par
+               $z_1=3+\text{i}\sqrt{c-9}=z_A$
+               \par
+
+               $z_2=\overline{z_1}$
+               \par
+               $z_2=3-\text{i}\sqrt{c-9}=z_B$
+          \end{enumerate}
+          \item
+          $OA=\left|z_A \right| $
+          \par
+          $OB=\left|z_B \right|=\left|z_A \right| $ car deux nombres complexes conjugués ont les mêmes modules.
+          \par
+          Le triangle $OAB$ est donc isocèle en $O$.
+          \item
+          Le triangle $OAB$ est rectangle en $O$ si et seulement si les vecteurs $\overrightarrow{OA}$ et $\overrightarrow{OB}$ sont orthogonaux.
+          \par
+          Les coordonnées de $\overrightarrow{OA}$ sont $\begin{pmatrix} 3 \\ \sqrt{c-9} \end{pmatrix}$.
+          \par
+          Les coordonnées de $\overrightarrow{OB}$ sont $\begin{pmatrix} 3 \\ -\sqrt{c-9} \end{pmatrix}$.
+          \par
+          Les vecteurs $\overrightarrow{OA}$ et $\overrightarrow{OB}$ sont orthogonaux si et seulement si leur produit scalaire est nul.
+          \par
+          Or :
+          \par
+          $\overrightarrow{OA}.\overrightarrow{OB}=3\times 3+\sqrt{c-9}\times(-\sqrt{c-9})$
+          \par
+          $\overrightarrow{OA}.\overrightarrow{OB}=9-(c-9)=18-c$
+          \par
+          Le triangle $OAB$ est donc rectangle en $O$ si et seulement si $c=18$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

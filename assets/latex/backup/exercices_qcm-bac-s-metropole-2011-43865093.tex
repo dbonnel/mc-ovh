@@ -1,0 +1,109 @@
+\input{_header}
+\meta{url}{/exercices/qcm-bac-s-metropole-2011/}
+\meta{pid}{2444}
+\meta{titre}{Nombres complexes  QCM - Bac S Métropole-2011}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2 - 4 points\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+\textit{Pour chaque question, une seule des quatre réponses proposées est exacte. Le candidat indiquera sur la copie le numéro de la question et la réponse choisie. Chaque réponse exacte rapporte un point. 
+Aucune justification n'est demandée. Aucun point n'est enlevé en l'absence de réponse ou en cas de réponse fausse.}
+\par
+Le plan complexe est rapporté au repère orthonormal direct $\left(O,\vec{u},\vec{v}\right)$.
+\par
+On désigne par A, B, C, D les points d'affixes respectives $z_{\text{A}}=1$, $z_{\text{B}}=\text{i}$, $z_{\text{C}}=- 1$, $z_{\text{D}}=- \text{i}$.
+\begin{enumerate}
+     \item
+     L'image E du point D par la rotation de centre A et d'angle $\frac{\pi }{3}$ a pour affixe :
+     \begin{itemize}
+          \item
+          $z_{\text{E}}=\frac{1+\sqrt{3}}{2}\left(1+\text{i}\right)$,
+          \item
+          $z_{\text{E}}=\frac{1+\sqrt{3}}{2}\left(1-\text{i}\right)$,
+          \item
+          $z_{\text{E}}=\frac{1-\sqrt{3}}{2}\left(1-\text{i}\right)$,
+          \item
+          $z_{\text{E}}=\frac{1-\sqrt{3}}{2}\left(1+\text{i}\right)$,
+     \end{itemize}
+     \item
+     L'ensemble des points d'affixe $z$ telle que $|z+\text{i}|=|z -1|$ est :
+     \begin{itemize}
+          \item
+          la médiatrice du segment [BC],
+          \item
+          le milieu du segment [BC],
+          \item
+          le cercle de centre O et de rayon 1,
+          \item
+          la médiatrice du segment [AD].
+     \end{itemize}
+     \item
+     L'ensemble des points d'affixe $z$ telle que $\frac{z+\text{i}}{z+1}$ soit un imaginaire pur est :
+     \begin{itemize}
+          \item
+          la droite (CD) privée du point C,
+          \item
+          le cercle de diamètre [CD] privé du point C,
+          \item
+          le cercle de diamètre [BD] privé du point C,
+          \item
+          la médiatrice du segment [AB].
+     \end{itemize}
+     \item
+     L'ensemble des points d'affixe $z$ telle que
+     \par
+     $\text{arg}\left(z-i\right)=- \frac{\pi }{2}+2 k\pi $ où $k \in \mathbb{Z}$ est :
+     \begin{itemize}
+          \item
+          le demi-cercle de diamètre [BD] passant par A,
+          \item
+          la droite (BD),
+          \item
+          la demi-droite ]BD) d'origine B passant par D privée de B,
+          \item
+          le cercle de diamètre [BD] privé de B et D.
+     \end{itemize}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          La réponse correcte est : $\frac{1+\sqrt{3}}{2}\left(1-i\right)$
+          \par
+          En utilisant la formule de rotation pour les nombres complexes on obtient: $z_{E}=e^{i\frac{\pi }{3}}\left(z_{D}-z_{A}\right)+z_{A}$
+          \par
+          $z_{E}=\left(\frac{1}{2}+\frac{\sqrt{3}}{2}i\right)\times \left(-i-1\right)+1=\frac{\sqrt{3}+1}{2}-\frac{\sqrt{3}+1}{2}i=\frac{1+\sqrt{3}}{2}\left(1-i\right)$
+          \item
+          Les réponses correctes sont : \textbf{La médiatrice du segment [BC] et la médiatrice du segment [AD]}
+          $|z-\left(-i\right)|=|z-1|\Leftrightarrow |z-z_{D}|=|z-z_{A}|\Leftrightarrow DM=AM$
+          \par
+          d'où M appartient à la médiatrice du segment [AD]
+          \par
+          $|z-\left(-i\right)|=|z-1|\Leftrightarrow |i-z|=|-1-z|\Leftrightarrow |z_{B}-z|=|z_{C}-z|\Leftrightarrow MB=MC$
+          \par
+          d'où M appartient à la médiatrice du segment [BC]
+          \item
+          La réponse correcte est : \textbf{Le cercle de diamètre [CD] privé du point C}
+          $\frac{z-\left(-i\right)}{z-\left(-1\right)}$ est un imaginaire pur si et seulement si :
+          \par
+          $\text{arg}\left(\frac{z-\left(-i\right)}{z-\left(-1\right)}\right)\equiv \frac{\pi }{2}$ [mod. $\pi $]
+          \par
+          c'est à dire :
+          \par
+          $\left(\overrightarrow{MD};\overrightarrow{MC}\right)=\frac{\pi }{2}$
+          \par
+          donc si et seulement si M appartient au cercle de diamètre [CD] privé du point C
+          \item
+          La réponse correcte est : \textbf{La demi-droite]BD) d'origine B passant par D privée de B}
+          $\text{arg}\left(z-i\right)=-\frac{\pi }{2}+2k\pi $ où $k\in \mathbb{Z}$ si et seulement si :
+          \par
+          $\text{arg}\left(\frac{z-z_{B}}{1-0}\right)=-\frac{\pi }{2}+2k\pi $
+          \par
+          c'est à dire :
+          \par
+          $\left(\vec{u};\overrightarrow{BM}\right)=-\frac{\pi }{2}+2k\pi $
+          \par
+          donc si et seulement si M appartient à demi droite ]BD) d'origine B passant par D privée de B.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

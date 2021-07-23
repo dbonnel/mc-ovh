@@ -1,0 +1,41 @@
+\input{_header}
+\begin{h2}Exercice 3 (4 points)\end{h2}
+\par
+\textbf{Commun  à tous les candidats}
+\medbreak
+On considère la fonction $f$ définie sur l'intervalle $[0~;~ +\infty[$ par $f(x) = k\text{e}^{-kx}$  où $k$ est un nombre réel strictement positif.
+\par
+On appelle $\mathscr{C}_f$ sa représentation graphique dans le repère orthonormé $(O~;~\overrightarrow{u},~\overrightarrow{v})$.
+\par
+On considère le point A de la courbe $\mathscr{C}_f$ d'abscisse 0 et le point B de la courbe $\mathscr{C}_f$ d'abscisse 1.
+\par
+Le point C a pour coordonnées (1~;~0).
+\par
+\begin{center}
+\begin{extern}%width="300" alt=""
+     \psset{unit=3cm}
+     \begin{pspicture}(-0.2,-0.1)(2.2,2)
+          \psaxes[linewidth=1.pt,Dx=10,Dy=10](0,0)(0,0)(2.2,2)
+          \psaxes[linewidth=1.5pt,Dx=10,Dy=10]{->}(0,0)(1,1)
+          \par
+          \pscustom[fillstyle=solid,fillcolor=blue,opacity=0.1]{
+               \psplot[plotpoints=1000,linewidth=1.25pt,linecolor=blue]{0}{1}{1.5 2.71828 1.5 x mul exp div}
+          \psline(1,0.335)(0,0)}
+          \rput(0.3,0.5){\blue $\mathcal{D}$}
+          \rput(0.2,1.5){\blue $\mathcal{C}_f$}
+          \uput[d](0.5,0){$\overrightarrow{u}$}
+          \uput[l](0,0.5){$\overrightarrow{v}$}
+          \psdots(0,1.5)(1,0.335)(1,0)%ABC
+          \uput[l](0,1.5){A}\uput[u](1,0.335){B}\uput[d](1,0){C}\uput[l](0,0){O}
+          \psline(1,0.335)(1,0)
+          \psplot[plotpoints=3000,linewidth=1.25pt,linecolor=blue]{0}{2.2}{1.5 2.71828 1.5 x mul exp div}
+     \end{pspicture}
+\end{extern}
+\end{center}
+\medbreak
+\begin{enumerate}
+     \item Déterminer une primitive de la fonction $f$ sur l'intervalle $[0~;~ +\infty[$.
+     \item Exprimer, en fonction de $k$, l'aire du triangle OCB et celle du domaine $\mathscr{D}$ délimité par l'axe des ordonnées, la courbe $\mathscr{C}_f$ et le segment [OB].
+     \item Montrer qu'il existe une unique valeur du réel $k$ strictement positive telle que l'aire du domaine $\mathscr{D}$ vaut le double de celle du triangle OCB.
+\end{enumerate}
+\input{_footer}

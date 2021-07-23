@@ -1,0 +1,281 @@
+\input{_header}
+\begin{h2}I. La fonction «carré»\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     La fonction "\textbf{carré}" est la fonction  définie sur $\mathbb{R}$ par : $x\mapsto x^2$.
+     \par
+     Sa courbe représentative est une \textbf{parabole}.
+     \par
+     Elle est symétrique par rapport à l'\textbf{axe des ordonnées}.
+}
+\begin{center}
+\begin{extern}%width="230" alt="fonction carré"
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x*x}
+                    \def\xmin{-2.5}
+                    \def\xmax{2.5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5.5}
+                    \def\xunit{1.5}  % unités en cm
+                    \def\yunit{1.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                           \rput[tr](-0.2,-0.2){$O$} 
+                                     \rput[tr](2.1,5.2){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center}
+\cadre{vert}{Propriété}{% id="p20"
+     La fonction carré est strictement décroissante sur $\left]-\infty ; 0\right[$ et strictement croissante sur $\left]0;  \infty \right[$. Elle admet en 0 un minimum égal à 0.
+}
+          \begin{center}
+               \begin{extern}%width="340" alt="Tableau de variation polynôme du second degré pour a < 0"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-1.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         \draw[lightgray] (2*\Lrg,\lignef) -- (2*\Lrg,\bas);
+                         % Ligne de l'abscisse : x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$ -\infty$};
+                         \node at (2*\Lrg,0) {$0$};
+                         \node at (4*\Lrg,0) {$+\infty $};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node (f1) at (0*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                         \node (f2) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$0$};
+                         \node (f3) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                   \end{tikzpicture}
+               \end{extern}
+          \end{center}
+\begin{center}\textit{Tableau de variations de la fonction carrée}\end{center}
+
+\bloc{cyan}{Démonstration}{% id="m20"
+     Démontrons par exemple que la fonction carré est décroissante sur $\left]-\infty ; 0\right[$.
+     \par
+     Notons $f : x\mapsto x^2$ et soient $x_1$ et $x_2$, deux réels quelconques tels que $x_1 < x_2 < 0$.
+     \par
+     Alors :
+     \par
+     $f\left(x_1\right)-f\left(x_2\right)=x_1^2-x_2^2=\left(x_1-x_2\right)\left(x_1+x_2\right)$
+     \par
+     Or $x_1-x_2 < 0$ car $x_1 < x_2$
+     \par
+     et $x_1+x_2 < 0$  car $x_1$ et $x_2$ sont tous les deux négatifs.
+     \par
+     Donc le produit $\left(x_1-x_2\right)\left(x_1+x_2\right)$ est positif.
+     \par
+     On en déduit $f\left(x_1\right)-f\left(x_2\right) > 0$ donc $f\left(x_1\right) > f\left(x_2\right)$
+     \par
+     $x_1 < x_2 < 0 \Rightarrow  f\left(x_1\right) > f\left(x_2\right) $, donc la fonction $f$ est strictement décroissante sur $\left]-\infty ; 0\right[$.
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Soit $a$ un nombre réel. Dans $\mathbb{R}$, l'équation $x^2=a$
+     \begin{itemize}
+          \item n'admet \textbf{aucune} solution \textbf{si $a < 0$}
+          \item admet $x=0$ comme \textbf{unique} solution \textbf{si $a=0$}
+          \item admet \textbf{deux} solutions $\sqrt{a}$ et $-\sqrt{a}$ \textbf{ si $a > 0$}
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e30"
+     \begin{itemize}
+          \item L'équation $x^2=2$ admet deux solutions : $\sqrt{2}$ et $-\sqrt{2}$.
+          \item L'équation $x^2+1=0$ est équivalente à $x^2=-1$. Elle n'admet donc aucune solution réelle.
+     \end{itemize}
+}
+\begin{h2}II. Fonctions polynômes du second degré\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     Une fonction \textbf{polynôme du second degré} est une fonction  définie sur $\mathbb{R}$ par : $x\mapsto ax^2+bx+c$.
+     \par
+     où $a$,$b$ et $c$ sont des réels appelés \textbf{coefficients} et $a\neq 0$
+     \par
+     Sa courbe représentative est une \textbf{parabole}, elle admet un axe de symétrie parallèle à l'axe des ordonnées.
+}
+\bloc{cyan}{Remarque}{% id="r50"
+     Une expression de la forme $ax^2+bx+c$ avec $a\neq 0$ est la \textbf{forme développée} d'un polynôme du second degré.
+     \par
+     Une expression de la forme $a\left(x-x_1\right)\left(x-x_2\right)$ avec $a\neq 0$ est la \textbf{forme factorisée} d'un polynôme du second degré.
+}
+\cadre{rouge}{Théorème}{% id="t60"
+     Une fonction polynôme du second degré est :
+     \textbf{Si $a > 0$} :
+     \par
+     strictement décroissante sur $\left]-\infty ; \frac{-b}{2a}\right]$ et strictement croissante sur $\left[\frac{-b}{2a}; +\infty \right[$.
+     \textbf{Si $a < 0$} :
+     \par
+     strictement croissante sur $\left]-\infty ; \frac{-b}{2a}\right]$ et strictement décroissante sur $\left[\frac{-b}{2a}; +\infty \right[$.
+}
+\bigbreak
+          \begin{center}
+               \begin{extern}%width="340" alt="Tableau de variation polynôme du second degré pour a < 0"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.7*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-1.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         \draw[lightgray] (2*\Lrg,\lignef) -- (2*\Lrg,\bas);
+                         % Ligne de l'abscisse : x
+                         \node at (-1*\Lrg,-0.1) {$x$};
+                         \node at (0*\Lrg,-0.1) {$ -\infty$};
+                         \node at (2*\Lrg,-0.1) {$-\dfrac{b}{2a}$};
+                         \node at (4*\Lrg,-0.1) {$+\infty $};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node (f1) at (0*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                         \node (f2) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$\text{min}$};
+                         \node (f3) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                   \end{tikzpicture}
+               \end{extern}
+          \end{center}
+\begin{center}\textit{Tableau de variations d'une fonction polynôme du second degré pour $a > 0$ }\end{center}
+\bigbreak
+          \begin{center}
+               \begin{extern}%width="340" alt="Tableau de variation polynôme du second degré pour a < 0"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.7*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-1.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         \draw[lightgray] (2*\Lrg,\lignef) -- (2*\Lrg,\bas);
+                         % Ligne de l'abscisse : x
+                         \node at (-1*\Lrg,-0.1) {$x$};
+                         \node at (0*\Lrg,-0.1) {$ -\infty$};
+                         \node at (2*\Lrg,-0.1) {$-\dfrac{b}{2a}$};
+                         \node at (4*\Lrg,-0.1) {$+\infty $};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+                         \node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$\text{max}$};
+                         \node (f3) at (4*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+\begin{center}\textit{Tableau de variations d'une fonction polynôme du second degré pour $a < 0$ }\end{center}
+\bloc{orange}{Exemple}{% id="e60"
+     Soit $f\left(x\right)=x^2-4x+3$
+\begin{center}
+\begin{extern}%width="280" alt="Parabole - Courbe représentative d'une fonction polynôme du second degré "
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{x*x-4*x+3}
+                    \def\xmin{-1.5}
+                    \def\xmax{4.5}
+                    \def\ymin{-1.2}
+                    \def\ymax{4.9}
+                    \def\xunit{1.5}  % unités en cm
+                    \def\yunit{1.5}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                           \rput[tr](-0.2,-0.2){$O$} 
+                                     \rput[tr](4.1,4.5){$\color{blue} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+\end{extern}
+\end{center}
+     \begin{center}\textit{Courbe représentative de $f~:~x\longmapsto x^2-4x+3$}\end{center}
+}
+\cadre{vert}{Propriété et définition}{% id="p70"
+     Soit $f$ une fonction polynôme du second degré définie sur $\mathbb{R}$ par : $f\left(x\right)=ax^2+bx+c$
+     \par
+     $f\left(x\right)$ peut s'écrire sous la forme :
+     \begin{center}$f\left(x\right)=a\left(x-\alpha \right)^2+\beta $\end{center}
+     avec $\alpha  = -\frac{b}{2a}$ et $\beta  = f\left(\alpha \right)$
+     \par
+     Cette écriture est appelée \textbf{forme canonique}.
+     \par
+     $\left(\alpha  ; \beta \right)$ sont les coordonnées du sommet de la parabole.
+}
+\bloc{cyan}{Remarque}{% id="r70"
+     Une caractéristique de la forme canonique est que la variable $x$ n'apparaît qu'à un seul endroit dans l'écriture.
+}
+\bloc{orange}{Exemple}{% id="e70"
+     Reprenons l'exemple $f\left(x\right)=x^2-4x+3$
+     \par
+     On a $\alpha =-\frac{b}{2a}=- \frac{-4}{2\times 1}=2$
+     \par
+     et $\beta =f\left(2\right)=2^2-4\times 2+3=-1$
+     \par
+     donc la forme canonique de $f$ est :
+     \par
+     $f\left(x\right)=\left(x-2\right)^2-1$
+}
+\input{_footer}

@@ -1,0 +1,92 @@
+\input{_header}
+\begin{h2}I - Intervalle de fluctuation asymptotique\end{h2}
+Pour étudier un caractère présent dans une population, on prélève de façon aléatoire un échantillon dans cette population.
+\par
+On suppose connues :
+\begin{itemize}
+     \item la proportion $p$ du caractère \textbf{dans la population}
+     \item la taille $n$ de l'échantillon
+\end{itemize}
+On cherche à évaluer :
+\begin{itemize}
+     \item la fréquence $f$ du caractère \textbf{dans l'échantillon}
+\end{itemize}
+\bloc{orange}{Exemple}{%id="e10"
+     On sait que 48\% des élèves d'un lycée sont des garçons (et donc 52\% sont des filles...).
+     \par
+     Si l'on sélectionne au hasard 100 élèves dans l'établissement, on devrait obtenir \textbf{\textit{environ}} 52 filles et 48 garçons mais il n'est pas du tout certain que l'on obtienne \textbf{exactement} ces chiffres.
+     \par
+     Par contre, on pourra rechercher un intervalle dans lequel se situera \textit{"probablement"} la proportion de garçons dans cet échantillon.
+}
+Si $n$ est élevé, on peut assimiler la sélection de l'échantillon à un tirage avec remise. Le nombre d'individus présentant le caractère étudié suit alors une loi binomiale $\mathscr B\left(n,p\right)$. Pour $n$ élevé, on peut approximer cette loi binomiale par une loi normale. On obtient alors le résultat suivant :
+\cadre{bleu}{Définition et propriété}{%id="d20"
+     Soit un réel $\alpha \in \left]0~;~1\right[$.
+     \par
+     Un \textbf{intervalle de fluctuation asymptotique au seuil de $1-\alpha $} est~:
+     \begin{center}$I=\left[ p-u_\alpha \times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} ~; \right.$\nosp$ \left. p+u_\alpha \times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} \right]$\end{center}
+     Si on note $f_{n}$ la fréquence du caractère étudié dans l'échantillon de taille $n$ :
+     \begin{center}$\lim\limits_{n\rightarrow +\infty }p\left(f _n\in I\right) = 1-\alpha $.\end{center}
+}
+\bloc{cyan}{Remarques}{%id="r20"
+     \begin{itemize}
+          \item \textbf{Rappel : }La définition de $u_\alpha $ est donné dans le chapitre \mcLien{/cours/terminale-s/loi-normale\#t60}{«~loi normale~»}.
+          \par
+          On a en particulier $u_{0,05}=1,96$ et $u_{0,01}=2,58$
+          \item Cette propriété est démontrée en exercice
+          \item On considèrera que, lorsque $n$ est suffisamment élevé ($n\geqslant 30$, $np\geqslant 5$ et $n\left(1-p\right)\geqslant 5$), $p\left(f \in I\right) \approx 1-\alpha $
+     \end{itemize}
+}
+\cadre{bleu}{Cas particulier (Intervalle de fluctuation au seuil de $95\%$)}{%id="p30"
+     L'\textbf{intervalle de fluctuation asymptotique au seuil de $95\%$} est l'intervalle :
+     \begin{center}$I=\left[ p-1,96\times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} ~;\right.$\nosp$ \left.  p+1,96\times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} \right]$\end{center}
+}
+\bloc{orange}{Exemple}{%id="e30"
+     Si l'on reprend l'exemple donné en introduction, on a $n=100$ et $p=\frac{48}{100}$.
+     \par
+     On trouve $I= \left[0,38 ~;~ 0,58\right]$.
+     \par
+     La proportion de garçons dans l'échantillon devrait être comprise entre 38\% et 58\% (avec une probabilité de $0,95$)
+}
+\bloc{cyan}{Remarques}{%id="r30"
+     \begin{itemize}
+          \item L' intervalle de fluctuation peut être utilisé pour valider ou rejeter une hypothèse. On procède de la façon suivante :
+          \begin{itemize}[label=---]
+               \item %
+               On suppose que la proportion du caractère étudié est $p$.
+               \item %
+               On prélève un échantillon de taille $n$
+               \item %
+               On regarde si la fréquence $f$ du caractère dans l'échantillon appartient à $I$. Si oui,
+               l'hypothèse est validée, si non, elle est rejetée.
+          \end{itemize}
+          \item Une étude de fonction montre que pour tout $p \in \left[0 ~;~ 1\right]$, $1,96\times \sqrt{p\left(1-p\right)} < 1$. On en déduit que :
+          \begin{center}$\left[ p-1,96\times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} ~;\right.$\nosp$ \left.  p+1,96\times \frac{\sqrt{p\left(1-p\right)}}{\sqrt{n}} \right] $ est inclus dans $ \left[ p-\frac{1}{\sqrt{n}} ~;~ p+\frac{1}{\sqrt{n}} \right]$\end{center}
+          qui est l'intervalle vu en Seconde.
+     \end{itemize}
+}
+\begin{h2}II - Intervalle de confiance\end{h2}
+Dans cette partie (contrairement à la première partie), on suppose que l'\textbf{on connait la fréquence $f$ du caractère dans l'échantillon} mais que l' \textbf{on ne connait pas la proportion $p$ du caractère dans la population}.
+\par
+On cherche alors à évaluer $p$.
+\cadre{bleu}{Définition et propriété}{%id="d50"
+     On appelle \textbf{intervalle de confiance avec un niveau de confiance de 95\%} l'intervalle :
+     \begin{center}$I=\left[ f-\frac{1}{\sqrt{n}} ~;~ f+\frac{1}{\sqrt{n}} \right]$\end{center}
+     Pour $n$ élevé, la proportion $p$ du caractère dans la population appartiendra à $I$ dans 95\% des cas.
+}
+\bloc{orange}{Exemple}{%id="e50"
+     On recherche le pourcentage de truites femelles dans un élevage de truites.
+     \par
+     Pour cela, on a prélevé un échantillon de 50 truites et on a comptabilisé 28 femelles dans cet échantillon.
+     \par
+     Le pourcentage de truites femelles dans l'ensemble de l'élevage appartient donc à l'intervalle :
+     \begin{center}$I=\left[ \frac{28}{50}-\frac{1}{\sqrt{50}} ~;~ \frac{28}{50}+\frac{1}{\sqrt{50}} \right]$\nosp$  \approx \left[0,42 ~;~ 0,70\right]$\end{center}
+     avec un risque d'erreur inférieur à 5\%.
+}
+\bloc{cyan}{Remarque}{%id="r50"
+     La longeur de l'intervalle $I$ est $\frac{2}{\sqrt{n}}$.
+     \par
+     Si l'on souhaite obtenir un intervalle d'amplitude maximale $a$, il faut choisir $n$ tel que
+     \par
+     $\frac{2}{\sqrt{n}}\leqslant a$ c'est à dire $n\geqslant \frac{4}{a^{2}}$
+}
+\input{_footer}

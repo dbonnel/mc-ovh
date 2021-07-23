@@ -1,0 +1,59 @@
+\input{_header}
+\textit{(D'après Brevet Polynésie 2013)}
+\medskip
+Teiki se promène en montagne et aimerait connaître la hauteur d'un Pinus (ou Pin des Caraïbes) situé devant lui. Pour cela, il utilise un bâton et prend quelques mesures au sol.
+\par
+Il procède de la façon suivante~:
+\begin{itemize}
+     \item Il pique le bâton en terre, verticalement, à 12 mètres du Pinus.
+     \item La partie visible (hors du sol) du bâton mesure 2 m.
+     \item Teiki se place derrière le bâton, de façon à ce que son œil, situé à 1,60 m au dessus du sol, voit en alignement le sommet de l'arbre et l'extrémité du bâton.
+     \item Teiki marque sa position au sol, puis mesure la distance entre sa position et le bâton. Il trouve alors 1,2 m.
+\end{itemize}
+On peut représenter cette situation à l'aide du schéma ci-dessous~:
+\begin{center}
+     \img{mc-0528}{0.1}%width="400" alt="exercice théorème de Thalès
+     Brevet Métropole 2018"
+\end{center}
+Quelle est la hauteur du Pinus au-dessus du sol~?
+%
+\begin{corrige}
+     \begin{center}
+          \img{mc-0529}{0.1}%width="400" alt="corrigé théorème de Thalès Brevet Métropole 2018"
+     \end{center}
+     On peut modéliser la situation à l'aide de la figure ci-dessus où $\left[AE\right]$ représente l'arbre et $\left[FG\right]$ le bâton.
+     \par
+     D'après les données de l'énoncé on a~:
+     \begin{itemize}
+          \item $EF=BH=12$m
+          \item $GF=2$m
+          \item $HF=CD=1,6$m
+          \item $FD=HC=1,2$m
+     \end{itemize}
+     On cherche à calculer la hauteur de l'arbre c'est à dire la longueur $AE$.
+     \par
+     Les points $F, H$ et $G$ étant alignés~:
+     \par
+     $GH=GF-HF=2-1,6=0,4$
+     \par
+     Les points $E, F$ et $D$ étant alignés~:
+     \par
+     $ED=EF+FD=12+1,2=13,2$ et par conséquent $BC=13,2$
+     \par
+     Les droites $\left(AE\right)$ et $\left(GF\right)$, étant toutes deux verticales, sont parallèles~; donc d'après le \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#d10}{théorème de Thalès}~:
+     \par
+     $\frac{GC}{AC}=\frac{HC}{BC}=\frac{GH}{AB}$
+     \par
+     $\frac{GC}{AC}=\frac{1,2}{13,2}=\frac{0,4}{AB}$
+     \par
+     De l'égalité des rapports $\frac{1,2}{13,2}=\frac{0,4}{AB}$ on déduit~:
+     \par
+     $AB=\frac{0,4\times 13,2}{1,2}=4,4$
+     \par
+     La hauteur totale de l'arbre est donc~:
+     \par
+     $AE=AB+BE=4,4+1,6=6$m
+     \par
+     La hauteur du Pinus au-dessus du sol est $6$ mètres.
+\end{corrige}
+\input{_footer}

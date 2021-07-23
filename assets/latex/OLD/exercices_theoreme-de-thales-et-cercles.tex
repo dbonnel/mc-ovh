@@ -1,0 +1,70 @@
+\input{_header}
+Dans la figure ci-dessous, les points $A, O, D$ sont alignés ainsi que les points $B, O, C$.\\
+$B$ appartient au cercle de diamètre $[AO]$ et $C$ appartient au cercle de diamètre $[DO]$.
+\begin{center}
+     \begin{extern}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.57,6.39)(17.93,20.35)
+               \pscircle[linewidth=.8pt](8.,15.){4.24}
+               \pscircle[linewidth=.8pt](13.,10.){2.82}
+               \psline[linewidth=.8pt](5.,18.)(9.733,18.872)
+               \psline[linewidth=.8pt](11.84,7.41)(15.,8.)
+               \psline[linewidth=.8pt](5.,18.)(15.,8.)
+               \psline[linewidth=.8pt](11.84,7.42)(9.73,18.87)
+               \begin{scriptsize}
+                    \fontsize{13pt}{13pt}\selectfont
+                    \psdots[dotsize=2pt 0,dotstyle=*](11.,12.)
+                    \rput[bl](10.31088,11.88928){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](5.,18.)
+                    \rput[bl](4.55088,18.08928){$A$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](15.,8.)
+                    \rput[bl](15.23088,7.76928){$D$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](9.733,18.87)
+                    \rput[bl](9.81088,18.94928){$B$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](11.844,7.418)
+                    \rput[bl](11.45088,6.92928){$C$}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+On donne~:
+\par
+$AO=8$cm\\
+$OD=5$cm\\
+$DC=3$cm.
+\par
+\begin{enumerate}
+     \item %
+     Montrer que le triangle $ABO$ est rectangle en $B$ et que le triangle $OCD$ est rectangle en $C$.
+     \item %
+     Justifier que les droites $(AB)$ et $(CD)$ sont parallèles.
+     \item %
+     Calculer la longueur $AB$.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item %
+          On utilise la propriété suivante~:
+          \cadre{bleu}{Rappel}{
+               Si  $[BC]$  est  un  diamètre  d'un  cercle  et $A$ un point de ce cercle (distinct de $B$ et de $C$), alors le triangle $ABC$ est rectangle en $A$.
+          }
+          Le côté $[AO]$ est un diamètre du cercle circonscrit au triangle $ABO$, donc le triangle $ABO$ est rectangle en $B$.\\
+          De même, le côté $[DO]$ est un diamètre du cercle circonscrit au triangle $OCD$, donc le triangle $OCD$ est rectangle en $C$.
+          \item %
+          D'après la question précédente, les droites $(AB)$ et $(CD)$ sont toutes deux perpendiculaires à la droite $(AD)$~; elles sont donc parallèles entre elles.
+          \item %
+          Les droites $(AB)$ et $(CD)$ sont parallèles et les points $A, O, D$ sont alignés de même que les points $B, O, C$~; les triangles $ABO$ et $OCD$ forment alors une configuration de Thalès.\\
+          On a donc, d'après le \mcLien{/cours/theoreme-thales\#d10}{théorème de Thalès}~:
+          \par
+          $\dfrac{AB}{CD}=\dfrac{AO}{OD}$
+          \par
+          $\dfrac{AB}{3}=\dfrac{8}{5}$
+          \par
+          Par conséquent~:
+          \par
+          $AB=\dfrac{3 \times 8}{5}=4,8.$
+          \par
+          Le côté $AB$ mesure $4,8$cm.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

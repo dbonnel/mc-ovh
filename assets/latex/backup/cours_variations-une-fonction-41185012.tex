@@ -1,0 +1,339 @@
+\input{_header}
+\meta{url}{/cours/variations-une-fonction/}
+\meta{pid}{315}
+\meta{titre}{Variations d'une fonction - Fonctions associées}
+\meta{type}{cours}
+\begin{h2}I - Rappels\end{h2}
+\cadre{bleu}{Définitions}{%
+     On dit qu'une fonction $f$ définie sur un intervalle $I$ est :
+     \begin{itemize}
+          \item \textbf{croissante} sur l'intervalle $I$: si pour tous réels $x_{1}$ et $x_{2}$  appartenant à $I$ tels que $x_{1}\leqslant  x_{2}$ on a $f\left(x_{1}\right)\leqslant f\left(x_{2}\right)$.
+          \item \textbf{décroissante} sur l'intervalle $I$: si pour tous réels $x_{1}$ et $x_{2}$  appartenant à $I$ tels que $x_{1} \leqslant x_{2}$ on a $f\left(x_{1}\right) \geqslant f\left(x_{2}\right)$.
+          \item \textbf{strictement croissante} sur l'intervalle $I$: si pour tous réels $x_{1}$ et $x_{2}$  appartenant à $I$ tels que $x_{1} <   x_{2}$ on a $f\left(x_{1}\right) <  f\left(x_{2}\right)$.
+          \item \textbf{strictement décroissante} sur l'intervalle $I$: si pour tous réels $x_{1}$ et $x_{2}$  appartenant à $I$ tels que $x_{1} <   x_{2}$ on a $f\left(x_{1}\right) >  f\left(x_{2}\right)$.
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="550" alt="Fonctions croissante et décroissante"
+          \begin{tabular}{c c c}
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{1+0.2*x*x }
+                    \def\xmin{-1.2}
+                    \def\xmax{5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                         \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,1.2)(0,1.2)
+                         \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,4.2)(0,4.2)
+                         \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                         \rput[r](-0.1,1.2){$f(x_1)$} \rput[r](-0.1,4.2){$f(x_2)$}
+                         \rput[tl](4.3,4.5){$\color{red} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+               & ~~~~ &%
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{4-0.1*x*x }
+                    \def\xmin{-1.2}
+                    \def\xmax{5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                         \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,3.9)(0,3.9)
+                         \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,2.4)(0,2.4)
+                         \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                         \rput[r](-0.1,3.9){$f(x_1)$} \rput[r](-0.1,2.4){$f(x_2)$}
+                         \rput[tl](4.5,2.5){$\color{red} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+               \\
+               Fonction croissante & ~~~~ & Fonction décroissante %
+               \\
+          \end{tabular}
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item Une fonction qui dont le sens de variations ne change pas sur $I$ (c'est à dire qui est soit croissante sur $I$ soit décroissante sur $I$) est dite \textbf{monotone} sur $I$.
+          \item Une fonction constante ($x\mapsto k$ où $k$ est un réel fixé) est à la fois croissante et décroissante mais n'est ni strictement croissante, ni strictement décroissante.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     Une fonction affine $f : x\mapsto ax+b$ est croissante si son coefficient directeur $a$ est \textbf{positif ou nul}, et \textbf{décroissante} si son coefficient directeur est \textbf{négatif ou nul}.
+}
+\bloc{cyan}{Remarque}{%
+     Si le coefficient directeur d'une fonction affine est nul la fonction est \textbf{constante}.
+}
+\begin{h2}II - Fonction associées\end{h2}
+\cadre{bleu}{Fonctions $u+k$}{%
+     Soit $u$ une fonction définie sur une partie $\mathscr D$ de $\mathbb{R}$ et $k \in  \mathbb{R}$
+     \par
+     On note $u+k$ la fonction définie sur $\mathscr D$ par :
+     \begin{center}$u+k :  x\mapsto u\left(x\right)+k$\end{center}
+}
+\cadre{vert}{Propriété}{%
+     Quel que soit $k \in  \mathbb{R}$, $u+k$ a le même sens de variation que $u$ sur $\mathscr D$.
+}
+\bloc{orange}{Exemple}{%
+     Soit $f$ définie sur $\mathbb{R}$ par $f\left(x\right)=x^{2}-1$.
+     \par
+     Si on note $u$ la fonction \textit{carrée} définie sur $\mathbb{R}$ par  $u : x \mapsto x^{2}$
+     \par
+     on a $f = u-1$
+     \par
+     Le sens de variation de $f$ est donc identique à celui de $u$ d'après la propriété précédente.
+     \par
+     Donc
+     \begin{itemize}
+          \item $f$ est \textbf{décroissante} sur l'intervalle $\left]-\infty  ; 0\right]$
+          \item $f$ est \textbf{croissante} sur l'intervalle $\left[0 ; +\infty \right[$
+     \end{itemize}
+     \begin{center}
+          \begin{extern}%width="350" alt="Tableau de variation x²-1"
+               \begin{tikzpicture}[scale=0.875]
+                    % Styles
+                    \tikzstyle{cadre}=[thin]
+                    \tikzstyle{fleche}=[->,>=latex,thin]
+                    \tikzstyle{nondefini}=[lightgray]
+                    % Dimensions Modifiables
+                    \def\Lrg{1.5}
+                    \def\HtX{1}
+                    \def\HtY{0.5}
+                    % Dimensions Calculées
+                    \def\lignex{-0.5*\HtX}
+                    \def\lignef{-1.5*\HtX}
+                    \def\separateur{-0.5*\Lrg}
+                    % Largeur du tableau
+                    \def\gauche{-1.5*\Lrg}
+                    \def\droite{4.5*\Lrg}
+                    % Hauteur du tableau
+                    \def\haut{0.5*\HtX}
+                    \def\bas{-1.5*\HtX-2*\HtY}
+                    % Pointillés
+                    \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\bas);
+                    % Ligne de l'abscisse : x
+                    \node at (-1*\Lrg,0) {$x$};
+                    \node at (0*\Lrg,0) {$-\infty$};
+                    \node at (2*\Lrg,0) {$0$};
+                    \node at (4*\Lrg,0) {$+\infty$};
+                    % Ligne de la fonction : f(x)
+                    \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$x^2-1$};
+                    \node (f1) at (0*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                    \node (f2) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$-1$};
+                    \node (f3) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                    % Flèches
+                    \draw[fleche] (f1) -- (f2);
+                    \draw[fleche] (f2) -- (f3);
+                    % Encadrement
+                    \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                    \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                    \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+               \end{tikzpicture}
+          \end{extern}
+     \end{center}
+     %:-+-+-+-+- Fin
+}
+\cadre{bleu}{Fonctions $k\times u$}{%
+     Soit $u$ une fonction définie sur une partie $\mathscr D$ de $\mathbb{R}$ et $k \in  \mathbb{R}$
+     \par
+     On note $ku$ la fonction définie sur $\mathscr D$ par :
+     \begin{center}$ku :  x\mapsto k\times u\left(x\right)$\end{center}
+}
+\cadre{vert}{Propriété}{%
+     \begin{itemize}
+          \item  si $k > 0$, $ku$ a le même sens de variation que $u$ sur $\mathscr D$.
+          \item  si $k < 0$, le sens de variation de $ku$ est le contraire de celui de $u$ sur $\mathscr D$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Soit $f$ définie sur $\left]-\infty  ; 0\right[ \cup  \left]0 ; +\infty \right[$ par $f\left(x\right)=-\frac{1}{x}$.
+     \par
+     Si on note $u$ la fonction \textit{inverse} définie sur  $\left]-\infty  ; 0\right[ \cup  \left]0 ; +\infty \right[$ par  $u : x \mapsto \frac{1}{x}$
+     \par
+     on a $f = -1\times u$
+     \par
+     Comme $-1$ est négatif, le sens de variation de $f$ est inverse de celui de $u$ sur chacun des intervalles $\left]-\infty  ; 0\right[$ et $\left]0 ; +\infty \right[$
+     \par
+     Donc $f$ est \textbf{croissante} sur l'intervalle $\left]-\infty  ; 0\right]$ et sur l'intervalle $\left]0 ; +\infty \right[$
+}
+\begin{center}
+     \begin{extern}%width="350" alt="tableau de variation fonction inverse négative"
+          \begin{tikzpicture}[scale=0.875]
+               % Styles
+               \tikzstyle{cadre}=[thin]
+               \tikzstyle{fleche}=[->,>=latex,thin]
+               \tikzstyle{nondefini}=[lightgray]
+               % Dimensions Modifiables
+               \def\Lrg{1.5}
+               \def\HtX{1}
+               \def\HtY{0.5}
+               % Dimensions Calculées
+               \def\lignex{-0.5*\HtX}
+               \def\lignef{-1.5*\HtX}
+               \def\separateur{-0.5*\Lrg}
+               % Largeur du tableau
+               \def\gauche{-1.5*\Lrg}
+               \def\droite{4.5*\Lrg}
+               % Hauteur du tableau
+               \def\haut{0.5*\HtX}
+               \def\bas{-1.5*\HtX-2*\HtY}
+               % Ligne de l'abscisse : x
+               \node at (-1*\Lrg,0) {$x$};
+               \node at (0*\Lrg,0) {$-\infty$};
+               \node at (2*\Lrg,0) {$0$};
+               \node at (4*\Lrg,0) {$+\infty$};
+               % Ligne de la fonction : f(x)
+               \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f$};
+               \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+               \node[left] (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               \node[right] (f3) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+               \node (f4) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               % Flèches
+               \draw[fleche] (f1) -- (f2);
+               \draw[fleche] (f3) -- (f4);
+               % Doubles barres
+               \draw[double distance=2pt] (2*\Lrg,\lignef+0.9*\HtX) -- (2*\Lrg,\bas+0.1*\HtX);
+               % Encadrement
+               \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+               \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+               \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\cadre{bleu}{Fonctions $\sqrt{u}$}{%
+     Soit $u$ une fonction définie sur une partie $\mathscr D$ de $\mathbb{R}$.
+     \par
+     On note $\sqrt{u}$ la fonction définie, pour tout $x$ de $\mathscr D$  tel que $u\left(x\right) \geqslant  0$, par~:
+     \begin{center}$\sqrt{u} :  x\mapsto \sqrt{u\left(x\right)}$\end{center}
+}
+\cadre{vert}{Propriété}{%
+     $\sqrt{u}$  a le \textbf{même sens de variation} que $u$ sur tout intervalle où $u$ est positive.
+}
+\bloc{orange}{Exemple}{%
+     Soit $f : x \mapsto  \sqrt{x-2}$
+     \par
+     $f$ est définie si et seulement si $x-2 \geqslant  0$, c'est à dire sur $\mathscr D=\left[2 ; +\infty \right[$
+     \par
+     Sur l'intervalle $\mathscr D$ la fonction $f$ est croissante car la fonction $x \mapsto  x-2$ l'est (fonction affine dont le coefficient directeur est positif).
+}
+\begin{center}
+     \begin{extern}%width="250" alt="Tableau de variation sqrt(x-2)"
+          \begin{tikzpicture}[scale=0.875]
+               % Styles
+               \tikzstyle{cadre}=[thin]
+               \tikzstyle{fleche}=[->,>=latex,thin]
+               \tikzstyle{nondefini}=[lightgray]
+               % Dimensions Modifiables
+               \def\Lrg{1.5}
+               \def\HtX{1}
+               \def\HtY{0.5}
+               % Dimensions Calculées
+               \def\lignex{-0.5*\HtX}
+               \def\lignef{-1.5*\HtX}
+               \def\separateur{-0.5*\Lrg}
+               % Largeur du tableau
+               \def\gauche{-1.5*\Lrg}
+               \def\droite{2.5*\Lrg}
+               % Hauteur du tableau
+               \def\haut{0.5*\HtX}
+               \def\bas{-1.5*\HtX-2*\HtY}
+               % Ligne de l'abscisse : x
+               \node at (-1*\Lrg,0) {$x$};
+               \node at (0*\Lrg,0) {$2$};
+               \node at (2*\Lrg,0) {$+\infty$};
+               % Ligne de la fonction : f(x)
+               \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$\sqrt{x-2}$};
+               \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$0$};
+               \node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               % Flèches
+               \draw[fleche] (f1) -- (f2);
+               % Encadrement
+               \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+               \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+               \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\cadre{bleu}{Fonctions $\frac{1}{u}$}{%
+     Soit $u$ une fonction définie sur une partie $\mathscr D$ de $\mathbb{R}$.
+     \par
+     On note $\frac{1}{u}$ la fonction définie pour tout $x$ de $\mathscr D$ \textbf{ tel que $u\left(x\right) \neq  0$} par :
+     \begin{center}$\frac{1}{u} :  x\mapsto \frac{1}{u\left(x\right)}$\end{center}
+}
+\cadre{vert}{Propriété}{%
+     $\frac{1}{u}$  a le \textbf{sens de variation contraire} de $u$ sur tout intervalle où $u$ ne s'annule pas et garde un \textbf{signe constant}.
+}
+\bloc{orange}{Exemple}{%
+     Soit $ f : x \mapsto  \frac{1}{x+1}$
+     \par
+     $f$ est définie si et seulement si $x+1 \neq  0$, c'est à dire sur $\mathscr D=\left]-\infty  ; -1\right[ \cup  \left]-1 ; +\infty \right[$
+     \par
+     La fonction $x \mapsto  x+1$ est croissante sur $\mathbb{R}$
+     \par
+     Sur l'intervalle $\left]-\infty  ; -1\right[ $ la fonction $x \mapsto  x+1$ est strictement négative (donc a un signe constant).
+     \par
+     Sur l'intervalle $\left]-1 ; +\infty \right[$ la fonction $x \mapsto  x+1$ est strictement positive (donc a un signe constant).
+     \par
+     Donc $f$ est strictement décroissante sur chacun des intervalles $\left]-\infty  ; -1\right[ $ et $ \left]-1 ; +\infty \right[$
+     \par
+}
+\begin{center}
+     \begin{extern}%width="350" alt="Tableau de variation 1/(x+1)"
+          \begin{tikzpicture}[scale=0.875]
+               % Styles
+               \tikzstyle{cadre}=[thin]
+               \tikzstyle{fleche}=[->,>=latex,thin]
+               \tikzstyle{nondefini}=[lightgray]
+               % Dimensions Modifiables
+               \def\Lrg{1.5}
+               \def\HtX{1}
+               \def\HtY{0.5}
+               % Dimensions Calculées
+               \def\lignex{-0.5*\HtX}
+               \def\lignef{-1.5*\HtX}
+               \def\separateur{-0.5*\Lrg}
+               % Largeur du tableau
+               \def\gauche{-1.5*\Lrg}
+               \def\droite{4.5*\Lrg}
+               % Hauteur du tableau
+               \def\haut{0.5*\HtX}
+               \def\bas{-1.5*\HtX-2*\HtY}
+               % Ligne de l'abscisse : x
+               \node at (-1*\Lrg,0) {$x$};
+               \node at (0*\Lrg,0) {$-\infty$};
+               \node at (2*\Lrg,0) {$-1$};
+               \node at (4*\Lrg,0) {$+\infty$};
+               % Ligne de la fonction : f(x)
+               \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$\dfrac{1}{x+1}$};
+               \node (f1) at (0*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               \node[left] (f2) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$~$};
+               \node[right] (f3) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$~$};
+               \node (f4) at (4*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+               % Flèches
+               \draw[fleche] (f1) -- (f2);
+               \draw[fleche] (f3) -- (f4);
+               % Doubles barres
+               \draw[double distance=2pt] (2*\Lrg,\lignef+\HtX) -- (2*\Lrg,\bas+0);
+               % Encadrement
+               \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+               \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+               \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\input{_footer}

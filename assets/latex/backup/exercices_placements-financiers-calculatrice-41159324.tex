@@ -1,0 +1,64 @@
+\input{_header}
+\meta{url}{/exercices/placements-financiers-calculatrice/}
+\meta{pid}{850}
+\meta{titre}{Placements financiers (calculatrice)}
+\meta{type}{exercices}
+%
+\begin{enumerate}
+     \item
+     Une banque A propose un placement (à intérêts composés*) au taux de 8\% par an. Des frais de gestion de 20 euros sont par ailleurs prélevés tous les ans sur le capital placé. On note $u_{n}$ le capital en euros obtenu la $n$-ième année.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Un client veut placer 1 000 euros (c'est à dire que $u_{0}=1 000$).
+\\
+          Calculer $u_{1}$, $u_{2}$.
+          \item
+          Montrer que pour tout $n \in  \mathbb{N}$, $u_{n+1}=1,08u_{n}-20$
+     \end{enumerate}
+     \item
+     Une banque B propose un placement (à intérêts composés*) au taux de 6,5\% par an sans frais de gestion.On note $v_{n}$ le capital en euros obtenu la $n$-ième année avec ce placement.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Le client souhaite toujours placer 1 000 euros.
+          Calculer $v_{1}$, $v_{2}$.
+          \item
+          A l'aide d'une calculatrice ou d'un tableur, déterminer, en fonction du nombre d'années (pour $1\leqslant n\leqslant 20$), le placement le plus intéressant entre celui de la banque A et celui de la banque B (pour une somme placée de 1 000 euros)
+     \end{enumerate}
+\end{enumerate}
+* Un capital est placé à\textbf{ intérêts composés} lorsque les intérêts de chaque période sont incorporés au capital pour l'augmenter progressivement et porter intérêts à leur tour. (source : Wikipedia)
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Capital + intérêts après un an  = $1000 + \frac{8}{100}\times 1000$
+               \par
+               Capital + intérêts après un an  = $1000\times \left(1+\frac{8}{100}\right)=1000\times 1,08=1080$
+               \par
+               Capital + intérêts - frais après un an =$1080-20 = 1060$
+               \par
+               Donc $u_{1}=1060$.
+               \par
+               De même : $u_{2}=1080\times \left(1+\frac{8}{100}\right)-20 = 1124,80$
+               \item
+               Pour trouver le capital $u_{n+1}$, on multiplie le capital de l'année précédente, $u_{n}$, par $1,08$ pour adjoindre les intérêts et on soustrait les frais de gestion de $20$ euros. On a donc bien :
+               \par
+               $u_{n+1}=1,08u_{n}-20$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $v_{1}=1000\times \left(1+\frac{6,5}{100}\right)=1000\times 1,065=1065$
+               \par
+               $v_{2}=1065\times \left(1+\frac{6,5}{100}\right)=1065\times 1,065=1134,225$
+               \item
+               Sur tableur, on obtient les résultats suivants pour $u_{n}$ et $v_{n}$ :
+
+\begin{center}
+\imgsvg{mc-0408}{0.3}% alt="Tableur" style="width:30rem" 
+\end{center}@
+               Le placement de la banque B est plus intéressant pour un placement d'une durée inférieure ou égale à 11 ans, et celui de la banque A pour un placement d'une durée supérieure ou égale à 12 ans.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

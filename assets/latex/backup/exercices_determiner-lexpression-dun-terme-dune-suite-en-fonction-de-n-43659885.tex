@@ -1,0 +1,92 @@
+\input{_header}
+\meta{url}{/exercices/determiner-lexpression-dun-terme-dune-suite-en-fonction-de-n/}
+\meta{pid}{10906}
+\meta{titre}{Privé : Déterminer l'expression d'un terme d'une suite en fonction de n}
+\meta{type}{exercices}
+On considère la suite $(u_n)$ définie par $u_0=1$ et pour tout entier naturel $n$ :
+\[ u_{n+1}=\dfrac{u_n}{u_n+1} \]
+\par
+Le but de cet exercice est de déterminer une formule donnant $u_n$ en fonction de $n$.
+\par
+On utilisera une méthode différente dans chacune des  parties.
+\TitreC{Première méthode : Raisonnement par récurrence}
+\begin{enumerate}
+     \item %
+     Calculer les valeurs de $u_1$, $u_2$, $u_3$ et $u_4$.
+     \\
+     Conjecturer l'expression de $u_n$ en fonction de $n$.
+     \item %
+     Démontrer, par récurrence, la conjecture faite à la question précédente.
+\end{enumerate}
+\TitreC{Deuxième méthode : utilisation d'une suite annexe}
+Pour tout entier naturel $n$, on pose $v_n=\dfrac{1}{u_n}$.
+\begin{enumerate}
+     \item %
+     Montrer que la suite $(v_n)$ est une suite arithmétique dont on déterminera le premier terme et la raison.
+     \item %
+     En déduire l'expression de $v_n$ puis celle de $u_n$ en fonction de $n$.
+\end{enumerate}
+\begin{corrige}
+     \TitreC{Première méthode : Raisonnement par récurrence}
+     \begin{enumerate}
+          \item %
+          $u_1 =\dfrac{u_0}{u_0+1}= \dfrac{1}{2}$\\
+          $u_2 =\dfrac{u_1}{u_1+1}= \dfrac{1/2}{3/2}=\dfrac{1}{3}$\\
+          $u_3 =\dfrac{u_2}{u_2+1}= \dfrac{1/3}{4/3}=\dfrac{1}{4}$\\
+          $u_4 =\dfrac{u_3}{u_3+1}= \dfrac{1/4}{5/4}=\dfrac{1}{5}$
+          \par
+          Les résultats précédents laissent présager que pour tout entier naturel $n$ :
+          \[ u_n=\dfrac{1}{n+1} \]
+          \item %
+          Montrons par récurrence que  pour tout entier naturel $n$ :
+          \[ u_n=\dfrac{1}{n+1} \]
+          \par
+          \textbf{Initialisation :}
+          \par
+          $u_0=1=\dfrac{1}{0+1}$
+          \par
+          La propriété est donc vraie au rang $0$.
+          \medbreak
+          \textbf{Hérédité :}
+          \par
+          Supposons que, pour un certain entier $n$, $u_n=\dfrac{1}{n+1}$ et montrons que $u_{n+1}=\dfrac{1}{n+2}$~:
+          \par
+          $u_{n+1}=\dfrac{u_n}{u_n+1} $ (d'après l'énoncé)\par
+          $\phantom{u_{n+1}}=\dfrac{1/(n+1)}{1+1/(n+1)} $ (hypothèse de récurrence)\par
+          $\phantom{u_{n+1}}=\dfrac{1/(n+1)}{(n+1)/(n+1)+1/(n+1)} $\par
+          $\phantom{u_{n+1}}=\dfrac{1/(n+1)}{(n+2)/(n+1)} $ \par
+          $\phantom{u_{n+1}}=\dfrac{1}{n+2}.$
+          \medbreak
+          La propriété est donc héréditaire.
+          \medbreak
+          \textbf{Conclusion :}
+          \par
+          On en déduit, d'après le principe de récurrence, que pour tout entier naturel $n$~:
+          \[ u_n=\dfrac{1}{n+1}. \]
+     \end{enumerate}
+     \TitreC{Deuxième méthode : utilisation d'une suite annexe}
+     \begin{enumerate}
+          \item %
+          Pour montrer que la suite $(v_n)$ est arithmétique, montrons que $v_{n+1}-v_n$ est constant.
+          \par
+          D'après l'énoncé, pour tout entier naturel $n$~:
+          \par
+          $v_{n+1} -v_n = \dfrac{1}{u_{n+1}} - \dfrac{1}{u_n}$\par
+          $\phantom{v_{n+1} -v_n} = \dfrac{1}{u_n/(u_n+1)} - \dfrac{1}{u_n}$\par
+          $\phantom{v_{n+1} -v_n} = \dfrac{u_n+1}{u_n} - \dfrac{1}{u_n}$\par
+          $\phantom{v_{n+1} -v_n} = \dfrac{u_n}{u_n} = 1.$
+          \par
+          La suite  $(v_n)$ est donc une suite arithmétique de raison $r=1$.
+          \par
+          Son premier terme est : \\
+          $v_0=\dfrac{1}{u_0}=1.$
+          \item %
+          On en déduit donc que pour tout entier naturel $n$~:
+          \par
+          $v_n=v_0+nr=1+n.$
+          \medbreak
+          Par conséquent, pour tout entier naturel $n$~:
+          $u_n=\dfrac{1}{v_n}=\dfrac{1}{n+1}.$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

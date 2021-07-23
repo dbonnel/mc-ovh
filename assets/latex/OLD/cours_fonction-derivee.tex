@@ -1,0 +1,286 @@
+\input{_header}
+\begin{h2}1. Nombre dérivé\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soit $f$ une fonction définie sur un intervalle $I$ et soient 2 réels $x_{0}$ et $h\neq 0$ tels que $x_{0} \in  I$ et $x_{0}+h \in  I$.
+     \par
+     Le \textbf{taux de variation} (ou \textbf{taux d'accroissement)} de la fonction $f$ entre $x_{0}$ et $x_{0}+h$ est le nombre :
+     \par
+     $T=\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$
+}
+\cadre{bleu}{Définition}{% id="d20"
+     Une fonction $f$ est \textbf{dérivable} en $x_{0}$ si et seulement si le nombre $\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$ a pour limite un certain réel $l$ lorsque $h$ tend vers 0.
+     \par
+     $l$ est appelée \textbf{nombre dérivé} de $f$ en $x_{0}$, on le note $f^{\prime}\left(x_{0}\right)$.
+     \par
+     On écrit : $f^{\prime}\left(x_{0}\right)=\lim\limits_{h\rightarrow 0}\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$.
+}
+\bloc{cyan}{Remarques}{% id="r20"
+     \begin{itemize}
+          \item Le quotient $\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$ est le taux d'accroissement de $f$ entre $x_{0}$ et $x_{0}+h$.
+          \item \textit{« le nombre $\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$ a pour limite un certain réel $l$ lorsque $h$ tend vers 0 »} signifie que $\frac{f\left(x_{0}+h\right)-f\left(x_{0}\right)}{h}$ se rapproche de $l$ lorsque $h$ se rapproche de 0.
+          \par
+          Une définition plus rigoureuse de la notion de limite sera vue en Terminale.
+          \item On peut également définir le nombre dérivé de la façon suivante:
+          \par
+          $f^{\prime}\left(x_{0}\right)=\lim\limits_{x\rightarrow  x_{0}}\frac{f\left(x\right)-f\left(x_{0}\right)}{x-x_{0}}$
+          \par
+          (cela correspond au changement de variable $x=x_{0}+h$)
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Calculons le nombre dérivé de la fonction $f : x \mapsto x^{2}$ pour $x=1$.
+     \par
+     Ce nombre se note $f^{\prime}\left(1\right)$ et vaut :
+     \par
+     $f^{\prime}\left(1\right)=\lim\limits_{h\rightarrow 0}\frac{\left(1+h\right)^{2}-1^{2}}{h}=\lim\limits_{h\rightarrow 0}\frac{2h+h^{2}}{h}=\lim\limits_{h\rightarrow 0}2+h$
+     \par
+     Or quand $h$ tend vers 0, $2+h$ tend vers 2; donc $f^{\prime}\left(1\right)=2$.
+}
+\bloc{cyan}{Remarque:}{% id="r21" 
+\textbf{Interprétation graphique du nombre dérivé :}
+  \begin{center}
+     \begin{extern}%width="450" alt="nombre dérivé"
+          % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+               \def\xmin{-2.5}
+               \def\xmax{8.5}
+               \def\ymin{-1.5}
+               \def\ymax{8.5}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{12pt}{12pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+              %      \psgrid[gridcolor=mcgris,subgriddiv=0](-4,-2)(9,9)
+           %        \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+        \psline[linecolor=gray]{->}(\xmin,0)(\xmax,0)
+           \psline[linecolor=gray]{->}(0,\ymin)(0,\ymax)
+                     \psline[linecolor=lightgray](\xmin,0)(\xmax,0)
+           \psline[linecolor=lightgray](2,0)(2,1.69)
+                    \psline[linecolor=lightgray](5,0)(5,3.713)
+                    \rput[tr](-0.2,-0.2){$O$}\rput[br](1.8,1.8){$A$}\rput[br](4.8,3.693){$B$}\rput[t](3.5,-0.8){\color{mcmauve} $h$}
+                    \rput[t](8,4){\color{red} $\mathscr{T}$}\rput[t](8,7.5){\color{blue} $\mathscr{C}_f$}\rput[t](2,-0.2){$x_0$}\rput[t](5,-0.1){$x_0+h$}
+                    \psdots(2,1.69)\psdots(5,3.713)
+                    \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=blue]{\xmin}{\xmax}{1.3^x}
+                    \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=mcvert]{\xmin}{\xmax}{0.674*x+0.341}
+                     \psplot[plotpoints=1000,linewidth=0.8pt,linecolor=red]{\xmin}{\xmax}{0.443*x+0.803}
+                    \psline[linecolor=mcmauve]{<->}(2,-0.7)(5,-0.7)
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+       Soit $\mathscr{C}_f$ la courbe représentative de la fonction $f$.
+     \par
+     Lorsque $h$ tend vers 0, $B$ \textit{"se rapproche"} de $A$ et la droite $\left(AB\right)$ se rapproche de la tangente 
+     $\mathscr{T}$.
+     \par
+     \textbf{Le nombre dérivée $f^{\prime}\left(x_{0}\right)$ est le coefficient directeur de la tangente à la courbe $\mathscr{C}_f$ au point d'abscisse $x_{0}$.}
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Soit $f$ une fonction dérivable en $x_{0}$ de courbe représentative $\mathscr{C}_f$, l'équation de la tangente à $\mathscr{C}_f$ au point d'abscisse $x_{0}$ est :
+     \par
+$y=f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+f\left(x_{0}\right)$}
+\bloc{orange}{Démonstration}{% id="m21"
+     D'après la propriété précédente, la tangente à $\mathscr{C}_f$ au point d'abscisse $x_{0}$ est une droite de coefficient directeur $f^{\prime}\left(x_{0}\right)$. Son équation est donc de la forme :
+     \par
+     $y=f^{\prime}\left(x_{0}\right)x+b$
+     \par
+     On sait que la tangente passe par le point $A$ de coordonnées $\left(x_{0}; f\left(x_{0}\right)\right)$ donc :
+     \par
+     $f\left(x_{0}\right)=f^{\prime}\left(x_{0}\right)x_{0}+b$
+     \par
+     $b=-f^{\prime}\left(x_{0}\right)x_{0}+f\left(x_{0}\right)$
+     \par
+     L'équation de la tangente est donc :
+     \par
+     $y=f^{\prime}\left(x_{0}\right)x-f^{\prime}\left(x_{0}\right)x_{0}+f\left(x_{0}\right)$
+     \par
+     Soit :
+     \par
+     $y=f^{\prime}\left(x_{0}\right)\left(x-x_{0}\right)+f\left(x_{0}\right)$
+}
+\begin{h2}2. Fonction dérivée\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     Soit $f$ une fonction définie sur un intervalle $I$. On dit que $f$ est \textbf{dérivable} sur $I$ si et seulement si pour tout $x \in  I$, le nombre dérivé $f^{\prime}\left(x\right)$ existe.
+     \par
+     La fonction qui à $x \in  I$ associe le nombre dérivé de $f$ en $x$ s'appelle la \textbf{fonction dérivée} et se note $f^{\prime}$
+}
+\cadre{vert}{Propriétés}{% id="p50"
+     \textbf{Dérivée des fonctions usuelles :}
+\begin{center}
+     \begin{tabularx}{0.8\linewidth}{|X|X|X|}%class="compact" width="600"
+          \hline
+          \textbf{Fonction} & \textbf{Dérivée} & \textbf{Ensemble de dérivabilité}
+\\ \hline
+          $k$  $\left(k\in \mathbb{R}\right)$  &  $0$  &  $\mathbb{R}$
+          \\ \hline
+          $x$ &  $1$  &  $\mathbb{R}$
+          \\ \hline
+          $x^{n}$ $\left(n\in \mathbb{N}\right)$  &  $nx^{n-1}$  &  $\mathbb{R}$
+          \\ \hline
+          $\frac{1}{x^{n}}$ $\left(n\in \mathbb{N}\right)$ &  $-\frac{n}{x^{n+1}}$  &  $\mathbb{R}-\left\{0\right\}$
+          \\ \hline
+          $\sqrt{x}$ &  $\frac{1}{2\sqrt{x}}$  &  $\left]0;+\infty \right[$
+  \\        \hline
+     \end{tabularx}
+\end{center}
+}
+\cadre{vert}{Propriétés}{% id="p60"
+     \textbf{Formules de base :}
+     \par
+     Si $u$ et $v$ sont 2 fonctions dérivables sur un intervalle $I$. Sur cet intervalle :
+\begin{center}
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{Fonction} & \textbf{Dérivée}
+          \\ \hline
+          $u+v$  &  $u^{\prime}+v^{\prime}$
+          \\ \hline
+          $ku$  $\left(k\in \mathbb{R}\right)$  &  $ku^{\prime} $
+          \\ \hline
+          $\frac{1}{u}$ (avec $u\left(x\right)\neq 0$ sur $I$)  &  $-\frac{u^{\prime} }{u^{2}} $
+          \\ \hline
+          $uv$  &  $u^{\prime}v+uv^{\prime}$
+          \\ \hline
+          $\frac{u}{v}$  (avec $v\left(x\right)\neq 0$ sur $I$) &  $\frac{u^{\prime}v-uv^{\prime}}{v^{2}} $
+          \\ \hline
+          $\sqrt{u}$  (avec $u\geqslant 0$ sur $I$) &  $\frac{u^{\prime}}{2\sqrt{u}}$ lorsque $u > 0$
+         \\  \hline
+     \end{tabularx}
+\end{center}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     On cherche à calculer la dérivée de la fonction $f$ définie sur $\mathbb{R}$ par :
+     \par
+     $f\left(x\right)=\frac{x}{x^{2}+1}$
+     \par
+     On pose
+     \par
+     $u\left(x\right)=x$ et $v\left(x\right)=x^{2}+1$
+     \par
+     On a alors
+     \par
+     $u^{\prime}\left(x\right)=1$
+     \par
+     $v^{\prime}\left(x\right)=2x$
+     \par
+     car la dérivée de la fonction $x \mapsto  x^{2}$ est la fonction $x \mapsto  2x$  (formule $nx^{n-1}$ avec $n=2$) et la dérivée de la fonction constante $x \mapsto 1$ est la fonction nulle.
+     \par
+     La dérivée du quotient est donc :
+     \par
+     $f^{\prime}\left(x\right)=\frac{u^{\prime}\left(x\right)v\left(x\right)-u\left(x\right)v^{\prime}\left(x\right)}{v\left(x\right)^{2}}=\frac{1\times \left(x^{2}+1\right)-x\times 2x}{\left(x^{2}+1\right)^{2}}=\frac{1-x^{2}}{\left(x^{2}+1\right)^{2}}$
+}
+\bloc{cyan}{Remarques}{% id="r70"
+     \begin{itemize}
+          \item Si le dénominateur d'une fraction est constant, il est très maladroit d'utiliser la formule
+          \par
+          $\left(\frac{u}{v}\right)^{\prime}=\frac{u^{\prime}v-uv^{\prime}}{v^{2}}$.
+          \par
+          Par exemple pour dériver $f\left(x\right)=\frac{x^{2}+1}{5}$ on écrira :
+          \par
+          $f\left(x\right)=\frac{1}{5}\times \left(x^{2}+1\right)$
+          \par
+          donc $f^{\prime}\left(x\right)=\frac{1}{5}\times \left(2x\right)$ (formule $\left(ku\right)^{\prime}=ku^{\prime}$)
+          \par
+          $f^{\prime}\left(x\right)=\frac{2x}{5}$
+          \item De même, si le numérateur d'une fraction est constant on utilisera, de préférence, la formule :
+          \par
+          $\left(\frac{1}{u}\right)^{\prime}=-\frac{u^{\prime}}{u^{2}}$
+          \par
+          Par exemple, si $f\left(x\right)=\frac{5}{x^{2}+1}$
+          \par
+          $f\left(x\right)=5\times \frac{1}{x^{2}+1}$ donc :
+          \par
+          $f^{\prime}\left(x\right)=5\times \left(-\frac{2x}{\left(x^{2}+1\right)^{2}}\right)=-\frac{10x}{\left(x^{2}+1\right)^{2}}$ (formule $\left(\frac{1}{u}\right)^{\prime}=-\frac{u^{\prime}}{u^{2}}$ avec $u\left(x\right)=x^{2}+1$ donc $u^{\prime}\left(x\right)=2x$)
+     \end{itemize}
+}
+\begin{h2}3. Fonction dérivée et sens de variations\end{h2}
+\cadre{rouge}{Théorème}{% id="t80"
+     Soit $f$ une fonction définie sur un intervalle $I$.
+     \begin{itemize}
+          \item $f$ est croissante sur $I$ si et seulement si $f^{\prime}\left(x\right)\geqslant 0$ pour tout $x \in  I$
+          \item $f$ est décroissante sur $I$ si et seulement si $f^{\prime}\left(x\right)\leqslant 0$ pour tout $x \in  I$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r80"
+     Si $f^{\prime}\left(x\right) > 0$ (resp.  $f^{\prime}\left(x\right) < 0$) sur $I$, alors $f$ est \textbf{strictement} croissante (resp. décroissante) sur $I$.
+     \par
+     Mais la réciproque est fausse. Une fonction peut être strictement croissante sur $I$ alors que sa dérivée s'annule sur $I$. C'est le cas par exemple de la fonction $x \mapsto  x^{3}$ qui est strictement croissante sur $\mathbb{R}$ alors que sa dérivée $x \mapsto  3x^{2}$ s'annule pour $x=0$
+}
+\bloc{orange}{Exemple}{% id="e80"
+     Reprenons la fonction de l'exemple précédent.
+     \par
+     $f\left(x\right)=\frac{x}{x^{2}+1}$
+     \par
+     $f^{\prime}\left(x\right)=\frac{1-x^{2}}{\left(x^{2}+1\right)^{2}}$
+     \par
+     Le dénominateur de $f^{\prime}\left(x\right)$ est toujours strictement positif.
+     \par
+     Le numérateur de $f^{\prime}\left(x\right)$ peut se factoriser : $1-x^{2}=\left(1-x\right)\left(1+x\right)$
+     \par
+     Une facile étude de signe montre que $f^{\prime}$ est strictement négative sur $\left]-\infty  ; -1\right[$ et $\left]1 ; +\infty \right[$ et est strictement positive sur $\left]-1 ; 1\right[$.
+     \par
+     Par ailleurs, $f\left(-1\right)=-\frac{1}{2}$ et $f\left(1\right)=\frac{1}{2}$
+     \par
+     On en déduit le tableau de variations de $f$ (que l'on regroupe habituellement avec le tableau de signe de $f^{\prime}$) :
+\begin{center}
+\begin{extern}%width="500" alt="Dérivée et tableau de variations "
+\begin{tikzpicture}[scale=1]
+% Styles 
+\tikzstyle{cadre}=[thin]
+\tikzstyle{fleche}=[->,>=latex,thin]
+\tikzstyle{nondefini}=[lightgray]
+% Dimensions Modifiables
+\def\Lrg{1.5}
+\def\HtX{1}
+\def\HtY{0.5}
+% Dimensions Calculées
+\def\lignex{-0.5*\HtX}
+\def\lignef{-1.5*\HtX}
+\def\separateur{-0.5*\Lrg}
+% Largeur du tableau
+\def\gauche{-1.5*\Lrg}
+\def\droite{6.5*\Lrg}
+% Hauteur du tableau
+\def\haut{0.5*\HtX}
+\def\bas{-2.5*\HtX-2*\HtY}
+% Ligne de l'abscisse : x
+\node at (-1*\Lrg,0) {$x$};
+\node at (0*\Lrg,0) {$-\infty$};
+\node at (2*\Lrg,0) {$-1$};
+\node at (4*\Lrg,0) {$1$};
+\node at (6*\Lrg,0) {$+\infty$};
+% Pointillés
+\draw[lightgray] (2*\Lrg,\lignex-0) -- (2*\Lrg,\lignef+0);
+\draw[lightgray] (2*\Lrg,\lignef-0) -- (2*\Lrg,\bas+0);
+\draw[lightgray] (4*\Lrg,\lignex-0) -- (4*\Lrg,\lignef+0);
+\draw[lightgray] (4*\Lrg,\lignef-0) -- (4*\Lrg,\bas+0);
+% Ligne de la dérivée : f'(x)
+\node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+\node at (0*\Lrg,-1*\HtX) {$ $};
+\node at (1*\Lrg,-1*\HtX) {$-$};
+\node at (2*\Lrg,-1*\HtX) {$0$};
+\node at (3*\Lrg,-1*\HtX) {$+$};
+\node at (4*\Lrg,-1*\HtX) {$0$};
+\node at (5*\Lrg,-1*\HtX) {$-$};
+\node at (6*\Lrg,-1*\HtX) {$ $};
+% Ligne de la fonction : f(x)
+\node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+\node (f1) at (0*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+\node (f2) at (2*\Lrg,{-2*\HtX+(-2)*\HtY}) {$-\dfrac{1}{2}$};
+\node (f3) at (4*\Lrg,{-2*\HtX+(0)*\HtY}) {$\dfrac{1}{2}$};
+\node (f4) at (6*\Lrg,{-2*\HtX+(-2)*\HtY}) {$$};
+% Flèches
+\draw[fleche] (f1) -- (f2);
+\draw[fleche] (f2) -- (f3);
+\draw[fleche] (f3) -- (f4);
+% Encadrement
+\draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+\draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+\draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+\draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+\end{tikzpicture}
+\end{extern}
+\end{center}
+}
+\input{_footer}

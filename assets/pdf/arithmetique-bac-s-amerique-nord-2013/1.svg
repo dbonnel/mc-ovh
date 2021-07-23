@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="736" height="1082" viewBox="0 0 736 1082" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: #FFFFFF;
+}
+.g3_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_1{
+fill: #7DC246;
+}
+
+.s8_1{
+font-size: 21.45px;
+font-family: MS-Gothic_42;
+fill: #000000;
+}
+.s7_1{
+font-size: 13.75px;
+font-family: TimesNewRomanPS-ItalicMT_49;
+fill: #000000;
+}
+.s4_1{
+font-size: 21.45px;
+font-family: TimesNewRomanPS-BoldMT_4b;
+fill: #000000;
+}
+.s6_1{
+font-size: 13.75px;
+font-family: TimesNewRomanPS-BoldItalicM_4d;
+fill: #000000;
+}
+.s5_1{
+font-size: 21.45px;
+font-family: TimesNewRomanPS-BoldItalicM_4d;
+fill: #000000;
+}
+.s1_1{
+font-size: 24.38px;
+font-family: TimesNewRomanPSMT_47;
+fill: #333333;
+}
+.s2_1{
+font-size: 21.45px;
+font-family: TimesNewRomanPSMT_47;
+fill: #000000;
+}
+.s3_1{
+font-size: 21.45px;
+font-family: TimesNewRomanPS-ItalicMT_49;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1082
+L736,1082
+L736,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="18" 
+y="33" 
+dx="0,0,0.1,0,0,0.2,0,0.1,0,0.1,0,0,0.1,0,0.1,0,0.1,0,0.1,0,0,0.1,0,0.1,0,0.1,0.1,0,0,0,0.1,0,0,0.1,0,0,0.1,0,0,0.3,0.1,0.1,0.1,0,-0.1,0,0,0,0.1" 
+class="s1_1"
+>ARITHMÉTIQUE – BAC S AMÉRIQUE DU NORD 2013 (SPÉ) </text>
+
+<path fill-rule="evenodd" d="M16,41l697,0l0,-2L16,39l0,2Z" class="g1_1" />
+<path fill-rule="evenodd" d="M16,69l697,0l0,-27L16,42l0,27Z" class="g2_1" />
+<path fill-rule="evenodd" d="M16,97l697,0l0,-28L16,69l0,28Z" class="g2_1" />
+<text 
+x="18" 
+y="92" 
+dx="0,-0.1,-0.1,-0.1,0,0,0,0,-0.1,0,0.1" 
+class="s2_1"
+>EXERCICE 2 </text>
+
+<text 
+x="18" 
+y="141" 
+dx="0,0,-0.1,0,-0.1,0,-0.1,0,-0.1" 
+class="s2_1"
+>PARTIE A </text>
+
+<path d="M18.5,145.5l96,0" class="g3_1" />
+<text 
+x="18" 
+y="190" 
+dx="0,0.1,0,0,0,-0.2,0.1,0,-0.2,0.1,-0.2,0.1,-0.1,0.1,-0.1,0.1,0,-0.1,0,0.1,0,-0.2,0.1,0,-0.1,0,0.1,-0.2,0.1,0,0,0.1,-0.2,0,-0.1,0.1,-0.1,0,-0.1,0.1,0.1,-0.4,0,0,0.1,-0.2,0.1,0.1,-0.2,0.1,0,0,0.1,-0.2,-0.1,0.1,0,-0.2,0.1,0,-0.1,0.1,-0.1,0.1,-0.2,0.1,0.1,-0.2,0" 
+class="s2_1"
+>1) Représentons les étapes de l'algorithme dans le tableau suivant : </text>
+
+<text 
+x="48" 
+y="240" 
+dx="0,-0.1" 
+class="s3_1"
+>a </text>
+
+<text 
+x="135" 
+y="240" 
+dx="0,-0.1" 
+class="s3_1"
+>b </text>
+
+<text 
+x="222" 
+y="240" 
+dx="0,0" 
+class="s3_1"
+>c </text>
+
+<text 
+x="301" 
+y="240" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="317" 
+y="240" 
+dx="0,0" 
+class="s2_1"
+>&gt; </text>
+
+<text 
+x="334" 
+y="240" 
+dx="0" 
+class="s3_1"
+>b</text>
+
+<path d="M10.5,221.5l0,-1" class="g3_1" />
+<path d="M10.5,221.5l0,-1" class="g3_1" />
+<path d="M10.5,221.5l86,0" class="g3_1" />
+<path d="M96.5,221.5l0,-1" class="g3_1" />
+<path d="M97.5,221.5l86,0" class="g3_1" />
+<path d="M183.5,221.5l0,-1" class="g3_1" />
+<path d="M184.5,221.5l86,0" class="g3_1" />
+<path d="M270.5,221.5l0,-1" class="g3_1" />
+<path d="M270.5,221.5l105,0" class="g3_1" />
+<path d="M375.5,221.5l0,-1" class="g3_1" />
+<path d="M375.5,221.5l0,-1" class="g3_1" />
+<path d="M10.5,245.5l0,-24" class="g3_1" />
+<path d="M96.5,245.5l0,-24" class="g3_1" />
+<path d="M183.5,245.5l0,-24" class="g3_1" />
+<path d="M270.5,245.5l0,-24" class="g3_1" />
+<path d="M375.5,245.5l0,-24" class="g3_1" />
+<text 
+x="42" 
+y="266" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>13 </text>
+
+<text 
+x="135" 
+y="266" 
+dx="0,-0.1" 
+class="s2_1"
+>4 </text>
+
+<text 
+x="221" 
+y="266" 
+dx="0,-0.1" 
+class="s2_1"
+>0 </text>
+
+<text 
+x="306" 
+y="266" 
+dx="0,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>vrai </text>
+
+<path d="M10.5,246.5l0,-1" class="g3_1" />
+<path d="M10.5,246.5l86,0" class="g3_1" />
+<path d="M96.5,246.5l0,-1" class="g3_1" />
+<path d="M97.5,246.5l86,0" class="g3_1" />
+<path d="M183.5,246.5l0,-1" class="g3_1" />
+<path d="M184.5,246.5l86,0" class="g3_1" />
+<path d="M270.5,246.5l0,-1" class="g3_1" />
+<path d="M270.5,246.5l105,0" class="g3_1" />
+<path d="M375.5,246.5l0,-1" class="g3_1" />
+<path d="M10.5,271.5l0,-25" class="g3_1" />
+<path d="M96.5,271.5l0,-25" class="g3_1" />
+<path d="M183.5,271.5l0,-25" class="g3_1" />
+<path d="M270.5,271.5l0,-25" class="g3_1" />
+<path d="M375.5,271.5l0,-25" class="g3_1" />
+<text 
+x="48" 
+y="291" 
+dx="0,-0.1" 
+class="s2_1"
+>9 </text>
+
+<text 
+x="135" 
+y="291" 
+dx="0,-0.1" 
+class="s2_1"
+>4 </text>
+
+<text 
+x="221" 
+y="291" 
+dx="0,-0.1" 
+class="s2_1"
+>1 </text>
+
+<text 
+x="306" 
+y="291" 
+dx="0,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>vrai </text>
+
+<path d="M10.5,272.5l0,-1" class="g3_1" />
+<path d="M10.5,272.5l86,0" class="g3_1" />
+<path d="M96.5,272.5l0,-1" class="g3_1" />
+<path d="M97.5,272.5l86,0" class="g3_1" />
+<path d="M183.5,272.5l0,-1" class="g3_1" />
+<path d="M184.5,272.5l86,0" class="g3_1" />
+<path d="M270.5,272.5l0,-1" class="g3_1" />
+<path d="M270.5,272.5l105,0" class="g3_1" />
+<path d="M375.5,272.5l0,-1" class="g3_1" />
+<path d="M10.5,296.5l0,-24" class="g3_1" />
+<path d="M96.5,296.5l0,-24" class="g3_1" />
+<path d="M183.5,296.5l0,-24" class="g3_1" />
+<path d="M270.5,296.5l0,-24" class="g3_1" />
+<path d="M375.5,296.5l0,-24" class="g3_1" />
+<text 
+x="48" 
+y="316" 
+dx="0,-0.1" 
+class="s2_1"
+>5 </text>
+
+<text 
+x="135" 
+y="316" 
+dx="0,-0.1" 
+class="s2_1"
+>4 </text>
+
+<text 
+x="221" 
+y="316" 
+dx="0,-0.1" 
+class="s2_1"
+>2 </text>
+
+<text 
+x="306" 
+y="316" 
+dx="0,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>vrai </text>
+
+<path d="M10.5,297.5l0,-1" class="g3_1" />
+<path d="M10.5,297.5l86,0" class="g3_1" />
+<path d="M96.5,297.5l0,-1" class="g3_1" />
+<path d="M97.5,297.5l86,0" class="g3_1" />
+<path d="M183.5,297.5l0,-1" class="g3_1" />
+<path d="M184.5,297.5l86,0" class="g3_1" />
+<path d="M270.5,297.5l0,-1" class="g3_1" />
+<path d="M270.5,297.5l105,0" class="g3_1" />
+<path d="M375.5,297.5l0,-1" class="g3_1" />
+<path d="M10.5,321.5l0,-24" class="g3_1" />
+<path d="M96.5,321.5l0,-24" class="g3_1" />
+<path d="M183.5,321.5l0,-24" class="g3_1" />
+<path d="M270.5,321.5l0,-24" class="g3_1" />
+<path d="M375.5,321.5l0,-24" class="g3_1" />
+<text 
+x="48" 
+y="342" 
+dx="0,-0.1" 
+class="s2_1"
+>1 </text>
+
+<text 
+x="135" 
+y="342" 
+dx="0,-0.1" 
+class="s2_1"
+>4 </text>
+
+<text 
+x="221" 
+y="342" 
+dx="0,-0.1" 
+class="s2_1"
+>3 </text>
+
+<text 
+x="304" 
+y="342" 
+dx="0,0,0,-0.1,-0.1" 
+class="s2_1"
+>faux </text>
+
+<path d="M10.5,322.5l0,-1" class="g3_1" />
+<path d="M10.5,322.5l86,0" class="g3_1" />
+<path d="M96.5,322.5l0,-1" class="g3_1" />
+<path d="M97.5,322.5l86,0" class="g3_1" />
+<path d="M183.5,322.5l0,-1" class="g3_1" />
+<path d="M184.5,322.5l86,0" class="g3_1" />
+<path d="M270.5,322.5l0,-1" class="g3_1" />
+<path d="M270.5,322.5l105,0" class="g3_1" />
+<path d="M375.5,322.5l0,-1" class="g3_1" />
+<path d="M10.5,347.5l0,-25" class="g3_1" />
+<path d="M10.5,348.5l0,-1" class="g3_1" />
+<path d="M10.5,348.5l0,-1" class="g3_1" />
+<path d="M10.5,348.5l86,0" class="g3_1" />
+<path d="M96.5,347.5l0,-25" class="g3_1" />
+<path d="M96.5,348.5l0,-1" class="g3_1" />
+<path d="M97.5,348.5l86,0" class="g3_1" />
+<path d="M183.5,347.5l0,-25" class="g3_1" />
+<path d="M183.5,348.5l0,-1" class="g3_1" />
+<path d="M184.5,348.5l86,0" class="g3_1" />
+<path d="M270.5,347.5l0,-25" class="g3_1" />
+<path d="M270.5,348.5l0,-1" class="g3_1" />
+<path d="M270.5,348.5l105,0" class="g3_1" />
+<path d="M375.5,347.5l0,-25" class="g3_1" />
+<path d="M375.5,348.5l0,-1" class="g3_1" />
+<path d="M375.5,348.5l0,-1" class="g3_1" />
+<text 
+x="18" 
+y="367" 
+dx="0,0,0.1,0.1,-0.2,0.1" 
+class="s2_1"
+>Fin : </text>
+
+<text 
+x="64" 
+y="367" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="80" 
+y="367" 
+dx="0,0,-0.2,0.1,0,0.1" 
+class="s2_1"
+>= 1 ; </text>
+
+<text 
+x="124" 
+y="367" 
+dx="0" 
+class="s3_1"
+>c</text>
+
+<text 
+x="139" 
+y="367" 
+dx="0,0,-0.2,0.1" 
+class="s2_1"
+>= 3 </text>
+
+<text 
+x="18" 
+y="416" 
+dx="0,0.1,0,0,-0.1,0,0,-0.1,0.1,-0.1,0,-0.1,0.1,0.1,-0.4,0,0,0.1,0,0,-0.2,0,0.1,0,-0.1,0,0,0,0,-0.1,0,-0.1,0.1,0,0,0,-0.2,0.1,0,-0.1,-0.1,0.1,-0.1,0,0.1,0,0,0.1,0,-0.2,0.1,-0.2,0.1,-0.2,0.1" 
+class="s2_1"
+>2) L'algorithme permet de calculer au bout de n étapes </text>
+
+<text 
+x="489" 
+y="416" 
+dx="0,0.1,0,0,0,-0.2,0.1,-0.2,0.1,-0.2,0,0" 
+class="s4_1"
+>le quotient </text>
+
+<text 
+x="591" 
+y="416" 
+dx="0" 
+class="s5_1"
+>c</text>
+
+<text 
+x="601" 
+y="418" 
+dx="0" 
+class="s6_1"
+>n</text>
+
+<text 
+x="614" 
+y="416" 
+dx="0,0,0,0,0.1,0,0,-0.2,0,0.1,-0.2,0" 
+class="s4_1"
+>et le reste </text>
+
+<text 
+x="18" 
+y="441" 
+dx="0" 
+class="s5_1"
+>a</text>
+
+<text 
+x="29" 
+y="442" 
+dx="0" 
+class="s6_1"
+>n</text>
+
+<text 
+x="42" 
+y="441" 
+dx="0,0,0,-0.2,0.1,0.1,0,-0.2,0.1,-0.1,-0.1,0.1,-0.1,0.1,0,0,0,0,-0.2,-0.1,0.1,0,0.1,-0.2,0,0,0,0,0,0" 
+class="s4_1"
+>de la division euclidienne de </text>
+
+<text 
+x="303" 
+y="441" 
+dx="0" 
+class="s5_1"
+>a</text>
+
+<text 
+x="314" 
+y="442" 
+dx="0" 
+class="s6_1"
+>0</text>
+
+<text 
+x="326" 
+y="441" 
+dx="0,-0.2,0.1,0" 
+class="s4_1"
+>par </text>
+
+<text 
+x="363" 
+y="441" 
+dx="0" 
+class="s5_1"
+>b</text>
+
+<text 
+x="379" 
+y="441" 
+dx="0,-0.1" 
+class="s2_1"
+>: </text>
+
+<text 
+x="18" 
+y="465" 
+dx="0,0.1" 
+class="s3_1"
+>bc</text>
+
+<text 
+x="39" 
+y="468" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="51" 
+y="465" 
+dx="0,0" 
+class="s2_1"
+>+ </text>
+
+<text 
+x="68" 
+y="465" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="79" 
+y="468" 
+dx="0" 
+class="s7_1"
+>n</text>
+
+<text 
+x="91" 
+y="465" 
+dx="0,0" 
+class="s2_1"
+>= </text>
+
+<text 
+x="108" 
+y="465" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="119" 
+y="468" 
+dx="0" 
+class="s7_1"
+>0</text>
+
+<text 
+x="18" 
+y="490" 
+dx="0,-0.1,0,0.1,0.1,-0.2,0.1,0,0,-0.1,0,-0.4,0.1,0.1,0,0,0.1,-0.2,0.1,0.1,0,-0.2,0.1,0,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>Dans l'exemple pris en 1) : </text>
+
+<text 
+x="18" 
+y="515" 
+dx="0,0.1,-0.2,0.1,0,0,0,0.1,0,0,-0.2,0.1,0.1" 
+class="s2_1"
+>4×3 + 1 = 13 </text>
+
+<text 
+x="18" 
+y="564" 
+dx="0,0,-0.1,0,-0.1,0,-0.1,0,0" 
+class="s2_1"
+>PARTIE B </text>
+
+<path d="M18.5,567.5l95,0" class="g3_1" />
+<text 
+x="18" 
+y="613" 
+dx="0,0.1,0,0,0,-0.1,0.1,-0.2,0.1,0,-0.2,0.1,0,0,-0.1" 
+class="s2_1"
+>1) Codage de U </text>
+
+<text 
+x="18" 
+y="640" 
+dx="0,-0.1,0.1,0,0.1,0,-0.2,0.1,0,-0.1" 
+class="s2_1"
+>Étape 1 : </text>
+
+<text 
+x="126" 
+y="640" 
+dx="0,-0.1" 
+class="s2_1"
+>U </text>
+
+<text 
+x="147" 
+y="640" 
+dx="0" 
+class="s8_1"
+>→</text>
+
+<text 
+x="179" 
+y="640" 
+dx="0" 
+class="s3_1"
+>m</text>
+
+<text 
+x="200" 
+y="640" 
+dx="0,0,0,0.1,-0.1" 
+class="s2_1"
+>= 20 </text>
+
+<text 
+x="18" 
+y="665" 
+dx="0,-0.1,0.1,0,0.1,0,-0.2,0.1,0,-0.1" 
+class="s2_1"
+>Étape 2 : </text>
+
+<text 
+x="126" 
+y="665" 
+dx="0" 
+class="s2_1"
+>9</text>
+
+<text 
+x="137" 
+y="665" 
+dx="0" 
+class="s3_1"
+>m</text>
+
+<text 
+x="158" 
+y="665" 
+dx="0,0,0,0.1,0,0,0,-0.1,-0.1,-0.1" 
+class="s2_1"
+>+ 5 = 185 </text>
+
+<text 
+x="126" 
+y="690" 
+dx="0,-0.1,0.1,-0.1,0.1,-0.1,0.1,-0.1,0.1,0,-0.2,0.1,-0.2,0.1,-0.1,0.1,-0.1,0,-0.1,0.1,0,-0.2,0.1,0,0,-0.1,-0.1,0.1,0,0.1,-0.2,0,0,-0.1,0.1,0,0.1,-0.2,0.1,-0.1,0.1,0,-0.2,0,0.1,0.1,-0.2,0.1,0,0,0,0" 
+class="s2_1"
+>Division euclidienne de 185 par 26 : 185 = 26.7 + 3 </text>
+
+<text 
+x="126" 
+y="715" 
+dx="0,0,0,-0.1,0.1,0" 
+class="s2_1"
+>Reste </text>
+
+<text 
+x="179" 
+y="715" 
+dx="0" 
+class="s3_1"
+>p</text>
+
+<text 
+x="196" 
+y="715" 
+dx="0,0,-0.2,0.1" 
+class="s2_1"
+>= 3 </text>
+
+<text 
+x="18" 
+y="741" 
+dx="0,-0.1,0.1,0,0.1,0,-0.2,0.1,0,-0.1" 
+class="s2_1"
+>Étape 3 : </text>
+
+<text 
+x="126" 
+y="741" 
+dx="0" 
+class="s3_1"
+>p</text>
+
+<text 
+x="143" 
+y="741" 
+dx="0,0,0,0.1" 
+class="s2_1"
+>= 3 </text>
+
+<text 
+x="176" 
+y="741" 
+dx="0" 
+class="s8_1"
+>→</text>
+
+<text 
+x="203" 
+y="741" 
+dx="0,-0.3" 
+class="s2_1"
+>D </text>
+
+<text 
+x="18" 
+y="791" 
+dx="0,0.1,0,0,0,0.1,-0.2,0.1,-0.1,0,0,-0.1,0.1,0,-0.1,0,0,-0.4,0.1,0.1,0.1,0,-0.1,-0.2,0,0,0.1,0,0,0.1,-0.2,0,-0.4,0.1,0,0,0,0,0.1,0,0,-0.1,0.1,0,-0.2,-0.1,0,0,0.1,0,0,-0.1,-0.1,0.1,0,-0.1,-0.1,0.1,-0.4,0,0,0.1,0,0,0.1,0,0,0,-0.2,0,-0.1,0.1,0,-0.1,0.1,-0.1,0.1,-0.2,0.1,-0.1,0,0,0" 
+class="s2_1"
+>2) Il suffit de modifier la première partie de l'algorithme de la façon suivante : </text>
+
+<text 
+x="18" 
+y="841" 
+dx="0,-0.1,0.1,0,-0.1,0.1,-0.2,0.1,0,0.1,0" 
+class="s4_1"
+>Variables :</text>
+
+<text 
+x="289" 
+y="841" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="305" 
+y="841" 
+dx="0,0,-0.1,0.1,0,-0.1,0.1,0,-0.2,0.1,-0.1,0.1,0,0,-0.2,0.1,-0.2,0.1,0.1,-0.2,0,-0.1" 
+class="s2_1"
+>est un entier naturel </text>
+
+<text 
+x="289" 
+y="865" 
+dx="0" 
+class="s3_1"
+>b</text>
+
+<text 
+x="305" 
+y="865" 
+dx="0,0,-0.1,0.1,0,-0.1,0.1,0,-0.2,0.1,-0.1,0.1,0,0,-0.2,0.1,-0.2,0.1,0.1,-0.2,0,-0.1" 
+class="s2_1"
+>est un entier naturel </text>
+
+<text 
+x="289" 
+y="890" 
+dx="0" 
+class="s3_1"
+>c</text>
+
+<text 
+x="303" 
+y="890" 
+dx="0,0,0.1,0.1,-0.2,-0.1,0.1,0,0,-0.1,0.1,-0.1,0,0,0,-0.1,0,-0.1,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>est un entier naturel </text>
+
+<text 
+x="289" 
+y="914" 
+dx="0" 
+class="s3_1"
+>m</text>
+
+<text 
+x="309" 
+y="914" 
+dx="0,0,0.1,0.1,0,-0.1,0.1,0,-0.2,0.1,-0.1,0.1,0,0,-0.2,0.1,-0.2,0.1,0.1,-0.2,-0.2,-0.1" 
+class="s2_1"
+>est un entier naturel </text>
+
+<text 
+x="18" 
+y="964" 
+dx="0,0.1,0,0.1,-0.2,-0.1,0.1,-0.1,0.1,-0.1,0.1,-0.2,0.1,-0.1,0,0" 
+class="s4_1"
+>Initialisation :</text>
+
+<text 
+x="289" 
+y="964" 
+dx="0,0,0,0,0,-0.2,0.1,0,0,0,0" 
+class="s2_1"
+>affecter à </text>
+
+<text 
+x="374" 
+y="964" 
+dx="0" 
+class="s3_1"
+>c</text>
+
+<text 
+x="389" 
+y="964" 
+dx="0,-0.1,0,0,0.1,-0.2,0.1,-0.2,0.1,0,-0.2,-0.1" 
+class="s2_1"
+>la valeur 0 </text>
+
+<text 
+x="289" 
+y="988" 
+dx="0,0,0,0,0,-0.2,0.1,0,0,0,0" 
+class="s2_1"
+>affecter à </text>
+
+<text 
+x="374" 
+y="988" 
+dx="0" 
+class="s3_1"
+>b</text>
+
+<text 
+x="390" 
+y="988" 
+dx="0,0.1,0,-0.2,0.1,0,-0.1,0,0.1,0,-0.2,0.1,-0.1" 
+class="s2_1"
+>la valeur 26 </text>
+
+<text 
+x="288" 
+y="1013" 
+dx="0,0.1,0,-0.4,0,0.1,0.1,0,0" 
+class="s2_1"
+>demander </text>
+
+<text 
+x="378" 
+y="1013" 
+dx="0,-0.3" 
+class="s3_1"
+>m </text>
+
+<text 
+x="288" 
+y="1037" 
+dx="0,0,0,0,0,-0.2,0.1,0,0,0,0" 
+class="s2_1"
+>affecter à </text>
+
+<text 
+x="374" 
+y="1037" 
+dx="0" 
+class="s3_1"
+>a</text>
+
+<text 
+x="390" 
+y="1037" 
+dx="0,0.1,0,-0.2,0.1,0,-0.1,0,0.1,0,-0.2,0.1" 
+class="s2_1"
+>la valeur de</text>
+
+<text 
+x="495" 
+y="1037" 
+dx="0" 
+class="s3_1"
+>m</text>
+
+<text 
+x="511" 
+y="1037" 
+dx="0,-0.1,0.1,0,0,0,-0.1" 
+class="s2_1"
+>*9 + 5 </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldMT_4b;
+	src: url("fonts/TimesNewRomanPS-BoldMT_4b.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_47;
+	src: url("fonts/TimesNewRomanPSMT_47.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldItalicM_4d;
+	src: url("fonts/TimesNewRomanPS-BoldItalicM_4d.woff") format("woff");
+}
+
+@font-face {
+	font-family: MS-Gothic_42;
+	src: url("fonts/MS-Gothic_42.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-ItalicMT_49;
+	src: url("fonts/TimesNewRomanPS-ItalicMT_49.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

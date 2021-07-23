@@ -1,0 +1,68 @@
+\input{_header}
+\meta{url}{/enigme/les-joueurs-de-cartes}
+\meta{pid}{3679}
+\meta{titre}{Les joueurs de cartes (mars 2016)}
+\meta{type}{enigme}
+%
+[Difficulté: Moyenne - Niveau: Première et +]
+
+
+\begin{center}
+\imgsvg{joueurs-340}{0.3}% alt="Joeurs de cartes" style="width:30rem"
+\end{center}Adrien, Béatrice, Chloé et Damien disputent une partie de cartes en plusieurs manches.
+\par
+Pour chacune des manches, il y a un et un seul gagnant.
+\begin{itemize}
+     \item
+     A l'issue de la \textbf{première manche}, chacun des perdants donne \textbf{1 euro} au vainqueur ( qui gagne donc 3 euros )
+     \item
+     A la fin de la \textbf{seconde manche}, chaque perdant verse \textbf{2 euros} au vainqueur ( qui gagne 6 euros )
+     \item
+     Et ainsi de suite ... ( troisième manche : 3 euros, quatrième manche : 4 euros, etc. )
+\end{itemize}
+A l'issue de la partie, Adrien, qui a remporté une seule manche, n'a ni gagné ni perdu d'argent.
+\par
+Combien la partie comportait-elle de manches ?
+
+\begin{solution}
+
+Notons $n$ le nombre de manches disputées.
+\par
+Tout d'abord on remarque qu'Adrien n'a pas pu perdre les trois dernières manches. En effet, si c'était le cas, son unique gain ne pourrait compenser les pertes de ces trois manches puisque les mises vont en augmentant.
+
+\begin{itemize}
+     \item
+     Supposons qu'Adrien a gagné la dernière manche (et donc perdu toutes les autres).
+     \par
+     Sur les $n-1$ premières manches, il a perdu $1+2+3+\cdots+n-1 =\frac{n(n-1)}{2}$ euros (voir formule \mcLien{https://www.maths-cours.fr/cours/premiere-s/suites-geometriques/#t60}{Somme des premiers entiers}).
+     \par
+     Lors de la dernière manche il a gagné $3n$ euros.
+     \par
+     Les gains et les pertes se compensent si et seulement si $\frac{n(n-1)}{2}=3n$ c'est à dire $n^2-7n=0$. Cette équation admet $7$ comme unique solution strictement positive.
+     \par
+     Vérifions que c'est l'unique possibilité.
+
+     \item
+     Supposons maintenant qu'Adrien a gagné l'avant-dernière manche.
+     \par
+     Sur les $n-2$ premières manches, il a perdu $1+2+3+\cdots+n-2 =\frac{(n-1)(n-2)}{2}$ euros.
+     \par
+     Lors de l'avant-dernière manche, il a gagné $3(n-1)$ euros.
+     \par
+     Lors de la dernière manche il a perdu $n$ euros.
+     \par
+     Les gains et les pertes s'équilibrent si et seulement si $\frac{(n-1)(n-2)}{2}+n=3(n-1)$ ce qui donne $n^2-7n+8=0$.
+     \par
+     Cette équation du second degré ne possède pas de solution entière (voir \mcLien{https://www.maths-cours.fr/solver/outil-equation-du-2nd-degre/?a=1&b=-7&c=8}{résolution}).
+     \par
+     ~
+     \item
+     Un raisonnement similaire dans le cas où Adrien gagne l'antépénultième manche conduit à l'équation $\frac{(n-2)(n-3)}{2}+n+n-1=3(n-2)$ c'est à dire $n^2-7n+16=0$ qui ne possède aucune solution (voir \mcLien{/solver/outil-equation-du-2nd-degre/?a=1&b=-7&c=16}{résolution})
+\end{itemize}
+\textbf{Alex a donc joué $7$ manches et gagné la dernière.}
+\\
+Il a d'abord perdu $1+2+3+4+5+6=21$ euros puis regagné $3 \times 7=21$ euros.
+
+
+\end{solution}
+\input{_footer}

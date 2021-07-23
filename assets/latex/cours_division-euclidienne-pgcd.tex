@@ -1,0 +1,195 @@
+\input{_header}
+\meta{url}{/cours/division-euclidienne-pgcd/}
+\meta{pid}{1552}
+\meta{titre}{Division euclidienne - Nombres premiers - PGCD}
+\meta{type}{cours}
+\begin{h2}1 - Division euclidienne\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soient $a$ et $b$, deux nombres entiers naturels (c'est à dire positifs) avec $b\neq 0$.
+     \par
+     Effectuer la \textbf{division euclidienne} de $a$ par $b$, c'est trouver deux entiers naturels $q$ et $r$ tels que~:
+     \begin{center}$a = b\times q+r $ et $ r < b$\end{center}
+     $q$ s'appelle le \textbf{quotient} et $r$ le \textbf{reste}.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     \begin{center}
+          \imgsvg{division}{0.2}%width="180" alt="division euclidienne"
+     \end{center}
+     Écriture en ligne~:
+     \par
+     $6894 = 23\times 299 + 17$
+     \par
+     $299$ est le \textbf{quotient} et $17$ le \textbf{reste}.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     Sur la plupart des calculatrices de collège la touche qui permet d'effectuer la division euclidienne est notée~: \img{touche-divise}{0.008}%width="8" alt="touche division euclidienne"
+     .
+     \par
+     Par exemple, la suite de touches à entrer pour obtenir la division euclidienne de $6894$ par $23$ sur une TI-Collège est~:
+     \begin{center}
+          \imgsvg{touches}{0.25}%width="300" alt="suite de touches division euclidienne"
+     \end{center}
+     et voici le résultat obtenu à l'écran~:
+     \begin{center}
+          \imgsvg{result}{0.15}%width="160" alt="resultat division euclidienne"
+     \end{center}
+}
+\cadre{bleu}{Définition}{% id="d20"
+     On dit que $a$ est \textbf{divisible} par $b$ si le reste de la division euclidienne de $a$ par $b$ est nul.
+     \par
+     Cela revient à dire qu'il existe un entier naturel $q$ tel que $a = b\times q$.
+     \par
+     Les expressions suivantes sont synonymes~:
+     \begin{itemize}
+          \item $a$ est divisible par $b$
+          \item $a$ est un multiple de $b$
+          \item $b$ est un diviseur de $a$
+          \item $b$ divise $a$ (que l'on écrit parfois $b | a$)
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     La division euclidienne de $630$ par $15$ donne un quotient de $42$ et un reste nul.
+     \par
+     On a donc $630 = 15\times 42$.
+     \par
+     On peut dire que~:
+     \begin{itemize}
+          \item $630$ est divisible par $15$
+          \item $630$ est un multiple de $15$
+          \item $15$ est un diviseur de $630$
+          \item $15$ divise $630$
+     \end{itemize}
+     (On peut aussi dire que $630$ est divisible par $42$, etc.)
+}
+\cadre{rouge}{Critères de divisibilité}{% id="t30"
+     \begin{itemize}
+          \item Un entier naturel est divisible par 2 si son \textbf{chiffre des unités} est 0, 2, 4, 6 ou 8.
+          \item Un entier naturel est divisible par 3 si la \textbf{somme de ses chiffres} est divisible par 3.
+          \item Un entier naturel est divisible par 4 si le nombre formé par ses \textbf{deux derniers chiffres} est divisible par 4.
+          \item Un entier naturel est divisible par 5 si son \textbf{chiffre des unités} est 0 ou 5.
+          \item Un entier naturel est divisible par 9 si la \textbf{somme de ses chiffres} est divisible par 9.
+          \item Un entier naturel est divisible par 10 si son\textbf{ chiffre des unités} est 0.
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r30"
+     \begin{itemize}
+          \item \textbf{Attention~: }Pour les critères de divisibilité par 3 et par 9, il faut effectuer \textbf{la somme des chiffres} (et non regarder le chiffre des unités)
+          \item Il n'existe pas de critère de divisibilité par 7 qui soit très simple. Le plus rapide est en général d'effectuer la division~!
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e30"
+     \begin{itemize}
+          \item $1314$ est divisible par $2$ (chiffre des unités~: 4)
+          \item $1314$ est divisible par $3$ (somme des chiffres~: 9)
+          \item $1314$ n'est pas divisible par $4$ (deux derniers chiffres~: 14)
+          \item $1314$ n'est pas divisible par $5$ (chiffre des unités~: 4)
+          \item $1314$ est divisible par $9$ (somme des chiffres~: 9)
+          \item $1314$ n'est pas divisible par $10$ (chiffre des unités~: 4)
+     \end{itemize}
+}
+\begin{h2}2 - Nombres premiers\end{h2}
+\cadre{bleu}{Définition}{ % id="d45"
+     On dit qu'un nombre entier naturel est \textbf{premier} s'il possède exactement deux diviseurs~: 1 et lui-même.
+} % fin définition
+\bloc{orange}{Exemples}{ % id=e47
+     \begin{itemize}
+          \item
+          2; 3; 5 sont des nombres premiers~;
+          \item
+          0 \textbf{n'est pas} un nombre premier car il est divisible par tous les entiers supérieurs ou égal à 1.
+          \item
+          1 \textbf{n'est pas} un nombre premier car il n'admet qu' \textbf{un seul} diviseur (lui-même).
+          \item
+          À l'exception du nombre 2, tous les entiers pairs \textbf{ne sont pas} des nombres premiers (car ils sont divisibles par 2). Cela signifie qu'à l'exception du nombre 2, tous les nombres premiers sont impairs. Par contre, la réciproque est fausse~: tous les nombres impairs ne sont pas premiers~; par exemple 1 (voir ci-dessus) et 15 (divisible par 1; 3; 5 et 15) ne sont pas premiers.
+     \end{itemize}
+} % fin exemple
+\bloc{cyan}{Remarque}{ % id=r47
+     Il est utile de connaître par cœur la liste des nombres premiers inférieurs à 20 (ou plus ...):
+     \begin{center}
+          \textbf{2~; 3~; 5~; 7~; 11~; 13~; 17~; 19 }
+     \end{center}
+} % fin remarque
+\cadre{rouge}{Théorème}{ % id=t48
+     \textbf{Décomposition en produit de facteurs premiers}
+     \par
+     Tout nombre entier supérieur ou égal à 2 peut s'écrire sous la forme d'un produit de nombres premiers. Cette décomposition est \textbf{unique} (à l'ordre des facteurs près).
+} % fin théorème
+\bloc{cyan}{Remarque}{ % id=r48
+     Ce résultat très important est également appelé \textbf{ \og Théorème fondamental de l'arithmétique \fg{} }
+} % fin remarque
+\bloc{orange}{Exemple}{ % id=e48
+     \begin{itemize}
+          \item
+          $10 = 2 \times 5$
+          \item
+          $84 = 2 \times 2 \times 3 \times 7 = 2^2 \times 3 \times 7$
+          \item
+          $23 = 23$ (un seul facteur car 23 est premier~!)
+     \end{itemize}
+} % fin exemple
+\cadre{vert}{Méthode}{ % id=p48
+     Pour décomposer un nombre $ N $ en produit de facteurs premiers, on peut essayer de le diviser successivement par chaque nombre premier inférieur ou égal à $ \sqrt{ n } $ . Le méthode détaillée est décrite sur la fiche~: Décomposition en produit de facteurs premiers.
+} % fin propriété@
+\begin{h2}3 - PGCD\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     Le \textbf{PGCD} de deux entiers naturels non nuls $a$ et $b$ est le plus grand diviseur commun à $a$ et à $b$, c'est à dire le plus grand entier naturel qui divise à la fois $a$ et $b$.
+}
+\bloc{orange}{Exemple}{% id="e50"
+     Soit à déterminer le PGCD de $600$ et $315$.
+     \par
+     Les diviseurs de $600$ sont~:
+     \par
+     $1; 2; 3; 4; 5; 6; 8; 10; 12; 15; 20; 24; 25; 30; 40; 50; 60; 75; 100; 120; 150; 200; 300; 600$
+     \par
+     Les diviseurs de $315$ sont~:
+     \par
+     $1; 3; 5; 7; 9; 15; 21; 35; 45; 63; 105; 315$
+     \par
+     Le plus grand diviseur commun est donc $15$ (le plus grand nombre figurant à la fois dans les deux listes).
+     \par
+     $PGCD\left(600~; 315\right)=15$.
+     \par
+     Il existe plusieurs méthodes permettant de trouver le PGCD de deux nombres de façon plus rapide, sans avoir besoin de faire la liste de tous les diviseurs.
+     \medskip
+     En classe de Troisième, il faut connaître la méthode utilisant la décomposition en facteurs premiers (voir ci-dessous). D'autres méthodes sont proposées en compléments~: \mcLien{https://www.maths-cours.fr/supplement/deux-methodes-de-calcul-du-pgcd/}{Calcul du PGCD par soustractions successives et algorithme d'Euclide}.
+     \par
+     Par ailleurs, de nombreuses calculatrices (de niveau collège ou lycée) possède une touche permettant de calculer le PGCD de deux entiers naturels.
+}
+\bloc{orange}{Exemples}{ % id=e59
+     \textbf{Calcul du PGCD à l'aide de décomposition en produit de facteurs premiers}
+     \par
+     \begin{itemize}
+          \item
+          Exemple 1~: Calcul du PGCD de 45 et de 150~:
+          \par
+          Les décompositions en facteurs premiers de 45 et de 150 sont~:
+          \par
+          $45 = \color{red}{3 }\color{black} \times 3 \times \color{red}{5} \color{black}= 3^2 \times 5$
+          \par
+          $ 150 = 2 \times \color{red}{3}\color{black} \times \color{red}{5}\color{black} \times 5 = 2 \times 3 \times 5^2 $
+          \par
+          $3$ et $5$ sont les facteurs premiers figurant dans les deux décompositions donc le PGCD de $45$ et de $150$ est $ 3 \times 5 = 15. $
+          \item
+          Exemple 2~: Calcul du PGCD de 108 et de 144~:
+          \par
+          Les décompositions en produit de facteurs premiers de 108 et de 144 sont~:
+          \par
+          $108 = \color{red}{2 \times 2}\color{black} \times \color{red}{ 3 \times 3}\color{black} \times 3 = 2^2 \times 3^3$
+          \par
+          $ 144 = \color{red}{2 \times 2}\color{black} \times 2 \times 2 \times \color{red}{3 \times 3}\color{black} = 2^4 \times 3^2 $
+          \par
+          Le facteur $2$ est présent (au moins) deux fois dans chacune des décompositions ainsi que le facteur $ 3 $~; donc le PGCD de $108$ et de $ 144 $ est $ 2 \times 2 \times 3 \times 3 = 36. $
+     \end{itemize}
+} % fin exemple
+\cadre{bleu}{Définition}{% id="d90"
+     Une fraction est \textbf{irréductible} si son numérateur et son dénominateur n'ont aucun diviseur commun mis à part $1$, c'est à dire si le PGCD du numérateur et du dénominateur est égal à 1.
+}
+\bloc{orange}{Exemples}{% id="e90"
+     \begin{itemize}
+          \item $\frac{5}{6}$ est une fraction irréductible car $PGCD\left(5~; 6\right)=1$.
+          \item $\frac{121}{99}$ n'est pas une fraction irréductible car $PGCD\left(121~; 99\right)=11$.\\ La fraction se simplifie donc par $11$~:
+          \par
+          $\frac{121}{99}=\frac{11\times 11}{9\times 11}=\frac{11}{9}$
+     \end{itemize}
+}
+\input{_footer}

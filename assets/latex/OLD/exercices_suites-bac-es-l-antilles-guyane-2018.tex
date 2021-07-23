@@ -1,0 +1,60 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+\medbreak
+\par
+On définit deux suites $\left(u_n\right)$ et $\left(v_n\right)$ par, pour tout entier naturel $n$
+\begin{center}
+     $\left\{\begin{array}{l c l}
+               u_0 &=& 10\\
+               u_{n+1}& =& u_n + 0,4
+               \end{array}\right.$\quad  et \quad $ \left\{\begin{array}{l c l} v_0 &=& 8\\
+     v_{n+1}& =& 1,028v_n\end{array}\right.$
+\end{center}
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Parmi ces deux suites, préciser laquelle est arithmétique et laquelle est géométrique~; donner leurs raisons respectives.
+          \item Exprimer $u_n$ et $v_n$ en fonction de l'entier naturel $n$.
+     \end{enumerate}
+     \item On donne l'algorithme suivant dans lequel $n$ est un entier naturel, et $U$ et $V$ sont des réels qui désignent respectivement les termes de rang $n$ des suites $\left(u_n\right)$ et $\left(v_n\right)$~:
+     \begin{center}
+          \begin{extern}%width="200"
+               \begin{tabularx}{0.3\linewidth}{|X|}\hline
+                    $n \gets 0$\\
+                    $U \gets 10$\\
+                    $V \gets 8$\\
+                    Tant que $U > V$\\
+                    \hspace{0.8cm}$U \gets U + 0,4$\\
+                    \hspace{0.8cm}$V \gets  V \times 1,028$\\
+                    \hspace{0.8cm}$n \gets n+1$\\
+                    Fin Tant que\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     En sortie de cet algorithme, $n$ a pour valeur 46.
+     \par
+     Interpréter ce résultat.
+     \item En 1798, l'économiste anglais Thomas Malthus publie \og An essay on the principle of population \fg{} dans lequel il émet l'hypothèse que l'accroissement de la population, beaucoup plus rapide que celui des ressources alimentaires, conduira son pays à la famine.
+     \par
+     Il écrit~:
+     \begin{center}
+          \boite{black}{
+               \og \emph{Nous pouvons donc tenir pour certain que, lorsque la population n'est arrêtée par aucun obstacle, elle va doublant tous les vingt-cinq ans, et croît de période en période selon une progression géométrique...
+               Nous sommes donc en état de prononcer, en partant de l'état actuel de la terre habitée, que les moyens de subsistance, dans les circonstances les plus favorables de l'industrie, ne peuvent jamais augmenter plus rapidement que selon une progression arithmétique.}\fg
+          }
+     \end{center}
+     En 1800, la population de l'Angleterre était estimée à $8$ millions d'habitants et l'agriculture anglaise pouvait nourrir $10$ millions de personnes. Le modèle de Malthus admet que la population augmente de $2,8$\,\% chaque année et que les progrès de l'agriculture permettent de nourrir $0,4$~million de personnes de plus chaque année.
+     \par
+     On utilisera ce modèle pour répondre aux questions suivantes.
+     \begin{enumerate}[label=\alph*.]
+          \item Quelle aurait été, en million d'habitants, la population de l'Angleterre en 1810~?
+          \par
+          On arrondira le résultat au millième.
+          \item À partir de quelle année la population de l'Angleterre aurait-elle dépassé 16 millions
+          d'habitants~?
+          \item À partir de quelle année la population de l'Angleterre serait -elle devenue trop grande pour ne plus être suffisamment nourrie par son agriculture~?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

@@ -1,0 +1,37 @@
+\input{_header}
+\textit{(Brevet Besançon 2005)}
+\begin{enumerate}
+     \item
+     Calculer le PGCD des nombres 135 et 210.
+     \item
+     Dans une salle de bains, on veut recouvrir le mur situé au dessus de la baignoire avec un
+     nombre entier de carreaux de faïence de forme carrée dont le côté est un nombre entier de centimètres le plus grand possible.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer la longueur, en cm, du côté d'un carreau, sachant que le mur mesure 210 cm de hauteur et 135 cm de largeur.
+          \item
+          Combien faudra-t-il alors de carreaux~?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     Solution rédigée par _Orion_ (modifiée pour correspondre aux programmes actuels)
+     \begin{enumerate}
+          \item
+          Les décompositions en produit de facteurs premiers de 135 et 210 sont~:
+          \par
+          $ 210 = 2 \times 3 \times 5 \times 7 $
+          \\
+          $ 135 = 3 \times 3 \times 3 \times 5 $
+          \par
+          En recherchant les facteurs communs on trouve~:
+          \\
+          $ PGCD(210,135) = 3 \times 5 =15 $
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Comme on souhaite mettre un nombre entier de carreaux, on cherche à ce que la taille du côté de celui-ci soit un diviseur de la largeur mais aussi la hauteur du mur. Comme on cherche également des carreaux de plus grand côté possible cela revient à chercher le PGCD des dimensions du mur qui est 15 cm comme nous avons pu le calculer dans la première question.
+               \item
+               Il faudra alors (210/15) $ \times $ (135/15) = 14 $ \times $ 9 = 126 carreaux.
+          \end{enumerate}
+     \end{corrige}
+     \input{_footer}

@@ -1,0 +1,2720 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="729" height="982" viewBox="0 0 729 982" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: square;
+stroke-linejoin: miter;
+}
+.g1_1{
+fill: #FFFFFF;
+}
+
+.s25_1{
+font-size: 18.33px;
+font-family: MT-Extra_2h;
+fill: #000000;
+}
+.s29_1{
+font-size: 10.76px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s11_1{
+font-size: 10.80px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s12_1{
+font-size: 10.80px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s30_1{
+font-size: 10.76px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s17_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s19_1{
+font-size: 10.82px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s34_1{
+font-size: 10.66px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s39_1{
+font-size: 18.66px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s1_1{
+font-size: 21.45px;
+font-family: ArialMT_2r;
+fill: #333333;
+}
+.s9_1{
+font-size: 18.51px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s35_1{
+font-size: 18.28px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s38_1{
+font-size: 18.66px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s22_1{
+font-size: 18.54px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s36_1{
+font-size: 18.28px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s21_1{
+font-size: 10.82px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s27_1{
+font-size: 18.45px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s7_1{
+font-size: 18.30px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s23_1{
+font-size: 18.54px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s37_1{
+font-size: 10.69px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s3_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s8_1{
+font-size: 18.30px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s40_1{
+font-size: 10.88px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s41_1{
+font-size: 10.88px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s16_1{
+font-size: 18.33px;
+font-family: CambriaMath_2c;
+fill: #000000;
+}
+.s28_1{
+font-size: 10.76px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s6_1{
+font-size: 10.68px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s10_1{
+font-size: 10.80px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s26_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_2m;
+fill: #000000;
+}
+.s24_1{
+font-size: 26.46px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s20_1{
+font-size: 10.82px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s4_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s42_1{
+font-size: 18.66px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s32_1{
+font-size: 18.45px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s13_1{
+font-size: 18.51px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s14_1{
+font-size: 18.51px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+.s33_1{
+font-size: 18.28px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s18_1{
+font-size: 18.54px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s31_1{
+font-size: 18.45px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s5_1{
+font-size: 18.30px;
+font-family: TimesNewRomanPS-ItalicMT_2v;
+fill: #000000;
+}
+.s15_1{
+font-size: 18.33px;
+font-family: SymbolMT_27;
+fill: #000000;
+}
+.s2_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_2t;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,982
+L729,982
+L729,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<path fill-rule="evenodd" d="M181,35l346,0l0,-24L181,11l0,24Z" class="g1_1" />
+<text 
+x="181" 
+y="31" 
+dx="0,0,-0.1,0.1,-0.1,0,0,0.1,-0.2,0.1,0,0,-0.3,0.1,0,0.1,-0.2,0,0,-0.2,-0.1,0,0,0.1,0,0.1,0,0,0" 
+class="s1_1"
+>SUITES – BAC S POLYNÉSIE 2013</text>
+
+<text 
+x="8" 
+y="109" 
+dx="0" 
+class="s2_1"
+>(</text>
+
+<text 
+x="14" 
+y="109" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="23" 
+y="111" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="29" 
+y="109" 
+dx="0,-0.1,0,0,-0.1,-0.1,0,0,0,-0.1,0,0,-0.1" 
+class="s2_1"
+>) définie par</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 122, 109)"
+dx="0" 
+class="s5_1"
+>u</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 131, 114)"
+dx="0" 
+class="s6_1"
+>0</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 143, 109)"
+dx="0" 
+class="s7_1"
+>=</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 158, 97)"
+dx="0" 
+class="s8_1"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 158, 123)"
+dx="0" 
+class="s8_1"
+>2</text>
+
+<path d="M157.5,104.5l11,0" class="g2_1" />
+<text 
+x="174" 
+y="109" 
+dx="0,-0.1,0" 
+class="s2_1"
+>et </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 195, 109)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 204, 114)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 211, 114)"
+dx="0" 
+class="s11_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 217, 114)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 227, 109)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 254, 97)"
+dx="0" 
+class="s14_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 264, 97)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 273, 101)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 241, 123)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 252, 123)"
+dx="0" 
+class="s13_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 265, 123)"
+dx="0" 
+class="s14_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 275, 123)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 284, 127)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<path d="M242.5,104.5l50,0" class="g2_1" />
+<text 
+x="299" 
+y="109" 
+dx="0,0,0,0,-0.1,0,0.2,0,0,0" 
+class="s2_1"
+>pour tout </text>
+
+<text 
+x="371" 
+y="109" 
+dx="0" 
+class="s3_1"
+>n</text>
+
+<text 
+x="385" 
+y="109" 
+dx="0" 
+class="s15_1"
+>∈</text>
+
+<text 
+x="398" 
+y="109" 
+dx="0" 
+class="s16_1"
+>ℕ</text>
+
+<text 
+x="411" 
+y="109" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="167" 
+dx="0,0,-0.1" 
+class="s2_1"
+>1) </text>
+
+<text 
+x="8" 
+y="199" 
+dx="0,0,0,-0.1,-0.1" 
+class="s2_1"
+>1.a) </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 43, 199)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 51, 204)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 62, 199)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 89, 187)"
+dx="0" 
+class="s14_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 98, 187)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 107, 191)"
+dx="0" 
+class="s12_1"
+>0</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 75, 212)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 86, 212)"
+dx="0" 
+class="s13_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 99, 212)"
+dx="0" 
+class="s14_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 109, 212)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 118, 217)"
+dx="0" 
+class="s12_1"
+>0</text>
+
+<path d="M76.5,194.5l49,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 131, 199)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 148, 187)"
+dx="0" 
+class="s14_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 147, 212)"
+dx="0" 
+class="s14_1"
+>4</text>
+
+<path d="M146.5,194.5l12,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 165, 199)"
+dx="0,0.1,0.1" 
+class="s14_1"
+>et </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 183, 199)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 192, 204)"
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 204, 199)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 231, 187)"
+dx="0" 
+class="s14_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 240, 187)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 248, 191)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 218, 212)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 228, 212)"
+dx="0" 
+class="s13_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 241, 212)"
+dx="0" 
+class="s14_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 251, 212)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 259, 217)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<path d="M218.5,194.5l47,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 271, 199)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 290, 187)"
+dx="0" 
+class="s14_1"
+>9</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 285, 212)"
+dx="0,0" 
+class="s14_1"
+>10</text>
+
+<path d="M286.5,194.5l18,0" class="g2_1" />
+<text 
+x="8" 
+y="257" 
+dx="0,0,0,0,-0.1,0.2,-0.2,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0.1,-0.1,0,-0.1,0,0,0,0,-0.1" 
+class="s2_1"
+>1.b) La proposition est vraie pour </text>
+
+<text 
+x="257" 
+y="257" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="267" 
+y="258" 
+dx="0" 
+class="s17_1"
+>0</text>
+
+<text 
+x="273" 
+y="257" 
+dx="0,0" 
+class="s2_1"
+>, </text>
+
+<text 
+x="282" 
+y="257" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="291" 
+y="258" 
+dx="0" 
+class="s17_1"
+>1</text>
+
+<text 
+x="302" 
+y="257" 
+dx="0,-0.1,0" 
+class="s2_1"
+>et </text>
+
+<text 
+x="320" 
+y="257" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="329" 
+y="258" 
+dx="0" 
+class="s17_1"
+>2</text>
+
+<text 
+x="335" 
+y="257" 
+dx="0,-0.2" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="278" 
+dx="0,0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1,-0.1,0,-0.1,0,0,0,0,-0.1" 
+class="s2_1"
+>Si elle vraie pour </text>
+
+<text 
+x="138" 
+y="278" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="147" 
+y="279" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="153" 
+y="278" 
+dx="0,0,0,0.1,-0.2,-0.1,0,0.2,0,-0.1,0,0,0,-0.1,-0.1" 
+class="s2_1"
+>, c'est à dire </text>
+
+<text 
+x="244" 
+y="278" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="254" 
+y="279" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="264" 
+y="278" 
+dx="0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0" 
+class="s2_1"
+>&gt; 0, alors 3</text>
+
+<text 
+x="347" 
+y="278" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="356" 
+y="279" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="367" 
+y="278" 
+dx="0,0.1,0,0,0,0" 
+class="s2_1"
+>&gt; 0, 2</text>
+
+<text 
+x="409" 
+y="278" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="419" 
+y="279" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="429" 
+y="278" 
+dx="0,-0.1,0,0,0,-0.1,0,0,0,0,-0.1,0" 
+class="s2_1"
+>&gt; 0 et 1 + 2</text>
+
+<text 
+x="514" 
+y="278" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="523" 
+y="279" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="534" 
+y="278" 
+dx="0,-0.1,0,0,0,0,0,0,0,-0.1" 
+class="s2_1"
+>&gt; 0, donc </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 11, 310)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 20, 315)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 27, 315)"
+dx="0" 
+class="s20_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 32, 315)"
+dx="0" 
+class="s21_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 43, 310)"
+dx="0" 
+class="s22_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 70, 298)"
+dx="0" 
+class="s23_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 79, 298)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 88, 302)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 57, 324)"
+dx="0" 
+class="s23_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 67, 324)"
+dx="0" 
+class="s22_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 81, 324)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 90, 324)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 99, 328)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<path d="M58.5,305.5l50,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 113, 310)"
+dx="0" 
+class="s22_1"
+>&gt;</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 127, 310)"
+dx="0" 
+class="s23_1"
+>0</text>
+
+<text 
+x="138" 
+y="310" 
+dx="0,0,0.2,-0.4,-0.1,0,0.2,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,-0.1,0,-0.1,0.2,0,0,0,-0.1" 
+class="s2_1"
+>. La proposition est vraie pour </text>
+
+<text 
+x="363" 
+y="310" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="373" 
+y="312" 
+dx="0,0.1,0" 
+class="s4_1"
+>n+1</text>
+
+<text 
+x="398" 
+y="310" 
+dx="0,-0.1,0,0,0,0,-0.1,-0.1,0,-0.1,-0.1,-0.1,0,0.1,-0.1,-0.1,0.2,-0.1,-0.1,0,0,-0.1,0,0,-0.1,0.2,-0.1,0,0,0,0,-0.1,-0.1,0,-0.1,0,0,0,0,-0.1,0,0,0,0.2,0" 
+class="s2_1"
+>et, par récurrence, elle est vraie pour tout </text>
+
+<text 
+x="8" 
+y="348" 
+dx="0" 
+class="s3_1"
+>n</text>
+
+<text 
+x="21" 
+y="348" 
+dx="0" 
+class="s15_1"
+>∈</text>
+
+<text 
+x="39" 
+y="348" 
+dx="0" 
+class="s16_1"
+>ℕ</text>
+
+<text 
+x="52" 
+y="348" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="392" 
+dx="0,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0" 
+class="s2_1"
+>2) On admet </text>
+
+<text 
+x="104" 
+y="392" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="113" 
+y="393" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="124" 
+y="392" 
+dx="0,-0.1,0,0,0,0,0,0,-0.1,0.2,0,0,0,0" 
+class="s2_1"
+>&lt; 1 pour tout </text>
+
+<text 
+x="224" 
+y="392" 
+dx="0" 
+class="s3_1"
+>n</text>
+
+<text 
+x="238" 
+y="392" 
+dx="0" 
+class="s15_1"
+>∈</text>
+
+<text 
+x="255" 
+y="392" 
+dx="0" 
+class="s16_1"
+>ℕ</text>
+
+<text 
+x="268" 
+y="392" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="430" 
+dx="0,0,0,-0.1,-0.1" 
+class="s2_1"
+>2.a) </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 43, 430)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 53, 435)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 59, 435)"
+dx="0" 
+class="s20_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 65, 435)"
+dx="0" 
+class="s21_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 75, 430)"
+dx="0" 
+class="s22_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 88, 430)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 98, 435)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 110, 430)"
+dx="0" 
+class="s22_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 137, 418)"
+dx="0" 
+class="s23_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 146, 418)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 155, 422)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 124, 444)"
+dx="0" 
+class="s23_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 134, 444)"
+dx="0" 
+class="s22_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 147, 444)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 157, 444)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 166, 448)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<path d="M124.5,425.5l50,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 179, 430)"
+dx="0" 
+class="s22_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 193, 430)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 202, 435)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 214, 430)"
+dx="0" 
+class="s22_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 230, 418)"
+dx="0" 
+class="s23_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 240, 418)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 249, 422)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 260, 418)"
+dx="0" 
+class="s22_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 274, 418)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 283, 422)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 295, 418)"
+dx="0" 
+class="s22_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 307, 418)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 317, 418)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 326, 422)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 333, 409)"
+dx="0" 
+class="s21_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 259, 444)"
+dx="0" 
+class="s23_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 270, 444)"
+dx="0" 
+class="s22_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 283, 444)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 292, 444)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 302, 448)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<path d="M229.5,425.5l112,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 346, 430)"
+dx="0" 
+class="s22_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 362, 416)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 371, 416)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 381, 421)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 393, 416)"
+dx="0" 
+class="s23_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 404, 416)"
+dx="0" 
+class="s22_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 418, 416)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 427, 421)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 388, 417)"
+dx="0" 
+class="s24_1"
+>(</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 434, 417)"
+dx="0" 
+class="s24_1"
+>)</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 375, 444)"
+dx="0" 
+class="s23_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 386, 444)"
+dx="0" 
+class="s22_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 399, 444)"
+dx="0" 
+class="s23_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 409, 444)"
+dx="0" 
+class="s18_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 418, 448)"
+dx="0" 
+class="s19_1"
+>n</text>
+
+<path d="M361.5,425.5l80,0" class="g2_1" />
+<text 
+x="444" 
+y="430" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="468" 
+dx="0,0,0,0,-0.1,0,0,0,-0.1" 
+class="s2_1"
+>On a 0 &lt; </text>
+
+<text 
+x="76" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="85" 
+y="470" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="96" 
+y="468" 
+dx="0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0.2,0" 
+class="s2_1"
+>&lt; 1. Donc 1 – </text>
+
+<text 
+x="201" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="210" 
+y="470" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="221" 
+y="468" 
+dx="0,-0.1,0,0,0,-0.1,0" 
+class="s2_1"
+>&gt; 0 et </text>
+
+<text 
+x="267" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="276" 
+y="470" 
+dx="0,0.1,0" 
+class="s4_1"
+>n+1</text>
+
+<text 
+x="302" 
+y="468" 
+dx="0,0" 
+class="s2_1"
+>– </text>
+
+<text 
+x="315" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="324" 
+y="470" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="335" 
+y="468" 
+dx="0,-0.1,0,0,0,-0.2,0,-0.2,0,0" 
+class="s2_1"
+>&gt; 0, d'où </text>
+
+<text 
+x="403" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="413" 
+y="470" 
+dx="0,0.1,0" 
+class="s4_1"
+>n+1</text>
+
+<text 
+x="438" 
+y="468" 
+dx="0,-0.1" 
+class="s2_1"
+>&gt; </text>
+
+<text 
+x="453" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="462" 
+y="470" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="473" 
+y="468" 
+dx="0" 
+class="s15_1"
+>⇒</text>
+
+<text 
+x="495" 
+y="468" 
+dx="0" 
+class="s2_1"
+>(</text>
+
+<text 
+x="501" 
+y="468" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="510" 
+y="470" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="517" 
+y="468" 
+dx="0,-0.1,0,-0.1,0,0,0,-0.1,-0.1,0,0,0,0,-0.1,0,0,-0.1,0.2" 
+class="s2_1"
+>) est croissante. </text>
+
+<text 
+x="8" 
+y="513" 
+dx="0,0,0,0,-0.1,0,0.1,0,0,0,-0.1,0,0,0,-0.1" 
+class="s2_1"
+>2.b) Comme 0 &lt; </text>
+
+<text 
+x="132" 
+y="513" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="142" 
+y="515" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="152" 
+y="513" 
+dx="0,-0.1,0,0,0,-0.1,0,0" 
+class="s2_1"
+>&lt; 1 et (</text>
+
+<text 
+x="205" 
+y="513" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="214" 
+y="515" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="220" 
+y="513" 
+dx="0,-0.1,0,-0.1,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0" 
+class="s2_1"
+>) croissante pour tout </text>
+
+<text 
+x="380" 
+y="513" 
+dx="0" 
+class="s3_1"
+>n</text>
+
+<text 
+x="394" 
+y="513" 
+dx="0" 
+class="s15_1"
+>∈</text>
+
+<text 
+x="411" 
+y="513" 
+dx="0" 
+class="s16_1"
+>ℕ</text>
+
+<text 
+x="425" 
+y="513" 
+dx="0,0,0" 
+class="s2_1"
+>, (</text>
+
+<text 
+x="440" 
+y="513" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="449" 
+y="515" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="455" 
+y="513" 
+dx="0,-0.1,0,0,-0.1,0,0,0,0,-0.1,-0.1,0,0,0,0,-0.1,0,0,0.2,0,0,0,-0.1,0,0,0,-0.1" 
+class="s2_1"
+>) tend vers une limite 0 &lt; </text>
+
+<text 
+x="644" 
+y="513" 
+dx="0" 
+class="s25_1"
+></text>
+
+<text 
+x="657" 
+y="513" 
+dx="0" 
+class="s26_1"
+>≤</text>
+
+<text 
+x="671" 
+y="513" 
+dx="0,0,0" 
+class="s2_1"
+>1. </text>
+
+<text 
+x="8" 
+y="545" 
+dx="0,0,0,0,0,-0.1,0,0,0,0,-0.1,-0.1,-0.1,0,0.2,-0.1,-0.1" 
+class="s2_1"
+>On peut préciser </text>
+
+<text 
+x="133" 
+y="545" 
+dx="0" 
+class="s25_1"
+></text>
+
+<text 
+x="146" 
+y="545" 
+dx="0,-0.1,0,0,-0.1,0.1,0,-0.1,-0.1,0,0,-0.1,0,0,0,0,0,-0.1" 
+class="s2_1"
+>en remarquant que </text>
+
+<text 
+x="290" 
+y="545" 
+dx="0" 
+class="s5_1"
+>u</text>
+
+<text 
+x="299" 
+y="550" 
+dx="0" 
+class="s6_1"
+>2</text>
+
+<text 
+x="311" 
+y="545" 
+dx="0" 
+class="s7_1"
+>=</text>
+
+<text 
+x="330" 
+y="533" 
+dx="0" 
+class="s8_1"
+>9</text>
+
+<text 
+x="324" 
+y="559" 
+dx="0,0" 
+class="s8_1"
+>10</text>
+
+<path d="M325.5,540.5l18,0" class="g2_1" />
+<text 
+x="345" 
+y="545" 
+dx="0,0,0,0,0,0,-0.1,0,0" 
+class="s2_1"
+>. Alors, </text>
+
+<text 
+transform="matrix(1.03, 0, 0, 1, 412, 533)"
+dx="0" 
+class="s8_1"
+>9</text>
+
+<text 
+transform="matrix(1.03, 0, 0, 1, 406, 559)"
+dx="0,0" 
+class="s8_1"
+>10</text>
+
+<path d="M407.5,540.5l19,0" class="g2_1" />
+<text 
+x="432" 
+y="545" 
+dx="0,-0.1" 
+class="s2_1"
+>&lt; </text>
+
+<text 
+x="447" 
+y="545" 
+dx="0" 
+class="s25_1"
+></text>
+
+<text 
+x="460" 
+y="545" 
+dx="0" 
+class="s26_1"
+>≤</text>
+
+<text 
+x="474" 
+y="545" 
+dx="0,0,0" 
+class="s2_1"
+>1. </text>
+
+<text 
+x="8" 
+y="610" 
+dx="0,0,-0.1,0" 
+class="s2_1"
+>3) (</text>
+
+<text 
+x="33" 
+y="610" 
+dx="0" 
+class="s3_1"
+>v</text>
+
+<text 
+x="42" 
+y="611" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="48" 
+y="610" 
+dx="0,-0.1,0,0,-0.1,-0.1,0,0,0,-0.1,0,0.2,-0.1,-0.1" 
+class="s2_1"
+>) définie par </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 144, 610)"
+dx="0" 
+class="s9_1"
+>v</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 154, 614)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 166, 610)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 193, 597)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 202, 602)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 179, 623)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 191, 623)"
+dx="0" 
+class="s13_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 205, 623)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 214, 628)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<path d="M180.5,604.5l42,0" class="g2_1" />
+<text 
+x="229" 
+y="610" 
+dx="0,0,0,0,-0.1,0,0,0,0,0" 
+class="s2_1"
+>pour tout </text>
+
+<text 
+x="300" 
+y="610" 
+dx="0" 
+class="s3_1"
+>n</text>
+
+<text 
+x="314" 
+y="610" 
+dx="0" 
+class="s15_1"
+>∈</text>
+
+<text 
+x="332" 
+y="610" 
+dx="0" 
+class="s16_1"
+>ℕ</text>
+
+<text 
+x="345" 
+y="610" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="658" 
+dx="0,0,0,-0.1,-0.1,0,0,0.2,0,-0.1,0,0,0,0,0" 
+class="s2_1"
+>3.a) Exprimons </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 128, 657)"
+dx="0" 
+class="s9_1"
+>v</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 137, 662)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 144, 662)"
+dx="0" 
+class="s11_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 149, 662)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 160, 657)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 187, 645)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 197, 650)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 203, 650)"
+dx="0" 
+class="s11_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 209, 650)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 174, 671)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 185, 671)"
+dx="0" 
+class="s13_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 199, 671)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 208, 675)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 215, 675)"
+dx="0" 
+class="s11_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 220, 675)"
+dx="0" 
+class="s12_1"
+>1</text>
+
+<path d="M174.5,652.5l53,0" class="g2_1" />
+<text 
+x="229" 
+y="658" 
+dx="0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,-0.1" 
+class="s2_1"
+>en fonction de </text>
+
+<text 
+x="339" 
+y="658" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="348" 
+y="659" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="354" 
+y="658" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 10, 731)"
+dx="0" 
+class="s27_1"
+>v</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 19, 736)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 26, 736)"
+dx="0" 
+class="s29_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 31, 736)"
+dx="0" 
+class="s30_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 42, 731)"
+dx="0" 
+class="s31_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 82, 694)"
+dx="0" 
+class="s32_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 91, 694)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 100, 698)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 69, 719)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 79, 719)"
+dx="0" 
+class="s31_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 92, 719)"
+dx="0" 
+class="s32_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 102, 719)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 111, 724)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<path d="M70.5,700.5l50,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 56, 754)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 67, 754)"
+dx="0" 
+class="s31_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 94, 742)"
+dx="0" 
+class="s32_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 103, 742)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 112, 746)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 80, 767)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 91, 767)"
+dx="0" 
+class="s31_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 104, 767)"
+dx="0" 
+class="s32_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 114, 767)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 123, 772)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<path d="M81.5,748.5l50,0" class="g2_1" />
+<path d="M57.5,726.5l76,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 138, 731)"
+dx="0" 
+class="s31_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 167, 694)"
+dx="0" 
+class="s32_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 176, 694)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 185, 698)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 153, 719)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 164, 719)"
+dx="0" 
+class="s31_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 177, 719)"
+dx="0" 
+class="s32_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 187, 719)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 196, 724)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<path d="M154.5,700.5l50,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 158, 742)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 169, 742)"
+dx="0" 
+class="s31_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 183, 742)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 192, 746)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 153, 767)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 164, 767)"
+dx="0" 
+class="s31_1"
+>+</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 177, 767)"
+dx="0" 
+class="s32_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 187, 767)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 196, 772)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<path d="M154.5,748.5l50,0" class="g2_1" />
+<path d="M153.5,726.5l53,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 211, 731)"
+dx="0" 
+class="s31_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 234, 719)"
+dx="0" 
+class="s32_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 243, 719)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 252, 724)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 225, 745)"
+dx="0" 
+class="s32_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 237, 745)"
+dx="0" 
+class="s31_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 250, 745)"
+dx="0" 
+class="s27_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 260, 749)"
+dx="0" 
+class="s28_1"
+>n</text>
+
+<path d="M226.5,726.5l42,0" class="g2_1" />
+<text 
+x="270" 
+y="731" 
+dx="0,0,0,0,-0.2,0,0,0,0.2,-0.2,0,0,0,0,0,-0.1,-0.1" 
+class="s2_1"
+>. D'où l'on tire </text>
+
+<text 
+x="379" 
+y="731" 
+dx="0" 
+class="s3_1"
+>v</text>
+
+<text 
+x="387" 
+y="733" 
+dx="0,0.1,0" 
+class="s4_1"
+>n+1</text>
+
+<text 
+x="413" 
+y="731" 
+dx="0,-0.1,0" 
+class="s2_1"
+>= 3</text>
+
+<text 
+x="437" 
+y="731" 
+dx="0" 
+class="s3_1"
+>v</text>
+
+<text 
+x="445" 
+y="733" 
+dx="0" 
+class="s4_1"
+>n</text>
+
+<text 
+x="451" 
+y="731" 
+dx="0,0,0,0.1,0,-0.1,0,0.2" 
+class="s2_1"
+>. CQFD. </text>
+
+<text 
+x="8" 
+y="814" 
+dx="0,0,0,0,-0.1,0,0,0,0,-0.1,-0.1,0,-0.1,0,0.2,-0.1,0,-0.1,0.1,-0.1,0,0,-0.1,0,0.1,0,0,0,0,0,-0.1" 
+class="s2_1"
+>3.b) On calcule facilement que </text>
+
+<text 
+x="238" 
+y="814" 
+dx="0" 
+class="s3_1"
+>v</text>
+
+<text 
+x="246" 
+y="815" 
+dx="0" 
+class="s17_1"
+>0</text>
+
+<text 
+x="257" 
+y="814" 
+dx="0,-0.1,0,0,0,0,0,0,0,-0.1,0" 
+class="s2_1"
+>= 1. Alors </text>
+
+<text 
+x="338" 
+y="814" 
+dx="0" 
+class="s33_1"
+>v</text>
+
+<text 
+x="347" 
+y="818" 
+dx="0" 
+class="s34_1"
+>n</text>
+
+<text 
+x="359" 
+y="814" 
+dx="0" 
+class="s35_1"
+>=</text>
+
+<text 
+x="374" 
+y="814" 
+dx="0" 
+class="s36_1"
+>3</text>
+
+<text 
+x="383" 
+y="805" 
+dx="0" 
+class="s34_1"
+>n</text>
+
+<text 
+x="390" 
+y="814" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="871" 
+dx="0,0,0,-0.1,-0.1" 
+class="s2_1"
+>3.c) </text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 43, 871)"
+dx="0" 
+class="s9_1"
+>v</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 52, 876)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 64, 871)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 91, 859)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 101, 864)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 78, 885)"
+dx="0" 
+class="s14_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 89, 885)"
+dx="0" 
+class="s13_1"
+>−</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 103, 885)"
+dx="0" 
+class="s9_1"
+>u</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 112, 889)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<path d="M78.5,866.5l42,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 126, 871)"
+dx="0" 
+class="s13_1"
+>=</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 140, 871)"
+dx="0" 
+class="s14_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 149, 863)"
+dx="0" 
+class="s10_1"
+>n</text>
+
+<text 
+x="156" 
+y="871" 
+dx="0,0,0,0,-0.2,0,0,0,0.2,-0.2,0,0,0,0,0,-0.1,-0.1,0,-0.1,0,0,-0.1,0.2,-0.1,0,0" 
+class="s2_1"
+>, d'où l'on tire aisément </text>
+
+<text 
+x="334" 
+y="871" 
+dx="0" 
+class="s3_1"
+>u</text>
+
+<text 
+x="343" 
+y="876" 
+dx="0" 
+class="s37_1"
+>n</text>
+
+<text 
+x="355" 
+y="871" 
+dx="0" 
+class="s15_1"
+>=</text>
+
+<text 
+x="382" 
+y="859" 
+dx="0" 
+class="s2_1"
+>3</text>
+
+<text 
+x="392" 
+y="851" 
+dx="0" 
+class="s37_1"
+>n</text>
+
+<text 
+x="371" 
+y="885" 
+dx="0" 
+class="s2_1"
+>3</text>
+
+<text 
+x="381" 
+y="877" 
+dx="0" 
+class="s37_1"
+>n</text>
+
+<text 
+x="391" 
+y="885" 
+dx="0" 
+class="s15_1"
+>+</text>
+
+<text 
+x="403" 
+y="885" 
+dx="0" 
+class="s2_1"
+>1</text>
+
+<path d="M370.5,866.5l41,0" class="g2_1" />
+<text 
+x="413" 
+y="871" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="8" 
+y="942" 
+dx="0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0,-0.1" 
+class="s2_1"
+>3.d) On voit immédiatement que </text>
+
+<path d="M388.5,937.5l41,0" class="g2_1" />
+<text 
+transform="matrix(0.98, 0, 0, 1, 446, 942)"
+dx="0" 
+class="s38_1"
+>1</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 420, 956)"
+dx="0" 
+class="s38_1"
+>1</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 389, 956)"
+dx="0" 
+class="s38_1"
+>3</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 404, 930)"
+dx="0" 
+class="s38_1"
+>1</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 364, 942)"
+dx="0" 
+class="s38_1"
+>1</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 336, 942)"
+dx="0,0,0" 
+class="s38_1"
+>lim</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 308, 942)"
+dx="0" 
+class="s38_1"
+>)</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 285, 942)"
+dx="0" 
+class="s38_1"
+>(</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 257, 942)"
+dx="0,0,0" 
+class="s38_1"
+>lim</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 434, 942)"
+dx="0" 
+class="s39_1"
+>=</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 409, 956)"
+dx="0" 
+class="s39_1"
+>+</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 375, 942)"
+dx="0" 
+class="s39_1"
+>−</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 319, 942)"
+dx="0" 
+class="s39_1"
+>=</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 350, 953)"
+dx="0,0" 
+class="s40_1"
+>+∞</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 339, 953)"
+dx="0" 
+class="s40_1"
+>→</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 271, 953)"
+dx="0,0" 
+class="s40_1"
+>+∞</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 260, 953)"
+dx="0" 
+class="s40_1"
+>→</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 398, 948)"
+dx="0" 
+class="s41_1"
+>n</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 333, 953)"
+dx="0" 
+class="s41_1"
+>n</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 301, 946)"
+dx="0" 
+class="s41_1"
+>n</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 254, 953)"
+dx="0" 
+class="s41_1"
+>n</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 291, 942)"
+dx="0" 
+class="s42_1"
+>u</text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: ArialMT_2r;
+	src: url("fonts/ArialMT_2r.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_2t;
+	src: url("fonts/TimesNewRomanPSMT_2t.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_27;
+	src: url("fonts/SymbolMT_27.woff") format("woff");
+}
+
+@font-face {
+	font-family: CambriaMath_2c;
+	src: url("fonts/CambriaMath_2c.woff") format("woff");
+}
+
+@font-face {
+	font-family: MT-Extra_2h;
+	src: url("fonts/MT-Extra_2h.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_2m;
+	src: url("fonts/TimesNewRomanPSMT_2m.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-ItalicMT_2v;
+	src: url("fonts/TimesNewRomanPS-ItalicMT_2v.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

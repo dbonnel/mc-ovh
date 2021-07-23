@@ -1,0 +1,72 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-s-antilles-guyane-2013/}
+\meta{pid}{2573}
+\meta{titre}{Probabilités - Bac S  Antilles Guyane 2013}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2   5 points\end{h2}
+\textit{Commun à tous les candidats}
+\begin{h3}Partie A\end{h3}
+Soient $n$ un entier naturel, $p$ un nombre réel compris entre $0$ et $1$ et $X_{n}$ une variable aléatoire suivant une loi binomiale de paramètres $n$ et $p$. On note $F_{n}=\frac{X_{n}}{n}$ et $f$ une valeur prise par $F_{n}$.
+\par
+On rappelle que, pour $n$ assez grand, l'intervalle $\left[ p-\frac{1}{\sqrt{n}} ; p+\frac{1}{\sqrt{n}} \right]$ contient la fréquence $f$ avec
+\par
+une probabilité au moins égale à $0,95$.
+\par
+En déduire que l'intervalle $\left[ f-\frac{1}{\sqrt{n}} ; f+\frac{1}{\sqrt{n}} \right]$ contient $p$ avec une probabilité au moins égale à $0,95$.
+\begin{h3}Partie B\end{h3}
+On cherche à étudier le nombre d'étudiants connaissant la signification du sigle URSSAF.
+\par
+Pour cela, on les interroge en proposant un questionnaire à choix multiples. Chaque étudiant doit choisir parmi trois réponses possibles, notées A, B et C, la bonne réponse étant la A.
+\par
+On note $r$ la probabilité pour qu'un étudiant connaisse la bonne réponse. Tout étudiant connaissant la bonne réponse répond A, sinon il répond au hasard (de façon équiprobable).
+\begin{enumerate}
+     \item
+     On interroge un étudiant au hasard. On note :
+     \par
+     □  $A$ l'évènement \textit{"l'étudiant répond A"},
+     \par
+     □  $B$ l'évènement \textit{"l'étudiant répond B"},
+     \par
+     □  $C$ l'évènement \textit{"l'étudiant répond C"},
+     \par
+     □  $R$ ['évènement \textit{"l'étudiant connait la réponse"},
+     \par
+     □  $\overline{R}$ l'évènement contraire de $R$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Traduire cette situation à l'aide d'un arbre de probabilité.
+          \item
+          Montrer que la probabilité de l'évènement $A$ est $P\left(A\right)=\frac{1}{3}\left(1+2r\right)$.
+          \item
+     Exprimer en fonction de $r$ la probabilité qu'une personne ayant choisi $A$ connaisse  la bonne réponse.\end{enumerate}
+     \item
+     Pour estimer $r$, on interroge 400 personnes et on note $X$ la variable aléatoire comptant le nombre de bonnes réponses. On admettra qu'interroger au hasard 400 étudiants revient à effectuer un tirage avec remise de $400$ étudiants dans l'ensemble de tous les étudiants.
+     \begin{enumerate}
+          \item
+          Donner la loi de $X$ et ses paramètres $n$ et $p$ en fonction de $r$.
+          \item
+          Dans un premier sondage, on constate que $240$ étudiants répondent A, parmi les 400 interrogés.
+          \par
+          Donner un intervalle de confiance au seuil de 95\% de l'estimation de $p$.
+          \par
+          En déduire un intervalle de confiance au seuil de 95\% de $r$.
+          \item
+          Dans la suite, on suppose que $r=0,4$. Compte-tenu du grand nombre d'étudiants, on considérera que $X$ suit une loi normale.
+          \begin{itemize}
+               \item
+               Donner les paramètres de cette loi normale.
+               \item
+               Donner une valeur approchée de $P\left(X\leqslant 250\right)$ à $10^{- 2}$ près.
+          \end{itemize}
+     On pourra s'aider de la table en annexe 1, qui donne une valeur approchée de $P\left(X\leqslant t\right)$ où $X$ est la variable aléatoire de la question 2. c.\end{enumerate}
+\end{enumerate}
+\begin{h3}Annexe 1\end{h3}
+
+\begin{center}
+\imgsvg{mc-0083}{0.3}% alt="Table de probabilités - Bac S  Antilles Guyane 2013" style="width:60rem"
+\end{center}
+
+\textit{(Extrait d'une feuille de calcul )}
+Exemple d'utilisation : au croisement de la ligne 12 et de la colonne E le nombre $0,706$ correspond à $P\left(X\leqslant  245,3\right)$.
+\input{_footer}

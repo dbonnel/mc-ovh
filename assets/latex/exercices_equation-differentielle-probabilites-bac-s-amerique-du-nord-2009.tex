@@ -1,0 +1,101 @@
+\input{_header}
+\meta{url}{/exercices/equation-differentielle-probabilites-bac-s-amerique-du-nord-2009/}
+\meta{pid}{2378}
+\meta{titre}{Equations différentielles Probabilités - Bac S Amérique du Nord 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1\end{h2}
+\textit{5 points-Commun à tous candidats }
+\par
+Dans cet exercice on étudie une épidémie dans une population.
+\par
+\textbf{Partie A : Étude de la progression de l'épidémie pendant 30 jours}
+\par
+Au début de l'épidémie on constate que 0,01\% de la population est contaminé.
+\par
+Pour $t$ appartenant à [0; 30], on note $y\left(t\right)$ le pourcentage de personnes touchées par la maladie après $t$ jours.
+\par
+On a donc $y\left(0\right)= 0,01$.
+\par
+On admet que la fonction $y$ ainsi définie sur [0; 30] est dérivable, strictement positive et vérifie :
+
+\begin{center}
+$y^{\prime}=0,05y\left(10-y\right)$
+\end{center}
+
+\begin{enumerate}
+     \item
+     On considère la fonction $z$ définie sur l'intervalle [0; 30] par $z=\frac{1}{y}$.
+     \par
+     Démontrer que la fonction $y$ satisfait aux conditions 
+\\
+$\left\{ \begin{matrix} y\left(0\right)=0,01 \\ y^{\prime}=0,05y\left(10-y\right)\end{matrix}\right.$ 
+\par
+si et seulement si la fonction $z$  satisfait aux conditions 
+\par
+$\left\{ \begin{matrix} z\left(0\right)=100 \\ z^{\prime}=- 0,5z+0,05\end{matrix}\right.$
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item
+                    En déduire une expression de la fonction $z$ puis celle de la fonction $y$.
+                    \item
+                    Calculer le pourcentage de la population infectée après 30 jours. On donnera la valeur arrondie à l'entier le plus proche.
+               \end{enumerate}
+          \end{enumerate}
+          \textbf{Partie B : Étude sur l'efficacité d'un vaccin}
+\par
+          \textit{Dans cette partie, toute trace de recherche, même incomplète, ou d'initiative, même non fructueuse, sera prise en compte dans l'évaluation.}
+\par
+          Le quart de la population est vacciné contre cette maladie contagieuse. De plus, on estime que sur la population vaccinée, 92\% des individus ne tombent pas malades. Sur la population totale, on estime aussi que 10\% des individus sont malades.
+          \par
+          On choisit au hasard un individu dans cette population.
+          \begin{enumerate}
+               \item
+               Montrer que la probabilité de l'évènement « l'individu n'est pas vacciné et tombe malade » est égale à 0,08.
+               \item
+               Quelle est la probabilité de tomber malade pour un individu qui n'est pas vacciné ?
+          \end{enumerate}
+          \begin{corrige}
+               \textbf{Partie A : Étude de la progression de l'épidémie pendant 30 jours}
+               \begin{enumerate}
+                    \item
+                    Dans cette question, il faut soit raisonner par équivalence, soit penser à démontrer la réciproque.
+                    \par
+                    $z=\frac{1}{y}$ donc $y=\frac{1}{z}$ , $z^{\prime}=-\frac{y^{\prime}}{y^{2}}$ et $y^{\prime}=-y^{2}z^{\prime}=-\frac{z^{\prime}}{z^{2}}$
+                    \par
+                    Il suffit alors de remplacer $y$ et $y^{\prime}$...
+                    \item
+                    \begin{enumerate}[label=\alph*.]
+                         \item
+                         $z$ vérifie une équation différentielle du type $z^{\prime}=az+b$
+                         \par
+                         On trouve :
+                         \par
+                         $z\left(t\right)=99,9e^{-0,5t}+0,1$
+                         \par
+                         $y\left(t\right)=\frac{1}{99,9e^{-0,5t}+0,1}$
+                         \item
+                         $y\left(30\right)\approx 10$
+                         \par
+                         Environ 10\% de la population sera touchée au bout de 30 jours.
+                    \end{enumerate}
+               \end{enumerate}
+               \textbf{Partie B : Étude sur l'efficacité d'un vaccin}
+               \begin{enumerate}
+                    \item
+                    On cherche $p\left(M \cap  \overline{V}\right)$
+                    \par
+                    On applique la loi des probabilités totales:
+                    \par
+                    $p\left(M\right)=p\left(M \cap  V\right)+p\left(M \cap  \overline{V}\right)$
+                    \par
+                    On obtient :
+                    \par
+                    $p\left(M \cap  \overline{V}\right)=0,1-0.02=0,08$
+                    \item
+                    On cherche $p_{\overline{V}}\left(M\right)$
+                    \par
+                    $p_{\overline{V}}\left(M\right)=\frac{p\left(M \cap  \overline{V}\right)}{p\left(\overline{V}\right)}=\frac{0,08}{0,75}=\frac{8}{75}$
+               \end{enumerate}
+\end{corrige}
+\input{_footer}

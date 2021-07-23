@@ -1,0 +1,236 @@
+\input{_header}
+\meta{url}{/exercices/pourcentages-fonctions-bac-blanc-es-l-sujet-2-maths-cours-2018/}
+\meta{pid}{10442}
+\meta{titre}{Pourcentages - Fonctions - Bac blanc ES/L Sujet 2 - Maths-cours 2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2 (6 points)\end{h2}
+\par
+Le propriétaire d'un restaurant a constaté que, lorsque le prix de son menu était fixé à 25~euros, il accueillait 20~clients, et qu'à chaque baisse de 1~euro, il attirait 2~clients supplémentaires.
+%============================================================================================================================
+%
+\TitreC{Partie A}
+%
+%============================================================================================================================
+\begin{enumerate}
+     \item De quel pourcentage le prix a-t-il baissé lorsqu'il est passé de 25 à 24~euros ?
+     \item Quel est le pourcentage d'augmentation du nombre de clients lorsque celui-ci passe de 20 à 22~clients ?
+     \item L'\textbf{élasticité} de la demande par rapport au prix est le rapport :
+     \[ e=\dfrac{V_c}{V_p} \]
+     où $V_c$ désigne la variation en pourcentage du nombre de clients et $V_p$ la variation en pourcentage du prix du menu. \\
+     Le nombre de clients variant en sens contraire du prix, ce rapport sera \textbf{négatif}.
+     \par
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que l'élasticité de la demande par rapport au prix lorsque le prix du menu passe de 25 à 24 euros est égale à -2,5.
+          \item
+          Déterminer le nombre de clients pour un menu à 20 euros puis pour un menu à 19~euros.\\
+          En déduire l'élasticité de la demande par rapport au prix lorsque le prix du menu passe de 20 à 19~euros.
+     \end{enumerate}
+     \item La recette est égale au produit du nombre de clients par le prix du menu.
+     Calculer le montant de la recette lorsque le prix du menu est 25~euros puis lorsque le prix du menu est 20~euros.
+\end{enumerate}
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\begin{enumerate}
+     \item On admet que la fonction $f$ donnant le nombre de clients en fonction du prix du menu $x$ est définie sur l'intervalle $[10~;~25]$ par :
+     \[f(x)=70-2x.\]
+     \par
+     Exprimer la recette du restaurant en fonction de $x$.
+     \par
+     Pour quel prix $x_0$ la recette est-elle maximale ?
+     \item Pour $x \in [10~;~25]$, on note $e(x)$ l'élasticité de la demande par rapport au prix du menu lorsque ce dernier passe de $x$ à $x-1$ euros.
+     Montrer que $e(x)=x\ \dfrac{f'(x)}{f(x)}$.
+     \item Calculer $e'(x)$ et en déduire le sens de variation de la fonction $e$ sur l'intervalle $[10~;~25]$.
+     Montrer que $e(x_0)=-1$.
+     \par
+\end{enumerate}
+\begin{corrige}
+     %============================================================================================================================
+     %
+     \TitreC{Partie A}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item %1
+          \textbf{Lorsque le prix passe de 25 à 24 euros}, le pourcentage de variation est :
+          \par
+          $V_p=\dfrac{24-25}{25}=-\dfrac{1}{25}=-0,04=-4\%$.
+          \par
+          Le prix a \textbf{baissé de 4\%} lorsqu'il est passé de 25 à 24 euros.
+          \cadre{rouge}{À retenir}{
+               Lorsqu'une valeur passe de $V_0$ à $V_1$, le pourcentage de variation est :
+               \[ t = \dfrac{V_1-V_0}{V_0}. \]
+          }
+          \item %2
+          Lorsque le nombre de clients passe de 20 à 22, le pourcentage de variation est :
+          \par
+          $ V_c=\dfrac{22-20}{20}=\dfrac{2}{20}=0,1=10\%. $
+          \par
+          Le nombre de clients a \textbf{augmenté de 10\%} lorsqu'il est passé de 20 à 22.
+          \item %3
+          \begin{enumerate}[label=\alph*.]
+               \item %3a
+               D'après la définition de l'énoncé, l'élasticité $e$ de la demande par rapport au prix est le quotient de la variation en pourcentage du nombre de clients par la variation en pourcentage du prix du menu.
+               \par
+               C'est à dire :
+               \par
+               $e=\dfrac{V_c}{V_p}=\dfrac{0,1}{-0,04}=-\dfrac{10}{4}=-2,5$.
+               \par
+               L'élasticité de la demande par rapport au prix, lorsque le prix du menu passe de 25 à 24~euros, est de $-2,5$.
+               \item %3b
+               \`A chaque baisse de 1 euro, le restaurant attire 2 clients supplémentaires. Le tableau ci-après indique le nombre de clients en fonction du prix :
+               \par
+               \begin{center}
+                    \begin{tabular}{|l|c|c|c|c|c|c|c|c|}%class="compact"
+                         \hline
+                         Prix & 25 & 24 & 23 & 22 & 21 & 20 & 19 & $\cdots$ \\
+                         \hline
+                         Nb clients & 20 & 22 & 24 & 26 & 28 & 30 & 32 & $\cdots$ \\
+                         \hline
+                    \end{tabular}
+               \end{center}
+               \par
+               Pour un menu à 20 euros, le nombre de clients est \textbf{30}, et, pour un menu à 19 euros, le nombre de clients est \textbf{32}.
+               \par
+               \textbf{Lorsque le prix passe de 20 à 19 euros}, le pourcentage de variation du prix est :
+               \par
+               $ V_p=\dfrac{19-20}{20}=-\dfrac{1}{20} $.
+               \par
+               Le nombre de clients passe alors de 30 à 32 ; le pourcentage de variation du nombre de clients est donc :
+               \par
+               $V_c=\dfrac{32-30}{30}=\dfrac{2}{30}=\dfrac{1}{15}$.
+               \par
+               L'élasticité $e$ de la demande par rapport au prix vaut alors :
+               \par
+               $e=\dfrac{V_c}{V_p}=\dfrac{\dfrac{1}{15}}{-\dfrac{1}{20}}=-\dfrac{20}{15}=-\dfrac{4}{3}$.
+               \par
+               L'élasticité de la demande par rapport au prix lorsque le prix du menu passe de 20 à 19~euros est de $-\dfrac{4}{3}$.
+               \par
+          \end{enumerate}
+          \item %4
+          Lorsque le prix du menu est égal à 25~euros, le restaurant accueille {20~clients}.
+          \par
+          La recette vaut :
+          \par
+          $R_{25}=25 \times 20 = 500$ euros.
+          \par
+          La recette est de \textbf{500 euros} lorsque le prix du menu est 25~euros.
+          \par
+          Lorsque le prix du menu est égal à 20 euros, le restaurant accueille 30~clients.
+          \par
+          La recette vaut alors :
+          \par
+          $R_{20}=20 \times 30 = 600$ euros.
+          \par
+          La recette est de \textbf{600 euros} lorsque le prix du menu est 20~euros.
+          \par
+     \end{enumerate}
+     \par
+     %============================================================================================================================
+     %
+     \TitreC{Partie B}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item %1
+          La recette est égal au produit du nombre de clients par le prix du menu, par conséquent :
+          \par
+          $R(x)=xf(x)=x(70-2x)$\nosp$=-2x^2+70x$.
+          \par
+          La fonction $R$ est une fonction polynôme du second degré. Le coefficient de $x^2$ est -2 ; il est négatif.
+          \par
+          $R$ admet un maximum pour :
+          \par
+          $x_0=-\dfrac{b}{2a}=-\dfrac{70}{-4}=17,5$.
+          \par
+
+          La recette est maximale lorsque le prix du menu est égal à \textbf{17,50~euros}.
+          \cadre{rouge}{À retenir}{
+               Une fonction polynôme du second degré ${x \longmapsto ax^2+bx=c}$ ($a \neq 0$) admet un extremum pour :
+               \[ x_0=-\dfrac{b}{2a}. \]
+               \par
+               Cet extremum est :
+               \begin{itemize}
+                    \item
+                    un \textbf{minimum} si $a>0$,
+                    \item
+                    un \textbf{maximum} si $a<0$.
+               \end{itemize}
+          }
+          \cadre{bleu}{Remarque}{
+               Il est aussi possible de calculer $R'(x)$, d'étudier son signe et de dresser le tableau de variations de $R$.
+               \par
+               Toutefois, la propriété employée ici (et vue en classe de Seconde) permet d'aboutir au résultat plus rapidement.
+          }
+          \item %2
+          La variation en pourcentage du prix du menu lorsqu'il passe de $x$ à $x-1$ euros est :
+          \par
+          $V_p(x)=\dfrac{(x-1)-x}{x}=-\dfrac{1}{x}$.
+          \par
+          Lorsque le prix du menu passe de $x$ à $x-1$ euros, le nombre de clients passe de $f(x)$ à $f(x-1)$.
+          \par
+          La variation en pourcentage du nombre de clients est alors :
+          \par
+          $V_c(x)=\dfrac{f(x-1)-f(x)}{f(x)}$\\
+          $\phantom{V_c(x)}=\dfrac{70-2(x-1)-(70-2x)}{70-2x}$\\
+          $\phantom{V_c(x)}=\dfrac{70-2x+2-70+2x}{70-2x}$\\
+          $\phantom{V_c(x)}=\dfrac{2}{70-2x}.$
+          \par
+          L'élasticité vaut donc :
+          \par
+          $e(x)=\dfrac{V_c(x)}{V_p(x)}$//
+          $\phantom{e(x)}=\dfrac{\dfrac{2}{70-2x}}{-\dfrac{1}{x}}$\\
+          $\phantom{e(x)}=\dfrac{2}{70-2x} \times \dfrac{-x}{1}$\\
+          $\phantom{e(x)}=\dfrac{-2x}{70-2x}.$
+          \par
+
+          Par ailleurs :
+          \par
+          $f(x)=70-2x$ donc $f'(x)=-2$ ;
+          \par
+          $x\ \dfrac{f'(x)}{f(x)} = x \times \dfrac{-2}{70-2x}=\dfrac{-2x}{70-2x}$.
+          \par
+          On a donc bien pour tout réel $x$ de l'intervalle $[10~;~25]$ :
+          \[ e(x)=x\ \dfrac{f'(x)}{f(x)}. \]
+          \cadre{rouge}{Bien rédiger}{
+               Pour démontrer l'égalité $e(x)=x\ \dfrac{f'(x)}{f(x)}$, il est incorrect de présenter les calculs en partant de cette égalité (puisque l'on n'a pas encore démontré qu'elle était vraie...).
+               \par
+               Ici, on calcule \textbf{séparément} $e(x)$ et $x\ \dfrac{f'(x)}{f(x)}$ et on montre que l'on aboutit au même résultat.
+          }
+          \item
+          D'après la question précédente, $e$ est une fonction rationnelle définie et dérivable sur l'intervalle $[10~;~25]$ telle que:
+          \[ e(x)=\dfrac{-2x}{70-2x} \]
+          Posons :
+          \par
+          $u(x)=-2x$ ;
+          \par
+          $v(x)=70-2x$ ;
+          \par
+          alors :
+          \par
+          $u'(x)=-2$ ;
+          \par
+          $v'(x)=-2$.
+          \par
+          Par conséquent :
+          \par
+          $e'(x)= \dfrac{u'(x)v(x)-u(x)v'(x)}{v(x)^2}$\\
+          $\phantom{e'(x)}=\dfrac{-2(70-2x)-(-2x) \times (-2)}{(70-2x)^2}$\\
+          $\phantom{e'(x)}= \dfrac{-140+4x-4x}{(70-2x)^2}$\\
+          $\phantom{e'(x)}= \dfrac{-140}{(70-2x)^2}.$
+          \par
+          Le numérateur est strictement négatif et le dénominateur est strictement positif sur l'intervalle $[10~;~25]$ donc $e'$ est strictement négative et la fonction $e$ est strictement \textbf{décroissante} sur l'intervalle $[10~;~25]$.
+          \par
+          Enfin :
+          \par
+          $e(x_0)=e(17,5)=\dfrac{-2 \times 17,5}{70-2 \times 17,5}$\nosp$=\dfrac{-35}{35}=-1$.
+          \par
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,54 @@
+\input{_header}
+\begin{h2}Exercice 1 (5 points)\end{h2}
+\textbf{Commun  à tous les candidats}
+\bigbreak
+Une ferme aquatique exploite une population de crevettes qui évolue en fonction de la reproduction naturelle et des prélèvements effectués.
+\par
+La masse initiale de celte population de crevettes est estimée à $100$ tonnes.
+\par
+Compte tenu des conditions de reproduction et de prélèvement, on modélise la masse de la
+population de crevettes, exprimée en tonne, en fonction du temps, exprimé en semaine, par la fonction $f_p$, définie sur l'intervalle $[0~;~ +\infty[$ par~:
+\par
+\[f_p(t) = \dfrac{100p}{1 - (1 - p)\text{e}^{- pt}}\]
+\par
+où $p$ est un paramètre strictement compris entre $0$ et $1$ et qui dépend des différentes conditions de vie et d'exploitation des crevettes.
+\medbreak
+\begin{enumerate}
+     \item Cohérence du modèle
+     \begin{enumerate}[label=\alph*.]
+          \item Calculer $f_p(0)$.
+          \item On rappelle que $0 < p < 1$.
+          \par
+          Démontrer que pour tout nombre réel $t \geqslant 0$,\: $1 - (1 - p)\text{e}^{- pt} \geqslant p$.
+          \item En déduire que pour tout nombre réel $t \geqslant 0$,\: $0 < f_p(t) \leqslant  100$.
+     \end{enumerate}
+     \item  Étude de l'évolution lorsque $p = 0,9$
+     \par
+     Dans cette question, on prend $p = 0,9$ et on étudie la fonction $f_{0,9}$ définie sur $[0~;~ +\infty[$ par~:
+     \par
+     \par
+     \[f_{0,9}(t) = \dfrac{90}{1 - 0,1 \text{e}^{- 0,9t}}.\]
+     \begin{enumerate}[label=\alph*.]
+          \item Déterminer les variations de la fonction $f_{0,9}$.
+          \item Démontrer pour tout nombre réel $t \geqslant 0$,\: $f_{0,9}(t) \geqslant 90$.
+          \item Interpréter les résultats des questions 2. a. et 2. b. dans le contexte.
+     \end{enumerate}
+     \item  Retour au cas général
+     \par
+     On rappelle que $0 < p < 1$.
+     \par
+     Exprimer en fonction de $p$ la limite de $f_p$ lorsque $t$ tend vers $+ \infty$.
+     \item  Dans cette question, on prend $p = \dfrac{1}{2}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Montrer que la fonction $H$ définie sur l'intervalle $[0~;~ +\infty[$ par~:
+          \par
+          \[H(t) = 100\ln \left(2 - \text{e}^{- \frac{t}{2}}\right) + 50t\]
+          \par
+          est une primitive de la fonction $f_{\frac{1}{2}}$ sur cet intervalle.
+          \item En déduire la masse moyenne de crevettes lors des 5 premières semaines d'exploitation, c'est-à-dire la valeur moyenne de la fonction $f_{\frac{1}{2}}$ sur l'intervalle $[0~;~5].$
+          \par
+          En donner une valeur approchée arrondie à la tonne.
+     \end{enumerate}
+\end{enumerate}
+
+\input{_footer}

@@ -1,0 +1,24 @@
+body.admin {
+    .header-menu,
+    .header-mobile-menu {
+        background-color: $primary;
+
+        .main-menu > li a {
+            color: $white;
+
+            &::after {
+                border-color: $white;
+            }
+        }
+
+        .main-menu .sub-menu > li a {
+            color: $primary;
+        }
+    }
+
+    .single-icon-btn svg,
+    .header-mobile-meta a svg {
+        fill: $white;
+        stroke: $white;
+    }
+}

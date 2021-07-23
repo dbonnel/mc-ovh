@@ -1,0 +1,46 @@
+\input{_header}
+        \begin{h2}Exercice 3 (5 points)\end{h2}
+          \textbf{Candidats n'ayant pas choisi la spécialité \og mathématiques \fg{}}
+         \medbreak
+          En économie le résultat net désigne la différence entre la recette et les charges d'une entreprise sur une période donnée. Lorsqu'il est strictement positif, c'est un bénéfice.
+          \par
+          Propriétaire d'une société, Pierre veut estimer son résultat net à la fin de chaque mois.
+          \par
+          À la fin du mois de janvier 2018, celui-ci était de 10~000 euros.
+          \par
+          Pierre modélise ce résultat net par une suite $\left(u_n\right)$ de premier terme $u_0 = 10~000$ et de terme général $u_n$ tel que :
+          \[u_{n+1} = 1,02u_n - 500\]
+           où $n$ désigne le nombre de mois écoulés depuis janvier 2018.
+          \medbreak
+          \begin{enumerate}
+               \item Quel est le montant du résultat net réalisé à la fin du mois de mars 2018~?
+               \item Pour tout entier naturel $n$, on pose $a_n = u_n  - 25~000$.
+               \begin{enumerate}[label=\alph*.]
+                    \item Montrer que la suite $\left(u_n\right)$ est une suite géométrique dont on précisera le premier terme $a_0$ et la raison.
+                    \item  Exprimer $a_n$ en fonction de $n$ et montrer que, pour tout entier naturel $n$,\:
+                    \par
+                    $u_n = 25~000 - 15~000 \times 1,02^n$.
+                    \item  Résoudre l'inéquation $25~000 - 15~000 \times 1,02^n > 0$ où $n$ désigne un entier naturel.
+                    \par
+                    Interpréter le résultat obtenu dans le contexte de l'exercice.
+               \end{enumerate}
+               \item  À l'aide d'un algorithme, Pierre souhaite déterminer le cumul total des résultats nets mensuels de la société jusqu'au dernier mois où l'entreprise est bénéficiaire.
+               \par
+               Recopier et compléter l'algorithme pour qu'à la fin de son exécution, la variable $N$ contienne le nombre de mois pendant lesquels l'entreprise est bénéficiaire et la variable $S$ le cumul total des résultats nets mensuels sur cette période.
+               \begin{center}
+\begin{extern}%width="220" alt="Algorithme Bac ES/L Polynésie 2018"
+                                   \begin{tabularx}{0.3\linewidth}{|X|}\hline
+                         $U \gets 10~000$\\
+                         $S \gets 0$\\
+                         $N \gets 0$\\
+                         Tant que \ldots\ldots\\
+                         \hspace{1cm}$S$  \ldots\ldots\\
+                         \hspace{1cm}$U$  \ldots\ldots\\
+                         \hspace{1cm}$N$  \ldots\ldots\\
+                         Fin Tant que\\ \hline
+                    \end{tabularx}
+               \end{extern}
+                              \end{center}
+          \end{enumerate}
+
+\input{_footer}

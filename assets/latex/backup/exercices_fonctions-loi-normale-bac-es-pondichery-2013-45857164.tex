@@ -1,0 +1,119 @@
+\input{_header}
+\meta{url}{/exercices/fonctions-loi-normale-bac-es-pondichery-2013/}
+\meta{pid}{2044}
+\meta{titre}{Fonctions - Loi normale  - Bac ES/L Pondichéry 2013}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4   (6 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+\textit{La partie C peut être traitée indépendamment des parties A et B.}
+\begin{h3}PARTIE A\end{h3}
+On désigne part la fonction définie sur l'intervalle $\left[0 ; 6\right]$ par
+\par
+$f\left(x\right)=1-\left(x+1\right)e^{- x}$
+\begin{enumerate}
+     \item
+     Montrer que $f^{\prime}\left(x\right)=xe^{- x}$ où $f^{\prime}$ désigne la fonction dérivée de la fonction $f$.
+     \item
+     Démontrer que l'équation $f\left(x\right)=0,5$ admet une solution unique $\alpha $ sur l'intervalle [0 ; 6].
+     \par
+     Déterminer une valeur arrondie de $\alpha $ à $0,01$.
+     \item
+     On admet que la fonction $F$ définie sur $\left[0 ; 6\right]$ par $F\left(x\right)=x+\left(x+2\right)e^{- x}$ est une primitive de $f$ sur $\left[0 ; 6\right]$. Donner la valeur exacte puis une valeur arrondie à $10^{-3}$ de $I=\int_{0}^{6} f\left(x\right)dx$.
+\end{enumerate}
+\begin{h3}PARTIE B\end{h3}
+Une entreprise lance la production de batteries pour véhicules électriques.
+\par
+Une étude a modélisé le rythme de la production journalière sur les six premiers mois à l'aide de la fonction $f$ définie dans la partie \textbf{A} pour $x$ compris entre 0 et 6.
+\par
+$x$ représente le nombre de mois (de 30 jours) depuis le lancement du produit.
+\par
+$f\left(x\right)$ représente la production journalière de batteries en milliers.
+\begin{enumerate}
+     \item
+     Exprimer en mois, puis en jours, le moment où la production atteindra $0,5$ millier soit $500$ unités.
+     \item
+     Déterminer une valeur arrondie à $10^{-3}$ de la valeur moyenne, exprimée en milliers, de la production sur les six premiers mois.
+\end{enumerate}
+\begin{h3}
+PARTIE C\end{h3}
+Il est prévu que l'autonomie permise par ce type de batteries, sous certaines conditions de conduite, soit de 200 km.
+\par
+Sur un parcours joignant une ville située à 160 km, on suppose que l'autonomie, exprimée en km, permise par ces batteries suit une loi normale d'espérance $\mu =200$ et d'écart-type $\sigma =40$.
+\begin{enumerate}
+     \item
+     Quelle est la probabilité, arrondie au centième, de ne pas atteindre cette ville ?
+     \item
+     La probabilité de pouvoir faire l'aller-retour jusqu'à cette ville sans recharge des batteries est-elle supérieure à $0,01$ ? Justifier votre réponse.
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}PARTIE A\end{h3}
+     On désigne part la fonction définie sur l'intervalle $\left[0 ; 6\right]$ par
+     \par
+     $f\left(x\right)=1-\left(x+1\right)e^{- x}$
+     \begin{enumerate}
+          \item
+          $f$ est dérivable sur $\left[0;6\right]$ comme somme, produit et composée de fonctions dérivables.
+          \par
+          Pour dériver $\left(x+1\right)e^{- x}$ on emploie la formule $\left(uv\right)^{\prime}=u^{\prime}v+uv^{\prime}$ avec $u\left(x\right)=x+1$ et $v\left(x\right)=e^{-x}$.
+          \par
+          On a alors $u^{\prime}\left(x\right)=1$ et $v^{\prime}\left(x\right)=-e^{-x}$.
+          \par
+          Donc :
+          \par
+          $f^{\prime}\left(x\right)=0-\left[1\times e^{-x}+\left(x+1\right)\times \left(-e^{-x}\right)\right]=-\left(-xe^{-x}\right)=xe^{-x}$
+          \item
+          Sur $\left]0;6\right]$, $x$ est strictement positif ainsi que $e^{-x}$ (\textit{une exponentielle est toujours positive...}) donc $f^{\prime}\left(x\right) > 0$ sur $\left]0;6\right]$.
+          \par
+          La fonction $f$ est donc strictement croissante sur $\left[0;6\right]$.
+          \par
+          Par ailleurs : $f\left(0\right)=1-1=0$ et $f\left(6\right)=1-7e^{-6} \approx 0.96$
+          \par
+          $f$ est continue (car dérivable) et strictement croissante sur $\left[0;6\right]$. 0,5 est compris entre $f\left(0\right)=0$ et $f\left(6\right)\approx 0,98$. Donc l'équation $f\left(x\right)=0,5$ admet une et une seule solution $\alpha $ sur $\left[0;6\right]$.
+          \par
+          A la calculatrice on trouve $\alpha  \approx 1,68$ à $0,01$ près.
+          \item
+          $I=\int_{0}^{6} f\left(x\right)dx=\left[F\left(x\right)\right] _{0}^{6}=F\left(6\right)-F\left(0\right)=6+8e^{-6}-2=4+8e^{-6}$
+          \par
+          $I\approx 4,02$ à$10^{-3}$ près.
+     \end{enumerate}
+     \begin{h3}PARTIE B\end{h3}
+     \begin{enumerate}
+          \item
+          Le moment (en mois) où la production atteindra 0,5 millier est la solution de l'équation $f\left(x\right)=0,5$.
+          \par
+          C'est donc le nombre $\alpha  \approx 1,68$ trouvé dans la partie A.
+          \par
+          Pour convertir $\alpha $ en jours, il suffit de multiplier par 30, ce qui donne 50,4.
+          \par
+          La production dépassera 0,5 millier à partir du 51ème jour.
+          \item
+          La valeur moyenne de la production au cours des 6 premiers mois est donnée par :
+          \par
+          $m=\frac{1}{6-0}\int_{0}^{6}f\left(x\right)dx=\frac{1}{6}\approx \frac{4,02}{6}\approx 0,67$ à $10^{-3}$ près.
+     \end{enumerate}
+     \begin{h3}
+     PARTIE C\end{h3}
+     \begin{enumerate}
+          \item
+          On ne peut pas atteindre cette ville si l'autonomie est inférieure à 160km. La probabilité cherchée est donc $p\left(X < 160\right)$.
+          \par
+          A la calculatrice (loi normale - espérance 200 - écart-type 40 - min 0  - max 160) on trouve $p\left(X < 160\right)\approx 0,16$ à $10^{-2}$ près.
+          \textit{On peut aussi utiliser le fait que $p\left(160 < X < 240\right)=p\left(\mu -\sigma \leqslant X\leqslant \mu +\sigma \right)\approx 0,68$ (cf. cours)}. Donc l'évènement contraire a une probabilité :
+          \par
+          $p\left(X < 160 \cup X > 240\right)\approx 0,32$
+          \par
+          Par symétrie, $p\left(X < 160\right)=p\left(X > 240\right)$ donc : $p\left(X < 160\right)\approx \frac{1}{2}\times 0,32=0,16$
+          \item
+          On peut effectuer l'aller-retour jusqu'à cette ville sans recharge des batteries si l'autonomie est supérieure à 320km. La probabilité cherchée est donc $p\left(X\geqslant 320\right)$.
+          \par
+          A la calculatrice (loi normale - espérance 200 - écart-type 40 - min 320 - max 10^99) on trouve $p\left(X\geqslant 320\right)\approx 0,0013$ à $10^{-4}$ près.
+          \par
+          Cette probabilité est inférieure à 0,01.
+\par
+          \textit{On peut aussi utiliser le fait que $p\left(\mu -3\sigma \leqslant X \leqslant \mu +3 \sigma \right)\approx 0,0095$ (cf. cours) et un raisonnement analogue au \textbf{1.}
+          }
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

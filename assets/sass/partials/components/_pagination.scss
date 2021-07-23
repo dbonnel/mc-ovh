@@ -1,0 +1,23 @@
+.pagination {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+
+    a,
+    span.selected {
+        color:$primary;
+        float: left;
+        padding: .8rem 1.6rem;
+        text-decoration: none;
+    }
+
+    span.selected {
+        background-color: $secondary;
+        color: white;
+    }
+
+    a:hover {
+        background-color: $gray-300;
+        border: none;
+    }
+}

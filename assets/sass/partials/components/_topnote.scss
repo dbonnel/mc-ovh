@@ -1,0 +1,35 @@
+/*
+  Breadcrumb
+*/
+
+.top-note {
+    position: fixed;
+    z-index: 99;
+    top: -6em;
+    left: 0;
+    right: 0;
+    background: #ffeee8;
+    text-align: center;
+    line-height: 4;
+    overflow: hidden;
+    box-shadow: 0 0 .5rem $gray-500;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    span {
+        position: absolute;
+        right: 1em;
+        font-size: 2em;
+        line-height: 2;
+    }
+
+}
+
+.cb-top-note {
+    position: fixed;
+    left: -10rem;
+}
+
+.cb-top-note:checked+.top-note {
+    top: 0;
+}

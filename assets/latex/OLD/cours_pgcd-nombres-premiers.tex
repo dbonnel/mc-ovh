@@ -1,0 +1,222 @@
+\input{_header}
+\begin{h2}1. PGCD\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soient $a$ et $b$ deux entiers naturels tels que $a\neq 0$ ou $b\neq 0$.
+     \par
+     Le PGCD de $a$ et de $b$ est le plus grand diviseur commun à $a$ et à $b$.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     On cherche le PGCD de 60 et de 45.
+     \par
+     Les diviseurs de 60 sont : 1; 2; 3; 4; 5; 6; 10; 12; 15; 20; 30 et 60.
+     \par
+     Les diviseurs de 45 sont : 1; 3;  5; 9; 15 et 45.
+     \par
+     Les diviseurs communs à 60 et 45 sont : 1; 3; 5 et 15.
+     \par
+     Donc le PGCD de 60 et 45 est 15.
+}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item Si $b$ divise $a$, PGCD($a ; b$) $= b$. En effet, $b$ divise alors $a$ et $b$, et $b$ est le plus grand diviseur de $b$.
+          \par
+          En particulier, PGCD($a ; 1$) $= 1$ et PGCD(0 ; $b$) $= b$
+          \item On prolonge la notion de PGCD à des entiers \textbf{relatifs} $a$ et $b$ par PGCD($a ; b$)=PGCD($|a| ; |b|$).
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t20"
+     Soient $a$ et  $b$ deux entiers naturels non nuls et $r$ le reste de la division euclidienne de $a$ par $b$.
+     \par
+     Alors : PGCD($a ; b$) = PGCD($b ; r$).
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Le reste de la division euclidienne de 60 par 45 est 15. donc PGCD(60 ; 45) = PGCD(45 ; 15).
+     \par
+     Si l'on réitère le processus, le reste de la division euclidienne de 45 par 15 est 0 donc PGCD(45 ; 15) = PGCD(15 ; 0) = 15.
+}
+\cadre{rouge}{Algorithme d'Euclide}{% id="t30"
+     \begin{itemize}
+          \item On effectue la division euclidienne de $a$ par $b$ et on note $r_{1}$ le reste de cette division.
+          \item Puis si $r_{1}\neq 0$, on effectue la division euclidienne de $b$ par $r_{1}$ et on note $r_{2}$ le reste de cette division.
+          \item Puis si $r_{2}\neq 0$, on effectue la division euclidienne de $r_{1}$ par $r_{2}$, et ainsi de suite...
+     \end{itemize}
+     La suite $r_{0}=b$, $r_{1}$, $r_{2}$, ... est strictement décroissante, et pour un certain rang $n$ on aura $r_{n}=0$.
+     \par
+     Par conséquent :
+     \par
+     PGCD($a$ ; $b$) = PGCD($b$ ; $r_{0}$) = PGCD($r_{0}$ ; $r_{1}$) = ...
+     \par
+     $                   $= PGCD($r_{n-1}$ ; $r_{n}$) = PGCD($r_{n-1}$ ; 0) = $r_{n-1}$
+     \par
+     Le PGCD de $a$ et $b$ est donc \textbf{le dernier reste non nul} dans cette suite.
+}
+\bloc{orange}{Exemple}{% id="e30"
+     On cherche à déterminer le PGCD de 2691 et de 1404.
+     \begin{itemize}
+          \item le reste de la division euclidienne de 2691 par 1404 est 1287,
+          \item le reste de la division euclidienne de 1404 par 1287 est 117,
+          \item le reste de la division euclidienne de 1287 par 117 est 0.
+     \end{itemize}
+     Par conséquent PGCD(2691 ; 1404) = 117.
+}
+\cadre{vert}{Propriété}{% id="p40"
+     Soient $a$ et $b$ deux entiers naturels non nuls.
+     \par
+     L'ensemble des diviseurs communs à $a$ et à $b$ est l'ensemble des diviseurs de leur PGCD.
+}
+\cadre{bleu}{Définition}{% id="d50"
+     On dit que deux entiers naturels non nuls sont \textbf{premiers entre eux} si leur PGCD est égal à 1.
+}
+\bloc{cyan}{Remarque}{% id="r50"
+     On peut généraliser cette notion à plus de deux entiers de deux façons différentes.
+     \par
+     Si $a$, $b$ et $c$ sont trois entiers non nuls :
+     \begin{itemize}
+          \item on dit que $a$, $b$ et $c$ sont premiers entre eux \textbf{dans leur ensemble} lorsque le seul diviseur commun à $a$, $b$ et $c$ est 1 ;
+          \item on dit que $a$, $b$ et $c$ sont premiers entre eux \textbf{deux à deux} lorsque PGCD($a$ ; $b$) = 1, PGCD($b$ ; $c$) = 1 et PGCD($a$ ; $c$) = 1.
+     \end{itemize}
+     Par exemple 4 , 6 et 9 sont premiers entre eux dans leur ensemble (pas de diviseur commun à ces trois nombres autre que 1)  mais ne sont pas premiers entre eux deux à deux puisque PGCD(4 ; 6) = 2 et PGCD(6 ; 9) = 3.
+}
+\cadre{vert}{Propriété}{% id="p55"
+     Soient $a$ et $b$ deux entiers naturels non nuls.
+     \par
+     $d$ est le PGCD de $a$ et de $b$ si et seulement si il esiste deux entiers $a^{\prime}$ et $b^{\prime}$ \textbf{premiers entre eux} tels que $a=a^{\prime}d$ et $b=b^{\prime}d$.
+}
+\bloc{orange}{Exemple}{% id="e55"
+     Le  PGCD de 60 et de 45 est 15. On a :
+     \par
+     60 = 4×15 et 45 = 3×15 et 4 et 3 sont premiers entre eux.
+}
+\cadre{rouge}{Théorème (de Bézout)}{% id="t60"
+     Deux entiers naturels $a$ et $b$ non nuls sont premiers entre eux si et seulement si il existe deux entiers relatifs $u$ et $v$ tels que :
+     \begin{center}$au+bv = 1$.\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r60"
+     Les valeurs de $u$ et de $v$ peuvent être obtenues à l'aide de l'algorithme d'Euclide (fiche méthode à venir...)
+}
+\bloc{orange}{Exemple}{% id="e60"
+     Pour tout entier naturel $n$, $2n+1$ et $n$ sont premiers entre eux.
+     \par
+     En effet $1\times \left(2n+1\right)-2\times n=1$. Donc d'après le théorème de Bézout (avec $u=1$ et $v=-2$), $n$ et $2n+1$ sont premiers entre eux.
+}
+\cadre{vert}{Propriété}{% id="p70"
+     Soient $a$ et $b$ deux entiers naturels non nuls et $d$ leur PGCD.
+     \par
+     Alors, il existe deux entiers relatifs $u$ et $v$ tels que :
+     \begin{center}$au+bv = d$.\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r70"
+     Attention, la réciproque est fausse.
+     \par
+     Si $au+bv = d$ on peut seulement en déduire que le PGCD de $a$ et de $b$ divise $d$ (d'après une \mcLien{/cours/terminale-s/divisibilite-congruences\#p20}{propriété du chapitre précédent}). Par exemple $3\times 4+2\times \left(-5\right)=2$ mais le PGCD de 3 et de 2 est 1 (ils sont premiers entre eux) et non 2.
+}
+\cadre{rouge}{Théorème (de Gauss)}{% id="t90"
+     Soient $a$, $b$ et $c$ trois entiers naturels non nuls.
+     \begin{itemize}
+          \item Si $a$ divise le produit $bc$
+          \item et si $a$ est premier avec $b$,
+     \end{itemize}
+     alors, $a$ divise $c$.
+}
+\bloc{orange}{Exemple}{% id="e90"
+     On cherche tous les couples d'entiers naturels $\left(m ; n\right)$ tels que $5m=3n$.
+     \par
+     L'égalité $5m=3n$ signifie que $5$ divise $3n$. Comme $5$ et $3$ sont premiers entre eux, d'après le théorème de Gauss $5$ divise $n$. Donc il existe un entier naturel $k$ tel que $n=5k$. On a alors $5m=3n=15k$ soit $m=3k$.
+     \par
+     Réciproquement, on vérifie aisément que tout couple de la forme $\left(3k ; 5k\right)$ (où $k \in  \mathbb{N}$) est solution de l'équation proposée.
+}
+\cadre{vert}{Propriété}{% id="p100"
+     Si $a$ et $b$ divisent $c$ et sont premiers entre eux, alors le produit $ab$ divise $c$.
+}
+\bloc{orange}{Exemples}{% id="e100"
+     D'après cette propriété :
+     \begin{itemize}
+          \item $n$ est divisible par 6 si et seulement si il est divisible par 2 et par 3 (car 2 et 3 sont premiers entre eux).
+          \item $n$ est divisible par 15 si et seulement si il est divisible par 3 et par 5 (car 3 et 5 sont premiers entre eux).
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r100"
+     L'hypothèse « $a$ et $b$ sont premiers entre eux » est essentielle. Par exemple 90 est divisible par 6 et par 10 mais n'est pas divisible par 6×10 = 60.
+}
+\begin{h2}2. Nombres premiers\end{h2}
+\cadre{bleu}{Définition}{% id="d150"
+     Un entier naturel est premier s'il admet exactement deux diviseurs (dans $\mathbb{N}$) : 1 et lui-même.
+}
+\bloc{cyan}{Remarque}{% id="r150"
+     1 n'est pas un nombre premier (il possède un seul diviseur).
+}
+\cadre{vert}{Propriétés}{% id="p160"
+     \begin{itemize}
+          \item Tout entier naturel $n > 1$ admet au moins un diviseur premier.
+          \item Tout entier naturel $n > 1$ \textbf{non premier} admet au moins un diviseur premier inférieur ou égal à $\sqrt{n}$.
+\end{itemize}}
+\bloc{cyan}{Remarque}{% id="r160"
+     La seconde propriété est souvent utilisée pour démontrer (par l'absurde) qu'un entier naturel $n$ est premier. Il suffit, en effet, de montrer que $n$ n'est divisible par aucun nombre premier $p$ inférieur ou égal à $\sqrt{n}$. On peut donc arrêter la recherche de diviseurs premiers $p$ dès que $p^{2} > n$.
+}
+\bloc{orange}{Exemple}{% id="e160"
+     41 est-il premier ?
+     \begin{itemize}
+          \item 41 n'est pas divisible par 2 (dernier chiffre impair),
+          \item 41 n'est pas divisible par 3 (somme des chiffres 4+1=5),
+          \item 41 n'est pas divisible par 5 (dernier chiffre différent de 0 et de 5),
+          \item 7²=49 > 41 (donc $7 > \sqrt{41}$) : inutile de chercher plus loin...
+     \end{itemize}
+     Conclusion : 41 est un nombre premier.
+}
+\cadre{vert}{Propriété}{% id="p170"
+     Il existe une infinité de nombres premiers.
+}
+\bloc{orange}{Démonstration}{% id="d170"
+     On raisonne par l'absurde en supposant que l'ensemble des nombres premiers n'est pas infini. Il existe alors un plus grand nombre premier $p$.
+     \par
+     On pose $N=2\times 3\times 5\times \cdots \times p$ (produit de tous les nombres premiers).
+     \par
+     Comme tout entier naturel supérieur à 1 admet au moins un diviseur premier, $N+1$ admet un diviseur premier $d$.
+     \par
+     Or $d$ divise aussi le nombre $N$ puisque $N$ est le produit de \textbf{tous} les nombres premiers.
+     \par
+     $d$ divise $N+1$ et $N$, donc il divise leur différence 1, ce qui est impossible.
+}
+\cadre{vert}{Propriété}{% id="p180"
+     Si $p$ est un nombre premier et $a$ un entier naturel non nul non divisible par $p$, alors $p$ et $a$ sont premier entre eux.
+}
+\cadre{vert}{Propriété}{% id="p185"
+     Soient $a$ et $b$ deux entiers naturels non nuls.
+     \par
+     Si un nombre premier $p$ divise le produit $ab$, alors $p$ divise $a$ ou $b$.
+}
+\bloc{cyan}{Remarque}{% id="r185"
+     Cette propriété résulte immédiatement de la propriété précédente et du théorème de Gauss.
+}
+\cadre{rouge}{Théorème (théorème fondamental de l'arithmétique)}{% id="t190"
+     Tout entier naturel $n > 1$ se décompose en produit de nombres premiers.
+     \par
+     Cette décomposition peut s'écrire :
+     \begin{center}$n=p_{1}^{a_{1}}p_{2}^{a_{2}}\cdots p_{k}^{a_{k}}$\end{center}
+     où les $p_{i}$ sont des nombres premiers distincts et les $a_{i}$ des entiers naturels non nuls.
+     \par
+     Cette décomposition est unique à l'ordre près des facteurs.
+}
+\bloc{orange}{Exemple}{% id="e190"
+     Cherchons la décomposition de 60 en facteurs premiers.
+     \begin{itemize}
+          \item 60 est divisible par 2 et le quotient de cette division est 30.
+          \item 30 est divisible par 2 et le quotient est 15.
+          \item 15 est divisible par 3 et le quotient est 5.
+          \item Enfin, 5 est premier.
+     \end{itemize}
+     Donc $60=2^{2}\times 3\times 5$.
+}
+\cadre{vert}{Propriété}{% id="p200"
+     Soit $n$ un entier naturel supérieur à 1 dont la décomposition en facteurs premiers s'écrit $n=p_{1}^{a_{1}}p_{2}^{a_{2}}\cdots p_{k}^{a_{k}}$.
+     \par
+     Alors, les diviseurs de $n$ sont les entiers de la forme :
+     \begin{center}$n=p_{1}^{b_{1}}p_{2}^{b_{2}}\cdots p_{k}^{b_{k}}$\end{center}
+     avec $0 \leqslant  b_{i} \leqslant  a_{i}$ pour tout $0 \leqslant  i \leqslant  k$.
+}
+\bloc{orange}{Exemple}{% id="e200"
+     $60=2^{2}\times 3\times 5$ admet comme diviseurs les nombres de la forme $2^{b_{1}}\times 3^{b_{2}}\times 5^{b_{3}}$ avec $0 \leqslant  b_{1} \leqslant  2$, $0 \leqslant  b_{2} \leqslant  1$ et $0 \leqslant  b_{3} \leqslant  1$.
+     \par
+     Il y a trois valeurs possibles pour $b_{1}$ et deux valeurs possibles pour $b_{2}$ et pour $b_{3}$. Au total, $60$ possède donc $3\times 2\times 2=12$ diviseurs (en comptant $1$ et lui-même).
+}
+\input{_footer}

@@ -1,0 +1,62 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\smallbreak
+\textit{Candidats n'ayant pas choisi l'enseignement de spécialité \og Mathématiques \fg{} }
+\bigbreak
+Le directeur d'une réserve marine a recensé 3~000 cétacés dans cette réserve au 1$^{\text{er}}$ juin 2017. Il est inquiet car il sait que le classement de la zone en \og réserve marine\fg{} ne sera pas reconduit si le nombre de cétacés de cette réserve devient inférieur à 2~000.
+\smallbreak
+Une étude lui permet d'élaborer un modèle selon lequel, chaque année~:
+\begin{itemize}
+     \item entre le 1$^{\text{er}}$ juin et le 31 octobre, 80 cétacés arrivent dans la réserve marine~;
+     \item entre le 1$^{\text{er}}$ novembre et le 31 mai, la réserve subit une baisse de 5~\% de son effectif par rapport à celui du 31 octobre qui précède.
+\end{itemize}
+On modélise l'évolution du nombre de cétacés par une suite $(u_n)$. Selon ce modèle, pour tout entier naturel $n$, $u_n$ désigne le nombre de cétacés au 1$^{\text{er}}$ juin de l'année $2017+n$. On a donc $u_0=3~000$.
+\begin{enumerate}
+     \item
+     Justifier que $u_1=2~926$.
+     \item Justifier que, pour tout entier naturel $n$, $u_{n+1}=0,95u_n+76$.
+     \item À l'aide d'un tableur, on a calculé les 8 premiers termes de la suite $(u_n)$. Le directeur a configuré le format des cellules pour que ne soient affichés que des nombres arrondis à l'unité.
+     \begin{center}
+\begin{extern}%width="520" alt="Tableur Bac S Antilles-Guyane 2018"
+               \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+               \hline
+               \rowcolor{lightgray!20}&A&B&C&D&E&F&G&H&I\\
+               \hline
+               \cellcolor{lightgray!20}1&$n$&0&1&2&3&4&5&6&7\\
+               \hline
+               \cellcolor{lightgray!20}2&$u_n$&3~000&2~926&2~856&2~789&2~725&2~665&2~608&2~553\\
+               \hline
+          \end{tabular}
+     \end{extern}
+          \end{center}
+     Quelle formule peut-on entrer dans la cellule C2 afin d'obtenir, par recopie vers la droite, les termes de la suite $(u_n)$~?
+     \item \begin{enumerate}[label=\alph*.]
+          \item Démontrer que, pour tout entier naturel $n$, $u_n\geqslant1~520$.
+          \item Démontrer que la suite $(u_n)$ est décroissante.
+          \item Justifier que la suite $(u_n)$ est convergente. On ne cherchera pas ici la valeur de la limite.
+     \end{enumerate}
+     \item On désigne par $(v_n)$ la suite définie par, pour tout entier naturel $n$, $v_n=u_n-1~520$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $(v_n)$ est une suite géométrique de raison 0,95 dont on précisera le premier terme.
+          \item En déduire que, pour tout entier naturel $n$, $u_n=1~480\times0,95^n+1~520$.
+          \item Déterminer la limite de la suite $(u_n)$.
+     \end{enumerate}
+     \item Recopier et compléter l'algorithme suivant pour déterminer l'année à partir de laquelle le nombre de cétacés présents dans la réserve marine sera inférieur à 2~000.
+     \begin{center}
+\begin{extern}%width="200" alt="Algorithme Bac S Antilles-Guyane 2018"
+          \fbox{
+               \begin{minipage}{3.8cm}
+                    $n\leftarrow 0$\\
+                    $u\leftarrow3~000$\\
+                    Tant que $\ldots$\\
+                    \phantom{xxxx}$n\leftarrow \ldots$\\
+                    \phantom{xxxx}$u\leftarrow \ldots$\\
+                    Fin de Tant que
+               \end{minipage}
+          }
+\end{extern}
+     \end{center}
+     La notation \og$\leftarrow$\fg{} correspond à une affectation de valeur, ainsi \og $n\leftarrow 0$\fg{} signifie \og~Affecter à $n$ la valeur $0$~\fg{}.
+     \item La réserve marine fermera-t-elle un jour~? Si oui, déterminer l'année de la fermeture.
+\end{enumerate}
+\input{_footer}

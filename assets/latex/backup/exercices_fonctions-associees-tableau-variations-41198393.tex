@@ -1,0 +1,159 @@
+\input{_header}
+\meta{url}{/exercices/fonctions-associees-tableau-variations/}
+\meta{pid}{958}
+\meta{titre}{Fonctions associées : Tableau de variations}
+\meta{type}{exercices}
+%
+\textit{[Pour cet exercice, on suppose que le chapitre "Dérivées" n'a pas encore été étudié et on n'utilisera pas cette notion]}
+Soit $f$ une fonction définie sur $\left]-\infty  ; 0\right[ \cup  \left]0 ; +\infty \right[$ dont le tableau de variations est le suivant :
+
+\begin{center}
+%##
+% type=table; width=50;l2=20
+%--
+% x|   -\infty   ~    -1   ~  0  ~     2  ~   +\infty
+% f|  ~             \     :1   /   ||   \    :-1    /     ~
+%--
+\begin{center}
+ \begin{extern}%style="width:50rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.6}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (90*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ -\infty $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ -1 $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ 0 $};
+       \node (l0c6) at (59*\width,-5*\height) {$ ~ $};
+       \node (l0c7) at (68*\width,-5*\height) {$ 2 $};
+       \node (l0c8) at (77*\width,-5*\height) {$ ~ $};
+       \node (l0c9) at (86*\width,-5*\height) {$ +\infty $};
+       \draw (0, -30*\height) -- (90*\width, -30*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -30*\height);
+       \node (l1c0) at (5*\width,-20*\height) {$ f $};
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-20*\height) {$ ~ $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -30*\height);
+       \node (l1c3) at (32*\width,-25*\height) {$ 1 $};
+       \node (l1c4) at (41*\width,-20*\height) {$ ~ $};
+       \draw[double distance=2pt] (50*\width, -10*\height) -- (50*\width, -30*\height);
+       \node (l1c5) at (50*\width,-15*\height) {$ ~ $};
+       \node (l1c6) at (59*\width,-20*\height) {$ ~ $};
+       \draw[light] (68*\width, -10*\height) -- (68*\width, -30*\height);
+       \node (l1c7) at (68*\width,-25*\height) {$ -1 $};
+       \node (l1c8) at (77*\width,-20*\height) {$ ~ $};
+       \node (l1c9) at (86*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (90*\width, -30*\height);
+       \draw[fleche] (l1c1) -- (l1c3);
+       \draw[fleche] (l1c3) -- (l1c5);
+       \draw[fleche] (l1c5) -- (l1c7);
+       \draw[fleche] (l1c7) -- (l1c9);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\end{center}
+\par
+On pose $g=\frac{1}{f}$
+\begin{enumerate}
+     \item
+     Quel est l'ensemble de définition de la fonction $g$?
+     \item
+     Dressez le tableau de variations de la fonction $g$.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $g$ est définie si et seulement si :
+          \begin{itemize}
+               \item
+               $f $ est définie
+               \item
+               $ f $ est non nulle
+          \end{itemize}
+          La première condition est vérifiée pour $x\neq 0$.
+          \par
+          Par ailleurs, le tableau de variation montre que $f$ est \textbf{strictement positive} (car supérieure ou égale à $1$) sur $\left]-\infty  ; 0\right[$ et \textbf{strictement négative} (car inférieure ou égale à $-1$) sur $\left]0 ; +\infty \right[$.
+          \par
+          Donc $f$ n'est jamais nulle sur $\left]-\infty  ; 0\right[ \cup  \left]0 ; +\infty \right[$.
+          \par
+          L'ensemble de définition de $g$ est donc identique à celui de $f$:
+          \begin{center}$\mathscr D_{g}=\left]-\infty  ; 0\right[ \cup  \left]0 ; +\infty \right[$\end{center}
+          \item
+          $f$ ne s'annule pas et ne change pas de signe sur $\left]-\infty  ; 0\right[$. $g$ est l'\textbf{inverse} de $f$ donc le sens de variations de $g$ est  \textbf{contraire} à celui de $f$ sur $\left]-\infty  ; 0\right[$. (voir \mcLien{/cours/premiere-s/variations-une-fonction}{cours})
+          \par
+          Par un raisonnement analogue, on montre que le sens de variations de $g$ est  contraire à celui de $f$ sur $\left]0 ; +\infty \right[$.
+          \par
+          Enfin :
+          \par
+          $g\left(-1\right)=\frac{1}{f\left(-1\right)}=\frac{1}{1}=1$ et $g\left(2\right)=\frac{1}{f\left(2\right)}=\frac{1}{-1}=-1$
+          \par
+          On obtient le tableau de variations suivant :
+          \par
+%##
+% type=table; width=50;l2=20;c7=1
+%--
+% x|   -\infty   ~    -1   ~  ~  0  ~  ~     2  ~   +\infty
+% f|  ~             /    :1   \   ~  ||  ~   \    :-1  /     ~
+%--
+\begin{center}
+ \begin{extern}%style="width:50rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.6}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (99*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ -\infty $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ -1 $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ ~ $};
+       \node (l0c6) at (54.5*\width,-5*\height) {$ 0 $};
+       \node (l0c7) at (59*\width,-5*\height) {$ ~ $};
+       \node (l0c8) at (68*\width,-5*\height) {$ ~ $};
+       \node (l0c9) at (77*\width,-5*\height) {$ 2 $};
+       \node (l0c10) at (86*\width,-5*\height) {$ ~ $};
+       \node (l0c11) at (95*\width,-5*\height) {$ +\infty $};
+       \draw (0, -30*\height) -- (99*\width, -30*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -30*\height);
+       \node (l1c0) at (5*\width,-20*\height) {$ f $};
+       \node (l1c1) at (14*\width,-25*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-20*\height) {$ ~ $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -30*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 1 $};
+       \node (l1c4) at (41*\width,-20*\height) {$ ~ $};
+       \node (l1c5) at (50*\width,-25*\height) {$ ~ $};
+       \draw[double distance=2pt] (54.5*\width, -10*\height) -- (54.5*\width, -30*\height);
+       \node (l1c6) at (54.5*\width,-20*\height) {$ ~ $};
+       \node (l1c7) at (59*\width,-15*\height) {$ ~ $};
+       \node (l1c8) at (68*\width,-20*\height) {$ ~ $};
+       \draw[light] (77*\width, -10*\height) -- (77*\width, -30*\height);
+       \node (l1c9) at (77*\width,-25*\height) {$ -1 $};
+       \node (l1c10) at (86*\width,-20*\height) {$ ~ $};
+       \node (l1c11) at (95*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (99*\width, -30*\height);
+       \draw[fleche] (l1c1) -- (l1c3);
+       \draw[fleche] (l1c3) -- (l1c5);
+       \draw[fleche] (l1c7) -- (l1c9);
+       \draw[fleche] (l1c9) -- (l1c11);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\end{enumerate}
+\end{corrige}
+\input{_footer}

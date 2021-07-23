@@ -1,0 +1,320 @@
+\input{_header}
+\meta{url}{/cours/limites-fonctions/}
+\meta{pid}{509}
+\meta{titre}{Limites d'une fonction}
+\meta{type}{cours}
+\begin{h2}1. Définitions\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     \textbf{Limite infinie quand $x$ tend vers l'infini.}
+     \par
+     Soit $f$ une fonction définie sur un intervalle $\left[a; +\infty \right[$.
+     \par
+     On dit que que $f\left(x\right)$ tend vers $+\infty $ quand $x$ tend vers $+\infty $ lorsque pour $x$ suffisamment grand, $f\left(x\right)$ est aussi grand que l'on veut. On écrit alors que $\lim\limits_{x\rightarrow +\infty } f\left(x\right)=+\infty $.
+}
+%<img src="/wp-content/uploads/lim_inf.svg" alt="" class="aligncenter" style="width:350px;"/>
+\begin{center}
+     \begin{extern} %width="400" alt="limite infinie"
+          % -+-+-+ variables modifiables
+          \resizebox{8cm}{!}{%
+               \def\fonction{ 0.05*x*x + 0.5*x - 1 }
+               \def\xmin{-1}
+               \def\xmax{13}
+               \def\ymin{-2}
+               \def\ymax{9}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dx=100,Dy=100,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](9.5,8){$\color{blue} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}$\lim\limits_{x\rightarrow +\infty } f\left(x\right)=+\infty $\end{center}
+\bloc{cyan}{Remarque}{%id="r10"
+     On définit de façon similaire les limites :
+     \par
+     $\lim\limits_{x\rightarrow +\infty } f\left(x\right)=-\infty $ ; $\lim\limits_{x\rightarrow -\infty } f\left(x\right)=+\infty $ ; $\lim\limits_{x\rightarrow -\infty } f\left(x\right)=-\infty $.
+}
+\cadre{bleu}{Définition}{%id="d20"
+     \textbf{Limite finie quand $x$ tend vers l'infini.}
+     \par
+     Soit $f$ une fonction définie sur un intervalle $\left[a ; +\infty \right[$.
+     \par
+     On dit que que $f\left(x\right)$ tend vers $l$ quand $x$ tend vers $+\infty $ lorsque pour $x$ suffisamment grand, $f\left(x\right)$ est aussi proche de $l$ que l'on veut. On écrit alors que $\lim\limits_{x\rightarrow +\infty } f\left(x\right)=l$.
+}
+\begin{center}
+     \begin{extern} %width="400" alt="limite nulle"
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{15/(x*x+3*x+4) }
+               \def\xmin{-1}
+               \def\xmax{13}
+               \def\ymin{-2}
+               \def\ymax{9}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dx=100,Dy=100,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](-1,4.5){$\color{blue} \mathcal{C}_f$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}$\lim\limits_{x\rightarrow +\infty } f\left(x\right)=0$\end{center}
+\bloc{cyan}{Remarque}{%id="r20"
+     On définit de façon similaire la limite $\lim\limits_{x\rightarrow -\infty } f\left(x\right)=l$.
+}
+\cadre{bleu}{Définition}{%id="d30"
+     Si $\lim\limits_{x\rightarrow -\infty }f\left(x\right)=l$ ou $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=l$, on dit que la droite d'équation $y=l$ est \textbf{asymptote horizontale} à la courbe représentative de la fonction $f$.
+}
+\bloc{orange}{Exemple}{%id="e30"
+     Sur la courbe ci-dessus, la droite d'équation $y=0$ est \textbf{asymptote horizontale} à la courbe représentative de $f$.
+}
+\cadre{bleu}{Définition}{%id="d40"
+     \textbf{Limite infinie quand $x$ tend vers un réel.}
+     \par
+     Soit $f$ une fonction définie sur un intervalle $\left]a; b\right[$ (avec $a < b$).
+     \par
+     On dit que que $f\left(x\right)$ tend vers $+\infty $ quand $x$ tend vers $a$ par valeurs supérieures lorsque $f\left(x\right)$ est aussi grand que l'on veut quand $x$ se rapproche de $a$ en restant supérieur à $a$. On écrit alors $\lim\limits_{x\rightarrow a^+} f\left(x\right)=+\infty $ ou $\lim\limits_{\scriptstyle x\rightarrow a \atop\scriptstyle x > a} f\left(x\right)=+\infty $.
+     \par
+     De même, on dit que que $f\left(x\right)$ tend vers $+\infty $ quand $x$ tend vers $b$ par valeurs inférieures lorsque $f\left(x\right)$ est aussi grand que l'on veut quand $x$ se rapproche de $b$ en restant inférieur à $b$. On écrit alors $\lim\limits_{x\rightarrow b^-} f\left(x\right)=+\infty $ ou $\lim\limits_{\scriptstyle x\rightarrow b \atop\scriptstyle  x < b} f\left(x\right)=+\infty $.
+     \par
+     Enfin, si $c\in \left]a;b\right[$ , on dit que que $f\left(x\right)$ tend vers $+\infty $ quand $x$ tend vers $c$ si $f\left(x\right)$ tend vers $+\infty $ quand $x$ tend vers $c$ par valeurs supérieures et par valeurs inférieures. On écrit alors $\lim\limits_{x\rightarrow c} f\left(x\right)=+\infty $.
+}
+\bloc{cyan}{Remarque}{%id="r40"
+     On définit de façon symétrique $\lim\limits_{x\rightarrow a^-} f\left(x\right)=-\infty $, $\lim\limits_{x\rightarrow a^+} f\left(x\right)=-\infty $ et $\lim\limits_{x\rightarrow a} f\left(x\right)=-\infty $ en remplaçant «\textit{ $f\left(x\right)$ est aussi grand que l'on veut} » par « \textit{$f\left(x\right)$ est aussi petit que l'on veut} » dans la définition.
+}
+\cadre{bleu}{Définition}{%id="d50"
+     Si $\lim\limits_{x\rightarrow c^-}f\left(x\right)=\pm \infty $ ou $\lim\limits_{x\rightarrow c^+}f\left(x\right)=\pm \infty $ ou $\lim\limits_{x\rightarrow c}f\left(x\right)=\pm \infty $, on dit que la droite d'équation $x=c$ est \textbf{asymptote verticale} à la courbe représentative de la fonction $f$.
+}
+\bloc{orange}{Exemple}{%id="e50"
+     Sur les trois courbes de la figure ci-dessous, la droite d'équation $x=0$ est \textbf{asymptote verticale} à la courbe représentative de $f$.
+}
+\begin{center}
+     \begin{extern} %width="600" alt="limite à droite et à gauche"
+          % -+-+-+ variables modifiables
+          \def\f{4/abs(x)-abs(x) }
+          \def\g{4/(x+9)-(x+9) }
+          \def\h{-4/(x+14)+(x+14) }
+          \def\xmin{-18}
+          \def\xmax{3}
+          \def\ymin{-4.8}
+          \def\ymax{9}
+          \def\xunit{0.5}  % unités en cm
+          \def\yunit{0.5}
+          \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+          \fontsize{9pt}{9pt}\selectfont
+          \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+               %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+               %   \psaxes[Dx=100,Dy=100,linewidth=0.75pt]{->}(0,0)(\xmin,-2)(\xmax,\ymax)
+               \psplot[plotpoints=2000,linecolor=blue,linewidth=0.75pt]{-3}{3}{\f}
+               \psplot[plotpoints=2000,linecolor=rouge,linewidth=0.75pt]{-8.9}{-6}{\g}
+               \psplot[plotpoints=2000,linecolor=vert,linewidth=0.75pt]{-17}{-14.01}{\h}
+               \rput[tr](-0.1,-0.1){$O$}
+               \rput[tr](-9.1,-0.1){$O$}
+               \rput[tr](-14.1,-0.1){$O$}
+               \rput[tl](0.7,7.5){$\color{blue} \mathcal{C}_f$}
+               \rput[tl](-8.3,7.5){$\color{rouge} \mathcal{C}_f$}
+               \rput[tl](-16,7.5){$\color{vert} \mathcal{C}_f$}
+               \psline[linewidth=0.75pt]{->}(0,-2)(0,9)
+               \psline[linewidth=0.75pt]{->}(-9,-2)(-9,9)
+               \psline[linewidth=0.75pt]{->}(-14,-2)(-14,9)
+               \psline[linewidth=0.75pt]{->}(-3,0)(3,0)
+               \psline[linewidth=0.75pt]{->}(-10,0)(-5,0)
+               \psline[linewidth=0.75pt]{->}(-17,0)(-12,0)
+               \rput[t](-14.5,-3){$\lim\limits_{x\rightarrow 0^{-}} f\left(x\right)=+\infty$}
+               \rput[t](-7.5,-3){$\lim\limits_{x\rightarrow 0^{+}} f\left(x\right)=+\infty$}
+               \rput[t](0,-3){$\lim\limits_{x\rightarrow 0} f\left(x\right)=+\infty$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définition}{%id="d60"
+     \textbf{Limite finie quand x tend vers un réel}.
+     \par
+     Soit $f$ une fonction définie sur un intervalle $\left]a;b\right[$ (avec $a < b$).
+     \par
+     On dit que que $f\left(x\right)$ tend vers $l$ quand $x$ tend vers $a$ par valeurs supérieures lorsque $f\left(x\right)$ se rapproche de $l$ quand x se rapproche de $a$ en restant supérieur à $a$.
+     \par
+     On écrit alors $\lim\limits_{x\rightarrow a^+} f\left(x\right)=l$ ou $\lim\limits_{\begin{matrix}x\rightarrow a \\ x > a\end{matrix}} f\left(x\right)=l$.
+     \par
+     De même, on dit que que $f\left(x\right)$ tend vers $l$ quand $x$ tend vers $b$ par valeurs inférieures lorsque $f\left(x\right)$ se rapproche de $l$ quand x se rapproche de $b$ en restant inférieur à $b$.
+     \par
+     On écrit alors $\lim\limits_{x\rightarrow b^-} f\left(x\right)=l$ ou $\lim\limits_{\begin{matrix}x\rightarrow b \\ x < b\end{matrix}} f\left(x\right)=l $.
+     \par
+     Enfin, si $c\in \left]a; b\right[$ , on dit que que $f\left(x\right)$ tend vers $l$ quand $x$ tend vers $c$ si $f\left(x\right)$ tend vers $l$ quand $x$ tend vers $c$ par valeurs supérieures et par valeurs inférieures.
+     \par
+     On écrit alors $\lim\limits_{x\rightarrow c} f\left(x\right)=l$.
+}
+\begin{h2}2. Limites usuelles\end{h2}
+\cadre{vert}{Propriétés}{%id="p70"
+     Pour tout entier $n > 1$ :
+     \begin{itemize}
+          \item $\lim\limits_{x\rightarrow -\infty }x^{n}=\left\{ \begin{matrix} -\infty \text{ si n est impair} \\ +\infty \text{ si n est pair} \end{matrix}\right. $
+          \item $\lim\limits_{x\rightarrow +\infty }x^{n}=+\infty $
+          \item $\lim\limits_{x\rightarrow -\infty }\frac{1}{x^{n}}=0$
+          \item $\lim\limits_{x\rightarrow +\infty }\frac{1}{x^{n}}=0$
+          \item $\lim\limits_{x\rightarrow 0^-}\frac{1}{x}=-\infty $
+          \item $\lim\limits_{x\rightarrow 0^+}\frac{1}{x}=+\infty $
+          \item $\lim\limits_{x\rightarrow +\infty }\sqrt{x}=+\infty $.
+     \end{itemize}
+}
+\begin{h2}3. Opérations sur les limites\end{h2}
+\cadre{vert}{Propriétés}{%id="p70"
+     \textbf{Limite d'une somme.}
+     \par
+     $a$ désigne un réel ou $+\infty $ ou $-\infty $.
+     \begin{center}
+           \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $\lim\limits_{x\rightarrow a}f\left(x\right)$ & $\lim\limits_{x\rightarrow a}g\left(x\right)$ & $\lim\limits_{x\rightarrow a}f\left(x\right)+g\left(x\right)$          \\ \hline
+               $l$ & $l^{\prime}$ & $l+l^{\prime}$          \\ \hline
+               $l$ & $+\infty $ & $+\infty $          \\ \hline
+               $l$ & $-\infty $ & $-\infty $          \\ \hline
+               $+\infty $ & $+\infty $ & $+\infty $          \\ \hline
+               $-\infty $ & $-\infty $ & $-\infty $          \\ \hline
+               $+\infty $ & $-\infty $ & $F.I.$           \\ \hline
+          \end{tabularx}
+     \end{center}     $F.I.$ signifie forme indéterminée.
+}
+\bloc{cyan}{Remarque}{%id="r70"
+     \textit{« Forme indéterminée »} ne signifie \textbf{pas} que la limite n'existe pas mais que les formules d'opérations sur les limites ne permettent pas de trouver directement limite. Pour la calculer, il faut alors \textit{« lever l'indétermination »} par exemple en simplifiant une fraction (cf. \textit{fiches méthodes}).
+}
+\cadre{vert}{Propriétés}{%id="p80"
+     \textbf{Limite d'un produit.}
+     \par
+     $a$ désigne un réel ou $+\infty $ ou $-\infty $.
+     \begin{center}
+           \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $\lim\limits_{x\rightarrow a}f\left(x\right)$ & $\lim\limits_{x\rightarrow a}g\left(x\right)$ & $\lim\limits_{x\rightarrow a}f\left(x\right)\times g\left(x\right)$          \\ \hline
+               $l$ & $l^{\prime}$ & $l\times l^{\prime}$          \\ \hline
+               $l\neq 0$ & $\pm \infty $ & $\left(signe\right)\infty $          \\ \hline
+               $\pm \infty $ & $\pm \infty $ & $\left(signe\right)\infty $          \\ \hline
+               $0$ & $\pm \infty $ & $F.I.$     \\ \hline
+          \end{tabularx}
+     \end{center}
+     \begin{itemize}
+          \item $F.I.$ signifie forme indéterminée.
+          \item $\pm \infty $ signifie que la formule s'applique pour $+\infty $ et pour $-\infty $.
+          \item $\left(signe\right)\infty $ signifie que l'on utilise la règle des signes usuelle :
+          \par
+          $+\times +=+$
+          \par
+          $+\times -=-$
+          \par
+          $-\times -=+$
+          \par
+          pour déterminer si la limite vaut $+\infty $ ou $-\infty $.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p90"
+     \textbf{Limite d'un quotient.}
+     \par
+     $a$ désigne un réel ou $+\infty $ ou $-\infty $.
+     \begin{center}
+          \def\arraystretch{3}%
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $\lim\limits_{x\rightarrow a}f\left(x\right)$ & $\lim\limits_{x\rightarrow a}g\left(x\right)$ & $\lim\limits_{x\rightarrow a}\frac{f\left(x\right)}{g\left(x\right)}$          \\ \hline
+               $l$ & $l^{\prime}\neq 0$ & $\frac{l}{l^{\prime}}$          \\ \hline
+               $l\neq 0$ & $0$ & $\left(signe\right)\infty $          \\ \hline
+               $0$ & $0$ & $F.I.$          \\ \hline
+               $l$ & $\pm \infty $ & $0$          \\ \hline
+               $\pm \infty $ & $l$ & $\left(signe\right)\infty $          \\ \hline
+               $\pm \infty $ & $\pm \infty $ & $F.I.$         \\ \hline
+          \end{tabularx}
+     \end{center}
+}
+\cadre{vert}{Propriété}{%id="p100"
+     \textbf{Limite d'une fonction composée.}
+     \par
+     $a$, $b$ et $c$ désignent des réels ou $+\infty $ ou $-\infty $.
+     \par
+     Si $\lim\limits_{x\rightarrow a}f\left(x\right)=\color{red}{b}$ et $\lim\limits_{x\rightarrow \color{red}{b}}g\left(x\right)=c$ alors :
+     \par
+     $\lim\limits_{x\rightarrow a}g\left(f\left(x\right)\right)=c$.
+}
+\bloc{cyan}{Remarque}{%id="r100"
+     On pose souvent $X=f\left(x\right)$ («changement de variable») et on écrit alors :
+     \par
+     $\lim\limits_{x\rightarrow a}X=\lim\limits_{x\rightarrow a}f\left(x\right)=b$
+     \par
+     $\lim\limits_{x\rightarrow a}g\left(f\left(x\right)\right)=\lim\limits_{X\rightarrow b}g\left(X\right)=c$.
+}
+\bloc{orange}{Exemple}{%id="e100"
+     On cherche à calculer :
+     \par
+     $\lim\limits_{x\rightarrow -\infty }\sqrt{1+x^{2}}$.
+     \par
+     On pose $X=1+x^{2}$. Alors :
+     \par
+     $\lim\limits_{x\rightarrow -\infty }X=\lim\limits_{x\rightarrow -\infty }1+x^{2}=+\infty $
+     \par
+     et
+     \par
+     $\lim\limits_{x\rightarrow -\infty }\sqrt{1+x^{2}}=\lim\limits_{X\rightarrow +\infty }\sqrt{X}=+\infty $.
+}
+\begin{h2}4. Théorèmes de comparaison\end{h2}
+\cadre{rouge}{Théorèmes}{%id="t110"
+     \begin{itemize}
+          \item Si $f\left(x\right)\geqslant g\left(x\right)$ sur un intervalle de la forme $\left[a;+\infty \right[$ et si $\lim\limits_{x\rightarrow +\infty }g\left(x\right)=+\infty $ alors :
+          \par
+          $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=+\infty $.
+          \item Si $f\left(x\right)\leqslant g\left(x\right)$ sur un intervalle de la forme $\left[a;+\infty \right[$ et si $\lim\limits_{x\rightarrow +\infty }g\left(x\right)=-\infty $ alors :
+          \par
+          $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=-\infty $.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{%id="t120"
+     \textbf{Théorème des "gendarmes".}
+     \par
+     Si $g\left(x\right)\leqslant f\left(x\right)\leqslant h\left(x\right)$ sur un intervalle de la forme $\left[a;+\infty \right[$ et si $\lim\limits_{x\rightarrow +\infty }g\left(x\right)=\lim\limits_{x\rightarrow +\infty }h\left(x\right)=l$ alors :
+     \par
+     $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=l.$
+}
+\begin{center}
+     \begin{extern} %width="400" alt="Théorème des gendarmes"
+          \resizebox{8cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{10* sin(2*x)/(x+3)^2+3 }
+               \def\g{25/(x+3)^2 +3}
+               \def\h{-25/(x+3)^2 +3}
+               \def\xmin{-1}
+               \def\xmax{13}
+               \def\ymin{-2}
+               \def\ymax{9}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dx=100,Dy=100,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psline[linecolor=gray](-3,3)(14,3)
+                    \psplot[plotpoints=2000,linecolor=rouge]{\xmin}{\xmax}{\fonction}
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\g}
+                    \psplot[plotpoints=2000,linecolor=vert]{\xmin}{\xmax}{\h}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](-1,6.5){$\color{blue} \mathcal{C}_h$}
+                    \rput[tl](-1,3.5){$\color{rouge} \mathcal{C}_f$}
+                    \rput[tl](-1,0.6){$\color{vert} \mathcal{C}_g$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}Théorème des gendarmes \end{center}
+\bloc{cyan}{Remarque}{%id="r120"
+     On a des théorèmes similaires lorsque $x \rightarrow -\infty $.
+}
+\input{_footer}

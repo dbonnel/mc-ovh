@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="756" height="1095" viewBox="0 0 756 1095" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: #FFFFFF;
+}
+.g3_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_1{
+fill: #7DC246;
+}
+
+.s2_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_64;
+fill: #000000;
+}
+.s4_1{
+font-size: 18.33px;
+font-family: SymbolMT_5_;
+fill: #000000;
+}
+.s1_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_64;
+fill: #333333;
+}
+.s3_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_64;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1095
+L756,1095
+L756,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<image x="9" y="203" width="719" height="577" xlink:href="1/img/1.png" />
+<text 
+x="13" 
+y="26" 
+dx="0,0.1,0.1,-0.4,0.1,0.1,-0.2,0,0,0,0,0.1,0,0,0.2,0,0.2,-0.1,0,-0.2,0.2,0,0,0,0,0.1,0,0.1,0,0,0.1,0,0,0,0,0.2,-0.2,0,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0.2" 
+class="s1_1"
+>CALCUL DE RENTABILITÉ – BAC ES AMÉRIQUE DU NORD 2008 </text>
+
+<path fill-rule="evenodd" d="M10,33l697,0l0,-2L10,31l0,2Z" class="g1_1" />
+<path fill-rule="evenodd" d="M10,56l697,0l0,-23L10,33l0,23Z" class="g2_1" />
+<path fill-rule="evenodd" d="M10,79l697,0l0,-23L10,56l0,23Z" class="g2_1" />
+<text 
+x="13" 
+y="75" 
+dx="0,0,-0.1,0,0,0,-0.1,-0.1,0,0,-0.1,0.2,-0.1,0.1,-0.1,0,-0.1,-0.1,0,0,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,0.1,-0.1,0,-0.1,0.2,0,-0.1,0,-0.1,-0.1,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0.1,-0.1,-0.1,0.1,0,0,0,0,-0.1,0.2,-0.4,0.2,-0.1,0,0.1,0,0,0,0,0.1,-0.2" 
+class="s2_1"
+>Dans cet exercice, toutes les fonctions de la variable réelle t sont considérées sur I = [0;13]. </text>
+
+<path fill-rule="evenodd" d="M10,103l697,0l0,-24L10,79l0,24Z" class="g2_1" />
+<text 
+x="13" 
+y="98" 
+dx="0,0,0,-0.1,0,-0.1,-0.1,0,0,0,-0.1,0.2,-0.1,-0.1,0,0.2,-0.1,0,0,-0.1,0,0,0,-0.1,0,0.2,0,0,0,-0.2,-0.1,0,0,0.2,-0.1,-0.1,0,0,0,0,0,0.1,-0.1,0,-0.1,-0.1,0,0.2,-0.1,0.2,0,0,-0.1,0,-0.1,-0.1,0,-0.1,0,-0.1,0.2,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,0,0,0,0.1,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,-0.1,0.1,-0.1,0,0,-0.1,-0.1" 
+class="s2_1"
+>D'après le rappel en début d'énoncé, on remarque que f(t) = kt (ou k est une constante réelle) </text>
+
+<path fill-rule="evenodd" d="M10,126l697,0l0,-23L10,103l0,23Z" class="g2_1" />
+<text 
+x="13" 
+y="121" 
+dx="0,-0.1,0,0,0,0,-0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0.4,-0.2,0,-0.1,0,0,0,0,0.2,-0.1,0,0,-0.1,0,-0.1,0,-0.1,0.2" 
+class="s2_1"
+>est dérivable sur I et donc g(t) = e</text>
+
+<text 
+x="260" 
+y="114" 
+dx="0,0.1" 
+class="s3_1"
+>kt</text>
+
+<text 
+x="274" 
+y="121" 
+dx="0,0,-0.2,-0.1,0,0,0,-0.1,0,0,0,0,0" 
+class="s2_1"
+>l'est aussi. </text>
+
+<path fill-rule="evenodd" d="M10,149l697,0l0,-23L10,126l0,23Z" class="g2_1" />
+<text 
+x="13" 
+y="165" 
+dx="0,0.1,0,0.1,0.2,-0.4,0,0,0.1" 
+class="s2_1"
+>PARTIE A </text>
+
+<path d="M13.5,168.5l81,0" class="g3_1" />
+<text 
+x="13" 
+y="819" 
+dx="0,-0.2,0,-0.1,0,0,0.2,-0.1,0,0.2,-0.2,0,0,0,-0.1,0,0,0,0,0,-0.1,0,-0.1,0,0,0,-0.1,0,-0.1,-0.1,0,0,0.1,-0.1,0,0,0,0,0,-0.1,0,0.2,-0.1,0,0,-0.1,0,0,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,-0.1,0,0,0,0,0,0,0,0,0,0.2,-0.1,0,0.2,0,-0.1,0,0,-0.1,-0.1,-0.1,0,0.2,-0.1,0,-0.1,0.1,-0.1,0,-0.1,0,0,-0.1" 
+class="s2_1"
+>Lorsque l'investissement aura perdu 60% de sa valeur il vaudra 80.000 € et se sera déprécié de </text>
+
+<text 
+x="13" 
+y="840" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0.1,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.1,0,0,-0.2,-0.1,0,0,0,0.1,-0.1,0,0,0,0,-0.1,0,0.2,-0.2,-0.1,0,0,0,0,-0.1,0,0,-0.1,0.2,0,0.1,-0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0.1,-0.1,-0.1,0,0,0.2,-0.1,0,0,-0.1,0,0,0,0,-0.1,-0.1,0.2,-0.1,0,0,-0.1,0,0,-0.1,0" 
+class="s2_1"
+>120.000 € [D(t) = 120]. Les traits rouges sur le graphe indiquent que ceci se produira au cours </text>
+
+<text 
+x="13" 
+y="861" 
+dx="0,0,-0.1,0,0,-0.1,0,0" 
+class="s2_1"
+>de la 11</text>
+
+<text 
+x="70" 
+y="854" 
+dx="0,-0.1,0.2" 
+class="s3_1"
+>ème</text>
+
+<text 
+x="95" 
+y="861" 
+dx="0,-0.1,0,0,0.1,-0.1,0" 
+class="s2_1"
+>année. </text>
+
+<text 
+x="13" 
+y="903" 
+dx="0,0.1,0,0.1,0.2,-0.4,0,0.2,-0.1" 
+class="s2_1"
+>PARTIE B </text>
+
+<path d="M13.5,906.5l80,0" class="g3_1" />
+<text 
+x="13" 
+y="945" 
+dx="0,0,-0.1,0.2,-0.2,-0.1,0,0,-0.1,0,-0.1,0.2,-0.1,0,0,-0.1,0,0.2,-0.2,-0.1,0,0,0,0.1,-0.1,-0.1,0.2,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0,0,0.1,0,-0.1,0,-0.1,0.2,-0.1,0,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.2,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.2,0,0,0,-0.1,0,0" 
+class="s2_1"
+>1) La valeur de l'autocar en fonction de t est égale à V(t) = 200–D(t) = 200–200(1–e</text>
+
+<text 
+x="629" 
+y="938" 
+dx="0,0.1,0.1,-0.1,0.1,-0.1,0.1" 
+class="s3_1"
+>–0,086t</text>
+
+<text 
+x="666" 
+y="945" 
+dx="0,-0.1,-0.2" 
+class="s2_1"
+>). </text>
+
+<text 
+x="13" 
+y="966" 
+dx="0,0,-0.1,0,-0.1,0,-0.1,0,0,0,0" 
+class="s2_1"
+>V(t) = 200e</text>
+
+<text 
+x="98" 
+y="959" 
+dx="0,0.1,0.1,0,-0.1,0.1,-0.1" 
+class="s3_1"
+>–0,086t</text>
+
+<text 
+x="13" 
+y="1009" 
+dx="0,0,-0.1,0,0,0,0,-0.1,0,0.1,-0.2,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,-0.1,0,0,0,0.2,0,0,-0.1" 
+class="s2_1"
+>2) On a V'(t) = 200(–0,086)e</text>
+
+<text 
+x="224" 
+y="1002" 
+dx="0,0.1,0.1,-0.1,0.1,-0.1,0.1" 
+class="s3_1"
+>–0,086t</text>
+
+<text 
+x="266" 
+y="1009" 
+dx="0,-0.1,0,0,0,0,0,0" 
+class="s2_1"
+>= –17,2e</text>
+
+<text 
+x="330" 
+y="1002" 
+dx="0,-0.1,0.1,-0.1,-0.1,0.1,-0.1" 
+class="s3_1"
+>–0,086t</text>
+
+<text 
+x="371" 
+y="1009" 
+dx="0,-0.2,0.2,-0.4,-0.1,0.2,-0.1,0,0,-0.1,0,0,0,0,0" 
+class="s2_1"
+>. La fonction e</text>
+
+<text 
+x="478" 
+y="1002" 
+dx="0,0.1,0.1,0,-0.1,-0.1,0.1" 
+class="s3_1"
+>–0,086t</text>
+
+<text 
+x="520" 
+y="1009" 
+dx="0,-0.1,0,0,0,0,0,-0.2,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1" 
+class="s2_1"
+>est strictement positive </text>
+
+<text 
+x="13" 
+y="1031" 
+dx="0,0,0,-0.1,0,0.1" 
+class="s2_1"
+>sur ]–</text>
+
+<text 
+x="55" 
+y="1031" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="72" 
+y="1031" 
+dx="0,0,0" 
+class="s2_1"
+>; +</text>
+
+<text 
+x="92" 
+y="1031" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="105" 
+y="1031" 
+dx="0,0.1,0,-0.1,0,0,0,0,0,-0.1,0,0,0,-0.1,0.2,-0.4,0,0.2,-0.1,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0.1,0,0,-0.1,0,0,0,0,0,-0.1,0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.1,-0.2,-0.1,0,0,0,-0.1,0.2,0,0,-0.1,0.2,-0.2,0.2" 
+class="s2_1"
+>[ et donc sur I, ce qui implique que V' est strictement négative sur I. </text>
+
+<text 
+x="13" 
+y="1052" 
+dx="0,0,0,0,-0.1,0,0,-0.1,-0.1,0.2,-0.1,0,0,0,-0.1,0,-0.1,0,0,0,-0.1,0.2,-0.1,0,-0.1,0.2,0,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,-0.1,0,0,0,0,0,0,0.2,-0.1,-0.1,0,0.2,0,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1,-0.1,0,0,0.2,-0.1,0,0,0.1,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,0,-0.1,0,0" 
+class="s2_1"
+>On a par ailleurs V(0) = 200 et V(13) = 65,4, ce qui donne le tableau de variations suivant </text>
+
+<text 
+x="13" 
+y="1073" 
+dx="0,0,0,0,-0.1,0,0,0,0" 
+class="s2_1"
+>pour V : </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPSMT_64;
+	src: url("fonts/TimesNewRomanPSMT_64.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_5_;
+	src: url("fonts/SymbolMT_5_.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

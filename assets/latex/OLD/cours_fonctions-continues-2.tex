@@ -1,0 +1,243 @@
+\input{_header}
+\begin{h2}1. Fonctions continues\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une fonction définie sur un intervalle $I$ est \textit{\textbf{continue}} sur $I$ si l'on peut tracer sa courbe représentative \textit{sans lever le crayon}
+}
+\bloc{orange}{Exemples}{% id="e10"
+     \begin{itemize}
+          \item Les fonctions polynômes sont continues sur $\mathbb{R}$.
+          \item Les fonctions rationnelles sont continues sur chaque intervalle contenu dans leur ensemble de définition.
+          \item La fonction \textit{racine carrée} est continue sur $\mathbb{R}^+$.
+          \item Les fonctions \textit{sinus} et \textit{cosinus} sont continues sur $\mathbb{R}$.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t20"
+     Si $f$ et $g$ sont continues sur $I$, les fonctions $f+g$, $kf$ ( $k\in \mathbb{R}$ ) et $f\times g$ sont continues sur $I$.
+     \par
+     Si, de plus, $g$ ne s'annule pas sur $I$, la fonction $\frac{f}{g}$, est continue sur $I$.
+}
+\cadre{rouge}{Théorème (lien entre continuité et dérivabilité)}{% id="t30"
+     Toute fonction \textbf{dérivable} sur un intervalle $I$ est \textbf{continue} sur $I$.
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     \textbf{Attention !} La réciproque est fausse.
+     \par
+     Par exemple, la fonction valeur absolue ($x\mapsto |x|$) est continue sur $\mathbb{R}$ tout entier mais n'est pas dérivable en 0.
+}
+\cadre{vert}{Propriété (lien entre continuité et limite)}{% id="p40"
+     Si $f$ est une fonction continue sur un intervalle $\left[a ; b\right]$, alors pour tout $\alpha  \in  \left[a ; b\right]$ :
+     \par
+     $\lim\limits_{x\rightarrow \alpha }f\left(x\right)=\lim\limits_{x\rightarrow \alpha ^-}f\left(x\right)=\lim\limits_{x\rightarrow \alpha ^+}f\left(x\right)=f\left(\alpha \right)$.
+}
+\bloc{orange}{Exemple}{% id="e40"
+     Montrons à l'aide de cette propriété que la fonction «partie entière» (notée $x\mapsto E\left(x\right)$), qui à tout réel $x$ associe le plus grand entier inférieur ou égal à $x$, n'est pas continue en $1$.
+     \par
+     Si $x$ est un réel positif et strictement inférieur à $1$, sa partie entière vaut $0$.
+     \par
+     Donc $\lim\limits_{x\rightarrow 1^-}E\left(x\right)=0$.
+     \par
+     Par ailleurs, la partie entière de $1$ vaut $1$ c'est à dire $E\left(1\right)=1$.
+     \par
+     Donc  $\lim\limits_{x\rightarrow 1^-}E\left(x\right)\neq E\left(1\right)$.
+     \par
+     La fonction «~partie entière~» n'est donc pas continue en $1$ (en fait, elle est discontinue en tout point d'abscisse entière).
+     \begin{center}
+          \begin{extern} %width="400" alt="limite nulle"
+               \resizebox{8cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    %          \def\fonction{int(x) }
+                    \def\xmin{-2.8}
+                    \def\xmax{2.8}
+                    \def\ymin{-2.8}
+                    \def\ymax{2.8}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         %    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                         \psline[linecolor=blue](-1,-1)(0,-1)
+                         \psline[linecolor=blue](-2,-2)(-1,-2)
+                         \psline[linecolor=blue](0,0)(1,0)
+                         \psline[linecolor=blue](1,1)(2,1)
+                         \psline[linecolor=blue](2,2)(3,2)
+                         \psdots[linecolor=blue,dotstyle=*,dotsize=3pt](0,0)(1,1)(2,2)(-1,-1)(-2,-2)
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput[tl](-2,-2.2){$\color{blue} \mathcal{C}_E$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}Fonction «~partie entière~»\end{center}
+}
+\begin{h2}2. Théorème des valeurs intermédiaires\end{h2}
+\cadre{rouge}{Théorème des valeurs intermédiaires}{% id="t60"
+     Si $f$ est une fonction \textbf{continue} sur un intervalle $\left[a;b\right]$ et si $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$, alors l'équation $f\left(x\right)=y_{0}$ admet \textbf{au moins une} solution sur l'intervalle $\left[a ; b\right]$.
+}
+\bloc{cyan}{Remarques}{% id="r60"
+     \begin{itemize}
+          \item Ce théorème dit que l'équation $f\left(x\right)=y_{0}$ admet \textbf{une ou plusieurs solutions} mais ne permet pas de déterminer le nombre de ces solutions. Dans les exercices où l'on recherche le nombre de solutions, il faut utiliser le corollaire ci-dessous.
+          \item \textbf{Cas particulier fréquent : } Si $f$ est continue et si $f\left(a\right)$ et $f\left(b\right)$ sont de signes contraires, l'équation $f\left(x\right)=0$ admet au moins une solution sur l'intervalle $\left[a ; b\right]$ (en effet,  si $f\left(a\right)$ et $f\left(b\right)$ sont de signes contraires, $0$ est compris entre $f\left(a\right)$ et $f\left(b\right)$).
+     \end{itemize}
+}
+\cadre{rouge}{Corollaire (du théorème des valeurs intermédiaires)}{% id="t70"
+     Si $f$ est une fonction \textbf{continue} et \textbf{strictement monotone} sur un intervalle $\left[a ; b\right]$ et si $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$, l'équation $f\left(x\right)=y_{0}$ admet une \textbf{unique} solution sur l'intervalle $\left[a ; b\right]$.
+}
+\bloc{cyan}{Remarques}{% id="r70"
+     \begin{itemize}
+          \item Ce dernier théorème est aussi parfois appelé \textbf{"Théorème de la bijection"}
+          \item
+          Il faut vérifier \textbf{3 conditions} pour pouvoir appliquer ce corollaire:
+\begin{itemize}[label=---]
+\item
+$f$ est continue sur $\left[a ; b\right]$~;
+          \item          
+          $f$ est strictement croissante ou strictement décroissante sur $\left[a ; b\right]$~;
+          \item
+          $y_{0}$ est compris entre $f\left(a\right)$ et $f\left(b\right)$.
+\end{itemize}    
+
+          \item Les deux théorèmes précédents se généralisent à un intervalle ouvert $\left]a ; b\right[$ où $a$ et $b$ sont éventuellement infinis. Il faut alors remplacer $f\left(a\right)$ et $f\left(b\right)$ (qui ne sont alors généralement pas définis) par $\lim\limits_{x\rightarrow a}f\left(x\right)$ et $\lim\limits_{x\rightarrow b}f\left(x\right)$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     Soit une fonction $f$ définie sur $\left]0 ; +\infty \right[$ dont le tableau de variation est fourni ci-dessous :
+     %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+     \begin{center}
+          \begin{extern}%width="230"
+               %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+               \begin{center}
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{2.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Ligne de l'abscisse : x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$0$};
+                         \node at (2*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée : f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+                         \node at (1*\Lrg,-1*\HtX) {$+$};
+                         \node at (2*\Lrg,-1*\HtX) {$$};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+                         \node[left] (f1) at (0*\Lrg,{-2*\HtX+(0)*\HtY}) {$$};
+                         \node[right] (f2) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$-\infty$};
+                         \node (f3) at (2*\Lrg,{-2*\HtX+(0)*\HtY}) {$1$};
+                         % Flèches
+                         \draw[fleche] (f2) -- (f3);
+                         % Doubles barres
+                         \draw[double distance=2pt] (0*\Lrg,\lignex-0.1*\HtX) -- (0*\Lrg,\lignef+0.1*\HtX);
+                         \draw[double distance=2pt] (0*\Lrg,\lignef-0.1*\HtX) -- (0*\Lrg,\bas+0.1*\HtX);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                    \end{tikzpicture}
+               \end{center}
+               %:-+-+-+-+- Fin
+               %:>>>>> code du tableau à ré-injecter
+               %[
+               %	["x", "f'(x)", "f(x)"],
+               %	["0", ":", "+", ":-\\infty"],
+               %	["+\\infty", "", "?", "1"]
+               %]
+          \end{extern}
+     \end{center}
+     %:-+-+-+-+- Fin
+     %:>>>>> code du tableau à ré-injecter
+     %[
+     %	["x", "f'(x)", "f(x)"],
+     %	["0", "", "+", "||-\\infty"],
+     %	["+\\infty", "", "?", "1"]
+     %]
+     On cherche à déterminer le nombre de solutions de l'équation $f\left(x\right)=-1$.
+     \par
+     L'unique flèche oblique montre que la fonction $f$ est \textbf{continue} et \textbf{strictement croissante} sur $\left]0;+\infty \right[$.
+     \par
+     $-1$ est compris entre $\lim\limits_{x\rightarrow 0}f\left(x\right)=-\infty $ et  $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=1$.
+     \par
+     Par conséquent, l'équation $f\left(x\right)=-1$ admet une \textbf{unique} solution sur l'intervalle  $\left]0 ; +\infty \right[$.
+}
+\begin{h2}3. Calcul de dérivées\end{h2}
+Le tableau ci-dessous recense les dérivées usuelles à connaitre en Terminale S. Pour faciliter les révisions, toutes les formules du programme ont été recensées ; certaines seront étudiées dans les chapitres ultérieurs.
+\cadre{vert}{Dérivée des fonctions usuelles }{% id="p80"
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{Fonction} & \textbf{Dérivée} & \textbf{Ensemble de dérivabilité}
+          \\ \hline
+          $k$  $\left(k\in \mathbb{R}\right)$  &  $0$  &  $\mathbb{R}$
+          \\ \hline
+          $x$ &  $1$  &  $\mathbb{R}$
+          \\ \hline
+          $x^{n}$ $\left(n\in \mathbb{N}\right)$  &  $nx^{n-1}$  &  $\mathbb{R}$
+          \\ \hline
+          $\frac{1}{x^{n}}$ $\left(n\in \mathbb{N}\right)$ &  $-\frac{n}{x^{n+1}}$  &  $\mathbb{R}-\left\{0\right\}$
+          \\ \hline
+          $\sqrt{x}$ &  $\frac{1}{2\sqrt{x}}$  &  $\left]0;+\infty \right[$
+          \\ \hline
+          $\sin\left(x\right)$ &  $\cos\left(x\right)$  &  $\mathbb{R}$
+          \\ \hline
+          $\cos\left(x\right)$ &  $-\sin\left(x\right)$  &  $\mathbb{R}$
+          \\ \hline
+          $e^{x}$ &  $e^{x}$  &  $\mathbb{R}$
+          \\ \hline
+          $\ln\left(x\right)$ &  $\frac{1}{x}$  &  $\left]0;-\infty \right[$
+     \end{tabularx}
+}
+\cadre{vert}{Propriété}{% id="p90"
+     Soient une fonction $f$ définie et dérivable sur un certain intervalle et $a$ et $b$ deux réels.
+     \par
+     Alors la fonction $g  : x\mapsto f\left(ax+b\right)$ est dérivable là où elle est définie et :
+     \begin{center}$g^{\prime}\left(x\right)=af^{\prime}\left(ax+b\right)$.\end{center}
+}
+\bloc{orange}{Exemples}{% id="e90"
+     \begin{itemize}
+          \item La fonction $f  :  x\mapsto \left(5x+2\right)^{3}$ est définie et dérivable sur $\mathbb{R}$ et :
+          \par
+          $f^{\prime}\left(x\right)=5\times 3\left(5x+2\right)^{2}=15\left(5x+2\right)^{2}$.
+          \item En particulier, si $g\left(x\right)=f\left(-x\right)$ on a $g^{\prime}\left(x\right)=-f^{\prime}\left(-x\right)$.
+          \par
+          Par exemple la dérivée de la fonction $x\mapsto e^{-x}$ est la fonction $x\mapsto -e^{-x}$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r90"
+     Le résultat précédent se généralise à l'aide du théorème suivant :
+}
+\cadre{rouge}{Théorème (dérivées des fonctions composées)}{% id="t100"
+     Soit $u$ une fonction dérivable sur un intervalle $I$ et  prenant ses valeurs dans un intervalle $J$ et soit  $f$ une fonction dérivable sur $J$.
+     \par
+     Alors la fonction $g  :  x\mapsto f\left(u\left(x\right)\right)$ est dérivable sur $I$ et :
+     \begin{center}$g^{\prime}\left(x\right)=u^{\prime}\left(x\right)\times f^{\prime}\left(u\left(x\right)\right).$\end{center}
+}
+\bloc{orange}{Exemples}{% id="e100"
+     Soit $u$ une fonction dérivable sur intervalle $I$ :
+     \begin{itemize}
+          \item la fonction $u^{n}$ est dérivable sur $I$ et sa dérivée est $u^{\prime}\times nu^{n-1}$~;
+          \item la fonction $\frac{1}{u}$ est dérivable sur la partie de $I$ où $u\neq 0$ et sa dérivée est $-\frac{u^{\prime}}{u^{2}}$~;
+          \item la fonction $\sqrt{u}$ est dérivable sur la partie de $I$ où $u > 0$ et sa dérivée est $\frac{u^{\prime}}{2\sqrt{u}}$~;
+          \item la fonction $\sin\left(u\right)$ est dérivable sur $I$ et sa dérivée est $u^{\prime}\times \cos\left(u\right)$~;
+          \item la fonction $\cos\left(u\right)$ est dérivable sur $I$ et sa dérivée est $-u^{\prime}\times \sin\left(u\right)$~;
+          \item la fonction $e^{u}$ est dérivable sur $I$ et sa dérivée est $u^{\prime}\times e^{u}$~;
+          \item la fonction $\ln\left(u\right)$ est dérivable sur la partie de $I$ où $u > 0$ et sa dérivée est $\frac{u^{\prime}}{u}$.
+     \end{itemize}
+}
+\input{_footer}

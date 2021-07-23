@@ -1,0 +1,614 @@
+\input{_header}
+\meta{url}{/cours/droites-plans-espace/}
+\meta{pid}{548}
+\meta{titre}{Droites et plans dans l'espace}
+\meta{type}{cours}
+\begin{h2}1. Rappels sur les droites et plans\end{h2}
+\cadre{vert}{Propriété}{% id="p10"
+     Par deux points distincts de l'espace, il passe une et une seule droite.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     Dans les exercices où l'on cherche à déterminer une droite (par exemple, pour tracer l'intersection de deux plans), il suffira donc de trouver deux points distincts qui appartiennent à cette droite.
+}
+\cadre{vert}{Propriété}{% id="p10"
+     Par trois points distincts et \textbf{non alignés} de l'espace, il passe un et un seul plan.
+}
+\cadre{bleu}{Positions relatives de deux plans}{% id="t30"
+     Deux plans distincts de l'espace peuvent être~:
+     \begin{itemize}
+          \item \textbf{strictement parallèles}~: dans ce cas, ils n'ont aucun point commun
+          \item \textbf{sécants}~: dans ce cas, leur intersection est une droite
+     \end{itemize}
+}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt="Plans parallèles"
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{qqzzff}{0. 0.6 1.}
+               \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.,2.8)(12,6.5)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \pspolygon[linewidth=0.8pt,linecolor=qqzzff,fillcolor=qqzzff,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(9.,3.)(11.,4.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \psline[linewidth=0.8pt,linecolor=qqzzff](4.,4.)(2.,3.)
+                    \psline[linewidth=0.8pt,linecolor=qqzzff](2.,3.)(9.,3.)
+                    \psline[linewidth=0.8pt,linecolor=qqzzff](9.,3.)(11.,4.)
+                    \psline[linewidth=0.8pt,linecolor=qqzzff](11.,4.)(4.,4.)
+                    \rput[tl](3,5.4){$\qqwwtt{\mathscr{P}'}$}
+                    \rput[tl](3,3.4){$\qqzzff{\mathscr{P}}$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Plans parallèles}
+     \end{center}
+\end{vbloc}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqzzcc}{0. 0.6 0.8}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,2.5)(12,8.5)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \pspolygon[linewidth=0.8pt,linecolor=qqzzcc,fillcolor=qqzzcc,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(8.,7.)(10.,8.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](4.,4.)(2.,3.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](2.,3.)(8.,7.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](8.,7.)(10.,8.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](10.,8.)(4.,4.)
+               \rput[tl](3.,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](2.6,3.2){$\qqzzcc{\mathscr{P}\ '}$}
+               \psline[linewidth=0.8pt,linecolor=red](5.,5.)(7.,6.)
+               \rput[tl](7.,5.9){$\red{\mathscr{D}}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Plans sécants}
+\end{center}
+\cadre{bleu}{Positions relatives d'une droite et d'un plan}{% id="t40"
+     Soient $\mathscr D$ une droite et $\mathscr P$ un plan de l'espace.
+     \par
+     La droite $\mathscr D$ peut être~:
+     \begin{itemize}
+          \item \textbf{strictement parallèle} au plan  $\mathscr P$~: dans ce cas, $\mathscr D$  et $\mathscr P$ n'ont aucun point commun
+          \item \textbf{sécante} avec le plan  $\mathscr P$~: dans ce cas, $\mathscr D$  et $\mathscr P$ ont un unique point commun
+          \item \textbf{contenue} dans le plan  $\mathscr P$
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.5,5)(11.5,8.3)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \rput[tl](3.0,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](2.25,7.5){$\red{\mathscr{D}}$}
+               \psplot[linewidth=0.8pt,linecolor=red]{1.75}{11.2}{(--56.-0.*x)/8.}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droite strictement parallèle à un plan}
+\end{center}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt=""
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+               \newrgbcolor{ttttff}{0.2 0.2 1.}
+               \newrgbcolor{ffewdf}{1. 0.9 0.9}
+               \newrgbcolor{qqqqcc}{0. 0. 0.8}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.5,3.3)(11.5,8.5)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \rput[tl](3,5.4){$\qqwwtt{\mathscr{P}}$}
+                    \rput[tl](7.5,8){$\red{\mathscr{D}}$}
+                    \psplot[linewidth=0.8pt,linecolor=red]{1.5}{11.2}{(-7.2--2.17*x)/1.1}
+                    \psline[linewidth=0.8pt,linecolor=ffewdf](6.15,5.555)(5.87,5.)
+                    \rput[tl](5.9,5.9){$\qqqqcc{I}$}
+                    \begin{scriptsize}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=ttttff](6.15,5.55)
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Droite sécante à un plan}
+     \end{center}
+\end{vbloc}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.,5)(12.,7.)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \rput[tl](3.,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](6.405,5.4){$\red{\mathscr{D}}$}
+               \psline[linewidth=0.8pt,linecolor=red](4.77,5.)(8.4,6.)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droite contenue (incluse) dans un plan}
+\end{center}
+\cadre{bleu}{Positions relatives de deux droites}{% id="t50"
+     Soient $\mathscr D$ et $\mathscr D^{\prime}$ deux droites distinctes de l'espace.
+     \par
+     Ces droites peuvent être~:
+     \begin{itemize}
+          \item \textbf{non coplanaires}~: dans ce cas, elles n'ont aucun point commun
+          \item \textbf{coplanaires},  c'est à dire contenues dans un même plan~; elles peuvent alors être~:
+          \begin{itemize}[label=---]
+               \item \textbf{strictement parallèles}~: dans ce cas, elles n'ont aucun point commun
+               \item \textbf{sécantes}~: dans ce cas, leur intersection est un point
+          \end{itemize}
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqzzff}{0. 0.6 1.}
+          \newrgbcolor{xfqqff}{0.5 0. 1.}
+          \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.5,3)(12.,6.5)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \pspolygon[linewidth=0.8pt,linecolor=qqzzff,fillcolor=qqzzff,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(9.,3.)(11.,4.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](4.,4.)(2.,3.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](2.,3.)(9.,3.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](9.,3.)(11.,4.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](11.,4.)(4.,4.)
+               \psline[linewidth=0.8pt,linecolor=red](3.8,5.)(7.5,6.)
+               \psline[linewidth=0.8pt,linecolor=xfqqff](6.0,4.)(7.2,3.)
+               \rput[tl](5,5.8){$\red{\mathscr{D}}$}
+               \rput[tl](6.9,3.8){$\wwqqzz{\mathscr{D}\ '}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droites non coplanaires}
+\end{center}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.3,4.9)(12.,6.6)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=red](3.8,5.)(7.5,6.)
+               \rput[tl](4.8,5.7){$\red{\mathscr{D}}$}
+               \rput[tl](8.0,5.5){$\wwqqzz{\mathscr{D}\ '}$}
+               \psline[linewidth=0.8pt,linecolor=wwqqzz](6.0,5.)(9.75,6.)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droites strictement parallèles}
+\end{center}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt=""
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+               \newrgbcolor{qqttcc}{0. 0.2 0.8}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.3,4.7)(12.,6.6)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \psline[linewidth=0.8pt,linecolor=red](3.80,5.)(7.527,6.)
+                    \rput[tl](4.846,5.7){$\red{\mathscr{D}}$}
+                    \rput[tl](6.66,5.47){$\wwqqzz{\mathscr{D}\ '}$}
+                    \psline[linewidth=0.8pt,linecolor=wwqqzz](5.36,6.)(6.758,5.)
+                    \rput[tl](5.96,5.9){$\qqttcc{I}$}
+                    \begin{scriptsize}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Droites sécantes}
+     \end{center}
+\end{vbloc}
+\begin{h2}2. Parallélisme\end{h2}
+\cadre{vert}{Propriété}{% id="p60"
+     Si un plan $\mathscr P_{1}$ contient deux droites sécantes $\mathscr D$ et $\mathscr D^{\prime}$ parallèles à un plan $\mathscr P_{2}$, alors le plan $\mathscr P_{1}$ est parallèle au plan $\mathscr P_{2}$. .
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{qqzzff}{0. 0.6 1.}
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwuqq}{0. 0.4 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-1.7,-2.5)(7.5,1.6)
+               \pspolygon[linewidth=0.8pt,linecolor=qqzzff,fillcolor=qqzzff,fillstyle=solid,opacity=0.1](1.,-1.)(-1.,-2.)(5.,-2.)(7.,-1.)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](1.,1.)(-1.,0.)(5.,0.)(7.,1.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](1.,-1.)(-1.,-2.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](-1.,-2.)(5.,-2.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](5.,-2.)(7.,-1.)
+               \psline[linewidth=0.8pt,linecolor=qqzzff](7.,-1.)(1.,-1.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](1.,1.)(-1.,0.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](-1.,0.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](5.,0.)(7.,1.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](7.,1.)(1.,1.)
+               \rput[tl](4.5,0.38){$\qqwuqq{\mathscr{P}_1}$}
+               \rput[tl](4.5,-1.6){$\qqzzff{\mathscr{P}_2}$}
+               \rput[tl](1.6685443902439065,1.5){$\red{\mathscr{D'}}$}
+               \psline[linewidth=0.8pt,linecolor=red](0.18756878048780434,0.)(6.,1.)
+               \psline[linewidth=0.8pt,linecolor=red](3.,0.)(2.,1.)
+               \rput[tl](-0.18,0.38){$\red{\mathscr{D}}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\cadre{vert}{Propriété}{% id="p65"
+     Si deux plans $\mathscr P_{1}$ et $\mathscr P_{2}$ sont parallèles, alors tout plan $\mathscr P$ sécant à $\mathscr P_{1}$  est sécant à $\mathscr P_{2}$ et leurs intersections sont deux droites parallèles.
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqzzcc}{0. 0.6 0.8}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \begin{pspicture*}(1.,2.7)(13.4,10.3)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \pspolygon[linewidth=0.8pt,linecolor=qqzzcc,fillcolor=qqzzcc,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(8.,9.)(10.,10.)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,8.)(2.,7.)(9.,7.)(11.,8.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](4.,4.)(2.,3.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](2.,3.)(8.,9.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](8.,9.)(10.,10.)
+               \psline[linewidth=0.8pt,linecolor=qqzzcc](10.,10.)(4.,4.)
+               \rput[tl](2.8,5.4){$\qqwwtt{\mathscr{P}_2}$}
+               \rput[tl](2.8,3.4){$\qqzzcc{\mathscr{P}}$}
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,8.)(2.,7.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,7.)(9.,7.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,7.)(11.,8.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,8.)(4.,8.)
+               \psline[linewidth=0.8pt,linecolor=red](4.,5.)(6.,6.)
+               \psline[linewidth=0.8pt,linecolor=red](6.,7.)(8.,8.)
+               \rput[tl](2.8,7.4){$\qqwwtt{\mathscr{P}_1}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\cadre{vert}{Propriété (Théorème du toit)}{% id="p70"
+     Si $\mathscr P_{1}$ et $\mathscr P_{2}$ sont deux plans sécants et si une droite $\mathscr D_{1}$ incluse dans $\mathscr P_{1}$ est parallèle à une droite $\mathscr D_{2}$ incluse dans $\mathscr P_{2}$ alors la droite $\mathscr D$ intersection de $\mathscr P_{1}$ et $\mathscr P_{2}$ est parallèle à $\mathscr D_{1}$ et $\mathscr D_{2}$.
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{wwccff}{0.4 0.8 1.}
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{ffzzcc}{0. 0.4 0.2}
+          \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+          \newrgbcolor{ffwwzz}{1. 0.4 0.6}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-3.3,-1.1)(7.18,2.46)
+               \pspolygon[linewidth=0.8pt,linecolor=wwccff,fillcolor=wwccff,fillstyle=solid,opacity=0.1](0.,2.)(4.,2.)(1.,0.)(-3.,0.)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,2.)(7.,-1.)(3.,-1.)(0.,2.)
+               \psline[linewidth=0.8pt,linecolor=wwccff](4.,2.)(1.,0.)
+               \psline[linewidth=0.8pt,linecolor=wwccff](1.,0.)(-3.,0.)
+               \psline[linewidth=0.8pt,linecolor=wwccff](-3.,0.)(0.,2.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,2.)(7.,-1.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](7.,-1.)(3.,-1.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](3.,-1.)(0.,2.)
+               \psline[linewidth=0.8pt,linecolor=ffzzcc](0.,2.)(4.,2.)
+               \psline[linewidth=0.8pt,linecolor=red](-1.48,1.0)(2.52,1.)
+               \psline[linewidth=0.8pt,linecolor=wwqqzz](2.,0.)(6.,0.)
+               \rput[tl](-0.68,1.4){$\red{\mathscr{D}_1}$}
+               \rput[tl](3.32,-0.5){$\ttzzqq{\mathscr{P}_2}$}
+               \rput[tl](4.9,0.4){$\wwqqzz{\mathscr{D}_2}$}
+               \rput[tl](-0.2,0.4){$\wwccff{\mathscr{P}_1}$}
+               \rput[tl](2.32,2.4){$\ffzzcc{\mathscr{D}}$}
+               \psline[linewidth=1.2pt,linecolor=ttzzqq](0.,2.)(4.,2.)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{h2}3. Vecteurs de l'espace\end{h2}
+\cadre{bleu}{Définition (vecteurs colinéaires)}{% id="d80"
+     Soient $\vec{u}$ et $\vec{v}$ deux vecteurs non nuls de l'espace. On dit que les vecteurs $\vec{u}$ et $\vec{v}$ sont \textbf{colinéaires} si et seulement si il existe un réel $k$ tel que $\vec{u}=k\vec{v}$
+}
+\bloc{cyan}{Remarques}{% id="r80"
+     \begin{itemize}
+          \item Par  convention, on considèrera que le vecteur nul $\overrightarrow{0}$ est colinéaire a n'importe quel vecteur de l'espace
+          \item Intuitivement, deux vecteurs sont colinéaires s'ils ont la même «direction» (mais pas nécessairement le même «sens»). La notion de vecteurs colinéaires est à rapprocher de la notion de droites parallèles (voir théorème ci-dessous).
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="t85"
+     Soient quatre points distincts $A$, $B$, $C$ et $D$.
+     \par
+     Les droites $\left(AB\right)$ et $\left(CD\right)$ sont parallèles si et seulement si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ sont colinéaires.
+}
+\cadre{vert}{Propriété}{% id="t90"
+     Soient deux points distincts $A$ et $B$.
+     \par
+     Un point $M$ appartient à la droite $\left(AB\right)$ si et seulement si les vecteurs $\overrightarrow{AM}$ et $\overrightarrow{AB}$ sont colinéaires.
+}
+\begin{center}
+     \begin{extern}%width="600" alt=""
+          \newrgbcolor{qqqqcc}{0. 0. 0.8}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-3.12,-1.28)(7.98,2.3)
+               \psplot[linewidth=0.8pt]{-3.12}{7.98}{(-1.344--0.96*x)/2.88}
+               \psline[linewidth=0.8pt,linecolor=qqqqcc]{->}(-0.58,-0.66)(2.3,0.3)
+               \psline[linewidth=0.8pt,linecolor=red]{->}(-0.58,-0.66)(5.22,1.27)
+               \begin{scriptsize}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](-0.58,-0.66)
+                    \rput[bl](-0.7,-0.54){\blue{$A$}}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](2.3,0.3)
+                    \rput[bl](2.1,0.4){\blue{$B$}}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=red](5.22,1.27)
+                    \rput[bl](5.04,1.44){\red{$M$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r90"
+     Le vecteur $\overrightarrow{AB}$ où $A$ et $B$ sont deux points distincts de la droite $\mathscr D$ est appelé \textbf{vecteur directeur} de $\mathscr D$.
+}
+\cadre{bleu}{Définition (vecteurs coplanaires)}{% id="d100"
+     Soient $\vec{u}$ et $\vec{v}$ deux vecteurs non nuls et non colinéaires. On dit que le vecteur $\vec{w}$ est coplanaires à $\vec{u}$ et $\vec{v}$ si et seulement si il existe deux réels $k$ et $k^{\prime}$ tels que~:
+     \begin{center}$\vec{w}=k\vec{u}+k^{\prime}\vec{v}$\end{center}
+}
+\bloc{cyan}{Remarques}{% id="r100"
+     \begin{itemize}
+          \item Intuitivement, le fait que $\vec{u}$, $\vec{v}$ et $\vec{w}$ soient coplanaires signifie que si on choisit quatre points $O, A, B, C$ tels que $\vec{u}=\overrightarrow{OA}, \vec{v}=\overrightarrow{OB}$ et $\vec{w}=\overrightarrow{OC}$ alors les points $O, A, B$ et $C$ appartiennent à un même plan.
+          \begin{center}
+               \begin{extern}%width="500" alt=""
+                    \newrgbcolor{aqaqaq}{0.6 0.6 0.6}
+                    \newrgbcolor{qqqqcc}{0. 0. 0.8}
+                    \newrgbcolor{qqccqq}{0. 0.8 0.}
+                    \newrgbcolor{qqttcc}{0. 0.2 0.8}
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-4.5,-2.1)(8.7,4.7)
+                         \pspolygon[linewidth=0.4pt,linecolor=aqaqaq,fillcolor=aqaqaq,fillstyle=solid,opacity=0.1](0.,1.)(-4.,-2.)(4.,-2.)(8.,1.)
+                         \psline[linewidth=0.4pt,linecolor=aqaqaq](0.,1.)(-4.,-2.)
+                         \psline[linewidth=0.4pt,linecolor=aqaqaq](-4.,-2.)(4.,-2.)
+                         \psline[linewidth=0.4pt,linecolor=aqaqaq](4.,-2.)(8.,1.)
+                         \psline[linewidth=0.4pt,linecolor=aqaqaq](8.,1.)(0.,1.)
+                         \psline[linewidth=0.8pt,linecolor=qqqqcc]{->}(1.97,1.55)(5.97,1.55)
+                         \psline[linewidth=0.8pt,linecolor=qqqqcc]{->}(-1.,-1.)(3.,-1.)
+                         \psline[linewidth=0.8pt,linecolor=qqccqq]{->}(2.,2.)(3.,3.)
+                         \psline[linewidth=0.8pt,linecolor=qqccqq]{->}(-1.,-1.)(0.,0.)
+                         \psline[linewidth=0.8pt,linecolor=red]{->}(-1.,-1.)(2.,0.)
+                         \psline[linewidth=0.8pt,linecolor=red]{->}(2.027,3.228)(5.02662,4.22802)
+                         \rput[tl](3.88,1.94){$\qqttcc{\vec{u}}$}
+                         \rput[tl](2.19,2.76){$\qqccqq{\vec{v}}$}
+                         \rput[tl](3.26,4.15){$\red{\vec{w}}$}
+                         \psline[linewidth=0.4pt,linestyle=dashed,dash=4pt 4pt,linecolor=gray](0.,0.)(2.,0.)
+                         \rput[tl](0.45,-0.1){$\red{\vec{w}}$}
+                         \rput[tl](-0.766,-0.21){$\qqccqq{\vec{v}}$}
+                         \rput[tl](1.04,-0.66){$\qqttcc{\vec{u}}$}
+                         \psline[linewidth=0.4pt,linestyle=dashed,dash=4pt 4pt,linecolor=gray](2.,0.)(1.,-1.)
+                         \rput[tl](3.15,-0.85){$\gray{A}$}
+                         \rput[tl](0,0.5){$\gray{B}$}
+                         \rput[tl](2.03,0.4){$\gray{C}$}
+                         \rput[tl](-1.3,-0.84){$\gray{O}$}
+                         \begin{scriptsize}
+                              \psdots[dotsize=1pt 0,dotstyle=*,linecolor=aqaqaq](-1.,-1.)
+                              \psdots[dotsize=1pt 0,dotstyle=*,linecolor=aqaqaq](3.,-1.)
+                              \psdots[dotsize=1pt 0,dotstyle=*,linecolor=aqaqaq](0.,0.)
+                              \psdots[dotsize=1pt 0,dotstyle=*,linecolor=aqaqaq](2.,0.)
+                         \end{scriptsize}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \begin{center}\textit{(sur la figure ci-dessus }$\vec{w}=\frac{1}{2}\vec{u}+\vec{v}$\textit{)}\end{center}
+          \item La définition précédente peut se généraliser à plus de trois vecteurs. Pour \textbf{deux} vecteurs, par contre, elle n'a guère d'intérêt car deux vecteurs sont toujours coplanaires
+          \item Pour des vecteurs ou des points coplanaires, on peut se placer dans le plan contenant ces points ou ces vecteurs et appliquer les résultats classiques de géométrie plane (théorème des milieux, théorème de Thalès, relation de Chasles, etc.)
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p105"
+     Soient $A, B, C$ trois points non alignés.
+     \par
+     Le point $M$ appartient au plan $\left(ABC\right)$ si et seulement si les vecteurs $\overrightarrow{AB}, \overrightarrow{AC}$ et $\overrightarrow{AM}$ sont coplanaires, c'est à dire si et seulement il existe deux réels $k$ et $k^{\prime}$ tels que~:
+     \begin{center}$\overrightarrow{AM}=k\overrightarrow{AB}+k^{\prime}\overrightarrow{AC}$\end{center}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{aqaqaq}{0.62 0.62 0.62}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-2.5,0.6)(7.3,3.5)
+               \pspolygon[linewidth=0.8pt,linecolor=aqaqaq,fillcolor=aqaqaq,fillstyle=solid,opacity=0.1](0.575,3)(-1.42,1.)(4.63,1)(6.63,3)
+               \psline[linewidth=0.8pt,linecolor=aqaqaq](0.57,3)(-1.42,1)
+               \psline[linewidth=0.8pt,linecolor=aqaqaq](-1.42,1)(4.63,1)
+               \psline[linewidth=0.8pt,linecolor=aqaqaq](4.63,1)(6.63,3)
+               \psline[linewidth=0.8pt,linecolor=aqaqaq](6.6,3)(0.57,3)
+               \psline[linewidth=0.8pt]{->}(1.,2.)(3.43,1.36)
+               \psline[linewidth=0.8pt]{->}(1.,2.)(2.95,2.56)
+               \psline[linewidth=0.8pt,linecolor=red]{->}(1.,2.)(4.25,1.95)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=3pt 3pt,linecolor=aqaqaq](4.25,1.95)(2.47,2.42)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=3pt 3pt,linecolor=gray](4.25,1.95)(2.82,1.52)
+               \begin{scriptsize}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](1.,2.)
+                    \rput[bl](0.65,2){\gray{$A$}}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](3.43,1.36)
+                    \rput[bl](3.51,1.39){\gray{$B$}}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](2.95,2.56)
+                    \rput[bl](3.03,2.59){\gray{$C$}}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=red](4.25,1.95)
+                    \rput[bl](4.34,2){\red{$M$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r105"
+     \textbf{Attention ! } Notez que dans la propriété ci-dessus, tous les vecteurs ont la même origine $A$.
+     \par
+     Le fait que des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ soient coplanaires ne signifie pas que les points $A, B, C, D$ soient coplanaires.
+     \par
+     Par exemple, si on considère le cube ci-dessous, $\overrightarrow{AB}$ et $\overrightarrow{FG}$ sont coplanaires (parce que $\overrightarrow{FG}=\overrightarrow{AD}$ ou tout simplement parce que \textbf{deux} vecteurs sont toujours coplanaires !) mais les points $A, B, F$ et $G$ ne le sont pas.
+     \begin{center}
+          \begin{extern}%width="380" alt=""
+               \newrgbcolor{wqwqwq}{0.37 0.37 0.37}
+               \newrgbcolor{qqccqq}{0. 0.8 0.}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.,1.)(8.,7.)
+                    \psline[linewidth=0.8pt](2.,1.)(6.,1.)
+                    \psline[linewidth=0.8pt,linecolor=wqwqwq](6.,1.)(7.58,2.3)
+                    \psline[linewidth=0.8pt](7.58,2.3)(7.58,6.3)
+                    \psline[linewidth=0.8pt,linecolor=wqwqwq](7.58,6.3)(6.,5.)
+                    \psline[linewidth=0.8pt](6.,5.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=gray](2.,5.)(3.58,6.3)
+                    \psline[linewidth=0.8pt](3.58,6.3)(7.58,6.3)
+                    \psline[linewidth=0.8pt](2.,5.)(2.,1.)
+                    \psline[linewidth=0.8pt](6.,5.)(6.,1.)
+                    \psline[linewidth=0.8pt,linestyle=dashed,dash=3pt 3pt](2.,1.)(3.58,2.3)
+                    \psline[linewidth=0.8pt,linestyle=dashed,dash=3pt 3pt](3.58,2.3)(3.58,6.3)
+                    \psline[linewidth=0.8pt,linestyle=dashed,dash=3pt 3pt](3.58,2.3)(7.58,2.3)
+                    \psline[linewidth=0.8pt,linecolor=red]{->}(2.,1.)(6.,1.)
+                    \psline[linewidth=0.8pt,linecolor=qqccqq]{->}(6.,5.)(7.58,6.3)
+                    \begin{scriptsize}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](2.,1.)
+                         \rput[bl](1.74,0.67){\gray{$A$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](6.,1.)
+                         \rput[bl](5.91,0.67){\gray{$B$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](7.58,2.3)
+                         \rput[bl](7.69,2.21){\gray{$C$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](3.58,2.3)
+                         \rput[bl](3.25,2.27){\gray{$D$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](2.,5.)
+                         \rput[bl](1.63,4.80){\gray{$E$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](6.,5.)
+                         \rput[bl](5.63,4.66){\gray{$F$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](7.58,6.3)
+                         \rput[bl](7.69,6.36){\gray{$G$}}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=gray](3.58,6.3)
+                         \rput[bl](3.27,6.44){\gray{$H$}}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+     \textit{Vecteurs coplanaires - Points non coplanaires}\end{center}
+}
+\begin{h2}4. Repérage - Représentations paramétriques\end{h2}
+\cadre{bleu}{Définition}{% id="d110"
+     Un repère de l'espace est un quadruplet $\left(O,\vec{i},\vec{j},\vec{k}\right)$ où $O$ est un point et $\vec{i}, \vec{j}, \vec{k}$ trois vecteurs \textbf{non coplanaires}.
+}
+\cadre{vert}{Définition}{% id="p120"
+     Pour tout point $M$ de l'espace, il existe trois réels $x, y$ et $z$ tels que~:
+     \begin{center}$\overrightarrow{OM}=x\vec{i}+y\vec{j}+z\vec{k}$\end{center}
+     $\left(x~; y~; z\right)$ s'appellent les \textbf{coordonnées} de $M$ dans le repère  $\left(O,\vec{i},\vec{j},\vec{k}\right)$
+}
+\begin{center}
+     \begin{extern}%width="380" alt=""
+          \newrgbcolor{ttttff}{0.2 0.2 1.}
+          \newrgbcolor{qqqqcc}{0. 0. 0.8}
+          \psset{xunit=1.5cm,yunit=1.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-2.,-1.5)(5.4,4.6)
+               \psline[linewidth=0.8pt](1.,0.)(1.,4.6)
+               \psline[linewidth=0.8pt](1.,0.)(5.3,0)
+               \psline[linewidth=0.8pt](1.,0.)(-0.95,-1.26)
+               \psplot[linewidth=0.8pt]{1.}{1.}{(--2.-2.*x)/-3.}
+               \psline[linewidth=0.8pt,linecolor=ttttff]{->}(1.,0.)(2.,0.)
+               \psline[linewidth=0.8pt,linecolor=ttttff]{->}(1.,0.)(0.35,-0.42)
+               \psline[linewidth=0.8pt,linecolor=ttttff]{->}(1.,0.)(1.,1.)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=2pt 2pt](4.,3.)(1.,4.)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=2pt 2pt](4.,3.)(4.,-1.)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=2pt 2pt](4.,-1.)(5.,0.)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=2pt 2pt](4.,-1.)(-0.51,-1.01)
+               \psline[linewidth=0.8pt,linestyle=dashed,dash=2pt 2pt](1.,0.)(4.,-1.)
+               \rput[tl](0.56,0.25){$\ttttff{\vec{i}}$}
+               \rput[tl](1.43,0.52){$\ttttff{\vec{j}}$}
+               \rput[tl](0.75,0.61){$\ttttff{\vec{k}}$}
+               \rput[tl](-0.92,-0.87){$\red{x}$}
+               \rput[tl](4.85,0.38){$\red{y}$}
+               \rput[tl](0.67,4.1){$\red{z}$}
+               \rput[tl](4.00,3.35){$\red{M}$}
+               \rput[tl](1.1,0.41){$\qqqqcc{O}$}
+               \begin{scriptsize}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](1.,0.)
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=red](4.,3.)
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r120"
+     \begin{itemize}
+          \item $x, y$ et $z$ s'appellent respectivement l'\textbf{abscisse}, l'\textbf{ordonnée} et la \textbf{cote} du point $M$
+          \item Comme dans le plan, on définit également les coordonnées d'un vecteur de la façon suivante~:
+          \par
+          les coordonnées du vecteur $\vec{u}$ dans le repère  $\left(O,\vec{i},\vec{j},\vec{k}\right)$ sont les coordonnées du point $M$ tel que $\overrightarrow{OM}=\vec{u}$
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{% id="p130"
+     Pour tous points $A \left(x_{A}~; y_{A}~; z_{A}\right)$ et $B\left(x_{B}~; y_{B}~; z_{B}\right)$~:
+     \begin{itemize}
+          \item le vecteur $\overrightarrow{AB}$ a pour coordonnées $\left(x_{B}-x_{A}~; y_{B}-y_{A}~; z_{B}-z_{A}\right)$
+          \item le point $M$ milieu de $\left[AB\right]$ a pour coordonnées $\left(\frac{x_{A}+x_{B}}{2}~; \frac{y_{A}+y_{B}}{2}~; \frac{z_{A}+z_{B}}{2} \right)$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r130"
+     Les notions relatives aux repères orthonormés, distances, etc. sont abordées dans le chapitre «Orthogonalité et produit scalaire»
+}
+\cadre{rouge}{Théorème et définition (Représentation paramétrique d'une droite)}{% id="t140"
+     Un point $M\left(x~; y~; z\right)$ appartient à la droite $\mathscr D$ passant par $A\left(x_{A}~; y_{A}~; z_{A}\right)$ et de vecteur directeur $\vec{u}\left(a~; b~; c\right)$ si et seulement si il existe un réel $k$ tel que~:
+     \begin{center}$\left\{ \begin{matrix}  x=x_{A}+ak  \\  y=y_{A}+bk  \\  z=z_{A}+ck    \end{matrix}\right.   $    avec $k \in  \mathbb{R}$\end{center}
+     Ce système est appelé \textbf{représentation paramétrique de la droite} $\mathscr D$
+}
+\bloc{cyan}{Démonstration}{% id="m140"
+     Elle est immédiate en utilisant~:
+     \par
+     $M\left(x~; y~; z\right) \in  \mathscr D  \Leftrightarrow   \overrightarrow{AM}$ et $\vec{u}$ sont colinéaires$   \Leftrightarrow    \overrightarrow{AM}=k\vec{u}$
+}
+\bloc{cyan}{Remarque}{% id="r140"
+     Une droite admet une infinité de représentations paramétriques
+}
+\bloc{orange}{Exemple}{% id="e140"
+     La droite passant par l'origine et de vecteur directeur $\vec{u}\left(1~; 1~; 1\right)$ a pour représentation paramétrique~:
+     \begin{center}$\left\{ \begin{matrix}  x=k  \\  y=k  \\  z=k   \end{matrix}\right.    $    avec $k \in  \mathbb{R}$\end{center}
+}
+\cadre{rouge}{Théorème et définition (Représentation paramétrique d'un plan)}{% id="t150"
+     Soient  $\mathscr P$ un plan passant par $A\left(x_{A}~; y_{A}~; z_{A}\right)$ et $\vec{u}\left(a~; b~; c\right)$ et $\vec{u}^{\prime}\left(a^{\prime}~; b^{\prime}~; c^{\prime}\right)$ deux vecteurs non colinéaires de ce plan.
+     \par
+     Un point $M\left(x~; y~; z\right)$ appartient au plan $\mathscr P$ si et seulement si il existe deux réels $k$ et $k^{\prime}$ tels que~:
+     \begin{center}$\left\{ \begin{matrix}  x=x_{A}+ak+a^{\prime}k^{\prime}  \\  y=y_{A}+bk+b^{\prime}k^{\prime}  \\  z=z_{A}+ck+c^{\prime}k^{\prime}   \end{matrix}\right.    $    avec $k \in  \mathbb{R}$ et  $k^{\prime} \in  \mathbb{R}$\end{center}
+     Ce système est appelé \textbf{représentation paramétrique du plan} $\mathscr P$
+}
+\bloc{cyan}{Démonstration}{% id="m150"
+     On utilise le fait que~:
+     \par
+     $M\left(x~; y~; z\right) \in  \mathscr P  \Leftrightarrow   \overrightarrow{AM}$ est coplanaire à $\vec{u}$ et $\vec{u}^{\prime}$ $  \Leftrightarrow    \overrightarrow{AM}=k\vec{u}+k^{\prime}\vec{u}^{\prime}$
+}
+\bloc{cyan}{Remarque}{% id="r130"
+     Là encore, un plan admet une infinité de représentations paramétriques
+}
+\bloc{orange}{Exemple}{% id="e150"
+     Le plan $\left(xOy\right)$ passe par l'origine et $\vec{i}\left(1~; 0~; 0\right)$ et $\vec{j}\left(0~; 1~; 0\right)$ sont deux vecteurs non colinéaires de ce plan. Une représentation paramétrique du plan $\left(xOy\right)$ est donc~:
+     \begin{center}$\left\{ \begin{matrix}  x=k  \\  y=k^{\prime}  \\  z=0  \end{matrix}\right.     $    avec $\left(k,k^{\prime}\right) \in  \mathbb{R}^{2}$\end{center}
+}
+\input{_footer}

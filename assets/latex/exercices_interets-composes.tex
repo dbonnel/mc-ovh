@@ -1,0 +1,46 @@
+\input{_header}
+\meta{url}{/exercices/interets-composes/}
+\meta{pid}{878}
+\meta{titre}{Intérêts composés}
+\meta{type}{exercices}
+%
+Un capital $C_{0}$ de $500$€ est placé à intérêts \textbf{composés} au taux de $4\%$ par an (cela signifie que chaque année le capital augmente de $4\%$ par rapport à l'année précédente)
+\par
+On note $C_{n}$ le capital obtenu après $n$ années.
+\begin{enumerate}
+     \item
+     Calculer $C_{1}$ et $C_{2}$
+     \item
+     Calculer $C_{n+1}$ en fonction de $C_{n}$. Quelle est la nature de la suite $\left(C_{n}\right)$?
+     \item
+     Exprimer $C_{n}$ en fonction de $n$.
+     \item
+     Quel est le capital obtenu au bout de 5 ans? 
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Le coefficient multiplicateur correspondant au taux de $4\%$ est
+          \par
+          $CM=1+\frac{4}{100}=1,04$
+          \par
+          On a donc :
+          \par
+          $C_{1}=1,04\times C_{0}=1,04\times 500=520$
+          \par
+          $C_{2}=1,04\times C_{1}=1,04\times 520=540,8$
+          \item
+          $C_{n+1}=1,04\times C_{n}$
+          \par
+          $C_{n}$ est une suite géométrique de premier terme $C_{0}=500$ et de raison $1,04$.
+          \item
+          On applique \mcLien{/cours/cours/suites-geometriques#p110}{la formule donnant le $n$-ième terme d'une suite géométrique}.
+          \par
+          $C_{n}=C_{0}\times q^{n}=500\times 1,04^{n}$
+          \item
+          $C_{5}=500\times 1,04^{5}\approx 608,33$
+          \par
+          Le capital obtenu en 5 ans est de $608,33$ euros.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,84 @@
+\input{_header}
+\meta{url}{/exercices/differents-types-de-nombres/}
+\meta{pid}{11111}
+\meta{titre}{Différents types de nombres}
+\meta{type}{exercices}
+%
+Compléter le tableau ci-dessous avec les symboles $\in$ ou $\notin$~:
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|c|c|} %class="compact" width="600"
+          \hline
+          &  $\mathbb{N}$ &   $\mathbb{Z}$  &  $\mathbb{D}$  &  $\mathbb{Q}$  &  $\mathbb{R}$
+          \\ \hline
+          $-2$  &  $\notin$ & $\in$   &   &   &
+          \\ \hline
+          $\dfrac{6}{3}$  &   &   &   &   &
+          \\ \hline
+          $ \sqrt{3}$  &   &   &   &   &
+          \\ \hline
+          $ -\dfrac{3}{5} $&   &  &   &   &
+          \\ \hline
+          $\dfrac{5}{7}$  &   &  &   &   &
+          \\ \hline
+          $\left(\sqrt{2}-1\right)^2$  &   &  &   &   &
+          \\ \hline
+          $\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)$  &   &  &   &   &
+          \\ \hline
+     \end{tabular}
+\end{center}
+Par exemple : $-2 \notin \mathbb{N}$ et $-2 \in \mathbb{Z}.$
+\begin{corrige}
+     \begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|c|} %class="compact" width="600"
+               \hline
+               &  $\mathbb{N}$ &   $\mathbb{Z}$  &  $\mathbb{D}$  &  $\mathbb{Q}$  &  $\mathbb{R}$
+               \\ \hline
+               $-2$  &  $\notin$ & $\in$   & $\in$  & $\in$  &  $\in$
+               \\ \hline
+               $\dfrac{6}{3}$  & $\in$  & $\in$  &  $\in$ & $\in$  &  $\in$
+               \\ \hline
+               $ \sqrt{3}$  & $\notin$  & $\notin$  &  $\notin$ & $\notin$  &  $\in$
+               \\ \hline
+               $-\dfrac{3}{5}$  & $\notin$  & $\notin$  &  $\in$ & $\in$  &  $\in$
+               \\ \hline
+               $\dfrac{5}{7}$   & $\notin$  & $\notin$  &  $\notin$ & $\in$  &  $\in$
+               \\ \hline
+               $\left(\sqrt{2}-1\right)^2$   & $\notin$  & $\notin$  &  $\notin$ & $\notin$  &  $\in$
+               \\ \hline
+               $\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)$  & $\in$  & $\in$  &  $\in$ & $\in$  &  $\in$
+               \\ \hline
+          \end{tabular}
+     \end{center}
+     \par
+     \textbf{Explications~:}
+     \par
+     \begin{itemize}
+          \item %
+          Les ensembles de nombres sont placés en ordre croissant~; donc lorsqu'un nombre appartient à un ensemble, il appartient nécessairement aux ensembles suivants.
+          \item %
+          Tous les nombres présents sont des nombres réels.
+          \item %
+          $\dfrac{6}{3}=2 \in \mathbb{N}$
+          \item %
+          $ \sqrt{3}$ n'est pas un nombre rationnel donc  $ \sqrt{3} \notin \mathbb{Q}$~; par contre, comme tous les autres nombres de ce tableau,  $ \sqrt{3} \in \mathbb{R}.$
+          \item %
+          $ -\dfrac{3}{5}=-0,6 \in \mathbb{D}.$
+          \item %
+          $ \dfrac{5}{7}$ n'est pas un nombre décimal car son écriture décimale est illimitée.
+          \item %
+          $\left(\sqrt{2}-1\right)^2$ se développe grâce à l'identité remarquable~:
+          \[ (a-b)^2 = a^2-2ab+b^2 \]
+          \par
+          On obtient alors~:\\
+          $\left(\sqrt{2}-1\right)^2= \sqrt{2}^2-2\sqrt{2}+1^2$\nosp$=2-2\sqrt{2}+1=3-2\sqrt{2}$
+          \par
+          Ce n'est pas un nombre rationnel car $\sqrt{2}$ est irrationnel.
+          \item %
+          $\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)$ se développe grâce à l'identité remarquable~:
+          \[ (a-b)(a+b) = a^2-b^2 \]
+          \par
+          Cela donne ici~:\\
+          $\left(\sqrt{3}-\sqrt{2}\right)\left(\sqrt{3}+\sqrt{2}\right)= \sqrt{3}^2-\sqrt{2}^2$\nosp$=3-2=1 \in \mathbb{N}$
+     \end{itemize}
+\end{corrige}
+\input{_footer}

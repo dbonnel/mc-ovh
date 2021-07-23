@@ -1,0 +1,291 @@
+\input{_header}
+\cadre{vert}{Introduction}{% id="i10"
+     Il arrive qu'une variable aléatoire puisse prendre n'importe quelle valeur sur $\mathbb{R}$ ou sur un intervalle $I$ de $\mathbb{R}$. Dans ce cas, $X\left(\Omega \right)=I$.
+     \par
+     Une telle variable est dite variable aléatoire réelle continue.
+     \par
+     Pour une telle variable, les événements intéressants ne sont plus $X=5$ , $X=20$ , etc... , mais $X \leqslant  5$ , $5 \leqslant  X \leqslant  20$  etc...
+}
+\begin{h2}1. Généralités\end{h2}
+\cadre{bleu}{Définition}{% id="d20"
+     Une variable aléatoire réelle \textbf{continue} est une application définie sur un ensemble $\Omega $ et prenant toutes les valeurs d'un intervalle $I$ de $\mathbb{R}$.
+}
+\bloc{orange}{Exemple}{% id="e20"
+     C'est le cas par exemple d'une variable aléatoire qui mesure la durée de vie d'un organisme ou la taille d'une personne.
+     \par
+     Plus généralement, les variables qui résultent d'une mesure peuvent généralement être considérées comme des variables aléatoires continues.
+}
+\cadre{bleu}{Définition}{% id="d30"
+     Soit $f$ une fonction \textbf{continue} et \textbf{positive} sur un intervalle $I=\left[a;b\right]$ telle que
+     \par
+     $\int_{a}^{b}f\left(x\right)dx=1$
+     \par
+     On dit que X est une variable aléatoire réelle continue de \textbf{densité} $f$ si et seulement si pour tout $x_{1} \in  I$ et tout $x_{2} \in  I $ ($x_{1}\leqslant x_{2}$) :
+     \par
+     $P\left(x_{1}\leqslant X\leqslant x_{2}\right)=\int_{x_{1}}^{x_{2}}f\left(x\right)dx$
+}
+\bloc{orange}{Exemple}{% id="e30"
+     La fonction $f$ définie sur $I=\left[0;2\right]$ par $f\left(x\right)=\frac{x}{2}$ est une fonction continue et positive sur $I$ et :
+     \par
+     $\int_{0}^{2}f\left(x\right)dx=\left[\frac{x^{2}}{4}\right]_{0}^{2}=1$
+     \par
+     Si X est la variable aléatoire réelle à valeur dans $I$ de \textbf{densité} $f$ on a, par exemple :
+     \par
+     $P\left(1\leqslant X\leqslant 1,5\right)=\int_{1}^{1,5}f\left(x\right)dx$
+     \par
+     donc $P\left(1\leqslant X\leqslant 1,5\right)$ est l'aire (en u.a.) colorée ci-dessous.
+      \begin{center}
+          \begin{extern} %width="250" alt="densité linéaire"
+               \begin{pspicture}(0,-0.5)(5,3)
+                    \psset{xunit=2 cm, yunit=2 cm, algebraic=true}
+                    %\psgrid[gridcolor=mcgris, subgriddiv=0, gridlabels=0pt](0,0)(2,1)
+                    \psaxes{->}(0,0)(0,0)(2.5,1.5)
+                    \psplot[linecolor=red,linewidth=0.75pt]{0}{2}{x/2}
+                    \pscustom[linecolor=mcvert,linewidth=0.75pt,fillstyle=solid,fillcolor=mcvert,opacity=0.1]{
+                         \psplot{1}{1.5}{x/2}
+                         \psline(1.5,0)(1,0)(1,0.5)
+                    }
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     Un calcul simple montre que $P\left(1\leqslant X\leqslant 1,5\right)=\left[\frac{x^{2}}{4}\right]_{1}^{1,5}=0,3125$
+}
+\cadre{bleu}{Définition}{% id="d40"
+     Soit $X$ une variable aléatoire de densité $f$ sur l'intervalle $\left[a;b\right]$.
+     \par
+     On appelle \textbf{espérance mathématique} de $X$ le nombre :
+     \begin{center}$E\left(X\right)=\int_{a}^{b}xf\left(x\right)dx$\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r40"
+     Comme dans le cas d'une variable aléatoire discrète, l'espérance mathématique représente la valeur moyenne prise par la variable aléatoire $X$.
+}
+\begin{h2}2. Loi uniforme sur un intervalle\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     On dit qu'une variable aléatoire $X$ suit une \textbf{loi uniforme} sur $\left[a;b\right]$ si sa densité de probabilité $f$ est définie sur $\left[a;b\right]$ par $f\left(x\right)=\frac{1}{b-a}$
+}
+     \begin{center}
+          \begin{extern} %width="250" alt="loi uniforme"
+               \begin{pspicture}(0,-0.5)(5,3)
+                    \psset{xunit=2 cm, yunit=2 cm, algebraic=true}
+                    %\psgrid[gridcolor=mcgris, subgriddiv=0, gridlabels=0pt](0,0)(2,1)
+                    \psaxes{->}(0,0)(0,0)(2.5,1.5)
+                    \psplot[linecolor=red,linewidth=0.75pt]{0}{2}{1/2}
+               \end{pspicture}
+          \end{extern}
+     \end{center}
+     \begin{center}\textit{Densité de la loi uniforme sur l'intervalle $\left[0, 2\right]$}\end{center}\bloc{vert}{Remarque}{% id="r50"
+     On vérifie facilement que $\int_{a}^{b} \frac{1}{b-a} dx=\left[\frac{x}{b-a}\right]_{a}^{b}=1$
+}
+\cadre{vert}{Propriété}{% id="p60"
+     Si $X$ suit une loi uniforme sur $\left[a;b\right]$ et si $c$ et $d$ sont deux réels tels que $a\leqslant c\leqslant d\leqslant b$, alors :
+     \begin{center}$P\left(c\leqslant X\leqslant d\right) = \frac{d-c}{b-a}$\end{center}
+}
+\bloc{cyan}{Démonstration}{% id="r60"
+     $P\left(c\leqslant X\leqslant d\right)=\int_{c}^{d} \frac{1}{b-a} dx=\left[\frac{x}{b-a}\right]_{c}^{d}=\frac{d}{b-a}-\frac{c}{b-a}=\frac{d-c}{b-a}$
+}
+\cadre{vert}{Propriété}{% id="p70"
+     L'espérance mathématique d'une loi uniforme sur $\left[a;b\right]$ est :
+     \begin{center}$E\left(X\right)=\frac{a+b}{2}$\end{center}
+}
+\begin{h2}3. Loi normale centrée réduite\end{h2}
+\cadre{bleu}{Définition}{% id="d110"
+     Une variable aléatoire $X$ suit la \textbf{loi normale centrée réduite} sur $\mathbb{R}$ (notée $\mathscr N \left(0;1\right)$) si sa densité de probabilité $f$ est définie par :
+     \begin{center}$f\left(x\right)=\frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$\end{center}
+}
+\bloc{cyan}{Remarques}{% id="r110"
+     \begin{itemize}
+          \item On admet que $f$ définit bien une densité, c'est à dire que l'aire comprise entre l'axe des abscisses et la courbe représentative de $f$ est égale à  1
+          \item La fonction $f : x\mapsto \frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$ est dérivable et positive sur $\mathbb{R}$ sa courbe représentative
+          \par
+          est symétrique par rapport à l'axe des ordonnées :
+                    \begin{center}
+               \begin{extern} %width="550" alt="loi normale centrée réduite"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \item $p\left(a\leqslant X\leqslant b\right)$ est l'aire du domaine coloré ci-dessous :
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale probabilité"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                              \moveto(1.14,0)
+                              \psplot[plotpoints=3000,linewidth=0.75pt]{1.14}{2.24}{\fonction}
+                              \psline(2.24,0)(1.14,0)
+                         }
+                         \rput[b](1.14,-0.045){$\color{blue} a$}
+                         \rput[b](2.24,-0.045){$\color{blue} b$}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \item $p\left(X\leqslant a\right)$ est l'aire du domaine coloré ci-dessous :
+          \begin{center}
+               \begin{extern} %width="550" alt="loi normale probabilité"
+                    % -+-+-+ variables modifiables
+                    \def\e{2.7182818}
+                    \def\pi{3.1415926}
+                    \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+                    \def\xmin{-3.5}
+                    \def\xmax{3.5}
+                    \def\ymin{0}
+                    \def\ymax{0.5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{12}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                         \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                         \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                              \psplot[plotpoints=3000,linewidth=0.75pt]{-4}{1.14}{\fonction}
+                              \psline(1.14,0)(-4,0)
+                         }
+                         \rput[b](1.14,-0.045){$\color{blue} a$}
+                         \rput[br](-0.1,-0.045){$O$}
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          \item Il n'est pas possible d'exprimer les primitives de la fonction $f : x\mapsto \frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$ à l'aide des fonctions usuelles. Toutefois, les calculatrices scientifiques permettent de calculer directement $p\left(a\leqslant X\leqslant b\right)$ pour une loi normale.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{% id="p130"
+     Soit $X$ une variable aléatoire qui suit la loi normale centrée réduite et $\alpha $ un réel quelconque :
+     \begin{itemize}
+          \item $p\left(X\leqslant 0\right)=p\left(X\geqslant 0\right)=0,5$
+          \item $p\left(X\leqslant -a\right)=p\left(X\geqslant a\right)$
+          \item $p\left(-\alpha \leqslant X\leqslant a\right)=1-2\times p\left(X\geqslant a\right)=2\times p\left(X\leqslant a\right)-1$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r130"
+     Ces propriétés résultent du fait que :
+     \begin{itemize}
+     \item
+     la courbe de la fonction $x\mapsto \frac{1}{\sqrt{2\pi }}e^{^{-\frac{x^{2}}{2}}}$ est symétrique par rapport à l'axe des ordonnées
+     \item
+     l'aire comprise entre l'axe des abscisses et la courbe est égale à  1.
+     \end{itemize}
+          On retrouve facilement ces propriétés à l'aide d'une figure par exemple pour la seconde formule :
+       \begin{center}
+          \begin{extern} %width="550" alt="loi normale symétrie"
+               % -+-+-+ variables modifiables
+               \def\e{2.7182818}
+               \def\pi{3.1415926}
+               \def\fonction{1/sqrt(2*\pi)*\e^(-x*x/2)  }
+               \def\xmin{-3.5}
+               \def\xmax{3.5}
+               \def\ymin{0}
+               \def\ymax{0.5}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{12}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\fonction}
+                    \pscustom[fillcolor=vert,fillstyle=solid,opacity=0.2,linecolor=vert]{
+                         \psplot[plotpoints=3000,linewidth=0.75pt]{-4}{-1.14}{\fonction}
+                         \psline(-1.14,0)(-4,0)
+                    }
+                    \pscustom[fillcolor=blue,fillstyle=solid,opacity=0.2,linecolor=blue]{
+                         \moveto(1.14,0)
+                         \psplot[plotpoints=3000,linewidth=0.75pt]{1.14}{4}{\fonction}
+                         \psline(4,0)(1.14,0)
+                    }
+                    \rput[br](-1.14,-0.045){$\color{vert} -a$}
+                    \rput[b](1.14,-0.045){$\color{blue} a$}
+                    \rput[br](-0.1,-0.045){$O$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}$p\left(X\leqslant -a\right)=p\left(X\geqslant a\right)$\end{center}
+}
+\begin{h2}4. Loi normale quelconque\end{h2}
+\cadre{bleu}{Définition et théorème}{% id="d170"
+     Soient deux réels $\mu $ et $\sigma  > 0$.
+     \par
+     On dit qu'une variable aléatoire $X$ suit une \textbf{loi normale de paramètres $\mu $ et $\sigma ^{2}$} (notée $\mathscr N \left(\mu  ; \sigma ^{2}\right)$) si la variable aléatoire $Y=\frac{X-\mu }{\sigma} $ suit la loi normale centrée réduite.
+     \par
+     L'espérance mathématique de $X$ est $\mu $ et son écart-type $\sigma $ (et donc sa variance $\sigma ^{2}$)
+}
+\bloc{cyan}{Remarque}{% id="r170"
+     La courbe représentative de la distribution d'une loi $\mathscr N \left(\mu  ; \sigma ^{2}\right)$ est une courbe «en cloche» qui admet la droite d'équation $x=\mu $ comme axe de symétrie. Elle est plus ou moins «étirée» selon les valeurs de $\sigma $
+      \begin{center}
+          \begin{extern} %width="500" alt="loi normale différents écarts-types"
+               % -+-+-+ variables modifiables
+               \def\e{2.7182818}
+               \def\pi{3.1415926}
+               \def\f{2/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/0.5)  }
+               \def\g{1/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/2)  }
+               \def\h{0.5/sqrt(2*\pi)*\e^(-(x-3)*(x-3)/8)  }
+               \def\xmin{-2.3}
+               \def\xmax{8.3}
+               \def\ymin{0}
+               \def\ymax{0.85}
+               \def\xunit{1}  % unités en cm
+               \def\yunit{10}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \begin{pspicture*}(\xmin,-0.08)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](-5,-0.3)(5,1)
+                    \psaxes[Dy=0.1,linewidth=0.75pt]{->}(0,0)(\xmin,-0.08)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue,linewidth=0.75pt]{\xmin}{\xmax}{\f}
+                    \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{\xmin}{\xmax}{\g}
+                    \psplot[plotpoints=2000,linecolor=vert,linewidth=0.75pt]{\xmin}{\xmax}{\h}
+                    \psline[linecolor=mauve,linewidth=0.5pt](3,10)(3,-1)
+                    \rput[br](2.9,0.02){$\color{mauve} \mu$}
+                    \rput[br](5,0.5){$\color{blue} \sigma=0,5$}
+                    \rput[br](5.2,0.3){$\color{red} \sigma=1$}
+                    \rput[br](6,0.15){$\color{vert} \sigma=2$}
+                    \rput[br](-0.1,-0.045){$O$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}$\mu =3$ et $ \sigma =0,5$ ; $1$ ; $2$\end{center}
+ }
+\cadre{vert}{Propriété (Règle des un-deux-trois sigmas)}{% id="p180"
+     Si $X$ suit une loi normale $\mathscr N \left(\mu ; \sigma ^{2}\right)$ alors :
+     \begin{itemize}
+          \item %
+          $p\left(\mu -\sigma \leqslant X\leqslant \mu + \sigma \right)\approx 0,68$ (à $10^{-2}$ près)
+\item %
+$p\left(\mu -2\sigma \leqslant X\leqslant \mu + 2\sigma \right)\approx 0,95$ (à $10^{-2}$ près)
+\item %
+ $p\left(\mu -3\sigma \leqslant X\leqslant \mu + 3\sigma \right)\approx 0,997$ (à $10^{-3}$ près)
+     \end{itemize}
+
+}
+\bloc{orange}{Exemple}{% id="e180"
+     Si $X$ suit une loi normale  $\mathscr N \left(11 ; 3^{2}\right)$ alors :
+     \par
+     $p\left(5\leqslant X\leqslant 17\right)\approx 0,95$
+}
+\input{_footer}

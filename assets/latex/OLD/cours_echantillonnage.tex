@@ -1,0 +1,59 @@
+\input{_header}
+\cadre{bleu}{Définition}{% id="d10"
+     Pour réaliser un \textbf{échantillon} de taille $n$ dans une population, on sélectionne "au hasard" $n$ individus avec ou sans remise.
+}
+\bloc{cyan}{Remarque}{% id="r10"
+     \textit{"Avec remise"} signifie qu'un même individu peut être sélectionné plusieurs fois
+}
+\cadre{vert}{Propriété}{% id="p20"
+     Dans un échantillon avec remise, la variable aléatoire $X$ qui compte le nombre d'individus présentant un certain caractère suit une loi binomiale $\mathscr B\left(n;p\right)$ où $n$ est la taille de l'échantillon et $p$ la proportion du caractère étudié dans la population.
+}
+\bloc{cyan}{Remarque}{% id="r20"
+     Si l'échantillon est réalisé \textit{sans remise} on peut encore considérer que la propriété précédente est vraie si la taille de l'échantillon est nettement inférieure à l'effectif total.
+}
+\bloc{orange}{Exemple}{% id="e20"
+     La proportion des Français ayant des yeux bleus est estimée à 25\%. On choisit 100 personnes au hasard dans la population française. La variable aléatoire comptant le nombre de personnes aux yeux bleus dans un tel échantillon suit une loi binomiale $\mathscr B\left(100 ; 0,25\right)$
+}
+\cadre{bleu}{Définition}{% id="d30"
+     \textbf{L'intervalle de fluctuation à 95 \%} d'une fréquence correspondant à la réalisation, sur un échantillon de taille $n$, d'une variable aléatoire $X$ de loi binomiale $\mathscr B\left(n;p\right)$, est l'intervalle   $\left[\frac{a}{n} ; \frac{b}{n}\right]$, défini par :
+     \begin{itemize}
+          \item $a$ est le plus petit entier tel que $p\left(X \leqslant  a\right) > 0,025$;
+          \item $b$ est le plus petit entier tel que $p\left(X \leqslant  b\right) \geqslant  0,975$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     Pour $n\geqslant 30, np \geqslant  5$ et $n\left(1-p\right)\geqslant 5$, on observe que l'intervalle trouvé est sensiblement le même que l'intervalle $\left[p-\frac{1}{\sqrt{n}} ; p+\frac{1}{\sqrt{n}}\right]$ vu en classe de Seconde.
+}
+\bloc{orange}{Exemple}{% id="e30"
+     On lance 100 fois une pièce équilibrée. La variable aléatoire correspondant au nombre de \textit{Pile} obtenus suit la loi binomiale $\mathscr B\left(100 ; 0.5\right)$. En consultant \mcLien{/solver/loi-binomiale-cumulee}{une table de loi binomiale} ou
+     \mcLien{/methodes/statistiques/intervalle-fluctuation-tableur}{à l'aide d'un tableur} ou d'une calculatrice on trouve $a=40$ et $b=60$ donc l'intervalle
+     \par
+     $I=\left[\frac{40}{100} ; \frac{60}{100}\right]=\left[ 0,4 ; 0,6 \right]$.
+     \par
+     La formule $I=\left[p-\frac{1}{\sqrt{n}} ; p+\frac{1}{\sqrt{n}}\right]$\nosp$=\left[0,5-\frac{1}{\sqrt{100}} ; 0,5+\frac{1}{\sqrt{100}}\right]$ donne le même résultat.
+}
+\bloc{cyan}{Validation d'une hypothèse}{% id="r40"
+     On fait l'hypothèse qu'un caractère est présent dans une proportion $p$ de la population.
+     \par
+     Pour valider cette hypothèse, on prélève un échantillon de taille $n$ et on note $f $ la fréquence du caractère étudié dans cet échantillon.
+     \textbf{La règle de décision} est alors la suivante : si la fréquence observée $f$ appartient à l'intervalle de fluctuation à 95 \%, on \textbf{accepte} l'hypothèse selon laquelle la proportion est $p$ dans la population avec un risque d'erreur inférieur à 5 \%; sinon, on \textbf{rejette} cette hypothèse (avec un risque d'erreur inférieur à 5 \%).
+}
+\bloc{cyan}{Intervalle de fluctuation pour un seuil différent de 95 \%}{% id="r50"
+     On peut généraliser le résultat précédent pour un seuil différent de 95\% :
+     \textbf{L'intervalle de fluctuation à t \%} est alors l'intervalle $\left[\frac{a}{n} ; \frac{b}{n}\right]$, défini par :
+     \begin{itemize}
+          \item $a$ est le plus petit entier tel que $p\left(X \leqslant  a\right) > \frac{1}{2}\left(1-\frac{t}{100}\right)$;
+          \item $b$ est le plus petit entier tel que $p\left(X \leqslant  b\right) \geqslant  \frac{1}{2}\left(1+\frac{t}{100}\right)$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e50"
+     Une variable aléatoire $X$ suit une loi binomiale de paramètres $n=500$ et $p=0,30$.
+     \par
+     Pour trouver l'intervalle de fluctuation au seuil de 99\% on recherche les valeurs de $a$ et $b$ telles que :
+     \begin{itemize}
+          \item $a$ est le plus petit entier vérifiant $p\left(X \leqslant  a\right) > 0,005$;
+          \item $b$ est le plus petit entier vérifiant $p\left(X \leqslant  b\right) \geqslant  0,995$.
+     \end{itemize}
+     \mcLien{/solver/loi-binomiale-cumulee?val_n=500&val_p=0.3&val_s=99}{La table de loi binomiale $\mathscr B\left(500 ; 0,30\right)$} (ou une calculatrice) donne au seuil de 99\% : $a=124$ et $b =177$ donc l'intervalle de fluctuation à 99 \% est $I=\left[\frac{124}{500} ; \frac{177}{500}\right]$
+}
+\input{_footer}

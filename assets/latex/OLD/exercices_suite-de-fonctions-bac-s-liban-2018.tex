@@ -1,0 +1,47 @@
+\input{_header}
+\begin{h2}EXERCICE 4 (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\medskip
+On considère, pour tout entier $n > 0$, les fonctions $f_n$ définies sur l'intervalle [1~;~5] par:
+\[f_n(x) = \dfrac{\ln x}{x^n}.\]
+\par
+Pour tout entier $n > 0$, on note $\mathscr{C}_n$ la courbe représentative de la fonction $f_n$ dans un repère orthogonal.
+\par
+Sur le graphique ci-dessous sont représentées les courbes $\mathscr{C}_n$ pour $n$ appartenant à
+$\{1~;~2~;~3~;~4\}$.
+\begin{center}
+     \begin{extern}
+          \psset{xunit=2cm,yunit=5cm,comma=true}
+          \begin{pspicture}(-0.2,-0.1)(5.2,0.65)
+               \psaxes[linewidth=1pt,Dy=0.5]{->}(0,0)(0,0)(5.3,0.6)
+               \psplot[plotpoints=300,linewidth=0.75pt]{1}{5}{x ln x div}
+               \psplot[plotpoints=300,linewidth=0.75pt]{1}{5}{x ln x dup mul div}
+               \psplot[plotpoints=300,linewidth=0.75pt]{1}{5}{x ln x 3 exp  div}
+               \psplot[plotpoints=300,linewidth=0.75pt]{1}{5}{x ln x 4 exp div}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+\medskip
+\begin{enumerate}
+     \item Montrer que, pour tout entier $n > 0$ et tout réel $x$ de l'intervalle [1~;~5] :
+     \[f'_n(x) = \dfrac{1- n\ln (x)}{x^{n+1}}.\]
+     \item  Pour tout entier $n > 0$, on admet que la fonction $f_n$ admet un maximum sur l'intervalle [1~;~5].
+     \par
+     On note $A_n$ le point de la courbe $\mathscr{C}_n$ ayant pour ordonnée ce maximum.
+     \par
+     Montrer que tous les points $A_n$ appartiennent à une même courbe $\Gamma$ d'équation
+     \[y = \dfrac{1}{\text{e}} \ln (x).\]
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Montrer que, pour tout entier $n > 1$ et tout réel $x$ de l'intervalle [1~;~5] :
+          \[0 \leqslant \dfrac{\ln (x)}{x^n} \leqslant \dfrac{\ln (5)}{x^n}.\]
+          \item  Montrer que pour tout entier $n > 1$ :
+          \[\displaystyle\int_1^5 \dfrac{1}{x^n} \:\text{d}x = \dfrac{1}{n - 1}\left(1 - \dfrac{1}{5^{n - 1}} \right).\]
+          \item  Pour tout entier $n > 0$, on s'intéresse à l'aire, exprimée en unités d'aire, de la surface sous la courbe $f_n$,
+          c'est-à-dire l'aire du domaine du plan délimité par les droites d'équations $x = 1$, $x = 5$, $y = 0$
+          et la courbe $\mathscr{C}_n$.
+          \par
+          Déterminer la valeur limite de cette aire quand $n$ tend vers $+ \infty$.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

@@ -1,0 +1,113 @@
+\input{_header}
+\meta{url}{/exercices/intersections-de-tangentes/}
+\meta{pid}{4224}
+\meta{titre}{Intersections de tangentes}
+\meta{type}{exercices}
+%
+Le plan est rapporté à un repère orthonormé $\left(O; \vec{i}, \vec{j}\right)$.
+\par
+$P$ est la parabole d'équation $y=x^{2}$
+\par
+$D_{m}$ est la droite d'équation $8mx-4y+1=0$ où $m\in \mathbb{R}$
+\begin{enumerate}
+     \item
+     Montrer que pour tout $m\in \mathbb{R}$, $P$ et $D_{m}$ se coupent en deux points distincts $A_{m}$ et $B_{m}$.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Calculer les coordonnées du point d'intersection $I_{m}$ des tangentes à la courbe $P$ aux points $A_{m}$ et $B_{m}$.
+          \item
+          Quel est l'ensemble des points $I_{m}$ lorsque $m$ décrit $\mathbb{R}$ ?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $M\left(x;y\right)$ est un point d'intersection de $P$ et de $D_{m}$ si et seulement si :
+          \par
+          $\begin{cases} y=x^{2} \\8mx-4y+1=0  \end{cases}$
+          \par
+          On remplace $y$ par $x^2$ dans la seconde équation :
+          \par
+          $8mx-4x^{2}+1=0$
+          \par
+          $-4x^{2}+8mx+1=0$
+          \par
+          $\Delta =\left(8m\right)^{2}-4 \times (-4) \times 1=64m^{2}+16$
+          \par
+          $\Delta $ est strictement positif donc l'équation a \textbf{deux solutions distinctes} :
+          \par
+          $x_{1}=\frac{-8m+\sqrt{64m^{2}+16}}{-8}=\frac{-8m+4\sqrt{4m^{2}+1}}{-8}=m-\frac{\sqrt{4m^{2}+1}}{2}$
+          \par
+          $x_{2}=m+\frac{\sqrt{4m^{2}+1}}{2}$
+          \par
+          On a alors $y_{1}=x_{1}^{2}$ et $y_{2}=x_{2}^{2}$
+          \par
+          $P$ et $D_{m}$ se coupent donc en deux points distincts $A_m\left( m-\frac{\sqrt{4m^{2}+1}}{2} ; \left(m-\frac{\sqrt{4m^{2}+1}}{2}\right)^{2}  \right)$ et $B_m\left(m+\frac{\sqrt{4m^{2}+1}}{2} ; \left(m+\frac{\sqrt{4m^{2}+1}}{2}\right)^{2}\right)$
+          \item
+          \begin{enumerate}
+               \item
+
+\begin{center}
+\imgsvg{intersections-de-tangentes}{0.3}% alt="Intersections de tangentes" style="width:45rem" class="aligncenter"
+\end{center}
+               \begin{center}Cas $m=1$\end{center}
+               Comme $f\left(x\right)=x^{2}$,  $f^{\prime}\left(x\right)=2x$.
+               \par
+               L'équation de la tangente à la parabole en $A_{m}$ a pour équation:
+               \par
+               $y=f^{\prime}\left(x_{1}\right)\left(x-x_{1}\right)+f\left(x_{1}\right)$
+               \par
+               c'est à dire
+               \par
+               $y=2x_{1}\left(x-x_{1}\right)+x_{1}^{2}$
+               \par
+               $y=2x_{1}x-x_{1}^{2}$
+               \par
+               De même, l'équation de la tangente à la parabole en $B_{m}$ a pour équation:
+               \par
+               $y=2x_{2}x-x_{2}^{2}$
+               \par
+               Pour trouver les coordonnées de l'intersection $I_{m}$ on résout le système :
+               \par
+               $\left\{ \begin{matrix} y=2x_{1}x-x_{1}^{2} \\ y=2x_{2}x-x_{2}^{2} \end{matrix}\right.$
+                    \par
+                    Par substitution, il est équivalent à :
+                    \par
+                    $\left\{ \begin{matrix} y=2x_{1}x-x_{1}^{2} \\ 2x_{1}x+x_{1}^{2}=2x_{2}x-x_{2}^{2} \end{matrix}\right.$
+                         \par
+                         La deuxième équation donne successivement :
+                         \par
+                         $2x_{1}x-2x_{2}x=x_{1}^{2}-x_{2}^{2}$
+                         \par
+                         $2\left(x_{1}-x_{2}\right)x=\left(x_{1}-x_{2}\right)\left(x_{1}+x_{2}\right)$
+                         \par
+                         $2x=x_{1}+x_{2}$
+                         \par
+                         or $x_{1}+x_{2}=m+\frac{\sqrt{4m^{2}+1}}{2}+m-\frac{\sqrt{4m^{2}+1}}{2}=2m$
+                         \par
+                         donc l'équation devient:
+                         \par
+                         $2x=2m$ c'est à dire $x=m$.
+                         \par
+                         En remplaçant $x$ par $m$ dans la première équation du système on obtient :
+                         \par
+                         $y=2mx_{1}-x_{1}^{2}=x_{1}\left(2m-x_{1}\right)$
+                         \par
+                         $y=\left(m+\frac{\sqrt{4m^{2}+1}}{2}\right)\times \left(2m-m-\frac{\sqrt{4m^{2}+1}}{2}\right)$
+                         \par
+                         $y=\left(m+\frac{\sqrt{4m^{2}+1}}{2}\right)\times \left(m-\frac{\sqrt{4m^{2}+1}}{2}\right)$
+                         \par
+                         C'est une identité remarquable:
+                         \par
+                         $y=m^{2}-\left(\frac{\sqrt{4m^{2}+1}}{2}\right)^{2}=m^{2}-\frac{4m^{2}+1}{4}=\frac{4m^{2}-4m^{2}-1}{4}=-\frac{1}{4}$
+                         \par
+                         Les coordonnées de $I_{m}$ sont donc $\left(m;-\frac{1}{4}\right)$.
+                         \item
+                         Lorsque $m$ décrit $\mathbb{R}$ l'abscisse de $I_{m}$ décrit $\mathbb{R}$ tandis que son ordonnée est constante et égale à $-\frac{1}{4}$.
+                         \par
+                         L'ensemble des points $I_{m}$ lorsque $m$ décrit $\mathbb{R}$ est donc \textbf{la droite d'équation $y=-\frac{1}{4}$}
+                    \end{enumerate}
+               \end{enumerate}
+          \end{corrige}
+\input{_footer}

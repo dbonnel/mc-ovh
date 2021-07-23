@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="711" height="1025" viewBox="0 0 711 1025" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g1_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: round;
+}
+
+.s5_1{
+font-size: 18.33px;
+font-family: SymbolMT_e;
+fill: #000000;
+}
+.s6_1{
+font-size: 18.33px;
+font-family: Times-Italic_n;
+fill: #000000;
+}
+.s4_1{
+font-size: 10.71px;
+font-family: TimesNewRomanPSMT;
+fill: #000000;
+}
+.s2_1{
+font-size: 18.34px;
+font-family: TimesNewRomanPSMT;
+fill: #000000;
+}
+.s8_1{
+font-size: 12.28px;
+font-family: Times_5;
+fill: #000000;
+}
+.s3_1{
+font-size: 18.34px;
+font-family: SymbolMT_e;
+fill: #000000;
+}
+.s7_1{
+font-size: 18.34px;
+font-style: italic;
+font-family: TimesNewRomanPS-ItalicMT;
+fill: #000000;
+}
+.s1_1{
+font-size: 18.33px;
+font-family: Times_5;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1025
+L711,1025
+L711,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="5" 
+y="20" 
+dx="0,0.1,0,0,0.1,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0.2,-0.1,0,0.1,-0.1,0,-0.1,0,0,-0.1,0.2,-0.1,0,0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0.1,-0.1,0.1,0,-0.1,0,0,0,0,0,0,-0.1,0,0,0,0.2,-0.1,0,0,0,0,-0.1,0,0,0,0.2" 
+class="s1_1"
+>Soit EF la perpendiculaire en F à AB, et EG la perpendiculaire en G à CD. </text>
+
+<text 
+x="5" 
+y="73" 
+dx="0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,0.1,-0.2,0,0,0,0,0,0,0,0,0.2,0,-0.1,0,0.1,0,0,-0.1,0,0.1,0,-0.1,-0.1,0.2,-0.1,0,0,0.1,0,-0.1,0,0,0,0,-0.1,0,0,0,0,-0.1,-0.1,0,0,0,0,0" 
+class="s1_1"
+>Dans les triangles homothétiques AEF et CEG on a la relation</text>
+
+<text 
+x="465" 
+y="61" 
+dx="0,-0.1" 
+class="s2_1"
+>AF</text>
+
+<text 
+x="466" 
+y="87" 
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<path d="M464.5,68.5l26,0" class="g1_1" />
+<text 
+x="495" 
+y="73" 
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+x="510" 
+y="61" 
+dx="0,0.1" 
+class="s2_1"
+>CG</text>
+
+<text 
+x="511" 
+y="87" 
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M510.5,68.5l27,0" class="g1_1" />
+<text 
+x="540" 
+y="73" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<text 
+x="5" 
+y="116" 
+dx="0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,0.1,-0.2,0,0,0,0,0,0,0,0,0.2,0,-0.1,0,0.1,0,0,-0.1,0,0,0.1,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0.2,-0.1,0,0,0,0,-0.1,-0.1,0,0,0,0,0" 
+class="s1_1"
+>Dans les triangles homothétiques FBE et GDE on a la relation</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 465, 104)"
+dx="0,0.1" 
+class="s2_1"
+>FB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 465, 130)"
+dx="0,-0.1" 
+class="s2_1"
+>EF</text>
+
+<path d="M464.5,111.5l23,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 493, 116)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 508, 104)"
+dx="0,0.3" 
+class="s2_1"
+>GD</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 509, 130)"
+dx="0,-0.1" 
+class="s2_1"
+>EG</text>
+
+<path d="M507.5,111.5l28,0" class="g1_1" />
+<text 
+x="538" 
+y="116" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<text 
+x="5" 
+y="148" 
+dx="0,0,0,0,-0.1,0,0,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,-0.1,0.2,-0.1,0,0,0,0,0,-0.1,-0.1,0,0.1,-0.1,0,0,0,-0.1,0,0.2,0,0.1,-0.2,-0.1,0,0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0.3" 
+class="s1_1"
+>En additionnant membre à membre ces deux égalités, on obtient : </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 10, 168)"
+dx="0,-0.2" 
+class="s2_1"
+>AF</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 11, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<path d="M9.5,175.5l25,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 39, 180)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 53, 168)"
+dx="0,0" 
+class="s2_1"
+>FB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 53, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<path d="M52.5,175.5l23,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 81, 180)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 96, 168)"
+dx="0,0.1" 
+class="s2_1"
+>CG</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 97, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M95.5,175.5l28,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 127, 180)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 141, 168)"
+dx="0,0.2" 
+class="s2_1"
+>GD</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 142, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M140.5,175.5l28,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 170, 180)"
+dx="0,1.5,0,0,-0.1,-0.2,0.2" 
+class="s2_1"
+>, soit </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 216, 168)"
+dx="0,-0.2" 
+class="s2_1"
+>AB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 217, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<path d="M214.5,175.5l27,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 247, 180)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 262, 168)"
+dx="0,0.1" 
+class="s2_1"
+>CD</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 262, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M261.5,175.5l27,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 289, 180)"
+dx="0,1.5,0,-0.3,1.4,-0.3,0.3" 
+class="s2_1"
+>, d'où </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 341, 168)"
+dx="0,-0.2" 
+class="s2_1"
+>AB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 341, 193)"
+dx="0,0.1" 
+class="s2_1"
+>CD</text>
+
+<path d="M340.5,175.5l27,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 372, 180)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 389, 168)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 387, 193)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M387.5,175.5l26,0" class="g1_1" />
+<text 
+x="421" 
+y="180" 
+dx="0,0,0,-0.1,0.2" 
+class="s1_1"
+>(1). </text>
+
+<text 
+x="5" 
+y="233" 
+dx="0,0.1,-0.1,0,0,-0.1,0,0.1,0,0,0,-0.1,0,0,0,0.2,-0.2,-0.1,0,0.1,-0.1,0,0,0.2,-0.2,-0.1,0,0.2,0,-0.1,-0.1,0,0.4" 
+class="s1_1"
+>Par ailleurs, d'après l'énoncé : </text>
+
+<text 
+x="5" 
+y="286" 
+dx="0,0,0,0,-0.1,0,0.1,-0.1,0,-0.1,0.2,-0.1" 
+class="s1_1"
+>Aire(ABE) = </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 111, 274)"
+dx="0,-0.2" 
+class="s2_1"
+>AB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 139, 274)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 153, 274)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 138, 299)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M110.5,281.5l65,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 181, 286)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 195, 286)"
+dx="0,0.3,0.3,0,-0.4" 
+class="s2_1"
+>32 cm</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 241, 278)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="253" 
+y="286" 
+dx="0,-0.1,0,0,0,0,0,-0.1,0,0.1,0,0,-0.1,0,-0.1" 
+class="s1_1"
+>et Aire(ABE) = </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 375, 274)"
+dx="0,0.1" 
+class="s2_1"
+>CD</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 405, 274)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 418, 274)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 405, 299)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M375.5,281.5l69,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 449, 286)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 462, 286)"
+dx="0,0.3,0.3,0,-0.4" 
+class="s2_1"
+>18 cm</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 508, 278)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="516" 
+y="286" 
+dx="0,0,0,0,-0.2,0,0,0,0.2,-0.2,0,0,0,0,0.1,0,-0.1,0,0.3" 
+class="s1_1"
+>, d'où l'on tire : </text>
+
+<text 
+x="5" 
+y="350" 
+dx="0,0,-0.2" 
+class="s1_1"
+>AB </text>
+
+<text 
+x="35" 
+y="350" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="50" 
+y="350" 
+dx="0,0.1,-0.1,0,-0.1,0,0,0,0,0,0,0" 
+class="s1_1"
+>EF = 64, CD </text>
+
+<text 
+x="148" 
+y="350" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="163" 
+y="350" 
+dx="0,0,-0.1,0.2,-0.1,0,0,0,0,-0.1,0" 
+class="s1_1"
+>EG = 36 et </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 254, 338)"
+dx="0,-0.2" 
+class="s2_1"
+>AB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 282, 338)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 296, 338)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 252, 363)"
+dx="0,0.1" 
+class="s2_1"
+>CD</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 281, 363)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 295, 363)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M251.5,345.5l69,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 325, 350)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 341, 338)"
+dx="0,0.3" 
+class="s2_1"
+>64</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 341, 363)"
+dx="0,0.3" 
+class="s2_1"
+>36</text>
+
+<path d="M340.5,345.5l20,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 366, 350)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 380, 338)"
+dx="0,0.3" 
+class="s2_1"
+>16</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 385, 363)"
+dx="0" 
+class="s2_1"
+>9</text>
+
+<path d="M380.5,345.5l19,0" class="g1_1" />
+<text 
+x="401" 
+y="350" 
+dx="0,0,0,0,0,0,-0.1,0,0,0,0.1,0,-0.1,0,0,0,0,0,-0.1,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0.1,-0.1,0,0,0.1" 
+class="s1_1"
+>. En combinant avec (1), on obtient :</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 10, 380)"
+dx="0,-0.2" 
+class="s2_1"
+>AB</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 9, 406)"
+dx="0,0.1" 
+class="s2_1"
+>CD</text>
+
+<path d="M9.5,387.5l26,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 41, 393)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 58, 380)"
+dx="0,-0.2" 
+class="s2_1"
+>EF</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 56, 406)"
+dx="0,-0.2" 
+class="s2_1"
+>EG</text>
+
+<path d="M55.5,387.5l26,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 87, 393)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 103, 380)"
+dx="0" 
+class="s2_1"
+>4</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 104, 406)"
+dx="0" 
+class="s2_1"
+>3</text>
+
+<path d="M101.5,387.5l12,0" class="g1_1" />
+<text 
+x="115" 
+y="393" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<text 
+x="5" 
+y="457" 
+dx="0,0.1,0,0,0,0,0,0,0,-0.1,0,-0.1" 
+class="s1_1"
+>Posons AB = </text>
+
+<text 
+x="107" 
+y="457" 
+dx="0" 
+class="s6_1"
+>x</text>
+
+<text 
+x="115" 
+y="457" 
+dx="0,0" 
+class="s1_1"
+>, </text>
+
+<text 
+x="124" 
+y="457" 
+dx="0" 
+class="s6_1"
+>x</text>
+
+<text 
+x="137" 
+y="457" 
+dx="0,-0.1,0,0,0,0,0,0.2,0,0,0,0,0,0,0,-0.1" 
+class="s1_1"
+>&gt; 0. Alors CD = </text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 265, 444)"
+dx="0" 
+class="s2_1"
+>3</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 275, 444)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 270, 470)"
+dx="0" 
+class="s2_1"
+>4</text>
+
+<path d="M264.5,451.5l20,0" class="g1_1" />
+<text 
+x="286" 
+y="457" 
+dx="0,0,0,0,-0.1,0,-0.1" 
+class="s1_1"
+>, EF = </text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 340, 444)"
+dx="0,0.4" 
+class="s2_1"
+>64</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 346, 470)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<path d="M339.5,451.5l21,0" class="g1_1" />
+<text 
+x="367" 
+y="457" 
+dx="0,-0.1,0,0,0,0,0" 
+class="s1_1"
+>et EG =</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 428, 444)"
+dx="0,0.4" 
+class="s2_1"
+>48</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 433, 470)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<path d="M427.5,451.5l20,0" class="g1_1" />
+<text 
+x="450" 
+y="457" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<text 
+x="5" 
+y="488" 
+dx="0,0,0,0,-0.1,-0.1,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,-0.1,0,0,0,0,0,0.1,-0.1,0,0.1,0.1,-0.1,0,0,-0.2,0,0,0,-0.1,0,0,0,0,0.1,-0.1,0,0.1,0,0,0,0,-0.1" 
+class="s1_1"
+>On calcule l'aire du trapèze ABCD en fonction de </text>
+
+<text 
+x="375" 
+y="488" 
+dx="0" 
+class="s6_1"
+>x</text>
+
+<text 
+x="388" 
+y="488" 
+dx="0,0" 
+class="s1_1"
+>: </text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 9, 520)"
+dx="0,-0.2,-0.2,0,-0.4,0,-0.2,0.1,0.1,-0.2,0,-0.2" 
+class="s2_1"
+>Aire(ABCD) =</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 124, 508)"
+dx="0" 
+class="s2_1"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 124, 534)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M123.5,515.5l11,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 136, 520)"
+dx="0,0,-0.3,0,-0.4,1.8,-0.2,0.2,0.1,0,-0.2,2.5,1.8,0.1,-0.2" 
+class="s2_1"
+>(EF +EG)(AB+CD)</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 294, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 309, 508)"
+dx="0" 
+class="s2_1"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 309, 534)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M308.5,515.5l11,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 321, 520)"
+dx="0" 
+class="s2_1"
+>(</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 329, 508)"
+dx="0,0.3" 
+class="s2_1"
+>64</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 335, 534)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<path d="M328.5,515.5l20,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 353, 520)"
+dx="0" 
+class="s2_1"
+>+</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 368, 508)"
+dx="0,0.3" 
+class="s2_1"
+>48</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 373, 534)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<path d="M366.5,515.5l21,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 388, 520)"
+dx="0,0" 
+class="s2_1"
+>)(</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 401, 520)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 414, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 429, 508)"
+dx="0" 
+class="s2_1"
+>3</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 439, 508)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 433, 534)"
+dx="0" 
+class="s2_1"
+>4</text>
+
+<path d="M427.5,515.5l22,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 449, 520)"
+dx="0" 
+class="s2_1"
+>)</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 460, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 475, 508)"
+dx="0" 
+class="s2_1"
+>1</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 475, 534)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M475.5,515.5l10,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 490, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 504, 508)"
+dx="0,0.3,0.1" 
+class="s2_1"
+>112</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 514, 534)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<path d="M504.5,515.5l28,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 536, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 553, 508)"
+dx="0" 
+class="s2_1"
+>7</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 563, 508)"
+dx="0" 
+class="s7_1"
+>x</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 558, 534)"
+dx="0" 
+class="s2_1"
+>4</text>
+
+<path d="M551.5,515.5l22,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 579, 520)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 592, 520)"
+dx="0,0.3,0.1,0,-0.4" 
+class="s2_1"
+>98 cm</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 639, 512)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="5" 
+y="552" 
+dx="0,0,0,0,-0.1,0,0,-0.1,0,0.1,0,0,0,0,-0.1" 
+class="s1_1"
+>En fonction de </text>
+
+<text 
+x="118" 
+y="552" 
+dx="0" 
+class="s6_1"
+>x</text>
+
+<text 
+x="126" 
+y="552" 
+dx="0,0,0,0,0,0,0,0.1,0,0,0.1,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0.2,-0.1,0.1,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,-0.1,0,0.2,-0.1,0,0,0,0,0.1,0,0,0,0,0.3" 
+class="s1_1"
+>, il existe une infinité de trapèzes satisfaisant ces conditions. </text>
+
+<text 
+x="5" 
+y="573" 
+dx="0,-0.2,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,0,0,0,-0.1,0,0,0,-0.1,0.2,0,-0.1,0.2,-0.1,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0.2,-0.1" 
+class="s1_1"
+>Ils ont tous la même aire égale à : 98 cm</text>
+
+<text 
+x="302" 
+y="566" 
+dx="0" 
+class="s8_1"
+>2</text>
+
+<text 
+x="308" 
+y="573" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<text 
+x="5" 
+y="594" 
+dx="0,0,-0.1,0,0,0,0,0,-0.1,0.2,-0.1,0,0,0.1,-0.1,0,-0.1,0.1,-0.1,0,-0.1,0,0,0,0.2,0,0,0,0,0,0,-0.1,0,-0.1,0,0,0,0,0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,0.1,0.1,-0.1,0,-0.1,0,0,0,0,0.2,-0.2,0,0,0,0.2,-0.2,0,0,0,0,-0.1,0,0,0,0.2,0,0.2,0,0,-0.1,0,0,0,0,0,0,-0.1,0.2,-0.1,0,0,0" 
+class="s1_1"
+>Dans l'exemple ci-dessous, on a choisi (en cm) : AB = 16 d'où l'on déduit CD = 12, EF = 4, </text>
+
+<text 
+x="5" 
+y="615" 
+dx="0,0,-0.1,0,-0.1,0,0,0,-0.1,0,0.2,-0.1,0,0,-0.1,0,0,0.2" 
+class="s1_1"
+>EG = 3 et FG = 7. </text>
+
+<text 
+x="5" 
+y="648" 
+dx="0,0,0,0" 
+class="s1_1"
+>On a</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 44, 648)"
+dx="0,-0.2,-0.2,0,-0.4,0,-0.2,0.1,0.1,-0.2,0,-0.1" 
+class="s2_1"
+>Aire(ABCD) =</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 159, 635)"
+dx="0,0,0.2,0,-0.2,2.3,1.8,0.1,-0.2" 
+class="s2_1"
+>FG(AB+CD)</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 206, 661)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M159.5,642.5l103,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 267, 648)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 284, 635)"
+dx="0,0.3,0,0,0,-1.6,0.3,0.3,0.1" 
+class="s2_1"
+>7(16 +12)</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 315, 661)"
+dx="0" 
+class="s2_1"
+>2</text>
+
+<path d="M282.5,642.5l75,0" class="g1_1" />
+<text 
+transform="matrix(1.01, 0, 0, 1, 362, 648)"
+dx="0" 
+class="s3_1"
+></text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 376, 648)"
+dx="0,0.3,0.3,0,-0.4" 
+class="s2_1"
+>98 cm</text>
+
+<text 
+transform="matrix(1.01, 0, 0, 1, 422, 639)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="430" 
+y="648" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<image x="2" y="667" width="720" height="369" xlink:href="1/img/1.png" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: Times_5;
+	src: url("fonts/Times_5.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_e;
+	src: url("fonts/SymbolMT_e.woff") format("woff");
+}
+
+@font-face {
+	font-family: Times-Italic_n;
+	src: url("fonts/Times-Italic_n.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

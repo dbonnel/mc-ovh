@@ -1,0 +1,112 @@
+\input{_header}
+\begin{h2}I. Organisation et représentation des données\end{h2}
+\cadre{bleu}{Définitions}{%
+     \begin{itemize}
+          \item Les statistiques permettent d'étudier un \textbf{caractère} d'une \textbf{population}.
+          \item Le nombre d'éléments de la population s'appelle l'\textbf{effectif global} (ou l'\textbf{effectif total}).
+          \item Pour une valeur de caractère donnée, l'\textbf{effectif} est le nombre d'éléments correspondant à cette valeur.
+          \item Une \textbf{série statistique} est un tableau donnant les effectifs pour chacune des valeurs possibles du caractère.
+     \end{itemize}
+}
+\bloc{orange}{Exemple 1}{%
+     On fait une étude portant sur l'âge des élèves d'un lycée.
+     \begin{itemize}
+          \item le \textbf{caractère} étudié est l'âge
+          \item la \textbf{population} est l'ensemble des élèves du lycée
+          \item l'\textbf{effectif global} est le nombre d'élèves du lycée
+          \item le tableau ci-dessous est la \textbf{série statistique} pour ce caractère dans un lycée donné~:
+   \begin{center}
+               \begin{tabular}{|c|c|c|c|c|c|c|c|c|} %class="compact" width="600"
+               \hline
+               âges (en années)  &  14  &   15  &  16  &  17  &  18  &  19  &  20
+               \\ \hline
+               effectifs         &  3   &   22  &  65  &  82  &  59  &  35  &  2
+               \\ \hline
+          \end{tabular}
+        \end{center}     
+        \end{itemize}
+}
+\bloc{orange}{Exemple 2 : création d'un tableau pour une série statistique}{%
+     On suppose que les notes à un contrôle dans une classe de 21 élèves sont les suivantes~:
+     \begin{center}
+     5 ; 14 ; 13 ; 16 ; 9 ; 8 ; 18 ; 2 ; 13 ; 12 ; 15 ; 12 ; 8 ; 6 ; 5 ; 17 ; 3 ; 19 ; 9 ; 13 ; 14
+     \end{center}
+     Ces données brutes sont assez peu pratiques à utiliser sous cette forme (notamment lorsqu'il y a beaucoup de valeurs).
+     \par
+     Pour commencer on commence à trier les notes de la plus petite à la plus grande :
+     \begin{center}
+     2 ; 3 ; 5 ; 5 ; 6 ; 8 ; 8 ; 9 ; 9 ; 12 ; 12 ; 13 ; 13 ; 13 ; 14 ; 14 ; 15 ; 16 ; 17 ; 18 ; 19
+     \end{center}
+     Ensuite, on va créer le tableau de cette série en indiquant pour chaque note son effectif c'est à dire le nombre d'élèves ayant obtenu cette note :
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}%class="compact" width="600"
+          \hline
+         notes       &  2  &   3  &   5  &  6  &  8  &  9  &  12  &  13  &  14  &  15  &  16  &  17  &  18  &  19
+          \\ \hline
+          effectifs   &  1   &  1  &  2   &  1  &  2  &  2  &  2   &  3   &  2  &  1   &  1  &  1  &  1  &  1
+          \\ \hline
+     \end{tabular}
+\end{center}
+}
+\begin{h2}II - Médiane - Quartiles\end{h2}
+\cadre{bleu}{Définition}{%
+     La \textbf{médiane} d'une série statistique est la valeur du caractère qui partage la population en deux classes de même effectif.
+}
+\bloc{cyan}{Remarque}{%
+     En pratique pour trouver la médiane d'une série statistique d'effectif global $n$ :
+     \begin{itemize}
+          \item On ordonne les valeurs du caractère dans l'ordre croissant.
+          \item Si $n$ est pair, la médiane sera la moyenne des valeurs du terme de rang $\frac{n}{2}$ et du terme de rang $\frac{n}{2}+1$.
+          \item Si $n$ est impair, la médiane sera la valeur du terme de rang $\frac{n+1}{2}$.
+          \item Lorsque l'effectif global est élevé, il est souvent utile de calculer les effectifs cumulés pour trouver cette valeur.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Reprenons l'exemple 2 ci-dessus.
+     \par
+     Dans cet exemple, c'est la 11ème note ($11=\frac{21+1}{2}$) qui est la médiane. En effet, il y a 10 notes au dessous et 10 notes au dessus :
+     \begin{center}
+     2 ; 3 ; 5 ; 5 ; 6 ; 8 ; 8 ; 9 ; 9 ; 12 ; \textbf{$12$} ; 13 ; 13 ; 13 ; 14 ; 14 ; 15 ; 16 ; 17 ; 18 ; 19
+     \end{center}
+     \textbf{La médiane est donc 12.}
+     \par
+     Supposons qu'il n'y ait que 20 élèves (on enlève l'élève qui a eu 2) :
+     \begin{center}
+     3 ; 5 ; 5 ; 6 ; 8 ; 8 ; 9 ; 9 ; 12 ; 12 ; 13 ; 13 ; 13 ; 14 ; 14 ; 15 ; 16 ; 17 ; 18 ; 19
+     \end{center}
+     Il n'y a plus ici de note située "juste au milieu".
+     \par
+     Si on choisit la 10ème note (qui est 12) il y a 9 notes en dessous et 10 notes au dessus.
+     \par
+     Si on choisit la 11ème note (qui est 13) il y a 10 notes en dessous et 9 notes au dessus.
+\begin{center}
+     3 ; 5 ; 5 ; 6 ; 8 ; 8 ; 9 ; 9 ; 12 ; \textbf{$12 ; 13 $}; 13 ; 13 ; 14 ; 14 ; 15 ; 16 ; 17 ; 18 ; 19
+\end{center}
+      Dans ce cas, on prend comme médiane la moyenne de 12 et de 13 c'est à dire 12,5.
+           \par
+     \textbf{La médiane est donc 12,5.}
+}
+\cadre{bleu}{Définitions}{%
+     \begin{itemize}
+          \item Le \textbf{premier quartile} Q1 d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins un quart des données sont inférieures ou égales à Q1.
+          \item Le \textbf{troisième quartile} Q3  d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins trois quarts des données sont inférieures ou égales à Q3.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Reprenons l'exemple des notes ci-dessus (avec 21 élèves).
+     \par
+     Pour le \textbf{premier quartile} il faut qu'il y ait au moins 1/4 des notes qui soient inférieures ou égales. 1/4$\times $21=5,25. Le premier quartile est donc la 6ème note.
+ \begin{center}
+         2 ; 3 ; 5 ; 5 ; 6 ; \textbf{$8$} ; 8 ; 9 ; 9 ; 12 ; 12 ; 13 ; 13 ; 13 ; 14 ; 14 ; 15 ; 16 ; 17 ; 18 ; 19
+     \end{center}   
+      \textbf{le premier quartile est 8.}
+      \par
+     Pour le \textbf{troisième quartile} il faut qu'il y ait au moins 3/4 des notes qui soient inférieures ou égales.3/4$\times $21=15,75.
+     \par
+     Le troisième quartile est donc la 16ème note.
+ \begin{center}
+               2 ; 3 ; 5 ; 5 ; 6 ; 8 ; 8 ; 9 ; 9 ; 12 ; 12 ; 13 ; 13 ; 13 ; 14 ; \textbf{$14$} ; 15 ; 16 ; 17 ; 18 ; 19
+      \end{center}     
+      \textbf{le troisième quartile est 14.}
+}
+\input{_footer}

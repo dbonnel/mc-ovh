@@ -1,0 +1,178 @@
+\alpha\input{_header}
+\meta{url}{/exercices/fonction-trigonometrique-bac/}
+\meta{pid}{1357}
+\meta{titre}{[Bac] Etude d'une fonction trigonométrique}
+\meta{type}{exercices}
+%
+\textit{(d'après Bac S Nouvelle Calédonie 2005 - Sujet modifié pour être conforme au programme actuel)}
+\par
+Un lapin désire traverser une route de $4$ mètres de largeur. Un camion, occupant toute la route, arrive à sa rencontre à la vitesse de $60$ km/h. Le lapin décide au dernier moment de traverser, alors que le camion n'est plus qu'à $7$ mètres de lui. Son démarrage est foudroyant et on suppose qu'il effectue la traversée en ligne droite au maximum de ses possibilités, c'est à dire à ...  $30$ km/h !
+\par
+L'avant du camion est représenté par le segment $\left[CC^{\prime}\right]$ sur le schéma ci-dessous.
+
+\begin{center}
+\imgsvg{mc-0341}{0.3}% alt="Bac S Nouvelle Calédonie 2005" style="width:40rem"
+\end{center}
+\\
+Le lapin part du point $A$ en direction de $D$.
+\par
+Cette direction est repérée par l'angle $\theta  =\widehat{BAD}$ avec $0 \leqslant  \theta  < \frac{\pi }{2}$(en radians).
+\begin{enumerate}
+     \item
+     Déterminer les distances $AD$ et $CD$ en fonction de $\theta $ et   les temps $t_{1}$ et $t_{2}$ mis par le lapin et le camion pour  parcourir respectivement les distances $AD$ et $CD$.
+     \item
+     On pose $f\left(\theta \right)=\frac{7}{2}+\frac{2 \sin \theta -4}{\cos \theta }$.
+     \par
+     Montrer que le lapin aura traversé la route avant le passage du camion si et seulement si $f\left(\theta \right) > 0$.
+     \item
+     Etudier la fonction $f$ sur l'intervalle $\left[0 ; \frac{\pi }{2}\right[$.
+     \par
+     Conclure.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Le triangle $ABC$ étant rectangle en $B$ :
+          \par
+          $\cos \theta =\frac{AB}{AD}$ donc $AD=\frac{AB}{\cos \theta }=\frac{4}{\cos \theta }$
+          \par
+          $\sin \theta =\frac{BD}{AD}$ donc $BD=AD \sin \theta = \frac{4 \sin \theta }{\cos \theta }$
+          \par
+          $CD=CB+BD=7+\frac{4 \sin \theta }{\cos \theta }$
+          \par
+          $60$km/h=$1 000$m/minute et $30$km/h=$500$m/minute
+          \par
+          Le temps, en minutes, mis par le lapin pour parcourir $AD$ est donc :
+          \par
+          $t_{1}=\frac{1}{500}\left(\frac{4}{\cos \theta }\right)$
+          \par
+          Le temps, en minutes, mis par le camion pour parcourir $CD$ :
+          \par
+          $t_{2}= \frac{1}{1000}\left(7+\frac{4 \sin \theta }{\cos \theta }\right)$
+          \item
+          Le lapin aura traversé la route avant le passage du camion si et seulement si $t_{2} > t_{1}$, c'est à dire $t_{2}-t_{1} > 0$. Or :
+          \par
+          $t_{2}-t_{1}=\frac{1}{1000}\left(7+\frac{4 \sin \theta }{\cos \theta }\right)-\frac{1}{500}\left(\frac{4}{\cos \theta }\right)$
+          \par
+          $t_{2}-t_{1}=\frac{1}{500}\left(\frac{1}{2}\left(7+\frac{4 \sin \theta }{\cos \theta }\right)-\frac{4}{\cos \theta }\right)$
+          \par
+          $t_{2}-t_{1}=\frac{1}{500}\left(\frac{7}{2}+\frac{2 \sin \theta }{\cos \theta }-\frac{4}{\cos \theta }\right)$
+          \par
+          $t_{2}-t_{1}=\frac{1}{500}f\left(\theta \right)$
+          \par
+          Donc le lapin aura traversé la route avant le passage du camion si et seulement si $f\left(\theta \right) > 0$.
+          \item
+          On pose $u\left(\theta \right)=2\sin \theta -4$ et $v\left(\theta \right)=\cos\left(\theta \right)$
+          \par
+          $f^{\prime}\left(\theta \right)=\frac{u^{\prime}\left(\theta \right)v\left(\theta \right)-u\left(\theta \right)v^{\prime}\left(\theta \right)}{v\left(\theta \right)^{2}}=\frac{2\cos^{2}\theta -\left(2\sin \theta -4\right)\times -\sin \theta }{\cos^{2}\theta }$
+          \par
+          $f^{\prime}\left(\theta \right)=\frac{2\left(\cos^{2}\theta +\sin^{2}\theta \right)-4\sin \theta }{\cos^{2}\theta }=\frac{2-4\sin \theta }{\cos^{2}\theta }=\frac{2\left(1-2\sin \theta \right)}{\cos^{2}\theta }$
+          \par
+          $f^{\prime}\left(\theta \right) > 0  \Leftrightarrow   1-2\sin \theta  > 0  \Leftrightarrow  -2\sin \theta  > -1 \Leftrightarrow  \sin \theta  < \frac{1}{2}  \Leftrightarrow   \sin \theta  < \sin \frac{\pi }{6}$
+          \par
+          Or la fonction sinus étant strictement croissante sur l'intervalle $\left[0 ; \frac{\pi }{2}\right[$, $\sin \theta  < \sin \frac{\pi }{6}  \Leftrightarrow   \theta  < \frac{\pi }{6}$
+          \par
+          $f\left(0\right)=\frac{7}{2}-4=-\frac{1}{2}$
+          \par
+          Lorsque $\theta $ tend vers $\frac{\pi }{2}$ en restant inférieur à $\frac{\pi }{2}$, $\cos \theta $ tend vers zéro en restant positif et $2 \sin \theta -4$ est négatif donc, par quotient :
+          \par
+          $\lim\limits_{\theta \rightarrow \frac{\pi }{2}^-}\frac{2 \sin \theta -4}{\cos \theta }=-\infty $
+          \par
+          et par somme :
+          \par
+          $\lim\limits_{\theta \rightarrow \frac{\pi }{2}^-}f\left(x\right)=-\infty $
+          \par
+          On en déduit le tableau de variation de la fonction $f$ :
+%##
+% type=table; width=      25; l3=20
+%--
+% x|  0  ~    \frac{ \pi }{ 6 }   ~   \frac{ \pi }{ 2 }  
+% f'(x)|  ~       +               :0        -     ~
+% f(x)|   -\frac{1}{2}  /   :f \left(\frac{\pi}{6}\right)    \   -\infty
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.6}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (54*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ 0 $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ \frac{ \pi }{ 6 } $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ \frac{ \pi }{ 2 } $};
+       \draw (0, -20*\height) -- (54*\width, -20*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -20*\height);
+       \node (l1c0) at (5*\width,-15*\height) {$ f'(x) $};
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-15*\height) {$ + $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -20*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (41*\width,-15*\height) {$ - $};
+       \node (l1c5) at (50*\width,-15*\height) {$ ~ $};
+       \draw (0, -40*\height) -- (54*\width, -40*\height);
+       \draw (10*\width, -20*\height) -- (10*\width, -40*\height);
+       \node (l2c0) at (5*\width,-30*\height) {$ f(x) $};
+       \node (l2c1) at (14*\width,-35*\height) {$ -\frac{1}{2} $};
+       \node (l2c2) at (23*\width,-30*\height) {$ ~ $};
+       \draw[light] (32*\width, -20*\height) -- (32*\width, -40*\height);
+       \node (l2c3) at (32*\width,-25*\height) {$ f \left(\frac{\pi}{6}\right) $};
+       \node (l2c4) at (41*\width,-30*\height) {$ ~ $};
+       \node (l2c5) at (50*\width,-35*\height) {$ -\infty $};
+       \draw (0, 0) rectangle (54*\width, -40*\height);
+       \draw[fleche] (l2c1) -- (l2c3);
+       \draw[fleche] (l2c3) -- (l2c5);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+et sa courbe représentative  :
+%##
+% type=graphic;   width=30; 
+% xmin=-.3; xmax=1.2; ymin=-.9; ymax=.6; xunit=5; yunit=5
+%--
+%grid=0;subgriddiv=1
+%repere=0
+%axes=1
+%fct=7/2+(2*sin(x)-4)/cos(x);def=0.01,\xmax;linecolor=blue
+%point=~(.53,.03)(.5,.02);linecolor=red;dotsize=.15
+%text=\red \alpha;pos=[t](.5,.1)
+%--
+\begin{center}
+ \begin{extern}%style="width:30rem" alt="Fonction"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \def\xmin{-0.3}
+       \def\xmax{1.2}
+       \def\ymin{-0.9}
+       \def\ymax{0.6}
+       \def\xunit{5}
+       \def\yunit{5}
+       \psset{xunit=\xunit, yunit=\yunit, algebraic=true}
+       \fontsize{15pt}{15pt}\selectfont
+       \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+       \psaxes[linewidth=0.75pt,showorigin=false]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+       \rput(-0.5,-0.5){$O$}
+       \psplot[linewidth=1pt,plotpoints=2000,linecolor=blue]{0.01}{\xmax}{7/2+(2*sin(x)-4)/cos(x)}
+                    \psdots[dotsize=.15,linecolor=red](.53,.03)
+       \rput(.5,.02){$\red ~$}
+       \rput[t](.5,.1){$\red \alpha$}
+       \end{pspicture*}
+      }
+   \end{extern}
+\end{center}
+%##
+A la calculatrice on trouve : $f\left(\frac{\pi }{6}\right)\approx 0.04 > 0$
+          \par
+          Le lapin peut donc être sauvé si l'angle $\theta $ est proche de $\frac{\pi }{6}$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

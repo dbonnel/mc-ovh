@@ -1,0 +1,51 @@
+\input{_header}
+\meta{url}{/exercices/statistiques-salaires/}
+\meta{pid}{703}
+\meta{titre}{Statistiques : Salaire médian - quartiles}
+\meta{type}{exercices}
+%
+La grille des salaires des employés d'une PME est données par le tableau ci-dessous :
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+     \hline
+ $ \textbf{Catégorie}   $ &  Ouvrier simple  &  Ouvrier qualifié  &  Cadre moyen  &  Cadre supérieur  &  Dirigeant
+     \\ \hline
+    $  \textbf{Effectif}$   &  40  &  19  &  12  &  8  &  1
+     \\ \hline
+    $  \textbf{Salaire en euros}$  &  950  &  1300  &  1700  &  3500  &  8000
+     \\ \hline
+\end{tabularx}
+\begin{enumerate}
+     \item
+     Quel est l'effectif total de l'entreprise ? Calculer le salaire moyen.
+     \item
+     Quel est le salaire médian pour cette entreprise.
+     \item
+     Quels sont les premier et troisième quartiles?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          L'effectif total est :
+          \par
+          $N=40+19+12+8+1=80$
+          \par
+          Le salaire moyen s'obtient en faisant la moyenne pondérée des salaires :
+          \par
+          $m=\frac{40\times 950+19\times 1300+12\times 1700+8\times 3500+1\times 8000}{80} $\nosp$ =1488,75$ euros
+          \item
+          L'effectif étant pair, le salaire médian est la moyenne des salaires de l'employé de rang $\frac{n}{2}$ (dans l'échelle des salaires) et de l'employé de rang $\frac{n}{2}+1$ (voir \mcLien{/cours/seconde/statistiques-organisation-representation-donnees}{cours}).
+          \par
+          Il s'agit ici des 40ème et 41ème employés. Le 40ème employé est un ouvrier simple et le 41ème est un ouvrier qualifié.
+          \par
+          Le salaire médian est donc :
+          \par
+          $M=\frac{950+1300}{2}=1125$ euros
+          \item
+          On procède différemment pour le calcul des quartiles. On divise l'effectif total par $4 : 80$÷$4=20$.
+          \par
+          Le \textbf{premier} quartile est le salaire du 20ème employé donc $Q_{1}=950$ euros.
+          \par
+          Le \textbf{troisième} quartile est le salaire du 60ème employé (cadre moyen) donc $Q_{3}=1700$ euros.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

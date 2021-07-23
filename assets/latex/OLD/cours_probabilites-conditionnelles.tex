@@ -1,0 +1,226 @@
+\input{_header}
+\begin{h2}I - Conditionnement\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     $A$ et $B$ étant deux événements tels que $p\left(A\right)\neq 0$, la \textbf{probabilité de $B$ sachant $A$} est le nombre réel :
+     \par
+     $p_{A}\left(B\right)=\frac{p\left(A \cap  B\right)}{p\left(A\right)}$
+}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item On note parfois $p\left(B/A\right)$ au lieu de $p_{A}\left(B\right)$.
+          \item \textbf{Rappel} : Le signe $\cap $ (intersection) correspond à \textbf{"et"}.
+          \item De même si $p\left(B\right)\neq 0$, la \textbf{probabilité de $A$ sachant $B$} est $p_{B}\left(A\right)=\frac{p\left(A \cap  B\right)}{p\left(B\right)}$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e10"
+     Une urne contient 3 boules blanches et 4 boules rouges indiscernables au toucher. On tire successivement 2 boules \textbf{sans remise}
+     On note :
+     \begin{itemize}
+          \item $B_{1}$  l'événement \textit{"la première boule tirée est blanche"}
+          \item $B_{2}$  l'événement \textit{"la seconde boule tirée est blanche"}
+     \end{itemize}
+     la probabilité $p_{B_{1}}\left(B_{2}\right)$ est la probabilité que la seconde boule soit blanche sachant que la première était blanche. Pour la calculer, on se place dans la situation où l'on se trouve après avoir obtenu une boule blanche au premier tirage. Il reste alors 6 boules dans l'urne; 2 sont blanches et 4 sont rouges.
+     \par
+     La probabilité de tirer une boule blanche au second tirage est donc :
+     \par
+     $p_{B_{1}}\left(B_{2}\right)=\frac{2}{6}=\frac{1}{3}$
+     \par
+     Cette probabilité se place sur l'arbre de la façon suivante :
+\begin{extern} %width="350" alt="arbre pondéré" class="aligncenter"
+     % Racine à Gauche, développement vers la droite
+     \begin{tikzpicture}[xscale=1,yscale=1]
+          % Styles (MODIFIABLES)
+          \tikzstyle{fleche}=[-,>=latex,thick]
+          \tikzstyle{noeud}=[fill=white,circle,draw]
+          \tikzstyle{feuille}=[fill=white,circle,draw]
+          \tikzstyle{etiquette}=[midway,fill=white]
+          % Dimensions (MODIFIABLES)
+          \def\DistanceInterNiveaux{3}
+          \def\DistanceInterFeuilles{2}
+          % Dimensions calculées (NON MODIFIABLES)
+          \def\NiveauA{(0)*\DistanceInterNiveaux}
+          \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+          \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+          \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+          % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+          \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+          \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$B_1$};
+          \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B_2}$};
+          \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{B_1}$};
+          \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B_2}$};
+          % Arcs (MODIFIABLES : Styles)
+          \draw[fleche] (R)--(Ra) node[etiquette] {$3/7$};
+          \draw[fleche] (Ra)--(Raa) node[etiquette] {$\color{red} 1/3$};
+          \draw[fleche] (Ra)--(Rab) node[etiquette] {$2/3$};
+          \draw[fleche] (R)--(Rb) node[etiquette] {$4/7$};
+          \draw[fleche] (Rb)--(Rba) node[etiquette] {$\cdots$};
+          \draw[fleche] (Rb)--(Rbb) node[etiquette] {$\cdots$};
+     \end{tikzpicture}
+\end{extern}
+     On peut calculer de même $p_{\overline{B_{1}}}\left(B_{2}\right)$ est la probabilité que la seconde boule soit blanche sachant que la première était rouge. Il reste alors 3 boules blanches et 3 boules rouges après le premier tirage donc :
+     \par
+     $p_{\overline{B_{1}}}\left(B_{2}\right)=\frac{3}{6}=\frac{1}{2}$
+     \par
+     et on peut compléter l'arbre :
+ \begin{extern} %width="350" alt="arbre pondéré" class="aligncenter"
+     % Racine à Gauche, développement vers la droite
+     \begin{tikzpicture}[xscale=1,yscale=1]
+          % Styles (MODIFIABLES)
+          \tikzstyle{fleche}=[-,>=latex,thick]
+          \tikzstyle{noeud}=[fill=white,circle,draw]
+          \tikzstyle{feuille}=[fill=white,circle,draw]
+          \tikzstyle{etiquette}=[midway,fill=white]
+          % Dimensions (MODIFIABLES)
+          \def\DistanceInterNiveaux{3}
+          \def\DistanceInterFeuilles{2}
+          % Dimensions calculées (NON MODIFIABLES)
+          \def\NiveauA{(0)*\DistanceInterNiveaux}
+          \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+          \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+          \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+          % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+          \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+          \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$B_1$};
+          \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B_2}$};
+          \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{B_1}$};
+          \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B_2}$};
+          % Arcs (MODIFIABLES : Styles)
+          \draw[fleche] (R)--(Ra) node[etiquette] {$3/7$};
+          \draw[fleche] (Ra)--(Raa) node[etiquette] {$1/3$};
+          \draw[fleche] (Ra)--(Rab) node[etiquette] {$2/3$};
+          \draw[fleche] (R)--(Rb) node[etiquette] {$4/7$};
+          \draw[fleche] (Rb)--(Rba) node[etiquette] {$1/2$};
+          \draw[fleche] (Rb)--(Rbb) node[etiquette] {$1/2$};
+     \end{tikzpicture}
+\end{extern}
+}
+\cadre{vert}{Propriété}{% id="p20"
+     De la définition précédente, on déduit immédiatement que :
+     \par
+     $p\left(A \cap  B\right)=p\left(A\right)\times p_{A}\left(B\right)$
+}
+\bloc{cyan}{Remarque}{% id="r20"
+     Attention à ne pas confondre :
+     \begin{itemize}
+          \item  $p\left(A \cap  B\right)$ qui est la probabilité que $A$ \textbf{et} $B$ soient réalisés alors qu'on ne possède \textbf{aucune indication} sur la réalisation de $A$ ou de $B$
+          \item  $p_{A}\left(B\right)$ qui est la probabilité que $B$ soit réalisé alors qu'\textbf{on sait déjà} que $A$ est réalisé.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Si l'on reprend l'exemple précédent, la probabilité de tirer 2 boules blanches est $p\left(B_{1} \cap  B_{2}\right)$ \textit{(il faut que la première boule soit blanche \textbf{et} que la seconde boule soit blanche)}.
+     \par
+     D'après la formule précédente :
+     \par
+     $p\left(B_{1} \cap  B_{2}\right)=p\left(B_{1}\right)\times p_{B_{1}}\left(B_{2}\right)=\frac{3}{7}\times \frac{1}{3}=\frac{1}{7}$
+}
+\begin{h2}II - Formule des probabilités totales\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     On dit que les événements $A_{1}, A_{2}, . . . , A_{n}$ forment une \textbf{partition} de l'univers $\Omega $ si chaque élément de $\Omega $ appartient à un et un seul des $A_{i}$
+}
+\bloc{orange}{Exemple}{% id="e40"
+     On lance un dé à  6 faces. On peut modéliser cette expérience par l'univers $\Omega  = \left\{1; 2; 3; 4; 5; 6\right\}$.
+     \par
+     Les événements :
+     \begin{itemize}
+          \item $A_{1}=\left\{1; 2\right\}$ \textit{(le résultat est inférieur à 3)}
+          \item $A_{2}=\left\{3\right\}$ \textit{(le résultat est égal à 3)}
+          \item $A_{3}=\left\{4; 5; 6\right\}$ \textit{(le résultat est supérieur à 3)}
+     \end{itemize}
+     forment une partition de $\Omega $. En effet, chacune des six éventualités $1, 2, 3, 4, 5, 6$ appartient à et à un seul des $A_{i}$.
+}
+\bloc{cyan}{Remarque}{% id="r40"
+     $A$ et $\overline{A}$ forment une partition de l'univers, quel que soit l'événement $A$. En effet, toute éventualité appartient soit à un événement, soit à son contraire et ne peut appartenir au deux en même temps.
+}
+\cadre{rouge}{Théorème (Formule des probabilités totales)}{% id="t50"
+     Soit  $A_{1}, A_{2}, . . . , A_{n}$ une \textbf{partition} de l'univers $\Omega $. Pour tout événement $B$ :
+     \par
+     $p\left(B\right)=p\left(A_{1} \cap  B\right) + p\left(A_{2} \cap  B\right) + . . . + p\left(A_{n} \cap  B\right)$
+     \par
+     $p\left(B\right)=p\left(A_{1}\right)\times p_{A_{1}}\left(B\right) + p\left(A_{2}\right)\times p_{A_{2}}\left(B\right) + . . . + p\left(A_{n}\right)\times p_{A_{n}}\left(B\right)$
+}
+\cadre{vert}{Cas particulier fréquent}{% id="p55"
+     Comme $A$ et $\overline{A}$ forme une partition de l'univers :
+     \par
+     $p\left(B\right)=p\left(A \cap  B\right) + p\left(\overline{A} \cap  B\right)=p\left(A\right)\times p_{A}\left(B\right) + p\left(\overline{A}\right)\times p_{\overline{A}}\left(B\right)$
+}
+\bloc{cyan}{Remarque}{% id="r55"
+     Le diagramme ci-dessous montre, sur un arbre,  les chemins à prendre en compte pour calculer $p\left(B\right)$. Ce sont les chemins qui aboutissent à $B$.
+ \begin{extern} %width="350" alt="arbre pondéré" class="aligncenter"
+     % Racine à Gauche, développement vers la droite
+     \begin{tikzpicture}[xscale=1,yscale=1]
+          % Styles (MODIFIABLES)
+          \tikzstyle{fleche}=[-,>=latex,thick]
+          \tikzstyle{noeud}=[fill=white,circle,draw]
+          \tikzstyle{feuille}=[fill=white,circle,draw]
+          \tikzstyle{etiquette}=[midway,fill=white]
+          % Dimensions (MODIFIABLES)
+          \def\DistanceInterNiveaux{3}
+          \def\DistanceInterFeuilles{2}
+          % Dimensions calculées (NON MODIFIABLES)
+          \def\NiveauA{(0)*\DistanceInterNiveaux}
+          \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+          \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+          \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+          % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+          \node[red,noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+          \node[red,noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$A$};
+          \node[red,feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B$};
+          \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B}$};
+          \node[red,noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{A}$};
+          \node[red,feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B$};
+          \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B}$};
+          % Arcs (MODIFIABLES : Styles)
+          \draw[red,fleche] (R)--(Ra) node[etiquette] {$\color{red} p(A)$};
+          \draw[red,fleche] (Ra)--(Raa) node[etiquette] {$\color{red} p_A(B)$};
+          \draw[fleche] (Ra)--(Rab) node[etiquette] {$p_A(\overline{B})$};
+          \draw[red,fleche] (R)--(Rb) node[etiquette] {$\color{red} p(\overline{A})$};
+          \draw[red,fleche] (Rb)--(Rba) node[etiquette] {$\color{red} p_{\overline{A}}(B)$};
+          \draw[fleche] (Rb)--(Rbb) node[etiquette]  {$p_{\overline{A}}(\overline{B})$};
+     \end{tikzpicture}
+\end{extern}}
+\bloc{orange}{Exemple}{% id="e55"
+     Si on reprend l'exemple ci-dessus, la probabilité que la seconde boule soit blanche est :
+     \par
+     $p\left(B_{2}\right)=p\left(B_{1} \cap  B_{2}\right) + p\left(\overline{B_{1}} \cap  B_{2}\right)$
+     \par
+     $p\left(B_{2}\right)=p\left(B_{1}\right)\times p_{B_{1}}\left(B_{2}\right) + p\left(\overline{B_{1}}\right)\times p_{\overline{B_{1}}}\left(B_{2}\right)$
+ \begin{extern} %width="350" alt="arbre pondéré" class="aligncenter"
+     % Racine à Gauche, développement vers la droite
+     \begin{tikzpicture}[xscale=1,yscale=1]
+          % Styles (MODIFIABLES)
+          \tikzstyle{fleche}=[-,>=latex,thick]
+          \tikzstyle{noeud}=[fill=white,circle,draw]
+          \tikzstyle{feuille}=[fill=white,circle,draw]
+          \tikzstyle{etiquette}=[midway,fill=white]
+          % Dimensions (MODIFIABLES)
+          \def\DistanceInterNiveaux{3}
+          \def\DistanceInterFeuilles{2}
+          % Dimensions calculées (NON MODIFIABLES)
+          \def\NiveauA{(0)*\DistanceInterNiveaux}
+          \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+          \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+          \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+          % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+          \node[red,noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$\ $};
+          \node[red,noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$B_1$};
+          \node[red,feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{B_2}$};
+          \node[red,noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{B_1}$};
+          \node[red,feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$B_2$};
+          \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{B_2}$};
+          % Arcs (MODIFIABLES : Styles)
+          \draw[red,fleche] (R)--(Ra) node[etiquette] {$\color{red} 3/7$};
+          \draw[red,fleche] (Ra)--(Raa) node[etiquette] {$\color{red} 1/3$};
+          \draw[fleche] (Ra)--(Rab) node[etiquette] {$2/3$};
+          \draw[red,fleche] (R)--(Rb) node[etiquette] {$\color{red} 4/7$};
+          \draw[red,fleche] (Rb)--(Rba) node[etiquette] {$\color{red} 1/2$};
+          \draw[fleche] (Rb)--(Rbb) node[etiquette] {$1/2$};
+     \end{tikzpicture}
+\end{extern}
+     $p\left(B_{2}\right)=\frac{3}{7}\times \frac{1}{3}+\frac{4}{7}\times \frac{1}{2}=\frac{1}{7}+\frac{2}{7}=\frac{3}{7}$
+}
+\input{_footer}

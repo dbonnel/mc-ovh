@@ -1,0 +1,306 @@
+\input{_header}
+\begin{h2}1. Notion de vecteur\end{h2}
+\cadre{bleu}{Définition}{%
+     Un \textbf{vecteur} est défini par sa \textbf{direction}, son \textbf{sens} et sa \textbf{longueur}.
+}
+\bloc{vert}{Remarque}{%
+     Le mot \textbf{direction} désigne la direction de la droite qui "porte" ce vecteur; le mot \textbf{sens} permet de définir un sens de parcours sur cette droite parmi les deux possibles.
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="220" alt="vecteurs égaux"
+               \resizebox{5.5cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0.,0.5)(8.2,6.)
+                         \begin{Large}
+                              \psline{->}(1.,3.)(6.,5.)
+                              \psline{->}(2.,1.)(7.,3.)
+                              \psdots[dotstyle=*,linecolor=blue](1.,3.)
+                              \rput[bl](0.38,2.94){\blue{$A$}}
+                              \psdots[dotstyle=*,linecolor=blue](6.,5.)
+                              \rput[bl](6.08,5.2){\blue{$B$}}
+                              \psdots[dotstyle=*,linecolor=blue](2.,1.)
+                              \rput[bl](1.42,0.88){\blue{$C$}}
+                              \psdots[dotstyle=*,linecolor=blue](7.,3.)
+                              \rput[bl](7.08,3.2){\blue{$D$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ ont la même direction, le même sens, la même longueur. Ils sont égaux.
+}
+\bloc{vert}{Remarque}{%
+     \begin{center}
+          \begin{extern}%width="240" alt="nommer un vecteur"
+               \resizebox{6cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0.,0.5)(9.2,4.)
+                         \begin{Large}
+                              \psline{->}(1.,1.)(8.,3.)
+                              \psdots[dotstyle=*,linecolor=blue](1.,1.)
+                              \rput[bl](0.38,0.94){\blue{$A$}}
+                              \psdots[dotstyle=*,linecolor=blue](8.,3.)
+                              \rput[bl](8.08,3.2){\blue{$B$}}
+                              \rput[bl](4.3,2.3){\red{$\vect{u}$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Pour nommer un vecteur on peut :
+     \begin{itemize}
+          \item utiliser l'origine et l'extrémité d'un représentant du vecteur : on parlera du vecteur $\overrightarrow{AB}$
+          \item lui donner un nom à l'aide d'une lettre (en générale minuscule) : on parlera alors du vecteur $\vec{u}$
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%
+     $\overrightarrow{AA}$, $\overrightarrow{BB}$, ... représentent un même vecteur de longueur nulle appelé \textbf{vecteur nul} et noté $\overrightarrow{0}$.
+}
+\bloc{cyan}{Remarque}{%
+     Le vecteur nul est assez particulier. En effet, contrairement aux autres vecteurs, il n'a ni direction, ni sens! Mais il intervient souvent dans les calculs.
+}
+\cadre{bleu}{Définition}{%
+     On appelle \textbf{norme} du vecteur $\overrightarrow{AB}$ et on note $||\overrightarrow{AB}||$ la longueur du segment $\left[AB\right]$ .
+}
+\bloc{vert}{Remarque}{%
+     On a donc $||\overrightarrow{AB}||=AB$.
+}
+\cadre{vert}{Propriété}{%
+     $M$ est le milieu du segment $\left[AB\right]$ si et seulement si $\overrightarrow{AM}=\overrightarrow{MB}$.
+}
+\begin{center}
+     \begin{extern}%width="240" alt="nommer un vecteur"
+          \resizebox{6cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(0.,0.5)(9.2,4.)
+                    \begin{Large}
+                         \psline{->}(1.,1.)(8.,3.)
+                         \psline{->}(1.,1.)(4.5,2.)
+                         \psdots[dotstyle=*,linecolor=blue](1.,1.)
+                         \rput[bl](0.38,0.94){\blue{$A$}}
+                         \psdots[dotstyle=*,linecolor=blue](8.,3.)
+                         \rput[bl](8.08,3.2){\blue{$B$}}
+                         \rput[bl](4.3,2.3){\blue{$M$}}
+                    \end{Large}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarque}{%
+     On rappelle que l'égalité de distance $AM=MB$ est insuffisante pour montrer que $M$ est le milieu de $\left[AB\right]$ (cette égalité montre seulement que M est équidistant de $A$ et $B$ c'est à dire est sur la médiatrice de $\left[AB\right]$). L'égalité de vecteurs $\overrightarrow{AM}=\overrightarrow{MB}$, par contre, suffit à montrer que $M$ est le milieu de $\left[AB\right]$.
+}
+\cadre{vert}{Propriété}{%
+     Le quadrilatère $\left(ABCD\right)$ est un parallélogramme si et seulement si $\overrightarrow{AB}=\overrightarrow{DC}$.
+}
+\begin{center}
+     \begin{extern}%width="240" alt="vecteurs et parallélogramme"
+          \resizebox{5.5cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(0.,0.5)(9.2,6.)
+                    \begin{Large}
+                         \psline[linecolor=red]{->}(1.,3.)(6.,5.)
+                         \psline[linecolor=red]{->}(3.,1.)(8.,3.)
+                         \psline[linecolor=gray](1.,3.)(3.,1.)
+                         \psline[linecolor=gray](6.,5.)(8.,3.)
+                         \psdots[dotstyle=*,linecolor=blue](1.,3.)
+                         \rput[bl](0.38,2.94){\blue{$A$}}
+                         \psdots[dotstyle=*,linecolor=blue](6.,5.)
+                         \rput[bl](6.08,5.2){\blue{$B$}}
+                         \psdots[dotstyle=*,linecolor=blue](3.,1.)
+                         \rput[bl](2.4,0.68){\blue{$D$}}
+                         \psdots[dotstyle=*,linecolor=blue](8.,3.)
+                         \rput[bl](8.08,3.2){\blue{$C$}}
+                    \end{Large}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item Attention à l'inversion des points $C$ et $D$ dans l'égalité $\overrightarrow{AB}=\overrightarrow{DC}$
+          \item Avec cette propriété, il suffit de prouver \textbf{une seule égalité} pour montrer qu'un quadrilatère est un parallélogramme. C'est une méthode plus puissante que celles vues en 4ème qui nécessitaient de démontrer deux propriétés (double parallélisme ou parallélisme et égalité de longueurs, etc.)
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%
+     La translation de vecteur $\vec{u}$ est la transformation du plan qui à tout point $M$ du plan associe l'unique point $M^{\prime}$ tel que $\overrightarrow{MM^{\prime}}=\vec{u}$
+}
+\begin{center}
+     \begin{extern}%width="200" alt="translation de vecteur u"
+          \resizebox{5.5cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \newrgbcolor{lightblue}{0.8 0.8 1.}
+               \begin{pspicture*}(0.,0.5)(8.2,6.)
+                    \begin{Large}
+                         \psline[linecolor=blue]{->}(1.,3.)(6.,5.)
+                         \psline[linecolor=lightblue]{->}(2.,1.)(7.,3.)
+                         \rput[bl](3.2,4.2){\blue{$\vect{u}$}}
+                         \psdots[dotstyle=*,linecolor=red](2.,1.)
+                         \rput[bl](1.3,0.88){\red{$M$}}
+                         \psdots[dotstyle=*,linecolor=red](7.,3.)
+                         \rput[bl](7.08,3.2){\red{$M'$}}
+                    \end{Large}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}\textit{Translation de vecteur $\vec{u}$}\end{center}
+\begin{h2}2. Somme de vecteurs\end{h2}
+On définit l'addition de deux vecteurs à l'aide de la relation de Chasles:
+\cadre{vert}{Propriété}{%id="p30"
+     Pour tous points $A$, $B$ et $C$ du plan : $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$ \textit{(Relation de Chasles)}
+}
+\begin{center}
+     \begin{extern}%width="210" alt="relation de Chasles"
+          \resizebox{5.5cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(0.,1.5)(8.2,6.)
+                    \begin{Large}
+                         \psline[linecolor=blue]{->}(1.,3.)(4.,5.)
+                         \psline[linecolor=blue]{->}(4,5)(7.,2.)
+                         \psline[linecolor=red]{->}(1.,3.)(7.,2.)
+                         \psdots[dotstyle=*,linecolor=blue](1.,3.)
+                         \rput[bl](0.38,2.94){\blue{$A$}}
+                         \psdots[dotstyle=*,linecolor=blue](4.,5.)
+                         \rput[bl](4.08,5.2){\blue{$B$}}
+                         \psdots[dotstyle=*,linecolor=blue](7.,2.)
+                         \rput[bl](7.08,2.2){\blue{$C$}}
+                    \end{Large}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}\textit{Relation de Chasles}\end{center}
+Pour appliquer la relation de Chasles, il faut que l'extrémité du premier vecteur coïncide avec l'origine du second. Pour additionner deux vecteurs qui ne sont pas dans cette configuration, on "reporte l'un des vecteurs à la suite de l'autre".
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="260" alt="somme de vecteurs"
+               \resizebox{5.5cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-1,0.5)(9.2,6.)
+                         \begin{Large}
+                              \psline[linecolor=red]{->}(0,2.)(8.,3.)
+                              \psline[linecolor=blue]{->}(1.,3.)(6.,5.)
+                              \psline[linecolor=gray]{->}(3.,1.)(8.,3.)
+                              \psline[linecolor=blue]{->}(0,2.)(3.,1)
+                              \psline[linecolor=lightgray,linestyle=dashed](1.,3.)(3.,1.)
+                              \psline[linecolor=lightgray,linestyle=dashed](6.,5.)(8.,3.)
+                              \psdots[dotstyle=*,linecolor=blue](1.,3.)
+                              \rput[bl](0.38,2.94){\blue{$C$}}
+                              \psdots[dotstyle=*,linecolor=blue](6.,5.)
+                              \rput[bl](6.08,5.2){\blue{$D$}}
+                              \psdots[dotstyle=*,linecolor=blue](0.,2.)
+                              \rput[bl](-0.6,1.8){\blue{$A$}}
+                              \psdots[dotstyle=*,linecolor=blue](3.,1.)
+                              \rput[bl](2.4,0.6){\blue{$B$}}
+                              \psdots[dotstyle=*,linecolor=blue](8.,3.)
+                              \rput[bl](8.08,3.2){\blue{$E$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Pour tracer la somme des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ on reporte le vecteur $\overrightarrow{CD}$ à la suite du vecteur $\overrightarrow{AB}$; cela donne le vecteur $\overrightarrow{BE}$ qui est égal au vecteur $\overrightarrow{CD}.$ \\
+     On applique alors la relation de Chasles : $\overrightarrow{AB}+\overrightarrow{BE}=\overrightarrow{AE}$ . La somme cherchée peut donc être représentée par le vecteur $\overrightarrow{AE}.$
+}
+\bloc{orange}{Cas particulier}{%
+     \begin{center}
+          \begin{extern}%width="240" alt="somme de vecteurs de même origine"
+               \resizebox{5.5cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=*,dotsize=3pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-1,0.5)(9.2,6.)
+                         \begin{Large}
+                              \psline[linecolor=red]{->}(1,3)(8.,3.)
+                              \psline[linecolor=blue]{->}(1.,3.)(6.,5.)
+                              \psline[linecolor=gray]{->}(3.,1.)(8.,3.)
+                              \psline[linecolor=blue]{->}(1.,3.)(3.,1)
+                              \psline[linecolor=lightgray,linestyle=dashed](6.,5.)(8.,3.)
+                              \psdots[dotstyle=*,linecolor=blue](1.,3.)
+                              \rput[bl](0.38,2.94){\blue{$A$}}
+                              \psdots[dotstyle=*,linecolor=blue](6.,5.)
+                              \rput[bl](6.08,5.2){\blue{$B$}}
+                              \psdots[dotstyle=*,linecolor=blue](3.,1.)
+                              \rput[bl](2.4,0.6){\blue{$C$}}
+                              \psdots[dotstyle=*,linecolor=blue](8.,3.)
+                              \rput[bl](8.08,3.2){\blue{$D$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Si les vecteurs à additionner, ont la même origine, la méthode précédente aboutit à la construction d'un parallélogramme $\left(ABDC\right)$ :
+     \par
+     $\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}$
+}
+\cadre{bleu}{Propriété et définition}{%
+     Pour tout point $A$ et $B$ du plan : $\overrightarrow{AB}+\overrightarrow{BA}=\overrightarrow{AA}=\overrightarrow{0}$
+     \par
+     On dit que les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{BA}$ sont \textbf{opposés} et l'on écrit  $\overrightarrow{AB}=-\overrightarrow{BA}$
+}
+\bloc{cyan}{Remarque}{%
+     Deux vecteurs opposés ont la même direction, la même longueur et des sens contraires.
+}
+\bloc{cyan}{Conséquence}{%
+     On peut donc définir la différence de 2 vecteurs par :
+     \par
+     $\overrightarrow{AB}-\overrightarrow{CD}=\overrightarrow{AB}+\overrightarrow{DC}$
+}
+\begin{h2}3. Produit d'un vecteur par un nombre réel\end{h2}
+\cadre{bleu}{Définition}{%
+     Soit $\vec{u}$ un vecteur du plan et soit $k$ un nombre réel.
+     \par
+     On définit le vecteur $k\vec{u}$ de la manière suivante :
+     \par
+     Si $k$ est \textbf{strictement positif} :
+     \begin{itemize}
+          \item Les vecteurs $\vec{u}$ et $k\vec{u}$ ont la même direction
+          \item Les vecteurs $\vec{u}$ et $k\vec{u}$ ont le même sens
+          \item La norme de $k\vec{u}$ est $k ||\vec{u}||$
+     \end{itemize}
+     Si $k$ est \textbf{strictement négatif} :
+     \begin{itemize}
+          \item Les vecteurs $\vec{u}$ et $k\vec{u}$ ont la même direction
+          \item Les vecteurs $\vec{u}$ et $k\vec{u}$ ont des sens opposés
+          \item La norme de $k\vec{u}$ est $-k ||\vec{u}||$
+     \end{itemize}
+     Si $k$ est \textbf{nul} : $k\vec{u} = 0\vec{u}$ est le vecteur nul
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern}%width="220" alt="Vecteurs colinéaires"
+               \psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dimen=middle,linewidth=0.8pt}
+               \begin{pspicture*}(-1,0.)(11,8)
+                    \psline[linecolor=blue]{->}(3,3)(6,4)
+                    \psline[linecolor=red]{->}(0,4)(9,7)
+                    \psline[linecolor=mcvert]{->}(10,3)(4,1)
+                    \rput[b](4.5,5.8){$\red 3\vec{u}$}
+                    \rput[b](4.5,3.8){$\blue \vec{u}$}
+                    \rput[b](7,2.3){$\color{mcvert}-2\vec{u}$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Vecteurs colinéaires}
+     \end{center}
+}
+\cadre{bleu}{Définition}{%
+     On dit que deux vecteurs $\vec{u}$ et $\vec{v}$ sont \textbf{colinéaires} s'il existe un réel $k$ tel que $\vec{u} = k\vec{v}$ ou un réel $k^{\prime}$ tel que $\vec{v} = k^{\prime}\vec{u}$
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item Deux vecteurs non nuls sont colinéaires si et seulement si ils ont la même direction (mais ils peuvent avoir des sens opposés)
+          \item Le vecteur nul est colinéaire à tout vecteur. En effet $\overrightarrow{0} = 0\vec{u}$
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%
+     Pour tous vecteurs $\vec{u}$ et $\vec{v}$ du plan et tous réels $k$ et $k^{\prime}$ :
+     \begin{itemize}
+          \item $k \left(\vec{u}+\vec{v}\right) = k\vec{u}+k\vec{v}$
+          \item $\left(k+k^{\prime}\right) \vec{u} = k\vec{u}+k^{\prime}\vec{u}$
+          \item $k \left(k^{\prime}\vec{u}\right) = \left(kk^{\prime}\right) \vec{u}$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     $2 \left(\overrightarrow{AB}+3\overrightarrow{AC}\right) = 2\overrightarrow{AB} + 2 \left(3\overrightarrow{AC}\right) = 2\overrightarrow{AB} + 6\overrightarrow{AC}$
+}
+\input{_footer}

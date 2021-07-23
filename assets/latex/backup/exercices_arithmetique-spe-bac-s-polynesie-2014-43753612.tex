@@ -1,0 +1,84 @@
+\input{_header}
+\meta{url}{/exercices/arithmetique-spe-bac-s-polynesie-2014/}
+\meta{pid}{2693}
+\meta{titre}{Arithmétique - Bac S Polynésie 2014 (spé)}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2  (5 points)\end{h2}
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\par
+Dans cet exercice, on appelle numéro du jour de naissance le rang de ce jour dans le mois et numéro du mois de naissance, le rang du mois dans l'année.
+\par
+Par exemple, pour une personne née le 14 mai, le numéro du jour de naissance est 14 et le numéro du mois de naissance est 5.
+\begin{h3}Partie A\end{h3}
+Lors d'une représentation, un magicien demande aux spectateurs d'effectuer le programme de calcul (A) suivant :
+\ogPrenez le numéro de votre jour de naissance et multipliez-le par 12. Prenez le numéro de votre mois de naissance et multipliez-le par 37. Ajoutez les deux nombres obtenus. Je pourrai alors vous donner la date de votre anniversaire\fg{}.
+\par
+Un spectateur annonce 308 et en quelques secondes, le magicien déclare : \ogVotre anniversaire tombe le 1er août !\fg{}.
+\begin{enumerate}
+     \item
+     Vérifier que pour une personne née le 1er août, le programme de calcul (A) donne effectivement le nombre $308$.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Pour un spectateur donné, on note $j$ le numéro de son jour de naissance, $m$ celui de son mois de naissance et $z$ le résultat obtenu en appliquant le programme de calcul (A).
+          \par
+          Exprimer $z$ en fonction de $j$ et de $m$ et démontrer que $z$ et $m$ sont congrus modulo 12.
+          \item
+     Retrouver alors la date de l'anniversaire d'un spectateur ayant obtenu le nombre $474$ en appliquant le programme de calcul (A).\end{enumerate}
+\end{enumerate}
+\begin{h3}Partie B\end{h3}
+Lors d'une autre représentation, le magicien décide de changer son programme de calcul. Pour un spectateur dont le numéro du jour de naissance est $j$ et le numéro du mois de naissance est $m$, le magicien demande de calculer le nombre $z$ défini par $z=12j+31m$.
+\par
+\textit{Dans les questions suivantes, on étudie différentes méthodes permettant de retrouver la date d'anniversaire du spectateur.}
+\begin{enumerate}
+     \item
+     \textbf{Première méthode :}
+\par
+     On considère l'algorithme suivant :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+          \hline
+          Variables : & $j$ et $m$ sont des entiers naturels
+          \\ \hline
+          Traitement : &  Pour $m$ allant de 1 à 12 faire :
+          \\ \hline
+          & $  \quad  \quad $Pour $j$ allant de 1 à 31 faire :
+          \\ \hline
+          & $  \quad   \quad   \quad  \quad $	$z$ prend la valeur $12j+31m$
+          \\ \hline
+          & $  \quad   \quad   \quad  \quad $	Afficher $z$
+          \\ \hline
+          & $  \quad  \quad $Fin Pour
+          \\ \hline
+          & Fin Pour
+          \\ \hline
+     \end{tabularx}
+
+Modifier cet algorithme afin qu'il affiche toutes les valeurs de $j$ et de $m$ telles que $12j+31m=503$.
+\item
+\textbf{Deuxième méthode :
+}
+\begin{enumerate}[label=\alph*.]
+     \item
+     Démontrer que $7m$ et $z$ ont le même reste dans la division euclidienne par 12.
+     \item
+     Pour $m$ variant de 1 à 12, donner le reste de la division euclidienne de $7m$ par 12.
+     \item
+En déduire la date de l'anniversaire d'un spectateur ayant obtenu le nombre $503$ avec le programme de calcul (B).\end{enumerate}
+\item
+\textbf{Troisième méthode :}
+\begin{enumerate}[label=\alph*.]
+     \item
+     Démontrer que le couple $\left(-2 ; 17\right)$ est solution de l'équation $12x+31y=503$.
+     \item
+     En déduire que si un couple d'entiers relatifs $\left(x ; y\right)$ est solution de l'équation $12x+31y=503$, alors $12\left(x+2\right)=31 \left(17-y\right)$.
+     \item
+     Déterminer l'ensemble de tous les couples d'entiers relatifs
+     \par
+     $\left(x ; y\right)$, solutions de l'équation $12x+31y=503$.
+     \item
+     Démontrer qu'il existe un unique couple d'entiers relatifs $\left(x ; y\right)$ tel que $1 \leqslant  y \leqslant  12$.
+     \par
+En déduire la date d'anniversaire d'un spectateur ayant obtenu le nombre $503$ avec le programme de calcul (B).\end{enumerate}
+\end{enumerate}
+\input{_footer}

@@ -1,0 +1,78 @@
+\input{_header}
+\begin{h2}1. Echantillons\end{h2}
+Lorsqu'on travaille sur une population de grande taille, il est rarement possible d'avoir accès aux données relatives à l'ensemble de la population.
+\par
+On utilise alors un \textbf{échantillon} de cette population.
+\cadre{bleu}{Définition}{%
+     Un \textbf{échantillon de taille \textit{n}} est une sélection de \textit{n} individus choisis "au hasard" dans une population.
+}
+\bloc{orange}{Exemple}{%
+     On étudie la répartition mâle/femelle d'une population de truites peuplant une rivière.
+     \par
+     Il est pratiquement impossible de recenser toutes les truites de la rivière. On décidera donc de travailler sur un échantillon en prélevant, par exemple, 100 truites.
+     \par
+     La taille de l'échantillon doit être suffisamment élevée pour fournir des résultats fiables ( mais pas trop pour ne pas entrainer un surcroit de travail important ! )
+}
+\bloc{cyan}{Remarque}{%
+     Il existe deux manières d'effectuer un échantillonnage:
+     \begin{itemize}
+          \item \textbf{sans remise} : Dans l'exemple précédent, si l'on prélève les 100 truites simultanément, on obtient 100 individus différents
+          \item \textbf{avec remise} : On prélève une truite au hasard, on note son sexe puis on la remet dans la rivière. Et on répète cette expérience 100 fois. Dans ce cas, il est possible de prélever plusieurs fois le même individu.
+     \end{itemize}
+     En pratique, si l'effectif global est nettement supérieur à la taille de l'échantillon ( c'est à dire, ici, si la rivière abrite beaucoup plus de 100 truites ) les deux méthodes donneront des résultats également satisfaisants.
+}
+\begin{h2}2. Intervalle de fluctuation\end{h2}
+Si l'on effectue plusieurs échantillonnage de même taille sur une même population, on obtiendra en général des fréquences légèrement différentes pour un caractère donné.
+\par
+Voici, par exemple, les résultats que l'on pourrait obtenir en prélevant 5 échantillons de 100 truites :
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}%class="compact" width="600"
+     \hline
+     Echantillons &  n°1  &  n°2  &  n°3  &  n°4 &  n°5
+     \\ \hline
+     Pourcentage de truites femelles &  52\%  &  55\%  &  42\%  &  50\%  &  48\%
+     \\ \hline
+\end{tabular}
+\end{center}
+Ce phénomène s'appelle \textbf{fluctuation d'échantillonnage}.
+\par
+Le résultat suivant précise cette notion :
+\cadre{rouge}{Théorème et définition}{%
+     On note $p$ la proportion d'un caractère dans une population donnée.
+     \par
+     On prélève un échantillon de taille $n$ de cette population et on note $f $ la fréquence du caractère dans l'échantillon.
+     \par
+     Si $0,2 \leqslant p \leqslant 0,8$ et si $n\geqslant 25$ alors, dans au moins 95\% des cas, $f$ appartient à l'intervalle~: 
+    \begin{center}
+     $I=\left[p-\frac{1}{\sqrt{n}}~;~p+\frac{1}{\sqrt{n}}\right]$.
+    \end{center}
+      $I$ est appelé \textbf{l'intervalle de fluctuation au seuil 95\%.}
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item On applique le théorème ci-dessus si \textbf{on connaît la proportion $p$ du caractère dans la population}.
+          \par
+          On peut aussi utiliser ce théorème en \textbf{supposant} que le caractère est présent dans une proportion $p$. Suivant la (ou les) fréquence(s) observée(s) dans un (ou plusieurs) échantillon(s) on acceptera ou on rejettera l'hypothèse.
+     \end{itemize}
+     \begin{itemize}
+          \item Bien retenir la signification de chacune des variables :
+          \begin{itemize}
+               \item $p$ = proportion du caractère dans l'\textbf{ensemble de la population}
+               \item $f$ = fréquence du caractère dans l'\textbf{échantillon}
+               \item $n$ = taille de l'échantillon
+          \end{itemize}
+          \item Au niveau Seconde, les intervalles de fluctuation seront toujours demandés au seuil de 95\%.
+          \par
+          Ce seuil a été choisi car :
+          \begin{itemize}
+               \item il conduit à une formule assez simple
+               \item on peut considérer comme \textit{"raisonnablement fiable"} un résultat validé dans 95\% des cas
+          \end{itemize}
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Supposons que notre rivière contienne 50\% de truites femelles (et donc 50\% de mâles...).
+     \par
+     Pour nos échantillons de taille 100, $n=100\geqslant 25$ ; par ailleurs $p=0,5 \in  \left[0,2 ; 0,8\right]$ Donc \textbf{l'intervalle de fluctuation au seuil de 95\%} sera $I=\left[0,5-\frac{1}{\sqrt{100}}~;~0,5+\frac{1}{\sqrt{100}}\right]$ c'est à dire $I=\left[0,4~;~0,6\right]$.
+}
+\input{_footer}

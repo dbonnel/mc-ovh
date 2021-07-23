@@ -1,0 +1,274 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-blanc-es-l-sujet-1-maths-cours-2017/}
+\meta{pid}{10412}
+\meta{titre}{Probabilités - Bac blanc ES/L Sujet 1 - Maths-cours 2017}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\par
+Un constructeur fabrique des tablettes informatiques. Le coût de production est 250~euros par unité.
+\par
+Les tablettes sont garanties contre un défaut de fonctionnement de l'écran ou du disque dur.
+\par
+Cette garantie permet à l'acheteur, en cas de panne, d'effectuer les réparations suivantes aux frais du constructeur~:
+\begin{itemize}
+     \item réparation de l'écran (coût pour le constructeur ~: 50~euros) ;
+     \item réparation du disque dur (coût pour le constructeur ~: 30~euros).
+\end{itemize}
+\par
+Une étude statistique a montré que ~:
+\begin{itemize}
+     \item 3\% des tablettes présentent un défaut de disque dur ;
+     \item 4\% des tablettes présentent un défaut d'écran ;
+     \item 95\% des tablettes ne présentent aucun des deux défauts.
+\end{itemize}
+\par
+%
+%
+\TitreC{Partie A}
+%
+%
+\par
+\begin{enumerate}
+     \par
+     \item %1
+     Recopier et compléter le tableau ci-après à l'aide des données de l'énoncé.
+     \begin{center}
+          \begin{tabular}{|c|p{2cm}|p{2cm}|c|}%class="compact"
+               \hline
+               $\ $ & Disque dur OK & Disque dur défectueux & Total \\
+               \hline
+               \'Ecran OK &  $\cdots$ & $\cdots$ & $\cdots$ \\
+               \hline
+               \'Ecran défectueux &  $\cdots$ & $\cdots$ & $\cdots$ \\
+               \hline
+               Total & $\cdots$ & 3\% & 100 \% \\
+               \hline
+          \end{tabular}
+     \end{center}
+     \item %2
+     Le prix de revient d'une tablette est égal à son coût de production augmenté du coût de réparation éventuel.
+     On note $X$ la variable aléatoire correspondant au prix de revient d'une tablette.\\
+     \'Etablir la loi de probabilité de $X$.
+     \par
+     \item %3
+     Calculer l'espérance mathématique de $X$. Interpréter ce résultat dans le contexte de l'énoncé.
+     \par
+     \item %4
+     L'entreprise vend chaque tablette 400~euros. Quel sera son bénéfice mensuel moyen si elle vend 750 tablettes par mois ?
+     \par
+\end{enumerate}
+\par
+%
+%
+\TitreC{Partie B}
+%
+%
+\par
+Un établissement scolaire achète 50 tablettes à ce constructeur.
+\par
+On suppose que l'on peut assimiler cet achat à un tirage aléatoire de 50 tablettes avec remise, les tirages étant supposés indépendants.
+\par
+On rappelle que 95\% des tablettes ne présentent aucun défaut couvert par la garantie constructeur.
+\par
+On note $Y$ la variable aléatoire égale au nombre de tablettes achetées par l'établissement présentant un défaut couvert par la garantie constructeur.
+\par
+\begin{enumerate}
+     \par
+     \item %1
+     Justifier que $Y$ suit une loi binomiale dont on précisera les paramètres.
+     \par
+     \item %2
+     Quelle est la probabilité qu'aucune des tablettes achetées par l'établissement ne présente de défaut couvert par la garantie constructeur ?
+     \par
+     \item %3
+     Quelle est l'espérance mathématique de $Y$ ? Interpréter ce résultat.
+     \par
+\end{enumerate}
+\begin{corrige}
+     %
+     %
+     \TitreC{Partie A}
+     %
+ %
+     \par
+     \begin{enumerate}
+          \par
+          \item %1
+          \par
+          On place dans le tableau les données fournies par l'énoncé ~:
+          \par
+          \begin{itemize}
+               \item %
+               3\% des tablettes présentent un défaut de disque dur ;
+               \item %
+               4\% des tablettes présentent un défaut d'écran ;
+               \item %
+               95\% des tablettes ne présentent aucun des deux défauts.
+          \end{itemize}
+          \begin{center}
+               \begin{tabular}{|c|p{2cm}|p{2cm}|c|}%class="compact"
+                    \hline
+                    $\ $ & Disque dur OK & Disque dur défectueux & Total \\
+                    \hline
+                    \'Ecran OK &  95\% & $\cdots$ & $\cdots$ \\
+                    \hline
+                    \'Ecran défectueux & $\cdots$ & $\cdots$ & 4\% \\
+                    \hline
+                    Total & $\cdots$ & 3\% & 100 \% \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          On complète ensuite les totaux partiels afin que le total global soit égal à 100\% ~:
+          \begin{center}
+               \begin{tabular}{|c|p{2cm}|p{2cm}|c|}%class="compact"
+                    \hline
+                    $\ $ & Disque dur OK & Disque dur défectueux & Total \\
+                    \hline
+                    \'Ecran OK &  95\% & $\cdots$ & 96\% \\
+                    \hline
+                    \'Ecran défectueux & $\cdots$ & $\cdots$ & 4\% \\
+                    \hline
+                    Total & 97\% & 3\% & 100 \% \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          Les données restantes peuvent être calculées simplement à partir des totaux ~:
+          \begin{center}
+               \begin{tabular}{|c|p{2cm}|p{2cm}|c|}%class="compact"
+                    \hline
+                    $\ $ & Disque dur OK & Disque dur défectueux & Total \\
+                    \hline
+                    \'Ecran OK &  95\% & 1\% & 96\% \\
+                    \hline
+                    \'Ecran défectueux & 2\% & 2\%  & 4\% \\
+                    \hline
+                    Total & 97\% & 3\% & 100 \% \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          \item %2
+          \par
+          La variable aléatoire $X$ peut prendre quatre valeurs distinctes ; le tableau de la question précédente fournit la probabilité de chacune d'elle ~:
+          \par
+          \begin{itemize}
+               \item si la tablette ne présente aucun défaut ~: ${X=250}$ \textit{(probabilité ~: 0,95)} ;
+               \par
+               \item si la tablette présente \textbf{uniquement} un défaut de disque dur ~: ${X=250+30=280}$ \textit{(probabilité ~: 0,01)} ;
+               \par
+               \item si la tablette présente \textbf{uniquement} un défaut d'écran ~:${X=250+50=300}$ \textit{(probabilité ~: 0,02)} ;
+               \par
+               \item si la tablette présente \textbf{à la fois un défaut de disque dur et un défaut d'écran} ~: ${X=250+50+30=330}$ \textit{(probabilité ~: 0,02)}.
+               \par
+          \end{itemize}
+          \par
+          On peut regrouper ces résultats dans un tableau ~:
+          \par
+          \begin{center}
+               \begin{tabular}{|c|c|c|c|c|}%class="compact"
+                    \hline
+                    $x_i$ & 250 & 280 & 300 & 330 \\
+                    \hline
+                    $p(X=x_i)$ & 0,95 & 0,01 & 0,02 & 0,02 \\
+                    \hline
+               \end{tabular}
+          \end{center}
+          \par
+          \cadre{rouge}{À retenir}{
+               La \textbf{loi de probabilité} d'une variable aléatoire X est un tableau qui recense les différentes valeurs $x_1, x_2, \cdots, x_n$ prises par X et les probabilités des événements ${(X=x_1), (X=x_2), \cdots, (X=x_n)}$
+          }
+          \par
+          \item %3
+          L'espérance mathématique de $X$ est ~:
+          \par
+          $E(X)=250 \times 0,95 + 280 \times 0,01 + 300 \times 0,02 + 330 \times 0,02 = 252,9$.
+          \par
+          \cadre{rouge}{À retenir}{
+               Si X est une variable aléatoire qui prend valeurs $x_1, x_2, \cdots, x_n$ avec les probabilités respectives $p_1, p_2, \cdots, p_n$, l'\textbf{espérance mathématique} de X est ~:
+               \[ E(X)=p_1x_1+p_2x_2+ \cdots +p_nx_n \]
+               \par
+          }
+          \par
+          \item %4
+          D'après la question précédente, le prix de revient moyen d'une tablette est de 252,9~euros.
+          \par
+          Si chaque tablette est vendu 400~euros, le bénéfice moyen par tablette vendue sera de $400 - 252,9 = 147,1$~euros.
+          \par
+          Pour une vente mensuelle de 750 tablettes, l'entreprise fera un bénéfice mensuel moyen de $750 \times 147,1 =\bm{110\ 325}$ euros.
+          \par
+     \end{enumerate}
+     \par
+     %============================================================================================================================
+     %
+     \TitreC{Partie B}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \par
+          \item %1
+          \par
+          La variable aléatoire $Y$ suit une loi binomiale de paramètres $n=50$ et $p=0,05$ puisque ~:
+          \par
+          \begin{itemize}
+               \par
+               \item on assimile l'expérience à la répétition de 50 tirages aléatoires identiques et indépendants ;
+               \par
+               \item chaque tirage possède deux issues ~:
+               \par
+               \begin{itemize}
+                    \par
+                    \item \textit{succès}, correspondant au tirage d'une tablette défectueuse (probabilité $p=0,05$) ;
+                    \item \textit{échec}, correspondant au tirage d'une tablette fonctionnant correctement ;
+                    \par
+               \end{itemize}
+               \par
+               \item la variable aléatoire $Y$ comptabilise le nombre de succès.
+               \par
+          \end{itemize}
+          \par
+          \cadre{rouge}{Bien rédiger}{
+               Pour montrer qu'une variable aléatoire suit une \textbf{loi binomiale} $\mathscr{B}(n~;~p)$ de paramètres $n$ et $p$, on précise que ~:
+               \par
+               \begin{itemize}
+                    \par
+                    \item l'expérience aléatoire est la \textbf{répétition} de $n$ épreuves de Bernoulli \textbf{identiques et indépendantes} ;
+                    \par
+                    \item chaque épreuve de Bernoulli possède \textbf{deux issues} ~:
+                    \begin{itemize}[label=---]
+                         \item %
+                         \textit{succès}, de probabilité $p$;
+                         \item %
+                         \textit{échec}, de probabilité $1-p$ ;
+                    \end{itemize}
+                    \item la variable aléatoire $X$ \textbf{comptabilise le nombre de succès}.
+                    \par
+               \end{itemize}
+          }
+          \item %2
+          La probabilité qu'aucune des tablettes achetées par l'établissement ne présente de défaut est ~:
+          \par
+          $P(Y=0)=\begin{pmatrix} 50 \\ 0 \end{pmatrix} \times 0,05^0 \times 0,95^{50} = 0,95^{50}$
+          \par
+          $P(Y=0) \approx 0,077$ (arrondi au millième).
+          \par
+          \cadre{rouge}{À retenir}{
+               Si la variable aléatoire $X$ suit une \textbf{loi binomiale} $\mathscr B \left(n ; p\right)$, pour tout entier naturel $k$ compris entre $0$ et $n$, la probabilité que $X$ prenne la valeur $k$ est ~:
+               \[ P\left(X=k\right)=\begin{pmatrix} n \\ k \end{pmatrix}p^{k} \left(1-p\right)^{n-k} \]
+          }
+          \par
+          \item %3
+          L'espérance mathématique de $Y$ est ~:
+          \par
+          $E(Y)=np=50 \times 0,05=2,5$.
+          \par
+          En moyenne, parmi les 50 tablettes achetées par l'école, 2,5~tablettes présenteront un défaut.
+          \par
+          \cadre{rouge}{À retenir}{
+               Pour une variable aléatoire $X$ qui une \textbf{loi binomiale} $\mathscr B \left(n ; p\right)$, l'\textbf{espérance mathématique} vaut ~:
+               \[ E(X)=np \]
+          }
+          \par
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

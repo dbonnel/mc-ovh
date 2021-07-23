@@ -1,0 +1,85 @@
+\input{_header}
+\meta{url}{/exercices/suites-bac-s-amerique-nord-2014/}
+\meta{pid}{1473}
+\meta{titre}{Algorithmes - Bac S Amérique du Nord 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4   (5 points)\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+\par
+Un volume constant de 2 200 $ \text{m}^{3}$ d'eau est réparti entre deux bassins A et B.
+\par
+Le bassin A refroidit une machine. Pour des raisons d'équilibre thermique on crée un courant d'eau entre les deux bassins à l'aide de pompes.
+\par
+On modélise les échanges entre les deux bassins de la façon suivante :
+\begin{itemize}
+     \item
+     au départ, le bassin A contient 800$ \text{m}^{3}$d'eau et le bassin B contient 1 400 $ \text{m}^{3}$ d'eau ;
+     \item
+     tous les jours, 15 \% du volume d'eau présent dans le bassin B au début de la journée est transféré vers le bassin A ;
+     \item
+tous les jours, 10 \% du volume d'eau présent dans le bassin A au début de la journée est transféré vers le bassin B.\end{itemize}
+Pour tout entier naturel $n$, on note :
+\begin{itemize}
+     \item
+     $a_{n}$ le volume d'eau, exprimé en $ \text{m}^{3}$, contenu dans le bassin A à la fin du n-ième jour de fonctionnement;
+     \item
+     $b_{n}$ le volume d'eau, exprimé en $ \text{m}^{3}$ , contenu dans le bassin B à la fin du n-ième jour de
+     fonctionnement.
+\end{itemize}
+On a donc $a_{0} = 800$ et $b_{0} = 1 400$.
+\begin{enumerate}
+     \item
+     Par quelle relation entre $a_{n}$  et $b_{n}$  traduit-on la conservation du volume total d'eau du circuit ?
+     \item
+     Justifier que, pour tout entier naturel $n$, $a_{n+1} =\frac{3}{4}a_{n} + 330$.
+     \item
+     L'algorithme ci-dessous permet de déterminer la plus petite valeur de $n$ à partir de laquelle
+     \par
+     $a_{n}$ est supérieur ou égal à 1 100.
+     \par
+     Recopier cet algorithme en complétant les parties manquantes.
+     <div class="border">
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{Variables}  &  $n$ est un entier naturel
+          \\ \hline
+          & $a$ est un réel
+          \\ \hline
+          \textbf{Initialisation}  & Affecter à $n$ la valeur $0$
+          \\ \hline
+          & Affecter à $a$ la valeur $800$
+          \\ \hline
+          \textbf{Traitement	}  & Tant que $a < 1 100$, faire :
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span><span style="color:transparent">...</span>Affecter à $a$ la valeur . . .
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span><span style="color:transparent">...</span>Affecter à $n$ la valeur $n + 1$
+          \\ \hline
+          & Fin Tant que
+          \\ \hline
+          \textbf{Sortie}  & Afficher $n$
+          \\ \hline
+     \end{tabularx}
+}
+\item
+Pour tout entier naturel $n$, on note $u_{n} = a_{n}-1 320$.
+\begin{enumerate}
+     \item
+     Montrer que la suite $\left(u_{n} \right)$ est une suite géométrique dont on précisera le premier terme et la raison.
+     \item
+     Exprimer $u_{n}$ en fonction de $n$.
+     \par
+     En déduire que, pour tout entier naturel $n$, $a_{n} = 1 320-520\times \left(\frac{3}{4}\right)^{n}$.
+     \item
+     On cherche à savoir si, un jour donné, les deux bassins peuvent avoir, au mètre cube près, le même volume d'eau.
+     \par
+     Proposer une méthode pour répondre à ce questionnement.
+\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+\imgsvg{pdf-icon}{0.1}% alt="pdf" style="width:2rem"
+\mcLien{/assets/pdf/suites-bac-s-amerique-nord-2014/suites-bac-s-amerique-nord-2014.pdf}{Solution rédigée par Paki} 
+\end{corrige}
+
+\input{_footer}

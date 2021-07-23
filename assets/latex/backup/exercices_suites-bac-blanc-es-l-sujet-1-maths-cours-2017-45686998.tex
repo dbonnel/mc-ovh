@@ -1,0 +1,278 @@
+\input{_header}
+\meta{url}{/exercices/suites-bac-blanc-es-l-sujet-1-maths-cours-2017/}
+\meta{pid}{10405}
+\meta{titre}{Suites - Bac blanc ES/L Sujet 1 - Maths-cours 2017}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\par
+Antoine et Bruno travaillent dans deux entreprises différentes depuis le premier janvier 2015.
+\par
+En 2015, leurs salaires annuels s'élevaient à  $19\ 500$~euros pour Antoine et à $21\ 000$~euros pour Bruno.
+\par
+Chaque année, leurs salaires sont réévalués de la façon suivante :\nopagebreak
+\par
+\begin{itemize}
+     \item le salaire d'Antoine augmente de 3\% par an ;
+     \item le salaire de Bruno augmente de 500~euros par an.
+\end{itemize}
+\par
+On note $a_n$ et $b_n$ les salaires respectifs d'Antoine et de Bruno (en~euros) pour l'année $(2015+n)$.
+\par
+On a donc $a_0=19\ 500$ et $b_0=21\ 000$.
+\par
+%============================================================================================================================
+%
+\TitreC{Partie A}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item %1
+     \begin{enumerate}[label=\alph*.]
+          \item %1a
+          Calculer $a_1$.
+          \par
+          \item %1b
+          \'Etablir une relation entre $a_{n+1}$ et $a_n$.
+          \par
+          \item %1c
+          Quelle est la nature de la suite $(a_n)$ ?
+          \par
+     \end{enumerate}
+     \item %2
+     \begin{enumerate}[label=\alph*.]
+          \item %2a
+          Exprimer $a_n$ en fonction de $n$.
+          \item %2b
+          Quel sera le salaire d'Antoine en 2030 ?
+     \end{enumerate}
+\end{enumerate}
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%=================
+\begin{enumerate}
+     \item %1
+      \begin{enumerate}[label=\alph*.]
+          \item %1a
+          Calculer $b_1$.
+          \par
+          \item %1b
+          \'Etablir une relation entre $b_{n+1}$ et $b_n$.
+          \par
+          \item %1c
+          Quelle est la nature de la suite $(b_n)$ ?
+          \par
+     \end{enumerate}
+     \item %2
+     \begin{enumerate}[label=\alph*.]
+          \item %2a
+          Exprimer $b_n$ en fonction de $n$.
+          \item %2b
+          D'Antoine ou de Bruno, qui percevra le salaire le plus élevé en 2030 ? Justifier la réponse.
+      \end{enumerate}
+\end{enumerate}
+%============================================================================================================================
+%
+\TitreC{Partie C}
+%
+%============================================================================================================================
+\par
+On considère l'algorithme suivant :
+\par
+\begin{center}
+     \begin{extern}%width="400" alt="algorithme suites"
+          \begin{tabularx}{0.60\linewidth}{|l|X|}\hline
+               Variables :	& $n$ est un entier naturel\\
+               &$a$ et $b$ sont des nombres réels\\
+               & \\
+               Initialisation: &Affecter à $n$ la valeur 0\\
+               &Affecter à $a$ la valeur $19\ 500$\\
+               &Affecter à $b$ la valeur $21\ 000$\\
+               & \\
+               Traitement: &Tant que $a \leqslant  b$ faire\\
+               &\qquad$n$ prend la valeur $n + 1$\\
+               &\qquad$a$ prend la valeur $1,03a$\\
+               &\qquad$b$ prend la valeur $b+500$\\
+               &Fin Tant que\\
+               & \\
+               Sortie :	&Afficher 2015+n \\
+               \hline
+          \end{tabularx}
+     \end{extern}
+\end{center}
+\par
+\begin{enumerate}
+     \item Recopier et compléter le tableau ci-après, en ajoutant autant de colonnes que nécessaire. On arrondira les résultats à l'unité près.
+     \begin{center}
+          \begin{tabular}{|l|c|c|c|}\hline %class="compact"
+               Valeur de $n$	&0	&	1 &	 $\quad \cdots \quad$  \\ \hline
+               Valeur de $a$	&$19\ 500$	& $\quad \cdots \quad$ & $\quad \cdots \quad$ 	 \\ \hline
+               Valeur de $b$	&$21\ 000$	& $\quad \cdots \quad$ & $\quad \cdots \quad$  \\ \hline
+               Condition $a \leqslant  b$	&vraie	& $\quad \cdots \quad$ & $\quad \cdots \quad$ 	\\ \hline
+          \end{tabular}
+     \end{center}
+     \item Quelle valeur affichera cet algorithme en sortie ?\\
+     Interpréter cette valeur dans le contexte de l'exercice.
+\end{enumerate}
+\begin{corrige}
+     %============================================================================================================================
+     %
+     \TitreC{Partie A}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item %1
+          \begin{enumerate}[label=\alph*.]
+               \item %1a
+               \`A une augmentation de $3\%$ correspond un coefficient multiplicateur :
+               \[CM=1+\frac{3}{100}=1,03. \]
+               \par
+               $a_1$ représente le salaire d'Antoine en 2016. On a donc :
+               \par
+               $a_1=a_0 \times 1,03=19\ 500 \times 1,03 = 20\ 085.$
+               \par
+               \cadre{rouge}{À retenir}{
+                    Pour augmenter une valeur de $t\%$, on multiplie cette valeur par le coefficient multiplicateur :
+                    \[CM=1+\frac{t}{100} \]
+                    \par
+                    Pour diminuer une valeur de $t\%$, on multiplie cette valeur par le coefficient multiplicateur :
+                    \[CM=1-\frac{t}{100} \]
+               }
+
+               \item %1b
+
+               Le salaire d'Antoine pour l'année $n+1$ est égal à son salaire de l'année $n$ augmenté de $3\%$ ; par conséquent :
+               \[a_{n+1}=1,03a_n.\]
+
+               \item %1c
+               La suite $(a_n)$ est donc une suite géométrique de premier terme $a_0=19\ 500$ et de raison $q=1,03$.
+               \cadre{rouge}{Attention}{
+                    \textbf{Ne pas écrire} \og la suite $a_n$ \fg{} (sans parenthèses) mais : \og la suite $(a_n)$ \fg{} (entre parenthèses).
+                    \par
+                    $(a_n)$ représente la \textbf{suite}, tandis que $a_n$ représente un \textbf{terme} de la suite, c'est à dire un \textbf{nombre} réel.
+               }
+               \par
+               \cadre{rouge}{À retenir}{
+                    Une \textbf{suite géométrique} $(u_n)$ est définie par une relation de récurrence de la forme :
+                    \[u_{n+1}=q \times u_n\]
+                    où $q$ s'appelle la \textbf{raison} de la suite.
+               }
+               \par
+          \end{enumerate}
+          \par
+          \item %2
+
+          \begin{enumerate}[label=\alph*.]
+
+               \item %2a
+               La suite $(a_n)$ étant une suite géométrique de premier terme $a_0=19\ 500$ et de raison $q=1,03$ :
+               \par
+               $a_n = a_0q^n=19\ 500 \times 1,03^n$.
+               \cadre{rouge}{À retenir}{
+                    Pour une suite \textbf{géométrique} $(u_n)$ de premier terme $u_0$ et de raison $q$, le $n$-ième terme vaut :
+                    \[u_{n}=u_0 \times q^n.\]
+               }
+               \item %2b
+               ${2030=2015+15}$. Le salaire d'Antoine en 2030 sera donc égal à $a_{15}$ :
+               \par
+               $a_{15}=19\ 500 \times 1,03^{15}\approx 30\ 380$ (arrondi à l'euro).
+               \par
+               Le salaire d'Antoine en 2030 sera 30~380~euros.
+               \par
+          \end{enumerate}
+          \par
+     \end{enumerate}
+     \par
+     %============================================================================================================================
+     %
+     \TitreC{Partie B}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item %1
+          \begin{enumerate}[label=\alph*.]
+               \item %1a
+
+               Le salaire de Bruno augmente de 500~euros par an, donc :
+               \par
+               $b_1=b_0+500=21\ 000+500=21\ 500$.
+
+               \item %1b
+
+               Pour la même raison :
+               \par
+               \[b_{n+1}=b_{n}+500.\]
+
+               \item %1c
+
+               La suite $(b_n)$ est une suite arithmétique de premier terme ${b_0=21\ 000}$ et de raison ${r=500}$.
+               \cadre{rouge}{À retenir}{
+                    Une \textbf{suite arithmétique} $(u_n)$ est définie par une relation de récurrence de la forme :
+                    \[u_{n+1}= u_n + r\]
+                    où $r$ s'appelle la \textbf{raison} de la suite.
+               }
+          \end{enumerate}
+          \par
+          \item %2
+
+          \begin{enumerate}[label=\alph*.]
+
+               \item %2a
+               La suite $(b_n)$ étant une suite arithmétique de premier terme ${b_0=21\ 000}$ et de raison ${r=500}$ :
+               \par
+               $b_n=b_0+nr=21\ 000+500n$.
+               \cadre{rouge}{À retenir}{
+                    Pour une suite \textbf{arithmétique} $(u_n)$ de premier terme $u_0$ et de raison $r$, le $n$-ième terme vaut :
+                    \[u_{n}=u_0 +nr \]
+               }
+               \item %2b
+               En 2030 le salaire de Bruno sera :
+               \par
+               $b_{15}=21~000 + 500 \times 15 = 28~500$.
+               \par
+               Par conséquent, en 2030, \textbf{le salaire d'Antoine sera supérieur au salaire de Bruno}.
+               \par
+          \end{enumerate}
+          \par
+     \end{enumerate}
+     \par
+     %============================================================================================================================
+     %
+     \TitreC{Partie C}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item \`A l'aide de la calculatrice on obtient le tableau suivant :
+          \par
+          \begin{tabular}{|c|c|c|c|c|c|c|}\hline  %class="compact"
+               $n$	& 0	&	1 &	2 &	3 &	4 &	5  \\ \hline
+               $a$	& $19\ 500$	& $20\ 085$  	& $20\ 688$  	&$21\ 308$  	& $21\ 947$  	& $22\ 606$   \\ \hline
+               $b$	& $21\ 000$	& $21\ 500$  	& $22\ 000$  	& $22\ 500$  	& $23\ 000$  	& $23\ 500$ 	\\ \hline
+               $a \leqslant  b$	& vraie	& 	vraie	& vraie	& vraie	& vraie	& vraie	 \\ \hline
+          \end{tabular}
+          \par
+          \begin{tabular}{|c|c|c|c|c|c|}\hline %class="compact"
+               $n$	& 6 &	7 &	8 &	9 &	10 \\ \hline
+               $a$	& $23\ 284$  	& $23\ 983$  	& $24\ 702$  	& $25\ 443$  	& $26\ 206$  	\\ \hline
+               $b$	& $24\ 000$  	& $24\ 500$  	& $25\ 000$  	& $25\ 500$  	& $26\ 000$  	\\ \hline
+               $a \leqslant  b$	& vraie	& vraie	& vraie	& vraie	& fausse	  \\ \hline
+          \end{tabular}
+          \par
+          \cadre{vert}{En pratique}{
+               Pour calculer rapidement les différentes valeurs de $a$ et de $b$, on peut utiliser l'écran \og suite \fg{} ou l'écran \og fonction \fg{} de la calculatrice.
+               \par
+               Par contre, le jour du bac, saisir l'algorithme complet dans la calculatrice est long et peu utile.
+          }
+          \par
+          \item Le tableau précédent montre que lorsque l'algorithme se termine $n$ vaut $10$.
+          \par
+          L'algorithme affiche donc la valeur ${2015+10}$ soit $2025$. Cette valeur correspond à l'année à partir de laquelle le salaire d'Antoine dépassera celui de Bruno.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

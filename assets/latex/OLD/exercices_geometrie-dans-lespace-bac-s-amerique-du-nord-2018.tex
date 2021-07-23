@@ -1,0 +1,61 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+On se place dans l'espace muni d'un repère orthonormé dont l'origine est le point A.
+\par
+On considère les points B(10~:~-8~:~2), C(-1~:~-8~:~5) et D(14~:~4~:~8).
+\medskip
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Déterminer un système d'équations paramétriques de chacune des droites (AB) et (CD).
+          \item Vérifier que les droites (AB) et (CD) ne sont pas coplanaires.
+     \end{enumerate}
+     \item On considère le point I de la droite (AB) d'abscisse 5 et le point J de la droite (CD) d'abscisse
+     4.
+     \begin{enumerate}[label=\alph*.]
+          \item Déterminer les coordonnées des points I et J et en déduire la distance IJ.
+          \item Démontrer que la droite (IJ) est perpendiculaire aux droites (AB) et (CD).
+          \par
+          La droite (IJ) est appelée perpendiculaire commune aux droites (AB) et (CD).
+     \end{enumerate}
+     \item Cette question a pour but de vérifier que la distance IJ est la distance minimale entre les
+     droites (AB) et (CD).
+     \par
+     Sur le schéma ci -dessous on a représenté les droites (AB) et (CD), les points I et J, et la droite
+     $\Delta$ parallèle à la droite (CD) passant par I.
+     \par
+     On considère un point M de la droite (AB) distinct du point I.
+     \par
+     On considère un point M' de la droite (CD) distinct du point J.
+     \begin{center}
+          \begin{extern}
+               \psset{unit=1cm}
+               \begin{pspicture*}(12.3,7.8)
+                    \pspolygon[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.15](0.7,1.2)(5.8,0.5)(11.5,3.8)(6.4,4.5)
+                    %\psgrid
+                    \psline(0,2)(12.3,2)%(AB)
+                    \psline(1.5,0)(12.3,6)%$\Delta$
+                    \psline(0,2.8)(10.8,8.8)%(CD)
+                    \psline(5.1,2)(4.3,5.22)%IJ
+                    \psline(7.3,3.22)(6.5,6.45)%PM'
+                    \psline(7.3,3.22)(6.5,2)(6.5,6.45)%PMM'
+                    \uput[u](4.3,5.22){J}\uput[dr](5.1,2){I}
+                    \uput[d](6.5,2){M}\uput[dr](7.3,3.22){P}
+                    \uput[u](6.5,6.45){M'}
+                    \uput[d](10.5,2){(AB)}\uput[ul](2.3,4){(CD)}
+                    \uput[u](10,4.7){$\Delta$}
+                    \psline(4.38,5)(4.52,5.08)(4.47,5.28)
+                    \psline(5.05,2.2)(4.85,2.2)(4.9,2.)
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \medskip
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier que la parallèle à la droite (IJ) passant par le point M' coupe la droite $\Delta$ en un point que l'on notera P.
+          \item Démontrer que le triangle MPM' est rectangle en P.
+          \item Justifier que MM' > IJ et conclure.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

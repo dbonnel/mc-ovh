@@ -1,0 +1,105 @@
+\input{_header}
+\begin{h2}Exercice 2 (4 points)\end{h2}
+\textbf{Commun à tous les candidats }
+\bigbreak
+\emph{Les parties A et B de cet exercice sont indépendantes.}
+\medbreak
+Le virus de la grippe atteint chaque année, en période hivernale, une partie de la population d'une ville.
+\par
+La vaccination contre la grippe est possible~; elle doit être renouvelée chaque année.
+\bigbreak
+\TitreC{Partie A}
+\medbreak
+L'efficacité du vaccin contre la grippe peut être diminuée en fonction des caractéristiques
+individuelles des personnes vaccinées, ou en raison du vaccin, qui n'est pas toujours
+totalement adapté aux souches du virus qui circulent. Il est donc possible de contracter la
+grippe tout en étant vacciné.
+\par
+Une étude menée dans la population de la ville à l'issue de la période hivernale a permis de constater que~:
+\begin{itemize}
+     \item40\,\% de la population est vaccinée~;
+     \item8\,\% des personnes vaccinées ont contracté la grippe~;
+     \item20\,\% de la population a contracté la grippe.
+\end{itemize}
+\smallbreak
+On choisit une personne au hasard dans la population de la ville et on considère les événements~:
+\begin{itemize}[label=---]
+     \item $V$~: \og la personne est vaccinée contre la grippe \fg{}~;
+     \item $G$~: \og la personne a contracté la grippe \fg.
+\end{itemize}
+\medbreak
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Donner la probabilité de l'événement $G$.
+          \item Reproduire l'arbre pondéré ci-dessous et compléter les pointillés indiqués sur quatre de ses branches.
+         %:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+          \begin{center}
+               \begin{extern}%width="350"
+                    % Racine à Gauche, développement vers la droite
+                    \begin{tikzpicture}[xscale=1,yscale=1]
+                         % Styles (MODIFIABLES)
+                         \tikzstyle{fleche}=[-,>=latex,thick]
+                         \tikzstyle{noeud}=[circle,draw]
+                         \tikzstyle{feuille}=[circle,draw]
+                         \tikzstyle{etiquette}=[midway,fill=white]
+                         % Dimensions (MODIFIABLES)
+                         \def\DistanceInterNiveaux{3}
+                         \def\DistanceInterFeuilles{2}
+                         % Dimensions calculées (NON MODIFIABLES)
+                         \def\NiveauA{(0)*\DistanceInterNiveaux}
+                         \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                         \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                         \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                         % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                         \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$ $};
+                         \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$V$};
+                         \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$G$};
+                         \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{G}$};
+                         \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{V}$};
+                         \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$G$};
+                         \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{G}$};
+                         % Arcs (MODIFIABLES : Styles)
+                         \draw[fleche] (R)--(Ra) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Ra)--(Raa) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Ra)--(Rab) node[etiquette] {$\cdots$};
+                         \draw[fleche] (R)--(Rb) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Rb)--(Rba) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Rb)--(Rbb) node[etiquette] {$\cdots$};
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+     \end{enumerate}
+     \item Déterminer la probabilité que la personne choisie ait contracté la grippe et soit vaccinée.
+     \item La personne choisie n'est pas vaccinée. Montrer que la probabilité qu'elle ait contracté la grippe est égale à $0,28$.
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B}
+\medbreak
+\emph{Dans cette partie, les probabilités demandées seront données à $10^{-3}$ près.}
+\medbreak
+Un laboratoire pharmaceutique mène une étude sur la vaccination contre la grippe dans cette
+ville.
+\medbreak
+Après la période hivernale, on interroge au hasard $n$ habitants de la ville, en admettant que ce choix se ramène à $n$ tirages successifs indépendants et avec remise. On suppose que la probabilité qu'une personne choisie au hasard dans la ville soit vaccinée contre la grippe est égale à $0,4$.
+\par
+On note $X$ la variable aléatoire égale au nombre de personnes vaccinées parmi les $n$
+interrogées.
+\medbreak
+\begin{enumerate}
+     \item Quelle est la loi de probabilité suivie par la variable aléatoire $X$~?
+     \item Dans cette question, on suppose que $n = 40$.
+     \begin{enumerate}[label=\alph*.]
+          \item Déterminer la probabilité qu'exactement $15$ des $40$ personnes interrogées soient vaccinées.
+          \item Déterminer la probabilité qu'au moins la moitié des personnes interrogées soit vaccinée.
+     \end{enumerate}
+     \item  On interroge un échantillon de 3~750 habitants de la ville, c'est-à-dire que l'on suppose ici que $n = 3~750$.
+     \par
+     On note $Z$ la variable aléatoire définie par~: $Z = \dfrac{X - 1~500}{30}$.
+     \par
+     On admet que la loi de probabilité de la variable aléatoire $Z$ peut être approchée par la
+     loi normale centrée réduite.
+     \par
+     En utilisant cette approximation, déterminer la probabilité qu'il y ait entre 1~450 et 1~550 individus vaccinés dans l'échantillon interrogé.
+\end{enumerate}
+\input{_footer}

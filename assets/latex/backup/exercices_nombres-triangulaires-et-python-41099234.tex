@@ -1,0 +1,100 @@
+\input{_header}
+\meta{url}{/exercices/nombres-triangulaires-et-python/}
+\meta{pid}{11639}
+\meta{titre}{Nombres triangulaires et Python}
+\meta{type}{exercices}
+%
+On appelle nombre triangulaire d'ordre $ n $ la somme des nombres entiers naturels compris entre $1$ et $n$~:
+\par
+On notera~:
+\par
+$ T_n = 1 + 2 + 3 + \cdots + n $
+\par
+Par exemple, le nombre triangulaire d'ordre $4$ est~:
+\par
+$ T_4 = 1 + 2 + 3 + 4 = 10. $
+\par
+C'est le nombre de points représentés sur la figure ci-dessous~:
+\par
+\begin{center}
+     \begin{extern}%alt="Nombres triangulaires" style="width:15rem"
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.,8.)(10.,16.)
+               \begin{scriptsize}
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](6.,15.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](5.,13.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](7.,13.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](4.,11.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](6.,11.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](8.,11.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](3.,9.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](5.,9.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](7.,9.)
+                    \psdots[dotsize=19pt 0,dotstyle=*,linecolor=blue](9.,9.)
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item
+     Compléter le programme Python ci-dessous afin qu'il calcule et affiche le nombre triangulaire d'ordre $20 $ ~:
+\begin{lstlisting}[language=Python]
+T=0
+for n in range(...) :
+   T = ...
+print(T)
+\end{lstlisting}
+\item
+On souhaite déterminer pour quelle valeur de $ n $ le nombre triangulaire d'ordre $n$ est supérieur ou égal à $1~000$.
+\par
+Compléter le programme Python ci-dessous afin qu'il affiche ce nombre $n$.
+\begin{lstlisting}[language=Python]
+T=0
+n=0
+while ... :
+   n = ...
+   T = ...
+print(n)
+\end{lstlisting}
+Saisir ce programme dans un éditeur Python. Quelle valeur de $ n $ obtient-on~?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \par
+          Dans le programme proposé, la variable \texttt{T} représente le nombre triangulaire d'ordre \texttt{n}.
+          \par
+          Pour calculer le nombre triangulaire d'ordre 20, il faut effectuer la somme des entiers compris (au sens large) entre $1$ et $20$.
+          \par
+          Comme \texttt{ range(a,b) } renvoie la liste des valeurs comprises (au sens large) entre \texttt{a} et \texttt{b-1}~; il faut donc utiliser l'instruction \texttt{ range(1, \textbf{21} ) } pour créer la boucle (l'instruction \texttt{ range(0, 21) } ou \texttt{ range(21) } est aussi valable puisqu'elle ne fait qu'ajouter $0$ à cette somme).
+          \par
+          Ensuite, à chaque étape de la boucle, on ajoute \texttt{n} à \texttt{T}.
+          \par
+          Voici le programme complet~:
+\begin{lstlisting}[language=Python]
+T=0
+for n in range(1,21) :
+   T = T+n
+print(T)
+     \end{lstlisting}
+     L'exécution de ce programme affiche la valeur 210.
+     \item
+     Cette fois, on ne connait pas, dès le départ, le nombre d'itérations. On doit donc utiliser une boucle \texttt{while} (boucle non bornée).
+     \par
+     Ici, la variable \texttt{T} représente le nombre triangulaire d'ordre \texttt{n}.
+     \par
+     On sort de la boucle lorsque \texttt{T >= 1000}, c'est à dire qu'on reste dans la boucle tant que \texttt{T < 1000}.
+     \par
+     À chaque passage dans la boucle, on incrémente \texttt{n} puis on l'ajoute au nombre \texttt{T}~:
+\begin{lstlisting}[language=Python]
+T=0
+n=0
+while T < 1000 :
+   n = n+1
+   T = T+n
+print(n)
+\end{lstlisting}
+\end{enumerate}
+Ce programme affiche le nombre $ 45 $ comme résultat.
+\end{corrige}
+\input{_footer}

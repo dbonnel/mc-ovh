@@ -1,0 +1,53 @@
+\input{_header}
+\meta{url}{/exercices/demonstration-dune-conjecture-recurrence/}
+\meta{pid}{5133}
+\meta{titre}{Démonstration d'une conjecture par récurrence}
+\meta{type}{exercices}
+%
+Soit $k$ un réel positif ou nul.
+\par
+On considère la suite $(u_n)_{n \in \mathbb{N}}$ définie  par $u_0=0$ et pour tout entier $n \geqslant 0$ : $u_{n+1}= \sqrt{u_n^2+k^2} $.
+\begin{enumerate}
+     \item
+     Exprimer $u_1$, $u_2$, $u_3$ en fonction de $k$.
+     \par
+     Conjecturer la valeur de $u_n$ en fonction de $k$ et de $n$.
+     \item
+     Démontrer, par récurrence, la conjecture émise à la question précédente.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $u_{1}= \sqrt{u_0^2+k^2}$$ = \sqrt{k^2} = k $
+          \par
+          car $k$ est un réel positif ou nul.
+          \par
+          $u_{2}= \sqrt{u_1^2+k^2} = \sqrt{k^2 + k^2}$$= \sqrt{2k^2} = k\sqrt{2} $
+          \par
+          $u_{3}= \sqrt{u_2^2+k^2} = \sqrt{\left(k\sqrt{2}\right)^2 + k^2}= \sqrt{2k^2+k^2} = k\sqrt{3} $
+          \par
+          Au vu de ces premiers résultats, on est amené à conjecturer que, pour tout entier naturel $n$ : $u_n=k \sqrt{n} $
+          \item
+          Montrons par récurrence que pour tout entier naturel $n$ : $u_n=k \sqrt{n} $
+\par
+          \textbf{Initialisation :}
+          $u_0=0$ et $k \sqrt{0} = 0 $ donc la propriété est vraie au rang $0$.
+          \textbf{Hérédité :}
+          Supposons que la propriété $u_n=k \sqrt{n} $ est vraie pour un certain entier naturel $n$. Alors :
+          \par
+          $u_{n+1}= \sqrt{u_n^2+k^2} $ (définition de la suite)
+          \par
+          $\phantom{u_{n+1}}= \sqrt{\left(k \sqrt{n}\right)^2+k^2} $ (hypothèse de récurrence)
+          \par
+          $\phantom{u_{n+1}}= \sqrt{nk^2+k^2} $
+          \par
+          $\phantom{u_{n+1}}= \sqrt{(n+1)k^2} $
+          \par
+          $\phantom{u_{n+1}}= k\sqrt{n+1} $
+          \par
+          ce qui montre que la propriété est héréditaire.
+          \textbf{Conclusion :}
+          Pour tout entier naturel $n$ : $u_n=k \sqrt{n} $
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

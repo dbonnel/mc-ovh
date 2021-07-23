@@ -1,0 +1,116 @@
+\input{_header}
+\meta{url}{/exercices/tableau-des-frequences-et-diagramme-circulaire/}
+\meta{pid}{10660}
+\meta{titre}{Tableau des fréquences et diagramme circulaire}
+\meta{type}{exercices}
+%
+Une salle de spectacle propose 5 tarifs différents~:
+\begin{itemize}
+     \item %
+     Tarif normal~: 30~€ / place
+     \item %
+     Plus de 60 ans~: 25~€ / place
+     \item %
+     Moins de 15 ans~: 20~€ / place
+     \item %
+     Groupe~: 18~€ / place
+     \item %
+     Place \og Dernière minute \fg{} ~: 15~€ / place
+\end{itemize}
+Le tableau (incomplet) ci-dessous indique le pourcentage de spectateurs pour chacun des tarifs lors de l'une des représentations~:
+\begin{center}
+     \begin{tabular}{|c|c|c|c|c|c|c|c|} %class="compact" width="600"
+          \hline
+          Tarif   &  30~€  &  25~€ &  20~€  &  18~€  &  15~€
+          \\ \hline
+          Spectateurs       & 60\%   &  10\%    & 15\%    &  10\%  & $\cdots$
+          \\ \hline
+     \end{tabular}
+\end{center}
+\begin{enumerate}
+     \item %
+     Quelle est l'étendue de cette série statistique~? À quoi correspond cette étendue~?
+     \item %
+     Compléter le tableau ci-dessus, en indiquant le pourcentage de spectateurs ayant bénéficié d'une place \og Dernière minute  \fg{}.
+     \item %
+     Au total, cette représentation a attiré 320 spectateurs.\\
+     Dresser le tableau des effectifs donnant le nombre de spectateurs pour chacun des cinq tarifs.
+     \item %
+     Quelle a été la recette totale pour cette représentation~?
+     \item %
+     Représenter cette série statistique à l'aide d'un diagramme circulaire.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item %
+          L'étendue de cette série statistique est~:
+          \begin{center}
+               $30-15=15$~euros.
+          \end{center}
+          Cette étendue représente la différence entre le tarif le plus élevé et le tarif le moins élevé.
+          \item %
+          Le pourcentage total doit être égal à 100\%. \\
+          Le pourcentage de spectateurs ayant bénéficié d'une place \og Dernière minute  \fg{} est donc :
+          \begin{center}
+               $\dfrac{100}{100}- $\nosp$\left(\dfrac{60}{100}+\dfrac{10}{100}+\dfrac{15}{100}+\dfrac{10}{100}\right)$\nosp$=\dfrac{5}{100}$
+          \end{center}
+          On peut alors compléter le tableau comme suit~:
+          \begin{center}
+               \begin{tabular}{|c|c|c|c|c|c|c|c|} %class="compact" width="600"
+                    \hline
+                    Tarif   &  30~€  &  25~€ &  20~€  &  18~€  &  15~€
+                    \\ \hline
+                    Spectateurs       & 60\%   &  10\%    & 15\%    &  10\%  &     \textcolor{red}{5\%}
+                    \\ \hline
+               \end{tabular}
+          \end{center}
+          \item %
+          Pour obtenir le nombre de spectateurs pour chacun des cinq tarifs, il suffit de multiplier chacun des pourcentages par 320.
+          \par
+          Par exemple, pour trouver le nombre de spectateurs ayant payé 30~€, on calcule ~:
+          \begin{center}
+               $\dfrac{60}{100} \times 320 = 192$.
+          \end{center}
+          On obtient alors le tableau suivant~:
+          \begin{center}
+               \begin{tabular}{|c|c|c|c|c|c|c|c|} %class="compact" width="600"
+                    \hline
+                    Tarif   &  30~€  &  25~€ &  20~€  &  18~€  &  15~€
+                    \\ \hline
+                    Nb. de spect.       & 192   &  32   & 48   &  32 &     16
+                    \\ \hline
+               \end{tabular}
+          \end{center}
+          \item %
+          Pour obtenir la recette totale, on calcule, pour chacun des tarifs, le produit du tarif par le nombre de spectateurs, puis on additionne le tout~:
+          \begin{center}
+               $R=30 \times 192 + 25 \times 32 + 20 \times 48$\nosp$ + 18 \times 32 + 15 \times 16 $\nosp$=8~336$.
+          \end{center}
+          La recette totale de la représentation s'élève à 8~336~€.
+          \item %
+          Pour construire un diagramme circulaire, on fait correspondre à chaque fréquence un angle de mesure \textbf{proportionnelle} sachant qu'une fréquence de 100\% correspond à un angle de 360°.
+          On dresse donc le tableau ci-dessous~:
+          \begin{center}
+               \begin{tabular}{|c|c|c|c|c|c|c|c|c|} %class="compact" width="700"
+                    \hline
+                    Tarif   &  30~€  &  25~€ &  20~€  &  18~€  &  15~€ & \textit{Total}
+                    \\ \hline
+                    Spectateurs       & 60\%   &  10\%    & 15\%    &  10\%  &   5\% & \textit{100\%}
+                    \\ \hline
+                    Angle       & 216°   &  36°    & 54°    &  36°  & 18°  & \textit{360°}
+                    \\ \hline
+               \end{tabular}
+          \end{center}
+          On construit ensuite le diagramme circulaire à l'aide du rapporteur~:
+          \begin{center}
+               \begin{extern}%width="300" alt="diagramme circulaire"
+                    \begin{pspicture}(-3,-3)(3,3)
+                         \psChart[userColor={cyan!60,green!80,blue!40,yellow,magenta!50}]{60,10,15,10,5}{}{3}
+                         \rput(psChartI1){30~€}\rput(psChartI2){25~€}\rput(psChartI3){20~€}
+                         \rput(psChartI4){18~€}\rput(psChartI5){15~€}
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

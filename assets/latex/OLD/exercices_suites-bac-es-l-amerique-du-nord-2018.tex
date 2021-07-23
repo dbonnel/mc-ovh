@@ -1,0 +1,55 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Candidats de ES n'ayant pas choisi la spécialité \og mathématiques \fg{} et candidats de L.}
+\medskip
+Une société propose des contrats annuels d'entretien de photocopieurs. Le directeur de cette société remarque que, chaque année, $14\,\%$ des contrats supplémentaires sont souscrits et $7$ sont résiliés.
+\par
+En $2017$, l'entreprise dénombrait $120$ contrats souscrits.
+\par
+On modélise la situation par une suite $(u_n)$ où $u_n$ est le nombre de contrats souscrits l'année $2017+n$.
+\par
+Ainsi on a $u_0=120$.
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier que, pour tout entier naturel $n$, on a $u_{n+1}=1,14 u_n-7$.
+          \item Estimer le nombre de contrats d'entretien en 2018.
+     \end{enumerate}
+     \item Compte tenu de ses capacités structurelles actuelles, l'entreprise ne peut prendre ne charge que 190 contrats. Au-delà, l'entreprise devra embaucher davantage de personnel.
+     \par
+     On cherche donc à savoir en quelle année l'entreprise devra embaucher.
+     \par
+     Pour cela, on utilise l'algorithme suivant~:
+     \begin{center}
+          \begin{extern}%width="200"
+               \renewcommand{\arraystretch}{1.25}
+               \begin{tabularx}{0.3\linewidth}{|X|}
+                    \hline
+                    $n\longleftarrow 0$\\
+                    $u\longleftarrow 120$\\
+                    Tant que $\ldots\ldots\ldots$\\
+                    \hspace*{1cm} $n\longleftarrow n+1$\\
+                    \hspace*{1cm} $\ldots\ldots\ldots$\\
+                    Fin Tant que\\
+                    Afficher $2017+n$\\
+                    \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item Recopier et compléter l'algorithme ci-dessus.
+          \item Quelle est l'année affichée en sortie d'algorithme~? Interpréter cette valeur dans le contexte de l'exercice.
+     \end{enumerate}
+     \item On définit la suite $(v_n)$ par $v_n=u_n-50$ pour tout entier naturel $n$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $(v_n)$ est une suite géométrique dont on précisera la raison et le premier terme $v_0$.
+          \item Exprimer $v_n$ en fonction de $n$ puis démonter que, pour tout entier naturel $n$,
+          \par
+          \[u_n=70\times 1,14^n+50.\]
+          \par
+          \item Résoudre par le calcul l'inéquation $u_n>190$.
+          \par
+          Quel résultat de la question \textbf{2.} retrouve-t-on~?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

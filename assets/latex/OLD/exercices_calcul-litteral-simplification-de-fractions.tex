@@ -1,0 +1,94 @@
+\input{_header}
+Pour chacune des expressions suivantes~:
+\begin{enumerate}[label=\alph*.]
+     \item %
+     préciser son ensemble de définition~;
+     \item %
+     simplifier la fraction~;
+     \item %
+     donner l'ensemble de définition de la fraction simplifiée.
+\end{enumerate}
+\par
+\begin{enumerate}
+     \item %
+     $A=\dfrac{x^2-4}{(x-1)(x+2)}$
+     \item %
+     $B=\dfrac{(x+1)(x-5)+(x+1)^2}{x^2+2x+1}$
+     \item %
+     $C=\dfrac{x^4-1}{(x-1)(2x+1)}$
+\end{enumerate}
+\begin{corrige}
+     Pour la question \textbf{b.} de ces exercices, la méthode consiste à factoriser le numérateur et le dénominateur et à simplifier par le(s) facteur(s) commun(s) au numérateur et au dénominateur.
+     \begin{enumerate}
+          \item %
+          $A=\dfrac{x^2-4}{(x-1)(x+2)}$
+          \begin{enumerate}[label=\alph*.]
+               \item %
+               La fraction $A$ est définie si et seulement si son dénominateur est non nul.
+               \par
+               Or~:
+\par
+               $(x-1)(x+2)=0 \Leftrightarrow x-1 = 0 \text{ ou } x+2=0$
+\par
+               $\phantom{(x-1)(x+2)=0} \Leftrightarrow x = 1 \text{ ou } x=-2.$
+               \par
+               Donc l'ensemble de définition de $A$ est $\mathscr{D}_A=\mathbb{R} \backslash \{-2~;~1\}.$
+               \item %
+               On factorise le numérateur à l'aide de l'identité remarquable $a^2-b^2=(a-b)(a+b)$~:
+               \par
+               $x^2-4=(x-2)(x+2)$
+               \par
+               Par conséquent pour tout réel $x \in \mathscr{D}_A~:$
+               \par
+               $A=\dfrac{(x-2)(x+2)}{(x-1)(x+2)}$\nosp$= \dfrac{x-2}{x-1}$
+               \item %
+               La fraction simplifiée est définie si et seulement si $x \neq 1$ donc sur $\mathbb{R} \backslash \{~1\}.$
+          \end{enumerate}
+          %
+          \item %
+          $B=\dfrac{(x+1)(x-5)+(x+1)^2}{x^2+2x+1}$
+          \begin{enumerate}[label=\alph*.]
+               \item %
+               Le dénominateur se factorise grâce à l'identité remarquable $a^2+2ab+b^2=(a+b)^2~:$
+               \par
+               $x^2+2x+1=(x+1)^2$
+               \par
+               Le dénominateur est différent de zéro si et seulement si $x \neq -1$ donc $\mathscr{D}_B=\mathbb{R} \backslash \{-1\}.$
+               \item %
+               On peut mettre $(x+1)$ en facteur au numérateur~:
+               \par
+               $(x+1)(x-5)+(x+1)^2=(x+1)\left[(x-5)+(x+1)\right]$\\
+               $\phantom{(x+1)(x-5)+(x+1)^2}=(x+1)(2x-4).$
+               \par
+               Par conséquent, pour tout réel $x \in \mathscr{D}_B$~:
+               \par
+               $B=\dfrac{(x+1)(x-5)+(x+1)^2}{(x+1)^2}$
+\par
+               $\phantom{B}=\dfrac{(x+1)(2x-4)}{(x+1)^2}$
+\par
+               $\phantom{B}=\dfrac{2x-4}{x+1}.$
+               \item %
+               L'ensemble de définition de la fraction simplifiée est encore $\mathbb{R} \backslash \{-1\}.$
+          \end{enumerate}
+          %
+          \item %
+          $C=\dfrac{x^4-1}{(x-1)(2x+1)}$
+          \begin{enumerate}[label=\alph*.]
+               \item %
+               Le dénominateur est non nul si et seulement si $x \neq 1$ et $x \neq -\dfrac{1}{2}.$. Donc $\mathscr{D}_C=\mathbb{R} \backslash \left\{-\dfrac{1}{2}~;~1\right\}.$
+               \item %
+               $x^4-1$ se factorise de la manière suivante ~:
+               \par
+               $x^4-1=(x^2)^2-1^2=(x^2-1)(x^2+1)$\nosp$=(x-1)(x+1)(x^2+1).$
+               \par
+               \textbf{Remarque : } $x^2+1$ ne peut pas être factorisé dans $\mathbb{R}.$
+               \par
+               On en déduit que~:
+               \par
+               $C=\dfrac{(x-1)(x+1)(x^2+1)}{(x-1)(2x+1)}$\nosp$=\dfrac{(x+1)(x^2+1)}{2x+1}$
+               \item %
+               La fraction simplifiée est définie sur l'ensemble $\mathbb{R} \backslash \left\{ -\dfrac{1}{2} \right\}.$
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="720" height="1037" viewBox="0 0 720 1037" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+<clipPath id="c0_1"><path d="M2.5,697.5l0,-23l117,0l0,23Z" /></clipPath>
+<clipPath id="c1_1"><path d="M120.5,697.5l0,-23l116,0l0,23Z" /></clipPath>
+<clipPath id="c2_1"><path d="M237.5,697.5l0,-23l116,0l0,23Z" /></clipPath>
+<clipPath id="c3_1"><path d="M354.5,697.5l0,-23l117,0l0,23Z" /></clipPath>
+<clipPath id="c4_1"><path d="M471.5,697.5l0,-23l88,0l0,23Z" /></clipPath>
+<clipPath id="c5_1"><path d="M560.5,697.5l0,-23l145,0l0,23Z" /></clipPath>
+<clipPath id="c6_1"><path d="M2.5,718.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c7_1"><path d="M120.5,718.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c8_1"><path d="M237.5,718.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c9_1"><path d="M354.5,718.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c10_1"><path d="M471.5,718.5l0,-21l88,0l0,21Z" /></clipPath>
+<clipPath id="c11_1"><path d="M560.5,718.5l0,-21l145,0l0,21Z" /></clipPath>
+<clipPath id="c12_1"><path d="M2.5,740.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c13_1"><path d="M120.5,740.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c14_1"><path d="M237.5,740.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c15_1"><path d="M354.5,740.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c16_1"><path d="M471.5,740.5l0,-21l88,0l0,21Z" /></clipPath>
+<clipPath id="c17_1"><path d="M560.5,740.5l0,-21l145,0l0,21Z" /></clipPath>
+<clipPath id="c18_1"><path d="M2.5,762.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c19_1"><path d="M120.5,762.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c20_1"><path d="M237.5,762.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c21_1"><path d="M354.5,762.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c22_1"><path d="M471.5,762.5l0,-21l88,0l0,21Z" /></clipPath>
+<clipPath id="c23_1"><path d="M560.5,762.5l0,-21l145,0l0,21Z" /></clipPath>
+<clipPath id="c24_1"><path d="M2.5,784.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c25_1"><path d="M120.5,784.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c26_1"><path d="M237.5,784.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c27_1"><path d="M354.5,784.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c28_1"><path d="M471.5,784.5l0,-21l88,0l0,21Z" /></clipPath>
+<clipPath id="c29_1"><path d="M560.5,784.5l0,-21l145,0l0,21Z" /></clipPath>
+<clipPath id="c30_1"><path d="M2.5,806.5l0,-21l117,0l0,21Z" /></clipPath>
+<clipPath id="c31_1"><path d="M120.5,806.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c32_1"><path d="M237.5,806.5l0,-21l116,0l0,21Z" /></clipPath>
+<clipPath id="c33_1"><path d="M354.5,806.5l0,-21l117,0l0,21Z" /></clipPath>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g3_1{
+}
+.g1_1{
+fill: #FFFFFF;
+}
+
+.s3_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_f;
+fill: #000000;
+}
+.s5_1{
+font-size: 18.33px;
+font-family: SymbolMT_k;
+fill: #000000;
+}
+.s7_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-BoldMT_r;
+fill: #000000;
+}
+.s6_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-BoldMT_l;
+fill: #000000;
+}
+.s4_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_5;
+fill: #000000;
+}
+.s1_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_5;
+fill: #000000;
+}
+.s2_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-ItalicMT_9;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1037
+L720,1037
+L720,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="7" 
+y="22" 
+dx="0,0.1,-0.2,0,-0.1,0.2,-0.2,0,-0.1,0,0,0,0,-0.1,0.2,0.1,-0.2,0.2,0,-0.1,0,-0.1,0.2,-0.2,0.3" 
+class="s1_1"
+>ALGORITHME DE DICHOTOMIE </text>
+
+<path fill-rule="evenodd" d="M7,48l113,0l0,-22L7,26L7,48Z" class="g1_1" />
+<path fill-rule="evenodd" d="M135,48l162,0l0,-22L135,26l0,22Z" class="g1_1" />
+<path fill-rule="evenodd" d="M388,48l23,0l0,-22l-23,0l0,22Z" class="g1_1" />
+<path fill-rule="evenodd" d="M525,48l4,0l0,-22l-4,0l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="44" 
+dx="0,0.1,0,0,0.1,0,0,0,0,-0.1,0,0,-0.1,0,0.1,0,0" 
+class="s1_1"
+>Soit la fonction </text>
+
+<text 
+x="125" 
+y="44" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="135" 
+y="44" 
+dx="0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,0.1,-0.1,0,0,-0.1,0,0.1" 
+class="s3_1"
+>définie sur l’intervalle</text>
+
+<text 
+x="302" 
+y="44" 
+dx="0,-0.1" 
+class="s2_1"
+>I </text>
+
+<text 
+x="313" 
+y="44" 
+dx="0,-0.1" 
+class="s1_1"
+>= </text>
+
+<text 
+x="328" 
+y="44" 
+dx="0,0.1,-0.1" 
+class="s3_1"
+>[−4</text>
+
+<text 
+x="358" 
+y="44" 
+dx="0,0,0,0,0.2,0,0,-0.1,-0.1,0,0,-0.1,0.2,0,0,-0.1,0" 
+class="s1_1"
+>; 4] par f(x) = x</text>
+
+<text 
+x="472" 
+y="37" 
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+x="478" 
+y="44" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="487" 
+y="44" 
+dx="0,-0.2,0.2,-0.1,0,-0.2" 
+class="s1_1"
+>6x+1. </text>
+
+<path fill-rule="evenodd" d="M7,90l75,0L82,68L7,68L7,90Z" class="g1_1" />
+<text 
+x="7" 
+y="86" 
+dx="0,0.1,0,0,0.2,-0.4,0,0.1,-0.2" 
+class="s1_1"
+>PARTIE I </text>
+
+<path fill-rule="evenodd" d="M7,134l664,0l0,-23L7,111l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="129" 
+dx="0,0,0" 
+class="s1_1"
+>1) </text>
+
+<text 
+x="27" 
+y="129" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="37" 
+y="129" 
+dx="0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0.1,-0.1,0,0.1,0,0,0,0,0,0.2,-0.4,0,0,0.1,0,0,0,-0.1,0,0,-0.1,0,0.1,-0.1,0.2,-0.1,0,0.1,0,0,-0.1,0,0,0,0.1,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0.1,0,0,0.1,0,0,0,0,0.1,0" 
+class="s1_1"
+>étant une fonction polynomiale, elle est dérivable (et donc continue) sur ]</text>
+
+<text 
+x="575" 
+y="129" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="584" 
+y="129" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="601" 
+y="129" 
+dx="0,0,0" 
+class="s1_1"
+>; +</text>
+
+<text 
+x="621" 
+y="129" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="634" 
+y="129" 
+dx="0,0.1,0,-0.1,0,0.1,-0.1" 
+class="s1_1"
+>[ et a </text>
+
+<path fill-rule="evenodd" d="M7,155l94,0l0,-22L7,133l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="150" 
+dx="0,0,0,-0.1,0,0.1,0,0,0,0,0,0,0" 
+class="s1_1"
+>fortiori sur </text>
+
+<text 
+x="91" 
+y="150" 
+dx="0" 
+class="s2_1"
+>I</text>
+
+<text 
+x="97" 
+y="150" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<path fill-rule="evenodd" d="M7,177l345,0l0,-22L7,155l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="173" 
+dx="0,0,0,0,-0.1" 
+class="s1_1"
+>On a </text>
+
+<text 
+x="47" 
+y="173" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="57" 
+y="173" 
+dx="0,0,-0.1,0.2,0,0,-0.1,0,0" 
+class="s1_1"
+>'(x) = 3x</text>
+
+<text 
+x="119" 
+y="166" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="126" 
+y="173" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="135" 
+y="173" 
+dx="0,0,0,-0.1,0,0,0" 
+class="s1_1"
+>6 = 3(x</text>
+
+<text 
+x="188" 
+y="166" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="194" 
+y="173" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="203" 
+y="173" 
+dx="0,0,0,0,-0.1,0,0,0,0.1" 
+class="s1_1"
+>2) = 3(x+</text>
+
+<text 
+x="272" 
+y="173" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="283" 
+y="173" 
+dx="0,0,0,-0.1" 
+class="s1_1"
+>2)(3</text>
+
+<text 
+x="313" 
+y="173" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="322" 
+y="173" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="332" 
+y="173" 
+dx="0,0,-0.1,0.2" 
+class="s1_1"
+>2). </text>
+
+<path fill-rule="evenodd" d="M157,200l100,0l0,-23l-100,0l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="195" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="17" 
+y="195" 
+dx="0,-0.2,0,0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1" 
+class="s1_1"
+>'(x) = 0 pour x</text>
+
+<text 
+x="122" 
+y="197" 
+dx="0" 
+class="s4_1"
+>1</text>
+
+<text 
+x="133" 
+y="195" 
+dx="0,-0.1" 
+class="s1_1"
+>= </text>
+
+<text 
+x="148" 
+y="195" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="157" 
+y="195" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="167" 
+y="195" 
+dx="0,0,0,-0.1,0,0" 
+class="s1_1"
+>2 et x</text>
+
+<text 
+x="208" 
+y="197" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="219" 
+y="195" 
+dx="0,-0.1" 
+class="s1_1"
+>= </text>
+
+<text 
+x="234" 
+y="195" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="244" 
+y="195" 
+dx="0,0,0" 
+class="s1_1"
+>2. </text>
+
+<path fill-rule="evenodd" d="M7,221l615,0l0,-22L7,199l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="216" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="17" 
+y="216" 
+dx="0,-0.2,0,-0.1,0,0,0,0,0,0,0,0,0,0,0.4,-0.4,0,0,0,0,0,0,0,0.1,0,-0.1,0,0.2,0,0,0,-0.1,0,0,-0.1,-0.2,0.1,-0.1,0,0,0,0,0,0,0.1,-0.1,0,0.1,0,-0.1,0,-0.1,0,0,0,-0.1,0,0,0,0.2,-0.1,0" 
+class="s1_1"
+>' étant un polynôme du deuxième degré dont le coefficient de x</text>
+
+<text 
+x="479" 
+y="209" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="490" 
+y="216" 
+dx="0,-0.1,0,0,0,0,0,0.1,-0.1,0,-0.1,0,0,0,-0.1,0,0.1,0,0,-0.1,0,0" 
+class="s1_1"
+>est positif, elle est </text>
+
+<path fill-rule="evenodd" d="M7,243l683,0l0,-22L7,221l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="239" 
+dx="0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0.1,0,-0.1,0,0,0,0,0" 
+class="s1_1"
+>strictement positive sur ]</text>
+
+<text 
+x="189" 
+y="239" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="198" 
+y="239" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="216" 
+y="239" 
+dx="0,0" 
+class="s1_1"
+>; </text>
+
+<text 
+x="226" 
+y="239" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="235" 
+y="239" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="245" 
+y="239" 
+dx="0,0,0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,-0.2,-0.1,0,0.1,0,-0.1,0,0,0.2,0,0" 
+class="s1_1"
+>2[, strictement négative sur ]</text>
+
+<text 
+x="455" 
+y="239" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="464" 
+y="239" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="475" 
+y="239" 
+dx="0,0,0,0" 
+class="s1_1"
+>2 ; </text>
+
+<text 
+x="498" 
+y="239" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="508" 
+y="239" 
+dx="0,0,0.1,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0.1,0,0,0" 
+class="s1_1"
+>2[ et strictement positive </text>
+
+<path fill-rule="evenodd" d="M7,266l101,0l0,-23L7,243l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="261" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>sur ]</text>
+
+<text 
+x="41" 
+y="261" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="51" 
+y="261" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>2 ; +</text>
+
+<text 
+x="84" 
+y="261" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="97" 
+y="261" 
+dx="0,0.1,0" 
+class="s1_1"
+>[. </text>
+
+<path fill-rule="evenodd" d="M7,308l257,0l0,-22L7,286l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="303" 
+dx="0,0,0,-0.1,0,-0.1,0,0,0,-0.1,0,0,0.2,-0.1,0,0,-0.1,0,0.1,-0.1,0,0.1,0,0,0.1,0,0,-0.1" 
+class="s1_1"
+>2) Tableau de variations de </text>
+
+<text 
+x="211" 
+y="303" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="221" 
+y="303" 
+dx="0,0,0,0" 
+class="s1_1"
+>sur </text>
+
+<text 
+x="248" 
+y="303" 
+dx="0" 
+class="s2_1"
+>I</text>
+
+<text 
+x="259" 
+y="303" 
+dx="0,0.2" 
+class="s1_1"
+>: </text>
+
+<path fill-rule="evenodd" d="M7,352l550,0l0,-23L7,329l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="347" 
+dx="0,0" 
+class="s1_1"
+>x </text>
+
+<text 
+x="71" 
+y="347" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="80" 
+y="347" 
+dx="0,0" 
+class="s1_1"
+>4 </text>
+
+<text 
+x="233" 
+y="347" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="242" 
+y="347" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="252" 
+y="347" 
+dx="0,0" 
+class="s1_1"
+>2 </text>
+
+<text 
+x="404" 
+y="347" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="414" 
+y="347" 
+dx="0,0" 
+class="s1_1"
+>2 </text>
+
+<text 
+x="548" 
+y="347" 
+dx="0,0" 
+class="s1_1"
+>4 </text>
+
+<path fill-rule="evenodd" d="M7,372l560,0l0,-21L7,351l0,21Z" class="g1_1" />
+<text 
+x="7" 
+y="368" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1" 
+class="s1_1"
+>_____________________________________________________________ </text>
+
+<path fill-rule="evenodd" d="M7,394l560,0l0,-22L7,372l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="389" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="17" 
+y="389" 
+dx="0,-0.2,0,0.1,0" 
+class="s1_1"
+>'(x) </text>
+
+<text 
+x="71" 
+y="389" 
+dx="0,0,0" 
+class="s1_1"
+>42 </text>
+
+<text 
+x="157" 
+y="389" 
+dx="0" 
+class="s6_1"
+>+</text>
+
+<text 
+x="242" 
+y="389" 
+dx="0,0" 
+class="s1_1"
+>0 </text>
+
+<text 
+x="332" 
+y="389" 
+dx="0" 
+class="s7_1"
+>–</text>
+
+<text 
+x="409" 
+y="389" 
+dx="0,0" 
+class="s1_1"
+>0 </text>
+
+<text 
+x="494" 
+y="389" 
+dx="0" 
+class="s6_1"
+>+</text>
+
+<text 
+x="548" 
+y="389" 
+dx="0,0,0" 
+class="s1_1"
+>42 </text>
+
+<path fill-rule="evenodd" d="M7,415l560,0l0,-22L7,393l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="410" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1" 
+class="s1_1"
+>_____________________________________________________________ </text>
+
+<path fill-rule="evenodd" d="M7,437l560,0l0,-23L7,414l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="433" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="17" 
+y="433" 
+dx="0,0,0.1,-0.2" 
+class="s1_1"
+>(x) </text>
+
+<text 
+x="61" 
+y="433" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="71" 
+y="433" 
+dx="0,0,0" 
+class="s1_1"
+>39 </text>
+
+<text 
+x="224" 
+y="433" 
+dx="0" 
+class="s1_1"
+>4</text>
+
+<text 
+x="233" 
+y="433" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="243" 
+y="433" 
+dx="0,0,-0.1,0,0.1" 
+class="s1_1"
+>2+1) </text>
+
+<text 
+x="386" 
+y="433" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="395" 
+y="433" 
+dx="0" 
+class="s1_1"
+>4</text>
+
+<text 
+x="404" 
+y="433" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="414" 
+y="433" 
+dx="0,0,-0.1,0" 
+class="s1_1"
+>2+1 </text>
+
+<text 
+x="548" 
+y="433" 
+dx="0,0,0" 
+class="s1_1"
+>41 </text>
+
+<path fill-rule="evenodd" d="M7,458l435,0l0,-21L7,437l0,21Z" class="g1_1" />
+<text 
+x="224" 
+y="454" 
+dx="0,-0.1,0,0,0,0,0" 
+class="s1_1"
+>= 6,66 </text>
+
+<text 
+x="386" 
+y="454" 
+dx="0,-0.1" 
+class="s1_1"
+>= </text>
+
+<text 
+x="401" 
+y="454" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="410" 
+y="454" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>4,66 </text>
+
+<path fill-rule="evenodd" d="M291,502l358,0l0,-23l-358,0l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="497" 
+dx="0,0,0" 
+class="s1_1"
+>3) </text>
+
+<text 
+x="27" 
+y="497" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="32" 
+y="497" 
+dx="0,0,0.1,0,0,-0.1,0,0,0.1,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0.1,0,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0.1" 
+class="s1_1"
+>(x) est strictement décroissante sur [</text>
+
+<text 
+x="298" 
+y="497" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="307" 
+y="497" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="317" 
+y="497" 
+dx="0,0,0,0" 
+class="s1_1"
+>2 ; </text>
+
+<text 
+x="340" 
+y="497" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="350" 
+y="497" 
+dx="0,0,0.1,0,-0.1,-0.2,-0.1,0,0,0,0,0,0,0,0,-0.1,0" 
+class="s1_1"
+>2] c'est à dire [</text>
+
+<text 
+x="458" 
+y="497" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="468" 
+y="497" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,0.1,0,0,0,0,0.1,-0.1,0,0,-0.1,0,0.1,-0.1" 
+class="s1_1"
+>1,414 ; 1,414], intervalle </text>
+
+<path fill-rule="evenodd" d="M7,523l261,0l0,-22L7,501l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="518" 
+dx="0,-0.1,0,0,0,-0.1,0,0,0,0,0,0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,0.2,0,-0.1,0,0,0,-0.1,0,0,0.2,0,-0.1,0,0,0.1" 
+class="s1_1"
+>auquel appartiennent x = 0 et x = 1. </text>
+
+<path fill-rule="evenodd" d="M7,545l679,0l0,-22L7,523l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="541" 
+dx="0,0,0,0,-0.1" 
+class="s1_1"
+>On a </text>
+
+<text 
+x="47" 
+y="541" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="52" 
+y="541" 
+dx="0,0,0,-0.1,0,-0.1,0,0,0.2,-0.1,0,0,0,-0.1,0" 
+class="s1_1"
+>(0) = 1 &gt; 0 et </text>
+
+<text 
+x="153" 
+y="541" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="158" 
+y="541" 
+dx="0,0,0,-0.1,0.2,0.1,0.1,-0.1,0,0,-0.1,0,0,0,0.2,-0.2,0,0,0.2,-0.2,-0.1,0,0,0,0,0,0,0,0.2,-0.2,0,0.1,0,-0.1,0.2,0,0,0.1,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s1_1"
+>(1) = -4 &lt; 0. Il s'ensuit qu'il existe une unique solution </text>
+
+<text 
+x="560" 
+y="541" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="576" 
+y="541" 
+dx="0,0,0,0,0,-0.1,0.2,0,-0.1,0,0,-0.1,0,0.1,0,0" 
+class="s1_1"
+>pour l'équation </text>
+
+<path fill-rule="evenodd" d="M7,566l135,0l0,-21L7,545l0,21Z" class="g1_1" />
+<text 
+x="7" 
+y="562" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="12" 
+y="562" 
+dx="0,0,0.1,0,0,-0.1,0,0,0,0,0,0,0,0.1,0,0,0,0,0,0.1,0" 
+class="s1_1"
+>(x) = 0 sur [0 ; 1 . </text>
+
+<path fill-rule="evenodd" d="M7,609l78,0l0,-22L7,587l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="604" 
+dx="0,0.1,0,0,0.2,-0.4,0,0,0" 
+class="s1_1"
+>PARTIE 2 </text>
+
+<path fill-rule="evenodd" d="M531,652l21,0l0,-22l-21,0l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="648" 
+dx="0,0,0,0,-0.1,0,-0.1,0.2,0,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0.2,0,0.1,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0.1,0,-0.1,0,0,0,0.1,-0.1,0.2,0,-0.1,0,0,0,-0.1,0,-0.1,0,0.2,0,0,-0.1,0,0.1,-0.1,0,0,-0.1" 
+class="s1_1"
+>1) Algorithme de dichotomie pour déterminer une valeur approchée de </text>
+
+<text 
+x="531" 
+y="648" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="547" 
+y="648" 
+dx="0,0.2" 
+class="s1_1"
+>: </text>
+
+<g clip-path="url(#c0_1)">
+<path fill-rule="evenodd" d="M56,695l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="56" 
+y="691" 
+dx="0,-0.1" 
+class="s1_1"
+>a </text>
+
+<g clip-path="url(#c1_1)">
+<path fill-rule="evenodd" d="M173,695l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="173" 
+y="691" 
+dx="0,0" 
+class="s1_1"
+>b </text>
+
+<g clip-path="url(#c2_1)">
+<path fill-rule="evenodd" d="M290,695l10,0l0,-21l-10,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="290" 
+y="691" 
+dx="0,0" 
+class="s1_1"
+>h </text>
+
+<g clip-path="url(#c3_1)">
+<path fill-rule="evenodd" d="M380,695l64,0l0,-21l-64,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="380" 
+y="691" 
+dx="0,0" 
+class="s1_1"
+>b </text>
+
+<text 
+x="394" 
+y="691" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="408" 
+y="691" 
+dx="0,-0.1,0,-0.1,0,0.2" 
+class="s1_1"
+>a &gt; h </text>
+
+<g clip-path="url(#c4_1)">
+<path fill-rule="evenodd" d="M508,695l14,0l0,-21l-14,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="508" 
+y="691" 
+dx="0,0" 
+class="s1_1"
+>m </text>
+
+<g clip-path="url(#c5_1)">
+<path fill-rule="evenodd" d="M580,696l105,0l0,-22l-105,0l0,22Z" class="g1_1" />
+</g>
+<text 
+x="580" 
+y="692" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="585" 
+y="692" 
+dx="0,0,-0.1,0" 
+class="s1_1"
+>(a) </text>
+
+<text 
+x="610" 
+y="692" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="625" 
+y="692" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="630" 
+y="692" 
+dx="0,0,0,-0.1,0,-0.1,0,0.2" 
+class="s1_1"
+>(m) &gt; 0 </text>
+
+<path d="M2.5,674.5l0,-1" class="g2_1" />
+<path d="M2.5,674.5l0,-1" class="g2_1" />
+<path d="M2.5,674.5l117,0" class="g2_1" />
+<path d="M119.5,674.5l0,-1" class="g2_1" />
+<path d="M120.5,674.5l116,0" class="g2_1" />
+<path d="M236.5,674.5l0,-1" class="g2_1" />
+<path d="M237.5,674.5l116,0" class="g2_1" />
+<path d="M353.5,674.5l0,-1" class="g2_1" />
+<path d="M354.5,674.5l117,0" class="g2_1" />
+<path d="M471.5,674.5l0,-1" class="g2_1" />
+<path d="M471.5,674.5l88,0" class="g2_1" />
+<path d="M559.5,674.5l0,-1" class="g2_1" />
+<path d="M560.5,674.5l145,0" class="g2_1" />
+<path d="M705.5,674.5l0,-1" class="g2_1" />
+<path d="M705.5,674.5l0,-1" class="g2_1" />
+<path d="M2.5,697.5l0,-23" class="g2_1" />
+<path d="M119.5,697.5l0,-23" class="g2_1" />
+<path d="M236.5,697.5l0,-23" class="g2_1" />
+<path d="M353.5,697.5l0,-23" class="g2_1" />
+<path d="M471.5,697.5l0,-23" class="g2_1" />
+<path d="M559.5,697.5l0,-23" class="g2_1" />
+<path d="M705.5,697.5l0,-23" class="g2_1" />
+<g clip-path="url(#c6_1)">
+<path fill-rule="evenodd" d="M56,718l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="56" 
+y="714" 
+dx="0,0" 
+class="s1_1"
+>0 </text>
+
+<g clip-path="url(#c7_1)">
+<path fill-rule="evenodd" d="M173,718l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="173" 
+y="714" 
+dx="0,0" 
+class="s1_1"
+>1 </text>
+
+<g clip-path="url(#c8_1)">
+<path fill-rule="evenodd" d="M284,718l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="284" 
+y="714" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,1 </text>
+
+<g clip-path="url(#c9_1)">
+<path fill-rule="evenodd" d="M398,718l29,0l0,-21l-29,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="398" 
+y="714" 
+dx="0,0,0,-0.1,0" 
+class="s1_1"
+>vrai </text>
+
+<g clip-path="url(#c10_1)">
+<path fill-rule="evenodd" d="M504,718l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="504" 
+y="714" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,5 </text>
+
+<g clip-path="url(#c11_1)">
+<path fill-rule="evenodd" d="M616,718l33,0l0,-21l-33,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="616" 
+y="714" 
+dx="0,0,-0.1,0,0.2" 
+class="s1_1"
+>faux </text>
+
+<path d="M2.5,697.5l117,0" class="g2_1" />
+<path d="M120.5,697.5l116,0" class="g2_1" />
+<path d="M237.5,697.5l116,0" class="g2_1" />
+<path d="M354.5,697.5l117,0" class="g2_1" />
+<path d="M471.5,697.5l88,0" class="g2_1" />
+<path d="M560.5,697.5l145,0" class="g2_1" />
+<path d="M2.5,718.5l0,-21" class="g2_1" />
+<path d="M119.5,718.5l0,-21" class="g2_1" />
+<path d="M236.5,718.5l0,-21" class="g2_1" />
+<path d="M353.5,718.5l0,-21" class="g2_1" />
+<path d="M471.5,718.5l0,-21" class="g2_1" />
+<path d="M559.5,718.5l0,-21" class="g2_1" />
+<path d="M705.5,718.5l0,-21" class="g2_1" />
+<g clip-path="url(#c12_1)">
+<path fill-rule="evenodd" d="M56,740l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="56" 
+y="736" 
+dx="0,0" 
+class="s1_1"
+>0 </text>
+
+<g clip-path="url(#c13_1)">
+<path fill-rule="evenodd" d="M166,740l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="166" 
+y="736" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,5 </text>
+
+<g clip-path="url(#c14_1)">
+<path fill-rule="evenodd" d="M284,740l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="284" 
+y="736" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,1 </text>
+
+<g clip-path="url(#c15_1)">
+<path fill-rule="evenodd" d="M398,740l29,0l0,-21l-29,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="398" 
+y="736" 
+dx="0,0,0,-0.1,0" 
+class="s1_1"
+>vrai </text>
+
+<g clip-path="url(#c16_1)">
+<path fill-rule="evenodd" d="M499,740l32,0l0,-21l-32,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="499" 
+y="736" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>0,25 </text>
+
+<g clip-path="url(#c17_1)">
+<path fill-rule="evenodd" d="M616,740l33,0l0,-21l-33,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="616" 
+y="736" 
+dx="0,0,-0.1,0,0.2" 
+class="s1_1"
+>faux </text>
+
+<path d="M2.5,719.5l0,-1" class="g2_1" />
+<path d="M2.5,719.5l117,0" class="g2_1" />
+<path d="M119.5,719.5l0,-1" class="g2_1" />
+<path d="M120.5,719.5l116,0" class="g2_1" />
+<path d="M236.5,719.5l0,-1" class="g2_1" />
+<path d="M237.5,719.5l116,0" class="g2_1" />
+<path d="M353.5,719.5l0,-1" class="g2_1" />
+<path d="M354.5,719.5l117,0" class="g2_1" />
+<path d="M471.5,719.5l0,-1" class="g2_1" />
+<path d="M471.5,719.5l88,0" class="g2_1" />
+<path d="M559.5,719.5l0,-1" class="g2_1" />
+<path d="M560.5,719.5l145,0" class="g2_1" />
+<path d="M705.5,719.5l0,-1" class="g2_1" />
+<path d="M2.5,740.5l0,-21" class="g2_1" />
+<path d="M119.5,740.5l0,-21" class="g2_1" />
+<path d="M236.5,740.5l0,-21" class="g2_1" />
+<path d="M353.5,740.5l0,-21" class="g2_1" />
+<path d="M471.5,740.5l0,-21" class="g2_1" />
+<path d="M559.5,740.5l0,-21" class="g2_1" />
+<path d="M705.5,740.5l0,-21" class="g2_1" />
+<g clip-path="url(#c18_1)">
+<path fill-rule="evenodd" d="M56,762l9,0l0,-21l-9,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="56" 
+y="757" 
+dx="0,0" 
+class="s1_1"
+>0 </text>
+
+<g clip-path="url(#c19_1)">
+<path fill-rule="evenodd" d="M162,762l32,0l0,-21l-32,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="162" 
+y="757" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>0,25 </text>
+
+<g clip-path="url(#c20_1)">
+<path fill-rule="evenodd" d="M284,762l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="284" 
+y="757" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,1 </text>
+
+<g clip-path="url(#c21_1)">
+<path fill-rule="evenodd" d="M398,762l29,0l0,-21l-29,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="398" 
+y="757" 
+dx="0,0,0,-0.1,0" 
+class="s1_1"
+>vrai </text>
+
+<g clip-path="url(#c22_1)">
+<path fill-rule="evenodd" d="M495,762l41,0l0,-21l-41,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="495" 
+y="757" 
+dx="0,0,0,0,0,0" 
+class="s1_1"
+>0,125 </text>
+
+<g clip-path="url(#c23_1)">
+<path fill-rule="evenodd" d="M618,762l29,0l0,-21l-29,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="618" 
+y="757" 
+dx="0,0,0,-0.1,0" 
+class="s1_1"
+>vrai </text>
+
+<path d="M2.5,741.5l0,-1" class="g2_1" />
+<path d="M2.5,741.5l117,0" class="g2_1" />
+<path d="M119.5,741.5l0,-1" class="g2_1" />
+<path d="M120.5,741.5l116,0" class="g2_1" />
+<path d="M236.5,741.5l0,-1" class="g2_1" />
+<path d="M237.5,741.5l116,0" class="g2_1" />
+<path d="M353.5,741.5l0,-1" class="g2_1" />
+<path d="M354.5,741.5l117,0" class="g2_1" />
+<path d="M471.5,741.5l0,-1" class="g2_1" />
+<path d="M471.5,741.5l88,0" class="g2_1" />
+<path d="M559.5,741.5l0,-1" class="g2_1" />
+<path d="M560.5,741.5l145,0" class="g2_1" />
+<path d="M705.5,741.5l0,-1" class="g2_1" />
+<path d="M2.5,762.5l0,-21" class="g2_1" />
+<path d="M119.5,762.5l0,-21" class="g2_1" />
+<path d="M236.5,762.5l0,-21" class="g2_1" />
+<path d="M353.5,762.5l0,-21" class="g2_1" />
+<path d="M471.5,762.5l0,-21" class="g2_1" />
+<path d="M559.5,762.5l0,-21" class="g2_1" />
+<path d="M705.5,762.5l0,-21" class="g2_1" />
+<g clip-path="url(#c24_1)">
+<path fill-rule="evenodd" d="M40,784l41,0l0,-21l-41,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="40" 
+y="779" 
+dx="0,0,0,0,0,0" 
+class="s1_1"
+>0,125 </text>
+
+<g clip-path="url(#c25_1)">
+<path fill-rule="evenodd" d="M162,784l32,0l0,-21l-32,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="162" 
+y="779" 
+dx="0,0,0,0,0" 
+class="s1_1"
+>0,25 </text>
+
+<g clip-path="url(#c26_1)">
+<path fill-rule="evenodd" d="M284,784l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="284" 
+y="779" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,1 </text>
+
+<g clip-path="url(#c27_1)">
+<path fill-rule="evenodd" d="M398,784l29,0l0,-21l-29,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="398" 
+y="779" 
+dx="0,0,0,-0.1,0" 
+class="s1_1"
+>vrai </text>
+
+<g clip-path="url(#c28_1)">
+<path fill-rule="evenodd" d="M490,784l51,0l0,-21l-51,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="490" 
+y="779" 
+dx="0,0,0,0,0,0,0" 
+class="s1_1"
+>0,1875 </text>
+
+<g clip-path="url(#c29_1)">
+<path fill-rule="evenodd" d="M616,784l33,0l0,-21l-33,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="616" 
+y="779" 
+dx="0,0,-0.1,0,0.2" 
+class="s1_1"
+>faux </text>
+
+<path d="M2.5,763.5l0,-1" class="g2_1" />
+<path d="M2.5,763.5l117,0" class="g2_1" />
+<path d="M119.5,763.5l0,-1" class="g2_1" />
+<path d="M120.5,763.5l116,0" class="g2_1" />
+<path d="M236.5,763.5l0,-1" class="g2_1" />
+<path d="M237.5,763.5l116,0" class="g2_1" />
+<path d="M353.5,763.5l0,-1" class="g2_1" />
+<path d="M354.5,763.5l117,0" class="g2_1" />
+<path d="M471.5,763.5l0,-1" class="g2_1" />
+<path d="M471.5,763.5l88,0" class="g2_1" />
+<path d="M559.5,763.5l0,-1" class="g2_1" />
+<path d="M560.5,763.5l145,0" class="g2_1" />
+<path d="M705.5,763.5l0,-1" class="g2_1" />
+<path d="M2.5,784.5l0,-21" class="g2_1" />
+<path d="M119.5,784.5l0,-21" class="g2_1" />
+<path d="M236.5,784.5l0,-21" class="g2_1" />
+<path d="M353.5,784.5l0,-21" class="g2_1" />
+<path d="M471.5,784.5l0,-21" class="g2_1" />
+<path d="M559.5,784.5l0,-21" class="g2_1" />
+<path d="M705.5,784.5l0,-21" class="g2_1" />
+<g clip-path="url(#c30_1)">
+<path fill-rule="evenodd" d="M40,806l41,0l0,-21l-41,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="40" 
+y="801" 
+dx="0,0,0,0,0,0" 
+class="s1_1"
+>0,125 </text>
+
+<g clip-path="url(#c31_1)">
+<path fill-rule="evenodd" d="M153,806l50,0l0,-21l-50,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="153" 
+y="801" 
+dx="0,0,0,0,0,0,0" 
+class="s1_1"
+>0,1875 </text>
+
+<g clip-path="url(#c32_1)">
+<path fill-rule="evenodd" d="M284,806l23,0l0,-21l-23,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="284" 
+y="801" 
+dx="0,0,0,0" 
+class="s1_1"
+>0,1 </text>
+
+<g clip-path="url(#c33_1)">
+<path fill-rule="evenodd" d="M396,806l33,0l0,-21l-33,0l0,21Z" class="g1_1" />
+</g>
+<text 
+x="396" 
+y="801" 
+dx="0,0,-0.1,0,0.2" 
+class="s1_1"
+>faux </text>
+
+<path d="M2.5,785.5l0,-1" class="g2_1" />
+<path d="M2.5,785.5l117,0" class="g2_1" />
+<path d="M119.5,785.5l0,-1" class="g2_1" />
+<path d="M120.5,785.5l116,0" class="g2_1" />
+<path d="M236.5,785.5l0,-1" class="g2_1" />
+<path d="M237.5,785.5l116,0" class="g2_1" />
+<path d="M353.5,785.5l0,-1" class="g2_1" />
+<path d="M354.5,785.5l117,0" class="g2_1" />
+<path d="M471.5,785.5l0,-1" class="g2_1" />
+<path d="M471.5,785.5l88,0" class="g2_1" />
+<path d="M559.5,785.5l0,-1" class="g2_1" />
+<path d="M560.5,785.5l145,0" class="g2_1" />
+<path d="M705.5,785.5l0,-1" class="g2_1" />
+<path d="M2.5,806.5l0,-21" class="g2_1" />
+<path d="M2.5,807.5l0,-1" class="g2_1" />
+<path d="M2.5,807.5l0,-1" class="g2_1" />
+<path d="M2.5,807.5l117,0" class="g2_1" />
+<path d="M119.5,806.5l0,-21" class="g2_1" />
+<path d="M119.5,807.5l0,-1" class="g2_1" />
+<path d="M120.5,807.5l116,0" class="g2_1" />
+<path d="M236.5,806.5l0,-21" class="g2_1" />
+<path d="M236.5,807.5l0,-1" class="g2_1" />
+<path d="M237.5,807.5l116,0" class="g2_1" />
+<path d="M353.5,806.5l0,-21" class="g2_1" />
+<path d="M353.5,807.5l0,-1" class="g2_1" />
+<path d="M354.5,807.5l117,0" class="g2_1" />
+<path d="M471.5,806.5l0,-21" class="g2_1" />
+<path d="M471.5,807.5l0,-1" class="g2_1" />
+<path d="M471.5,807.5l88,0" class="g2_1" />
+<path d="M559.5,806.5l0,-21" class="g2_1" />
+<path d="M559.5,807.5l0,-1" class="g2_1" />
+<path d="M560.5,807.5l145,0" class="g2_1" />
+<path d="M705.5,806.5l0,-21" class="g2_1" />
+<path d="M705.5,807.5l0,-1" class="g2_1" />
+<path d="M705.5,807.5l0,-1" class="g2_1" />
+<path fill-rule="evenodd" d="M7,849l357,0l0,-22L7,827l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="844" 
+dx="0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0.1,-0.2,-0.1,0.2,-0.2,0,0,0,0,0,0,-0.1,0.2,0,0,0,0,0,0,0,0.1,-0.1,0,0,0,0.1,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,0.2" 
+class="s1_1"
+>2) En sortie d'algorithme, on obtient les valeurs : </text>
+
+<path fill-rule="evenodd" d="M7,870l162,0l0,-22L7,848l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="865" 
+dx="0,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0" 
+class="s1_1"
+>a = 0,125 ; b = 0,1875 </text>
+
+<path fill-rule="evenodd" d="M7,892l590,0l0,-22L7,870l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="888" 
+dx="0,0,0,0,0,0,-0.1,0,0,-0.1,0,-0.1,0,0.2,-0.1,0,0,0,0,-0.1,0,0,0.1,-0.1,0,0.1,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,-0.1,0,0,-0.1,0,0.1,-0.1,0,-0.1,0,0,0,0,0,0.1,0,0,-0.1,0,0.1,-0.1,0,0,-0.1" 
+class="s1_1"
+>qui représentent respectivement les estimations inférieure et supérieure de </text>
+
+<text 
+x="555" 
+y="888" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="571" 
+y="888" 
+dx="0,-0.1,0,0,0.2" 
+class="s1_1"
+>à 0. </text>
+
+<path fill-rule="evenodd" d="M7,936l653,0l0,-23L7,913l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="931" 
+dx="0,0,0,0,-0.1,0,-0.1,0,0,0,0,0.1,-0.1,0,0,-0.1,0.2,-0.1,0,0,0,0,0,0,-0.1,-0.1,0.2,0,-0.1,-0.1,0,0.1,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0.1,0,0,0,0,0,0,0,0,0.1,0,0,-0.1,0,0,-0.1,0,0.1,-0.1,0,-0.1,0,0,0,0,0,0,-0.1,0.2,-0.1,0,0.1,-0.1,0,0,-0.1,0,-0.1,0,0.2,0,0,0,-0.1" 
+class="s1_1"
+>3) a et b représentent respectivement les estimations inférieure et supérieure (a &lt; b) de </text>
+
+<text 
+x="644" 
+y="931" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="656" 
+y="931" 
+dx="0,0" 
+class="s1_1"
+>. </text>
+
+<path fill-rule="evenodd" d="M7,958l671,0l0,-22L7,936l0,22Z" class="g1_1" />
+<text 
+x="7" 
+y="954" 
+dx="0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0.1,-0.2,-0.1,0,0,0.2,-0.1,0,0,0,0,0,-0.1,0.1,0,0,0,0,-0.1,0,-0.1,0,0,0,0,0" 
+class="s1_1"
+>Elles convergent et se rapprochent de </text>
+
+<text 
+x="286" 
+y="954" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="302" 
+y="954" 
+dx="0,-0.1,0,-0.1,0.2,-0.1,0,0,-0.1,0.2,-0.1,0,0,0,-0.1,0,0,-0.1,0,0.2,0,-0.1,0,-0.1,0.2,0,0,0,0,0,-0.1,0,0,-0.1,-0.1,0.2,0,-0.1,0,0,0,-0.1,0,0,0.1,0,-0.1,0,-0.1,-0.1,0.2,-0.1,0,0" 
+class="s1_1"
+>à chaque étape de l'algorithme, ce dernier s'arrêtant </text>
+
+<path fill-rule="evenodd" d="M7,979l676,0l0,-21L7,958l0,21Z" class="g1_1" />
+<text 
+x="7" 
+y="975" 
+dx="0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0.1,-0.1,0,0" 
+class="s1_1"
+>lorsque la différence b </text>
+
+<text 
+x="176" 
+y="975" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="190" 
+y="975" 
+dx="0,-0.1,0,-0.1,0,0,0,0.1,0,0,-0.1,0,0,-0.1,0.2,0,-0.1,0,0,0,0.2,0.1,-0.2,-0.1,0,0,0.1,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0.1,0,0,-0.1,0,0.2,0.1,-0.1,0,-0.1,0,0.2,-0.2,-0.1,0.2,0.1,0,-0.1,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0" 
+class="s1_1"
+>a est inférieure ou égale à une valeur fixée à l'avance, ici h = 0,1. A </text>
+
+<path fill-rule="evenodd" d="M7,1000l688,0l0,-21L7,979l0,21Z" class="g1_1" />
+<text 
+x="7" 
+y="996" 
+dx="0,-0.1,0,-0.1,0,0,-0.1,0.2,-0.1,0,0,0,-0.1,0,0.2,-0.1,0,0,0,0,0.2,-0.2,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0.1,-0.1,0,0,-0.1,0.2,-0.1,0,0,0.1,0,-0.1,0,0,0,0,0,-0.1,-0.1,0.2,-0.1,0,0,0,0,0,0.2,-0.1,0,0,0,0.1,-0.1,0,0,0.1,0,0,-0.1,0,-0.1,0,0,0,0,0,0,-0.1,0,0.1,0,0,0,0,0.1,-0.1" 
+class="s1_1"
+>chaque étape de l'algorithme, une nouvelle valeur de m = (a + b)/2 est calculée et est attribuée </text>
+
+<path fill-rule="evenodd" d="M7,1023l687,0l0,-23L7,1000l0,23Z" class="g1_1" />
+<text 
+x="7" 
+y="1018" 
+dx="0,-0.1,0,0,0,0,0" 
+class="s1_1"
+>à b si </text>
+
+<text 
+x="51" 
+y="1018" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="56" 
+y="1018" 
+dx="0,0,-0.1,0" 
+class="s1_1"
+>(a) </text>
+
+<text 
+x="80" 
+y="1018" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="95" 
+y="1018" 
+dx="0" 
+class="s2_1"
+>f</text>
+
+<text 
+x="100" 
+y="1018" 
+dx="0,0,0,-0.1,0,-0.1,0,0,0.2,-0.1,0,0,0,0.1,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0.1,-0.1,0,0,-0.1,0,0,0,0,-0.1,0.2,0,0,0,0,0.1,0.1,0,0,0,0,0,0,0,0,0,-0.1,-0.1,0,0,0,0,-0.1,0,0,0.2,-0.1,0.1,-0.2,-0.1,0.2,0.1,-0.1,0,0,-0.1,0,-0.1,0.2,-0.1,0,0,0,0,0,0,-0.1,0" 
+class="s1_1"
+>(m) &gt; 0 et à a dans le cas contraire, ce qui assure la convergence de a et b vers </text>
+
+<text 
+x="678" 
+y="1018" 
+dx="0" 
+class="s5_1"
+></text>
+
+<text 
+x="689" 
+y="1018" 
+dx="0,0.2" 
+class="s1_1"
+>. </text>
+
+<path d="M110.8,453.2l81.1,-26.6l0.7,2.2l-81.1,26.5Zm71.3,-28.8l12.3,2.6l-8.3,9.4c-0.4,0.5,-1.2,0.5,-1.6,0.1c-0.5,-0.4,-0.5,-1.1,-0.1,-1.6l7,-8l0.6,1.9l-10.3,-2.2c-0.7,-0.1,-1,-0.7,-0.9,-1.4c0.1,-0.6,0.7,-1,1.3,-0.8Z" class="g3_1" />
+<path d="M459.7,450.7l81.2,-26.5l0.7,2.1l-81.2,26.6Zm71.4,-28.8l12.3,2.7L535,434c-0.4,0.4,-1.1,0.5,-1.6,0.1c-0.5,-0.5,-0.5,-1.2,-0.1,-1.7l7.1,-7.9l0.6,1.9l-10.4,-2.3c-0.6,-0.1,-1,-0.7,-0.9,-1.3c0.2,-0.6,0.8,-1,1.4,-0.9Z" class="g3_1" />
+<path d="M294.5,422.6l82.4,26.6l-0.7,2.2L293.8,424.8Zm75.8,19l8.4,9.4l-12.3,2.7c-0.6,0.1,-1.2,-0.3,-1.4,-0.9c-0.1,-0.6,0.3,-1.2,0.9,-1.4l10.4,-2.3l-0.6,1.9l-7.1,-7.9c-0.4,-0.4,-0.4,-1.2,0.1,-1.6c0.4,-0.4,1.2,-0.4,1.6,0.1Z" class="g3_1" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: SymbolMT_k;
+	src: url("fonts/SymbolMT_k.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-ItalicMT_9;
+	src: url("fonts/TimesNewRomanPS-ItalicMT_9.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_f;
+	src: url("fonts/TimesNewRomanPSMT_f.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldMT_r;
+	src: url("fonts/TimesNewRomanPS-BoldMT_r.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldMT_l;
+	src: url("fonts/TimesNewRomanPS-BoldMT_l.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_5;
+	src: url("fonts/TimesNewRomanPSMT_5.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

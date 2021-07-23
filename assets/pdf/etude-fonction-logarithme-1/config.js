@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":2,"title":"","author":"Patrick Kitabgi","fileName":"etude_fonction_logarithme_1.pdf","bounds":[[721,1136],[723,499]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

@@ -1,0 +1,188 @@
+\input{_header}
+\begin{h2}I - Démonstration par récurrence\end{h2}
+\cadre{rouge}{Théorème}{%id="t10"
+     Soit $P\left(n\right)$ une proposition qui dépend d'un entier naturel $n$.
+     \begin{itemize}
+          \item Si $P\left(n_{0}\right)$ est vraie \textbf{(initialisation)}
+          \item Et si $P\left(n\right)$ vraie entraîne $P\left(n+1\right)$ vraie \textbf{(hérédité)}
+     \end{itemize}
+     alors la propriété $P\left(n\right)$ est vraie pour tout entier $n\geqslant n_{0}$
+}
+\bloc{vert}{Remarques}{%id="r10"
+     \begin{itemize}
+          \item La démonstration par récurrence s'apparente au "principe des dominos" :
+          \begin{center}
+               \img{dominos}{0.4}%width="450" alt="dominos et récurrence"
+          \end{center}
+          \item L'étape d'initialisation est souvent facile à démontrer~; toutefois, faites attention à \textbf{ne pas l'oublier}~!
+          \item Pour prouver l'hérédité, on suppose que la propriété est vraie \textbf{pour un certain entier $n$} (cette supposition est appelée \textbf{hypothèse de récurrence}) et on démontre qu'elle est alors vraie pour l'entier $n+1$. Pour cela, il est conseillé d'écrire ce que signifie $P\left(n+1\right)$ (que l'on souhaite démontrer), en remplaçant $n$ par $n+$1 dans la propriété $P\left(n\right)$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e10"
+     Montrons que pour tout entier n strictement positif $1+2+. . .+n=\frac{n\left(n+1\right)}{2}$.
+     \bigbreak
+     \textbf{Initialisation}
+     \medbreak
+     On commence à $n_{0}=1$ car l'énoncé précise "strictement positif".
+     \par
+     La proposition devient :
+     \par
+     $1=\frac{1\times 2}{2}$
+     \par
+     ce qui est vrai.
+     \bigbreak
+     \textbf{Hérédité}
+     \medbreak
+     On suppose que pour un certain entier $n$:
+     \par
+     $1+2+. . .+n=\frac{n\left(n+1\right)}{2}$ (\textbf{Hypothèse de récurrence})
+     \par
+     et on va montrer qu'alors :
+     \par
+     $1+2+. . .+n+1=\frac{\left(n+1\right)\left(n+2\right)}{2}$ (on a remplacé $n$ par $n+1$ dans la formule que l'on souhaite prouver).
+     \par
+     Isolons le dernier terme de notre somme
+     \par
+     $1+2+. . .+n+1=\left(1+2+. . . +n\right) + n+1$
+     \par
+     On applique maintenant notre hypothèse de récurrence à $1+2+. . . +n$:
+     \par
+     $1+2+. . .+n+1=\frac{n\left(n+1\right)}{2}+n+1=\frac{n\left(n+1\right)}{2}+\frac{2\left(n+1\right)}{2}=\frac{n\left(n+1\right)+2\left(n+1\right)}{2}$
+     \par
+     $1+2+. . .+n+1=\frac{\left(n+1\right)\left(n+2\right)}{2}$
+     \par
+     ce qui correspond bien à ce que nous voulions montrer.
+     \medbreak
+     En conclusion nous avons bien prouvé que pour pour tout entier n strictement positif :
+     \par
+     $1+2+. . .+n=\frac{n\left(n+1\right)}{2}$.
+}
+\begin{h2}II - Sens de variation - Suites majorées, minorées\end{h2}
+\cadre{bleu}{Définitions (rappel)}{%id="d20"
+     \begin{itemize}
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{croissante} si pour tout entier naturel $n$ : $u_{n+1} \geqslant u_{n}$
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{strictement croissante} si pour tout entier naturel $n$ : $u_{n+1} > u_{n}$
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{décroissante} si pour tout entier naturel $n$ : $u_{n+1} \leqslant u_{n}$
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{strictement décroissante} si pour tout entier naturel $n$ : $u_{n+1} < u_{n}$
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{constante} si pour tout entier naturel $n$ : $u_{n+1} = u_{n}$
+     \end{itemize}
+}
+\cadre{bleu}{Définitions}{%id="d30"
+     \begin{itemize}
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{majorée} par le réel $M$ si tout entier naturel $n$ : $u_{n} \leqslant M$.
+          \par
+          $M$ s'appelle alors un \textbf{majorant} de la suite $\left(u_{n}\right)$
+          \item On dit que la suite $\left(u_{n}\right)$ est \textbf{minorée} par le réel $m$ si pour tout entier naturel $n$ : $u_{n} \geqslant m$.
+          \par
+          $m$ s'appelle un \textbf{minorant} de la suite $\left(u_{n}\right)$
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%id="r30"
+     Si la suite $\left(u_{n}\right)$ est majorée (ou minorée), les majorants (ou minorants) \textbf{ne sont pas uniques}. Bien au contraire, si $M$ est un majorant de la suite $\left(u_{n}\right)$, tout réel supérieur à $M$ est aussi un majorant de la suite $\left(u_{n}\right)$
+}
+\bloc{orange}{Exemple}{%id="e30"
+     Soit la suite $\left(u_{n}\right)$ définie par :
+     \par
+     $\left\{ \begin{matrix} u_{0}=1 \\ u_{n+1} =u_{n}^{2}+1 \end{matrix}\right.\text{pour tout} n \in \mathbb{N}$
+     \par
+     On vérifie aisément que pour tout $n \in \mathbb{N}$, $u_{n}$ est supérieur ou égal à $1$ donc la suite $\left(u_{n}\right)$ est minorée par $1$. Par contre cette suite n'est pas majorée (on peut, par exemple, démonter par récurrence que pour tout $n \in \mathbb{N}$ $u_{n} > n$.
+}
+\begin{h2}III - Convergence - Limite\end{h2}
+\cadre{bleu}{Définition}{%id="d40"
+     On dit que la suite $(u_{n})$ \textbf{converge} vers le nombre réel $l$ (ou \textbf{admet pour limite} le nombre réel $l$) si tout intervalle ouvert contenant $l$ contient tous les termes de la suite à partir d'un certain rang.
+     \par
+     On note alors $\lim\limits_{n\rightarrow +\infty }u_{n}=l$
+}
+\bloc{orange}{Exemple}{%id="e40"
+     \begin{center}
+          \begin{extern}%width="600" alt="suite convergente"
+               % -+-+-+ variables modifiables
+               \resizebox{8cm}{!}{%
+                    \def\xmin{-1}
+                    \def\xmax{13.5}
+                    \def\ymin{-2}
+                    \def\ymax{3.8}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{15pt}{15pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[Dx=100,Dy=100,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \multido{\n=0.0+1}{15}{
+                              \FPeval{\suite}{3*cos(\n*3.14159)/(\n+1)+2}
+                              \psdots[linecolor=blue](\n,\suite)
+                         }
+                         \psline[linecolor=red,linewidth=0.5pt](-3,2)(16,2)
+                         \rput[br](-0.1,2.1){$\red l$}
+                         \psdots[linecolor=red](0,2)
+                         \psframe[fillstyle=solid,fillcolor=vert,linecolor=vert,linewidth=0.75pt,opacity=0.2](-3,2.6)(16,1.4)
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Suite convergeant vers $l$}
+     \end{center}
+}
+\bloc{cyan}{Remarques}{%id="r40"
+     \begin{itemize}
+          \item Une suite qui n'est pas convergente (c'est à dire qui n'a pas de limite ou qui a une limite infinie - voir ci-dessous) est dite \textbf{divergente}.
+          \item La limite, si elle existe, est \textbf{unique}.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e40"
+     Les suites définies pour $n > 0$ par $u_{n}=\frac{1}{n^{k}}$ où $k$ est un entier strictement positif, \textbf{convergent vers zéro}
+}
+\cadre{bleu}{Définition}{%id="d50"
+     On dit que la suite $u_{n}$ admet pour limite $+\infty $ si tout intervalle de la forme $\left]A;+\infty \right[$ contient tous les termes de la suite à partir d'un certain rang.
+}
+\bloc{orange}{Exemple}{%id="e50"
+     Les suites définies pour $n > 0$ par $u_{n}=n^{k}$ où $k$ est un entier strictement positif, divergent vers $+\infty $
+}
+\cadre{rouge}{Théorème (des gendarmes)}{%id="t60"
+     Si les suites $\left(v_{n}\right)$ et $\left(w_{n}\right)$ convergent vers \textbf{la même limite} $l$ et si $v_{n}\leqslant u_{n}\leqslant w_{n}$ pour tout entier $n$ à partir d'un certain rang, alors la suite $\left(u_{n}\right)$ converge vers $l$.
+}
+\bloc{orange}{Exemple}{%id="e60"
+     Soit la suite définie pour $n > 0$ par $u_{n}=\frac{\sin\left(n\right)}{n}$.
+     \par
+     On sait que pour tout $n$, $-1\leqslant \sin\left(n\right)\leqslant 1$ donc $-\frac{1}{n}\leqslant \frac{\sin\left(n\right)}{n}\leqslant \frac{1}{n}$.
+     \par
+     Or les suites $\left(v_{n}\right)$ et $\left(w_{n}\right)$ définie sur $\mathbb{N}^*$ par $v_{n}=-\frac{1}{n}$ et $w_{n}=\frac{1}{n}$ convergent vers zéro donc, d'après le théorème des gendarmes \textbf{$\left(u_{n}\right)$ converge vers zéro}.
+}
+\cadre{rouge}{Théorème}{%id="t70"
+     Soient deux suites $\left(u_{n}\right)$ et $\left(v_{n}\right)$ telles que pour tout $n \in \mathbb{N}$, $u_{n}\geqslant v_{n}$.
+     \par
+     Si $\lim\limits_{n\rightarrow +\infty }v_{n}=+\infty $, alors $\lim\limits_{n\rightarrow +\infty }u_{n}=+\infty $
+}
+\cadre{rouge}{Théorème}{%id="t80"
+     Une suite \textbf{croissante et majorée} est convergente.
+     \par
+     Une suite \textbf{décroissante et minorée} est convergente.
+}
+\bloc{cyan}{Remarques}{%id="r80"
+     \begin{itemize}
+          \item Ce théorème est fréquemment utilisé dans les exercices
+          \item Ce théorème permet de montrer qu'une suite est convergente mais, à lui seul, il ne permet pas de trouver la valeur de la limite $l$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e80"
+     Un cas particulier assez fréquent est celui d'une suite \textbf{décroissante et positive}. Puisqu'elle est positive, elle est minorée par zéro, donc d'après le théorème précédent, elle est convergente.
+}
+\cadre{rouge}{Théorème (limite d'une suite géométrique)}{%id="t90"
+     Soit $\left(u_{n}\right)$ une suite géométrique de raison $q$.
+     \begin{itemize}
+          \item Si $-1 < q < 1$ la suite $\left(u_{n}\right)$ \textbf{converge vers 0}
+          \item Si $q > 1$ la suite $\left(u_{n}\right)$ \textbf{tend vers $+\infty $}
+          \item Si $q\leqslant -1$ la suite $\left(u_{n}\right)$ \textbf{n'a pas de limite.}
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%id="r90"
+     Si $q=1$ la suite $\left(u_{n}\right)$ est constante (donc convergente)
+}
+\bloc{orange}{Exemple}{%id="e90"
+     $\lim\limits_{n\rightarrow +\infty }\left(\frac{2}{3}\right)^{n}=0$ (suite géométrique de raison $q=\frac{2}{3} < 1$)
+     \par
+     $\lim\limits_{n\rightarrow +\infty }\left(\frac{4}{3}\right)^{n}=+\infty $ (suite géométrique de raison $q=\frac{4}{3} > 1$)
+}
+\input{_footer}

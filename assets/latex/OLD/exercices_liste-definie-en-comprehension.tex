@@ -1,0 +1,65 @@
+\input{_header}
+On souhaite écrire une fonction  nommée \texttt{fini_par_1}   qui prend deux arguments entiers naturels  \texttt{a} et  \texttt{b} et qui retourne la liste des entiers compris, au sens large, entre \texttt{a} et  \texttt{b} dont le chiffre des unités est égal à 1.
+\par
+Par exemple, on souhaite que \texttt{fini_par_1(0, 21)} retourne la liste  \texttt{[1, 11, 21]}    
+\par
+Il faut que cette fonction ne contienne qu'une unique commande (qui peut toutefois faire appel à plusieurs instructions) suivant le modèle ci-dessous~: 
+\begin{lstlisting}[language=Python]
+def fini_par_1(a, b) :
+   return ...
+\end{lstlisting}
+
+\medskip
+ \textit{Indications~: } 
+\begin{itemize}
+\item
+On utilisera une liste définie en compréhension.
+\item
+On rappelle que l'instruction \texttt{ x \% y } renvoie le reste de la division euclidienne de  \texttt{x} par  \texttt{y}.    
+\end{itemize}
+
+\medskip
+  \textit{Test~: } 
+\par
+Pour vérifier votre réponse, testez votre fonction avec les commandes~: 
+\begin{lstlisting}[language=Python]
+>>> fini_par_1(0,1)
+>>> fini_par_1(1,11)
+>>> fini_par_1(10,50)
+>>> fini_par_1(10,51)
+>>> fini_par_1(100,50)
+\end{lstlisting}  
+
+\begin{corrige}
+Voici une fonction possible~: 
+\par
+\begin{lstlisting}[language=Python]
+def fini_par_1(a, b) :
+   return [x for x in range(a,b+1) if x%10==1]
+\end{lstlisting}
+\medskip
+  \textit{Explications~: } 
+\begin{itemize}
+\item
+ \texttt{  range(a,b+1) } retourne les entiers naturels compris entre  \texttt{a} et  \texttt{b}. On filtre ensuite cette liste à l'aide d'une instruction  \texttt{if}.        
+\item
+ \texttt{  x \%10 } retourne le reste de la division euclidienne de  \texttt{x}  par  \texttt{10}, c'est à dire le dernier chiffre de  \texttt{x}. On teste alors si ce chiffre est égal à 1.       
+\end{itemize}
+ \medskip
+  \textit{Test~: } 
+\par
+Voici les listes renvoyées par cette fonction pour les exemples donnés dans l'énoncé~: 
+\begin{lstlisting}[language=Python]
+>>> fini_par_1(0,1)
+[1]
+>>> fini_par_1(1,11)
+[1, 11]
+>>> fini_par_1(10,50)
+[11, 21, 31, 41]
+>>> fini_par_1(10,51)
+[11, 21, 31, 41, 51]
+>>> fini_par_1(100,50)
+[] # car 100 > 50
+\end{lstlisting}  
+\end{corrige} 
+\input{_footer}

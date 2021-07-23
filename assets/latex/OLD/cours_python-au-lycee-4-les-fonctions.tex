@@ -1,0 +1,176 @@
+\input{_header}
+\begin{h2}Fonctions en programmation\end{h2}
+Lorsqu'un groupe d'instructions se répète plusieurs fois dans un programme, il peut être utile de regrouper ces instructions à l'intérieur de \textit{fonctions.}
+\par
+Cela permet de diminuer la taille du programme, de faciliter sa maintenance et de le rendre plus lisible en fractionnant le code en blocs indépendants. Par ailleurs, un programmeur peut ainsi utiliser un code écrit par une autre personne.
+\par
+Dans les chapitres précédents, nous avons déjà utilisé des fonctions comme \texttt{print()} ou \texttt{len()} qui sont des fonctions internes à Python.
+\par
+L'appel à une fonction peut être schématisé de la manière suivante~:
+\par
+\begin{center}
+     \begin{extern}%alt="Diagramme fonction python" model="modeles-diagramme" style="width:50rem"
+          \newrgbcolor{qqzzqq}{0. 0.6 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,1.)(8.,4.)
+               \pspolygon[linecolor=blue,fillcolor=white,fillstyle=solid,opacity=0.05](1.,3.)(1.,2.)(3.,2.)(3.,3.)
+               \pspolygon[linecolor=red,fillcolor=white,fillstyle=solid,opacity=0.05](5.,3.)(5.,2.)(7.,2.)(7.,3.)
+               \psline[linecolor=blue](1.,3.)(1.,2.)
+               \psline[linecolor=blue](1.,2.)(3.,2.)
+               \psline[linecolor=blue](3.,2.)(3.,3.)
+               \psline[linecolor=blue](3.,3.)(1.,3.)
+               \psline[linecolor=red](5.,3.)(5.,2.)
+               \psline[linecolor=red](5.,2.)(7.,2.)
+               \psline[linecolor=red](7.,2.)(7.,3.)
+               \psline[linecolor=red](7.,3.)(5.,3.)
+               \psline[linecolor=qqzzqq]{->}(3.,2.8)(5.,2.8)
+               \psline[linecolor=magenta]{->}(5.,2.2)(3.,2.2)
+               \rput[t](4,3.05){\tiny\qqzzqq{Argument(s)}}
+               \rput[t](2,2.6){\tiny\blue{Programme principal}}
+               \rput[t](6,2.6){\tiny\red{Fonction}}
+               \rput[t](4,2.1){\tiny\magenta{Valeur retournée}}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\par
+\begin{itemize}
+     \item
+     Le programme appelle la fonction en lui passant éventuellement certaines valeurs appelées \textit{arguments} ou \textit{paramètres}. Il peut y avoir zéro, un ou plusieurs paramètre(s) de n'importe quel type.
+     \item
+     La fonction effectue certaines opérations en utilisant, au besoin, les valeurs passées en paramètre.
+     \item
+     La fonction peut ensuite retourner un résultat au programme qui l'a appelé~; le retour d'une valeur n'est toutefois pas obligatoire.
+\end{itemize}
+\par
+Considérons, par exemple, l'instruction~:
+\\
+\begin{lstlisting}[language=Python]
+x=len("Bonjour") 
+\end{lstlisting}
+L'exécution de cette commande se déroule de la manière suivante~:
+\par
+\begin{center}
+     \begin{extern}%alt="Diagramme exemple fct python" model="modeles-diagramme" style="width:50rem"
+          \newrgbcolor{qqzzqq}{0. 0.6 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,1.)(8.,4.)
+               \pspolygon[linecolor=blue,fillcolor=white,fillstyle=solid,opacity=0.05](1.,3.)(1.,2.)(3.,2.)(3.,3.)
+               \pspolygon[linecolor=red,fillcolor=white,fillstyle=solid,opacity=0.05](5.,3.)(5.,2.)(7.,2.)(7.,3.)
+               \psline[linecolor=blue](1.,3.)(1.,2.)
+               \psline[linecolor=blue](1.,2.)(3.,2.)
+               \psline[linecolor=blue](3.,2.)(3.,3.)
+               \psline[linecolor=blue](3.,3.)(1.,3.)
+               \psline[linecolor=red](5.,3.)(5.,2.)
+               \psline[linecolor=red](5.,2.)(7.,2.)
+               \psline[linecolor=red](7.,2.)(7.,3.)
+               \psline[linecolor=red](7.,3.)(5.,3.)
+               \psline[linecolor=qqzzqq]{->}(3.,2.8)(5.,2.8)
+               \psline[linecolor=magenta]{->}(5.,2.2)(3.,2.2)
+               \rput[t](4,3.05){\tiny\qqzzqq{"Bonjour"}}
+               \rput[t](2,2.6){\tiny\blue{Programme principal}}
+               \rput[t](6,2.6){\tiny\red{Fonction len()}}
+               \rput[t](4.,2.1){\tiny\magenta{7}}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\par\begin{itemize}
+     \item
+     le programme appelle la fonction Python \texttt{len()} en lui passant le paramètre "Bonjour" de type chaîne de caractères~;
+     \item
+     la fonction \texttt{len()} calcule la longueur de cette chaîne~;
+     \item
+     la fonction renvoie l'entier 7 qui correspond à cette longueur~;
+     \item
+     le résultat est stocké dans la variable \texttt{x} qui pourra être utilisé par la suite.
+\end{itemize}
+\par
+Dans les exemples précédents, les fonctions ont été appelées à partir du programme principal. Cependant, une fonction peut être appelée à partir de n'importe où~; en particulier, une fonction peut très bien être appelée par une autre fonction.
+\begin{h2} Définition et appel d'une fonction en Python \end{h2}
+En plus des fonctions prédéfinies par Python, le programmeur a la possibilité de définir ses propres fonctions.
+\par
+On utilise le mot-clé \texttt{def} pour définir une nouvelle fonction avec la syntaxe suivante~:
+\begin{lstlisting}[language=Python]
+def nom_de_la_fonction(liste_des_paramètres):
+   # bloc d'instructions
+   # calculant le résultat
+   return resultat # facultatif
+\end{lstlisting}
+\par
+Par exemple~:
+ \begin{lstlisting}[language=Python]
+def ajoute(x,y):
+   somme=x+y
+   return somme
+\end{lstlisting}
+\par
+Les paramètres passés à la fonction sont placés entre parenthèses. Même si la fonction n'admet pas d'argument, il faut utiliser des parenthèses~; dans ce cas on ne place rien entre les parenthèses.
+\par
+Lorsque l'on définit une fonction en Python, aucune instruction n'est exécutée. L'exécution des instructions situées dans le corps de la fonction n'a lieu que lors de l' \textbf{appel} de la fonction.
+\par
+L'appel d'une fonction en Python obéit à la syntaxe suivante~:
+\begin{lstlisting}[language=Python]
+nom_de_la_fonction(valeurs_des_paramètres)
+\end{lstlisting}
+Le résultat est alors souvent stocké dans une variable~:
+\begin{lstlisting}[language=Python]
+resultat=nom_de_la_fonction(valeurs_des_paramètres)
+\end{lstlisting}
+ou affiché à l'écran~:
+\begin{lstlisting}[language=Python]
+print(nom_de_la_fonction(valeurs_des_paramètres))
+\end{lstlisting}
+Par exemple, pour utiliser la fonction \texttt{ajoute} définie précédemment~:
+ \begin{lstlisting}[language=Python]
+x=ajoute(4,3) # x contient la valeur 7
+\end{lstlisting}
+\begin{h2} Les modules Python \end{h2}
+En Python, il est possible de regrouper des fonctions (ou d'autres objets) dans des fichiers appelés \textit{modules} afin de pouvoir les réutiliser par la suite dans d'autres programmes.
+\par
+Un certain nombre de modules sont intégrés à Python mais il est nécessaire de les charger dans son programme afin de pouvoir les utiliser. Pour charger un module on peut utiliser la syntaxe suivante~:
+\begin{lstlisting}[language=Python]
+import nom_du_module
+\end{lstlisting}
+Par la suite on peut utiliser une fonction de ce module en la préfixant par le nom du module de la manière suivante~:
+\begin{lstlisting}[language=Python]
+resultat = nom_du_module.nom_de la fonction # Noter la présence du point
+\end{lstlisting}
+Par exemple pour utiliser la fonction \texttt{sqrt()} (racine carrée) du module \texttt{math}~:
+\begin{lstlisting}[language=Python]
+import math
+print(math.sqrt(9)) # affiche 3.0
+\end{lstlisting}
+Pour éviter de devoir préfixer la fonction à chaque fois qu'on l'utilise, on peut choisir de charger cette fonction lors de l'\texttt{import} en utilisant la syntaxe suivante~:
+  \begin{lstlisting}[language=Python]
+from math import sqrt
+print(sqrt(9)) # affiche 3.0 
+\end{lstlisting}
+On peut également importer tous les objets d'un module en utilisant une *~:
+  \begin{lstlisting}[language=Python]
+from math import *
+print(sqrt(9)) # affiche 3.0 
+print(cos(pi)) # affiche -1.0 
+\end{lstlisting}
+Parmi les nombreux modules intégrés à Python, les modules \texttt{math} et \texttt{random} seront fréquemment utilisés au lycée~:
+\begin{itemize}
+     \item
+     \textbf{Le module "math"}~:
+     \\
+     Ce module contient différentes fonctions et constantes mathématiques~: \texttt{ pi, sqrt(), exp(), ln(), sin(), cos(), ...}
+     \item
+     \textbf{Le module "random"}~:
+     \\
+     Ce module, utile en statistiques et en probabilités, permet de génères des nombres aléatoires.
+     \begin{itemize}
+          \item
+          random() renvoie un nombre réel aléatoire compris entre 0 et 1.
+          \item
+          randint(min, max) renvoie un nombre entier aléatoire compris entre les entiers min et max (bornes incluses).
+     \end{itemize}
+\end{itemize}
+Par exemple on peut simuler dix lancers d'un dé à six faces grâce au programme suivant~:
+  \begin{lstlisting}[language=Python]
+from random import randint
+for i in range (10):
+    print(randint(1,6))
+\end{lstlisting}
+\input{_footer}

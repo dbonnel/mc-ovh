@@ -1,0 +1,238 @@
+\input{_header}
+\meta{url}{/cours/fonction-valeur-absolue/}
+\meta{pid}{313}
+\meta{titre}{Les fonctions valeur absolue et racine carrée}
+\meta{type}{cours}
+\begin{h2}I - La fonction valeur absolue\end{h2}
+\cadre{bleu}{Définition}{%
+     La fonction \textbf{valeur absolue} notée $ x \mapsto  |x|$ est définie sur $\mathbb{R}$ par
+     \begin{itemize}
+          \item $|x|$ = $x$ si $x$ est positif ou nul,
+          \item $|x|$ = $-x$ si $x$ est négatif ou nul.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%
+     \begin{itemize}
+          \item $-x$ est l'\textbf{opposé} de $x$.
+          \textbf{Attention}, toutefois, à ne pas vous laisser abuser par cette notation: $-x$ n'est pas forcément négatif : $-x$ est négatif si $x$ est positif mais il est positif si $x$ est négatif. Par exemple $-\left(-5\right)$ est positif !
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     La distance entre les nombres réels $x$ et $y$ est égale à $|y-x|$ (ou aussi à $|x-y|$).
+}
+\bloc{orange}{Exemple}{%
+     \begin{center}
+          \begin{extern} %width="500" alt="distance et valeur absolue"
+               \resizebox{8.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\xmin{-4.5}
+                    \def\xmax{6.5}
+                    \def\ymin{-0.5}
+                    \def\ymax{1}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{20pt}{20pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[yAxis=false,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \rput[b](-3,0.3){$\red A$}
+                         \rput[b](5,0.3){$\red B$}
+                         \psline[linecolor=red,linewidth=1.25pt](-3,0)(5,0)
+                         \psdots[linecolor=red](-3,0)(5,0)
+                    \end{pspicture*}
+               }
+          \end{extern}
+\end{center}}
+\begin{center}
+     $AB=|5-(-3)|=|8|=8$\\
+     $BA=|-3-(+5)|=|-8|=8.$
+\end{center}
+\cadre{vert}{Propriété}{%
+     La fonction \textbf{valeur absolue} est :
+     \begin{itemize}
+          \item strictement décroissante sur $\left]-\infty  ; 0\right]$~;
+          \item strictement croissante sur $\left[0 ; +\infty \right[$.
+     \end{itemize}
+}
+\bloc{cyan}{Tableau de variations}{%
+     %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+     \begin{center}
+          \begin{extern}%width="400" alt="Tableau de variation de la fonction valeur absolue"
+               \begin{tikzpicture}[scale=0.875]
+                    % Styles
+                    \tikzstyle{cadre}=[thin]
+                    \tikzstyle{fleche}=[->,>=latex,thin]
+                    \tikzstyle{nondefini}=[lightgray]
+                    % Dimensions Modifiables
+                    \def\Lrg{1.5}
+                    \def\HtX{1}
+                    \def\HtY{0.5}
+                    % Dimensions Calculées
+                    \def\lignex{-0.5*\HtX}
+                    \def\lignef{-1.5*\HtX}
+                    \def\separateur{-0.5*\Lrg}
+                    % Largeur du tableau
+                    \def\gauche{-2.5*\Lrg}
+                    \def\droite{4.5*\Lrg}
+                    % Hauteur du tableau
+                    \def\haut{0.5*\HtX}
+                    \def\bas{-1.5*\HtX-2*\HtY}
+                    % Ligne de l'abscisse : x
+                    \node at (-1.5*\Lrg,0) {$x$};
+                    \node at (0*\Lrg,0) {$-\infty$};
+                    \node at (2*\Lrg,0) {$0$};
+                    \node at (4*\Lrg,0) {$+\infty$};
+                    % Ligne de la fonction : f(x)
+                    \node  at (-1.5*\Lrg,{-1*\HtX+(-1)*\HtY}) {$f(x)=|x|$};
+                    \node (f1) at (0*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                    \node (f2) at (2*\Lrg,{-1*\HtX+(-2)*\HtY}) {$0$};
+                    \node (f3) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                    % Pointillés
+                    \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\bas);
+                    % Flèches
+                    \draw[fleche] (f1) -- (f2);
+                    \draw[fleche] (f2) -- (f3);
+                    % Encadrement
+                    \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                    \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                    \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+               \end{tikzpicture}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Tableau de variation de la fonction valeur absolue  }
+     \end{center}
+}
+\bloc{cyan}{Courbe représentative}{%
+     \begin{center}
+          \begin{extern} %width="500" alt="Fonction valeur absolue  : graphique"
+               \resizebox{8.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{abs(x) }
+                    \def\xmin{-4.5}
+                    \def\xmax{4.5}
+                    \def\ymin{-0.5}
+                    \def\ymax{5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{18pt}{18pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput[tl](3.5,3.3){$\color{blue} \mathcal{C}$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Graphique de la fonction valeur absolue  }
+     \end{center}
+}
+\cadre{vert}{Propriété}{%
+     La courbe représentative de la fonction $x \mapsto  |x|$, dans un repère orthonormé, est \textbf{symétrique} par rapport à l'\textbf{axe des ordonnées}.
+}
+\begin{h2}II - La fonction racine carrée\end{h2}
+\cadre{bleu}{Définition}{%
+     La fonction racine carrée est la fonction définie sur $\left[0;+\infty \right[$ par $f\left(x\right)=\sqrt{x}$.
+}
+\cadre{vert}{Propriété}{%
+     La fonction racine carrée est strictement croissante sur $\left[0;+\infty \right[$.
+}
+\bloc{cyan}{Tableau de variations}{%
+     \begin{center}
+          \begin{extern}%width="210" alt="Fonction racine carrée: tableau de variation"
+               %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+               \begin{tikzpicture}[scale=0.7]
+                    % Styles
+                    \tikzstyle{cadre}=[thin]
+                    \tikzstyle{fleche}=[->,>=latex,thin]
+                    \tikzstyle{nondefini}=[lightgray]
+                    % Dimensions Modifiables
+                    \def\Lrg{1.5}
+                    \def\HtX{1}
+                    \def\HtY{0.5}
+                    % Dimensions Calculées
+                    \def\lignex{-0.5*\HtX}
+                    \def\lignef{-1.5*\HtX}
+                    \def\separateur{-0.5*\Lrg}
+                    % Largeur du tableau
+                    \def\gauche{-1.5*\Lrg}
+                    \def\droite{2.5*\Lrg}
+                    % Hauteur du tableau
+                    \def\haut{0.5*\HtX}
+                    \def\bas{-1.5*\HtX-2*\HtY}
+                    % Ligne de l'abscisse : x
+                    \node at (-1*\Lrg,0) {$x$};
+                    \node at (0*\Lrg,0) {$0$};
+                    \node at (2*\Lrg,0) {$+\infty$};
+                    % Ligne de la fonction : f(x)
+                    \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$\sqrt{x}$};
+                    \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$0$};
+                    \node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+                    % Flèches
+                    \draw[fleche] (f1) -- (f2);
+                    % Encadrement
+                    \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                    \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                    \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+               \end{tikzpicture}
+               %:-+-+-+-+- Fin
+          \end{extern}
+     \end{center}
+}
+\begin{center}
+     \textit{Tableau de variation de la fonction racine carrée }
+\end{center}
+\bloc{cyan}{Courbe représentative}{%
+     \begin{center}
+          \begin{extern} %width="500" alt="Fonction  racine carrée  : graphique"
+               \resizebox{8.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{sqrt(x) }
+                    \def\xmin{-0.5}
+                    \def\xmax{8.5}
+                    \def\ymin{-0.5}
+                    \def\ymax{5}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{18pt}{18pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{0.000001}{\xmax}{\fonction}
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput[tl](7.5,3.3){$\color{blue} \mathcal{C}$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Graphique de la fonction  racine carrée  }
+     \end{center}
+}
+\bloc{cyan}{Remarque}{%
+     La courbe représentative de la fonction racine carrée est une demi-parabole.
+}
+\cadre{vert}{Propriété}{%
+     Pour tout $x\in \mathbb{R}$ :
+     \begin{center}$\sqrt{x^{2}}=|x|$.\end{center}
+}
+\bloc{orange}{Exemple}{%
+     \begin{itemize}
+          \item $\sqrt{3^{2}}=\sqrt{9}=3$ ;
+          \item $\sqrt{\left(-3\right)^{2}}=\sqrt{9}=3$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%
+     Ne pas confondre :
+     \begin{itemize}
+          \item $\sqrt{x^{2}}$ qui est défini pour tout $x\in \mathbb{R}$ (ce qui est sous le radical est $x^{2}$ donc toujours positif) et est égal à $|x|$ ;
+          \item $\left(\sqrt{x}\right)^{2}$ qui n'est défini que pour $x \geqslant  0$ (ce qui est sous le radical est $x$).
+     \end{itemize}
+}
+\input{_footer}

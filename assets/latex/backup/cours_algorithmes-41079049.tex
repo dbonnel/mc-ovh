@@ -1,0 +1,152 @@
+\input{_header}
+\meta{url}{/cours/algorithmes/}
+\meta{pid}{230}
+\meta{titre}{Algorithmes : Présentation}
+\meta{type}{cours}
+\begin{h2}1. Notion d'algorithme\end{h2}
+\cadre{bleu}{Définition}{%
+     Un \textbf{algorithme} est une suite d'instructions détaillées qui, si elles sont correctement exécutées, conduit à un résultat donné.
+}
+\bloc{orange}{Exemples}{%
+     \begin{itemize}
+          \item une recette de cuisine, une notice de montage peuvent être considérées comme des algorithmes.
+          \item la suite d'instructions suivantes :
+          \begin{code}
+    1. choisir un nombre entier
+    2. le multiplier par lui-même
+    3. énoncer le résultat obtenu
+          \end{code}
+          est un algorithme permettant d'obtenir le carré d'un nombre entier.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%
+     Dans la définition précédente, "détaillées" signifie que les instructions sont suffisamment précises pour pouvoir être mises en œuvre correctement par l'exécutant (homme ou machine)
+}
+\begin{h2}2. Pseudo-code\end{h2}
+Les instructions doivent être formulées dans un langage compréhensible par l'exécutant. Dans le cas d'un humain, il s'agira du langage courant (langue maternelle), ; dans le cas d'une machine, il faudra recourir à un langage de \textbf{programmation} (assembleur, basic, C, java, php ...).
+\par
+En algorithmique, nous utiliserons un langage situé à mi-chemin entre le langage courant et un langage de programmation appelé \textit{pseudo-code}. Il n'y a pas de norme concernant ce pseudo-code qui peut varier légèrement d'un enseignant à l'autre. Le but est surtout de mettre l'accent sur la logique de l'algorithme. L'avantage du pseudo-code est qu'il permet de rester proche d'un langage informatique sans qu'il soit nécessaire de connaître toutes les règles et spécificités d'un langage particulier.
+\begin{h2}3. Les variables\end{h2}
+Un algorithme (ou un programme informatique), agit sur des nombres, des textes, ... Ces différents éléments sont stockés dans des \textbf{variables}. On peut se représenter une variable comme une boîte portant une étiquette ("le nom de la variable") à l'intérieur de laquelle on peut placer un contenu.
+\begin{center}
+     \imgsvg{var-5}{0.15}%width="119" alt="contenu d'une variable"
+\end{center}
+En informatique, les variables sont des emplacements réservés dans la mémoire de l'ordinateur auxquels on attribue une étiquette.
+\cadre{bleu}{Définition}{%
+     \textbf{Déclarer une variable}  c'est indiquer le nom et le type (nombre texte, tableau,...) d'une variable que l'on utilisera dans l'algorithme.
+     \par
+     La déclaration des variables se fait au début de l'algorithme avant la première instruction.
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item Pour reprendre l'image précédente, déclarer une variable consiste à "créer la boîte"
+          \item Les principaux types de variables que nous utiliserons seront : entier, nombre (=réel), texte (=chaîne de caractères), tableau de nombres ou de textes, logique (=booléen -cf chapitre suivant)
+          \item Lorsqu'on déclare une variable dans un programme informatique, l'ordinateur affecte une étiquette à une zone de mémoire et éventuellement réserve de l'espace pour le contenu de cette variable en fonction de son type.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Dans notre pseudo-code, nous déclarerons les variables de la façon suivante :
+     \begin{code}
+    variables
+        x : nombre
+        y : texte
+        a, b, c : entiers
+     \end{code}
+     (Dans l'exemple précédent on définit 5 variables : x du type nombre (réel), y du type texte, et a, b et c de type entier.)
+     \par
+     Nous distinguerons  la déclaration des variables en plaçant le reste de l'algorithme entre les instructions "début algorithme" et "fin algorithme".
+}
+\cadre{bleu}{Définition}{%
+     \textbf{Affecter une variable}, c'est attribuer une valeur à cette variable. Si la variable contenait déjà une valeur, cette ancienne valeur est effacée.
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item Affecter une variable revient à "remplir la boîte"
+          <img src="/wp-content/uploads/affect-var5.png" alt="" class="aligncenter size-full  img-pc" />
+          \item Dans notre pseudo-code, nous utiliserons l'expression \textit{«prend la valeur»} pour l'affectation. Voici la déclaration et l'affectation de la variable x :
+          \begin{code}
+   variables
+     x : entier 
+   début algorithme 
+     x prend la valeur 5
+   fin algorithme
+          \end{code}
+          \item on ne peut affecter à une variable qu'une valeur du type qui a été défini lors de la déclaration. Le code suivant est incorrect (le // indique le début d'un commentaire):
+          \begin{code}
+   variables
+     x : entier
+   début algorithme 
+     x prend la valeur "bonjour" // Erreur! x est de type entier !
+   fin algorithme
+          \end{code}
+          \item Les textes (ou chaînes de caractères) doivent être entourés d'apostrophes afin de ne pas être confondus avec des noms de variables.
+     \end{itemize}
+}
+Il est possible d'affecter à une variable le contenu d'une autre variable ou le résultat d'un calcul. Le contenu de l'autre variable n'est alors pas modifié. Par exemple :
+\begin{code}
+     variables 
+        x, y, z : entiers
+     début algorithme   
+        x prend la valeur 5
+        y prend la valeur x
+        z prend la valeur x+y+1
+     fin algorithme
+\end{code}
+A la fin de cet algorithme, x et y contiennent la valeur 5 et z la valeur 11 ( = 5+5+1).
+\begin{h2}4. Les instructions d'entrée-sortie\end{h2}
+Faire effectuer un calcul à une machine c'est bien ... Mais il faut au moins être capable d'entrer des valeurs et il faut aussi que la machine puisse afficher un résultat !
+\par
+Les instructions qui permettent de "dialoguer" avec une machine s'appellent les instructions "\textbf{d'entrée/sortie}" ou de "\textbf{lecture/écriture}"
+\bloc{orange}{Lecture}{%
+     Dans notre pseudo-code nous utiliserons l'instruction \textbf{\textit{lire}} (ou \textit{entrer}, ou \textit{saisir}, etc.) \textbf{suivie du nom d'une variable } pour pouvoir saisir une valeur (en anglais cette instruction se nomme généralement \textit{input}).
+     \par
+     Lorsqu'elle rencontre une telle instruction, la machine s'\textbf{arrête} et \textbf{attend que l'utilisateur entre une valeur}. Une fois la valeur saisie, la machine\textbf{ affecte la valeur saisie} à la variable dont le nom figure après \textit{lire}. Ensuite, elle passe à l'\textbf{instruction suivante}.
+     \begin{code}
+   variables
+     x : entier
+   début algorithme 
+     lire x
+     y prend la valeur 2*x
+   fin algorithme
+     \end{code}
+     Cet algorithme demande d'\textbf{entrer} un nombre entier, \textbf{stocke} la valeur de ce nombre dans la variable x, puis \textbf{calcule le double} du nombre entré et \textbf{affecte ce double à la variable y}.
+     \par
+     Le résultat n'est pas affiché (d'où le paragraphe suivant...)
+     \par
+     Remarque : Dans un véritable programme, il faudrait vérifier que la valeur entrée est bien du type désiré (ici un entier). Dans un algorithme, on n'écrit pas cette vérification.
+}
+
+\bloc{orange}{Ecriture}{%
+     Dans notre pseudo-code nous utiliserons l'instruction \textbf{\textit{afficher}} suivie du nom d'une variable ou d'une constante (nombre, texte ...) pour afficher une valeur (on peut également utiliser \textit{\textbf{"écrire"}} ou \textit{\textbf{"print"}} en anglais).
+     \par
+     Pour afficher un texte on utilise des \textbf{guillemets} (simples ou doubles) :
+     \begin{code}
+          ...
+          afficher 'Ce texte sera affiché'
+          ...
+     \end{code}
+     Il est fréquent d'afficher un texte pour donner des \textbf{consignes} ou des \textbf{informations} à l'utilisateur.
+     \par
+     Pour afficher le contenu d'une variable on fait suivre \textit{"afficher"} du nom de la variable \textbf{sans guillemet} :
+     \begin{code}
+	  ...
+          afficher x
+          ...
+     \end{code}
+     L'algorithme suivant calcule puis affiche l'âge qu'aura une personne en 2100 :
+     \begin{code}
+    variables 
+       annee, age, age\_en\_2100 : entiers  
+    début algorithme  
+       afficher "Entrer l'année actuelle" 
+       lire année
+       afficher "Entrer votre âge"
+       lire âge
+       âge\_en\_2100 prend la valeur âge + 2100 - année
+       afficher "En 2100, vous aurez ", âge\_en\_2100, " ans."
+    fin algorithme
+     \end{code}
+     Si l'utilisateur entre \textit{"2014"} comme année et \textit{"16"} comme âge, l'algorithme affichera~:\\
+     \textit{En 2100, vous aurez 102 ans.}
+}
+\input{_footer}

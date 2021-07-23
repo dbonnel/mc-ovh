@@ -1,0 +1,81 @@
+\input{_header}
+\meta{url}{/supplement/fonctions-polynomes-fonctions-rationnelles/}
+\meta{pid}{6164}
+\meta{titre}{Fonctions polynômes et fonctions rationnelles}
+\meta{type}{supplement}
+%
+\begin{h2}1. Fonctions polynômes\end{h2}
+\cadre{bleu}{Définition}{%
+     Une fonction $P$ est une \textbf{fonction polynôme} si elle est définie sur $\mathbb{R}$ et si on peut l'écrire sous la forme :
+     \par
+     $P\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+ . . . +a_{1}x+a_{0}$
+}
+\bloc{vert}{Remarques}{%
+     \begin{itemize}
+          \item
+          par abus de langage, on dit parfois polynôme au lieu de fonction polynôme.
+          \item
+          les nombres $a_{i}$ s'appellent les \textbf{coefficients} du polynôme.
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%
+     \textbf{Degré d'un polynôme}
+     Si $a_{n}\neq 0$ dans l'écriture $P\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+ . . . +a_{1}x+a_{0}$, on dit que P est une fonction polynôme de degré $n$.
+}
+\bloc{orange}{Cas particuliers}{%
+     \begin{itemize}
+          \item
+          la fonction nulle n'a pas de degré
+          \item
+          une fonction constante non nulle définie par $f\left(x\right)=a$ avec $a\neq 0$ est une fonction polynôme de degré 0
+          \item
+          une fonction affine par $f\left(x\right)=ax+b$ avec $a\neq 0$ est une fonction polynôme de degré 1
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     Le produit d'un polynôme de degré $n$ par un polynôme de degré $m$ est un polynôme de degré $m+n$.
+}
+\bloc{vert}{Remarque}{%
+     Il n'existe pas de formule donnant le degré d'une somme de polynôme. On peut tout au plus dire que deg(P+Q)$\leqslant $max(deg(P),deg(Q)).
+}
+\cadre{vert}{Propriété}{%
+     Deux polynômes sont égaux si et seulement si les coefficients des termes de même degré sont égaux.
+}
+\bloc{orange}{Cas particulier}{%
+     $P$ est le polynôme nul si et seulement si tous ses coefficients sont nuls.
+}
+\cadre{bleu}{Définition}{%
+     On dit que $a\in \mathbb{R}$ est une racine du polynôme $P$ si et seulement si $P\left(a\right)=0$.
+}
+\bloc{orange}{Exemple}{%
+     1 est racine du polynôme $P\left(x\right)=x^{3}-2x+1$ car $P\left(1\right)=0$
+}
+\cadre{rouge}{Théorème}{%
+     Si $P$ est un polynôme de degré $n\geqslant 1$ et si $a$ est une racine de $P$ alors $P\left(x\right)$ peut s'écrire sous la forme :
+     \par
+     $P\left(x\right)=\left(x-a\right)Q\left(x\right)$
+     \par
+     où $Q$ est un polynôme de degré $n-1$
+}
+\begin{h2}2. Fonctions rationnelles\end{h2}
+\cadre{bleu}{Définition}{%
+     Une fonction $f$ est une \textbf{fonction rationnelle} (ou \textit{fraction rationnelle}) si on peut l'écrire sous la forme :
+     \par
+     $f\left(x\right)=\frac{P\left(x\right)}{Q\left(x\right)}$
+     \par
+     où $P$ et $Q$ sont deux fonctions polynômes.
+     \par
+     La fonction $f$ est définie pour tout $x$ tel que $Q\left(x\right)\neq 0$.
+}
+\bloc{orange}{Exemple}{%
+     Soit la fonction $f$ définie sur $\mathbb{R}\backslash\left\{1\right\}$ par :
+     \par
+     $f\left(x\right)=2x+1+\frac{3}{x-1}$
+     \par
+     Après réduction au même dénominateur :
+     \par
+     $f\left(x\right)=\frac{2x^{2}-x+2}{x-1}$
+     \par
+     donc $f$ est une fraction rationnelle.
+}
+\input{_footer}

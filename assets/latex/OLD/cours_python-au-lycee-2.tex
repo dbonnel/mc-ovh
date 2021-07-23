@@ -1,0 +1,200 @@
+\input{_header}
+\begin{h2}1. Type booléen et conditions\end{h2}
+\begin{h3} Type booléen\end{h3}
+Dans le chapitre précédent, nous avons vu trois types de variables~: entiers, décimaux, chaînes de caractères. Nous allons maintenant étudier un quatrième type de variable~: le type \textbf{booléen}.
+\newpar
+Les variables de type booléen ne peuvent prendre que l'une ou l'autre des 2 valeurs suivantes~: \texttt{True} (vrai) ou \texttt{False} (faux).
+\cadre{bleu}{attention}{ % id=a010
+     Les valeurs \texttt{True} et \texttt{False} doivent être écrites avec une \textbf{initiale en majuscule} pour être reconnues par Python. Par ailleurs, il ne faut pas écrire ces valeurs entre apostrophes car elles seraient alors interprétées comme des chaînes de caractères et non comme des booléens.
+}% fin attention
+Par exemple~:
+\begin{lstlisting}[language=Python]
+>>> type(True) # affiche <class 'bool'>
+>>> type(true) # affiche une erreur
+>>> type("True") # affiche <class 'str'>
+\end{lstlisting}
+\textbf{Rappel~:}\\
+Les chevrons >>> indiquent que les commandes ont été saisies en mode interactif - sous IDLE par exemple.\\
+Les \# indiquent le début d'un commentaire.
+\begin{h3}Conditions\end{h3}
+Le type booléen est généralement utilisé pour indiquer le résultat d'une condition, par exemple pour comparer deux valeurs~:
+\begin{lstlisting}[language=Python]
+>>> a = 3 # la valeur 3 est affectée à la variable a
+>>> a > 5 # affiche False (car 3 n'est pas supérieur à 5)
+>>> a < 5 # affiche True (car 3 est inférieur à 5)
+\end{lstlisting}
+Les principaux opérateurs de comparaison que l'on peut utiliser en Python sont les suivants~:
+\begin{center}
+     \begin{tabularx}{0.9\linewidth}{|*{2}{>{\centering \arraybackslash }X|}}%class="compact"
+          \hline
+          \textbf{Op.} & \textbf{Description}
+          \\ \hline
+          == & égal à
+          \\ \hline~!= & différent de
+          \\ \hline
+          $<$ & strictement inférieur à
+          \\ \hline
+          $>$ & strictement supérieur à
+          \\ \hline
+          $<$= & inférieur ou égal à
+          \\ \hline
+          $>$= & supérieur ou égal à
+          \\ \hline
+     \end{tabularx}
+\end{center}
+\cadre{bleu}{Attention}{ % id=a020
+     Pour tester l'égalité de deux valeurs, il faut utiliser l'opérateur == (double signe égal) et non =. En effet, le symbole = simple est l'opérateur d'affectation~; son utilisation à l'intérieur d'une condition provoquera une erreur de Python.
+}% fin Attention
+Ces opérateurs permettent de comparer deux variables de type numérique (entier décimal) mais également deux variables de type \og chaîne de caractères\fg{}. Dans ce cas, les variables seront classées par ordre alphabétique.
+\newpar
+Par exemple~:
+ \begin{lstlisting}[language=Python]
+>>> 1 <= 3 # affiche True
+>>> 1~!= 3 # affiche True
+>>> 1 == 3 # affiche False
+>>> 1 = 1 # affiche une erreur (il faut utiliser ==)
+>>> "a" < "b" # affiche True
+\end{lstlisting}
+Bien sûr, il est généralement plus intéressant d'utiliser ces opérateurs avec des variables~:
+ \begin{lstlisting}[language=Python]
+>>> x = 1 # affecte la valeur 1 à la variable x
+>>> y = 6 # affecte la valeur 6 à la variable y
+>>> x~!= y # affiche True
+>>> x == y # affiche False
+>>> x <= y # affiche True
+>>> x+5 == y # affiche True
+\end{lstlisting}
+\begin{h3} Conditions composées\end{h3}
+Il est possible de modifier ou de relier différentes conditions à l'aide des opérateurs suivants~: \texttt{not}, \texttt{or}, \texttt{and}.
+\begin{itemize}
+     \item
+     \textbf{\texttt{not}}~: inverse le résultat de la condition~; \texttt{not} \textit{condition} est vraie si et seulement si \textit{condition} est fausse.
+     \item
+     \textbf{\texttt{or}}~: \textit{condition1} \texttt{or} \textit{condition2} est vraie si et seulement si \textit{condition1} est vraie ou si \textit{condition2} est vraie ou si les 2 conditions sont vraies simultanément.
+     \item
+     \textbf{\texttt{and}}~: \textit{condition1} \texttt{and} \textit{condition2} est vraie si et seulement si les 2 conditions sont vraies simultanément.
+\end{itemize}
+\newpar
+Par exemple~:
+\begin{lstlisting}[language=Python]
+>>> x=1 # affecte la valeur 1 à la variable x
+>>> y=2 # affecte la valeur 2 à la variable y
+>>> not x==1 # affiche False
+>>> not y==1 # affiche True
+>>> x==1 or y==1 # affiche True (car la première condition est vérifiée)
+>>> x==2 or y==3 # affiche False
+>>> x==1 and y==1 # affiche False (car la seconde condition n'est pas vérifiée)
+>>> x==1 and y==2 # affiche True
+\end{lstlisting}
+\begin{h3}Remarque\end{h3}
+Contrairement à d'autres langages, en Python, il n'est pas nécessaire de placer les conditions entre parenthèses.
+\begin{h2}2. Instructions conditionnelles\end{h2}
+\begin{h3} Test \og if \fg{}\end{h3}
+En Python, un test est introduit par le mot-clé \og \texttt{if} \fg{} (si) suivie d'une condition qui peut être vraie ou fausse. Le bloc d'instructions suivant ( appelé bloc d'\textit{instructions conditionnelles} ) sera exécuté si et seulement si la condition est vraie~:
+\begin{lstlisting}[language=Python]
+if condition :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # la condition est vraie 
+# tandis que les instructions placées ici
+# seront exécutées dans tous les cas.
+\end{lstlisting}
+\begin{h3}Remarque\end{h3}
+Deux choses sont importantes à noter~:
+\begin{itemize}
+     \item
+     La condition doit toujours être suivie du caractère \og~: \fg{} qui introduit le bloc d'instructions conditionnelles.
+     \item
+     c'est l'\textbf{indentation} ( décalage des instructions vers la droite ) qui définit le début et la fin du bloc d'instructions conditionnelles
+\end{itemize}
+\begin{h3}Exemple \end{h3}
+\begin{lstlisting}[language=Python]
+nom = input("Saisir votre nom : ")
+if nom=="Henri" :
+    print("Bonjour Henri")
+    print("Comment allez-vous~?")
+print("Bienvenue sur maths-cours.fr~!")
+\end{lstlisting}
+Le programme ci-dessus demandera un nom d'utilisateur.
+\newpar
+Puis il affichera~:\\
+\texttt{    Bonjour Henri\\
+         Comment allez-vous~?\\
+    Bienvenue sur maths-cours.fr~!\\}
+si le nom entré est Henri~;
+\newpar
+tandis qu'il affichera uniquement~:\\
+\texttt{    Bienvenue sur maths-cours.fr~!\\}
+si un autre nom est saisi.
+\newpar
+(pour les instructions \texttt{input} et \texttt{print} voir le \mcLien{/cours/python-au-lycee-1/}{chapitre précédent}).
+\begin{h3} Test \og if - else \fg{} \end{h3}
+Il est possible de faire suivre une condition \og if \fg{} par une condition \og else \fg{} (sinon)~; le bloc d'instructions suivantes sera alors exécuté si et seulement si la condition suivant le \og if \fg{} est fausse~:
+\begin{lstlisting}[language=Python]
+if condition :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # la condition est vraie 
+else :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # la condition est fausse
+# enfin les instructions placées ici
+# seront exécutées dans tous les cas.
+\end{lstlisting}
+\begin{h3}Remarque\end{h3}
+Notez, là aussi, la présence du symbole \og~: \fg{} après le mot \texttt{else} ainsi que l'\textbf{indentation}.
+\begin{h3}Exemple\end{h3}
+\begin{lstlisting}[language=Python]
+mdp = input("Saisir votre mot de passe : ")
+if mdp=="12345678" :
+    print("Bienvenue~!")
+else :
+    print("Mot de passe incorrect~!")
+\end{lstlisting}
+Ce programme demandera un mot de passe.
+\newpar
+Puis il affichera~:\\
+\texttt{    Bienvenue~!\\}
+si le mot de passe entré est 12345678~;
+\newpar
+alors qu'il affichera ~:\\
+\texttt{    Mot de passe incorrect~! \\}
+si un autre mot de passe a été entré.
+\begin{h3} Test \og if - elif - else \fg{} \end{h3}
+Lorsque le test comporte plusieurs conditions, on peut utiliser l'instruction \og \texttt{elif} \fg{} qui est l'abréviation de \texttt{else if}. Cette instruction s'utilise de la manière suivante~:
+\begin{lstlisting}[language=Python]
+if condition1 :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # la condition1 est vraie 
+elif condition2 :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # la condition2 est vraie 
+elif condition3 :
+   # ...
+   # ...
+   # ...
+else :
+   # les instructions placées ici
+   # seront exécutées si et seulement si 
+   # toutes les conditions précédentes sont fausses
+# enfin les instructions placées ici
+# seront exécutées dans tous les cas.
+\end{lstlisting}
+Dans ce cas, on peut placer autant de conditions que l'on veut.
+\newpar
+Par exemple~:
+\begin{lstlisting}[language=Python]
+erreurs = int(input(" Entrez le nombre d'erreurs :  "))
+if erreurs == 0 :
+    print(" Il n'y a aucune erreur~!")
+elif erreurs == 1 :
+    print(" Il y a une seule erreur~!")
+else :
+    print(" Il y a ", erreurs, " erreurs~!")
+\end{lstlisting}
+Ce programme demande puis affiche le nombre d'erreurs présentes dans un texte.
+\par
+\input{_footer}

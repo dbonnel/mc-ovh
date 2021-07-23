@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="790" height="660" viewBox="0 0 790 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g2_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: round;
+}
+.g4_1{
+}
+.g3_1{
+fill: none;
+stroke: #000000;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_1{
+fill: #FFFFFF;
+}
+
+.s9_1{
+font-size: 18.33px;
+font-family: Times_t;
+fill: #000000;
+}
+.s8_1{
+font-size: 18.33px;
+font-family: Times-Italic_n;
+fill: #000000;
+}
+.s14_1{
+font-size: 18.32px;
+font-family: Symbol_k;
+fill: #000000;
+}
+.s12_1{
+font-size: 18.32px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s17_1{
+font-size: 18.50px;
+font-family: Symbol_k;
+fill: #000000;
+}
+.s18_1{
+font-size: 10.80px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s15_1{
+font-size: 18.50px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s3_1{
+font-size: 10.78px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s16_1{
+font-size: 18.50px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s7_1{
+font-size: 24.37px;
+font-family: Symbol_k;
+fill: #000000;
+}
+.s11_1{
+font-size: 18.32px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s1_1{
+font-size: 21.45px;
+font-family: Helvetica, Arial, sans-serif;
+fill: #333333;
+}
+.s20_1{
+font-size: 12.28px;
+font-family: Times_9;
+fill: #000000;
+}
+.s10_1{
+font-size: 24.21px;
+font-family: Symbol_k;
+fill: #000000;
+}
+.s13_1{
+font-size: 10.71px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s6_1{
+font-size: 18.45px;
+font-family: Symbol_k;
+fill: #000000;
+}
+.s4_1{
+font-size: 18.45px;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s19_1{
+font-size: 12.28px;
+font-family: Times_t;
+fill: #000000;
+}
+.s5_1{
+font-size: 18.45px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+fill: #000000;
+}
+.s2_1{
+font-size: 18.33px;
+font-family: Times_9;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,660
+L790,660
+L790,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<path fill-rule="evenodd" d="M88,49l565,0l0,-25L88,24l0,25Z" class="g1_1" />
+<text 
+x="88" 
+y="44" 
+dx="0,-0.1,-0.1,0,0,-0.1,0,-0.1,0,0.1,-0.1,0,0,0,0,0,0,0,-0.1,-0.1,0.1,0.1,0.1,-0.1,-0.1,0,-0.1,-0.1,0,-0.1,0.1,0,0.1,-0.1,0,0.1,0.1,0,0,0,-0.1,0.1,0,0" 
+class="s1_1"
+>THÉORÈME DES VALEURS INTERMÉDIAIRES (BAC ES)</text>
+
+<path fill-rule="evenodd" d="M22,97l697,0l0,-24L22,73l0,24Z" class="g1_1" />
+<text 
+x="24" 
+y="126" 
+dx="0,0,0,0.1,-0.2,0,-0.1,0,0,-0.1,0,0.1,0,0" 
+class="s2_1"
+>1) L'équation </text>
+
+<path d="M129.5,121.5l46,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 206, 117)"
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 161, 140)"
+dx="0" 
+class="s4_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 166, 114)"
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 131, 114)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 196, 126)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 137, 140)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 141, 114)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 181, 126)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 149, 140)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 153, 114)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+x="219" 
+y="126" 
+dx="0,-0.1,0,0,0,0,0,0,0,0,-0.1" 
+class="s2_1"
+>équivaut à </text>
+
+<path d="M303.5,121.5l46,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 405, 126)"
+dx="0" 
+class="s4_1"
+>0</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 335, 140)"
+dx="0" 
+class="s4_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 340, 114)"
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 304, 114)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 378, 117)"
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 390, 126)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 353, 126)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 323, 140)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 326, 114)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 368, 126)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 311, 140)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 314, 114)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+x="24" 
+y="194" 
+dx="0,0.1,0,0,0,0,0" 
+class="s2_1"
+>Posons </text>
+
+<text 
+transform="matrix(0.74, 0, 0, 1, 96, 194)"
+dx="0,0,7" 
+class="s7_1"
+> </text>
+
+<path d="M136.5,190.5l47,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 211, 186)"
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 168, 209)"
+dx="0" 
+class="s4_1"
+>1</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 173, 183)"
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 138, 183)"
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 201, 194)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 144, 209)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 148, 183)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 103, 194)"
+dx="0" 
+class="s5_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 87, 194)"
+dx="0" 
+class="s5_1"
+>f</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 187, 194)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 156, 209)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 160, 183)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 121, 194)"
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+x="219" 
+y="194" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="24" 
+y="250" 
+dx="0,0.1,0,0,0,0,0,-0.1,0" 
+class="s2_1"
+>Puisque (</text>
+
+<text 
+x="93" 
+y="250" 
+dx="0" 
+class="s8_1"
+>x</text>
+
+<text 
+x="105" 
+y="250" 
+dx="0,-0.1,0,0,0,0.1,-0.2,0,0,0,0,0,0,-0.1,0.2,0,0,0,0.1" 
+class="s9_1"
+>+ 1) ≠ 0 pour tout </text>
+
+<text 
+x="240" 
+y="250" 
+dx="0" 
+class="s8_1"
+>x</text>
+
+<text 
+x="253" 
+y="250" 
+dx="0,0,-0.1" 
+class="s2_1"
+>de </text>
+
+<text 
+x="275" 
+y="250" 
+dx="0" 
+class="s8_1"
+>I</text>
+
+<text 
+x="281" 
+y="250" 
+dx="0,0" 
+class="s2_1"
+>, </text>
+
+<text 
+x="290" 
+y="250" 
+dx="0" 
+class="s8_1"
+>f</text>
+
+<text 
+x="300" 
+y="250" 
+dx="0,-0.1,0,0,0,0,0,-0.1,0,0,0.1,-0.1,0.2,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1" 
+class="s2_1"
+>est définie et continue sur </text>
+
+<text 
+x="492" 
+y="250" 
+dx="0" 
+class="s8_1"
+>I</text>
+
+<text 
+x="498" 
+y="250" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 45, 305)"
+dx="0,0,6.9" 
+class="s10_1"
+> </text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 95, 293)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 134, 293)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 156, 293)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 206, 293)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 122, 321)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 161, 321)"
+dx="0" 
+class="s10_1"
+></text>
+
+<path d="M85.5,300.5l126,0" class="g2_1" />
+<text 
+transform="matrix(0.75, 0, 0, 1, 269, 321)"
+dx="0" 
+class="s10_1"
+></text>
+
+<text 
+transform="matrix(0.75, 0, 0, 1, 308, 321)"
+dx="0" 
+class="s10_1"
+></text>
+
+<path d="M268.5,300.5l55,0" class="g2_1" />
+<text 
+x="351" 
+y="305" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="276" 
+y="321" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="240" 
+y="305" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="128" 
+y="321" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="172" 
+y="294" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="102" 
+y="294" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="51" 
+y="305" 
+dx="0" 
+class="s11_1"
+>x</text>
+
+<text 
+x="30" 
+y="305" 
+dx="0" 
+class="s11_1"
+>f</text>
+
+<text 
+x="341" 
+y="305" 
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+x="300" 
+y="321" 
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+x="298" 
+y="294" 
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+x="229" 
+y="305" 
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+x="152" 
+y="321" 
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+x="197" 
+y="294" 
+dx="0" 
+class="s12_1"
+>3</text>
+
+<text 
+x="161" 
+y="294" 
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+x="126" 
+y="294" 
+dx="0" 
+class="s12_1"
+>1</text>
+
+<text 
+x="86" 
+y="294" 
+dx="0" 
+class="s12_1"
+>2</text>
+
+<text 
+x="40" 
+y="305" 
+dx="0" 
+class="s12_1"
+>'</text>
+
+<text 
+x="314" 
+y="311" 
+dx="0" 
+class="s13_1"
+>2</text>
+
+<text 
+x="167" 
+y="311" 
+dx="0" 
+class="s13_1"
+>2</text>
+
+<text 
+x="327" 
+y="305" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="288" 
+y="321" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="284" 
+y="294" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="253" 
+y="305" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="216" 
+y="305" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="140" 
+y="321" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="184" 
+y="294" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="142" 
+y="294" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="114" 
+y="294" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="70" 
+y="305" 
+dx="0" 
+class="s14_1"
+></text>
+
+<text 
+x="366" 
+y="305" 
+dx="0,-0.1,0,0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0.1,-0.2,-0.1,0,0.1,0,-0.1,0.3,0,0,0,0,0.1,0,0,0,0,0,0.1,0,-0.1,0,0,0.1,-0.1" 
+class="s2_1"
+>est strictement négative sur [1 ; 2] comme </text>
+
+<text 
+x="24" 
+y="345" 
+dx="0,0,0,0,0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0.2,0,0,0,0,-0.1,0,0.1,0,0,0,0,0,0.1,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0.1,-0.2,-0.1,0,0.1,0,-0.1,0.2,0.2" 
+class="s2_1"
+>somme de deux fonctions strictement négatives. </text>
+
+<text 
+x="24" 
+y="379" 
+dx="0,0.1,-0.1,0,0,-0.1,0,0.1,0,0,0,-0.1,0,0" 
+class="s2_1"
+>Par ailleurs, </text>
+
+<path d="M171.5,374.5l11,0" class="g2_1" />
+<path d="M248.5,374.5l24,0" class="g2_1" />
+<text 
+x="256" 
+y="393" 
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+x="263" 
+y="367" 
+dx="0" 
+class="s4_1"
+>5</text>
+
+<text 
+x="222" 
+y="378" 
+dx="0" 
+class="s4_1"
+>)</text>
+
+<text 
+x="213" 
+y="378" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="206" 
+y="378" 
+dx="0" 
+class="s4_1"
+>(</text>
+
+<text 
+x="185" 
+y="378" 
+dx="0" 
+class="s4_1"
+>;</text>
+
+<text 
+x="172" 
+y="393" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="172" 
+y="367" 
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+x="144" 
+y="378" 
+dx="0" 
+class="s4_1"
+>)</text>
+
+<text 
+x="137" 
+y="378" 
+dx="0" 
+class="s4_1"
+>1</text>
+
+<text 
+x="132" 
+y="378" 
+dx="0" 
+class="s4_1"
+>(</text>
+
+<text 
+x="250" 
+y="367" 
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+x="233" 
+y="378" 
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+x="155" 
+y="378" 
+dx="0" 
+class="s6_1"
+></text>
+
+<text 
+x="197" 
+y="378" 
+dx="0" 
+class="s5_1"
+>f</text>
+
+<text 
+x="123" 
+y="378" 
+dx="0" 
+class="s5_1"
+>f</text>
+
+<text 
+x="276" 
+y="379" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="24" 
+y="413" 
+dx="0,0,0,0,-0.1,0,0,0,-0.1,0,0,0,0.1,0,0,0,0,0,-0.1,0,0,0.1,-0.1,0,0,0.2,-0.1,0,0,-0.1,0,0,-0.1,0,0.1,0,0,0,0,0,-0.1" 
+class="s2_1"
+>On en déduit le tableau de variations de </text>
+
+<text 
+x="319" 
+y="413" 
+dx="0" 
+class="s8_1"
+>f</text>
+
+<text 
+x="334" 
+y="413" 
+dx="0,0,0,0" 
+class="s2_1"
+>sur </text>
+
+<text 
+x="361" 
+y="413" 
+dx="0" 
+class="s8_1"
+>I</text>
+
+<text 
+x="371" 
+y="413" 
+dx="0,0.2" 
+class="s2_1"
+>: </text>
+
+<text 
+x="24" 
+y="456" 
+dx="0,-0.1" 
+class="s8_1"
+>x </text>
+
+<text 
+x="76" 
+y="456" 
+dx="0,0" 
+class="s2_1"
+>1 </text>
+
+<text 
+x="418" 
+y="456" 
+dx="0,0" 
+class="s2_1"
+>2 </text>
+
+<path d="M67.5,460.5l0,-21" class="g3_1" />
+<text 
+x="24" 
+y="477" 
+dx="0" 
+class="s8_1"
+>f</text>
+
+<text 
+x="29" 
+y="477" 
+dx="0" 
+class="s2_1"
+>(</text>
+
+<text 
+x="35" 
+y="477" 
+dx="0" 
+class="s8_1"
+>x</text>
+
+<text 
+x="43" 
+y="477" 
+dx="0,0.1" 
+class="s2_1"
+>) </text>
+
+<path d="M79.5,485.5l12,0" class="g2_1" />
+<text 
+x="80" 
+y="504" 
+dx="0" 
+class="s4_1"
+>2</text>
+
+<text 
+x="80" 
+y="478" 
+dx="0" 
+class="s4_1"
+>3</text>
+
+<path d="M400.5,485.5l23,0" class="g2_1" />
+<text 
+transform="matrix(0.98, 0, 0, 1, 407, 504)"
+dx="0" 
+class="s4_1"
+>3</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 414, 478)"
+dx="0" 
+class="s4_1"
+>5</text>
+
+<text 
+transform="matrix(0.98, 0, 0, 1, 401, 478)"
+dx="0" 
+class="s6_1"
+></text>
+
+<path d="M16.5,461.5l51,0" class="g3_1" />
+<path d="M67.5,461.5l0,-1" class="g3_1" />
+<path d="M68.5,461.5l313,0" class="g3_1" />
+<path d="M381.5,461.5l0,-1" class="g3_1" />
+<path d="M382.5,461.5l54,0" class="g3_1" />
+<path d="M15.5,509.5l52,0" class="g3_1" />
+<path d="M67.5,509.5l0,-48" class="g3_1" />
+<path d="M68.5,509.5l313,0" class="g3_1" />
+<path d="M381.5,509.5l55,0" class="g3_1" />
+<text 
+x="24" 
+y="547" 
+dx="0,0,0,0,-0.1" 
+class="s2_1"
+>Donc </text>
+
+<text 
+x="68" 
+y="547" 
+dx="0" 
+class="s8_1"
+>f</text>
+
+<text 
+x="83" 
+y="547" 
+dx="0,-0.1,0,0.1,0,-0.1,0,0,0,0.1,0,0,-0.1,0,0,0,0,0,0,0.1,0,0,0,-0.1,0,0.1,0,0,-0.1,-0.1,0,0,0,0,0,-0.1,0,0,0,0,0,0.1,0,0,0.1,0,0,0,0,0,0.2,0,-0.1,0,0,0,0,-0.1,0,-0.2,-0.1,0,0.2,-0.1,0,0,0.2,-0.2,0,-0.1,0.2,0,0,0,0,-0.1,-0.1,0,0,0.1,0,0,0,-0.1,0,-0.1,0,0.1,0.1,0.2" 
+class="s2_1"
+>est continue, strictement décroissante sur [1 ; 2] et change de signe sur cet intervalle. </text>
+
+<text 
+x="24" 
+y="579" 
+dx="0,-0.2" 
+class="s9_1"
+>L’</text>
+
+<text 
+x="41" 
+y="579" 
+dx="0,0,-0.1,0,0,-0.1,0,0.1,0" 
+class="s2_1"
+>'équation</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 112, 567)"
+dx="0" 
+class="s15_1"
+>2</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 122, 567)"
+dx="0" 
+class="s16_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 134, 567)"
+dx="0" 
+class="s17_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 148, 567)"
+dx="0" 
+class="s15_1"
+>3</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 119, 592)"
+dx="0" 
+class="s16_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 131, 592)"
+dx="0" 
+class="s17_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 143, 592)"
+dx="0" 
+class="s15_1"
+>1</text>
+
+<path d="M111.5,574.5l46,0" class="g2_1" />
+<text 
+transform="matrix(0.99, 0, 0, 1, 163, 579)"
+dx="0" 
+class="s17_1"
+></text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 178, 579)"
+dx="0" 
+class="s16_1"
+>x</text>
+
+<text 
+transform="matrix(0.99, 0, 0, 1, 188, 571)"
+dx="0" 
+class="s18_1"
+>2</text>
+
+<text 
+x="199" 
+y="579" 
+dx="0,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" 
+class="s2_1"
+>admet donc une unique solution sur </text>
+
+<text 
+x="465" 
+y="579" 
+dx="0" 
+class="s8_1"
+>I</text>
+
+<text 
+x="471" 
+y="579" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="24" 
+y="632" 
+dx="0,0,0,0,-0.1,0,-0.1,0,0,-0.1,0,0,0.1,0,0,-0.1,0,0.2,0,0,-0.1,0,0.1,-0.1,0.2,-0.1,0,0" 
+class="s2_1"
+>2) Une valeur approchée à 10</text>
+
+<text 
+x="240" 
+y="625" 
+dx="0" 
+class="s19_1"
+>–</text>
+
+<text 
+x="247" 
+y="625" 
+dx="0" 
+class="s20_1"
+>3</text>
+
+<text 
+x="258" 
+y="632" 
+dx="0,0,0,-0.1,0,0,0,-0.1,0,-0.1,-0.1,0,0.1,-0.1,0,0,0,0,0,0,0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0.1" 
+class="s2_1"
+>près de cette solution est 1,547. </text>
+
+<path d="M142.6,466.5l221.7,26.7l-0.2,1.5L142.4,468.1Zm220.6,22.7l8.6,5.7l-9.7,3.4Z" class="g4_1" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: Times_9;
+	src: url("fonts/Times_9.woff") format("woff");
+}
+
+@font-face {
+	font-family: Symbol_k;
+	src: url("fonts/Symbol_k.woff") format("woff");
+}
+
+@font-face {
+	font-family: Times_t;
+	src: url("fonts/Times_t.woff") format("woff");
+}
+
+@font-face {
+	font-family: Times-Italic_n;
+	src: url("fonts/Times-Italic_n.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

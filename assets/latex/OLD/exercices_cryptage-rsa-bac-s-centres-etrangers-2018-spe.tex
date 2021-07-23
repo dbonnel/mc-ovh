@@ -1,0 +1,77 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats ayant choisi la spécialité \og mathématiques \fg{}}
+\medskip
+Le but de cet exercice est d'envisager une méthode de cryptage à clé publique d'une information
+numérique, appelée système RSA, en l'honneur des mathématiciens Ronald Rivest, Adi Shamir et
+Leonard Adleman, qui ont inventé cette méthode de cryptage en 1977 et l'ont publiée en 1978.
+\smallskip
+Les questions 1 et 2 sont des questions préparatoires, la question 3 aborde le cryptage, la question 4
+le décryptage.
+\bigskip
+\begin{enumerate}
+     \item Cette question envisage de calculer le reste dans la division euclidienne par $55$ de certaines
+     puissances de l'entier $8$.
+     \begin{enumerate}[label=\alph*.]
+          \item Vérifier que $8^7 \equiv 2 \mod 55$.
+          \par
+          En déduire le reste dans la division euclidienne par $55$ du nombre $8^{21}$.
+          \item Vérifier que $8^2 \equiv 9 \mod 55$, puis déduire de la question \textbf{a.} le reste dans la division
+          euclidienne par $55$ de $8^{23}$.
+     \end{enumerate}
+     \item  Dans cette question, on considère l'équation $(E)$\: $23 x - 40 y = 1$, dont les solutions sont des
+     couples $(x~;~y)$ d'entiers relatifs.
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier le fait que l'équation $(E)$ admet au moins un couple solution.
+          \item  Donner un couple, solution particulière de l'équation $(E)$.
+          \item  Déterminer tous les couples d'entiers relatifs solutions de l'équation $(E)$.
+          \item  En déduire qu'il existe un unique entier $d$ vérifiant les conditions $0 \leqslant d < 40$ et
+          $23 d \equiv  1 \mod 40$.
+     \end{enumerate}
+     \item  \textbf{Cryptage dans le système RSA}
+     \par
+     Une personne A choisit deux nombres premiers $p$ et $q$, puis calcule les produits $N = p q$ et
+     $n = (p - 1)(q - 1)$. Elle choisit également un entier naturel $c$ premier avec $n$.
+     \par
+     La personne A publie le couple $(N~;~c)$, qui est une clé publique permettant à quiconque de lui
+     envoyer un nombre crypté.
+     \par
+     Les messages sont numérisés et transformés en une suite d'entiers compris entre $0$ et $N -1$.
+     \par
+     Pour crypter un entier $a$ de cette suite, on procède ainsi~: on calcule le reste $b$ dans la division
+     euclidienne par $N$ du nombre $a^c$, et le nombre crypté est l'entier $b$.
+     \smallskip
+     Dans la pratique, cette méthode est sûre si la personne A choisit des nombres premiers $p$ et $q$
+     très grands, s'écrivant avec plusieurs dizaines de chiffres.
+     \par
+     On va l'envisager ici avec des nombres plus simples~: $p = 5$ et $q = 11$.
+     \par
+     La personne A choisit également $c = 23$.
+     \begin{enumerate}[label=\alph*.]
+          \item Calculer les nombres $N$ et $n$, puis justifier que la valeur de $c$ vérifie la condition voulue.
+          \item  Un émetteur souhaite envoyer à la personne A le nombre $a = 8$.
+          \par
+          Déterminer la valeur du nombre crypté $b$.
+     \end{enumerate}
+     \item  \textbf{Décryptage dans le système RSA}
+     \par
+     La personne A calcule dans un premier temps l'unique entier naturel $d$ vérifiant les conditions
+     $0 \leqslant d < n$ et $cd \equiv 1 \mod n$.
+     \par
+     Elle garde secret ce nombre $d$ qui lui permet, et à elle seule, de
+     décrypter les nombres qui lui ont été envoyés cryptés avec sa clé publique.
+     \par
+     Pour décrypter un nombre crypté $b$, la personne A calcule le reste $a$ dans la division euclidienne
+     par $N$ du nombre $bd$, et le nombre en clair -- c'est-à-dire le nombre avant cryptage -- est le
+     nombre $a$.
+     \par
+     On admet l'existence et l'unicité de l'entier $d$, et le fait que le décryptage fonctionne.
+     \par
+     Les nombres choisis par A sont encore $p = 5$, $q = 11$ et $c = 23$.
+     \begin{enumerate}[label=\alph*.]
+          \item Quelle est la valeur de $d$~?
+          \item  En appliquant la règle de décryptage, retrouver le nombre en clair lorsque le nombre crypté
+          est $b = 17$.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

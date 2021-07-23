@@ -1,0 +1,101 @@
+\input{_header}
+\begin{h2}Exercice 3 (7 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+\emph{Les parties A  et B sont indépendantes}
+\medskip
+Un détaillant en fruits et légumes étudie l'évolution de ses ventes de melons afin de pouvoir
+anticiper ses commandes.
+\bigskip
+\TitreC{Partie A}
+\medskip
+Le détaillant constate que ses melons se vendent bien lorsque leur masse est comprise entre $900$ g et
+1~200~g. Dans la suite, de tels melons sont qualifiés \og conformes \fg.
+\par
+Le détaillant achète ses melons auprès de trois maraîchers, notés respectivement A, B et C.
+\par
+Pour les melons du maraîcher A, on modélise la masse en gramme par une variable aléatoire $M_{\text{A}}$
+qui suit une loi uniforme sur l'intervalle $[850~;~x]$, où $x$ est un nombre réel supérieur à 1~200.
+\par
+La masse en gramme des melons du maraîcher B est modélisée par une variable aléatoire $M_{\text{B}}$ qui
+suit une loi normale de moyenne 1~050 et d'écart-type inconnu $\sigma$.
+\par
+Le maraîcher C affirme, quant à lui, que 80\,\% des melons de sa production sont conformes.
+\medskip
+\begin{enumerate}
+     \item Le détaillant constate que 75\,\% des melons du maraîcher A sont conformes. Déterminer $x$.
+     \item Il constate que 85\,\% des melons fournis par le maraîcher B sont conformes.
+     \par
+     Déterminer l'écart-type $\sigma$ de la variable aléatoire $M_{\text{B}}$. En donner la valeur arrondie à l'unité.
+     \item  Le détaillant doute de l'affirmation du maraîcher C. Il constate que sur $400$ melons livrés par ce
+     maraîcher au cours d'une semaine, seulement $294$ sont conformes.
+     \par
+     Le détaillant a-t-il raison de douter de l'affirmation du maraîcher C~?
+\end{enumerate}
+\bigskip
+\TitreC{Partie B}
+\medskip
+Le détaillant réalise une étude sur ses clients. Il constate que~:
+\begin{itemize}
+     \item parmi les clients qui achètent un melon une semaine donnée, 90\,\% d'entre eux achètent un
+     melon la semaine suivante~;
+     \item parmi les clients qui n'achètent pas de melon une semaine donnée, 60\,\% d'entre eux n'achètent
+     pas de melon la semaine suivante.
+\end{itemize}
+\smallskip
+On choisit au hasard un client ayant acheté un melon au cours de la semaine 1 et, pour $n \geqslant 1$, on
+note $A_n$ l'événement~: \og le client achète un melon au cours de la semaine $n$ \fg.
+\par
+On a ainsi $p\left(A_1\right) = 1$.
+\medskip
+\begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item Reproduire et compléter l'arbre de probabilités
+               ci-dessous, relatif aux trois premières semaines.
+\begin{center}
+\begin{extern}%width="220" alt="Arbre Probabilité Bac S Centres étrangers  2018"
+\pstree[treemode=R,nodesepA=0pt,nodesepB=3pt]{\TR{$A_1$~}}
+{
+   \pstree{\TR{$A_2$~}}
+      {
+      \TR{$A_3$} 
+      \TR{$\overline{A_3}$}
+      }
+
+   \pstree{\TR{$\overline{A_2}$~} }
+     {
+     \TR{$A_3$} 
+     \TR{$\overline{A_3}$}
+     }
+}
+\end{extern}
+\end{center}
+               \item Démontrer que $p\left(A_3\right) = 0,85$.
+               \item Sachant que le client achète un melon au cours
+               de la semaine 3, quelle est la probabilité qu'il en ait acheté un au cours de la semaine 2~?
+               \par
+               Arrondir au centième.
+          \end{enumerate}
+
+\medskip
+Dans la suite, on pose pour tout entier $n \geqslant 1$~: \:$p_n = P\left(A_n\right)$. \\
+On a ainsi $p_1 = 1$.
+\medskip     
+     \item Démontrer que, pour tout entier $n \geqslant 1$~: $p_{n+1} = 0,5p_n + 0,4$.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer par récurrence que, pour tout entier $n \geqslant 1$~: $p_n > 0,8$.
+          \item  Démontrer que la suite $(p_n)$ est décroissante.
+          \item  La suite $\left(p_n\right)$ est-elle convergente~?
+     \end{enumerate}
+     \item On pose pour tout entier $n \geqslant 1$~: $v_n = p_n - 0,8$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que $\left(v_n\right)$ est une suite géométrique dont on donnera le premier terme $v_1$ et la raison.
+          \item  Exprimer $v_n$ en fonction de $n$.
+          \par
+          En déduire que, pour tout $n \geqslant 1$,\: $p_n = 0,8 + 0,2 \times  0,5^{n-1}$.
+          \item  Déterminer la limite de la suite $\left(p_n\right)$.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

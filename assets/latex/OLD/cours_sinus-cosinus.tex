@@ -1,0 +1,342 @@
+\input{_header}
+\begin{h2}1. Mesures en radians d'un angle orienté  \end{h2}
+Dans tout le chapitre, le plan $\mathscr P$ est muni d'un repère orthonormé $\left(O~; \vec{i} , \vec{j}\right)$.
+\cadre{bleu}{Définition}{% id="d10"
+     Soit $I$ le point de coordonnées $\left(1~; 0\right)$ et $d$ la droite parallèle à l'axe des ordonnées passant par $I$.
+     \par
+     A tout réel $x$ on associe le point $N$ de la droite $d$ d'ordonnée $x$ puis le point $M$ obtenu en «~enroulant~» la droite $d$ sur le \mcLien{/cours/seconde/trigonometrie\#d10}{cercle trigonométrique} (voir figure ci-dessous).
+     \par
+     On dit que $x$ est une \textbf{mesure en radians} de l'angle orienté $\left(\overrightarrow{OI}, \overrightarrow{OM}\right)$
+}
+\begin{center}
+     \begin{extern}%width="400" alt="Mesure en radians d'un angle orienté"
+          \resizebox{8cm}{!}{
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.2,-1.2)(1.2,2.2)
+                    \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=1]{->}(0,0)(-1.2,-1.2)(1.2,2.2)
+                    \pscircle[linewidth=0.8pt](0.,0.){5.} %cercle trigo
+                    %             \pscircle[linewidth=0.8pt](1.373,0.){9.779} %cercle trigo
+                    \parametricplot[linewidth=1.2pt,linecolor=red]{0.0}{1.92}{cos(t)|sin(t)}%arc angle
+                    \parametricplot[linewidth=0.8pt,arrows=->]{0.8}{1.3}{1.15*cos(t)|1.15*sin(t)}% sens trigo
+                    \rput[tl](0.58,1.07){+}
+                    \pscustom[linewidth=0.8pt,linecolor=dmauve,fillcolor=dmauve,fillstyle=solid,opacity=0.1]{ % color angle
+                         \parametricplot{0.0}{1.92}{0.15*cos(t)|0.15*sin(t)}
+                    \lineto(0.,0.)\closepath}
+                    \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](0.,0.)(0.15,0.15){0.}{110} % fleche angle
+                    \psellipticarc[linewidth=0.8pt,linecolor=dblue,arrows=->](1.373,0.)(1.956,1.956) {101.3}{151} % fleche mn
+                    \psline[linewidth=0.8pt,linecolor=dmauve]{->}(0.,0.)(-0.342,0.94)%rayon
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(1.,0.) %vecteurs unités
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(0,1)
+                    \psline[linewidth=0.8pt]{->}(1,-1.5)(1,2.5)
+                    %\rput[tl](0.4,0.1){$\vec{i}$}
+                    %\rput[tl](-0.06,0.5){$\vec{j}$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                    \rput[bl](-0.09,-0.09){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1.,0.)
+                    \rput[bl](1.02,0.02){\dblue{$I$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](-0.342,0.94)
+                    \rput[br](-0.342,0.96){\dblue{$M$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1.0,1.92)
+                    \rput[bl](1.03,1.92){\dblue{$N$}}\rput[l](1.03,0.86){\red{$x$}} \rput[bl](1.03,2.12){$d$}
+                    \rput[t](0.5,-0.04){$\overrightarrow{i}$}\rput[l](-0.1,0.5){$\overrightarrow{j}$}
+                    \psline[linewidth=1pt,linecolor=red](1.,0.)(1.,1.92)
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](0,1)
+                    \rput[bl](0.02,1.03){\dblue{$J$}}
+               \end{pspicture*}
+          }
+     \end{extern}
+     \end{center}
+\begin{center}
+    \begin{center}
+     \textit{Mesures d'un angle orienté}
+    \end{center}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r10"
+     \begin{itemize}
+          \item Une infinités de points de la droite $d$ se superposent à $M$ par enroulement (en faisant plusieurs tours). Chaque angle possède une infinité de mesures qui diffèrent entre elles d'un multiple de $2\pi $. Si $x$ est une mesure d'un angle, les autres mesures sont $x+2\pi  , x+4\pi  ,$  etc. et $x-2\pi  , x-4\pi $ ,  etc.
+          \par
+          Ces différentes mesures s'écrivent $x+2k\pi $ avec $k \in  \mathbb{Z}$
+          \item On note de la même façon $\left(\vec{u}, \vec{v}\right)$ l'angle orienté de $\vec{u}$ vers $\vec{v}$et la mesure en radians de cet angle.
+     \end{itemize}
+}
+\cadre{bleu}{Propriété et définition (Mesure principale)}{% id="d20"
+     Tout angle orienté $\left(\vec{u}, \vec{v}\right)$ possède une unique mesure dans l'intervalle $\left]-\pi ~; \pi \right]$.
+     \par
+     Cette mesure s'appelle \textbf{la mesure principale }de l'angle $\left(\vec{u}, \vec{v}\right)$.
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Soit un angle dont une mesure est $-\frac{5\pi }{2}$. Comme $-\frac{5\pi }{2} \notin  \left]-\pi ~; \pi \right]$, ce n'est pas la mesure principale. Comme~: $-\frac{5\pi }{2} = -\frac{\pi }{2}-\frac{4\pi }{2} = -\frac{\pi }{2}-2\pi $ et $-\frac{\pi }{2}\in  \left]-\pi ~; \pi \right]$, $-\frac{\pi }{2}$ est la mesure principale de cet angle.
+}
+\bloc{orange}{Mesures d'angles à connaitre}{% id="e30"
+     \begin{center}
+          \begin{extern}%width="400" alt="Mesures d'angles remarquables"
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+               \resizebox{8cm}{!}{
+                    \begin{pspicture*}(-1.2,-1.2)(1.2,1.2)
+                         \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=1]{->}(0,0)(-1.2,-1.2)(1.2,1.2)
+                         \pscircle[linewidth=0.8pt](0.,0.){5.} %cercle trigo
+                         \psline[linewidth=0.8pt]{->}(0.,0.)(1.,0.) %vecteurs unités
+                         \psline[linewidth=0.8pt]{->}(0.,0.)(0,1)
+                         %\rput[tl](0.4,0.1){$\vec{i}$}
+                         %\rput[tl](-0.06,0.5){$\vec{j}$}
+                         \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                         %\rput[bl](-0.09,-0.09){$O$}
+                         \psline[linewidth=0.8pt,linecolor=dvert](-0.707,-0.707)(0.707,0.707)
+                         \psline[linewidth=0.8pt,linecolor=dvert](-0.707,0.707)(0.707,-0.707)
+                         \psline[linewidth=0.8pt,linecolor=red](-0.866,-0.5)(0.866,0.5)
+                         \psline[linewidth=0.8pt,linecolor=red](0.866,-0.5)(-0.866,0.5)
+                         \rput(0.943,0.55){$\red{\dfrac{\pi}{6}}$}
+                         \rput(-0.943,0.55){$\red{\dfrac{5\pi}{6}}$}
+                         \rput(-0.973,-0.55){$\red{-\dfrac{5\pi}{6}}$}
+                         \rput(0.943,-0.55){$\red{-\dfrac{\pi}{6}}$}
+                         %
+                         \rput(0.777,0.777){$\dvert{\dfrac{\pi}{4}}$}
+                         \rput(-0.777,0.777){$\dvert{\dfrac{3\pi}{4}}$}
+                         \rput(-0.807,-0.777){$\dvert{-\dfrac{3\pi}{4}}$}
+                         \rput(0.777,-0.777){$\dvert{-\dfrac{\pi}{4}}$}
+                         %
+                         \psline[linewidth=0.8pt,linecolor=dblue](-0.5,-0.866)(0.5,0.866)
+                         \psline[linewidth=0.8pt,linecolor=dblue](-0.5,0.866)(0.5,-0.866)
+                         \rput(0.55,0.943){$\dblue{\dfrac{\pi}{3}}$}
+                         \rput(-0.55,0.943){$\dblue{\dfrac{2\pi}{3}}$}
+                         \rput(-0.58,-0.943){$\dblue{-\dfrac{2\pi}{3}}$}
+                         \rput(0.55,-0.943){$\dblue{-\dfrac{\pi}{3}}$}
+                         %
+                         \rput(1.06,0.06){$0$}
+                         \rput(0.06,1.1){$\dfrac{\pi}{2}$}
+                         \rput(0.06,-1.1){$-\dfrac{\pi}{2}$}
+                         \rput(-1.06,0.06){$\pi$}
+                    \end{pspicture*}
+               }
+               \end{extern}
+          \end{center}}
+\begin{center}
+\textit{ Mesures d'angles remarquables}
+\end{center}
+\begin{h2}2. Sinus et cosinus - Équations trigonométriques\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     Soit $M$ un point du cercle trigonométrique et $x$ une mesure de l'angle $\widehat{IOM}$.
+     \par
+     On appelle \textbf{cosinus} de $x$, noté\textbf{ $\cos x$} l'abscisse du point $M$.
+     \par
+     On appelle \textbf{sinus} de $x$, noté\textbf{ $\sin x$} l'ordonnée du point $M$
+}
+\begin{center}
+     \begin{extern}%width="400" alt="sinus et cosinus d'un angle orienté"
+          \resizebox{7cm}{!}{
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.2,-1.2)(1.2,1.2)
+                    \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=1]{->}(0,0)(-1.2,-1.2)(1.2,1.2)
+                    \pscircle[linewidth=0.8pt](0.,0.){5.} %cercle trigo
+                    \parametricplot[linewidth=1.2pt,linecolor=red]{0.0}{0.698}{cos(t)|sin(t)}%arc angle
+                    \pscustom[linewidth=0.8pt,linecolor=dmauve,fillcolor=dmauve,fillstyle=solid,opacity=0.1]{ % color angle
+                         \parametricplot{0.0}{0.698}{0.15*cos(t)|0.15*sin(t)}
+                    \lineto(0.,0.)\closepath}
+                    \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](0.,0.)(0.15,0.15){0.}{40} % fleche angle
+                    \psline[linewidth=0.8pt,linecolor=dmauve](0.,0.)(0.766,0.643)%rayon
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(1.,0.) %vecteurs unités
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(0,1)
+                    %\rput[tl](0.4,0.1){$\vec{i}$}
+                    %\rput[tl](-0.06,0.5){$\vec{j}$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                    \rput[bl](-0.09,-0.09){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1.,0.)
+                    \rput[bl](1.02,0.02){\dblue{$I$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](0.766,0.643)
+                    \rput[bl](0.78,0.66){\dblue{$M$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](0,1)
+                    \rput[bl](0.02,1.03){\dblue{$J$}}
+                    \rput[bl](0.19,0.05){\dmauve{$x$}}
+                     \psline[linewidth=1pt,linecolor=dvert](0.,0.)(0.766,0)
+                    \psline[linewidth=1pt,linecolor=dvert](0.,0.)(0,0.643)
+                    \psline[linewidth=0.4pt,linecolor=dvert](0.,0.643)(0.766,0.643)
+                    \psline[linewidth=0.4pt,linecolor=dvert](0.766,0.)(0.766,0.643)
+                    \rput(0.766,-0.05){\dvert{$\cos x$}}
+                    \rput(-0.10,0.643){\dvert{$\sin x$}}
+               \end{pspicture*}
+          }
+          \end{extern}
+     \end{center}
+\begin{center}
+     \textit{Sinus et cosinus}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r40"
+     Pour tout réel $x$~:
+     \begin{itemize}
+          \item $-1 \leqslant  \cos x \leqslant  1$
+          \item $-1 \leqslant  \sin x \leqslant  1$
+          \item Comme $M$ appartient au cercle trigonométrique, $OM=1$ donc $OM^{2}=1=1$ donc~:
+          \par
+          $\sin^{2}x+\cos^{2}x=1$ ($\sin^{2}x$ étant une écriture abrégée pour $\left(\sin x\right)^{2}$)
+     \end{itemize}
+}
+\bloc{orange}{Valeurs de sinus et de cosinus à retenir}{% id="r45"
+     \begin{center}
+          \begin{extern}%width="450" alt="Valeurs de sinus et de cosinus"
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.2,-1.2)(1.2,1.2)
+                    \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=1]{->}(0,0)(-1.2,-1.2)(1.2,1.2)
+                    \pscircle[linewidth=0.8pt](0.,0.){5.} %cercle trigo
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(1.,0.) %vecteurs unités
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(0,1)
+                    %\rput[tl](0.4,0.1){$\vec{i}$}
+                    %\rput[tl](-0.06,0.5){$\vec{j}$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                    %\rput[bl](-0.09,-0.09){$O$}
+                    \psframe[linewidth=0.4pt,linecolor=dvert](-0.707,-0.707)(0.707,0.707)
+                    \psline[linewidth=0.8pt,linecolor=dvert](-0.707,-0.707)(0.707,0.707)
+                    \psline[linewidth=0.8pt,linecolor=dvert](-0.707,0.707)(0.707,-0.707)
+                    \psframe[linewidth=0.4pt,linecolor=red](-0.866,-0.5)(0.866,0.5)
+                    \psline[linewidth=0.8pt,linecolor=red](-0.866,-0.5)(0.866,0.5)
+                    \psline[linewidth=0.8pt,linecolor=red](0.866,-0.5)(-0.866,0.5)
+                    \rput(0.943,0.55){$\red{\dfrac{\pi}{6}}$}
+                    \rput(-0.943,0.55){$\red{\dfrac{5\pi}{6}}$}
+                    \rput(-0.973,-0.55){$\red{-\dfrac{5\pi}{6}}$}
+                    \rput(0.943,-0.55){$\red{-\dfrac{\pi}{6}}$}
+                    \rput(0.05,-0.554){\fontsize{7 pt}{7 pt}\selectfont $\red{ -\dfrac{1}{2}}$}
+                    \rput(0.05,0.554){\fontsize{7 pt}{7 pt}\selectfont $\red{ \dfrac{1}{2}}$}
+                    \rput(0.93,0.07){\fontsize{7 pt}{7 pt}\selectfont $\red{ \dfrac{\sqrt{3}}{2}}$}
+                    \rput(-0.93,0.07){\fontsize{7 pt}{7 pt}\selectfont $\red{-\dfrac{\sqrt{3}}{2}}$}
+                    %
+                    \rput(0.777,0.777){$\dvert{\dfrac{\pi}{4}}$}
+                    \rput(-0.777,0.777){$\dvert{\dfrac{3\pi}{4}}$}
+                    \rput(-0.807,-0.777){$\dvert{-\dfrac{3\pi}{4}}$}
+                    \rput(0.777,-0.777){$\dvert{-\dfrac{\pi}{4}}$}
+                    \rput(0.06,-0.77){\fontsize{7 pt}{7 pt}\selectfont $\dvert{ -\dfrac{\sqrt{2}}{2}}$}
+                    \rput(0.06,0.77){\fontsize{7 pt}{7 pt}\selectfont $\dvert{ \dfrac{\sqrt{2}}{2}}$}
+                    \rput(0.764,0.07){\fontsize{7 pt}{7 pt}\selectfont $\dvert{ \dfrac{\sqrt{2}}{2}}$}
+                    \rput(-0.764,0.07){\fontsize{7 pt}{7 pt}\selectfont $\dvert{-\dfrac{\sqrt{2}}{2}}$}
+                    %
+                    \psframe[linewidth=0.4pt,linecolor=dblue](-0.5,-0.866)(0.5,0.866)
+                    \psline[linewidth=0.8pt,linecolor=dblue](-0.5,-0.866)(0.5,0.866)
+                    \psline[linewidth=0.8pt,linecolor=dblue](-0.5,0.866)(0.5,-0.866)
+                    \rput(0.55,0.943){$\dblue{\dfrac{\pi}{3}}$}
+                    \rput(-0.55,0.943){$\dblue{\dfrac{2\pi}{3}}$}
+                    \rput(-0.58,-0.943){$\dblue{-\dfrac{2\pi}{3}}$}
+                    \rput(0.55,-0.943){$\dblue{-\dfrac{\pi}{3}}$}
+                    \rput(0.06,-0.933){\fontsize{7 pt}{7 pt}\selectfont $\dblue{ -\dfrac{\sqrt{3}}{2}}$}
+                    \rput(0.06,0.933){\fontsize{7 pt}{7 pt}\selectfont $\dblue{ \dfrac{\sqrt{3}}{2}}$}
+                    \rput(0.538,0.07){\fontsize{7 pt}{7 pt}\selectfont $\dblue{ \dfrac{1}{2}}$}
+                    \rput(-0.538,0.07){\fontsize{7 pt}{7 pt}\selectfont $\dblue{-\dfrac{1}{2}}$}
+                    %
+                    \rput(1.06,0.06){$0$}
+                    \rput(0.06,1.1){$\dfrac{\pi}{2}$}
+                    \rput(0.06,-1.1){$-\dfrac{\pi}{2}$}
+                    \rput(-1.06,0.06){$\pi$}
+               \end{pspicture*}
+               \end{extern}
+          \end{center}
+     \begin{tabularx}{0.8\linewidth}{|*{10}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{$x$}  & $0$ & $\frac{\pi }{6}$ & $\frac{\pi }{4}$ & $\frac{\pi }{3}$ & $\frac{\pi }{2}$ & $\frac{2\pi }{3}$ & $\frac{3\pi }{4}$ & $\frac{5\pi }{6}$ & $\pi $
+          \\ \hline
+          \textbf{$\cos x$} & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ &  $-\frac{1}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{3}}{2}$ & $-1$
+          \\ \hline
+          \textbf{$\sin x$} & $0$ & $\frac{1}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{3}}{2}$ & $1$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$
+          \\  \hline
+     \end{tabularx}
+     \begin{tabularx}{0.8\linewidth}{|*{8}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{$x$} & $-\frac{\pi }{6}$ & $-\frac{\pi }{4}$ & $-\frac{\pi }{3}$ & $-\frac{\pi }{2}$ & $-\frac{2\pi }{3}$ & $-\frac{3\pi }{4}$ & $-\frac{5\pi }{6}$
+          \\ \hline
+          \textbf{$\cos x$} & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{2}}{2}$ & $\frac{1}{2}$ & $0$ &  $-\frac{1}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{3}}{2}$
+          \\ \hline
+          \textbf{$\sin x$} & $-\frac{1}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{\sqrt{3}}{2}$ & $-1$ & $-\frac{\sqrt{3}}{2}$ & $-\frac{\sqrt{2}}{2}$ & $-\frac{1}{2}$
+          \\    \hline
+     \end{tabularx}
+}
+\cadre{vert}{Propriétés}{% id="p60"
+     Pour tout réel $x$~:
+     \begin{itemize}
+          \item %
+          $\sin\left(-x\right)=-\sin\left(x\right)$
+          \item %
+          $\cos\left(-x\right)=\cos\left(x\right)$
+          \item %
+          $\sin\left(\pi +x\right)=-\sin\left(x\right)$
+          \item %
+          $\cos\left(\pi +x\right)=-\cos\left(x\right)$
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=" Angles x, -x et pi+x"
+          \resizebox{7cm}{!}{
+               \newrgbcolor{dblue}{0. 0. 0.7}
+               \newrgbcolor{dvert}{0. 0.4 0.}
+               \newrgbcolor{dmauve}{0.5 0. 0.5}
+               \psset{xunit=5.0cm,yunit=5.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.2,-1.2)(1.2,1.2)
+                    \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle,xAxis=true,yAxis=true,Dx=10.,Dy=10.,ticksize=-2pt 0,subticks=1]{->}(0,0)(-1.2,-1.2)(1.2,1.2)
+                    \pscircle[linewidth=0.8pt](0.,0.){5.} %cercle trigo
+                    \psellipticarc[linewidth=0.8pt,linecolor=dmauve,arrows=->](0.,0.)(0.15,0.15){0.}{40} % fleche angle
+                    \psellipticarc[linewidth=0.8pt,linecolor=dvert,arrows=<-](0.,0.)(0.15,0.15){-40}{0} % fleche angle -x
+                    \psellipticarc[linewidth=0.8pt,linecolor=red,arrows=->](0.,0.)(0.1,0.1){0.}{220} % fleche angle pi+x
+                    \psline[linewidth=0.8pt,linecolor=dmauve](0.,0.)(0.766,0.643)%rayon
+                    \psline[linewidth=0.8pt,linecolor=dvert](0.,0.)(0.766,-0.643)%rayon -x
+                    \psline[linewidth=0.8pt,linecolor=red](0.,0.)(-0.766,-0.643)%rayon -x
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(1.,0.) %vecteurs unités
+                    \psline[linewidth=0.8pt]{->}(0.,0.)(0,1)
+                    %\rput[tl](0.4,0.1){$\vec{i}$}
+                    %\rput[tl](-0.06,0.5){$\vec{j}$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                    \rput[bl](-0.09,-0.09){$O$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](1.,0.)
+                    \rput[bl](1.02,0.02){\dblue{$I$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=dblue](0,1)
+                    \rput[bl](0.02,1.03){\dblue{$J$}}
+                    \rput[bl](0.19,0.05){\dmauve{$x$}}
+                    \rput[tl](0.19,-0.05){\dvert{$-x$}}
+                    \rput[br](-0.13,0.07){\red{$\pi+x$}}
+                     \psframe[linewidth=0.4pt,linecolor=lightgray](-0.766,-0.643)(0.766,0.643)
+                    \rput(0.766,-0.05){\dvert{$\cos x$}}
+                    \rput(-0.766,-0.05){\dvert{$-\cos x$}}
+                    \rput(-0.11,0.69){\dvert{$\sin x$}}
+                    \rput(-0.14,-0.69){\dvert{$-\sin x$}}
+               \end{pspicture*}
+          }
+          \end{extern}
+     \end{center}
+\begin{center}
+     \textit{   Angles $x$, $-x$ et $\pi+x$}
+\end{center}
+\cadre{vert}{Formules d'addition}{% id="p60"
+     Pour tous réels $a$ et $b$~:
+     \begin{itemize}
+          \item $\cos\left(a+b\right)=\cos\left(a\right) \cos\left(b\right)-\sin\left(a\right) \sin\left(b\right)$
+          \item $\sin\left(a+b\right)=\sin\left(a\right) \cos\left(b\right)+\cos\left(a\right) \sin\left(b\right)$
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t70"
+     Soit $a$ un réel fixé.
+     \par
+     Les solutions de l'équation $\cos\left(x\right)=\cos\left(a\right)$ sont les réels de la forme~:
+     \begin{center}$a+2k\pi   $ ou $  -a+2k\pi       $ où $k$ décrit $\mathbb{Z}$\end{center}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     On cherche à résoudre l'équation $\cos\left(x\right)=0$
+     \par
+     On sait que $\cos\left(\frac{\pi }{2}\right)=0$ ce qui fournit une solution de l'équation mais permet aussi d'écrire l'équation sous la forme $\cos\left(x\right)=\cos\left(\frac{\pi }{2}\right)$
+     \par
+     D'après le théorème ci-dessus les solutions sont de la forme~:
+     \par
+     $x=\frac{\pi }{2}+2k\pi $ ou $x=-\frac{\pi }{2}+2k\pi $ avec $k \in  \mathbb{Z}$
+}
+\cadre{rouge}{Théorème}{% id="t80"
+     Soit $a$ un réel fixé.
+     \par
+     Les solutions de l'équation $\sin\left(x\right)=\sin\left(a\right)$ sont les réels de la forme~:
+     \begin{center}$a+2k\pi   $ ou $  \pi -a+2k\pi       $ où $k$ décrit $\mathbb{Z}$\end{center}
+}
+\input{_footer}

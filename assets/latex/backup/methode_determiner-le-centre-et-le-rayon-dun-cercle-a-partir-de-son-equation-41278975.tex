@@ -1,0 +1,140 @@
+\input{_header}
+\meta{url}{/methode/determiner-le-centre-et-le-rayon-dun-cercle-a-partir-de-son-equation/}
+\meta{pid}{11187}
+\meta{titre}{Déterminer le centre et le rayon d'un cercle à partir de son équation}
+\meta{type}{methode}
+%
+\cadre{rouge}{Méthode}{ % id=m010
+     Dans cette fiche, on cherchera à déterminer si une équation du type~:
+     \[
+     x^2 +y^2 +ax+by+c=0
+     \]
+     correspond à l'équation d'un cercle et, si c'est le cas, à déterminer les coordonnées du centre et du rayon de ce cercle.
+}% fin méthode
+On utilisera, pour cela, le \mcLien{https://www.maths-cours.fr/cours/produit-scalaire\#t110}{résultat suivant}~:
+\cadre{bleu}{Rappel}{ % id=r015
+     Le plan est rapporté à un repère orthonormé $\left(O, \vec{i}, \vec{j}\right)$.
+     \par
+     Soit $ \Omega ( \alpha  ;  \beta) $ un point quelconque du plan et $r$ un réel positif.
+     \par
+     Une équation du cercle de centre $ \Omega $ et de rayon $r$ est :
+     \[
+     \left(x- \alpha \right)^{2}+\left(y- \beta \right)^{2}=r^{2}
+     \]
+}%
+\textbf{L'objectif} sera donc de chercher si l'équation $x^2 +y^2 +ax+by+c=0 $ peut s'écrire sous la forme $\left(x- \alpha \right)^{2}+\left(y- \beta \right)^{2}=r^{2}$.
+\medbreak
+\textbf{En pratique}, pour déterminer si l'ensemble cherché est un cercle et déterminer les éléments caractéristiques de ce cercle, on procède de la manière suivante~:
+\begin{enumerate}
+     \item
+     on regroupe les termes en  $x$ et les termes en $y$
+     \item
+     on fait apparaître des carrés de la forme $(x -  \alpha )^2 $ et $(y -  \beta )^2 $ en utilisant des identités remarquables
+     \item
+     On écrit l'équation sous la forme $(x- \alpha )^2 +(y -  \beta )^2 = \gamma $ ;\\
+     À partir de cette équation~:
+     \begin{itemize}
+          \item
+          si $ \gamma >0$ , l'ensemble cherché est un cercle de centre  $ \Omega ( \alpha ; \beta )$ et de rayon $r=\sqrt{ \gamma }$ .
+          \item
+          si $ \gamma =0$ , l'ensemble cherché est le point $ \Omega ( \alpha ; \beta )$
+          \item
+          si $ \gamma <0$ , l'ensemble cherché est l'ensemble vide.
+     \end{itemize}
+\end{enumerate}
+\bloc{orange}{Exemple 1}{ % id=e020
+     \cadre{vert}{Énoncé}{ % id=r020
+          Déterminer l'ensemble des points  $M$ tels que~:
+          \[
+          x^2 +y^2 +2x - 4y=0
+          \]
+     }% fin énoncé
+     \begin{enumerate}
+          \item
+          En regroupant les termes en $x$ et les termes en $y$ on obtient~:\\
+          $x^2 +2x+ y^2  - 4y=0$
+          \item
+          $x^2 +2x$ est le début de l'identité remarquable~:  $x^2 +2x+1=(x+1)^2.$ \\
+          Donc $x^2 +2x=(x+1)^2 - 1$
+          \newpar
+          De la même manière, $y^2  - 4y$ est le début de l'identité remarquable~: $y^2  - 4y+4=(y - 2)^2 $ \\
+          Donc $y^2  - 4y=(y - 2)^2  - 4$
+          \item
+          En utilisant les résultats précédents, l'équation de départ peut s'écrire sous la forme~:\\
+          $(x+1)^2 - 1+(y - 2)^2  - 4=0$
+          \newpar
+          C'est-à-dire~:\\
+          $(x+1)^2+(y - 2)^2 =5$ \\
+          $(x - ( - 1))^2+(y - 2)^2 =\left(\sqrt{5}\right)^2 $
+          \newpar
+          L'ensemble des points  $M$ cherché est donc le cercle de centre  $ \Omega ( - 1~;~2)$ et de rayon  $\sqrt{5}.$
+          \begin{center}
+          \end{center}
+          \textbf{Remarque} : Ce cercle passe par l'origine du repère puisque l'équation est vérifiée pour $x=0$ et $y=0.$
+     \end{enumerate}
+}% fin exemple
+\bloc{orange}{Exemple 2}{ % id=e030
+     \cadre{vert}{Énoncé}{ % id=r030
+          Quel est l'ensemble des points  $M( x ; y )$ dont les coordonnées vérifient~:
+          \[
+          x^2 +y^2 +x - 3y+7=0 \quad ?
+          \]
+     }% fin énoncé
+     \begin{enumerate}
+          \item
+          On commence par regrouper les termes en $x$ et les termes en $y$~:\\
+          $x^2 +x+ y^2  - 3y + 7=0$
+          \item
+          $x^2 +x$ est le début de l'identité remarquable~:  $x^2 +x+\frac{ 1 }{ 4 }=\left(x+\frac{ 1 }{ 2 }\right)^2$ \\
+          Donc $x^2 +x=\left(x+\frac{ 1 }{ 2 }\right)^2 - \frac{ 1 }{ 4 } $
+          \newpar
+          $y^2  - 3y$ est le début de l'identité remarquable~: $y^2  - 3y+\frac{ 9 }{ 4 }=\left(y - \frac{ 3 }{ 2 }\right)^2 $ \\
+          Ce qui donne : $y^2  - 3y=\left(y - \frac{ 3 }{ 2 }\right)^2  - \frac{ 9 }{ 4 } $
+          \item
+          Finalement, notre équation peut s'écrire~:\\
+          $\left(x+\frac{ 1 }{ 2 }\right)^2 - \frac{ 1 }{ 4 } +\left(y - \frac{ 3 }{ 2 }\right)^2  - \frac{ 9 }{ 4 } + 7 =0$
+          \newpar
+          Ou encore~:\\
+          $\left(x+\frac{ 1 }{ 2 }\right)^2  + \left(y - \frac{ 3 }{ 2 }\right)^2 =  - \frac{ 9 }{ 2 }$
+          \newpar
+          La somme de deux carrés ne peut jamais être strictement négative~; par conséquent, l'équation n'admet aucun couple solution.
+          \newpar
+          L'ensemble cherché est donc l'ensemble vide.
+     \end{enumerate}
+}% fin exemple
+\bloc{orange}{Exemple 3}{ % id=e040
+     \cadre{vert}{Énoncé}{ % id=r040
+          L'équation~:
+          \[
+          x^2 +y^2 -6x +2y+10=0
+          \]
+          est-elle l'équation d'un cercle ?
+     }% fin énoncé
+     \begin{enumerate}
+          \item
+          Là encore, la première étape consiste à regrouper les termes en $x$ et les termes en $y$~:\\
+          $x^2 -6x+ y^2  +2y + 10=0$
+          \item
+          Ensuite, on recherche le début d'identités remarquables~:
+          $x^2 -6x$ est le début de~:  $x^2 -6x+9=\left(x - 3\right)^2$ \\
+          Donc $x^2 -6x=\left(x - 3\right)^2-9$
+          \newpar
+          De même, pour les termes en $y$~:
+          $y^2  +2y$ est le début de l'identité remarquable~: $y^2  +2y+1=\left(y+1\right)^2 $ \\
+          Ce qui donne : $y^2  +y=\left(y +1\right)^2  - 1 $
+          \item
+          L'équation de départ peut alors s'écrire~:\\
+          $\left(x - 3\right)^2-9+\left(y +1\right)^2  - 1  + 10 =0$
+          \newpar
+          Soit~:\\
+          $\left(x - 3\right)^2+\left(y +1\right)^2 =0$
+          \newpar
+          La somme de deux carrés et nulle si et seulement si chacun de ces carrés est nul, c'est-à-dire si et seulement si~:\\
+          $x - 3=0$ et $y+1=0.$
+          \newpar
+          L'équation proposée admet donc un unique couple solution qui est $\left( 3~;~ - 1 \right).$
+          \newpar
+          L'ensemble d'équation  $x^2 +y^2 -6x +2y+10=0$ est donc réduit au point de coordonnées $\left( 3~;~ - 1 \right).$
+     \end{enumerate}
+}% fin exemple
+\input{_footer}

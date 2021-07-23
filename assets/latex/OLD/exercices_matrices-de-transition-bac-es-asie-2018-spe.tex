@@ -1,0 +1,69 @@
+\input{_header}
+   \begin{h2}Exercice 3 (5 points)\end{h2}
+          \textbf{Candidats de la série ES ayant choisi la spécialité \og mathématiques \fg{}}
+          \bigbreak
+          Pour la nouvelle année, Lisa prend la bonne résolution d'aller au travail tous les matins à
+          vélo. Le premier jour, très motivée, Lisa se rend au travail à vélo. Par la suite, elle se rend toujours au travail à vélo ou en voiture.
+          \par
+          Elle se rend compte que~:
+          \begin{indent}
+               \begin{itemize}
+                    \item si elle a pris son vélo un jour, cela renforce sa motivation et elle reprend le vélo le lendemain avec une probabilité de $0,7$~;
+                    \item si elle a pris sa voiture un jour, la probabilité qu'elle reprenne la voiture le lendemain est de $0,5$.
+               \end{itemize}
+          \end{indent}
+          Cette situation peut être modélisée par un graphe probabiliste de sommets A et B où~:
+          \begin{indent}
+               \begin{itemize}
+                    \item $A$ est l'événement \og Lisa prend le vélo \fg{}~;
+                    \item B est l'événement \og Lisa prend la voiture \fg.
+               \end{itemize}
+          \end{indent}
+          On note, pour tout entier naturel $n$ non nul~:
+          \begin{indent}
+               \begin{itemize}
+                    \item $a_n$ la probabilité que Lisa aille au travail à vélo le jour $n$~;
+                    \item $b_n$ la probabilité que Lisa aille au travail en voiture le jour $n$.
+               \end{itemize}
+          \end{indent}
+          \medbreak
+          \begin{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Traduire les données par un graphe probabiliste.
+                    \item En déduire la matrice de transition $M$.
+               \end{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Donner les valeurs de $a_1$ et $b_1$ correspondant à l'état initial.
+                    \item Calculer la probabilité arrondie au centième que Lisa prenne le vélo le 8$^{e}$ jour.
+               \end{enumerate}
+               \item Déterminer l'état stable du graphe puis interpréter le résultat obtenu.
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Montrer que, pour tout nombre entier naturel $n$ non nul~: $a_{n+1} = 0,7a_n + 0,5b_n$.
+                    \item En déduire que pour tout entier naturel non nul $n$~: $a_{n+1} = 0,2a_n + 0,5$.
+               \end{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Recopier et compléter l'algorithme suivant permettant de déterminer le plus petit entier $n$ tel que $a_n < 0,626$.
+                    \begin{center}
+                      \begin{extern}%width="220" alt="algorithme Bac ES Asie 2018"
+                         \begin{tabularx}{0.3\linewidth}{|X|}\hline
+                              $N \gets 1$\\
+                              $A \gets 1$\\
+                              Tant que \ldots faire\\
+                              \hspace{1cm}$A \gets \ldots$\\
+                              \hspace{1cm}$N \gets \ldots $\\
+                              Fin Tant que\\ \hline
+                         \end{tabularx}
+                      \end{extern}
+                      
+                    \end{center}
+                    \item Quelle est la valeur de $N$ après exécution de l'algorithme~? Interpréter ce
+                    résultat.
+               \end{enumerate}
+          \end{enumerate}
+          \medbreak
+
+\input{_footer}

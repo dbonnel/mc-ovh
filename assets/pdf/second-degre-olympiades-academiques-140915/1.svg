@@ -1,0 +1,1420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="710" height="1003" viewBox="0 0 710 1003" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+.g1_1{
+fill: #FFFFFF;
+}
+
+.s5_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_24;
+fill: #000000;
+}
+.s6_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-BoldMT_2b;
+fill: #000000;
+}
+.s3_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_29;
+fill: #000000;
+}
+.s2_1{
+font-size: 14.48px;
+font-family: TimesNewRomanPSMT_29;
+fill: #000000;
+}
+.s1_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_29;
+fill: #000000;
+}
+.s4_1{
+font-size: 18.33px;
+font-family: SymbolMT_1_;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1003
+L710,1003
+L710,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="5" 
+y="21" 
+dx="0" 
+class="s1_1"
+>S</text>
+
+<text 
+x="16" 
+y="21" 
+dx="0,0,0.1,0,0,0,0.1,0,0,0,0.1,0" 
+class="s2_1"
+>ECOND DEGRE </text>
+
+<text 
+x="121" 
+y="21" 
+dx="0,-0.1" 
+class="s1_1"
+>(O</text>
+
+<text 
+x="141" 
+y="21" 
+dx="0,0,0,0,0.2,0.1,0,0,0,0,0,0,0.1,0,0,0.1,0.1,-0.2,0,0.2,0,0" 
+class="s2_1"
+>LYMPIADES ACADEMIQUES </text>
+
+<text 
+x="336" 
+y="21" 
+dx="0" 
+class="s1_1"
+>P</text>
+
+<text 
+x="347" 
+y="21" 
+dx="0,0.2,-0.1,0,-0.1,0,0.1,0" 
+class="s2_1"
+>OITIERS </text>
+
+<text 
+x="406" 
+y="21" 
+dx="0,0,0,0,0,0.1" 
+class="s1_1"
+>2011) </text>
+
+<path fill-rule="evenodd" d="M5,67l16,0L21,45L5,45L5,67Z" class="g1_1" />
+<text 
+x="5" 
+y="63" 
+dx="0,0,-0.1" 
+class="s1_1"
+>1) </text>
+
+<path fill-rule="evenodd" d="M5,90l666,0l0,-23L5,67L5,90Z" class="g1_1" />
+<text 
+x="5" 
+y="85" 
+dx="0,0.1,0,0,0,0" 
+class="s1_1"
+>Soit X</text>
+
+<text 
+x="53" 
+y="87" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="66" 
+y="85" 
+dx="0,0,0,0.1,-0.2,-0.1,0,0.2,-0.2,0,0,0,0.1,-0.1,0,-0.1,0,0" 
+class="s1_1"
+>l'âge d'Alice et X</text>
+
+<text 
+x="192" 
+y="87" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="205" 
+y="85" 
+dx="0,-0.1,-0.1,0,0,0,0,0,-0.1,0,0.1,0,-0.1,0,-0.1,0,0,0,0" 
+class="s1_1"
+>celui de Clément. X</text>
+
+<text 
+x="352" 
+y="87" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="365" 
+y="85" 
+dx="0,-0.1,0.2,0" 
+class="s1_1"
+>et X</text>
+
+<text 
+x="396" 
+y="87" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="409" 
+y="85" 
+dx="0" 
+class="s4_1"
+>∈</text>
+
+<text 
+x="427" 
+y="85" 
+dx="0,0,0,0.2,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.2,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,0,0,0" 
+class="s1_1"
+>N* et sont solutions de l'équation </text>
+
+<path fill-rule="evenodd" d="M5,111l196,0l0,-22L5,89l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="106" 
+dx="0,-0.2,-0.1,0.2,-0.1,-0.1,-0.1,0.2,-0.1,0,0,0,0,0,-0.1,-0.1,0,0,0,0,0.2,0.1,-0.2,-0.1,0.1,0,0" 
+class="s1_1"
+>générale du second degré : </text>
+
+<path fill-rule="evenodd" d="M5,132l492,0l0,-22L5,110l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="127" 
+dx="0,-0.1,-0.1,0.2,0" 
+class="s1_1"
+>a(x–X</text>
+
+<text 
+x="51" 
+y="129" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="60" 
+y="127" 
+dx="0,0.1,-0.1,0.2,-0.1" 
+class="s1_1"
+>)(x-X</text>
+
+<text 
+x="101" 
+y="129" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="109" 
+y="127" 
+dx="0,-0.1,0,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,-0.1,0,0.1,-0.1,0,0.2,-0.2,-0.1,0.1,-0.1,0,-0.1,-0.1,0,0,0,0,0,0,0.1,0,-0.1,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0.2" 
+class="s1_1"
+>) = 0 qui peut encore s'écrire sous forme de trinôme : </text>
+
+<path fill-rule="evenodd" d="M5,154l570,0l0,-22L5,132l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="150" 
+dx="0,-0.1" 
+class="s1_1"
+>ax</text>
+
+<text 
+x="23" 
+y="143" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="29" 
+y="150" 
+dx="0,0,-0.1,-0.1" 
+class="s1_1"
+>–a(X</text>
+
+<text 
+x="66" 
+y="151" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="74" 
+y="150" 
+dx="0,-0.1" 
+class="s1_1"
+>+X</text>
+
+<text 
+x="98" 
+y="151" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="106" 
+y="150" 
+dx="0,-0.1,0.2,-0.1,-0.1" 
+class="s1_1"
+>)x+aX</text>
+
+<text 
+x="153" 
+y="151" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="162" 
+y="150" 
+dx="0" 
+class="s1_1"
+>X</text>
+
+<text 
+x="175" 
+y="151" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="188" 
+y="150" 
+dx="0,-0.1,0,0,0,-0.1,0,0.1,-0.1,0,-0.1" 
+class="s1_1"
+>= 0 avec a </text>
+
+<text 
+x="267" 
+y="150" 
+dx="0" 
+class="s4_1"
+>∈</text>
+
+<text 
+x="285" 
+y="150" 
+dx="0,-0.2,0,0,0,0,0,0,0,0,-0.1,0.2,0,-0.1,0,0,-0.1,0,-0.1,-0.1,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0.1,-0.1,0,0" 
+class="s1_1"
+>Z* puisque les coefficients sont entiers. </text>
+
+<path fill-rule="evenodd" d="M5,175l677,0l0,-21L5,154l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="171" 
+dx="0,0.1,-0.1,-0.1,0,-0.1,0,0,0,-0.1,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0.2,-0.2,-0.1,0,0.1,-0.1,0,0,0,0,-0.1,0,0,0,-0.1,-0.1,0,0,0.2,-0.1,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,-0.1,0.1,-0.1,0,-0.1,0,0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,-0.1,0,0" 
+class="s1_1"
+>Par ailleurs, on sait d'après l'énoncé que pour x = 1 la somme des coefficients du trinôme est </text>
+
+<path fill-rule="evenodd" d="M5,196l292,0l0,-21L5,175l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="192" 
+dx="0,-0.1,0,-0.1,0,-0.1,0,-0.1,0.2" 
+class="s1_1"
+>égale à X</text>
+
+<text 
+x="75" 
+y="193" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="83" 
+y="192" 
+dx="0,0,0,0,0,0.1,-0.1,0,0,0,0,0,-0.1,-0.1,0,0.2,-0.1,0,0,0,-0.1,0,0,0,-0.1,-0.1,0,0,0,-0.1,0,0.2" 
+class="s1_1"
+>–1, ce qui revient à dire que : </text>
+
+<path fill-rule="evenodd" d="M5,217l472,0l0,-21L5,196l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="213" 
+dx="0,-0.1,-0.1,0,0" 
+class="s1_1"
+>a(1–X</text>
+
+<text 
+x="51" 
+y="215" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="60" 
+y="213" 
+dx="0,0.1,-0.1,0,-0.1" 
+class="s1_1"
+>)(1-X</text>
+
+<text 
+x="101" 
+y="215" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="109" 
+y="213" 
+dx="0,-0.1,0,-0.1,0.2" 
+class="s1_1"
+>) = X</text>
+
+<text 
+x="148" 
+y="215" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="156" 
+y="213" 
+dx="0,0,0,0,0.2,0,0,0,0,-0.1,0,0,0,0,-0.2,0.1,-0.1,-0.1,0,-0.1,-0.1,0.2,-0.1" 
+class="s1_1"
+>–1 qui peut s'écrire (X</text>
+
+<text 
+x="320" 
+y="215" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="328" 
+y="213" 
+dx="0,0,0,-0.1,0.1,-0.1,0.1" 
+class="s1_1"
+>–1)[a(X</text>
+
+<text 
+x="387" 
+y="215" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="395" 
+y="213" 
+dx="0,0,0,-0.1,0,0,0.1,0,-0.1,0,0,0" 
+class="s1_1"
+>–1)–1] = 0. </text>
+
+<path fill-rule="evenodd" d="M5,239l638,0l0,-22L5,217l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="234" 
+dx="0,-0.2,0,0,-0.1,0,0,0.2,-0.1,0,0,0,-0.1,0,0,0,0,0,-0.1,0" 
+class="s1_1"
+>Il est évident que X</text>
+
+<text 
+x="149" 
+y="236" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="162" 
+y="234" 
+dx="0" 
+class="s5_1"
+>≠</text>
+
+<text 
+x="177" 
+y="234" 
+dx="0,0,0.2,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,-0.1,0.1" 
+class="s1_1"
+>1. Donc on doit avoir a(X</text>
+
+<text 
+x="365" 
+y="236" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="374" 
+y="234" 
+dx="0,0,0,-0.1" 
+class="s1_1"
+>–1)–</text>
+
+<text 
+x="407" 
+y="234" 
+dx="0,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0.2,-0.1,0,-0.1,-0.1,0,0,0,0,0.2,0,0,0,-0.1,0,-0.1,0.2,-0.2,0,0,0" 
+class="s5_1"
+>1 = 0, ou encore, puisque a ≠ 0 :</text>
+
+<path fill-rule="evenodd" d="M5,260l94,0l0,-22L5,238l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="255" 
+dx="0" 
+class="s1_1"
+>X</text>
+
+<text 
+x="19" 
+y="257" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="31" 
+y="255" 
+dx="0,-0.1,0,-0.1,-0.1,-0.1,0,-0.1,0.2,-0.1" 
+class="s1_1"
+>= (a+1)/a </text>
+
+<path fill-rule="evenodd" d="M5,281l477,0l0,-22L5,259l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="276" 
+dx="0,-0.2,-0.1,0,0.2,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,-0.1,0,0,0,0,0,0,-0.1,-0.1,0,0.2,-0.1,0,0,0,-0.1,-0.1,0,0,-0.1,0,0,0.2,-0.1,0,-0.1,0,0,0,-0.1,0,0" 
+class="s1_1"
+>La seule solution possible en nombres entiers est a = 1 et X</text>
+
+<text 
+x="440" 
+y="278" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="453" 
+y="276" 
+dx="0,-0.1,0,0,0.2" 
+class="s1_1"
+>= 2. </text>
+
+<path fill-rule="evenodd" d="M5,302l130,0l0,-22L5,280l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="298" 
+dx="0,0,0,0.1,-0.2,-0.1,0.1,-0.1,0,0,0,0,0,0,0.1,0,0" 
+class="s6_1"
+>Clément a 2 ans. </text>
+
+<path fill-rule="evenodd" d="M5,344l16,0l0,-22L5,322l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="340" 
+dx="0,0,-0.1" 
+class="s1_1"
+>2) </text>
+
+<path fill-rule="evenodd" d="M5,365l542,0l0,-22L5,343l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="361" 
+dx="0,-0.2,-0.1,0,0.2,-0.1,0,0,0,0,-0.1,0,0,0,0,0,-0.1,-0.1,0,0,0,0,0.2,0.1,-0.2,0.1,-0.1,0,0.2,-0.2,-0.1,0.1,-0.1,0,0,0,0,-0.1,0,0,0,-0.1,0,-0.1,0,0,0,-0.1,0,0.2,0,0,-0.1,0,0,0,-0.1,0,-0.1,0,-0.1,0,0,0.2,-0.1,0,0" 
+class="s1_1"
+>Le trinôme du second degré s'écrit, en tenant compte que a = 1 et X</text>
+
+<text 
+x="500" 
+y="362" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="513" 
+y="361" 
+dx="0,-0.1,0,0,0,0" 
+class="s1_1"
+>= 2 : </text>
+
+<path fill-rule="evenodd" d="M5,386l134,0l0,-22L5,364l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="382" 
+dx="0" 
+class="s1_1"
+>x</text>
+
+<text 
+x="15" 
+y="375" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="21" 
+y="382" 
+dx="0,0,-0.1" 
+class="s1_1"
+>–(X</text>
+
+<text 
+x="49" 
+y="383" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="58" 
+y="382" 
+dx="0,-0.1,0.2,-0.1,0.2,-0.1,0" 
+class="s1_1"
+>+2)x+2X</text>
+
+<text 
+x="126" 
+y="383" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="134" 
+y="382" 
+dx="0,0.2" 
+class="s1_1"
+>. </text>
+
+<path fill-rule="evenodd" d="M5,409l656,0l0,-23L5,386l0,23Z" class="g1_1" />
+<text 
+x="5" 
+y="404" 
+dx="0,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,-0.1,-0.1,0,0,0.2,-0.2,-0.1,0,0,0.2,-0.1,-0.1,0,0.2,0,-0.2,0,0,0,-0.1,0.2,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,-0.1,0,-0.1,0,0,0,0.2,-0.1,0,0.2,0,0,-0.1,0,-0.1,-0.1,0,0" 
+class="s1_1"
+>On sait d'après l'énoncé qu'il existe une valeur X de x, avec X </text>
+
+<text 
+x="462" 
+y="404" 
+dx="0" 
+class="s4_1"
+>∈</text>
+
+<text 
+x="480" 
+y="404" 
+dx="0,0,0,0.2,-0.1,0,0,0,0.2,-0.2,0.2" 
+class="s5_1"
+>N* et X ≠ X</text>
+
+<text 
+x="570" 
+y="406" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="579" 
+y="404" 
+dx="0,0,0,0.2,-0.1,0,0,-0.1,0,0,0,-0.1,0,0.2" 
+class="s1_1"
+>, telle que : </text>
+
+<path fill-rule="evenodd" d="M5,430l189,0l0,-22L5,408l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="425" 
+dx="0" 
+class="s1_1"
+>X</text>
+
+<text 
+x="19" 
+y="418" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="25" 
+y="425" 
+dx="0,0,-0.1" 
+class="s1_1"
+>–(X</text>
+
+<text 
+x="53" 
+y="427" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="62" 
+y="425" 
+dx="0,-0.1,0,-0.1,0.1,-0.1,0" 
+class="s1_1"
+>+2)X+2X</text>
+
+<text 
+x="134" 
+y="427" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="147" 
+y="425" 
+dx="0,-0.1,0,0,0,0.2,0" 
+class="s1_1"
+>= –55. </text>
+
+<path fill-rule="evenodd" d="M5,452l427,0l0,-22L5,430l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="448" 
+dx="0,0.1,0,0,0,0,0,0,0,0,-0.1,0" 
+class="s1_1"
+>Posons X = X</text>
+
+<text 
+x="108" 
+y="449" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="117" 
+y="448" 
+dx="0,-0.1,0,0,-0.1,0.2,-0.1,-0.1,0,0" 
+class="s1_1"
+>+n avec n </text>
+
+<text 
+x="193" 
+y="448" 
+dx="0" 
+class="s4_1"
+>∈</text>
+
+<text 
+x="210" 
+y="448" 
+dx="0,-0.2,0,0,0.2,0,0,0.1,-0.2,-0.1,0,0,0,-0.1,0,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0.2,0,-0.2,0.1,-0.1,-0.1,0,0,0,0" 
+class="s1_1"
+>Z*. L'égalité ci-dessus s'écrit : </text>
+
+<path fill-rule="evenodd" d="M5,473l266,0l0,-21L5,452l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="469" 
+dx="0,-0.1" 
+class="s1_1"
+>(X</text>
+
+<text 
+x="25" 
+y="470" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="33" 
+y="469" 
+dx="0,-0.1,0" 
+class="s1_1"
+>+n)</text>
+
+<text 
+x="59" 
+y="462" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="65" 
+y="469" 
+dx="0,0,-0.1" 
+class="s1_1"
+>–(X</text>
+
+<text 
+x="94" 
+y="470" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="103" 
+y="469" 
+dx="0,-0.1,0,-0.1,0.1" 
+class="s1_1"
+>+2)(X</text>
+
+<text 
+x="148" 
+y="470" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="156" 
+y="469" 
+dx="0,-0.1,0,0.1,0.1,0" 
+class="s1_1"
+>+n)+2X</text>
+
+<text 
+x="215" 
+y="470" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="228" 
+y="469" 
+dx="0,-0.1,0,0,0,0.2" 
+class="s1_1"
+>= –55 </text>
+
+<path fill-rule="evenodd" d="M5,494l549,0l0,-21L5,473l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="490" 
+dx="0,0,0,0,0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0,0,-0.1,0,0,0.1,-0.1,-0.1,0.1,-0.1,0.1,0,-0.2,0.1,-0.1,0,0,0,0,-0.1,0,0,-0.1,-0.1,0,0,0.1,-0.1,0,0,-0.1,0,0,0.1,-0.1,0,0,-0.1,0,0.2,-0.2,0.1,-0.2,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0.2" 
+class="s1_1"
+>En développant et réarrangeant le premier membre de l'égalité, on obtient : </text>
+
+<path fill-rule="evenodd" d="M5,515l133,0l0,-21L5,494l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="511" 
+dx="0,0,-0.1,0,-0.1" 
+class="s1_1"
+>n(n+X</text>
+
+<text 
+x="53" 
+y="512" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="62" 
+y="511" 
+dx="0,0,0,-0.1,0.2,-0.1,0,0,0,0,0" 
+class="s1_1"
+>–2) = –55. </text>
+
+<path fill-rule="evenodd" d="M5,536l689,0l0,-21L5,515l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="532" 
+dx="0,0.1,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0,0,-0.1,0" 
+class="s1_1"
+>Si n &gt; 0, comme X</text>
+
+<text 
+x="144" 
+y="534" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="153" 
+y="532" 
+dx="0,0,0,0,-0.1,0.2,0,0,-0.1,0,0,0,-0.1,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0.1,-0.2,0.1,-0.1,0,0,0.2,-0.1,0,0.1,0,-0.1,0,-0.1,0,0,-0.1,0,0,0,0,0,-0.1,0,0.1,-0.1,0,0,0,0,-0.1,0.2,-0.1" 
+class="s1_1"
+>–2 &gt; 0 (Alice est plus âgée que Clément), on aurait n(n+X</text>
+
+<text 
+x="579" 
+y="534" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="588" 
+y="532" 
+dx="0,0,0,-0.1,0,-0.1,0,0,0,0.2,-0.1,-0.1,0,0,0,0" 
+class="s1_1"
+>–2) &gt; 0, ce qui </text>
+
+<path fill-rule="evenodd" d="M5,559l359,0l0,-23L5,536l0,23Z" class="g1_1" />
+<text 
+x="5" 
+y="555" 
+dx="0,-0.1,0,0,0,-0.1,0,0,0,-0.1,-0.1,0,0,-0.1,0,0,0,-0.1,-0.1,0,0,0,0,0.2,-0.1,0,0.2,0,-0.1,0,0,0,0,0.1,-0.2,-0.1,0,0,0,-0.1,0,0,0,0.1,-0.1,0,0" 
+class="s1_1"
+>est contradictoire, donc n &lt; 0, c'est à dire n </text>
+
+<text 
+x="325" 
+y="555" 
+dx="0" 
+class="s4_1"
+>∈</text>
+
+<text 
+x="342" 
+y="555" 
+dx="0" 
+class="s1_1"
+>Z</text>
+
+<text 
+x="353" 
+y="548" 
+dx="0" 
+class="s3_1"
+>–</text>
+
+<text 
+x="359" 
+y="555" 
+dx="0,0.2" 
+class="s1_1"
+>. </text>
+
+<path fill-rule="evenodd" d="M5,582l625,0l0,-23L5,559l0,23Z" class="g1_1" />
+<text 
+x="5" 
+y="577" 
+dx="0,0.1,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0" 
+class="s1_1"
+>Comme –55 = –5</text>
+
+<text 
+x="133" 
+y="577" 
+dx="0" 
+class="s4_1"
+>×</text>
+
+<text 
+x="143" 
+y="577" 
+dx="0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,-0.1,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0.2,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,0.2,0,0,0,0,-0.1,0,0,0,0" 
+class="s1_1"
+>11 est divisible par n, on a n = –1 ou n = –5 ou n = –11 ou n = –55 </text>
+
+<path fill-rule="evenodd" d="M5,602l540,0l0,-21L5,581l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="598" 
+dx="0,0.1,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1" 
+class="s1_1"
+>Si n = –1, alors (–1+X</text>
+
+<text 
+x="170" 
+y="600" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="178" 
+y="598" 
+dx="0,0.2,0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0" 
+class="s1_1"
+>–2) = 55 et X</text>
+
+<text 
+x="276" 
+y="600" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="290" 
+y="598" 
+dx="0,-0.1,0,0,0,0" 
+class="s1_1"
+>= 58, </text>
+
+<text 
+x="332" 
+y="598" 
+dx="0,0,0,0,0,0,0,0,0,0,-0.1,0,-0.1,-0.1,-0.1,0,0,0,0,0,0" 
+class="s5_1"
+>impossible car 10 ≤ X</text>
+
+<text 
+x="494" 
+y="600" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="507" 
+y="598" 
+dx="0,0,0,0" 
+class="s5_1"
+>≤ 50</text>
+
+<text 
+x="540" 
+y="598" 
+dx="0,0.2" 
+class="s1_1"
+>. </text>
+
+<path fill-rule="evenodd" d="M5,624l323,0l0,-22L5,602l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="619" 
+dx="0,0.1,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1" 
+class="s1_1"
+>Si n = –5, alors (–5+X</text>
+
+<text 
+x="170" 
+y="621" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="178" 
+y="619" 
+dx="0,0.2,0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0" 
+class="s1_1"
+>–2) = 11 et X</text>
+
+<text 
+x="276" 
+y="621" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="290" 
+y="619" 
+dx="0,-0.1,0,0,0,0.2" 
+class="s1_1"
+>= 18. </text>
+
+<path fill-rule="evenodd" d="M5,645l332,0l0,-22L5,623l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="640" 
+dx="0,0.1,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s1_1"
+>Si n = –11, alors (–11+X</text>
+
+<text 
+x="188" 
+y="642" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="197" 
+y="640" 
+dx="0,0,0,-0.1,0.2,-0.1,0,0,0,-0.1,0,0" 
+class="s1_1"
+>–2) = 5 et X</text>
+
+<text 
+x="286" 
+y="642" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="299" 
+y="640" 
+dx="0,-0.1,0,0,0,0.2" 
+class="s1_1"
+>= 18. </text>
+
+<path fill-rule="evenodd" d="M5,666l549,0l0,-22L5,644l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="661" 
+dx="0,0.1,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s1_1"
+>Si n = –55, alors (–55+X</text>
+
+<text 
+x="188" 
+y="663" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="197" 
+y="661" 
+dx="0,0,0,-0.1,0.2,-0.1,0,0,0,-0.1,0,0" 
+class="s1_1"
+>–2) = 1 et X</text>
+
+<text 
+x="286" 
+y="663" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="299" 
+y="661" 
+dx="0,-0.1" 
+class="s1_1"
+>= </text>
+
+<text 
+x="314" 
+y="661" 
+dx="0,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,-0.1,-0.1,-0.1,0,0,0,0,0,0" 
+class="s5_1"
+>58, impossible car 10 ≤ X</text>
+
+<text 
+x="503" 
+y="663" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="516" 
+y="661" 
+dx="0,0,0,0,0" 
+class="s5_1"
+>≤ 50.</text>
+
+<path fill-rule="evenodd" d="M5,687l158,0l0,-22L5,665l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="683" 
+dx="0,0,0,0.1,-0.1,0,0,0,0,-0.1,-0.1,0,0,0,0,0,0,0,0.1,0,0" 
+class="s6_1"
+>Donc Alice a 18 ans. </text>
+
+<path fill-rule="evenodd" d="M5,729l32,0l0,-22L5,707l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="725" 
+dx="0,0,-0.1,0.1" 
+class="s1_1"
+>NB) </text>
+
+<path fill-rule="evenodd" d="M5,750l505,0l0,-22L5,728l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="746" 
+dx="0,-0.2,-0.1,0,0.2,-0.1,0,0,0,0,-0.1,0,-0.1,0.1,-0.1,0,0,0,0,-0.1,-0.1,0,0,0,0,0.1,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0.1,0,-0.1,0,0,-0.1,0,0,-0.1,0.2,-0.1,-0.1,0.2,0,0,0,-0.1,0,-0.1,0,0,0" 
+class="s1_1"
+>Le trinôme écrit par Alice dans la marge de sa feuille est x</text>
+
+<text 
+x="434" 
+y="739" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="440" 
+y="746" 
+dx="0,0,0,-0.2,0.2,-0.1,0,0,0" 
+class="s1_1"
+>–20x+36. </text>
+
+<path fill-rule="evenodd" d="M5,771l128,0l0,-22L5,749l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="767" 
+dx="0,-0.1,-0.1,0.2,-0.1,0,-0.1,0" 
+class="s1_1"
+>f(x) = x</text>
+
+<text 
+x="62" 
+y="760" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="68" 
+y="767" 
+dx="0,0,0,-0.2,0.2,-0.1,0,0" 
+class="s1_1"
+>–20x+36 </text>
+
+<path fill-rule="evenodd" d="M5,794l311,0l0,-23L5,771l0,23Z" class="g1_1" />
+<text 
+x="5" 
+y="789" 
+dx="0,-0.1,-0.1" 
+class="s1_1"
+>f(X</text>
+
+<text 
+x="31" 
+y="791" 
+dx="0" 
+class="s3_1"
+>C</text>
+
+<text 
+x="39" 
+y="789" 
+dx="0,-0.1,0,-0.1,0,0.1,-0.1,0,-0.1,0,-0.1,0" 
+class="s1_1"
+>) = f(2) = 2</text>
+
+<text 
+x="121" 
+y="782" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="127" 
+y="789" 
+dx="0,0,0" 
+class="s1_1"
+>–20</text>
+
+<text 
+x="154" 
+y="789" 
+dx="0" 
+class="s4_1"
+>×</text>
+
+<text 
+x="164" 
+y="789" 
+dx="0,0,0.1,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0.2" 
+class="s1_1"
+>2+36 = 4–40+36 = 0 </text>
+
+<path fill-rule="evenodd" d="M5,816l367,0l0,-23L5,793l0,23Z" class="g1_1" />
+<text 
+x="5" 
+y="812" 
+dx="0,-0.1,-0.1" 
+class="s1_1"
+>f(X</text>
+
+<text 
+x="31" 
+y="813" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="39" 
+y="812" 
+dx="0,-0.1,0.2,-0.1,0,-0.1,-0.1,0,0.2,-0.1,0,-0.1,0,0" 
+class="s1_1"
+>) = f(18) = 18</text>
+
+<text 
+x="140" 
+y="805" 
+dx="0" 
+class="s3_1"
+>2</text>
+
+<text 
+x="146" 
+y="812" 
+dx="0,0,0" 
+class="s1_1"
+>–20</text>
+
+<text 
+x="173" 
+y="812" 
+dx="0" 
+class="s4_1"
+>×</text>
+
+<text 
+x="183" 
+y="812" 
+dx="0,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0.2,-0.1,0,0.2" 
+class="s1_1"
+>18+36 = 324–360+36 = 0 </text>
+
+<path fill-rule="evenodd" d="M5,837l210,0l0,-22L5,815l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="833" 
+dx="0,-0.1,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.2,-0.1,0,0,0,-0.1,0,0,0,0.2,-0.1,0" 
+class="s1_1"
+>f(1) = 1–20+36 = 17 = X</text>
+
+<text 
+x="188" 
+y="834" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="197" 
+y="833" 
+dx="0,0,0.2" 
+class="s1_1"
+>–1 </text>
+
+<path fill-rule="evenodd" d="M5,858l367,0l0,-21L5,837l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="854" 
+dx="0,-0.1,-0.1" 
+class="s1_1"
+>f(X</text>
+
+<text 
+x="31" 
+y="855" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="39" 
+y="854" 
+dx="0,0,0,0,-0.1,0.2,-0.1,0,-0.1,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0,0.2,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0.1,-0.1,-0.1,0,0,0,0,-0.1,0,0,0,0.2,0.1" 
+class="s1_1"
+>–11) = f(7) = 49–140+36 = –55 (cas n = –11) </text>
+
+<path fill-rule="evenodd" d="M5,879l367,0l0,-21L5,858l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="875" 
+dx="0,-0.1,-0.1" 
+class="s1_1"
+>f(X</text>
+
+<text 
+x="31" 
+y="876" 
+dx="0" 
+class="s3_1"
+>A</text>
+
+<text 
+x="39" 
+y="875" 
+dx="0,0,0,-0.1,0.2,-0.1,0,-0.1,-0.1,0,0.2,-0.1,0,-0.1,0,0,0,0,0,0.2,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0.1,-0.1,-0.1,0,0,0,0,-0.1,0,0,0.2,0.1" 
+class="s1_1"
+>–5) = f(13) = 169–260+36 = –55 (cas n = –5) </text>
+
+<path fill-rule="evenodd" d="M5,900l687,0l0,-21L5,879l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="896" 
+dx="0,-0.1,0,0,0,-0.1,0,0.1,-0.1,0,0,0,0,0,0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0.2,0,-0.2,0,0,0,0.1,-0.1,0,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0.2,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,-0.1,0,0,0,0,0,-0.1,-0.1,0,0,-0.1,0,0,0.1,-0.1,0,0,-0.1,-0.1,0,0.1,-0.1,0" 
+class="s1_1"
+>Bob aurait donc estimé qu'Alice avait 7 ou 13 ans. On peut sans doute éliminer le premier cas </text>
+
+<path fill-rule="evenodd" d="M5,921l680,0l0,-21L5,900l0,21Z" class="g1_1" />
+<text 
+x="5" 
+y="917" 
+dx="0,-0.1,-0.1,-0.1,0,0,0,-0.1,0,-0.1,0.2,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0.2,0,0,-0.1,0,0,-0.2,0,0,0,0.2,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,-0.1,0.2,0,0,0,0,-0.2,0,0,0,0.1,-0.1,0,-0.1,0,-0.1,0,0,0,-0.1,0,0,0.1,-0.1,0,0,0,0.2,-0.1,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,-0.1,-0.1,0,0" 
+class="s1_1"
+>car, même en admettant que l'on n'ait pas dit à Bob qu'Alice avait entre 10 et 50 ans, il aurait </text>
+
+<path fill-rule="evenodd" d="M5,943l653,0l0,-22L5,921l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="938" 
+dx="0,-0.1,-0.1,0,0,0,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,-0.1,0.2,0,-0.1,-0.1,0,-0.1,0,-0.1,0,0,0,0,-0.1,-0.1,-0.1,0,0.1,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,0.2,0.1,0,-0.1,0,0,0,-0.1,0,0,0,-0.1,-0.1,0,0,0.2,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0.2,0,-0.1,0,0,0,0,0,-0.1,-0.1,0,0,0" 
+class="s1_1"
+>fallu qu'elle soit extrêmement précoce pour savoir à 7 ans ce qu'est un trinôme du second </text>
+
+<path fill-rule="evenodd" d="M5,964l662,0l0,-22L5,942l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="959" 
+dx="0,0,-0.1,0,-0.1,-0.1,0,0.2,-0.1,0,0,0,-0.1,0,0,0,0.2,-0.1,0,0,-0.1,-0.1,0,0,0,0.1,0,0,-0.1,0,0,-0.1,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,0,0,-0.1,-0.1,0,0,0.1,-0.1,0,0,0,0,0,-0.1,0,0.1,-0.1,-0.1,0,-0.1,0,0,0.1,0,-0.1,0,0,0,0,0,0,0,-0.1,0.2,-0.1,-0.1" 
+class="s1_1"
+>degré. Bob a donc très probablement donné 13 ans à Alice, ce qui a certainement dû vexer </text>
+
+<path fill-rule="evenodd" d="M5,985l104,0l0,-22L5,963l0,22Z" class="g1_1" />
+<text 
+x="5" 
+y="980" 
+dx="0,-0.1,-0.1,0,0,-0.1,0,0,-0.1,-0.1,0,0.2,-0.1,-0.1,-0.1,0.2" 
+class="s1_1"
+>cette dernière. </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPSMT_24;
+	src: url("fonts/TimesNewRomanPSMT_24.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldMT_2b;
+	src: url("fonts/TimesNewRomanPS-BoldMT_2b.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_1_;
+	src: url("fonts/SymbolMT_1_.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_29;
+	src: url("fonts/TimesNewRomanPSMT_29.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

@@ -1,0 +1,57 @@
+\input{_header}
+  \begin{h2}Exercice 3 (5 points)\end{h2}
+            \textbf{Candidats de la série ES n'ayant pas choisi la spécialité \og mathématiques \fg{} et candidats de la série L}
+          \bigbreak
+          Un pays compte $300$ loups en 2017. On estime que la population des loups croit
+          naturellement au rythme de 12\,\% par an. Pour réguler la population des loups. le
+          gouvernement autorise les chasseurs à tuer un quota de $18$ loups par an.
+          \par
+          On modélise la population par une suite $\left(u_n\right)$ le terme $u_n$ représentant le nombre de loups de ce pays en $2017+n$.
+          \medbreak
+          \begin{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Avec ce modèle. vérifier que le nombre de loups de ce pays en 2018 sera de $318$.
+                    \item  Justifier que, pour tout entier $n \in \mathbb{N}$, \:  $u_{n+1} = 1,12u_n - 18$.
+               \end{enumerate}
+               \item Recopier et compléter l'algorithme suivant pour qu'il détermine au bout de combien
+               d'années la population de loups aura doublé.
+               \begin{center}
+                   \begin{extern}%width="260" alt="Algorithme Bac ES/L Asie 2018"
+                    \begin{tabularx}{0.4\linewidth}{|X|}\hline
+                         $N \gets 0$\\
+                         $U \gets 300$\\
+                         Tant que \ldots faire\\
+                         \hspace{1cm}$U \gets \ldots$\\
+                         \hspace{1cm}$N \gets \ldots$\\
+                         Fin Tant que\\ \hline
+                    \end{tabularx}
+                   \end{extern}
+             \end{center}
+               \item On définit la suite $\left(v_n\right)$ par~: $v_n = u_n - 150$ pour tout $n \in \mathbb{N}$.
+               \begin{enumerate}[label=\alph*.]
+                    \item Montrer que la suite $\left(v_n\right)$ est une suite géométrique de raison $1,12$.
+                    \par
+                    Préciser son terme initial.
+                    \item Exprimer, pour tout $n \in \mathbb{N}$,  $v_n$ en fonction de $n$.
+                    \par
+                    En déduire $u_n$ en fonction de $n$.
+                    \item Quelle est la limite de la suite $\left(u_n\right)$~? Justifier.
+                    \par
+                    Que peut-on en déduire~?
+               \end{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Résoudre dans l'ensemble des entiers naturels l'inéquation~:
+                    \[150 + 1,12^n \times 150 > 600.\]
+                    \item Interpréter le résultat précédent dans le contexte de l'énoncé.
+               \end{enumerate}
+               \item En 2023. avec ce modèle, la population de loups est estimée à $446$ loups et le rythme de croissance annuel de la population reste identique. Dans ce cas, une nouvelle
+               décision sera prise par le gouvernement~: afin de gérer le nombre de loups dans le
+               pays, il autorisera les chasseurs à tuer un quota de $35$ loups par an.
+               \par
+               En quelle année la population de loups dépassera-t-elle $600$ loups~?
+               \par
+               Toute trace de recherche sera valorisée dans cette question.
+          \end{enumerate}
+\input{_footer}

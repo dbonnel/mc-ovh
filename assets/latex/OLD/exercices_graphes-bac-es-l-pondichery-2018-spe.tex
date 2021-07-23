@@ -1,0 +1,89 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\medskip
+Les différentes parties de cet exercice peuvent être traitées de façon indépendante.
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+Le graphe pondéré ci-dessous représente les différents lieux A, B, C, D, E, F, G et H dans lesquels
+Louis est susceptible de se rendre chaque jour. Le lieu A désigne son domicile et G le lieu de son
+site de travail.
+\par
+Le poids de chaque arête représente la distance, en kilomètres, entre les deux lieux
+reliés par l'arête.
+\par
+\begin{center}
+     \begin{extern}%width="380px" alt="graphe pondéré"
+          \psset{unit=0.6cm}
+          \begin{pspicture}(15,11.5)
+               %\psgrid
+               % <html:width="380px">
+               \rput(2.3,9.7){\circlenode{C}{C}}
+               \rput(3.5,6.4){\circlenode{B}{B}}
+               \rput(10.2,8.3){\circlenode{D}{D}}
+               \rput(8,5){\circlenode{E}{E}}
+               \rput(1.4,1.5){\circlenode{A}{A}}
+               \rput(7,0.5){\circlenode{F}{F}}
+               \rput(14,6){\circlenode{G}{G}}
+               \rput(12.5,1.8){\circlenode{H}{H}}
+               \ncarc[arcangle=-30]{C}{A}\ncput*[nrot=:U]{56}
+               \ncarc[arcangle=20]{A}{B}\ncput*[nrot=:U]{47}
+               \ncarc[arcangle=20]{A}{E}\ncput*[nrot=:U]{23}
+               \ncarc[arcangle=20]{A}{F}\ncput*[nrot=:U]{30}
+               \ncarc[arcangle=20]{C}{B}\ncput*[nrot=:U]{10}
+               \ncarc[arcangle=20]{B}{E}\ncput*[nrot=:U]{20}
+               \ncarc[arcangle=20]{C}{D}\ncput*[nrot=:U]{15}
+               \ncarc[arcangle=20]{E}{D}\ncput*[nrot=:U]{42}
+               \ncarc[arcangle=20]{D}{G}\ncput*[nrot=:U]{15}
+               \ncarc[arcangle=20]{E}{F}\ncput*[nrot=:U]{28}
+               \ncarc[arcangle=20]{E}{H}\ncput*[nrot=:U]{40}
+               \ncarc[arcangle=20]{F}{H}\ncput*[nrot=:U]{28}
+               \ncarc[arcangle=20]{G}{H}\ncput*[nrot=:U]{23}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+\medskip
+Déterminer le chemin le plus court qui permet à Louis de relier son domicile à son travail. On
+pourra utiliser un algorithme. Préciser la distance, en kilomètres, de ce chemin.
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+Afin de réduire son empreinte énergétique, Louis décide d'utiliser lors de ses trajets quotidiens
+soit les transports en commun, soit le covoiturage.
+\begin{itemize}
+     \item s'il a utilisé les transports en commun lors d'un trajet, il utilisera le covoiturage lors de son
+     prochain déplacement avec une probabilité de $0,53$~;
+     \item s'il a utilisé le covoiturage lors d'un trajet, il effectuera le prochain déplacement en transport en commun avec une probabilité de $0,78$.
+\end{itemize}
+\medskip
+Louis décide de mettre en place ces résolutions au 1$^{\text{er}}$ janvier 2018.
+\smallskip
+Pour tout entier naturel $n$, on note~:
+\begin{itemize}
+     \item $c_n$ la probabilité que Louis utilise le covoiturage $n$ jour(s) après le 1$^{\text{er}}$ janvier 2018~;
+     \item $t_n$ la probabilité que Louis utilise les transports en commun $n$ jour(s) après le 1$^{\text{er}}$ janvier 2018~;
+\end{itemize}
+\medskip
+La matrice ligne $P_n = \left(c_n \quad t_n\right)$ traduit l'état probabiliste $n$ jour(s) après le 1$^{\text{er}}$  janvier 2018.
+\smallskip
+Le 1$^{\text{er}}$ janvier 2018, Louis décide d'utiliser le covoiturage.
+\medskip
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Préciser l'état probabiliste initial $P_0$.
+          \item Traduire les données de l'énoncé par un graphe probabiliste.
+          On notera \og C \fg{} et \og T \fg{} ses deux sommets~:
+          \begin{itemize}
+               \item \og C\fg{} pour indiquer que Louis utilise le covoiturage~;
+               \item \og T\fg{} pour indiquer que Louis utilise les transports en commun.
+          \end{itemize}
+     \end{enumerate}
+     \item  Déterminer la matrice de transition du graphe probabiliste en considérant ses sommets dans
+     l'ordre alphabétique.
+     \item  Calculer l'état probabiliste $P_2$ et interpréter ce résultat dans le cadre de l'exercice.
+     \item  Soit la matrice ligne $P = (x \quad y)$ associée à l'état stable du graphe probabiliste.
+     \begin{enumerate}[label=\alph*.]
+          \item Calculer les valeurs exactes de $x$ et de $y$ puis en donner une valeur approchée à $0,01$ près.
+          \item Selon ce modèle, peut-on dire qu'à long terme, Louis utilisera aussi souvent le covoiturage
+          que les transports en commun~? Justifier la réponse.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

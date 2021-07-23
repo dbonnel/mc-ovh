@@ -1,0 +1,224 @@
+\input{_header}
+\begin{h2}1. Définitions\end{h2}
+\cadre{bleu}{Définition}{%id="d10"
+     Une \textbf{matrice} de dimension (ou d'\textit{ordre} or de \textit{taille}) $n\times p$ est un tableau de nombres réels (appelés coefficients ou termes) comportant $n$ lignes et $p$ colonnes.
+     \par
+     Si on désigne par $a_{ij}$ le coefficient situé à la $i$-ième ligne et la $j$-ième colonne la matrice s'écrira :
+\begin{center}
+$ A=\begin{pmatrix}  a_{11} & a_{12} & \ldots & a_{1p}\\ a_{21} & a_{22} & \ldots & a_{2p}  \\ \vdots & \vdots & \ddots & \vdots\\ a_{n1} & a_{n2} & \ldots & a_{np} \end{pmatrix}.$
+\end{center}
+}
+\bloc{orange}{Exemple}{%id="e10"
+     La matrice $A=\begin{pmatrix} 1 &amp; 2 & 3 \\ 4 & 5 &amp; 6 \end{pmatrix}$ est une matrice de dimension $2\times 3$.
+}
+\bloc{cyan}{Notations}{%id="r10"
+     On notera, en abrégé, $A=\left(a_{ij}\right)$ la matrice dont le coefficient situé à la $i$-ème ligne et la $j$-ième colonne est $a_{ij}$.
+}
+\cadre{bleu}{Définitions}{%id="d20"
+     \begin{itemize}
+          \item Une matrice \textbf{carrée} est une matrice dont le nombre de lignes est égal au nombre de colonnes.
+          \item Une matrice \textbf{ligne} est une matrice dont le nombre de lignes est égal à $1$.
+          \item Une matrice \textbf{colonne} est une matrice dont le nombre de colonnes est égal à $1$.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{%id="e20"
+     \begin{itemize}
+          \item La matrice $A=\begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}$ est une matrice carrée (de dimension $2\times 2$ - ou on peut dire, plus simplement, de dimension 2).
+          \item La matrice $B=\begin{pmatrix}1 & 2 & 0,5 \end{pmatrix}$ est une matrice ligne (de dimension $1\times 3$).
+          \item La matrice $C=\begin{pmatrix} 1 \\ 2 \\ 0 \\ 4 \end{pmatrix}$ est une matrice colonne (de dimension $4\times 1$).
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{%id="r20"
+     Pour une matrice carrée, on appelle \textbf{diagonale principale}, la diagonale qui relie le coin situé en haut à gauche au coin situé en bas à droite. Sur l'exemple ci-dessous, les coefficients de la diagonale principale sont marqués en rouge :
+     \begin{center}$A=\begin{pmatrix} \color{red}{1} & 2 & 3 & 4 \\ 2 & \color{red}{3} & 4 & 5 \\ 3 & 4 & \color{red}{5} & 6 \\ 4 & 5 & 6 & \color{red}{7} \end{pmatrix}$.\end{center}
+}
+\cadre{bleu}{Définitions}{%id="d30"
+     \begin{itemize}
+          \item La matrice \textbf{nulle} de dimension $n\times p$ est la matrice de dimension $n\times p$ dont tous les coefficients sont nuls.
+          \item Une matrice \textbf{diagonale} est une matrice carrée dont tout les coefficients situés en dehors de la diagonale principale sont nuls.
+          \item La matrice \textbf{unité} de dimension $n$ est la matrice carrée de dimension $n$ qui contient des $1$ sur la diagonale principale et des $0$ ailleurs :
+\begin{center}
+$ A=\begin{pmatrix}  1 & 0 & \ldots & 0\\ 0 & 1 & \ldots & 0\\ \vdots & \vdots & \ddots & \vdots\\ 0 & 0 & \ldots & 1 \end{pmatrix}$.
+\end{center}
+\end{itemize}
+}
+\bloc{orange}{Exemples}{%id="e30"
+     \begin{itemize}
+          \item La matrice $A=\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 2 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}$ est une matrice diagonale d'ordre 4.
+          \item La matrice unité d'ordre 2 est $I_{2}=\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$.
+     \end{itemize}
+}
+\begin{h2}2. Opérations sur les matrices\end{h2}
+\cadre{bleu}{Définition (Somme de matrices)}{%id="d50"
+     Soient $A$ et $B$ deux matrices de même dimension.
+     \par
+     La somme $A+B$ des matrices $A$ et $B$ s'obtient en ajoutant les coefficients de $A$ aux coefficients de $B$ situés \textbf{à la même position}.
+}
+\bloc{orange}{Exemple}{%id="e50"
+     Soient $A=\begin{pmatrix} 2 & -2 & 1 \\ -1 & 1 & 0 \end{pmatrix}$ et $B=\begin{pmatrix} -1 & 1 & 1 \\ -2 & 2 & 0 \end{pmatrix}$.
+     \par
+     Alors :
+     \par
+     $A+B=\begin{pmatrix}2-1&-2+1&1+1\\-1-2&1+2&0+0\end{pmatrix}=\begin{pmatrix}1&-1&2\\-3&3&0\end{pmatrix}$.
+}
+\bloc{cyan}{Remarques}{%id="r50"
+     \begin{itemize}
+          \item On ne peut additionner deux matrices que si elles ont les même dimensions, c'est à dire le même nombre de lignes et le même nombre de colonnes.
+          \item On définit de manière analogue la différence de deux matrices.
+     \end{itemize}
+}
+\cadre{bleu}{Définition (Produit d'une matrice par un nombre réel)}{%id="d60"
+     Soient $A$ une matrice et $k$ un nombre réel..
+     \par
+     Le produit $kA$ est la matrice obtenue en multipliant chacun des coefficients de $A$ par $k$.
+}
+\bloc{orange}{Exemple}{%id="e60"
+     Si $A=\begin{pmatrix} 1 & 1 & 0 \\ 2 & 0 & 0 \end{pmatrix}$ alors :
+     \begin{itemize}
+          \item $2A=\begin{pmatrix} 2\times 1 & 2\times 1 & 2\times 0 \\ 2\times 2 & 2\times 0 & 2\times 0\end{pmatrix}=\begin{pmatrix}2 & 2 & 0 \\ 4 & 0 & 0\end{pmatrix}$.
+          \item $-A=-1\times A=\begin{pmatrix} -1 & -1 & 0 \\ -2 & 0 & 0 \end{pmatrix}$.
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%id="p65"
+     Soient $A$, $B$ et $C$ trois matrices de mêmes dimensions et $k$ et $k^{\prime}$ deux réels.
+     \begin{itemize}
+          \item $A+B = B+A $ (commutativité de l'addition) ;
+          \item $\left(A+B\right)+C = A+\left(B+C\right)$ (associativité de l'addition) ;
+          \item $k\left(A+B\right) = kA+kB$ ;
+          \item $\left(k+k^{\prime}\right)A = kA+k^{\prime}A$ ;
+          \item $k\left(k^{\prime}A\right) = \left(kk^{\prime}\right)A$.
+     \end{itemize}
+}
+\cadre{bleu}{Définition (Produit d'une matrice ligne par une matrice colonne)}{%id="d70"
+     Soient $A=\left(a_{1} a_{2} \cdots a_{n}\right)$ une matrice ligne $1\times n$ et $B=\begin{pmatrix} b_{1} \\ b_{2} \\ \cdots \\ b_{n} \end{pmatrix}$ une matrice colonne $n\times 1$. Le produit de $A$ par $B$ est le nombre réel :
+     \par
+     $A\times B = \left(a_{1} a_{2} \cdots a_{n}\right)\times \begin{pmatrix} b_{1} \\ b_{2} \\ \cdots \\ b_{n} \end{pmatrix} = a_{1}b_{1} + a_{2}b_{2} + \cdots + a_{n}b_{n}$.
+}
+\bloc{cyan}{Remarque}{%id="r70"
+     \begin{itemize}
+          \item Les deux matrices $A$ et $B$ doivent avoir le même nombre $n$ de coefficients.
+          \item Pour cette formule, la matrice ligne doit être impérativement en premier !
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%id="e70"
+     Si $ A=\left(1 2 3 4\right) $ et $ B=\begin{pmatrix} 5 \\ 6 \\ 7 \\ 8 \end{pmatrix}$ :
+     \par
+     $A\times B = 1\times 5 + 2\times 6 + 3\times 7 + 4\times 8 = 5 + 12 + 21 + 32 = 70$.
+}
+\cadre{bleu}{Définition (Produit de deux matrices)}{%id="d80"
+     Soient $A=\left(a_{ij}\right)$ une matrice $n\times p$ et $B=\left(b_{ij}\right)$ une matrice $p\times q$. Le produit de $A$ par $B$ est la matrice $C=\left(c_{ij}\right)$ à $n$ lignes et $q$ colonnes dont le coefficient situé à la $i$-ième ligne et la $j$-ième colonne est obtenu en multipliant la $i$-ième ligne de A par la $j$-ième colonne de B.
+     \par
+     C'est à dire que pour tout $1 \leqslant i \leqslant n$ et tout $1 \leqslant j \leqslant q$ :
+     \begin{center}$c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{ip}b_{pj}$.\end{center}
+}
+\bloc{cyan}{Remarque}{%id="r80"
+     Faites bien attention aux dimensions des matrices : Le nombre de colonnes de la première matrice doit être égal au nombre de lignes de la seconde pour que le calcul soit possible.
+     \par
+     Par exemple, le produit d'une matrice $2\times \color{red}{3}$ par une matrice $\color{red}{3}\times 4$ est possible et donnera une matrice $2\times 4$.
+     \par
+     Par contre, le produit d'une matrice $2\times \color{red}{3}$ par une matrice $\color{red}{2}\times 3$ n'est pas possible.
+}
+\bloc{orange}{Exemple}{%id="e80"
+     Calculons le produit $C=A\times B$ avec :
+     \par
+     $A=\begin{pmatrix} 2 & 4 \\ 1 & 0 \end{pmatrix} $ et $ B=\begin{pmatrix} -1 & 0 & 2 \\ -2 & 1 & 0 \end{pmatrix}$.
+     \par
+     Ce calcul est possible car le nombre de colonnes de $A$ est égal au nombre de lignes de $B$. Le résultat $C$ sera une matrice $2\times 3$ ($\color{red}{2}\times 2 $par$ 2\times \color{red}{3} \rightarrow \color{red}{2}\times \color{red}{3}$).
+     \par
+     Notons $C=\begin{pmatrix} c_{11} & c_{12} & c_{13} \\ c_{21} & c_{22} & c_{23} \end{pmatrix}$.
+     \par
+     Pour calculer $c_{11}$ on multiplie la première ligne de $A$ et la première colonne de $B$ :
+     \par
+     $C=\begin{pmatrix} \color{red}{2} & \color{red}{4} \\ 1 & 0\end{pmatrix}\times \begin{pmatrix} \color{red}{-1} & 0 & 2 \\ \color{red}{-2} & 1 & 0\end{pmatrix}$ ;
+     \par
+     on a donc $c_{11}=2\times \left(-1\right)+4\times \left(-2\right)=-2-8=-10$.
+     \par
+     $C=\begin{pmatrix} \color{red}{2} & \color{red}{4} \\ 1 & 0 \end{pmatrix}\times \begin{pmatrix}\color{red}{-1} & 0 & 2 \\ \color{red}{-2} & 1 & 0 \end{pmatrix}=\begin{pmatrix}\color{red}{-10} & \cdots & \cdots \\ \cdots & \cdots & \cdots \end{pmatrix}$.
+     \par
+     Pour calculer $c_{12}$ on multiplie la première ligne de $A$ et la seconde colonne de $B$ :
+     \par
+     $C=\begin{pmatrix} \color{red}{2} & \color{red}{4} \\ 1 & 0\end{pmatrix}\times\begin{pmatrix}-1 & \color{red}{0} & 2 \\ -2 & \color{red}{1} & 0\end{pmatrix}$ ;
+     \par
+     on a donc $c_{12}=2\times 0+4\times 1=0+4=4$.
+     \par
+     $C=\begin{pmatrix} \color{red}{2} & \color{red}{4} \\ 1 & 0\end{pmatrix}\times \begin{pmatrix} -1 & \color{red}{0} & 2 \\ -2 & \color{red}{1} & 0\end{pmatrix}=\begin{pmatrix}-10 & \color{red}{4} & \cdots \\ \cdots & \cdots & \cdots \end{pmatrix}$.
+     \par
+     Et ainsi de suite...
+     \par
+     Au final on trouve :
+     \par
+     $C=\begin{pmatrix} 2 & 4 \\ 1 & 0\end{pmatrix}\times \begin{pmatrix}-1 & 0 & 2 \\ -2 & 1 & 0\end{pmatrix}=\begin{pmatrix}-10 & 4 & 4 \\ -1 & 0 & 2 \end{pmatrix}$.
+}
+Dans ce qui suit, on s'intéressera principalement à des matrices \textbf{carrées}.
+\cadre{vert}{Propriété}{%id="p90"
+     Soit $A, B$ et $C$, trois matrices carrées de même dimension.
+     \begin{itemize}
+          \item $A\times \left(B+C\right) = A\times B + A\times C$ (distributivité à gauche)
+          \item $\left(A+B\right)\times C = A\times C + B\times C$ (distributivité à droite)
+          \item $A\times \left(B\times C\right) = \left(A\times B\right)\times C$ (associativité de la multiplication)
+     \end{itemize}
+     Par contre en général : $A\times B\neq B\times A$ : la multiplication n'est \textbf{pas} commutative.
+}
+\bloc{orange}{Exemple}{%id="e90"
+     Soit $A=\begin{pmatrix} 0 & 2 \\ 0 & 0 \end{pmatrix}$ et $B=\begin{pmatrix} 0 & 2 \\ 1 & 0 \end{pmatrix}$
+     \par
+     $A \times B=\begin{pmatrix} 2 & 0 \\ 0 & 0 \end{pmatrix}$
+     \par
+     tandis que :
+     \par
+     $B \times A=\begin{pmatrix} 0 & 0 \\ 0 & 2 \end{pmatrix}$
+     \par
+     Par conséquent $A\times B \neq B\times A$.
+}
+\cadre{bleu}{Définition (Puissance d'une matrice)}{%id="d100"
+     Soit $A$ une matrice carrée et $n$ un entier naturel.
+     \par
+     On note $A^{n}$ la matrice :
+     \begin{center}$A^{n}=A\times A\times \cdots.\times A$ ($n$ facteurs).\end{center}
+}
+\bloc{cyan}{Remarque}{%id="r100"
+     Par convention, on considèrera que $A^{0}$ est la matrice unité de même taille que $A$.
+}
+\cadre{bleu}{Définition (Matrice inversible)}{%id="d110"
+     Une matrice carrée A de dimension $n$ est \textbf{inversible} si et seulement si il existe une
+     \par
+     matrice $B$ telle que
+     \begin{center}$A\times B = B\times A = I_{n}$\end{center}
+     où $I_{n}$ est la matrice unité de dimension $n$.
+     \par
+     La matrice $B$ est appelée \textbf{matrice inverse} de $A$ et notée $A^{-1}$.
+}
+\begin{h2}3. Résolution de systèmes d'équations\end{h2}
+Soit le système :
+\par
+$\left(S\right) \left\{ \begin{matrix} ax+by=s \\ cx+dy=t \end{matrix}\right.$
+     \par
+     d'inconnues $x$ et $y$.
+     \par
+     Si l'on pose $A=\begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $X=\begin{pmatrix} x \\ y \end{pmatrix}$ et $B=\begin{pmatrix} s \\ t \end{pmatrix}$, le système $\left(S\right)$ peut s'écrire :
+     \par
+     $A\times X=B$. Le théorème ci-dessous permet alors de résoudre ce système.
+     \cadre{rouge}{Théorème}{%id="t150"
+          Soit $A$ une matrice carrée.
+          \par
+          Si $A$ est inversible, le système $A\times X=B$ admet une solution unique donnée par :
+          \begin{center}$X=A^{-1}\times B$.\end{center}
+     }
+     \bloc{orange}{Exemple}{%id="e150"
+          On cherche à résoudre le système :
+          \par
+          $\left(S\right) \left\{ \begin{matrix} 3x+4y=1 \\ 5x+7y=2 \end{matrix}\right.$
+               \par
+               Pour cela on pose : $A=\begin{pmatrix} 3 & 4 \\ 5 & 7 \end{pmatrix}$, $X=\begin{pmatrix} x \\ y \end{pmatrix}$ et $B=\begin{pmatrix} 1 \\ 2 \end{pmatrix}$.
+               \par
+               L'écriture matricielle est alors $A\times X=B$.
+               \par
+               A la calculatrice, on trouve que $A$ est inversible d'inverse $A^{-1}=\begin{pmatrix} 7 & -4 \\ -5 & 3 \end{pmatrix}$.
+               \par
+               La solution du système est donné par :
+               \par
+               $X=A^{-1}\times B=\begin{pmatrix} 7 & -4 \\ -5 & 3\end{pmatrix}\times \begin{pmatrix}1 \\ 2\end{pmatrix}=\begin{pmatrix}-1 \\ 1 \end{pmatrix}$.
+               \par
+               C'est à dire $x=-1$ et $y=1$.
+          }
+          \input{_footer}

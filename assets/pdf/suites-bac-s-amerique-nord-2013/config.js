@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":2,"title":"","author":"Patrick Kitabgi","fileName":"solution18.pdf","bounds":[[725,1051],[726,910]],"bookmarks":[{"title":"SUITES \u2013 BAC S AMÉRIQUE DU NORD 2013","page":1,"zoom":"XYZ 105 1177 0"}],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

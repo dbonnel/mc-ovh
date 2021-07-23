@@ -1,0 +1,78 @@
+\input{_header}
+\meta{url}{/exercices/droites-perpendiculaires/}
+\meta{pid}{5020}
+\meta{titre}{Droites perpendiculaires}
+\meta{type}{exercices}
+%
+Soient $(D)$ et $(D^{\prime})$ deux droites d'équations réduites respectives $y=ax+b$ et $y=a^{\prime}x+b^{\prime}$ avec $a \neq a^{\prime}$.
+\begin{enumerate}
+     \item
+     Expliquer pourquoi les droites $(D)$ et $(D^{\prime})$ sont sécantes.
+     \item
+     On note $A(\alpha ; \beta)$ le point d'intersection de $(D)$ et $(D^{\prime})$ et $M$ le point de la droite $(D)$ d'abscisse $\alpha + 1$.
+     \par
+     Déterminer l'ordonnée de $M$ en fonction de $a$ et de $\beta $.
+     \item
+     Soit $M^{\prime}$ le point de la droite $(D^{\prime})$ d'abscisse $\alpha + 1$.
+     \par
+     Déterminer l'ordonnée de $M^{\prime}$ en fonction de $a^{\prime}$ et de $\beta $
+     \item
+     Calculer, en fonction de $a$ et de $a^{\prime}$ les longueurs $AM,\ AM^{\prime}$ et $MM^{\prime}$.
+     \item
+     À quelle condition portant sur $a$ et $a^{\prime}$ les droites $(D)$ et $(D^{\prime})$ sont-elles perpendiculaires ?
+\end{enumerate}
+\begin{corrige}
+
+     Solution rédigée par Edav
+\begin{enumerate}
+     \item
+Deux droites sont parallèles si et seulement si elles ont le même coefficient directeur.
+\\
+Ici, $ (D) $ et $ (D') $ ont des coefficients directeurs $ a$  et $ a' $ différents, donc les droites $ (D) $ et $ (D') $ sont sécantes.
+     \item  \textbf{Remarque préalable~:} Le point $A(\alpha ; \beta)$ appartient à $(D)$ et à $(D^{\prime})$, par conséquent, ses coordonnées vérifient les équations de $ (D) $ et de $ (D') $ c'est à dire~:\\
+$ \beta = a \alpha + b $ \\
+$ \beta = a' \alpha + b' $ 
+\medskip
+Notons $ (x_M~;~y_M) $ les coordonnées de M. Comme $ M $ appartient à $ (D) $~:
+\\
+  $ y_M = a x_M + b $ 
+\par
+Or, d'après l'énoncé $ x_M = \alpha + 1 $, donc~:
+\\
+  $ y_M = a ( \alpha + 1 ) + b $\nosp$= a \alpha + a + b  $\nosp$= \beta + a $   
+\\
+puisque d'après  la remarque préalable $ \beta = a \alpha + b $.
+
+\item 
+Un calcul analogue à celui de la question  \textbf{2.} conduit à~:
+\\
+$ y_{M'} =  \beta + a' $   
+
+\item
+On utilise la formule~:
+$ AM = \sqrt{ (x_M - x_A)^2  + (y_M - y_A)^2 } $
+\par
+$  AM = $\nosp$ \sqrt{ (\alpha + 1 - \alpha)^2  + (\beta + a - \beta )^2 } $\nosp$= \sqrt{ 1 + a^2 }  $
+\\
+$  AM' = $\nosp $ \sqrt{ (\alpha + 1 - \alpha)^2  + (\beta + a' - \beta )^2 }$\nosp$= \sqrt{ 1 + {a '} ^2 }  $
+\\
+$  MM' = $\nosp $ \sqrt{ (\alpha + 1 - \alpha - 1)^2  + (\beta + a - \beta - a' )^2 }$\nosp$= \sqrt{ (a - {a '}) ^2 }  $
+
+\item
+Les droites $(D)$ et $(D^{\prime})$ sont perpendiculaires si et seulement si le triangle $ AMM' $ est rectangle en $ A $ c'est à dire, d'après le théorème de Pythagore et sa réciproque si et seulement si~:
+\par
+$ {MM'}^2 = {AM}^2 + {AM'}^2 $  
+\\
+$  \Leftrightarrow  (a-a')^2 = 1+a^2 + 1+ {a'}^2$
+\\
+$  \Leftrightarrow  a^2 -2aa'+ {a'}^2 = 1+a^2 + 1+ {a'}^2$
+\\
+$  \Leftrightarrow   -2aa' = 2$
+\\
+$  \Leftrightarrow   aa' = -1$
+\medskip
+Les droites $(D)$ et $(D^{\prime})$ sont perpendiculaires si et seulement si $  aa' = -1 $.
+\end{enumerate}
+\end{corrige}
+
+\input{_footer}

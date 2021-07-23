@@ -1,0 +1,36 @@
+\input{_header}
+\begin{h2}EXERCICE 5 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+\medskip
+Un jeu de hasard sur ordinateur est paramétré de la façon suivante :
+\medskip
+\begin{itemize}
+     \item  Si le joueur gagne une partie, la probabilité qu'il gagne la partie suivante est
+     $\dfrac{1}{4}$ ;
+     \item Si le joueur perd une partie, la probabilité qu'il perde la partie suivante est $\dfrac{1}{2}$ ;
+     \item La probabilité de gagner la première partie est $\dfrac{1}{4}$ .
+\end{itemize}
+Pour tout entier naturel $n$ non nul, on note $G_n$ l'événement \og la $n^{\text{e}}$ partie est gagnée \fg{} et on note $p_n$ la probabilité de cet événement. On a donc $p_1 = \dfrac{1}{4}$.
+\medskip
+\begin{enumerate}
+     \item Montrer que $p_2 = \dfrac{7}{16}$.
+     \item Montrer que, pour tout entier naturel $n$ non nul, $p_{n+1} = - \dfrac{1}{4}p_n + \dfrac{1}{2}$.
+     \item  On obtient ainsi les premières valeurs de $p_n$ :
+     \begin{center}
+          \begin{extern}%width="570"
+               \begin{tabularx}{0.8\linewidth}{|c|*{7}{>{\centering \arraybackslash}X|}}\hline
+                    $n$ &1 &2 &3 &4 &5 &6 &7\\ \hline
+                    $p_n$& 1 &\np{0,4375} &\np{0,3906} &\np{0,4023} &\np{0,3994} &\np{0,4001} &\np{0,3999}\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \par
+     Quelle conjecture peut -on émettre ?
+     \item  On définit, pour tout entier naturel $n$ non nul, la suite $\left(u_n\right)$ par $u_n = p_n - \dfrac{2}{5}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $\left(u_n\right)$ est une suite géométrique dont on précisera la raison.
+          \item En déduire que, pour tout entier naturel $n$ non nul, $p_n = \dfrac{2}{5} - \dfrac{3}{20}\left(- \dfrac{1}{4}\right)^{n-1}$.
+          \item La suite $\left(p_n\right)$ converge-t-elle ? Interpréter ce résultat.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

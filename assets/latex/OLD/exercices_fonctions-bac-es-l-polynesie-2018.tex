@@ -1,0 +1,139 @@
+\input{_header}
+          \begin{h2}Exercice 4 (5 points)\end{h2}
+          \textbf{Commun à  tous les candidats}
+           \medbreak
+          \begin{center}
+              \textit{ Les parties de cet exercice peuvent être traitées indépendamment.}
+          \end{center}
+          \medbreak
+          Une usine qui fabrique un produit A, décide de fabriquer un nouveau produit B afin d'augmenter son chiffre d'affaires. La quantité, exprimée en tonnes, fabriquée par jour par l'usine est modélisée par~:
+          \begin{itemize}
+               \item la fonction $f$ définie sur [0~;~14] par
+               \par
+               \[f(x) = 2~000\text{e}^{-0,2x}\]
+               \par
+               pour le produit A~;
+               \item  la fonction $g$ définie sur [0~;~14] par
+               \par
+               \[g (x)= 15x^2 + 50 x\]
+               \par
+               pour le produit B, où $x$ est la durée écoulée depuis le lancement du nouveau produit B exprimée en mois.
+          \end{itemize}
+          Leurs courbes représentatives respectives $\mathscr{C}_f$ et $\mathscr{C}_g$ sont données ci-dessous.
+          \begin{center}
+   \begin{extern}%width="600" alt="Fonctions quantités Bac ES/L Polynésie 2018"
+\resizebox{10cm}{!}{
+                  \psset{xunit=0.8cm,yunit=0.0025cm}
+               \begin{pspicture}(-1,-200)(17.5,3700)
+                    \multido{\n=0+1}{18}{\psline[linewidth=0.2pt,linecolor=gray](\n,0)(\n,3500)}
+                    \multido{\n=0+100}{36}{\psline[linewidth=0.1pt,linecolor=lightgray](0,\n)(17,\n)}
+                    \multido{\n=0+500}{7}{\psline[linewidth=0.2pt,linecolor=gray](0,\n)(17,\n)}
+                    \psaxes[linewidth=1.25pt,Dy=500]{->}(0,0)(0,0)(17,3500)
+                    \uput[r](-1.9,3600){$y$ en tonnes}
+                    \uput[u](16,-450){$x$ en mois}
+                    \psplot[plotpoints=3000,linewidth=1.25pt,linecolor=blue]{0}{14}{2000 2.71828 0.2 x mul exp div}\uput[u](1,1750){\blue $\mathcal{C}_f$}
+                    \psplot[plotpoints=3000,linewidth=1.25pt,linecolor=red]{0}{14}{x dup mul 15 mul 50 x mul add}\uput[u](1,100){\red $\mathcal{C}_g$}
+               \end{pspicture}
+   }  
+    \end{extern}
+          \end{center}
+           \TitreC{Partie A}
+          \medbreak
+          Par lecture graphique, sans justification et avec la précision permise par le graphique~:
+          \medbreak
+          \begin{enumerate}
+               \item Déterminer la durée nécessaire pour que la quantité de produit B dépasse celle du produit A.
+               \item L'usine ne peut pas fabriquer une quantité journalière de produit B supérieure à 3~000~tonnes.
+               \par
+               Au bout de combien de mois cette quantité journalière sera atteinte~?
+          \end{enumerate}
+          \bigbreak
+          \TitreC{Partie B}
+          \medbreak
+          Pour tout nombre réel $x$ de l'intervalle [0~;~14] on pose $h(x) = f(x) + g(x)$.
+          \par
+          On admet que la fonction $h$ ainsi définie est dérivable sur [0~;~14].
+          \medbreak
+          \begin{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Que modélise cette fonction dans le contexte de l'exercice~?
+                    \item Montrer que, pour tout nombre réel $x$ de l'intervalle [0~;~14]
+                    $h'(x) = - 400\text{e}^{-0,2x} + 30x + 50$.
+               \end{enumerate}
+               \item On admet que le tableau de variation de la fonction $h'$ sur l'intervalle [0~;~14] est~:
+%:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+\begin{center}
+\begin{extern}%width="350" alt=""
+\begin{tikzpicture}[scale=0.875]
+% Styles 
+\tikzstyle{cadre}=[thin]
+\tikzstyle{fleche}=[->,>=latex,thin]
+\tikzstyle{nondefini}=[lightgray]
+% Dimensions Modifiables
+\def\Lrg{1.5}
+\def\HtX{0.8}
+\def\HtY{0.5}
+% Dimensions Calculées
+\def\lignex{-0.5*\HtX}
+\def\lignef{-1.5*\HtX}
+\def\separateur{-0.5*\Lrg}
+% Largeur du tableau
+\def\gauche{-3*\Lrg}
+\def\droite{3*\Lrg}
+% Hauteur du tableau
+\def\haut{0.5*\HtX}
+\def\bas{-1.5*\HtX-2*\HtY}
+% Ligne de l'abscisse : x
+\node at (-1.8*\Lrg,0) {$x$};
+\node at (0*\Lrg,0) {$0$};
+\node at (2*\Lrg,0) {$14$};
+% Ligne de la fonction : f(x)
+\node  at (-1.69*\Lrg,{-1*\HtX+(-1)*\HtY}) {variation de $h'$};
+\node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$-350$};
+\node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$h'(14) \approx 446$};
+% Flèches
+\draw[fleche] (f1) -- (f2);
+% Encadrement
+\draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+\draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+\draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+\end{tikzpicture}
+\end{extern}
+
+\end{center}
+%:-+-+-+-+- Fin
+
+
+               \begin{enumerate}[label=\alph*.]
+                    \item Justifier que l'équation $h'(x)= 0$ admet une unique solution $\alpha$ sur l'intervalle [0~;~14] et donner un encadrement d'amplitude $0,1$ de $\alpha$.
+                    \item  En déduire les variations de la fonction $h$ sur l'intervalle [0~;~14].
+               \end{enumerate}
+               \item Voici un algorithme~:
+               \begin{center}
+\begin{extern}%width="320" alt="Algorithme Bac ES/L Polynésie 2018"
+                                   \begin{tabularx}{0.5\linewidth}{|X|}\hline
+                         $Y \gets -400 \text{exp}(- 0,2X) + 30X + 50$\\
+                         Tant que $Y \leqslant 0$\\
+                         \hspace{0.7cm}$X \gets X + 0,1$\\
+                         \hspace{0.7cm}$Y \gets  -400 \text{exp}(- 0,2X)+ 30X +50$\\
+                         Fin Tant que\\ \hline
+                    \end{tabularx}
+
+               \end{extern}
+                              \end{center}
+               \begin{enumerate}[label=\alph*.]
+                    \item Si la variable $X$ contient la valeur 3 avant l'exécution de cet algorithme, que contient la variable $X$ après l'exécution de cet algorithme~?
+                    \item En supposant toujours que la variable $X$ contient la valeur $3$ avant l'exécution de cet algorithme, modifier l'algorithme de façon à ce que X contienne une valeur approchée à $0,001$ près de a après l'exécution de l'algorithme.
+               \end{enumerate}
+               \item
+               \begin{enumerate}[label=\alph*.]
+                    \item Vérifier qu'une primitive $H$ de la fonction $h$ sur [0~;~14] est~:
+                    \par
+                    \[H(x) = - 10~000 \text{e}^{- 0,2x} + 5x^3 + 25x^2.\]
+                    \item  Calculer une valeur approchée à l'unité près de
+                    $\dfrac{1}{12} \displaystyle\int_0^{12}  h(x)\:\text{d}x$.
+                    \item  Donner une interprétation dans le contexte de l'exercice.
+               \end{enumerate}
+          \end{enumerate}
+\input{_footer}

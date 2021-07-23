@@ -1,0 +1,195 @@
+\input{_header}
+\cadre{bleu}{}{
+     Le théorème de Thalès doit son nom au philosophe, astronome et mathématicien grec Thalès de Milet (env. 600 ans avant J.C.). S'il n'est pas l'\og inventeur \fg de ce théorème qui était déjà connu des babyloniens, Thalès l'aurait utilisé pour mesurer la hauteur de la grande pyramide de Kheops.
+     \par
+     Le \textbf{théorème de Thalès} permet de \textbf{calculer des distances} dans une configuration géométrique comportant des droites parallèles.
+     \par
+     La \textbf{réciproque} du théorème de Thalès sert à démontrer que \textbf{deux droites sont parallèles} en calculant des rapports de distances.
+}
+\begin{h2}1. Théorème de Thalès\end{h2}
+\cadre{rouge}{Théorème de Thalès}{% id="d10"
+     Si $A, B, C, D, E$ sont cinq points tels que~:
+     \begin{itemize}
+          \item les points $A, B, D$ et les points $A, C, E$ sont alignés
+          \item les droites $\left(BC\right)$ et $\left(DE\right)$ sont parallèles
+     \end{itemize}
+     alors~:
+     \begin{center}$\frac{AB}{AD}=\frac{AC}{AE}=\frac{BC}{DE}$\end{center}
+}
+\bloc{cyan}{Remarques}{% id="r05"
+     Deux configurations différentes peuvent se présenter selon l'ordre des points $A, B, D$ et $A, C, E$. Il faut être capable de repérer chacune de ces configurations dans les exercices de géométrie.
+}
+\begin{center}
+     \begin{extern}%width="550" alt="Théorème de Thalès"
+          \begin{tabular}{ccc}
+               \resizebox{5cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-2.,-2.)(8.,5.5)
+                         \psplot{-3.}{6.}{(-26.+6.*x)/1.}
+                         \psplot{-3.}{6.}{(12.+4.*x)/8.}
+                         \psplot[linecolor=red]{-0.5}{6.}{(7.97-0.96*x)/3.51}
+                         \psplot[linecolor=red]{-2.}{6.}{(2.55-0.96*x)/3.51}
+                         \begin{Large}
+                              \rput[bl](4.5,4.1){\blue{$A$}}
+                              \rput[bl](4.75,1.1){\blue{$B$}}
+                              \rput[bl](0.8,2.2){\blue{$C$}}
+                              \rput[bl](-1.08,1.32){\blue{$E$}}
+                              \rput[bl](4.41,-0.32){\blue{$D$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+               &
+               \resizebox{5cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0.,0.5)(10.,8.)
+                         \psplot{0.}{10.}{(-26.+6.*x)/1.}
+                         \psplot{0.}{10.}{(12.+4.*x)/8.}
+                         \psplot[linecolor=red]{0.}{7.}{(7.97-0.96*x)/3.51}
+                         \psplot[linecolor=red]{4.5}{10.}{(30-0.96*x)/3.51}
+                         \begin{Large}
+                              \rput[bl](4.5,4.1){\blue{$A$}}
+                              \rput[bl](4.75,1.1){\blue{$B$}}
+                              \rput[bl](0.8,2.2){\blue{$C$}}
+                              \rput[bl](9.,6.3){\blue{$E$}}
+                              \rput[bl](5.7,7.2){\blue{$D$}}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+               \\
+               \scriptsize Première configuration &\scriptsize Deuxième configuration
+          \end{tabular}
+     \end{extern}
+\end{center}
+\begin{center}\textit{Théorème de Thalès}\end{center}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item Il est important de bien faire attention à l'ordre des points. On pourra s'aider en notant la correspondance entre les points. Dans les deux figures ci-dessus~:
+          \par
+          $A \rightarrow A$
+          \par
+          $B \rightarrow D$
+          \par
+          $C \rightarrow E$
+          \par
+          Par conséquent~:
+          \par
+          $AB \rightarrow AD$
+          \par
+          $AC \rightarrow AE$
+          \par
+          $BC \rightarrow DE$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e10"
+     \begin{center}
+          \begin{extern}%width="350" alt="Exemple théorème de Thalès"
+               \resizebox{6cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0.,0.)(12.,4.5)
+                         \psplot{0.}{12.}{(--3.--1.*x)/4.}
+                         \psplot{0.}{12.}{(--11.-1.*x)/3.}
+                         \psplot[linecolor=red]{0.}{12.}{(--1.-2.*x)/-1.}
+                         \psplot[linecolor=red]{0.}{12.}{(--18.5-2.*x)/-1.}
+                         \begin{Large}
+                              \rput[bl](0.8,1.13){\blue{$I$}}
+                              \rput[bl](4.9,2.14){\blue{$O$}}
+                              \rput[bl](10.7,3.71){\blue{$L$}}
+                              \rput[bl](1.8,3.20){\blue{$J$}}
+                              \rput[bl](9.25,0.75){\blue{$K$}}
+                              \rput[bl](7.8,2.9){$6$}
+                              \rput[bl](2.7,1.6){$4$}
+                              \rput[bl](1.1,2.){$2$}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Sur la figure ci-dessus, on sait que $OL=6$cm,$ OI=4$cm et $IJ=2$cm et que les droites $\left(IJ\right)$ et $\left(KL\right)$ sont parallèles.
+     \par
+     Quelle est la longueur du segment $\left[KL\right]$~?
+     \begin{itemize}
+          \item les points $O, J, K$ et les points $O, I, L$ sont alignés
+          \item les droites $\left(IJ\right)$ et $\left(KL\right)$ sont parallèles
+     \end{itemize}
+     Par conséquent, d'après le théorème de Thalès~:
+     \begin{center}$\frac{OJ}{OK}=\frac{OI}{OL}=\frac{IJ}{KL}$\end{center}
+     On remplace les longueurs dont ont connait les mesures~:
+     \begin{center}$\frac{OJ}{OK}=\frac{\color{red}{4}}{\color{red}{6}}=\frac{\color{red}{2}}{KL}$\end{center}
+     L'égalité $\frac{4}{6}=\frac{2}{KL}$ nous permet de trouver $KL$ («quatrième proportionnelle»)~:
+     \par
+     $KL=\frac{2\times 6}{4}=3$cm.
+}
+\begin{h2}2. Réciproque du théorème de Thalès\end{h2}
+\cadre{rouge}{Théorème (Réciproque du théorème de Thalès)}{% id="t50"
+     Si $A, B, C, D, E$ sont cinq points tels que les points $A, B, D$ et les points $A, C, E$ sont alignés dans le même ordre. 
+\par
+Si $\frac{AB}{AD}=\frac{AC}{AE}$ alors, les droites $\left(BC\right)$ et $\left(DE\right)$ sont parallèles.
+
+}
+\begin{center}
+     \begin{extern}%width="240" alt="Réciproque du théorème de Thalès"
+          \resizebox{6cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-2.,-2.)(8.,5.5)
+                    \psplot{-3.}{6.}{(-26.+6.*x)/1.}
+                    \psplot{-3.}{6.}{(12.+4.*x)/8.}
+                    \psplot[linecolor=red]{-0.5}{6.}{(7.97-0.96*x)/3.51}
+                    \psplot[linecolor=red]{-2.}{6.}{(2.55-0.96*x)/3.51}
+                    \begin{Large}
+                         \rput[bl](4.5,4.1){\blue{$A$}}
+                         \rput[bl](4.75,1.1){\blue{$B$}}
+                         \rput[bl](0.8,2.2){\blue{$C$}}
+                         \rput[bl](-1.08,1.32){\blue{$E$}}
+                         \rput[bl](4.41,-0.32){\blue{$D$}}
+                    \end{Large}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r20" 
+\begin{itemize}
+\item
+     Ce théorème sert à \textbf{démontrer que deux droites sont parallèles}. 
+\item
+Si $\frac{AB}{AD}\neq \frac{AC}{AE}$ alors, les droites $\left(BC\right)$ et $\left(DE\right)$ ne sont pas parallèles ; cela ne résulte toutefois pas de la réciproque du théorème de Thalès mais c'est une conséquence du théorème de Thalès lui-même (en effet d'après le théorème de Thalès si les droites $\left(BC\right)$ et $\left(DE\right)$ étaient parallèles on aurait $\frac{AB}{AD}= \frac{AC}{AE}$ - voir la fiche méthode  \og  \mcLien{https://www.maths-cours.fr/methode/determiner-si-deux-droites-sont-paralleles-thales}{Déterminer si deux droites sont parallèles} \fg{} ).  
+     \end{itemize} 
+
+}
+\bloc{orange}{Exemple}{% id="e20"
+     \begin{center}
+          \begin{extern}%width="500" alt="Réciproque du théorème de Thalès~: exemple"
+               \resizebox{10cm}{!}{
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(-3.,-7.)(17.5,8.)
+                         \psplot{-3.}{17.5}{(-16.9--5*x)/4.4}
+                         \psplot{-3.}{17.5}{(--6.--2.*x)/8.}
+                         \psplot[linecolor=red]{-3.}{17.5}{(--12.4--5.6*x)/10}
+                         \psplot[linecolor=red]{-3.}{17.5}{(-47.4--5.8*x)/10}
+                         \begin{Large}
+                              \rput[bl](4.6,2.2){\blue{$O$}}
+                              \rput[bl](8.6,6.6){\blue{$J$}}
+                              \rput[bl](-1.8,0.6){\blue{$I$}}
+                              \rput[bl](16.4,5.1){\blue{$L$}}
+                              \rput[bl](-2,-5.5){\blue{$K$}}
+                              \rput[bl](7.4,4){$5,6$}
+                              \rput[bl](1.4,1.4){$6,2$}
+                              \rput[bl](10.2,3.6){$7,2$}
+                              \rput[bl](1.,-1.8){$6.8$}
+                         \end{Large}
+                    \end{pspicture*}
+               }
+          \end{extern}
+     \end{center}
+     Dans la figure ci-dessus, on sait que $OI=6,2$cm,$ OJ=5,6$cm, $OK=6,8$cm et $OL=7,2$cm.
+     \par
+     Les droites $\left(IJ\right)$ et $\left(KL\right)$ sont-elles parallèles~?
+     \par
+     \textbf{Méthode}~: On calcule séparément $\frac{OI}{OL}$ et $\frac{OJ}{OK}$
+     \par
+     $\frac{OI}{OL}=\frac{6,2}{7,2}=\frac{62}{72}=\frac{31}{36}$
+     \par
+     $\frac{OJ}{OK}=\frac{5,6}{6,8}=\frac{56}{68}=\frac{14}{17}$
+     \par
+     $\frac{OI}{OL} \neq \frac{OJ}{OK}$ (si vous n'êtes pas sûr, vérifiez à la calculatrice~!) donc les droites $\left(IJ\right)$ et $\left(KL\right)$ ne sont pas parallèles.
+}
+\input{_footer}

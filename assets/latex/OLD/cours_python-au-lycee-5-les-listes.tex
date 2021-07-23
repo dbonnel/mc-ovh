@@ -1,0 +1,92 @@
+\input{_header}
+\begin{h2}1. Le type liste\end{h2}
+\begin{h3} Définition d'une liste en Python\end{h3}
+Une \textit{liste} est un type de valeur qui contient une suite ordonnée de valeurs.
+\par
+On dit qu'une liste est définie \textit{en extension} lorsque l'on énumère toutes les valeurs de la liste. Une liste est encadrée par des \textbf{crochets} et les différentes valeurs de la liste sont séparées par des virgules~; par exemple~:
+\begin{lstlisting}[language=Python]
+liste_de_nombres = [ 7, 12, 1.5, 9, 43]
+liste_de_couleurs = [ "rouge", "vert", "bleu", "jaune", "orange" ]
+\end{lstlisting}
+Il est possible, en Python, de définir des listes comportant des valeurs de types différents (nombres, chaîne de caractères où même des sous-listes...)~:
+ \begin{lstlisting}[language=Python]
+liste_de_types_differents = [ 3, "Bonjour", 2.5, ["a", "b"], true ]
+\end{lstlisting}
+Il est également courant de définir une liste vide que l'on remplira par la suite (grâce à l'instruction \texttt{append} que l'on détaillera ultérieurement)~:
+ \begin{lstlisting}[language=Python]
+liste_vide = []
+\end{lstlisting}
+\begin{h3}Accès à un élément\end{h3}
+Il est possible d'accéder à un élément d'une liste grâce à sa position appelée \textit{indice}.
+\par
+\textbf{Attention~: } Le premier élément d'une liste correspond à l'indice 0 et si la liste contient \texttt{n} éléments, l'indice du dernier élément est \texttt{n-1}~:
+\begin{lstlisting}[language=Python]
+liste = [ "un", "deux", "trois", "quatre"]
+# indices : 0       1        2         3
+\end{lstlisting}
+Pour accéder à un élément d'une liste on utilise la syntaxe suivante~: \texttt{nom_de_la_liste[indice]}, par exemple~:
+\begin{lstlisting}[language=Python]
+liste = [ "rouge", "vert", "bleu", "jaune", "orange" ]
+print(liste[0]) # affiche rouge
+print(liste[4]) # affiche orange
+liste[2] = "violet" # modifie le 3ème élément de la liste
+print(liste) # affiche ['rouge', 'vert', 'violet', 'jaune', 'orange']
+\end{lstlisting}
+\begin{h3} Liste définie en compréhension \end{h3}
+En mathématiques, il est possible de définir un ensemble en \textit{compréhension }. Par exemple, l'ensemble~:
+\begin{center}
+     $ E = \left\{ n \in \mathbb{N} ~|~ 5 \leqslant n < 10 \right\} $
+\end{center}
+représente l'ensemble des entiers naturels supérieurs ou égaux à $5$ et strictement inférieurs à $10 $, c'est à dire l'ensemble~:
+\begin{center}
+     $ E = \left\{ 5~;~ 6~;~ 7~;~ 8~;~ 9 \right\} $
+\end{center}
+En Python, il est également possible de définir une liste en \textit{compréhension } en utilisant une boucle \texttt{for} à l'intérieur de la définition de la liste~:
+\begin{lstlisting}[language=Python]
+liste = [ n for n in range(5, 10) ]
+# équivaut à liste = [ 5, 6, 7, 8, 9 ]
+\end{lstlisting}
+Voici deux exemples plus avancés de listes définies en compréhension~:
+\begin{lstlisting}[language=Python]
+liste1 = [ n**2 for n in range(6) ]
+# liste1 contient [ 0, 1, 4, 9, 16, 25 ]
+liste2 = [ n for n in range(2, 7) if n!=4 ]
+# liste2 contient [2, 3, 5, 6]
+\end{lstlisting}
+\begin{h2} 2. Opérations sur les listes \end{h2}
+\begin{h3} La méthode \texttt{.append()} \end{h3}
+En programmation, une \textit{ méthode} est une fonction qui agit sur un certain objet.
+\par
+La méthode \texttt{.append()} permet d'ajouter un élément à la fin d'une liste, par exemple~:
+\begin{lstlisting}[language=Python]
+mes_notes = [12, 14, 9, 16]
+mes_notes.append(13)
+print(mes_notes) # affiche [12, 14, 9, 16, 13]
+\end{lstlisting}
+Il est fréquent, lorsque l'on souhaite créer une liste pas à pas, de partir d'une liste vide et d'ajouter les éléments un par un. Par exemple, le programme suivant crée une liste en comptant de 3 en 3 en partant de 1 jusqu'à 16~:
+\begin{lstlisting}[language=Python]
+ma_liste = []
+n = 1
+while n <= 16 :
+   ma_liste.append(n)
+   n = n+3
+print(ma_liste) # affiche [1, 4, 7, 10, 13, 16]
+\end{lstlisting}
+\begin{h3} Concaténation de listes \end{h3}
+Comme pour les chaînes de caractères, l'opérateur \og + \fg{} permet de concaténer des listes~:
+\begin{lstlisting}[language=Python]
+couleurs1 = [ "rouge", "jaune", "vert"]
+couleurs2 = ["orange", "bleu"]
+couleurs = couleurs1 + couleurs2
+print(couleurs) # affiche ['rouge', 'jaune', 'vert', 'orange', 'bleu']
+\end{lstlisting}
+\begin{h3} Longueur d'une liste \end{h3}
+La fonction \texttt{len()} retourne la longueur de la liste passée en paramètre.
+\par
+Cette fonction peut être utilisée lorsque l'on souhaite parcourir les éléments d'une liste pour déterminer la fin de la boucle. Par exemple, le programme ci-dessous affiche les éléments de la liste séparés par des points-virgules~:
+\begin{lstlisting}[language=Python]
+liste = ["a", "b", "c", "d"]
+for i in range(len(liste)) :
+   print (liste[i], end=";") # affiche a;b;c;d;
+\end{lstlisting}
+\input{_footer}

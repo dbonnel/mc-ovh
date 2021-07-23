@@ -1,0 +1,75 @@
+\input{_header}
+\meta{url}{/cours/denombrement/}
+\meta{pid}{19213}
+\meta{titre}{Dénombrement}
+\meta{type}{cours}
+%
+\begin{h2}1. Permutations\end{h2}
+\cadre{bleu}{Définition}{%
+     Soit E un ensemble fini.
+     \par
+     Une \textbf{permutation} de E est une liste ordonnée d'éléments de E.
+}
+\bloc{orange}{Exemple}{%
+     Soit E={a;b;c}
+     \par
+     E admet 6 permutations qui sont : (a;b;c), (a;c;b), (b;a;c), (b;c;a), (c;a;b) et (c;b;a)
+}
+\bloc{cyan}{Remarque}{%
+     \begin{itemize}
+          \item
+          dans les notations avec parenthèses du type \textbf{(} a ; b ; c \textbf{)} l'ordre \textbf{est} pris en compte. (il s'agit d'une liste ordonnée)
+          \item
+          dans les notations avec accolades du type \textbf{{} a ; b ; c \textbf{}} l'ordre \textbf{n'est pas} pris en compte. (il s'agit d'un ensemble)
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{%
+     Le nombre de permutations d'un ensemble fini E à n éléments est le nombre \textbf{n! ( \textit{factorielle n} )} défini par :
+     \par
+     $ n! = n\times \left(n-1\right)\times . . .\times 1$
+}
+\bloc{cyan}{Remarques}{%
+     \begin{itemize}
+          \item
+          par convention on pose 0! = 1
+          \item
+          pour tout entier $n > 0$ : $n! = n\times \left(n-1\right)!$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     Si l'on reprend l'exemple précédent on vérifie bien que :
+     \par
+     $3! = 3\times 2\times 1=6$
+}
+\begin{h2}2. Combinaisons\end{h2}
+\cadre{bleu}{Définition}{%
+     Soit E un ensemble fini à $n$ éléments et $p$ un entier tel que $0\leqslant p\leqslant n$ .
+     \par
+     Une \textbf{combinaison} de p éléments de E est une partie de E contenant p éléments.
+}
+\bloc{cyan}{Remarque}{%
+     Une partie est un ensemble donc l'\textbf{ordre n'est pas pris en compte}
+}
+\bloc{orange}{Exemple}{%
+     Soit E={a;b;c}
+     \par
+     E admet 3 combinaisons à 2 éléments qui sont : {a;b}, {a;c}, {b;c}
+}
+\cadre{rouge}{Théorème}{%
+     Le nombre de combinaisons de p éléments d'un ensemble à n éléments est le nombre noté $\begin{pmatrix} n \\ p \end{pmatrix}$ (on lit "\textit{p parmi n}" ) égal à :
+
+\begin{center}
+  $\begin{pmatrix} n \\ p \end{pmatrix}=\frac{n!}{p!\left(n-p\right)!}$
+\end{center}
+}
+\bloc{orange}{Exemples}{%
+     \begin{itemize}
+          \item
+          Dans l'exemple ci-dessus on a bien : $\begin{pmatrix} 3 \\ 2 \end{pmatrix}=\frac{3!}{2!\times 1!}=\frac{6}{2}=3$
+          \item
+          Au poker une \textit{"main"} est formée de 5 cartes parmi 52. Il y a donc :
+          \par
+          $\begin{pmatrix} 52 \\ 5 \end{pmatrix}=\frac{52!}{47!\times 5!} $\nosp$ =\frac{52\times 51\times 50\times 49\times 48}{5\times 4\times 3\times 2\times 1}$\nosp$=2~598~960 \text{ combinaisons}$
+     \end{itemize}
+}
+\input{_footer}

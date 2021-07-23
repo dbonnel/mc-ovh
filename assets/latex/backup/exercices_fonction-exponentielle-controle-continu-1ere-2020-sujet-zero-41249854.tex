@@ -1,0 +1,216 @@
+\input{_header}
+\meta{url}{/exercices/fonction-exponentielle-controle-continu-1ere-2020-sujet-zero/}
+\meta{pid}{11198}
+\meta{titre}{Fonction exponentielle - Contrôle continu 1ère - 2020 - Sujet zéro}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice  2 (5 points)\end{h2}
+Une entreprise de menuiserie réalise des découpes dans des plaques rectangulaires de bois.
+\newpar
+Dans un repère orthonormé d'unité 30 cm ci-dessous, on modélise la forme de la découpe dans la plaque rectangulaire par la courbe $ \mathscr{C}_{ f }$ représentatif de la fonction  $f$ définie sur l'intervalle $[  - 1~;~2 ]$ par~:
+\[
+f( x )=(  - x+2 )\text{e}^{ x }.
+\]
+\begin{center}
+width=2.pt,color=ffqqqq] (0.17750112899999854,2.176481744490256) -- (0.18500112599999852,2.1838425730131545);
+                         \draw[line width=2.pt,color=ffqqqq] (0.18500112599999852,2.1838425730131545) -- (0.1925011229999985,2.191190879770666);
+                         \draw[line width=2.pt,color=ffqqqq] (0.1925011229999985,2.191190879770666) -- (0.20000111999999848,2.1985260590650224);
+                         \draw[line width=2.pt,color=ffqqqq] (0.20000111999999848,2.1985260590650224) -- (0.20750111699999846,2.205847496788492);
+                         \draw[line width=2.pt,color=ffqqqq] (0.20750111699999846,2.205847496788492) -- (0.21500111399999844,2.213154570331084);
+                         \draw[line width=2.pt,color=ffqqqq] (0.21500111399999844,2.213154570331084) -- (0.22250111099999842,2.220446648487335);
+                         \draw[line width=2.pt,color=ffqqqq] (0.22250111099999842,2.220446648487335) -- (0.2300011079999984,2.227723091362181);
+                         \draw[line width=2.pt,color=ffqqqq] (0.2300011079999984,2.227723091362181) -- (0.23750110499999838,2.234983250275897);
+                         \draw[line width=2.pt,color=ffqqqq] (0.23750110499999838,2.234983250275897) -- (0.24500110199999836,2.2422264676680927);
+                         \draw[line width=2.pt,color=ffqqqq] (0.24500110199999836,2.2422264676680927) -- (0.25250109899999834,2.249452077000771);
+                         \draw[line width=2.pt,color=ffqqqq] (0.25250109899999834,2.249452077000771) -- (0.2600010959999983,2.256659402660416);
+                         \draw[line width=2.pt,color=ffqqqq] (0.2600010959999983,2.256659402660416) -- (0.2675010929999983,2.2638477598591327);
+                         \draw[line width=2.pt,color=ffqqqq] (0.2675010929999983,2.2638477598591327) -- (0.2750010899999983,2.2710164545347964);
+                         \draw[line width=2.pt,color=ffqqqq] (0.2750010899999983,2.2710164545347964) -- (0.28250108699999826,2.2781647832502294);
+                         \draw[line width=2.pt,color=ffqqqq] (0.28250108699999826,2.2781647832502294) -- (0.29000108399999824,2.28529203309138);
+                         \draw[line width=2.pt,color=ffqqqq] (0.29000108399999824,2.28529203309138) -- (0.2975010809999982,2.2923974815645027);
+                         \draw[line width=2.pt,color=ffqqqq] (0.2975010809999982,2.2923974815645027) -- (0.3050010779999982,2.299480396492326);
+                         \draw[line width=2.pt,color=ffqqqq] (0.3050010779999982,2.299480396492326) -- (0.3125010749999982,2.3065400359091988);
+                         \draw[line width=2.pt,color=ffqqqq] (0.3125010749999982,2.3065400359091988) -- (0.32000107199999817,2.313575647955208);
+                         \draw[line width=2.pt,color=ffqqqq] (0.32000107199999817,2.313575647955208) -- (0.32750106899999815,2.3205864707692583);
+                         \draw[line width=2.pt,color=ffqqqq] (0.32750106899999815,2.3205864707692583) -- (0.3350010659999981,2.3275717323810996);
+                         \draw[line width=2.pt,color=ffqqqq] (0.3350010659999981,2.3275717323810996) -- (0.3425010629999981,2.3345306506022974);
+                         \draw[line width=2.pt,color=ffqqqq] (0.3425010629999981,2.3345306506022974) -- (0.3500010599999981,2.341462432916135);
+                         \draw[line width=2.pt,color=ffqqqq] (0.3500010599999981,2.341462432916135) -- (0.35750105699999807,2.348366276366435);
+                         \draw[line width=2.pt,color=ffqqqq] (0.35750105699999807,2.348366276366435) -- (0.36500105399999805,2.3552413674452963);
+                         \draw[line width=2.pt,color=ffqqqq] (0.36500105399999805,2.3552413674452963) -- (0.37250105099999803,2.362086881979727);
+                         \draw[line width=2.pt,color=ffqqqq] (0.37250105099999803,2.362086881979727) -- (0.380001047999998,2.3689019850171715);
+                         \draw[line width=2.pt,color=ffqqqq] (0.380001047999998,2.3689019850171715) -- (0.387501044999998,2.3756858307099202);
+                         \draw[line width=2.pt,color=ffqqqq] (0.387501044999998,2.3756858307099202) -- (0.39500104199999797,2.3824375621983847);
+                         \draw[line width=2.pt,color=ffqqqq] (0.39500104199999797,2.3824375621983847) -- (0.40250103899999795,2.3891563114932395);
+                         \draw[line width=2.pt,color=ffqqqq] (0.40250103899999795,2.3891563114932395) -- (0.41000103599999793,2.395841199356407);
+                         \draw[line width=2.pt,color=ffqqqq] (0.41000103599999793,2.395841199356407) -- (0.4175010329999979,2.4024913351808848);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4175010329999979,2.4024913351808848) -- (0.4250010299999979,2.409105816869401);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4250010299999979,2.409105816869401) -- (0.4325010269999979,2.4156837307118866);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4325010269999979,2.4156837307118866) -- (0.44000102399999785,2.4222241512617515);
+                         \draw[line width=2.pt,color=ffqqqq] (0.44000102399999785,2.4222241512617515) -- (0.44750102099999783,2.4287261412109626);
+                         \draw[line width=2.pt,color=ffqqqq] (0.44750102099999783,2.4287261412109626) -- (0.4550010179999978,2.4351887512638974);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4550010179999978,2.4351887512638974) -- (0.4625010149999978,2.4416110200099777);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4625010149999978,2.4416110200099777) -- (0.4700010119999978,2.4479919737950597);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4700010119999978,2.4479919737950597) -- (0.47750100899999776,2.4543306265915805);
+                         \draw[line width=2.pt,color=ffqqqq] (0.47750100899999776,2.4543306265915805) -- (0.48500100599999774,2.4606259798674373);
+                         \draw[line width=2.pt,color=ffqqqq] (0.48500100599999774,2.4606259798674373) -- (0.4925010029999977,2.4668770224535956);
+                         \draw[line width=2.pt,color=ffqqqq] (0.4925010029999977,2.4668770224535956) -- (0.5000009999999977,2.4730827304104137);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5000009999999977,2.4730827304104137) -- (0.5075009969999977,2.4792420668926716);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5075009969999977,2.4792420668926716) -- (0.5150009939999978,2.485353982013289);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5150009939999978,2.485353982013289) -- (0.5225009909999978,2.4914174127057227);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5225009909999978,2.4914174127057227) -- (0.5300009879999978,2.497431282585035);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5300009879999978,2.497431282585035) -- (0.5375009849999979,2.5033945018076125);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5375009849999979,2.5033945018076125) -- (0.5450009819999979,2.50930596692953);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5450009819999979,2.50930596692953) -- (0.552500978999998,2.515164560763547);
+                         \draw[line width=2.pt,color=ffqqqq] (0.552500978999998,2.515164560763547) -- (0.560000975999998,2.5209691522347155);
+                         \draw[line width=2.pt,color=ffqqqq] (0.560000975999998,2.5209691522347155) -- (0.567500972999998,2.5267185962345997);
+                         \draw[line width=2.pt,color=ffqqqq] (0.567500972999998,2.5267185962345997) -- (0.5750009699999981,2.5324117334740825);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5750009699999981,2.5324117334740825) -- (0.5825009669999981,2.538047390334753);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5825009669999981,2.538047390334753) -- (0.5900009639999981,2.5436243787188637);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5900009639999981,2.5436243787188637) -- (0.5975009609999982,2.5491414958978327);
+                         \draw[line width=2.pt,color=ffqqqq] (0.5975009609999982,2.5491414958978327) -- (0.6050009579999982,2.554597524359292);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6050009579999982,2.554597524359292) -- (0.6125009549999982,2.5599912316526634);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6125009549999982,2.5599912316526634) -- (0.6200009519999983,2.565321370233237);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6200009519999983,2.565321370233237) -- (0.6275009489999983,2.570586677304762);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6275009489999983,2.570586677304762) -- (0.6350009459999983,2.575785874660515);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6350009459999983,2.575785874660515) -- (0.6425009429999984,2.580917668522838);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6425009429999984,2.580917668522838) -- (0.6500009399999984,2.5859807493811413);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6500009399999984,2.5859807493811413) -- (0.6575009369999985,2.5909737918283438);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6575009369999985,2.5909737918283438) -- (0.6650009339999985,2.5958954543957433);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6650009339999985,2.5958954543957433) -- (0.6725009309999985,2.6007443793863048);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6725009309999985,2.6007443793863048) -- (0.6800009279999986,2.605519192706343);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6800009279999986,2.605519192706343) -- (0.6875009249999986,2.610218503695597);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6875009249999986,2.610218503695597) -- (0.6950009219999986,2.6148409049556696);
+                         \draw[line width=2.pt,color=ffqqqq] (0.6950009219999986,2.6148409049556696) -- (0.7025009189999987,2.6193849721768276);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7025009189999987,2.6193849721768276) -- (0.7100009159999987,2.6238492639631392);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7100009159999987,2.6238492639631392) -- (0.7175009129999987,2.628232321655941);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7175009129999987,2.628232321655941) -- (0.7250009099999988,2.6325326691556077);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7250009099999988,2.6325326691556077) -- (0.7325009069999988,2.6367488127416276);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7325009069999988,2.6367488127416276) -- (0.7400009039999988,2.640879240890948);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7400009039999988,2.640879240890948) -- (0.7475009009999989,2.6449224240945908);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7475009009999989,2.6449224240945908) -- (0.7550008979999989,2.6488768146725095);
+                         \draw[line width=2.pt,color=ffqqqq] (0.7550008979999989,2.6488768146725095) -- (0.762500894999999,2.6527408465866835);
+                         \draw[line width=2.pt,color=ffqqqq] (0.762500894999999,2.6527408465866835) -- (0.770000891999999,2.656512935252428);
+                     
+\end{center}
+Le bord supérieur de la plaque rectangulaire est tangent à la courbe $ \mathscr{C}_{ f }$. On nomme $L$ la longueur de la plaque rectangulaire et $ \mathscr{l}$ sa largeur.
+\begin{enumerate}
+     \item
+     On note $f' $ la fonction dérivée de  $f$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que pour tout réel $x$ de l'intervalle $[  - 1~;~2 ]$ , $f' ( x )=(  - x+1 )\text{e}^{ x }. $
+          \item
+          En déduire le tableau de variations de la fonction $f$ sur $[  - 1~;~2 ].$
+     \end{enumerate}
+     \item
+     La longueur $L$ de la plaque rectangulaire est de 90 cm. Trouver sa largeur $ \mathscr{l}$ exacte en centimètres.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Pour calculer la dérivée $f'$ de la fonction $f$ on utilise la \mcLien{https://www.maths-cours.fr/cours/fonction-derivee/\#p60}{formule}~:
+               \[
+               ( uv )' =u' v+uv'
+               \]
+               où  $u$ et $v$ sont les fonctions définies par~:\\
+               \begin{itemize}
+                    \item
+                    $u( x )= - x+2$
+                    \item
+                    $v( x )=\text{e}^{ x }$
+               \end{itemize}
+               On a alors~:
+               \begin{itemize}
+                    \item
+                    $u' ( x )= - 1$
+                    \item
+                    $v' ( x )=\text{e}^{ x }$
+               \end{itemize}
+               Par conséquent, pour tout réel $x$ de l'intervalle  $\left[  - 1~;~2\right]$~:
+               \newpar
+               $f' ( x )= - \text{e}^{ x }+(  - x+2 )\text{e}^{ x }$\\
+               $\phantom{f' ( x )}=\text{e}^{ x }\left(  - 1 - x+2 \right)$\\
+               $\phantom{f' ( x )}=\left(  - x+1 \right)\text{e}^{ x }.$
+               \item
+               Pour tout réel $x$,  $\text{e}^{ x }$ est strictement positif~; donc $f' $ est du signe de  $ - x+1$ c'est-à-dire~:
+               \begin{itemize}
+                    \item
+                    $f' $ s'annule pour $x=1$
+                    \item
+                    $f' $ est strictement positive pour $x < 1$
+                    \item
+                    $f' $ est strictement négative pour $x > 1. $
+               \end{itemize}
+               \newpar
+               On a par ailleurs :
+               \begin{itemize}
+                    \item
+                    $f(  - 1 )=( 1+2 )\text{e}^{  - 1 }=3\text{e}^{  - 1 }=\frac{ 3 }{ \text{e} }$
+                    \item
+                    $f( 1 )=(  - 1+2 )\text{e}^{ 1 }=\text{e}$
+                    \item
+                    $f( 2)=(  - 2 +2)\text{e}^{ 2 }=0$
+               \end{itemize}
+               \newpar
+               On obtient alors le tableau de variation ci-dessous~:\\
+               \begin{center}
+                    \begin{extern}%width="340" alt="Tableau de variation Contrôle continu"
+                         \begin{tikzpicture}[scale=0.875]
+                              % Styles
+                              \tikzstyle{cadre}=[thin]
+                              \tikzstyle{fleche}=[->,>=latex,thin]
+                              \tikzstyle{nondefini}=[lightgray]
+                              % Dimensions Modifiables
+                              \def\Lrg{1.5}
+                              \def\HtX{1}
+                              \def\HtY{0.5}
+                              % Dimensions Calculées
+                              \def\lignex{-0.5*\HtX}
+                              \def\lignef{-1.5*\HtX}
+                              \def\separateur{-0.5*\Lrg}
+                              % Largeur du tableau
+                              \def\gauche{-1.5*\Lrg}
+                              \def\droite{4.5*\Lrg}
+                              % Hauteur du tableau
+                              \def\haut{0.5*\HtX}
+                              \def\bas{-2.5*\HtX-2*\HtY}
+                              % Pointillés
+                              % Ligne de l'abscisse : x
+                              \node at (-1*\Lrg,0) {$x$};
+                              \node at (0*\Lrg,0) {$-1$};
+                              \node at (2*\Lrg,0) {$1$};
+                              \node at (4*\Lrg,0) {$2$};
+                              % Ligne de la dérivée : f'(x)
+                              \node at (-1*\Lrg,-1*\HtX) {$f'(x)$};
+                              \node at (0*\Lrg,-1*\HtX) {$$};
+                              \node at (1*\Lrg,-1*\HtX) {$+$};
+                              \node at (2*\Lrg,-1*\HtX) {$0$};
+                              \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                              \node at (3*\Lrg,-1*\HtX) {$-$};
+                              \node at (4*\Lrg,-1*\HtX) {$$};
+                              % Ligne de la fonction : f(x)
+                              \node  at (-1*\Lrg,{-2*\HtX+(-1)*\HtY}) {$f(x)$};
+                              \node (f1) at (0*\Lrg,{-2*\HtX+(-2)*\HtY}) {$3\text{e}^{  - 1 }$};
+                              \node (f2) at (2*\Lrg,{-2*\HtX+(-0)*\HtY}) { $\text{e}$ };
+                              \draw[gray] (2*\Lrg,\lignef) -- (2*\Lrg,\bas);
+                              \node (f3) at (4*\Lrg,{-2*\HtX+(-2)*\HtY}) { $0$ };
+                              % Flèches
+                              \draw[fleche] (f1) -- (f2);
+                              \draw[fleche] (f2) -- (f3);
+                              % Encadrement
+                              \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                              \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                              \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                              \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                         \end{tikzpicture}
+                    \end{extern}
+               \end{center}
+          \end{enumerate}
+          \item
+          Le maximum de la fonction  $f$ est $f( 1 )=\text{e}$~;  son minimum est  $f( 2 )=0$. La largeur de la plaque est donc $\text{e}$ unités. L'unité mesurant 30 cm, la largeur de la plaque est donc  $l=30\text{e}$ centimètres (soit environ 81,5 cm mais c'est la valeur exacte qui est demandée…).
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

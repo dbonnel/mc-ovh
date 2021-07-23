@@ -1,0 +1,202 @@
+\input{_header}
+\meta{url}{/exercices/esperance-mathematique-maximum/}
+\meta{pid}{3319}
+\meta{titre}{Espérance mathématique maximale}
+\meta{type}{exercices}
+%
+Une urne contient $n$ boules blanches et $2n$ boules rouges (avec $n \geqslant 1$).
+\par
+On tire au hasard et \textbf{sans remise}, trois boules de l'urne.
+\begin{enumerate}
+     \item
+     Représenter cette situation à l'aide d'un arbre pondéré.
+     \item
+     On considère le jeu suivant :
+     \begin{itemize}
+          \item
+          Si toutes les boules tirées sont blanches, le joueur perd 16 euros.
+          \item
+          Si toutes les boules tirées sont rouges, le joueur gagne 2 euros.
+          \item
+          Dans les autres cas, le joueur ne gagne rien et ne perd rien.
+     \end{itemize}
+     On note $X$ la variable aléatoire représentant le gain algébrique du joueur.
+     \par
+     Déterminer la loi de probabilité de $X$.
+     \par
+     Calculer l'espérance mathématique $E(X)$.
+     \item
+     Soit la fonction $f$ définie sur $\left[1~;~+\infty\right[$ par $f(x)=\frac{x-1}{(3x-1)(3x-2)}$.
+     \begin{enumerate}
+          \item
+          Etudier les variations de la fonction $f$.
+          \item
+          Combien de boules doit contenir l'urne pour que l'espérance mathématique $E(X)$ soit maximale ?
+          \par
+          Quelle est alors la valeur de cette espérance mathématique ?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \textit{Pour ne pas surcharger la figure, seules les probabilités utilisées lors des questions suivantes ont été indiquées.}
+%##
+% type=arbre; width=25; wcell=3.5; hcell=1.5
+%--
+% >B: \dfrac{ 1 }{ 3 }  
+% >>B: \dfrac{ n-1 }{ 3n-1 }  
+% >>B: \dfrac{ n-2 }{ 3n-1 }  
+% >>F:0,9
+% >\overline{A}:0,4
+% >>V:0,8
+% >>F:0,2
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-2*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-1*\height}) {$B$};
+     \draw (r) -- (ra) node [poids] {$\dfrac{1}{3}$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$B$};
+     \draw (ra) -- (raa) node [poids] {$\dfrac{n-1}{3n-1}$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$B$};
+     \draw (ra) -- (rab) node [poids] {$\dfrac{n-2}{3n-1}$};
+    \node[noeud] (rac) at ({3*\width},{-2*\height}) {$F$};
+     \draw (ra) -- (rac) node [poids] {$0,9$};
+    \node[noeud] (rb) at ({2*\width},{-3.5*\height}) {$\overline{A}$};
+     \draw (r) -- (rb) node [poids] {$0,4$};
+    \node[noeud] (rba) at ({3*\width},{-3*\height}) {$V$};
+     \draw (rb) -- (rba) node [poids] {$0,8$};
+    \node[noeud] (rbb) at ({3*\width},{-4*\height}) {$F$};
+     \draw (rb) -- (rbb) node [poids] {$0,2$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img src="http://maths-cours.test/wp-content/uploads/esperance-mathematique-maximum-1.svg" alt="esperance-mathematique-maximum-1" class="aligncenter size-full wp-image-3323" width="350px" />
+          \begin{itemize}
+               \item
+               \textbf{Au premier niveau} (tirage de la première boule), l'urne contient $n$ boules blanches sur un total de $3n$ boules. La probabilité de tirer une boule blanche est donc $\frac{n}{3n} = \frac{1}{3}$.
+               \par
+               L'urne contient $2n$ boules rouges sur un total de $3n$ boules. La probabilité de tirer une boule rouge est donc $\frac{2n}{3n} = \frac{2}{3}$.
+               \item
+               \textbf{Au second niveau} (tirage de la seconde boule) :
+               \begin{itemize}
+                    \item
+                    Si l'on a tiré une boule blanche en premier ,  il reste alors $n-1$ boules blanches sur un total de $3n-1$ boules. La probabilité de tirer une boule blanche est donc alors $\frac{n-1}{3n-1}$.
+                    \item
+                    ...
+                    \item
+                    Si l'on a tiré une boule rouge  en premier ,  il reste alors $2n-1$ boules rouges sur un total de $3n-1$ boules. La probabilité de tirer une boule rouge est donc alors $\frac{2n-1}{3n-1}$.
+               \end{itemize}
+               \item
+               \textbf{Au troisième niveau} (tirage de la troisième boule) :
+               \begin{itemize}
+                    \item
+                    Si l'on a tiré deux boules blanches lors des deux premiers tirages,  il reste alors $n-2$ boules blanches sur un total de $3n-2$ boules. La probabilité de tirer une boule blanche est donc alors $\frac{n-2}{3n-2}$.
+                    \item
+                    ...
+                    \item
+                    Si l'on a tiré deux boules rouges lors des deux premiers tirages, il reste alors $2n-2$ boules rouges sur un total de $3n-2$ boules. La probabilité de tirer une boule rouge est donc alors $\frac{2n-2}{3n-2}$.
+               \end{itemize}
+          \end{itemize}
+          \item
+          $X$ prend la valeur -16 si les trois boules sont blanches, c'est à dire avec une probabilité :
+          \par
+          $p(X=-16)=\frac{1}{3} \times \frac{n-1}{3n-1} \times \frac{n-2}{3n-2} $
+          \par
+          $p(X=-16)=\frac{(n-1)(n-2)}{3(3n-1)(3n-2)}$
+          \par
+          $X$ prend la valeur -2 si les trois boules sont rouges, c'est à dire avec une probabilité :
+          \par
+          $p(X=2)=\frac{2}{3} \times \frac{2n-1}{3n-1} \times \frac{2n-2}{3n-2} $
+          \par
+          $p(X=2)=\frac{2(2n-1)(2n-2)}{3(3n-1)(3n-2)}$
+          \par
+          Dans les autres cas $X$ prend la valeur $0$.
+          \par
+          Le total des probabilités étant égal à $1$ on obtient :
+          \par
+          $p(X=0)=1-p(X=-16)-p(X=2) $
+          \par
+          $p(X=0)=1-\frac{(n-1)(n-2)}{3(3n-1)(3n-2)}$$-\frac{2(2n-1)(2n-2)}{3(3n-1)(3n-2)}$
+          \par
+          $p(X=0)=\frac{6n^2-4n}{(3n-1)(3n-2)}$
+          \par
+          La loi de probabilité de $X$ est donc :
+          \par
+          [table class=compact]$x_i$ | $-16$ | $0$ | $2$
+          \par
+          $p(X=x_i)$ |$\frac{(n-1)(n-2)}{3(3n-1)(3n-2)}$ | $\frac{6n^2-4n}{(3n-1)(3n-2)}$| $\frac{2(2n-1)(2n-2)}{3(3n-1)(3n-2)}$[/table]
+          \par
+          L'espérance mathématique de $X$ est :
+          \par
+          $E(X)=-16\times p(X=-16)+0 \times p(X=0)+2 \times p(X=2)$
+          \par
+          $\phantom{E(X)}=-16\times \frac{(n-1)(n-2)}{3(3n-1)(3n-2)}$$+ 2 \times \frac{2(2n-1)(2n-2)}{3(3n-1)(3n-2)}$
+          \par
+          $\phantom{E(X)}=-16\times \frac{n^2-3n+2}{3(3n-1)(3n-2)}$$+ 2 \times \frac{8n^2-12n+4}{3(3n-1)(3n-2)}$
+          \par
+          $\phantom{E(X)}=\frac{24n-24}{3(3n-1)(3n-2)}$
+          \par
+          $\phantom{E(X)}=\frac{8(n-1)}{(3n-1)(3n-2)}$
+          \item
+          \begin{enumerate}
+               \item
+               La fonction $f$ est définie et dérivable sur $\left[1;+\infty \right[$.
+               \par
+               $f$ est de la forme $\frac{u}{v}$ avec
+               \par
+               $u(x)=x-1$ donc $u ^{\prime}(x)=1$
+               \par
+               $v(x)=(3x-1)(3x-2)=9x^2-9x+2$ donc $v^{\prime}(x) = 18x-9$
+               \par
+               Par conséquent :
+               \par
+               $f^{\prime}(x)=\frac{9x^2-9x+2-(x-1)(18x-9)}{(3x-1)(3x-2))^2}$
+               \par
+               $f^{\prime}(x)=\frac{-9x^2+18x-7}{((3x-1)(3x-2))^2}$
+               \par
+               Le dénominateur est positif et le numérateur est un polynôme du second degré.
+               \par
+               $\Delta = 18^2-4 \times 7 \times 9=72  >  0$
+               \par
+               Le numérateur admet deux racines :
+               \par
+               $x_1 = \frac{-18+6\sqrt{2}}{-18}= \frac{3-\sqrt{2}}{3}$
+               \par
+               $x_2 = \frac{-18-6\sqrt{2}}{-18}= \frac{3+\sqrt{2}}{3}$
+               \par
+               $x_1$ est inférieur à $1$ et $x_2 \approx 1,47 \in \left[1;+\infty \right[$.
+               \par
+               On obtient le tableau de variations suivant sur  $\left[1;+\infty \right[$ :
+
+\begin{center}
+\imgsvg{esperance-mathematique-maximum-2}{0.3}% alt="Espérance mathématique maximale" style="width:40rem"
+\end{center}
+
+               \item
+               D'après la question \textbf{2.}, $E(X)=8f(n)$
+               \par
+               L'espérance mathématique est donc maximale pour la valeur de $n$ qui maximise $f(n)$.
+               \par
+               D'après la question précédente $f$ est décroissante sur $\left[x_2;+\infty\right[$ donc sur $\left[2;+\infty\right[$ puisque $x_2  < 2$.
+               \par
+               Les seules valeurs \textbf{entières} susceptibles de maximiser $f$ sont donc $1$ ou $2$.
+               \par
+               Or $f(1)=0$ et $f(2)=\frac{1}{20}$.
+               \par
+               Donc, l'espérance mathématique est maximale pour $n=2$ c'est à dire si l'urne contient $2$ boules blanches et $4$ boules rouges.
+               \par
+               Cette espérance vaut alors $E(X)=8f(2)=\frac{8}{20}=0,4$
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige} 
+\input{_footer}

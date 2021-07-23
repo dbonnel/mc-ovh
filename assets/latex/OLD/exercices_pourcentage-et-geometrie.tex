@@ -1,0 +1,39 @@
+\input{_header}
+Sur l'image ci-dessous, quel pourcentage du rectangle est coloré en vert~? 
+\begin{center}
+     \begin{extern} %width="300" alt="pourcentage aire"
+          \newrgbcolor{zzccqq}{0.6 0.8 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.31248976630320724,-1.5868139302165756)(7.639721755514631,4.751466502168787)
+               \psline[linewidth=0.5pt,linecolor=lightgray](2.,4.)(2.,-1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](3.,4.)(3.,-1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](4.,4.)(4.,-1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](5.,4.)(5.,-1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](6.,4.)(6.,-1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](1.,3.)(7.,3.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](1.,2.)(7.,2.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](1.,1.)(7.,1.)
+               \psline[linewidth=0.5pt,linecolor=lightgray](1.,0.)(7.,0.)
+               \parametricplot[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=1]{-0.7853981633974483}{2.356194490192345}{1.*1.4142135623730951*cos(t)+0.*1.4142135623730951*sin(t)+2.|0.*1.4142135623730951*cos(t)+1.*1.4142135623730951*sin(t)+0.}
+               \parametricplot[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=1]{-1.5707963267948966}{0.0}{1.*1.*cos(t)+0.*1.*sin(t)+1.|0.*1.*cos(t)+1.*1.*sin(t)+4.}
+               \parametricplot[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=0.95]{1.5707963267948966}{4.71238898038469}{1.*1.*cos(t)+0.*1.*sin(t)+7.|0.*1.*cos(t)+1.*1.*sin(t)+0.}
+               \pscircle[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=1](6.,3.){1.}
+               \pspolygon[linewidth=0.5pt](1.,4.)(7.,4.)(7.,-1.)(1.,-1.)
+               \pspolygon[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=1](1.,1.)(3.,-1.)(1.,-1.)
+               \pspolygon[linewidth=0.5pt,linecolor=zzccqq,fillcolor=zzccqq,fillstyle=solid,opacity=1](1.,4.)(1.,3.)(2.,4.)
+               \psline[linewidth=0.5pt](1.,4.)(7.,4.)
+               \psline[linewidth=0.5pt](7.,4.)(7.,-1.)
+               \psline[linewidth=0.5pt](7.,-1.)(1.,-1.)
+               \psline[linewidth=0.5pt](1.,-1.)(1.,4.)
+               \psdots[dotsize=1pt 0,dotstyle=+](1.,4.)
+               \rput[bl](0.6721085142399643,4.12213369327946){$A$}
+               \psdots[dotsize=1pt 0,dotstyle=+](7.,4.)
+               \rput[bl](7.0253730611226715,4.12213369327946){$B$}
+               \psdots[dotsize=1pt 0,dotstyle=+](7.,-1.)
+               \rput[bl](6.995404832127941,-1.3470680982587366){$C$}
+               \psdots[dotsize=1pt 0,dotstyle=+](1.,-1.)
+               \rput[bl](0.6721085142399643,-1.3470680982587366){$D$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\input{_footer}

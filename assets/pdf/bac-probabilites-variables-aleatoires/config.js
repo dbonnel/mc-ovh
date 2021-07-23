@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"BAC] PROBABILITÉS \u2013 VARIABLES ALÉATOIRES (D\u2019après Bac S Liban 2008)","author":"","fileName":"BAC__PROBABILIT_S___VARIABLES_AL_ATOIRES__D_apr_s_Bac_S_Liban_2008___2_.pdf","bounds":[[1068,2833]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

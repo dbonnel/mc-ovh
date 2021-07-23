@@ -1,0 +1,105 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-s-amerique-du-nord-2018/}
+\meta{pid}{7916}
+\meta{titre}{Probabilités - Bac S Amérique du Nord  2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1 (6 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+On étudie certaines caractéristiques d'un supermarché d'une petite ville.
+\bigskip
+\begin{center}\begin{h3}Partie A - Démonstration préliminaire \end{h3}\end{center}
+\medskip
+Soit $X$ une variable aléatoire qui suit la loi exponentielle de paramètre $0,2$.
+\par
+On rappelle que l'espérance de la variable aléatoire $X$, notée $E(X)$, est égale à~:
+\par
+\[\displaystyle\lim_{x \to + \infty}\displaystyle\int_{0}^{x}  0,2t\text{e}^{-0,2t}\:\text{d}t.\]
+\par
+Le but de cette partie est de démontrer que $E(X) = 5$.
+\medskip
+\begin{enumerate}
+     \item On note $g$ la fonction définie sur l'intervalle $[0~:~+\infty[$ par $g(t) = 0,2t\text{e}^{-0,2t}$.
+     \par
+     On définit la fonction $G$ sur l'intervalle $[0~:~+\infty[$ par $G(t) = (- t - 5)\text{e}^{-0,2t}$.
+     \par
+     Vérifier que $G$ est une primitive de $g$ sur l'intervalle $[0~:~+\infty[$.
+     \item  En déduire que la valeur exacte de $E(X)$ est 5.
+     \par
+     \emph{Indication~: on pourra utiliser, sans le démontrer, le résultat suivant }~:
+     \par
+     \[\displaystyle\lim_{x \to + \infty} x \text{e}^{- 0,2x} = 0.\]
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie B - Étude de la durée de présence d'un client dans le supermarché \end{h3}\end{center}
+\medskip
+Une étude commandée par le gérant du supermarché permet de modéliser la durée, exprimée en
+minutes, passée dans le supermarché par un client choisi au hasard par une variable aléatoire $T$.
+\par
+Cette variable $T$ suit une loi normale d'espérance $40$ minutes et d'écart type un réel positif noté $\sigma$.
+\par
+Grâce à cette étude, on estime que $P(T < 10) = 0,067$.
+\medskip
+\begin{enumerate}
+     \item Déterminer une valeur arrondie du réel $\sigma$ à la seconde près.
+     \item Dans cette question, on prend $\sigma = 20$~minutes. Quelle est alors la proportion de clients qui
+     passent plus d'une heure dans le supermarché~?
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie C - Durée d'attente pour le paiement \end{h3}\end{center}
+\medskip
+Ce supermarché laisse le choix au client d'utiliser seul des bornes automatiques de paiement ou
+bien de passer par une caisse gérée par un opérateur.
+\medskip
+\begin{enumerate}
+     \item La durée d'attente à une borne automatique, exprimée en minutes, est modélisée par une
+     variable aléatoire qui suit la loi exponentielle de paramètre $0,2$~min$^{-1}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Donner la durée moyenne d'attente d'un client à une borne automatique de paiement.
+          \item Calculer la probabilité, arrondie à $10^{-3}$, que la durée d'attente d'un client à une borne automatique de paiement soit supérieure à $10$ minutes.
+     \end{enumerate}
+     \item L'étude commandée par le gérant conduit à la modélisation suivante~:
+     \begin{indent}
+          \begin{itemize}
+               \item parmi les clients ayant choisi de passer à une borne automatique, 86\,\% attendent moins de $10$ minutes~:
+               \item parmi les clients passant en caisse, 63\,\% attendent moins de $10$ minutes.
+          \end{itemize}
+     \end{indent}
+     \medskip
+     On choisit un client du magasin au hasard et on définit les événements suivants~:
+     \par
+     $B$~: \og le client paye à une borne automatique \fg{}~:
+     \par
+     $\overline{B}$~: \og le client paye à une caisse avec opérateur \fg{}~:
+     \par
+     $S$~: \og la durée d'attente du client lors du paiement est inférieure à $10$ minutes \fg.
+     \par
+     Une attente supérieure à dix minutes à une caisse avec opérateur ou à une borne automatique
+     engendre chez le client une perception négative du magasin. Le gérant souhaite que
+     plus de 75\,\% des clients attendent moins de $10$ minutes.
+     \par
+     Quelle est la proportion minimale de clients qui doivent choisir une borne automatique de
+     paiement pour que cet objectif soit atteint~?
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie D - Bons d'achat \end{h3}\end{center}
+\medskip
+Lors du paiement, des cartes à gratter, gagnantes ou perdantes, sont distribuées aux clients. Le
+nombre de cartes distribuées dépend du montant des achats. Chaque client a droit à une carte à
+gratter par tranche de $10$~\euro{} d'achats.
+\par
+Par exemple, si le montant des achats est 58,64~\euro, alors le client obtient $5$ cartes~: si le montant est
+124,31~\euro, le client obtient $12$~cartes.
+\par
+Les cartes gagnantes représentent $0,5$\,\% de l'ensemble du stock de cartes. De plus, ce stock est
+suffisamment grand pour assimiler la distribution d'une carte à un tirage avec remise.
+\medskip
+\begin{enumerate}
+     \item Un client effectue des achats pour un montant de 158,02~\euro.
+     \par
+     Quelle est la probabilité, arrondie à $10^{-2}$, qu'il obtienne au moins une carte gagnante~?
+     \item  À partir de quel montant d'achats, arrondi à 10~\euro, la probabilité d'obtenir au moins une carte
+     gagnante est-elle supérieure à 50\,\%~?
+\end{enumerate}
+\input{_footer}

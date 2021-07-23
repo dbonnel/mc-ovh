@@ -1,0 +1,87 @@
+//
+// Body
+//
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: $font-size-base;
+    line-height: 1.5;
+    color: $primary;
+    background-color: $white;
+}
+
+//
+// Links
+//
+
+a {
+    color: $primary;
+    text-decoration: none;
+    background-color: transparent; // Remove the gray background on active links in IE 10.
+    transition: all .3s linear;
+    border-bottom: 1px dotted$secondary;
+
+    &:hover {
+        color: $secondary;
+        text-decoration: none;
+    }
+}
+
+//
+// Headers
+//
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+}
+
+code {
+    text-indent: 0;
+    background-color: $gray-100;
+    display: block;
+    white-space: pre-wrap;
+    font-size: .9em;
+    border: 1px solid $gray-400;
+    margin: 2rem 0;
+    padding: 2rem 4rem;
+}
+
+::placeholder {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.tex-par {
+    margin-top: 2rem;
+}
+
+.medskip {
+    margin-top: 3.5rem;
+}
+
+.bigskip {
+    margin-top: 5rem;
+}

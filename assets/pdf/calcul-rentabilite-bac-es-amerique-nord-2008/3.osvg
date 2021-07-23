@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 3 -->
+<svg x="0" y="0" width="758" height="144" viewBox="0 0 758 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+
+.s2_3{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_64;
+fill: #000000;
+}
+.s1_3{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_64;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,144
+L758,144
+L758,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="14" 
+y="26" 
+dx="0,0,0,-0.1,-0.1,0.2,-0.2,-0.1,0,0,-0.1,0,0.2,-0.1,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,-0.1,0.2,-0.1,0,-0.1,0,-0.1,0,0,0,0,0,0,0,0,0,-0.1,-0.1,0,0,0,-0.1,0,0.2,-0.2,-0.1,0.4,0,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,-0.1,0,0,-0.1,0,0,-0.1,0,-0.1,0,0,-0.1,0,0,-0.1,0,0,0.2,-0.1" 
+class="s1_3"
+>2.a) Le tableau complété ci-dessus montre que l'exploitation est le plus profitable au cours de </text>
+
+<text 
+x="14" 
+y="47" 
+dx="0,0,-0.1,0" 
+class="s1_3"
+>la 7</text>
+
+<text 
+x="41" 
+y="40" 
+dx="0,-0.1,0" 
+class="s2_3"
+>ème</text>
+
+<text 
+x="66" 
+y="47" 
+dx="0,-0.1,0,0,-0.1,-0.1,0.2" 
+class="s1_3"
+>année. </text>
+
+<text 
+x="14" 
+y="89" 
+dx="0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0,-0.1,0,0.1,-0.1,0,0,0,-0.1,0,0,-0.1,0.2,0,-0.1,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0,-0.1,0.2,0,0,0,0,-0.1,-0.1,0,0,0,0,0,0,-0.1,-0.1,-0.1,0,0,0.1,-0.1,0,-0.1,0,0,-0.1,0,-0.1,-0.1,0.2,-0.1,0,0,0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0" 
+class="s1_3"
+>3) Toujours d'après le tableau, on voit que l'exploitation sera déficitaire à partir de la 12</text>
+
+<text 
+x="656" 
+y="82" 
+dx="0,-0.1,0.2" 
+class="s2_3"
+>ème</text>
+
+<text 
+x="14" 
+y="110" 
+dx="0,-0.1,0,0,-0.1,-0.1,0" 
+class="s1_3"
+>année. </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPSMT_64;
+	src: url("fonts/TimesNewRomanPSMT_64.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

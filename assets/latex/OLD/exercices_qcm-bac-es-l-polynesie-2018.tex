@@ -1,0 +1,59 @@
+\input{_header}
+\begin{h2}Exercice 1 (5 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medbreak
+On considère la fonction $f$ définie sur l'intervalle ]0~;~3] par
+\par
+\[f(x) = x^2(1 - \ln x).\]
+\par
+On donne ci-dessous sa courbe représentative $\mathscr{C}$.
+\begin{center}
+\begin{extern}%width="400" alt=""
+     \psset{unit=3cm,comma=true}
+     \begin{pspicture}(-1,-2)(4,2)
+ \psgrid[Dx=1,Dy=1,subgriddiv=10,gridcolor=gray,gridlabels=0pt](-1,-2)(4,2)
+          \psaxes[linewidth=1.2pt,Dx=0.5,Dy=0.5]{->}(0,0)(-1,-2)(4,2)
+          \psaxes[linewidth=1.3pt]{->}(0,0)(1,1)
+          \psplot[plotpoints=2000,linewidth=1.25pt,linecolor=blue]{0.01}{3.1}{1 x ln sub x dup mul mul}
+          \uput[u](2.2,1.2){\blue $\mathcal{C}$}
+     \end{pspicture}
+\end{extern}
+
+\end{center}
+\medbreak
+On admet que $f$ est deux fois dérivable sur ]0~;~3], on note $f'$ sa fonction dérivée et on admet que sa dérivée seconde $f''$  est définie sur ]0~;~3] par~: $f''(x) = - 1- 2 \ln x$.
+\medbreak
+Cet exercice est un questionnaire à choix multiples. Pour chacune des questions posées, une seule réponse est exacte. Aucune justification n'est demandée.
+\par
+Une réponse exacte rapporte $1$ point, une réponse fausse ou l'absence de réponse ne rapporte ni n'enlève de point. Une réponse multiple ne rapporte aucun point.
+\par
+\medbreak
+\begin{enumerate}
+     \item Sur ]0~;~3], $\mathscr{C}$ coupe l'axe des abscisses au point d'abscisse~:
+    \smallbreak
+           \textbf{a.~~} e \\ \textbf{b.~~} 2,72 \\ \textbf{c.~~} $\dfrac{1}{2}\text{e} + 1$
+     \medbreak
+     \item  $\mathscr{C}$ admet un point d'inflexion d'abscisse~:
+    \smallbreak
+          \textbf{a.~~} e \\ \textbf{b.~~} $\dfrac{1}{\sqrt{\text{e}}}$\\ \textbf{c.~~} $\sqrt{\text{e}}$
+    
+     \medbreak
+     \item  Pour tout nombre réel $x$ de l'intervalle ]0~;~3] on a~:
+    \smallbreak
+            \textbf{a.~~} $f'(x) = x(1 - 2\ln x)$\\ \textbf{b.~~} $f'(x)= - \dfrac{2}{x}$
+          \\ \textbf{c.~~} $f'(x) = - 2$
+    
+     \medbreak
+     \item  Sur l'intervalle [1~;~3]~:
+    \smallbreak
+          \textbf{a.~~}$f$ est convexe \\ \textbf{b.~~} $f$ est décroissante \\ \textbf{c.~~} $f'$ est décroissante
+    
+     \medbreak
+     \item  Une équation de la tangente à $\mathscr{C}$  au point d'abscisse e s'écrit~:
+    \smallbreak
+           \textbf{a.~~} $y= -x+ \text{e}$\\ \textbf{b.~~} $y= - \text{e}x$ \\ \textbf{c.~~} $y = - \text{e}x + \text{e}^2$
+    
+     \medbreak
+\end{enumerate}
+
+\input{_footer}

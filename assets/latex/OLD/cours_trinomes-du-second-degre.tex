@@ -1,0 +1,431 @@
+\input{_header}
+\begin{h2}1. Fonctions polynômes\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une fonction $P$ est une \textbf{fonction polynôme} si elle est définie sur $\mathbb{R}$ et si on peut l'écrire sous la forme~:
+     \begin{center}$P\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+ . . . +a_{1}x+a_{0}$\end{center}
+}
+\bloc{vert}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item par abus de langage, on dit souvent polynôme au lieu de fonction polynôme.
+          \item les nombres $a_{i}$ s'appellent les \textbf{coefficients} du polynôme.
+     \end{itemize}
+}
+\cadre{bleu}{Définition (Degré d'un polynôme)}{% id="d20"
+     Si $P\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+ . . . +a_{1}x+a_{0}$ (où le coefficient $ a_n $ est non nul), on dit que $P$ est une fonction polynôme de \textbf{degré} $n$.
+}
+\bloc{orange}{Cas particuliers}{% id="r20"
+     \begin{itemize}
+          \item la fonction nulle n'a pas de degré.
+          \item une fonction constante non nulle définie par $f\left(x\right)=a$ avec $a\neq 0$ est une fonction polynôme de degré~0.
+          \item une fonction affine $f\left(x\right)=ax+b$ avec $a\neq 0$ est une fonction polynôme de degré~1.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Le produit d'un polynôme de degré $n$ par un polynôme de degré $m$ est un polynôme de degré $m+n$.
+}
+\bloc{vert}{Remarque}{% id="r30"
+     Il n'existe pas de formule donnant le degré d'une somme de polynôme. On peut tout au plus dire que le degré de $ P+Q $ est inférieur ou égal à la fois au degré de $P$ et au degré de $Q$.
+}
+\cadre{vert}{Propriété}{% id="p40"
+     Deux polynômes sont égaux si et seulement si les coefficients des termes de même degré sont égaux.
+}
+\bloc{orange}{Cas particulier}{% id="r40"
+     $P$ est le polynôme nul si et seulement si tous ses coefficients sont nuls.
+}
+\cadre{bleu}{Définition}{% id="d50"
+     On dit que $a \in \mathbb{R}$ est une racine du polynôme $P$ si et seulement si $P\left(a\right)=0$.
+}
+\bloc{orange}{Exemple}{% id="e50"
+     $1$ est racine du polynôme $P\left(x\right)=x^{3}-2x+1$ car $P\left(1\right)=0$
+}
+\cadre{rouge}{Théorème}{% id="t60"
+     Si $P$ est un polynôme de degré $n\geqslant 1$ et si $a$ est une racine de $P$ alors $P\left(x\right)$ peut s'écrire sous la forme~:
+     \begin{center}$P\left(x\right)=\left(x-a\right)Q\left(x\right)$\end{center}
+     où $Q$ est un polynôme de degré $n-1$.
+}
+\begin{h2}2. Fonctions polynômes du second degré\end{h2}
+\cadre{bleu}{Définition}{% id="d70"
+     On appelle \textbf{polynôme (ou trinôme) du second degré} toute expression pouvant se mettre sous la forme~:
+     \begin{center}$P\left(x\right)=ax^{2}+bx+c$\end{center}
+     où $a$, $b$ et $c$ sont des réels avec $a \neq 0$.
+}
+\bloc{orange}{Exemples}{% id="e60"
+     \begin{itemize}
+          \item $P\left(x\right)=2x^{2}+3x-5$ est un polynôme du second degré.
+          \item $P\left(x\right)=x^{2}-1$ est un polynôme du second degré avec $b=0$ mais $Q\left(x\right)=x-1$ n'en est pas un car $a$ n'est pas différent de zéro (c'est un polynôme du premier degré - ou une fonction affine).
+          \item $P\left(x\right)=5\left(x-1\right)\left(3-2x\right)$ est un polynôme du second degré car en développant on obtient une expression du type souhaité.
+     \end{itemize}
+}
+\cadre{rouge}{Théorème et définition}{% id="d70"
+     Tout polynôme du second degré $P\left(x\right)=ax^{2}+bx+c$ peut s'écrire sous la forme~:
+     \begin{center}$P\left(x\right)=a\left(x-\alpha \right)^{2}+ \beta $\end{center}
+     avec $\alpha =-\frac{b}{2a}$ et $\beta =P\left(\alpha \right)$.
+     \par
+     Cette expression s'appelle \textbf{forme canonique} du polynôme $P$.
+}
+\cadre{bleu}{Définition}{% id="e70"
+     Le nombre $\Delta =b^{2}-4ac$ s'appelle le \textbf{discriminant} du trinôme $ax^{2}+bx+c$.
+}
+\cadre{vert}{Propriété (Racines d'un polynôme du second degré)}{% id="p80"
+     L'équation $ax^{2}+bx+c=0$~:
+     \begin{itemize}
+          \item n'a aucune solution réelle si $\Delta < 0$~;
+          \item a une solution unique $x_{0}=\alpha =-\frac{b}{2a}$ si $\Delta =0$~;
+          \item a deux solutions $x_{1}=\frac{-b+\sqrt{\Delta }}{2a}$ et $x_{2}=\frac{-b-\sqrt{\Delta }}{2a}$ si $\Delta > 0$.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e80"
+     \begin{itemize}
+          \item \textbf{$P_{1}\left(x\right)=-x^{2}+3x-2$}~:
+          \par
+          $\Delta =9-4\times \left(-1\right)\times \left(-2\right)=1$.
+          \par
+          $P_{1}$ possède 2 racines~:
+          \par
+          $x_{1}=\frac{-3-1}{-2}=2$ et $x_{2}=\frac{-3+1}{-2}=1$
+          \item \textbf{$P_{2}\left(x\right)=x^{2}-4x+4$}~:
+          \par
+          $\Delta =16-4\times 1\times 4=0$.
+          \par
+          $P_{2}$ possède une seule racine~:
+          \par
+          $x_{0}=-\frac{-4}{2}=2$.
+          \item \textbf{$P_{3}\left(x\right)=x^{2}+x+1$}~:
+          \par
+          $\Delta =1-4\times 1\times 1=-3$.
+          \par
+          $P_{3}$ ne possède aucune racine.
+     \end{itemize}
+}
+\cadre{vert}{Propriété (Somme et produit des racines)}{% id="p90"
+     Soit un polynôme $P\left(x\right)=ax^{2}+bx+c$ dont le discriminant est strictement positif.
+     \begin{itemize}
+          \item La somme des racines vaut $x_{1}+x_{2}=-\frac{b}{a}$.
+          \item Le produit des racines vaut $x_{1}x_{2}=\frac{c}{a}$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r90"
+     Ces propriétés sont souvent utilisées pour résoudre rapidement une équation qui possède une racine "évidente".
+     \par
+     Par exemple l'équation $x^{2}-4x+3=0$ admet $x_{1}=1$ comme racine puisque $1^{2}-4\times 1+3=0$~; comme $x_{1}\times x_{2}=\frac{c}{a}=3$ l'autre racine est $x_{2}=3$ .
+}
+\cadre{vert}{Propriété (Signe d'un polynôme du second degré)}{% id="p100"
+     Le polynôme $P\left(x\right)=ax^{2}+bx+c$~:
+     \begin{itemize}
+          \item est toujours du signe de $a$ si $\Delta < 0$~;
+          \item est toujours du signe de $a$ mais s'annule en $x_{0}=\alpha =-\frac{b}{2a}$ si $\Delta =0$~;
+          \item est du signe de $a$ \og à l'extérieur des racines \fg{} (c'est à dire sur $\left]-\infty~; x_{1}\right[ \cup \left]x_{2}; +\infty \right[$) et du signe opposé \og entre les racines \fg{} ( sur $\left]x_{1}; x_{2}\right[$).
+     \end{itemize}
+}
+\bloc{cyan}{Remarque}{% id="r100"
+     Suivant chacun des cas on peut représenter le tableau de signe de $P$ de la façon suivante~:
+     \begin{itemize}
+          \item \textbf{Si $\Delta > 0$~:} $P\left(x\right)$ est du signe de $a$ à l'extérieur des racines (c'est à dire si $x < x_{1}$ ou $x > x_{2}$ ) et du signe opposé entre les racines (si $x_{1} < x < x_{2}$).
+          %:-+-+-+-+- Engendré par~: http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="500" alt="Tableau de signe plynôme du second degré delta positif"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.8}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{6.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         \draw[gray] (4*\Lrg,\lignex) -- (4*\Lrg,\lignef);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$x_1$};
+                         \node at (4*\Lrg,0) {$x_2$};
+                         \node at (6*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {signe de $a$};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {signe de $-a$};
+                         \node at (4*\Lrg,-1*\HtX) {$0$};
+                         \node at (5*\Lrg,-1*\HtX) {signe de $a$};
+                         \node at (6*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %:-+-+-+-+- Fin
+          \item \textbf{Si $\Delta =0$~:} $P\left(x\right)$ est toujours du signe de $a$ sauf en $x_{0}$ (où il s'annule).
+          %:-+-+-+-+- Engendré par~: http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="390" alt="Tableau de signe plynôme du second degré delta nul"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.8}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$x_0$};
+                         \node at (4*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {signe de $a$};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {signe de $a$};
+                         \node at (4*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %:-+-+-+-+- Fin
+          \item \textbf{Si $\Delta < 0$~:} $P\left(x\right)$ est toujours du signe de $a$.
+          \begin{center}
+               \begin{extern}%width="230" alt="Tableau de signe plynôme du second degré delta négatif"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{2.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {signe de $a$};
+                         \node at (2*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e100"
+     Si l'on reprend les exemples précédents~:
+     \begin{itemize}
+          \item $P_{1}\left(x\right)=-x^{2}+3x-2$~:
+          \par
+          $\Delta > 0$ et $a < 0$.
+          %:-+-+-+-+- Engendré par~: http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="430" alt="Exemple tableau de signe plynôme du second degré delta positif"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{6.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         \draw[gray] (4*\Lrg,\lignex) -- (4*\Lrg,\lignef);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$1$};
+                         \node at (4*\Lrg,0) {$2$};
+                         \node at (6*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {$-$};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {$+$};
+                         \node at (4*\Lrg,-1*\HtX) {$0$};
+                         \node at (5*\Lrg,-1*\HtX) {$-$};
+                         \node at (6*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %:-+-+-+-+- Fin
+          \item $P_{2}\left(x\right)=x^{2}-4x+4$~:
+          \par
+          $\Delta =0$ et $a > 0$.
+          %:-+-+-+-+- Engendré par~: http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="330" alt="Exemple tableau de signe plynôme du second degré delta nul"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Pointillés
+                         \draw[gray] (2*\Lrg,\lignex) -- (2*\Lrg,\lignef);
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$2$};
+                         \node at (4*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {+};
+                         \node at (2*\Lrg,-1*\HtX) {$0$};
+                         \node at (3*\Lrg,-1*\HtX) {+};
+                         \node at (4*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %:-+-+-+-+- Fin
+          \item $P_{3}\left(x\right)=x^{2}+x+1$~:
+          \par
+          $\Delta < 0$ et $a > 0$.
+          \begin{center}
+               \begin{extern}%width="230" alt="Exemple tableau de signe plynôme du second degré delta négatif"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1.2}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-1.5*\Lrg}
+                         \def\droite{2.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Ligne de l'abscisse~: x
+                         \node at (-1*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$-\infty$};
+                         \node at (2*\Lrg,0) {$+\infty$};
+                         % Ligne de la dérivée~: f'(x)
+                         \node at (-1*\Lrg,-1*\HtX) {$P(x)$};
+                         \node at (0*\Lrg,-1*\HtX) {$ $};
+                         \node at (1*\Lrg,-1*\HtX) {$+$};
+                         \node at (2*\Lrg,-1*\HtX) {$ $};
+                         % Ligne de la fonction~: f(x)
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur, \lignef);
+                         \draw[cadre] (\gauche,\haut) rectangle (\droite, \lignef);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+     \end{itemize}
+}
+On rappelle que les solutions de l'équation $f\left(x\right)=0$ sont les abscisses des \textbf{points d'intersection de la courbe} $C_{f}$ et de l'\textbf{axe des abscisses}.
+\par
+En regroupant les propriétés de ce chapitre et celles vues en Seconde on peut résumer ces résultats dans le tableau~:
+\begin{center}
+     \begin{extern}%width="600" alt="Différentes paraboles"
+          \begin{tabular}{|c|c|c|}
+               \hline
+               & $a > 0$ & $a < 0$\\ \hline
+               $\Delta > 0$ & \img{parabole-1-1}{0.25}
+               & \img{parabole-1-2}{0.25}
+               \\
+               & 2~racines~: $x_{1}$ et $x_{2}$
+               & 2~racines~: $x_{1}$ et $x_{2}$\\ \hline
+               $\Delta =0$ & \img{parabole-2-1}{0.25}
+               & \img{parabole-2-2}{0.25}
+               \\
+               &1~racine~: $x_{0}$
+               &1~racine~: $x_{0}$\\ \hline
+               $\Delta < 0$ & \img{parabole-3-1}{0.25}
+               & \img{parabole-3-2}{0.25}
+               \\ &Pas~de racine
+               & Pas~de racine\\ \hline
+          \end{tabular}
+     \end{extern}
+\end{center}
+\input{_footer}

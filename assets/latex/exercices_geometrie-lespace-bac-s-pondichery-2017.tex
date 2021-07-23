@@ -1,0 +1,62 @@
+\input{_header}
+\meta{url}{/exercices/geometrie-lespace-bac-s-pondichery-2017/}
+\meta{pid}{6248}
+\meta{titre}{Géométrie dans l'espace - Bac S Pondichéry 2017}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 5\end{h2}
+\textit{(3 points) - Commun à tous les candidats}
+\par
+On considère un cube ABCDEFGH fourni en annexe (ci-dessous).
+\par
+L'espace est rapporté au repère $\left(A~;~ \overrightarrow{AB},~ \overrightarrow{AD},~ \overrightarrow{AE}\right)$.
+\par
+On note $\mathscr{P}$ le plan d'équation $x+\dfrac{1}{2} y +\dfrac{1}{3}z -1 = 0$.
+\par
+Construire, sur la figure fournie en annexe, la section du cube par le plan $\mathscr{P}$.
+\par
+La construction devra être justifiée par des calculs ou des arguments géométriques.
+\par
+~
+\begin{h2}ANNEXE à compléter et à remettre avec la copie\end{h2}
+
+
+\begin{center}
+\imgsvg{geometrie-espace-bac-s-pondichery-2017-1}{0.3}% alt="Bac - Section d'un cube" style="width:30rem" 
+\end{center}
+
+\begin{corrige}
+     La première chose à faire est d'essayer de représenter le plan $\mathscr P$.
+     \par
+
+     Pour définir un plan, il suffit de trois points non alignés de ce plan.
+     \par
+     On pourrait choisir "au hasard" trois points dont les coordonnées vérifient l'équation $x+\dfrac{1}{2} y +\dfrac{1}{3}z -1 = 0$ mais la construction risquerait d'être alors difficile.
+     \par
+     Le plus simple, ici, est de déterminer les points du plan $\mathscr P$ situés sur les axes $(AB)$, $(AD)$ et $(AE)$, c'est à dire les points d'intersection de $\mathscr P$ avec ces axes.
+     \par
+     Les points de l'axe $(AB)$ ont une ordonnée et une cote nulles ($y=0$ et $z=0$). Le point de cet axe appartenant à $\mathscr P$ vérifie, de plus, l'équation  $x+\dfrac{1}{2} y +\dfrac{1}{3}z -1 = 0$. C'est donc le point de coordonnées $(1~;~0~;~0)$ c'est à dire le point $B$.
+     \par
+     Par un raisonnement similaire, le point d'intersection de $\mathscr P$ avec l'axe $(AD)$ est le point $I(0~;~2~;~0)$ (voir figure ci-dessous).
+     \par
+     De même, le point d'intersection de $\mathscr P$ avec l'axe $(AE)$ est le point $J(0~;~0~;~3)$.
+     \par
+     Le plan $\mathscr P$ est donc le plan $(BIJ)$.
+     \par
+     Il est alors assez simple de tracer la section demandée. On commence par tracer le triangle $(BIJ)$(qui permet de visualiser le plan $\mathscr P$).
+     \begin{itemize}
+          \item
+          l'intersection de $\mathscr P$ et de la face $ABFE$ est le segment $[BK]$ (voir figure ci-dessous)
+          \item
+          l'intersection de $\mathscr P$ et de la face $ABCD$ est le segment $[BL]$ (voir figure ci-dessous)
+          \item
+          il suffit ensuite de tracer les parallèles à $(BK)$ et $(BL)$ passant respectivement par $L$ et $K$ pour terminer la section (car un plan coupe deux plans parallèles selon deux droites parallèles).
+     \end{itemize}
+
+\begin{center}
+\imgsvg{/geometrie-espace-bac-s-pondichery-2017-2}{0.3}% alt="Corrigé - Section d'un cube" style="width:50rem" 
+\end{center}
+
+     La section du cube par le plan $\mathscr{P}$ est donc le parallélogramme $BLMK$
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,129 @@
+\input{_header}
+\meta{url}{/exercices/qcm-bac-es-metropole-2014/}
+\meta{pid}{2191}
+\meta{titre}{QCM - Bac ES/L Métropole 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1   (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+\textit{Cet exercice est un questionnaire à choix multiples (QCM).
+     \par
+     Pour chacune des questions posées, une seule des quatre réponses est exacte.
+     \par
+     Indiquer sur la copie le numéro de la question et la lettre correspondant à la réponse choisie. Aucune justification n'est demandée.
+     \par
+Une réponse exacte rapporte $1$ point. Une réponse fausse, une réponse multiple ou l'absence de réponse ne rapporte ni n'enlève aucun point.}
+\begin{enumerate}
+     \item
+     L'arbre de probabilités ci-dessous représente une situation où $A$ et $B$ sont deux évènements, dont les évènements contraires sont respectivement notés $\overline{A}$ et $\overline{B}$.
+%##
+% type=arbre; width=25; wcell=3.5; hcell=1.5
+%--
+% >A:0,6
+% >>B:0,3
+% >>\overline{B}:...
+% >\overline{A}:...
+% >>B:0,2
+% >>\overline{B}:...
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-1.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-0.5*\height}) {$A$};
+     \draw (r) -- (ra) node [poids] {$0,6$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$B$};
+     \draw (ra) -- (raa) node [poids] {$0,3$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$\overline{B}$};
+     \draw (ra) -- (rab) node [poids] {$...$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$\overline{A}$};
+     \draw (r) -- (rb) node [poids] {$...$};
+    \node[noeud] (rba) at ({3*\width},{-2*\height}) {$B$};
+     \draw (rb) -- (rba) node [poids] {$0,2$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{B}$};
+     \draw (rb) -- (rbb) node [poids] {$...$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+Alors :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="noborder" width="600"
+          \hline
+          \textbf{a}.   $P_{A}\left(B\right)=0,18$ & \textbf{b}.   $P\left(A \cap  B\right)=0,9$ & \textbf{c}.   $P_{A}\left(\overline{B}\right)=0,7$ & \textbf{d}.   $P\left(B\right)=0,5$
+          \\ \hline
+     \end{tabularx}
+     \item
+     Avec le même arbre, la probabilité de l'évènement $B$ est égale à :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="noborder" width="600"
+          \hline
+          \textbf{a}.   0,5 & \textbf{b}.   0,18 & \textbf{c}.   0,26 & \textbf{d}.   0,38
+          \\ \hline
+     \end{tabularx}
+     \item
+     On considère une fonction $f$ définie et continue sur l'intervalle [1 ; 15]. Son tableau de variation est indiqué ci-dessous.
+\begin{center}
+\begin{extern}%alt="tableau de variation" style="width:40rem"
+\psset{unit=.9cm} 
+\begin{pspicture}(12,3)
+\psset{linewidth=.75pt}
+\psframe(12,3) \psline(1.5,0)(1.5,3) \psline(0,2)(12,2)
+\rput(.75,2.5){$x$}\rput(2,2.5){$1$}\rput(3.5,2.5){$3$} \rput(5,2.5){$4$} \rput(8,2.5){$12$} \rput(11.5,2.5){$15$} 
+\rput(.75,1){$f(x)$} \rput(2,1.6){\rnode{A}{$3$}} \rput(5,.4){\rnode{B}{$-2$}} \rput(8,1.6){\rnode{C}{{$-1$}}} \rput(11.5,.4){\rnode{D}{$-3$}} 
+\psset{nodesep=5pt,arrows=->}
+\ncline{A}{B}\ncput*{0}  \ncline{B}{C}\ncline{C}{D}
+\end{pspicture}
+\end{extern}
+\end{center}
+
+     Soit $F$ une primitive de la fonction $f$ sur l'intervalle [1 ; 15]. On peut être certain que :
+     \begin{enumerate}
+          \item
+          La fonction $F$ est négative sur l'intervalle [3 ; 4].
+          \item
+          La fonction $F$ est positive sur l'intervalle [4 ; 12].
+          \item
+          La fonction $F$ est décroissante sur l'intervalle [4 ; 12].
+          \item
+     La fonction $F$ est décroissante sur l'intervalle [1 ; 3].\end{enumerate}
+     \item
+     Pour tout réel $x$ de l'intervalle $\left]0 ; +\infty \right[$,l'équation $\ln x+\ln \left(x+3\right)=3 \ln 2$ est équivalente à l'équation :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="noborder" width="600"
+          \hline
+          \textbf{a}.   $2x+3=6$ & \textbf{b}.   $2x+3=8$  & \textbf{c}.   $x^{2}+3x=6$  & \textbf{d}.   $x^{2}+3x=8$
+          \\ \hline
+     \end{tabularx}
+     \item
+     $g$ est la fonction définie sur l'intervalle $\left]0 ; +\infty \right[$ par $g\left(x\right)=\frac{5}{x}$.
+     \par
+     On note $C$ sa courbe représentative.
+     \par
+     L'aire, exprimée en unités d'aire, du domaine délimité par la courbe $C$, l'axe des abscisses, et les droites d'équations $x=2$ et $x=6$, est égale à :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{a}.   $5 \left(\ln 6-\ln 2\right)$ & \textbf{b}.   $\frac{1}{6-2}\int_{2}^{6}g\left(x\right)dx$  & \textbf{c}.   $5 \ln 6+5 \ln 2$  & \textbf{d}.   $g\left(6\right)-g\left(2\right)$
+          \\ \hline
+     \end{tabularx}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Réponse exacte : \textbf{c.}
+          \item
+          Réponse exacte : \textbf{c.}
+          \item
+          Réponse exacte : \textbf{c.}
+          \item
+          Réponse exacte : \textbf{d.}
+          \item
+          Réponse exacte : \textbf{a.}
+     \end{enumerate}
+}\end{corrige}
+\input{_footer}

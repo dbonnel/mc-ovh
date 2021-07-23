@@ -1,0 +1,113 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\medskip
+Dans une région, on s'intéresse à la cohabitation de deux espèces animales~: les campagnols et les
+renards, les renards étant les prédateurs des campagnols.
+\par
+Au 1$^{\text{er}}$ juillet 2012, on estime qu'il y a dans cette région approximativement deux millions de campagnols et cent-vingt renards.
+\par
+On note $u_n$ le nombre de campagnols et $v_n$ le nombre de renards au 1\up{er} juillet de l'année $2012+ n$.
+\bigskip
+\begin{center}\begin{h3}Partie A - Un modèle simple \end{h3}\end{center}
+\medskip
+On modélise l'évolution des populations par les relations suivantes~:
+\par
+\[\left\{\begin{array}{l}
+          u_{n+1} = 1,1u_n - 2~000v_n\\
+          v_{n+1}= 2 \times 10^{-5}u_n + 0,6v_n
+\end{array}\right.\]
+pour tout entier $n \geqslant 0$, avec $u_0 = 2~000~000$ et $v_0 = 120$.
+\medskip
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item On considère la matrice colonne $U_n = \begin{pmatrix}u_n\\v_n\end{pmatrix}$ pour tout entier $n \geqslant 0$.
+          \par
+          Déterminer la matrice $A$ telle que $U_{n+1} = A \times U_n$ pour tout entier $n$ et donner la matrice $U_0$.
+          \item Calculer le nombre de campagnols et de renards estimés grâce à ce modèle au 1\up{er} juillet
+          2018.
+     \end{enumerate}
+     \item Soit les matrices $P = \begin{pmatrix}20~000&5~000\\1&1\end{pmatrix}$, \:$D = \begin{pmatrix}1&0\\0&0,7\end{pmatrix}$ et $P^{- 1}  = \dfrac{1}{15~000}\begin{pmatrix}1& -5~000\\- 1&20~000\end{pmatrix}$.
+     \par
+     On admet que $P^{- 1}$ est la matrice inverse de la matrice $P$ et que $A = P \times D \times P^{- 1}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Montrer que pour tout entier naturel $n$,\: $U_n = P \times D^n \times P^{- 1} \times U_0$.
+          \item Donner sans justification l'expression de la matrice $D^n$ en fonction de $n$.
+          \item On admet que, pour tout entier naturel $n$~:
+          \par
+          \[\left\{\begin{array}{l}
+                    u_n = \dfrac{2,8 \times 10^7 + 2 \times 10^6 \times 0,7^n}{15}\\
+                    \\
+                    v_n =\dfrac{1~400 + 400 \times 0,7^n}{15}\\
+          \end{array}\right.\]
+          Décrire l'évolution des deux populations.
+     \end{enumerate}
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie B - Un modèle plus conforme à la réalité \end{h3}\end{center}
+\medskip
+Dans la réalité, on observe que si le nombre de renards a suffisamment baissé, alors le nombre de
+campagnols augmente à nouveau, ce qui n'est pas le cas avec le modèle précédent.
+\par
+On construit donc un autre modèle, plus précis, qui tient compte de ce type d'observations à l'aide des relations suivantes~:
+\par
+\[\left\{\begin{array}{l}
+          u_{n+1} = 1,1u_n - 0,001ru_n \times v_n\\
+          v_{n+1} = 2 \times 10^{-7} u_n \times v_n + 0,6v_n
+\end{array}\right.\]
+pour tout entier $n \geqslant 0$, avec $u_0 = 2~000~000$ et $v_0 = 120$.
+\medskip
+Le tableau ci-dessous présente ce nouveau modèle sur les $25$ premières années en donnant les
+effectifs des populations arrondis à l'unité~:
+\begin{center}
+     \begin{extern}%width="400"
+          \begin{tabularx}{0.7\linewidth}{|>{\columncolor[gray]{0.7}}c|*{3}{>{\centering \arraybackslash}X|}}\hline
+               \rowcolor[gray]{0.7}&A &B &C\\ \hline
+               1& \multicolumn{3}{c|}{Modèle de la \textbf{partie B}}\\ \hline
+               2& $n$ 	&$u_n$ 			&$v_n$\\ \hline
+               3&0		& 2~000~000 	&120\\ \hline
+               4&1		& 1~960~000 	&120\\ \hline
+               5&2		& 1~920~800 	&119\\ \hline
+               6&3		& 1~884~228 	&117\\ \hline
+               7&4		& 1~851~905 	&114\\ \hline
+               8&5		& 1~825~160 	&111\\ \hline
+               9&6		& 1~804~988 	&107\\ \hline
+               10&7	& 1~792~049 	&103\\ \hline
+               11&8	& 1~786~692 	&99\\ \hline
+               12&9	& 1~789~005 	&94\\ \hline
+               13&10	& 1~798~854 	&91\\ \hline
+               14&11	& 1~815~930 	&87\\ \hline
+               15&12	& 1~839~780 	&84\\ \hline
+               16&13	& 1~869~827 	&81\\ \hline
+               17&14	& 1~905~378 	&79\\ \hline
+               18&15	& 1~945~622 	&77\\ \hline
+               19&16	& 1~989~620 	&77\\ \hline
+               20&17	& 2~036~288 	&76\\ \hline
+               21&18	& 2~084~374 	&77\\ \hline
+               22&19	& 2~132~440 	&78\\ \hline
+               23&20	& 2~178~846 	&80\\ \hline
+               24&21	& 2~221~746 	&83\\ \hline
+               25&22	& 2~259~109 	&87\\ \hline
+               26&23	& 2~288~766 	&91\\ \hline
+               27&24	& 2~308~508 	&97\\ \hline
+          \end{tabularx}
+     \end{extern}
+\end{center}
+\medskip
+\begin{enumerate}
+     \item Quelles formules faut-il écrire dans les cellules B4 et C4 et recopier vers le bas pour remplir
+     les colonnes B et C~?
+     \item  Avec le deuxième modèle, à partir de quelle année observe-t-on le phénomène décrit (baisse
+     des renards et hausse des campagnols)~?
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie C \end{h3}\end{center}
+\medskip
+Dans cette partie on utilise le modèle de la partie B.
+\par
+Est-il possible de donner à $u_0$ et $v_0$ des valeurs afin que les deux populations restent stables d'une
+année sur l'autre, c'est-à-dire telles que pour tout entier naturel $n$ on ait $u_{n+1} = u_n$ et $v_{n+1} = v_n$~? (On parle alors d'état stable.)
+\par
+\par
+\input{_footer}

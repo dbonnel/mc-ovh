@@ -1,0 +1,94 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\smallbreak
+\textit{Commun à tous les candidats}
+\bigbreak
+Un publicitaire souhaite imprimer le logo ci-dessous sur un T-shirt~:
+\begin{center}
+     \begin{extern}%width="400" alt="Logo  Bac S Antilles-Guyane 2018"
+          \resizebox{8cm}{!}{
+               \psset{xunit=2.0cm,yunit=2.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-2.,-2.)(5.,1.)
+                    \pscustom[linewidth=0.8pt,fillcolor=lightgray!30,fillstyle=solid]{\psplot{-1.57}{4.6}{EXP(-x)*(-COS(x)+SIN(x)+1.0)}\lineto(4.6,0)\psplot{4.6}{-1.57}{-EXP(-x)*COS(x)}\lineto(-1.57,0)\closepath}
+                    \psplot[linewidth=1.2pt,plotpoints=200]{-1.57}{4.6}{EXP(-x)*(-COS(x)+SIN(x)+1.0)}
+                    \psplot[linewidth=1.2pt,plotpoints=200]{-1.57}{4.6}{-EXP(-x)*COS(x)}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+Il dessine ce logo à l'aide des courbes de deux fonctions $f$ et $g$ définies sur $\mathbb{R}$ par~:
+\[
+f(x)=\text{e}^{-x}(-\cos x+\sin x+1)\text{~~et~~}
+g(x)=-\text{e}^{x}\cos x.
+\]
+On admet que les fonctions $f$ et $g$ sont dérivables sur $\mathbb{R}$.
+\par
+\medbreak
+\TitreC{Partie A — Étude de la fonction $f$}
+\smallbreak
+\begin{enumerate}
+     \item Justifier que, pour tout $x\in\mathbb{R}$~:\[
+     -\text{e}^{-x}\leqslant f(x)\leqslant 3\text{e}^{-x}.\]
+     \item En déduire la limite de $f$ en $+\infty$.
+     \item Démontrer que, pour tout $x\in\mathbb{R}$, $f'(x)=\text{e}^{-x}(2\cos x-1)$ où $f'$ est la fonction dérivée de $f$.
+     \item Dans cette question, on étudie la fonction $f$ sur l'intervalle $[-\pi~;\pi]$.
+     \begin{enumerate}[label=\alph*.]
+          \item Déterminer le signe de $f'(x)$ pour $x$ appartenant à l'intervalle $[-\pi~;\pi]$.
+          \item En déduire les variations de $f$ sur $[-\pi~;\pi]$.
+     \end{enumerate}
+\end{enumerate}
+\medbreak
+\TitreC{Partie B — Aire du logo}
+\smallbreak
+\par
+\par
+On note $\mathscr{C}_f$ et $\mathscr{C}_g$ les représentations graphiques des fonctions $f$ et $g$ dans un repère orthonormé $(O~;~\overrightarrow{u},~\overrightarrow{v})$. L'unité graphique est de 2 centimètres. Ces deux courbes sont tracées en Annexe.
+\begin{enumerate}
+     \item Étudier la position relative de la courbe $\mathscr{C}_f$ par rapport à la courbe $\mathscr{C}_g$ sur $\mathbb{R}$.
+     \item Soit $H$ la fonction définie sur $\mathbb{R}$ par~:
+     \[
+     H(x)=\left(-\frac{\cos x}{2}-\frac{\sin x}{2}-1\right)\text{e}^{-x}.
+     \]
+     On admet que $H$ est une primitive de la fonction $x\mapsto (\sin x+1)\text{e}^{-x}$ sur $\mathbb{R}$.
+     \par
+     On note $\mathscr{D}$ le domaine délimité par la courbe $\mathscr{C}_f$, la courbe $\mathscr{C}_g$ est les droites d'équation $x=-\frac{\pi}{2}$ et $x=\frac{3\pi}{2}$.
+     \begin{enumerate}[label=\alph*.]
+          \item Hachurer le domaine $\mathscr{D}$ sur le graphique en annexe à rendre avec la copie.
+          \item Calculer, une unité d'aire, l'aire du domaine $\mathscr{D}$, puis en donner une valeur approchée à $10^{-2}$ près en cm$^2$.
+     \end{enumerate}
+\end{enumerate}
+\newpage
+\begin{center}
+     \bigbreak
+     \textbf{ANNEXE}
+     \par
+     \textit{À compléter et à remettre avec la copie}
+     \bigbreak
+ %    \vspace{5cm}
+          \begin{extern} %width="500" alt="Annexe Bac S Antilles-Guyane 2018"
+               \resizebox{10cm}{!}{%
+                    % -+-+-+ variables modifiables
+                      \def\fonction{2.71828^(-x)*(-cos( x)+sin( x)+1) }
+                  \def\g{-2.71828^(-x)*cos( x) }
+                    \def\xmin{-2.5}
+                    \def\xmax{5.5}
+                    \def\ymin{-2.2}
+                    \def\ymax{2.8}
+                    \def\xunit{2}  % unités en cm
+                    \def\yunit{2}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{18pt}{18pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                              \psgrid[gridcolor=mcgris, subgriddiv=1, gridlabels=0pt](-3,-3)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                          \psplot[plotpoints=2000,linecolor=red]{\xmin}{\xmax}{\g}
+                         \rput[tr](-0.1,-0.1){$O$}
+                         \rput[bl](1.5,0.5){$\color{blue} \mathcal{C}_f$}
+                         \rput[bl](1.5,-0.5){$\color{red} \mathcal{C}_g$}
+                    \end{pspicture*}
+               }
+          \end{extern}
+
+\end{center}
+\input{_footer}

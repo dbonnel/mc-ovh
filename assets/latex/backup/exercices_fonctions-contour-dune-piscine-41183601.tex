@@ -1,0 +1,194 @@
+\input{_header}
+\meta{url}{/exercices/fonctions-contour-dune-piscine/}
+\meta{pid}{3483}
+\meta{titre}{Fonctions - Contour d'une piscine}
+\meta{type}{exercices}
+%
+Pour les besoins d'un centre de loisirs, un architecte élabore les plans d'une future piscine carrelée.
+\par
+Le graphique ci-dessous présente le contour de cette piscine dans un repère orthonormé $(O,I,J)$ d'unité 1 mètre.
+
+\begin{center}
+\imgsvg{fonctions-contour-dune-piscine}{0.3}% alt="fonctions-contour-dune-piscine" style="width:50rem" 
+\end{center}
+\\
+$C_1$ est un demi-cercle de centre $O$ et de rayon $8$ ;
+\par
+$C_2$ est un demi-cercle de centre $P(12 ; 0)$ et de rayon $6$. Les courbes $F_1$ et $F_2$ relient ces deux demi-cercles.
+\par
+Le contour de la piscine est symétrique par rapport à l'axe des abscisses. On suppose, par ailleurs, que les tangentes à la courbe $F_1$ aux points $M(0;8)$ et $N(12;6)$ sont parallèles à l'axe des abscisses.
+\begin{h3}Partie 1\end{h3}
+\begin{enumerate}
+     \item
+     La courbe $F_1$ est la représentation graphique d'une fonction $f$ définie sur $[0;12]$.
+     \par
+     Quelles sont les valeurs de $f(0)$,  $f(12)$ ,  $f'(0)$,  $f'(12)$ ?
+     \item
+     $f$ est définie sur $[0;12]$ par $f(x)=ax^3+bx^2+cx+d$.
+     \par
+     Déduire de la question précédente un système de quatre équations à quatre inconnues vérifié par $(a;b;c;d)$.
+     \item
+     En déduire les valeurs de $a, b, c$ et $d$.
+\end{enumerate}
+\begin{h3}Partie 2\end{h3}
+Dans la suite du problème on suppose que $f$ est définie sur $[0;12]$ par $f(x)=\frac{1}{432}x^3-\frac{1}{24}x^2+8$.
+\begin{enumerate}
+     \item
+     Montrer que le milieu $I$ de $[MN]$ appartient à la courbe $F_1$
+     \item
+     Donner une équation de la tangente $(T)$  à la courbe $F_1$ au point $I$.
+\end{enumerate}
+\begin{h3}Partie 3\end{h3}
+\begin{enumerate}
+     \item
+     Dans le but de carreler le fond de la piscine, l'architecte cherche à estimer l'aire $\mathscr A$  de la surface située à l'intérieur de ce contour.
+     \par
+     On admet que l'aire de la surface délimitée par  la courbe $F_1$ et les segments $[OM], [OP], [PN]$ est égale à l'aire du trapèze $OMNP$.
+     \par
+     Calculer l'aire $\mathscr A$ en $\text{m}^2$ (on arrondira au $\text{m}^2$ près).
+     \item
+     La profondeur de la piscine sera constante et égale à $1,5\text{m}$.
+     \par
+     Quel sera, en $\text{m}^3$, le volume d'eau de la piscine ?
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie 1\end{h3}
+     \begin{enumerate}
+          \item
+          La courbe $F_1$ passe par le point $M(0;8)$ donc $f(0)=8$.
+          \par
+          La courbe $F_1$ passe par le point $N(12;6)$ donc $f(12)=6$.
+
+\cadre{rouge}{Rappel}{ % id=t 
+} % fin théorème@La tangente à $F_1$ au point d'abscisse $a$ est parallèle à l'axe des abscisses si et seulement si  $f ^{\prime}(a)=0$
+     La tangente à $F_1$ au point $M$ est parallèle à l'axe des abscisses donc $f ^{\prime}(0)=0$.
+     \par
+     La tangente à $F_1$ au point $N$ est parallèle à l'axe des abscisses donc $f ^{\prime}(12)=0$.
+     \item
+     $f(0)=a\times 0^3+b \times 0^2+c \times 0+d=d$
+     \par
+     Donc d'après la question précédente $d=8$.
+     \par
+     De même :
+     \par
+     $f(12)=a\times 12^3+b \times 12^2+c \times 12+d$$=1728a+144b+12c+d$
+     \par
+     Donc  $1728a+144b+12c+d=6$.
+     \par
+     $f ^{\prime}(x)=3ax^2+2bx+c$
+     \par
+     $f ^{\prime}(0)=3a \times 0^2+2b \times 0+c=c$
+     \par
+     Donc $c=0$.
+     \par
+     $f ^{\prime}(12)=3a \times 12^2+2b \times 12+c=432a+24b+c$
+     \par
+     Donc $432a+24b+c=0$.
+     \par
+     Le quadruplet $(a;b;c;d)$ est donc solution du système :
+     \par
+     $\begin{cases}  d=8 \\ 1728a+144b+12c+d=6 \\ c=0 \\   432a+24b+c=0 \end{cases}$
+     \item
+     Les première et troisième équations donnent $c=0$ et $d=8$.
+     \par
+     En remplaçant $c$ par $0$ et $d$ par $8$ dans les deux autres équations on obtient :
+     \par
+     $(S) \ \begin{cases} 1728a+144b+8=6 \\ 432a+24b=0  \end{cases}$
+     \par
+     Ce système équivaut à :
+     \par
+     $(S) \Leftrightarrow \ \begin{cases} 1728a+144b+8=6 \\ b=-18a  \end{cases}$~
+     \par
+     ~
+     \par
+     $(S) \Leftrightarrow \ \begin{cases} 1728a+144 \times (-18a)=-2 \\ b=-18a  \end{cases}$~
+     \par
+     ~
+     \par
+     $(S) \Leftrightarrow \ \begin{cases} -864a=-2 \\ b=-18a  \end{cases}$ ~
+     \par
+     ~
+     \par
+     $(S) \Leftrightarrow \ \begin{cases} a=\frac{2}{864} \\ \\ b=-18 \times \frac{2}{864}   \end{cases}$ ~
+     \par
+     ~
+     \par
+     $(S) \Leftrightarrow \ \begin{cases} a=\frac{1}{432} \\ \\ b=-\frac{1}{24}   \end{cases}$ ~
+     \par
+     ~
+     \par
+     Finalement $ a=\frac{1}{432},  b=-\frac{1}{24}, c=0  $ et $d=8$.
+     \par
+     Donc $f(x)=\frac{1}{432}x^3-\frac{1}{24}x^2+8$.
+\end{enumerate}
+\begin{h3}Partie 2\end{h3}
+\begin{enumerate}
+     \item
+     Les coordonnées du point $I$ sont :
+     \par
+     $x_I=\frac{x_M+x_N}{2}=\frac{0+12}{2}=6$
+     \par
+     $y_I=\frac{y_M+y_N}{2}=\frac{8+6}{2}=7$
+     <div class="note flr-40">
+     Le point $I$ appartient à la courbe $F_1$ si et seulement si $f(x_I)=y_I$
+}
+$f(6)=\frac{1}{432} \times 216-\frac{1}{24} \times 36+8$$=0,5-1,5+8=7$
+\par
+$f(x_I)=y_I$ donc le milieu $I$ de $[MN]$ appartient à la courbe $F_1$.
+\item
+L'équation réduite de la tangente à la courbe $F_1$ en $I$ est :
+\par
+$y=f ^{\prime}(6)(x-6)+f(6)$
+\par
+$f ^{\prime}(x)=\frac{3}{432}x^2-\frac{2}{24}x$$=\frac{x^2}{144}-\frac{x}{12}$
+\par
+~
+\par
+$f'(6)=\frac{36}{144}-\frac{6}{12}=-\frac{1}{4}$
+\par
+L'équation réduite de $(T)$ est donc :
+\par
+$y=-\frac{1}{4}(x-6)-7$
+\par
+~
+\par
+$y=-\frac{1}{4}x+\frac{17}{2}$
+\begin{center}
+\imgsvg{fonctions-contour-dune-piscine}{0.3}% alt="fonctions-contour-dune-piscine-2" style="width:50rem" 
+\end{center}   
+\end{enumerate}
+\begin{h3}Partie 3\end{h3}
+\begin{enumerate}
+     \item
+     On "découpe" l'aire $\mathscr A$ en quatre aires :
+     \begin{itemize}
+          \item
+          l'aire $\mathscr A_1$ du demi-disque de rayon $[OM]$
+          \item
+          l'aire $\mathscr A_2$ du demi-disque de rayon $[PN]$
+          \item
+          l'aire $\mathscr A_3$ du trapèze $OMNP$ et du trapèze symétrique par rapport à l'axe des abscisses.
+     \end{itemize}
+     $\mathscr A_1=\frac{1}{2}\pi OM^2=32\pi$
+     \par
+     $\mathscr A_2=\frac{1}{2}\pi PN^2=18\pi$
+     <div class="note flr-40">L'aire d'un trapèze de bases $b$ et $B$ et de hauteur $h$ est $\mathscr A=\frac{b+B}{2} \times  h$
+}
+$\mathscr A_3=\frac{8+6}{2} \times 12$
+\par
+$\phantom{\mathscr A_3}=7 \times 12$
+\par
+$\phantom{\mathscr A_3}=84$
+\par
+L'aire totale est donc :
+\par
+$\mathscr A=\mathscr A_1+\mathscr A_2+2 \times \mathscr A_3$
+\par
+$\phantom{\mathscr A}=50\pi+168 \approx 325 \text{m}^2$
+\item
+Le volume d'eau de la piscine est :
+\par
+$\mathscr V = 1,5 \times \mathscr A \approx 488 \text{m}^3$
+\end{enumerate}
+}
+\input{_footer}

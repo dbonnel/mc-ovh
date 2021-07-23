@@ -1,0 +1,66 @@
+\input{_header}
+\begin{h2}Exercice 1 (4 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+\emph{Cet exercice est un questionnaire à choix multiples. Pour chacune des questions suivantes, une seule des quatre propositions est exacte. Aucune justification n'est demandée. Une bonne réponse rapporte un point. Une mauvaise réponse, plusieurs réponses ou l'absence de réponse à une question ne rapportent ni n'enlèvent de point. Pour répondre, vous recopierez sur votre copie le numéro de la question et indiquerez la seule réponse choisie.}
+\bigskip
+\begin{enumerate}
+     \item Un pépiniériste cultive des bulbes de fleurs. La probabilité qu'un bulbe germe, c'est-à-dire qu'il donne naissance à une plante qui fleurit, est de $0,85$.
+     \par
+     Il prélève au hasard 20 bulbes du lot. La production est assez grande pour que l'on puisse assimiler ce prélèvement à un tirage avec remise de 20 bulbes.
+     \par
+     On peut affirmer que:
+     \par
+     \textbf{A.} \quad La probabilité qu'au maximum 15 bulbes germent est proche de $0,103$.\\
+     \textbf{B.} \quad La probabilité qu'au maximum 15 bulbes germent est proche de $0,067$.\\
+     \textbf{C.} \quad La probabilité qu'au minimum 15 bulbes germent est proche de $0,830$.\\
+     \textbf{D.} \quad La probabilité qu'au minimum 15 bulbes germent est proche de $0,933$.\\
+     \item On considère une fonction $f$ définie sur $[0\,;\,8]$ dont $\mathscr{C}_f$ est la courbe représentative dessinée ci-dessous:
+     \begin{center}
+          \begin{extern}
+               \psset{unit=1cm}
+               \def\xmin {-1}   \def\xmax {9}
+               \def\ymin {-1}   \def\ymax {6}
+               \begin{pspicture*}(\xmin,\ymin)(\xmax,\ymax)
+                    \psgrid[subgriddiv=1,  gridlabels=0, gridcolor=lightgray]
+                    \psaxes[arrowsize=3pt 3, ticksize=-2pt 2pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)[$x$,-110][$y$,200]
+                    \def\f{x x neg 10 add mul 16 add 8 div}                           % définition de la fonction
+                    \psplot[plotpoints=2000,linecolor=red,linewidth=0.75pt]{0}{8}{\f}
+                    \uput[ul](1,3){\color{red} $\mathcal{C}_f$}
+                    \uput[dl](0,0){$0$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \begin{tabularx}{0.9\linewidth}{|X|X|} %class="noborder cel50 mw400"
+               \hline
+               \textbf{A.}~~$8 \leqslant \displaystyle\int_2^4 f(x) \text{d}x \leqslant 9$ \rule[-15pt]{0pt}{0pt} & \textbf{B.}~~$9 \leqslant \displaystyle\int_2^4 f(x) \text{d}x \leqslant 10$\\
+               \hline
+               \textbf{C.}~~$\displaystyle\int_2^4 f(x) \text{d}x=f(4)-f(2)$ \rule[-15pt]{0pt}{0pt} &    \textbf{D.}~~$\displaystyle\int_2^4 f(x) \text{d}x = 9$\\
+               \hline
+          \end{tabularx}
+     \end{center}
+     \par
+     \item On considère la fonction $g$ définie sur $]0\,;\,+\infty[$ par $g(x)=\ln(x)$.
+     \par
+     Une primitive de $g$ sur $]0\,;\,+\infty[$ est la fonction $G$ définie par:
+     \begin{center}
+          \begin{tabularx}{0.9\linewidth}{|X|X|} %class="noborder cel50 mw400"
+               \hline
+               \textbf{A.}~~$G(x)=\ln(x)$ & \textbf{B.}~~$G(x)=x \ln(x)$\\
+               \hline
+               \textbf{C.}~~$G(x)= x \ln(x) - x$ & \textbf{D.}~~$G(x)= \dfrac{1}{x}$ \rule[-10pt]{0pt}{0pt}\\
+               \hline
+          \end{tabularx}
+     \end{center}
+     \item L'ensemble des solutions de l'inéquation $\ln(x)>0$ est:
+     \begin{center}
+          \begin{tabularx}{0.9\linewidth}{|X|X|}\hline %class="noborder cel50"
+               \textbf{A.}~~$]0\,;\,+\infty[$ & \textbf{B.}~~$]0\,;\,1[$\\
+               \hline
+               \textbf{C.}~~$]1\,;\,+\infty[$ & \textbf{D.}~~$]\text{e}\,;\,+\infty[$ \\
+               \hline
+          \end{tabularx}
+     \end{center}
+\end{enumerate}
+\input{_footer}

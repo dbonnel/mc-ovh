@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="715" height="258" viewBox="0 0 715 258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+
+.s2_1{
+font-size: 13.75px;
+font-family: TimesNewRomanPSMT_11;
+fill: #000000;
+}
+.s1_1{
+font-size: 21.45px;
+font-family: TimesNewRomanPSMT_11;
+fill: #000000;
+}
+.s3_1{
+font-size: 21.45px;
+font-family: SymbolMT_y;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,258
+L715,258
+L715,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="13" 
+y="23" 
+dx="0,0,0.1,-0.1,-0.1,0.1,0.1,-0.2" 
+class="s1_1"
+>Posons u</text>
+
+<text 
+x="90" 
+y="26" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="102" 
+y="23" 
+dx="0,0,-0.2" 
+class="s1_1"
+>= 5</text>
+
+<text 
+x="130" 
+y="16" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="143" 
+y="23" 
+dx="0,0,-0.2,0.1,0.1,-0.2,-0.2,0,0.1,-0.1" 
+class="s1_1"
+>+ 4n + 15 </text>
+
+<text 
+x="13" 
+y="49" 
+dx="0,-0.1,0.1,0.1,-0.2,0.1,0" 
+class="s1_1"
+>Alors u</text>
+
+<text 
+x="77" 
+y="52" 
+dx="0" 
+class="s2_1"
+>0</text>
+
+<text 
+x="89" 
+y="49" 
+dx="0,0,0,-0.1,0.1,0,-0.2,0.1,0" 
+class="s1_1"
+>= 16 et u</text>
+
+<text 
+x="165" 
+y="52" 
+dx="0" 
+class="s2_1"
+>0</text>
+
+<text 
+x="177" 
+y="49" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="194" 
+y="49" 
+dx="0,0.1,0,0,0.1,-0.2" 
+class="s1_1"
+>0 [8] </text>
+
+<text 
+x="13" 
+y="76" 
+dx="0,-0.1,0.2,-0.4,0.1,0.1,0.1,-0.2,-0.1,0.1,0.1,-0.2,0.1,-0.1,0,0,-0.1,0.1,0" 
+class="s1_1"
+>Démontrons que si u</text>
+
+<text 
+x="191" 
+y="78" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="203" 
+y="76" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="220" 
+y="76" 
+dx="0,0.1,0,0,0.1,-0.2,0,0,0.1,0.1,-0.2,0.1,0,-0.2,0.1,0,0,-0.1,0.1,-0.2,0.1,-0.2" 
+class="s1_1"
+>0 [8] est vrai alors u</text>
+
+<text 
+x="392" 
+y="78" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="419" 
+y="76" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="436" 
+y="76" 
+dx="0,0.1,0,0,0.1,-0.2,0,0,-0.1,0.1,0,0,-0.1,0,0.1,-0.2,-0.2,0,0.1,0.1,0,0.1,-0.2,0,0.1,-0.2" 
+class="s1_1"
+>0 [8] est également vrai. </text>
+
+<text 
+x="13" 
+y="100" 
+dx="0" 
+class="s1_1"
+>u</text>
+
+<text 
+x="24" 
+y="103" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="51" 
+y="100" 
+dx="0,0,-0.2" 
+class="s1_1"
+>= 5</text>
+
+<text 
+x="79" 
+y="93" 
+dx="0,0.1,-0.2" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="106" 
+y="100" 
+dx="0,0,0,0.1,-0.2,0.1,-0.2,0.1,0,0,-0.2,0,0.1,0.1,0,0,-0.2,0.1,0" 
+class="s1_1"
+>+ 4(n+1) + 15 = 5.5</text>
+
+<text 
+x="275" 
+y="93" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="288" 
+y="100" 
+dx="0,0,0,-0.1,0.1,0,0,0,0.1,0,0,-0.2,0.1,0.1,0,0,-0.2,0.1,0" 
+class="s1_1"
+>+ 4n + 4 + 15 = 5.5</text>
+
+<text 
+x="454" 
+y="93" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="466" 
+y="100" 
+dx="0,0,0" 
+class="s1_1"
+>- 5</text>
+
+<text 
+x="489" 
+y="93" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="501" 
+y="100" 
+dx="0,0,0,0.1,0,0,0,-0.2" 
+class="s1_1"
+>+ 4 + (5</text>
+
+<text 
+x="570" 
+y="93" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="582" 
+y="100" 
+dx="0,0,0,-0.1,0.1,0,0,0,-0.1,0.1,-0.2" 
+class="s1_1"
+>+ 4n + 15) </text>
+
+<text 
+x="13" 
+y="125" 
+dx="0" 
+class="s1_1"
+>u</text>
+
+<text 
+x="24" 
+y="127" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="51" 
+y="125" 
+dx="0,0,-0.2,0.1,0" 
+class="s1_1"
+>= 4.5</text>
+
+<text 
+x="95" 
+y="117" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="107" 
+y="125" 
+dx="0,0,0,0.1,0,0,-0.2" 
+class="s1_1"
+>+ 4 + u</text>
+
+<text 
+x="169" 
+y="127" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="181" 
+y="125" 
+dx="0,0,-0.2,0.1,0" 
+class="s1_1"
+>= 4(5</text>
+
+<text 
+x="227" 
+y="117" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="239" 
+y="125" 
+dx="0,0,0,-0.1,0,0,0,0" 
+class="s1_1"
+>+ 1) + u</text>
+
+<text 
+x="308" 
+y="127" 
+dx="0,-0.1" 
+class="s2_1"
+>n </text>
+
+<text 
+x="13" 
+y="151" 
+dx="0,0,0.1,0" 
+class="s1_1"
+>Si u</text>
+
+<text 
+x="47" 
+y="153" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="60" 
+y="151" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="77" 
+y="151" 
+dx="0,0.1,0,-0.2,0.1,-0.2,0,0,0.1,0.1,-0.2,0.1,0" 
+class="s1_1"
+>0 [8] alors u</text>
+
+<text 
+x="181" 
+y="153" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="207" 
+y="151" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="225" 
+y="151" 
+dx="0,0.1,-0.2" 
+class="s1_1"
+>4(5</text>
+
+<text 
+x="253" 
+y="143" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="265" 
+y="151" 
+dx="0,0,-0.2,0.1,0,0,0,0.1,-0.3" 
+class="s1_1"
+>+ 1) [8] </text>
+
+<text 
+x="13" 
+y="177" 
+dx="0,0.1,0,0,-0.1,0.1,0,0.1,-0.4,0.1,0,0.1,0,-0.2,0.1,-0.1,0.1,0,-0.2" 
+class="s1_1"
+>5 est impair donc 5</text>
+
+<text 
+x="177" 
+y="170" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="190" 
+y="177" 
+dx="0,-0.2,0.1,0.1,-0.2,0.1,-0.4,0.1,0,0.1,0,0,0,0.1,-0.2" 
+class="s1_1"
+>est impair et 5</text>
+
+<text 
+x="311" 
+y="170" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="324" 
+y="177" 
+dx="0,0,-0.2,0.1,0,0,-0.1,0.1,-0.2,0.1,0,-0.1,0,0,0,0.1,-0.2,0.1,-0.2" 
+class="s1_1"
+>+ 1 est pair et 4(5</text>
+
+<text 
+x="474" 
+y="170" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="486" 
+y="177" 
+dx="0,0,-0.2,0.1,0" 
+class="s1_1"
+>+ 1) </text>
+
+<text 
+x="527" 
+y="177" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="544" 
+y="177" 
+dx="0,0.1,0,-0.2,0.1,-0.2" 
+class="s1_1"
+>0 [8] </text>
+
+<text 
+x="13" 
+y="203" 
+dx="0,-0.1,0.1,0.1,0,-0.2" 
+class="s1_1"
+>Donc u</text>
+
+<text 
+x="76" 
+y="206" 
+dx="0,0.1,-0.1" 
+class="s2_1"
+>n+1</text>
+
+<text 
+x="103" 
+y="203" 
+dx="0" 
+class="s3_1"
+>≡</text>
+
+<text 
+x="120" 
+y="203" 
+dx="0,0.1,0,0,0.1,-0.2" 
+class="s1_1"
+>0 [8] </text>
+
+<text 
+x="13" 
+y="230" 
+dx="0,-0.1,0.1,0,0,0.1,-0.2,0.1,0,-0.1,-0.1,0.1,0.1,-0.2,0.1,0,0,0,0,-0.2,0,-0.1,0,0,0,0.1,-0.2,0,0,-0.1,0.1,0,0,-0.1,-0.1,0.1,0,0,-0.1,-0.1,0.1,0.1,-0.2,0.1" 
+class="s1_1"
+>On en déduit par récurrence que pour tout n </text>
+
+<text 
+x="393" 
+y="230" 
+dx="0" 
+class="s3_1"
+>∈</text>
+
+<text 
+x="414" 
+y="230" 
+dx="0,-0.1,0,0" 
+class="s1_1"
+>N, u</text>
+
+<text 
+x="450" 
+y="232" 
+dx="0" 
+class="s2_1"
+>n</text>
+
+<text 
+x="463" 
+y="230" 
+dx="0,0,-0.1,0.1,0,-0.1,-0.1,0.1,-0.1,0.1,-0.1,-0.1,-0.1,0,0,0.1,0,0,-0.2,0.1,0" 
+class="s1_1"
+>est divisible par 8. </text>
+
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: SymbolMT_y;
+	src: url("fonts/SymbolMT_y.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPSMT_11;
+	src: url("fonts/TimesNewRomanPSMT_11.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

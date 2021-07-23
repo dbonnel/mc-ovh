@@ -1,0 +1,138 @@
+\input{_header}
+\meta{url}{/exercices/qcm-general-bac-s-polynesie-francaise-2008/}
+\meta{pid}{2287}
+\meta{titre}{QCM général - Bac S Polynésie Francaise 2008}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3\end{h2}
+\textit{5 points-Candidats n'ayant pas suivi l'enseignement de spécialité}
+Pour chacune des propositions suivantes, indiquer si elle est vraie ou fausse et donner une justification de la réponse choisie.
+\par
+Une réponse non justifiée ne rapporte aucun point. Toutefois, toute trace de recherche, même incomplète, ou d'initiative, même non fructueuse, sera prise en compte dans l'évaluation.
+\begin{enumerate}
+     \item
+     Soit $f$ la fonction solution sur $\mathbb{R}$ de l'équation différentielle $y^{\prime}=-y+2$ telle que $f\left(\ln 2\right)=1$
+\par
+     \textbf{Proposition 1} : « La courbe représentative de $f$ admet au point d'abscisse 0, une tangente d'équation $y=2x$ ».
+     \item
+     Soient $f$ et g deux fonctions définies sur un intervalle [A,$+\infty $[ où A est un réel strictement positif.
+\par
+     \textbf{Proposition 2} : « Si $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=0$ alors $\lim\limits_{x\rightarrow +\infty }f\left(x\right)g\left(x\right)=0$ ».
+     \item
+     On admet qu'un bloc de glace fond en perdant 10\% de sa masse par minute.
+     \par
+     Sa masse initiale est de 10 kg.
+\par
+     \textbf{Proposition 3} : « A partir de la soixante-dixième minute, sa masse devient inférieure à 1 g ».
+     \item
+     Soient A et B deux évènements d'un même univers $\Omega $ muni d'une probabilité p.
+\par
+     \textbf{Proposition 4} : « Si A et B sont indépendants et si p(A)=p(B)=0,4 alors p(A$\cup $B)=0,8 ».
+     \item
+     Une usine fabrique des pièces. Une étude statistique a montré que 2\% de la production est défectueuse. Chaque pièce est soumise à un contrôle de fabrication. Ce contrôle refuse 99\% des pièces défectueuses et accepte 97\% des pièces non défectueuses.
+     \par
+     On choisit au hasard une pièce avant son passage au contrôle.
+\par
+     \textbf{Proposition 5 }: « La probabilité que la pièce soit acceptée est égale à 0,9508 ».
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \textbf{Proposition 1} : « La courbe représentative de $ > f$ admet au point d'abscisse 0, une tangente d'équation $y=2x$ ».
+          \par
+          Réponse exacte : VRAI
+          \par
+          $f\left(x\right)$ est de la forme $f\left(x\right)=Ce^{-x}+2$
+          \par
+          La condition $f\left(\ln2\right)=1$ donne $\frac{1}{2}C+2=1$ soit $C=-2$
+          \par
+          Donc $f\left(x\right)=-2e^{-x}+2$.
+          \par
+          $f\left(0\right)=-2+2=0$ et $f^{\prime}\left(0\right)=-f\left(0\right)+2=2$
+          \par
+          L'équation de la tangente au point d'abscisse 0 est donc
+          \par
+          $y=2\left(x-0\right)+0$
+          \par
+          $y=2x$
+          \item
+          \textbf{Proposition 2} : « Si $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=0$ alors $\lim\limits_{x\rightarrow +\infty }f\left(x\right)g\left(x\right)=0$ ».
+          \par
+          Réponse exacte : FAUX
+          \par
+          On prend par exemple $f\left(x\right)=\frac{1}{x}$ et $g\left(x\right)=x$ sur $\left[1;+\infty \right[$
+          \par
+          $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=0$ mais $\lim\limits_{x\rightarrow +\infty }f\left(x\right)g\left(x\right)=1$
+          \item
+          \textbf{Proposition 3} : « A partir de la soixante-dixième minute, sa masse devient inférieure à 1 g ».
+          \par
+          Réponse exacte : FAUX
+          \par
+          Le coefficient multiplicateur correspondant à une diminution de 10\% est $C=1-\frac{10}{100}=0,9$
+          \par
+          La masse à la soixante-dixième minute est :
+          \par
+          $m=10 000\times 0,9^{70}\approx 6,3$
+          \item
+          \textbf{Proposition 4} : « Si A et B sont indépendants et si p(A)=p(B)=0,4 alors p(A$\cup $B)=0,8 ».
+          \par
+          Réponse exacte : FAUX
+          \par
+          Comme A et B sont indépendants p(A$\cap $B)=p(A)$\times $p(B)=0,16.
+          \par
+          p(A$\cap $B=p(A)+p(B)-p(A$\cap $B)=0,64
+          \item
+          \textbf{Proposition 5 }: « La probabilité que la pièce soit acceptée est égale à 0,9508 ».
+          \par
+          Réponse exacte : VRAI
+          \par
+          Notons :
+          \par
+          A l'évènement : "la pièce est accepté";
+          \par
+          D l'évènement : "la pièce est défectueuse".
+          \par
+          Les données de l'énoncé permettent de tracer l'arbre suivant:
+%##
+% type=arbre; width=25; wcell=3.5; hcell=1.5
+%--
+% >D:0,02
+% >>A:0,01
+% >>\overline{A}:0,99
+% >\overline{D}:0,98
+% >>A:0,97
+% >>\overline{A}:0,03
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-1.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-0.5*\height}) {$D$};
+     \draw (r) -- (ra) node [poids] {$0,02$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$A$};
+     \draw (ra) -- (raa) node [poids] {$0,01$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$\overline{A}$};
+     \draw (ra) -- (rab) node [poids] {$0,99$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$\overline{D}$};
+     \draw (r) -- (rb) node [poids] {$0,98$};
+    \node[noeud] (rba) at ({3*\width},{-2*\height}) {$A$};
+     \draw (rb) -- (rba) node [poids] {$0,97$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{A}$};
+     \draw (rb) -- (rbb) node [poids] {$0,03$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+$p\left(A\right)=p\left(A \cap D\right)+p\left(A \cap \overline{D}\right)=p_{D}\left(A\right)\times p\left(D\right)+p_{\overline{D}}\left(A\right)\times p\left(\overline{D}\right)$
+          \par
+          $p\left(A\right)=0,01\times 0,02+0,97\times 0,98=95,08$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,59 @@
+\input{_header}
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas choisi la spécialité \og mathématiques \fg{}}
+\medskip
+Des algues prolifèrent dans un étang. Pour s'en débarrasser, le propriétaire installe
+un système de filtration.
+\par
+En journée, la masse d'algues augmente de 2\,\%, puis à la nuit tombée, le propriétaire
+actionne pendant une heure le système de filtration qui retire 1$00$~kg d'algues. On
+admet que les algues ne prolifèrent pas la nuit.
+\par
+Le propriétaire estime que la masse d'algues dans l'étang au matin de l'installation
+du système de filtration est de 2~000~kg.
+\par
+On modélise par $a_n$ la masse d'algues dans l'étang, exprimée en kg, après utilisation
+du système de filtration pendant $n$ jours~; ainsi, $a_0 = 2~000$. On admet que cette
+modélisation demeure valable tant que $a_n$ reste positif.
+\bigskip
+\begin{enumerate}
+     \item Vérifier par le calcul que la masse $a_2$ d'algues après deux jours de
+     fonctionnement du système de filtration est de 1~878,8 kg.
+     \item On affirme que pour tout entier naturel $n$,\: $a_{n+1} = 1,02a_n - 100$.
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier à l'aide de l'énoncé la relation précédente.
+          \item  On considère la suite $\left(b_n\right)$ définie pour tout nombre entier naturel $n$ par~:
+         \[b_n = a_n - 5~000.\]
+          Démontrer que la suite $\left(b_n\right)$ est géométrique. Préciser son premier terme
+          $b_0$ et sa raison.
+          \item  En déduire pour tout entier naturel $n$, une expression de $b_n$ en fonction de
+          $n$, puis montrer que $a_n = 5~000 - 3~000 \times 1,02^n$.
+          \item  En déterminant la limite de la suite $\left(a_n\right)$, justifier que les algues finissent
+          par disparaître.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Recopier et compléter l'algorithme suivant afin qu'il détermine le nombre
+          de jours nécessaire à la disparition des algues.
+          \begin{center}
+               \begin{extern}%width="180" alt="Algorithme Bac ES/L Centres étrangers 2018"
+                    \begin{tabularx}{0.25\linewidth}{|X|}\hline
+                         $N \gets 0$\\
+                         $A \gets 2~000$\\
+                         Tant que \ldots\\
+                         \hspace{1cm}$A \gets \ldots$\\
+                         \hspace{1cm}$N \gets N + 1$\\
+                         Fin Tant que\\
+                         Afficher \ldots\\ \hline
+                    \end{tabularx}
+                    \end{extern}
+               \end{center}
+          \item Quel est le résultat renvoyé par l'algorithme~?
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Résoudre par le calcul l'inéquation $5~000 - 3~000 \times 1,02^n \leqslant 0$.
+          \item Quel résultat précédemment obtenu retrouve-t-on~?
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

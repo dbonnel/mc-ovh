@@ -1,0 +1,271 @@
+\input{_header}
+\meta{url}{/cours/produit-scalaire/}
+\meta{pid}{352}
+\meta{titre}{Produit scalaire}
+\meta{type}{cours}
+\begin{h2}1. Produit scalaire de deux vecteurs\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soient $\vec{u}$ et $\vec{v}$ deux vecteurs non nuls du plan.
+     \par
+     On appelle \textbf{produit scalaire} de $\vec{u}$ et $\vec{v}$ le \textbf{nombre réel} noté $\vec{u}.\vec{v}$ défini par :
+     \begin{center}$\vec{u}.\vec{v}=||\vec{u}||\times ||\vec{v}||\times \cos\left(\vec{u},\vec{v}\right)$\end{center}
+}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item \textbf{Attention : } le produit scalaire est un nombre réel et non un vecteur !
+          \item On rappelle que $||\overrightarrow{AB}||$ (norme du vecteur $\overrightarrow{AB}$) désigne la longueur du segment $AB$.
+          \item Si l'un des vecteurs $\vec{u}$ ou $\vec{v}$ est nul, $\cos\left(\vec{u},\vec{v}\right)$ n'est pas défini; on considèrera alors que le produit scalaire $\vec{u}.\vec{v}$ vaut $0$
+          \item Le cosinus d'un angle étant égal au cosinus de l'angle opposé : $\cos\left(\vec{u}, \vec{v}\right)=\cos\left(\vec{v}, \vec{u}\right)$. Par conséquent $\vec{u}.\vec{v}=\vec{v}.\vec{u}$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e10"
+     \begin{center}
+          \begin{extern}%width="200" alt="Triangle équilatéral"
+               \newrgbcolor{mvert}{0. 0.4 0.}
+               \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt}
+               \begin{pspicture*}(-1.,-0.2)(5.,4.)
+                    \psline[linewidth=1.pt](0.,0.)(2.,3.464)
+                    \psline[linewidth=1.pt](2.,3.464)(4.,0.)
+                    \psline[linewidth=1.pt](4.,0.)(0.,0.)
+                    \parametricplot[arrows=->,linecolor=mvert]{0.0}{1.}{0.6*cos(t)+0.|0.6*sin(t)+0.}
+                    \psdots[dotsize=2pt 0,dotstyle=*](0.,0.)
+                    \rput[bl](-0.44,-0.08){$A$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](4.,0.)
+                    \rput[bl](4.12,-0.08){$B$}
+                    \psdots[dotsize=2pt 0,dotstyle=*](2.,3.464)
+                    \rput[bl](1.82,3.7){$C$}
+                    \rput[bl](0.58,0.18){\mvert{$\dfrac{\pi}{3}$}}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     $ABC$ est un triangle équilatéral dont le côté mesure $1$ unité.
+     \par
+     $\overrightarrow{AB}.\overrightarrow{AC}=AB\times AC\times \cos\left(\overrightarrow{AB}, \overrightarrow{AC}\right)=1\times 1\times \cos\frac{\pi }{3}=\frac{1}{2}$
+}
+\cadre{vert}{Propriété}{% id="p20"
+     Deux vecteurs $\vec{u}$ et $\vec{v}$ sont orthogonaux si et seulement si : $\vec{u}.\vec{v}=0$
+}
+\bloc{cyan}{Démonstration}{% id="r10"
+     Si l'un des vecteurs est nul le produit scalaire est nul et la propriété est vraie puisque, par convention, le vecteur nul est orthogonal à tout vecteur du plan.
+     \par
+     Si les deux vecteurs sont non nuls, leurs normes sont non nulles donc :
+     \par
+     $\vec{u}.\vec{v}=0 \Leftrightarrow ||\vec{u}||\times ||\vec{v}||\times \cos\left(\vec{u},\vec{v}\right)=0 \Leftrightarrow \cos\left(\vec{u},\vec{v}\right)=0 \Leftrightarrow \vec{u}$ et $\vec{v}$ sont orthogonaux
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Pour tous vecteurs $\vec{u}, \vec{v}, \vec{w}$ et tout réel $k$ :
+     \begin{itemize}
+          \item $\left(k\vec{u}\right).\vec{v}=k \left(\vec{u}.\vec{v}\right)$
+          \item $\vec{u}.\left(\vec{v}+\vec{w}\right)=\vec{u}.\vec{v}+\vec{u}.\vec{w}$
+     \end{itemize}
+}
+\cadre{bleu}{Définition et propriété}{% id="d30"
+     Soit $\vec{u}$ un vecteur du plan. Le \textbf{carré scalaire} de $\vec{u}$ est le réel positif ou nul :
+     \par
+     $\vec{u}^{2}=\vec{u}.\vec{u}=||\vec{u}||^{2}$
+}
+\bloc{cyan}{Démonstration}{% id="m30"
+     Le cosinus d'un angle nul vaut $1$ donc $\cos\left(\vec{u}, \vec{u}\right)=1$. Par conséquent :
+     \par
+     $\vec{u}.\vec{u}=||\vec{u}||\times ||\vec{u}||\times \cos\left(\vec{u},\vec{u}\right)=||\vec{u}||^{2}$
+}
+\cadre{rouge}{Théorème}{% id="t40"
+     Pour tous vecteurs $\vec{u}$ et $\vec{v}$ :
+     \begin{center}$\vec{u}.\vec{v}=\frac{1}{2} \left(||\vec{u}+\vec{v}||^{2}-||\vec{u}||^{2}-||\vec{v}||^{2}\right)$\end{center}
+}
+\bloc{cyan}{Démonstration}{% id="m40"
+     $||\vec{u}+\vec{v}||^{2}=\left(\vec{u}+\vec{v}\right)^{2}=\vec{u}^{2}+2\left(\vec{u}.\vec{v}\right)+\vec{v}^{2}=||\vec{u}||^{2}+2\left(\vec{u}.\vec{v}\right)+||\vec{v}||^{2}$
+     \par
+     Par conséquent :
+     \par
+     $||\vec{u}+\vec{v}||^{2}-||\vec{u}||^{2}-||\vec{v}||^{2}=2\left(\vec{u}.\vec{v}\right)$
+     \par
+     et l'on obtient l'égalité souhaitée en divisant chaque membre par $2$.
+}
+\bloc{cyan}{Remarque}{ % id=r40
+     De la même manière, en développant  $(\vec{u}-\vec{v})^{2}$ on obtient~:
+     \newpar
+     \begin{center}$\vec{u}.\vec{v}=\frac{1}{2} \left(||\vec{u}||^{2}+||\vec{v}||^{2}  - ||\vec{u}-\vec{v}||^{2}\right)$\end{center}
+}% fin remarque
+\bloc{orange}{Exemple}{% id="e40"
+     \begin{center}
+          \begin{extern}%width="300" alt="Triangle équilatéral"
+               \newrgbcolor{mvert}{0. 0.4 0.}
+               \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt}
+               \begin{pspicture*}(-1.,-1.5)(8.,3.)
+                    \psline[linewidth=1.pt](0.,0.)(4,-1)
+                    \psline[linewidth=1.pt](4,-1)(7,1)
+                    \psline[linewidth=1.pt](7,1)(3,2)
+                    \psline[linewidth=1.pt](3,2)(0.,0.)
+                    \psline[linewidth=1.pt](3,2)(4,-1)
+                    \rput[l](-0.5,0){$B$}\rput[l](4,-1.3){$A$}
+                    \rput[l](3,2.3){$C$}\rput[l](7.2,1){$D$}
+                    \rput[b](2,-0.4){$6$}\rput[l](3.7,0.5){$4$}\rput[l](1.25,1.2){$5$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     $ABCD$ est un parallélogramme tel que $AB=6$, $AC=4$ et $BC=5$.\\
+     On souhaite calculer $\overrightarrow{AB}.\overrightarrow{AD}$.
+     \par
+     $\overrightarrow{AB}.\overrightarrow{AD}=\frac{1}{2}\left(||\overrightarrow{AB}+\overrightarrow{AD}||^{2}-||\overrightarrow{AB}||^{2}-||\overrightarrow{AD}||^{2}\right)$
+     \par
+     Or $\overrightarrow{AB}+\overrightarrow{AD}=\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$ d'après la relation de Chasles. Par conséquent :
+     \par
+     $\overrightarrow{AB}.\overrightarrow{AD}=\frac{1}{2}\left(||\overrightarrow{AC}||^{2}-||\overrightarrow{AB}||^{2}-||\overrightarrow{AD}||^{2}\right)$\\
+     $\phantom{{AB}.{AD}}=\frac{1}{2}\left(AC^{2}-AB^{2}-AD^{2}\right)$\\
+     $\phantom{{AB}.{AD}}=\frac{1}{2}\left(16-36-25\right)=-\frac{45}{2}$
+}
+\cadre{rouge}{Théorème}{% id="t50"
+     Soient $A, B, C$ trois points du plan et $H$ la projection orthogonale de $C$ sur la droite $\left(AB\right)$
+     \par
+     Alors :
+     \begin{itemize}
+          \item $\overrightarrow{AB}.\overrightarrow{AC}=AB\times AH   $ si l'angle $\widehat{BAC}$ est aigu
+          \item $\overrightarrow{AB}.\overrightarrow{AC}=-AB\times AH   $ si l'angle $\widehat{BAC}$ est obtus
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="300" alt="Produit scalaire et projection orthogonale"
+          \newrgbcolor{mvert}{0. 0.4 0.}
+          \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt}
+          \begin{pspicture*}(-1.,-0.5)(8.,4.)
+               \psline[linecolor=blue]{->}(0.,0.)(7,1)
+               \psline[linecolor=blue]{->}(0,0)(2,3)
+               \psline[linecolor=lightgray](2,3)(2.36,0.345)
+               \psline[linecolor=lightgray](2.48,0.505)(2.34,0.485)
+               \psline[linecolor=lightgray](2.5,0.365)(2.48,0.505)
+               \psline[linecolor=red](0,0)(2.36,0.345)
+               \rput[l](-0.5,0){\blue $A$}\rput[l](7.1,1){\blue $B$}\rput[l](2.1,3.2){\blue $C$}
+               \rput[l](2.36,0.12){\red $H$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Ici : $\overrightarrow{AB}.\overrightarrow{AC}=AB\times AH$ }
+\end{center}
+\bloc{orange}{Exemple}{% id="e50"
+     \begin{center}
+          \begin{extern}%width="160" alt="Produit scalaire et projection orthogonale"
+               \newrgbcolor{mvert}{0. 0.4 0.}
+               \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1pt}
+               \begin{pspicture*}(-0.5,-0.5)(3.5,2.5)
+                    \psgrid[griddots=0, subgriddiv=0, gridlabels=0pt,gridcolor=lightgray](0,0)(3.,2.)
+                    \psline[linecolor=blue]{->}(0.,0.)(3,0)
+                    \psline[linecolor=blue]{->}(0,0)(2,2)
+                    \rput[l](-0.4,0){\blue $A$}\rput[r](3.3,0){\blue $B$}\rput[l](2.1,2.3){\blue $C$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     Sur la figure ci-dessus où l'unité est le carreau, le point $C$ se projette orthogonalement sur la droite $\left(AB\right)$ en un point $H$ (non représenté) tel que $AH=2$.
+     \par
+     Par conséquent, l'angle $\widehat{BAC}$ étant aigu :
+     \par
+     $\overrightarrow{AB}.\overrightarrow{AC}=AB\times AH=3\times 2=6$
+}
+\cadre{rouge}{Théorème}{% id="t60"
+     Le plan étant rapporté à un repère orthonormé $\left(O; \vec{i}, \vec{j}\right)$, soient $\vec{u}\left(x; y\right)$ et $\vec{v}\left(x^{\prime}, y^{\prime}\right)$ deux vecteurs du plan; alors :
+     \begin{center}$\vec{u}.\vec{v}=xx^{\prime}+yy^{\prime}$\end{center}
+}
+\bloc{cyan}{Démonstration}{% id="m60"
+     Dire que $\vec{u}$ a pour coordonnées $\left(x ; y\right)$ signifie que $\vec{u}=x\vec{i}+y\vec{j}$. De même $\vec{v}=x^{\prime}\vec{i}+y^{\prime}\vec{j}$
+     \par
+     $\vec{u}.\vec{v}=\left(x\vec{i}+y\vec{j}\right).\left(x^{\prime}\vec{i}+y^{\prime}\vec{j}\right)=xx^{\prime}\vec{i}^{2}+xy^{\prime}\vec{i}.\vec{j}+x^{\prime}y\vec{i}.\vec{j}+yy^{\prime}\vec{j}^{2}$
+     \par
+     Or, comme le repère $\left(O; \vec{i}, \vec{j}\right)$ est orthonormé, $\vec{i}^{2}=||\vec{i}||^{2}=1$, $\vec{j}^{2}=||\vec{j}||^{2}=1$ et $\vec{i}.\vec{j}=0$. Par conséquent :
+     \par
+     $\vec{u}.\vec{v}=xx^{\prime}+yy^{\prime}$
+}
+\begin{h2}2. Applications du produit scalaire\end{h2}
+\cadre{rouge}{Théorème (de la médiane)}{% id="t70"
+     Soient $ABC$ un triangle quelconque et $I$ le milieu de $\left[BC\right]$. Alors :
+     \begin{center}$AB^{2}+AC^{2}=2AI^{2}+\frac{BC^{2}}{2}$\end{center}
+}
+\begin{center}
+     \begin{extern}%width="300" alt="Théorème de la médiane"
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=0.8pt}
+          \begin{pspicture*}(-1.,-1.)(7.,6.)
+               \psline(0.,0.04)(3.,1.)
+               \psline(1.46,0.63)(1.54,0.41)
+               \psline(3.,1.)(6.,2.)
+               \psline(4.46,1.61)(4.54,1.39)
+               \psline(6.,2.)(3.,5.)
+               \psline(3.,5.)(0.,0.04)
+               \psline[linecolor=red](3.,5.)(3.,1.)
+               \rput[bl](-0.3,-0.3){$B$}
+               \rput[bl](2.9,5.1){$A$}
+               \rput[bl](6.08,1.8){$C$}
+               \rput[bl](3.,0.65){\red $I$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Médiane dans un triangle}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r70"
+     La démonstration est laissée en exercice : \mcLien{/exercices/geometrie-plan/theoreme-mediane}{Exercice théorème de la médiane}
+}
+\cadre{vert}{Propriété (Formule d'Al Kashi)}{% id="p80"
+     Soit $ABC$ un triangle quelconque :
+     \begin{center}$BC^{2}=AB^{2}+AC^{2}-2 AB\times AC \cos\left(\overrightarrow{AB}, \overrightarrow{AC}\right)$\end{center}
+}
+\bloc{cyan}{Remarque}{% id="r80"
+     \begin{itemize}
+          \item La démonstration est faite en exercice : \mcLien{/exercices/geometrie-plan/formule-al-kashi}{Exercice formule d'Al Kashi}
+          \item Si le triangle $ABC$ est rectangle en $A$ alors $\cos\left(\overrightarrow{AB}, \overrightarrow{AC}\right)=0$. On retrouve alors le théorème de Pythagore.
+     \end{itemize}
+}
+\cadre{bleu}{Définition (Vecteur normal à une droite)}{% id="d85"
+     On dit qu'un vecteur $\vec{n}$ non nul est \textbf{normal} à la droite $d$ si et seulement si il est orthogonal à un vecteur directeur de $d$.
+}
+\begin{center}
+     \begin{extern}%width="400" alt="Vecteur normal à une droite"
+          \resizebox{8cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle}
+               \begin{pspicture*}(0.,0.)(10.,5.)
+                    \psline[linewidth=1.pt](0.,0.)(10.,5.)
+                    \psline[linewidth=1.pt,linecolor=blue]{->}(4.,2.)(3.,4.)
+                    \rput[tl](8.74,5.){$d$}
+                    \rput[bl](3.6,3){\blue{$\vec{n}$}}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Vecteur $\vec{n}$ normal à la droite $d$}
+\end{center}
+\cadre{rouge}{Théorème}{% id="t100"
+     Le plan est rapporté à un repère orthonormé $\left(O, \vec{i}, \vec{j}\right)$
+     \par
+     La droite $d$ de vecteur normal $\vec{n} \left(a ; b\right)$ admet une équation cartésienne de la forme :
+     \begin{center}$ax+by+c=0$\end{center}
+     où $a$, $b$ sont les coordonnées de $\vec{n}$ et $c$ un nombre réel.
+     \par
+     \textbf{Réciproquement}, l'ensemble des points $M\left(x ; y\right)$ tels que $ax+by+c=0$ ($a, b, c$ étant des réels avec $a\neq 0$ ou $b\neq 0$)  est une droite dont un vecteur normal est  $\vec{n}\left(a ; b\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r100"
+     La démonstration est laissée en exercice : \mcLien{/exercices/geometrie-plan/vecteur-directeur-normal-droite}{Exercice vecteur normal à une droite}
+}
+\cadre{rouge}{Théorème (équation cartésienne d'un cercle)}{% id="t110"
+     Le plan est rapporté à un repère orthonormé $\left(O, \vec{i}, \vec{j}\right)$.
+     \par
+     Soit $I \left(x_{I} ; y_{I}\right)$ un point quelconque du plan et $r$ un réel positif.
+     \par
+     Une équation du cercle de centre $I$ et de rayon $r$ est :
+     \begin{center}$\left(x-x_{I}\right)^{2}+\left(y-y_{I}\right)^{2}=r^{2}$\end{center}
+}
+\bloc{cyan}{Démonstration}{% id="r110"
+     Le point $M \left(x ; y\right)$ appartient au cercle si et seulement si $IM=r$. Comme $IM$ et $r$ sont positif cela équivaut à $IM^{2}=r^{2}$. Or $IM^{2}= \left(x-x_{I}\right)^{2}+\left(y-y_{I}\right)^{2}$; on obtient donc le résultat souhaité.
+}
+\bloc{orange}{Exemple}{% id="e110"
+     Le cercle de centre $\Omega  \left(3;4\right)$ et de rayon $5$ a pour équation :
+     \par
+     $\left(x-3\right)^{2}+\left(y-4\right)^{2}=25$
+     \par
+     $x^{2}-6x+9+y^{2}-8y+16=25$
+     \par
+     $x^{2}-6x+y^{2}-8y=0$
+     \par
+     Ce cercle passe par $O$ car on obtient une égalité juste en remplaçant $x$ et $y$ par $0$.
+}
+Une autre utilisation du produit scalaire est la démonstration des formules d'addition des sinus et cosinus (voir \mcLien{/exercices/geometrie-plan/formule-soustraction-cosinus}{exercice soustraction des cosinus})
+\input{_footer}

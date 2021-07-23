@@ -1,0 +1,69 @@
+\input{_header}
+\meta{url}{/exercices/suite-fonctions-bac-s-centres-etrangers-2009/}
+\meta{pid}{2437}
+\meta{titre}{Suite de fonctions - Bac S Centres étrangers 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4\end{h2}
+\textit{6 points-Commun à tous les candidats}
+Soit $n$ un entier naturel.
+\par
+On note $f_{n}$, la fonction définie sur l'ensemble $\mathbb{R}$ des nombres réels par :
+\par
+$f_{n}\left(x\right)=\frac{\text{e}^{-nx}}{1+\text{e}^{-x}}.$
+\par
+On note $\left(C_{n}\right)$ la courbe représentative de $f_{n}$ dans un repère orthogonal $\left(O; \vec{i}, \vec{j}\right)$. Les courbes $\left(C_{0}\right),\left(C_{1}\right),\left(C_{2}\right)$ et $\left(C_{3}\right)$ sont représentées ci-dessous :
+
+
+\begin{center}
+\imgsvg{Bac_S_Etrangers_2009}{0.3}% alt="Bac_S_Etrangers_2009" style="width:50rem"
+\end{center}
+\begin{h3}Partie A\end{h3} \textit{Quelques propriétés des fonctions $f_{n}$ et des courbes $\left(C_{n}\right)$}
+\begin{enumerate}
+     \item
+     Démontrer que pour tout entier naturel $n$ les courbes $\left(C_{n}\right)$ ont un point A en commun. On préciser ses coordonnées.
+     \item
+     Étude de la fonction $f_{0}$
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Étudier le sens de variation de $f_{0}$.
+          \item
+          Préciser les limites de la fonction $f_{0}$ en $-\infty $ et $+ \infty $. Interpréter graphiquement ces limites.
+          \item
+          Dresser le tableau de variation de fonction $f_{0}$ sur $\mathbb{R}$.
+     \end{enumerate}
+     \item
+     Étude de la fonction $f_{1}$
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que $f_{0}\left(x\right)= f_{1}\left(-x\right)$ pour tout nombre réel $x$.
+          \item
+          En déduire les limites de la fonction $f_{1}$ en $-\infty $ et $+ \infty $, ainsi que son sens de variation.
+          \item
+          Donner une interprétation géométrique de 3. a. pour les courbes $\left(C_{0}\right)$ et $\left(C_{1}\right)$.
+     \end{enumerate}
+     \item
+     Étude de la fonction $f_{n}$ pour $n \geqslant  2$
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Vérifier que pour tout entier naturel $n \geqslant 2$ et pour tout nombre réel $x$, on a :
+          \par
+          $f_{n}\left(x\right)=\frac{1}{\text{e}^{nx}+\text{e}^{\left(n-1\right)x}}$.
+          \item
+          Étudier les limites de la fonction $f_{n}$ en $-\infty $ et en $+ \infty $.
+          \item
+          Calculer la dérivée $f_{n}^{\prime}\left(x\right)$ et dresser le tableau de variations de la fonction $f_{n}$ sur $\mathbb{R}$.
+     \end{enumerate}
+\end{enumerate}
+~
+\begin{h3}Partie B\end{h3} \textit{Étude d'une suite liée aux fonctions} $f_{n}$
+\par
+On pose, pour tout entier naturel $n$ : $u_{n}=\int_{0}^{1}  f_{n}\left(x\right) \text{d}x$.
+\begin{enumerate}
+     \item
+     Calculer $u_{1}$ puis montrer que $u_{0}+u_{1}=1$. En déduire $u_{0}$.
+     \item
+     Démontrer que, pour tout entier $n$ : $0 \leqslant u_{n}  \leqslant  \int_{0}^{1} \text{e}^{-nx} \text{d}x$.
+     \item
+Calculer l'intégrale : $\int_{0}^{1} \text{e}^{-nx} \text{d}x$. En déduire que la suite $\left(u_{n}\right)$ est convergente et préciser sa limite. \end{enumerate}
+\input{_footer}

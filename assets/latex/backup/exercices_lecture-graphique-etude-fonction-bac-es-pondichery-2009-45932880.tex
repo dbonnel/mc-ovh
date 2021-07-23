@@ -1,0 +1,220 @@
+\input{_header}
+\meta{url}{/exercices/lecture-graphique-etude-fonction-bac-es-pondichery-2009/}
+\meta{pid}{2758}
+\meta{titre}{Lecture graphique Etude de fonction - Bac ES Pondichéry 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 \end{h2}
+\textit{10 points - Commun à tous les candidats }
+\textit{Les parties A et B de cet exercice sont indépendantes. }
+\begin{h3}Partie A. ~ Lectures graphiques\end{h3}
+La courbe $C$ ci-dessous représente, dans un repère orthonormé, une fonction $f$ définie et dérivable sur $\left]0 ; +\infty \right[$.
+\par
+On note $f^{\prime}$ la fonction dérivée de $f$
+\par
+La courbe $C$ passe par les points $A\left(e ; 0\right)$ et $B\left(1 ; -1\right)$.
+\par
+La courbe admet une tangente parallèle à l'axe des abscisses au point d'abscisse 1 et la tangente au point d'abscisse e passe par le point $D\left(0 ; -e\right)$.
+
+\begin{center}
+\imgsvg{Bac_ES_Pondichery_2009}{0.3}% alt="Bac_ES_Pondichery_2009" style="width:50rem"
+\end{center}
+\begin{enumerate}
+     \item
+     Déterminer une équation de la droite (AD).
+
+\textit{Aucune justification n'est exigée pour les réponses à la question 2. }
+
+\item
+Par lectures graphiques:
+\begin{enumerate}[label=\alph*.]
+     \item
+     Déterminer $f\left(1\right)$ et $f^{\prime}\left(1\right)$.
+     \item
+     Dresser le tableau de signes de $f$ sur $\left]0 ; 5\right]$.
+     \item
+     Dresser le tableau de signes de $f^{\prime}$ sur $\left]0 ; 5\right]$.
+     \item
+     Soit $F$ une primitive de $f$ sur $\left]0 ; +\infty \right[$. Déterminer les variations de $F$ sur $\left]0 ; 5\right]$.
+     \item
+     Encadrer par deux entiers consécutifs l'aire (en unités d'aire) du domaine délimité par l'axe des abscisses, la courbe $C$ et les droites d'équation $x=4$ et $x=5$.
+\end{enumerate}
+\end{enumerate}
+\begin{h3}Partie B. ~ Étude de la fonction\end{h3}
+La courbe $C$ de la partie A est la représentation graphique de la fonction $f$ définie sur $\left]0 ; +\infty \right[$ par $f\left(x\right)=x \left(\ln x -1\right)$.
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer la limite de $f$ en $+\infty $.
+          \item
+          Soit $h$ la fonction définie sur $\left]0 ; +\infty \right[$ par $h\left(x\right)=x\ln x$. On rappelle que $\lim\limits_{x\rightarrow 0}h\left(x\right)=0$.
+          \par
+          Déterminer la limite de $f$ en 0.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que, pour tout $x$ de $\left]0 ; +\infty \right[$, on a : $f^{\prime}\left(x\right)=\ln x$.
+          \item
+          Étudier le signe de $f^{\prime}\left(x\right)$ sur $\left]0 ; +\infty \right[$ et en déduire le tableau de variation de $f$ sur $\left]0 ; +\infty \right[$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que la fonction $H$ définie sur $\left]0 ; +\infty \right[$ par $H\left(x\right)=\frac{1}{2}x^{2} \ln x-\frac{1}{4} x^{2}$ est une primitive sur $\left]0 ; +\infty \right[$ de la fonction $h$ définie à la question 1.b).
+          \item
+          En déduire une primitive $F$ de $f$ et calculer $\int_{1}^{e}f\left(x\right)dx$.
+          \item
+          En déduire l'aire, en unités d'aire, de la partie du plan délimitée par $C$, l'axe des abscisses et les droites d'équation $x=1$ et $x=e$. On arrondira le résultat au dixième.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A.\end{h3}
+     \begin{enumerate}
+          \item
+          Le coefficient directeur de la droite $\left(AD\right)$ est :
+          \par
+          $a=\frac{y_{D}-y_{A}}{x_{D}-x_{A}}=\frac{-e-0}{0-e}=1$
+          \par
+          L'équation réduite de la droite $\left(AD\right)$ est donc de la forme $y=x+b$
+          \par
+          Les coordonnées de $D$ vérifient cette équation donc :
+          \par
+          $-e=0+b$
+          \par
+          L'équation réduite de la droite $\left(AD\right)$ est donc :
+          \par
+          $y=x-e$
+          \item
+          Par lectures graphiques:
+          \begin{enumerate}
+               \item
+               $f\left(1\right)=-1$
+               \par
+               $f^{\prime}\left(1\right)=0$ (tangente parallèle à l'axe des abscisses)
+               \item
+               La courbe $C$ est au-dessous de l'axe des abscisses sur $\left]0; e\right[$ et au dessus sur $\left]e; 5\right]$ donc :
+%##
+% type=table; width=45; c1=30
+%--
+% x|   0   ~    \text{e}   ~   3  ~   +\infty 
+% f(x)|  ~       -               :        -   :0   +     ~
+%--
+\begin{center}
+ \begin{extern}%style="width:45rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (92*\width, -10*\height);
+       \draw (30*\width, 0*\height) -- (30*\width, -10*\height);
+       \node (l0c0) at (15*\width,-5*\height) {$ x $};
+       \node (l0c1) at (34*\width,-5*\height) {$ 0 $};
+       \node (l0c2) at (43*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (52*\width,-5*\height) {$ \text{e} $};
+       \node (l0c4) at (61*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (70*\width,-5*\height) {$ 3 $};
+       \node (l0c6) at (79*\width,-5*\height) {$ ~ $};
+       \node (l0c7) at (88*\width,-5*\height) {$ +\infty $};
+       \draw (0, -20*\height) -- (92*\width, -20*\height);
+       \draw (30*\width, -10*\height) -- (30*\width, -20*\height);
+       \node (l1c0) at (15*\width,-15*\height) {$ f(x) $};
+       \node (l1c1) at (34*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (43*\width,-15*\height) {$ - $};
+       \draw[light] (52*\width, -10*\height) -- (52*\width, -20*\height);
+       \node (l1c3) at (52*\width,-15*\height) {$  $};
+       \node (l1c4) at (61*\width,-15*\height) {$ - $};
+       \draw[light] (70*\width, -10*\height) -- (70*\width, -20*\height);
+       \node (l1c5) at (70*\width,-15*\height) {$ 0 $};
+       \node (l1c6) at (79*\width,-15*\height) {$ + $};
+       \node (l1c7) at (88*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (92*\width, -20*\height);
+
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img src="/wp-content/uploads/t_97e31ee1256b5da9a72ce9d83fecbe7d.gif" alt="" class="aligncenter size-full  img-pc" />
+               \item
+               $f$ est décroissante sur $\left]0; 1\right]$ et croissante sur $\left[1;5\right]$ donc :
+               <img src="/wp-content/uploads/t_b97b6c4b355b692825c0db7c2df598da.gif" alt="" class="aligncenter size-full  img-pc" />
+               \item
+               $F$ est une primitive de $f$ donc $F^{\prime}=f$. D'après la question \textbf{1.b.}, on obtient le tableau de variations suivant: :
+               <img src="/wp-content/uploads/t_bc1a3dd7ddc7e73d356517baf4590a94.gif" alt="" class="aligncenter size-full  img-pc" />
+               \item
+               L'aire du domaine délimité par l'axe des abscisses, la courbe $C$ et les droites d'équation $x=4$ et $x=5$ est comprise entre 2 et 3 (il suffit de compter les carreaux!).
+          \end{enumerate}
+     \end{enumerate}
+     \begin{h3}Partie B.\end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $\lim\limits_{x\rightarrow +\infty }x=+\infty $
+               \par
+               $\lim\limits_{x\rightarrow +\infty }\ln x-1=+\infty $
+               \par
+               donc en effectuant le produit des limites :
+               \par
+               $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=+\infty $
+               \item
+               $f\left(x\right)=x\left(\ln x-1\right)=x\ln x-x=h\left(x\right)-x$
+               \par
+               $\lim\limits_{x\rightarrow 0}h\left(x\right)=0$
+               \par
+               $\lim\limits_{x\rightarrow 0}x=0$
+               \par
+               donc en effectuant la différence des limites :
+               \par
+               $\lim\limits_{x\rightarrow 0}f\left(x\right)=0$
+               .
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Sur $\left]0; +\infty \right[$, $f$ est de la forme $uv$ avec $u\left(x\right)=x$ et $v\left(x\right)=\ln x-1$ donc :
+               \par
+               $f^{\prime}\left(x\right)=u^{\prime}\left(x\right)v\left(x\right)+u\left(x\right)v^{\prime}\left(x\right)=1\times \left(\ln x-1\right)+x\times \frac{1}{x}=\ln x$
+               \item
+               La fonction logarithme népérien est strictement négative sur $\left]0; 1\right[$ et  strictement positive sur $\left]1; +\infty \right[$.
+               \par
+               $f\left(1\right)=1\times \left(\ln1-1\right)=-1$
+               \par
+               Le tableau de variations de $f$ sur $\left]0 ; +\infty \right[$ est donc :
+               <img src="/wp-content/uploads/t_6b461ea5b9ecf7ef9c477f36fb335d4e.gif" alt="" class="aligncenter size-full  img-pc" />
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               En employant la formule $\left(uv\right)^{\prime}=u^{\prime}v+uv^{\prime}$ pour dériver le premier terme on obtient :
+               \par
+               $H^{\prime}\left(x\right)=\frac{1}{2}\times \left(2x \ln x +x^{2}\times \frac{1}{x}\right)-\frac{1}{4}\times 2x=\frac{1}{2}\times \left(2x\ln x+x\right)-\frac{1}{2}x$
+               \par
+               $H^{\prime}\left(x\right)=x\ln x+\frac{1}{2}x-\frac{1}{2}x=x\ln x=h\left(x\right)$
+               \par
+               Donc $H$ est une primitive de $h$ sur $\left]0; +\infty \right[$
+               \item
+               Comme $f\left(x\right)=h\left(x\right)-x$, une primitive $F$ de $f$ est définie par :
+               \par
+               $F\left(x\right)=H\left(x\right)-\frac{1}{2}x^{2}=\frac{1}{2}x^{2} \ln x-\frac{1}{4} x^{2}-\frac{1}{2}x^{2}=\frac{1}{2}x^{2} \ln x-\frac{3}{4} x^{2}$
+               \par
+               Donc :
+               \par
+               $\int_{1}^{e}f\left(x\right)dx=\left[F\left(x\right)\right]_{1}^{e}=F\left(e\right)-F\left(1\right)=\frac{1}{2}e^{2}\left(\ln e-\frac{3}{2}\right)-\frac{1}{2}\left(\ln 1-\frac{3}{2}\right)$
+               \par
+               $\int_{1}^{e}f\left(x\right)dx=\frac{1}{2}e^{2}\left(-\frac{1}{2}\right)-\frac{1}{2}\left(-\frac{3}{2}\right)=\frac{-e^{2}+3}{4}$
+               \item
+               Sur $\left[1; e\right]$ la fonction $f$ est strictement négative donc l'aire, en unités d'aire, de la partie du plan délimitée par $C$, l'axe des abscisses et les droites d'équation $x=1$ et $x=e$ est :
+               \par
+               $A=-\int_{1}^{e}f\left(x\right)dx=\frac{e^{2}-3}{4}$
+               \par
+               La valeur arrondie de $A$ au dixième près est 1,1 unités d'aire.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

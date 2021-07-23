@@ -1,0 +1,106 @@
+\input{_header}
+\meta{url}{/exercices/roc-proprietes-fondamentales-exponentielle/}
+\meta{pid}{1325}
+\meta{titre}{[ROC] Propriétés fondamentales de la fonction exponentielle}
+\meta{type}{exercices}
+%
+\textbf{Prérequis : }
+\begin{enumerate}
+     \item
+     La fonction exponentielle (notée $\text{exp}$) vérifie :
+     \par
+     ♦  $\text{exp}^{\prime}=\text{exp}$
+     \par
+     ♦  $\text{exp}\left(0\right)=1$
+     \item
+     On admettra également la propriété suivante (cas particulier du \mcLien{/cours/terminale-s/fonctions-continues#t60}{théorème des valeurs intermédiaires}) :
+     \par
+     Si $f$ est une fonction dérivable sur un intervalle $\left[a ; b\right]$ et si $f\left(a\right)$ et $f\left(b\right)$ sont de signes contraires, alors il existe $\alpha  \in  \left[a ; b\right]$ tel que $f\left(\alpha \right)=0$.
+     \item
+     On rappelle enfin le résultat suivant :
+     \textit{Si $f$ est une fonction dérivable sur $\mathbb{R}$, alors la fonction $x\mapsto f\left(ax+b\right)$ est dérivable sur $\mathbb{R}$ et sa dérivée est la fonction $x\mapsto af^{\prime}\left(ax+b\right)$}
+\end{enumerate}
+\begin{h3}Partie A \end{h3}
+Soit la fonction $f$ définie sur $\mathbb{R}$ par $f\left(x\right)=\text{exp}\left(x\right)\times \text{exp}\left(-x\right)$.
+\begin{enumerate}
+     \item
+     Montrer que pour tout $x \in  \mathbb{R} : f^{\prime}\left(x\right)=0$.
+     \item
+     En déduire que pour réel $x$, $f\left(x\right)=1$.
+     \par
+     Montrez que pour tout réel $x$, $\text{exp}\left(x\right)\neq 0$
+\end{enumerate}
+\begin{h3}Partie B \end{h3}
+Soit $g$ une fonction dérivable sur $\mathbb{R}$ telle que $g^{\prime}=g$ et $g\left(0\right)=1$.
+\par
+On pose $h\left(x\right)=\frac{g\left(x\right)}{\text{exp}\left(x\right)}$
+\begin{enumerate}
+     \item
+     Calculer $h^{\prime}\left(x\right)$.
+     \item
+     En déduire que pour réel $x$, $h\left(x\right)=1$.
+     \par
+     Que peut-on en déduire pour la fonction $g$ ?
+\end{enumerate}
+\begin{h3}Partie C \end{h3}
+\begin{enumerate}
+     \item
+     Montrer que, pour tout réel $x$,  $\text{exp}\left(x\right) > 0$ (on raisonnera par l'absurde et on utilisera le prérequis \textbf{b.})
+     \item
+     En déduire que la fonction exponentielle est strictement croissante sur $\mathbb{R}$.
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A\end{h3}
+     \begin{enumerate}
+          \item
+          On pose $u\left(x\right)=\text{exp}\left(x\right)$ et $v\left(x\right)=\text{exp}\left(-x\right)$.
+          \par
+          On a alors $u^{\prime}\left(x\right)=\text{exp}\left(x\right)$ et $v^{\prime}\left(x\right)=-\text{exp}\left(-x\right)$ (d'après les prérequis \textbf{a.} et \textbf{c.}.
+          \par
+          Par conséquent :
+          \par
+          $f^{\prime}\left(x\right)=u^{\prime}\left(x\right)v\left(x\right)+u\left(x\right)v^{\prime}\left(x\right)=\text{exp}\left(x\right)\text{exp}\left(-x\right)+\text{exp}\left(x\right)\times -\text{exp}\left(-x\right)=0$
+          \item
+          On en déduit que $f$ est constante sur $\mathbb{R}$.
+          \par
+          Comme $f\left(0\right)=\text{exp}\left(0\right)\times \text{exp}\left(-0\right)=1$ (d'après le prérequis \textbf{a.}), $f\left(x\right)=1$ pour tout réel $x$.
+          \par
+          On raisonne ensuite par l'absurde.
+          \par
+          S'il existait un réel $x_{0}$ pour lequel  $\text{exp}\left(x_{0}\right)=0$ on aurait $f\left(x_{0}\right)=\text{exp}\left(x_{0}\right)\text{exp}\left(-x_{0}\right)=0\times \text{exp}\left(-x_{0}\right)=0$
+          \par
+          ce qui contredit le résultat précédent.
+          \par
+          Donc, pour tout réel $x$, $\text{exp}\left(x\right)\neq 0$
+     \end{enumerate}
+     \begin{h3}Partie B\end{h3}
+     \begin{enumerate}
+          \item
+          $h^{\prime}\left(x\right)=\frac{g^{\prime}\left(x\right)\text{exp}\left(x\right)-g\left(x\right)\text{exp}\left(x\right)}{\left(\text{exp}\left(x\right)\right)^{2}}=\frac{g\left(x\right)\text{exp}\left(x\right)-g\left(x\right)\text{exp}\left(x\right)}{\left(\text{exp}\left(x\right)\right)^{2}}=0$
+          \item
+          Donc $h$ est constante sur $\mathbb{R}$ et comme $h\left(0\right)=\frac{g\left(0\right)}{exp\left(0\right)}=\frac{1}{1}=1$, $h\left(x\right)=1$ pour réel $x$.
+          \par
+          On en déduit que, pour tout $x \in  \mathbb{R}$ : $\frac{g\left(x\right)}{\text{exp}\left(x\right)}=1$ c'est à dire $g(x)=\text{exp}(x)$  .
+          \par
+          $g$ est donc la fonction exponentielle.
+          \par
+          La fonction exponentielle est donc la seule fonction dérivable sur $\mathbb{R}$ vérifiant :
+          \par
+          ♦  $\text{exp}^{\prime}=\text{exp}$
+          \par
+          ♦  $\text{exp}\left(0\right)=1$
+     \end{enumerate}
+     \begin{h3}Partie C\end{h3}
+     \begin{enumerate}
+          \item
+          On raisonne là encore par l'absurde.
+          \par
+          S'il existait un réel $x_{0}$ pour lequel  $\text{exp}\left(x_{0}\right) < 0$, comme $\text{exp}\left(0\right)=1 > 0$ d'après le prérequis \textbf{b.} (ou le \mcLien{/cours/terminale-s/fonctions-continues#t60}{théorème des valeurs intermédiaires}), il existerait un réel $\alpha $ compris entre $x_{0}$ et $0$ tel que $\text{exp}\left(\alpha \right)=0$.
+          \par
+          Or ceci contredit le résultat de la question \textbf{A. 2.}
+          Donc la fonction exponentielle n'est jamais strictement négative sur $\mathbb{R}$. Comme elle n'est jamais nulle non plus (toujours d'après \textbf{A. 2.}),  pour tout réel $x$,  $\text{exp}\left(x\right) > 0$
+          \item
+          Comme $\text{exp}^{\prime}=\text{exp}$ est strictement positive sur $\mathbb{R}$, la fonction exponentielle est strictement croissante sur $\mathbb{R} $.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

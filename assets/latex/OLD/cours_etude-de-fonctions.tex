@@ -1,0 +1,252 @@
+\input{_header}
+\begin{h2}I - Généralités sur les fonctions\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Une \textbf{fonction} $f$ associe, à tout nombre réel $x$ d'une partie \textit{$D$} de $\mathbb{R}$, un unique nombre réel $y$. $y$ s'appelle l'\textbf{image} de $x$ par la fonction $f$ et se note $f\left(x\right)$
+}
+\cadre{bleu}{Définition}{% id="d20"
+     L'ensemble \textit{$D$} des éléments $x$ de $\mathbb{R}$ qui possèdent une image par $f$ s'appelle l'\textbf{ensemble de définition} de $f$.
+}
+\cadre{bleu}{Définition}{% id="d30"
+     La \textbf{courbe représentative} de la fonction $f$ est l'ensemble des points du plan $\mathscr P$ dont les coordonnées $\left(x; y\right)$ vérifient l'égalité $y=f\left(x\right)$.
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     Cette définition est importante car elle établit un lien entre la courbe représentative d'une fonction et la formule définissant la fonction. Elle permet de déterminer notamment si un point appartient à la courbe représentative d'une fonction.
+     \par
+     Par exemple si $f$ est la fonction définie sur $\mathbb{R}$ par $f\left(x\right)=x^{2}+1$, le point $A\left(1;2\right)$ appartient à courbe représentative de $f$ car $f\left(1\right)=1^{2}+1=2$. Par contre le point $B\left(2;4\right)$ n'y appartient pas car $f\left(2\right)=5\neq 4$.
+}
+\cadre{bleu}{Définitions}{% id="d40"
+     \begin{itemize}
+          \item La fonction $f$ est \textbf{croissante} sur l'intervalle $I$ si et seulement si pour tous réels $x_{1}$ et $x_{2}$ de $I$ tels que $x_{1} \leqslant  x_{2}$ on a $f\left(x_{1}\right) \leqslant f\left(x_{2}\right)$.
+          \item La fonction $f$ est \textbf{décroissante} sur l'intervalle $I$ si et seulement si  pour tous réels $x_{1}$ et $x_{2}$ de $I$ tels que $x_{1} \leqslant x_{2}$ on a $f\left(x_{1}\right) \geqslant f\left(x_{2}\right)$.
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="550" alt="Fonctions croissante et décroissante"
+          \begin{tabular}{c c c}
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{1+0.2*x*x }
+                    \def\xmin{-1.2}
+                    \def\xmax{5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                         \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,1.2)(0,1.2)
+                         \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,4.2)(0,4.2)
+                         \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                         \rput[r](-0.1,1.2){$f(x_1)$} \rput[r](-0.1,4.2){$f(x_2)$}
+                         \rput[tl](4.3,4.5){$\color{red} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+               & ~~~~ &%
+               \resizebox{5.5cm}{!}{%
+                    % -+-+-+ variables modifiables
+                    \def\fonction{4-0.1*x*x }
+                    \def\xmin{-1.2}
+                    \def\xmax{5}
+                    \def\ymin{-0.9}
+                    \def\ymax{5}
+                    \def\xunit{1}  % unités en cm
+                    \def\yunit{1}
+                    \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+                    \fontsize{12pt}{12pt}\selectfont
+                    \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                         %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                         \psaxes[linewidth=0.75pt,Dx=10,Dy=10]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                         \psplot[plotpoints=2000,linecolor=red]{0.2}{\xmax}{\fonction}
+                         \psline[linewidth=0.75pt,linecolor=lightgray](1,0)(1,3.9)(0,3.9)
+                         \psline[linewidth=0.75pt,linecolor=lightgray](4,0)(4,2.4)(0,2.4)
+                         \rput[tr](-0.3,-0.3){$O$} \rput[t](1,-0.3){$x_1$} \rput[t](4,-0.3){$x_2$}
+                         \rput[r](-0.1,3.9){$f(x_1)$} \rput[r](-0.1,2.4){$f(x_2)$}
+                         \rput[tl](4.5,2.5){$\color{red} \mathcal{C}_f$}
+                    \end{pspicture*}
+               }
+               \\
+               Fonction croissante & ~~~~ & Fonction décroissante %
+               \\
+          \end{tabular}
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définitions}{% id="d50"
+     Soit $I$ un intervalle et $x_{0} \in  I$.
+     \begin{itemize}
+          \item La fonction $f$ admet un \textbf{maximum} en $x_{0}$ sur l'intervalle $I$ si et seulement si pour tout réel $x$ de $I$, $f\left(x\right) \leqslant f\left(x_{0}\right)$. Le maximum de la fonction $f$ sur $I$ est alors $M=f\left(x_{0}\right)$
+          \item La fonction $f$ admet un \textbf{minimum} en $x_{0}$ sur l'intervalle $I$ si et seulement si pour tout réel $x$ de $I$, $f\left(x\right) \geqslant f\left(x_{0}\right)$. Le minimum de la fonction $f$ sur $I$ est alors $m=f\left(x_{0}\right)$
+     \end{itemize}
+}
+\begin{h2}II - La fonction racine carrée\end{h2}
+\cadre{bleu}{Définition}{% id="d60"
+     La fonction racine carrée est la fonction définie sur $\left[0;+\infty \right[$ par $f\left(x\right)=\sqrt{x}$
+}
+\cadre{vert}{Propriété}{% id="p70"
+     La fonction racine carrée est strictement croissante sur $\left[0;+\infty \right[$
+}
+\begin{center}
+     \begin{extern}%width="200" alt="Fonction racine carrée: tableau de variation"
+          %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{tikzpicture}[scale=0.7]
+               % Styles
+               \tikzstyle{cadre}=[thin]
+               \tikzstyle{fleche}=[->,>=latex,thin]
+               \tikzstyle{nondefini}=[lightgray]
+               % Dimensions Modifiables
+               \def\Lrg{1.5}
+               \def\HtX{1}
+               \def\HtY{0.5}
+               % Dimensions Calculées
+               \def\lignex{-0.5*\HtX}
+               \def\lignef{-1.5*\HtX}
+               \def\separateur{-0.5*\Lrg}
+               % Largeur du tableau
+               \def\gauche{-1.5*\Lrg}
+               \def\droite{2.5*\Lrg}
+               % Hauteur du tableau
+               \def\haut{0.5*\HtX}
+               \def\bas{-1.5*\HtX-2*\HtY}
+               % Ligne de l'abscisse : x
+               \node at (-1*\Lrg,0) {$x$};
+               \node at (0*\Lrg,0) {$0$};
+               \node at (2*\Lrg,0) {$+\infty$};
+               % Ligne de la fonction : f(x)
+               \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$\sqrt{x}$};
+               \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$0$};
+               \node (f2) at (2*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               % Flèches
+               \draw[fleche] (f1) -- (f2);
+               % Encadrement
+               \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+               \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+               \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+          \end{tikzpicture}
+          %:-+-+-+-+- Fin
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Tableau de variation de la fonction racine carrée }
+\end{center}
+\begin{center}
+     \begin{extern} %width="450" alt="Fonction  racine carrée  : graphique"
+          \resizebox{8.5cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{sqrt(x) }
+               \def\xmin{-0.5}
+               \def\xmax{8.5}
+               \def\ymin{-0.5}
+               \def\ymax{5}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{2}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{18pt}{18pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{0.000001}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.1){$O$}
+                    \rput[tl](7.5,3.3){$\color{blue} \mathcal{C}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Graphique de la fonction  racine carrée  }
+\end{center}
+\bloc{cyan}{Remarque}{% id="p80"
+     La courbe représentative de la fonction racine carrée est une demi-parabole
+}
+\begin{h2}III - La fonction cube\end{h2}
+\cadre{bleu}{Définition}{% id="d90"
+     La fonction cube est la fonction définie sur $\left]-\infty ;+\infty \right[$ par $f\left(x\right)=x^{3}$
+}
+\cadre{vert}{Propriété}{% id="p100"
+     La fonction cube est strictement croissante sur $\left]-\infty ;+\infty \right[$
+}
+\begin{center}
+     \begin{extern}%width="350" alt="tableau de variation de la fonction cube"
+          \begin{tikzpicture}[scale=0.875]
+               % Styles
+               \tikzstyle{cadre}=[thin]
+               \tikzstyle{fleche}=[->,>=latex,thin]
+               \tikzstyle{nondefini}=[lightgray]
+               % Dimensions Modifiables
+               \def\Lrg{1.5}
+               \def\HtX{1}
+               \def\HtY{0.5}
+               % Dimensions Calculées
+               \def\lignex{-0.5*\HtX}
+               \def\lignef{-1.5*\HtX}
+               \def\separateur{-0.5*\Lrg}
+               % Largeur du tableau
+               \def\gauche{-1.5*\Lrg}
+               \def\droite{4.5*\Lrg}
+               % Hauteur du tableau
+               \def\haut{0.5*\HtX}
+               \def\bas{-1.5*\HtX-2*\HtY}
+               % Pointillés
+               \draw[lightgray] (2*\Lrg,\lignex) -- (2*\Lrg,\bas);
+               % Ligne de l'abscisse : x
+               \node at (-1*\Lrg,0) {$x$};
+               \node at (0*\Lrg,0) {$-\infty$};
+               \node at (2*\Lrg,0) {$0$};
+               \node at (4*\Lrg,0) {$+\infty$};
+               % Ligne de la fonction : f(x)
+               \node  at (-1*\Lrg,{-1*\HtX+(-1)*\HtY}) {$x^3$};
+               \node (f1) at (0*\Lrg,{-1*\HtX+(-2)*\HtY}) {$ $};
+               \node (f2) at (2*\Lrg,{-1*\HtX+(-1)*\HtY}) {$0$};
+               \node (f3) at (4*\Lrg,{-1*\HtX+(0)*\HtY}) {$ $};
+               % Flèches
+               \draw (f1) -- (f2);
+               \draw[fleche] (f2) -- (f3);
+               % Encadrement
+               \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+               \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+               \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+          \end{tikzpicture}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Tableau de variation de la fonction cube }
+\end{center}
+\begin{center}
+     \begin{extern} %width="400" alt="Fonction  cube : graphique"
+          \resizebox{8.5cm}{!}{%
+               % -+-+-+ variables modifiables
+               \def\fonction{x^3}
+               \def\xmin{-4}
+               \def\xmax{4}
+               \def\ymin{-8}
+               \def\ymax{8}
+               \def\xunit{2}  % unités en cm
+               \def\yunit{1}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{18pt}{18pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[Dy=2,linewidth=0.75pt]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \psplot[plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{\fonction}
+                    \rput[tr](-0.1,-0.2){$O$}
+                    \rput[tl](2.1,7){$\color{blue} \mathcal{C}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Graphique de la fonction  cube }
+\end{center}
+\bloc{cyan}{Remarques}{% id="r100"
+     \begin{itemize}
+          \item Comme la fonction $x\mapsto x^{3}$ est strictement croissante sur $\mathbb{R}$ :
+          \par
+          $a > b  \Leftrightarrow a^{3} > b^{3}$
+          \item En particulier $x > 0 \Leftrightarrow x^{3} > 0$
+          \par
+          Autrement dit, le cube d'un nombre positif est positif et le cube d'un nombre négatif est négatif.
+     \end{itemize}
+}
+\input{_footer}

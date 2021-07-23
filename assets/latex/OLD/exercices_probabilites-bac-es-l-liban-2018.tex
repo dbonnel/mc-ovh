@@ -1,0 +1,80 @@
+\input{_header}
+\begin{h2}EXERCICE 1 (6 points)\end{h2}
+\textbf{Commun à  tous les candidats}
+\medskip
+Dans un aéroport, les portiques de sécurité servent à détecter les objets métalliques que peuvent emporter les voyageurs.
+\par
+On choisit au hasard un voyageur franchissant un portique.
+\par
+On note :
+\begin{itemize}
+     \item $S$ l'événement \og le voyageur fait sonner le portique \fg{};
+     \item $M$ l'événement \og le voyageur porte un objet métallique \fg{}.
+\end{itemize}
+On considère qu'un voyageur sur 500 porte sur lui un objet métallique.
+\begin{enumerate}
+     \item
+     On admet que :
+     \begin{itemize}
+          \item Lorsqu'un voyageur franchit le portique avec un objet métallique, la probabilité que le portique sonne est égale à $0,98$;
+          \item Lorsqu'un voyageur franchit le portique sans objet métallique, la probabilité que le portique ne sonne pas est aussi égale à $0,98$.
+     \end{itemize}
+     \begin{enumerate}[label=\alph*.]
+          \item  À l'aide des données de l'énoncé, préciser les valeurs de $P(M)$, $P_{M}(S)$ et $P_{\overline{M}}(\overline{S})$.
+          \item Recopier et compléter l'arbre pondéré ci-dessous illustrant cette situation.
+          %:-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/Arbre/
+          \begin{center}
+               \begin{extern}%width="350"
+                    % Racine à Gauche, développement vers la droite
+                    \begin{tikzpicture}[xscale=1,yscale=1]
+                         % Styles (MODIFIABLES)
+                         \tikzstyle{fleche}=[-,>=latex,thick]
+                         \tikzstyle{noeud}=[fill=white]
+                         \tikzstyle{feuille}=[fill=white]
+                         \tikzstyle{etiquette}=[midway,fill=white]
+                         % Dimensions (MODIFIABLES)
+                         \def\DistanceInterNiveaux{3}
+                         \def\DistanceInterFeuilles{2}
+                         % Dimensions calculées (NON MODIFIABLES)
+                         \def\NiveauA{(0)*\DistanceInterNiveaux}
+                         \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                         \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                         \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                         % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                         \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$ $};
+                         \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$M$};
+                         \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{S}$};
+                         \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$\overline{M}$};
+                         \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$S$};
+                         \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{S}$};
+                         % Arcs (MODIFIABLES : Styles)
+                         \draw[fleche] (R)--(Ra) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Ra)--(Raa) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Ra)--(Rab) node[etiquette] {$\cdots$};
+                         \draw[fleche] (R)--(Rb) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Rb)--(Rba) node[etiquette] {$\cdots$};
+                         \draw[fleche] (Rb)--(Rbb) node[etiquette] {$\cdots$};
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %:-+-+-+-+- Fin
+          \item Montrer que~: $P(S)=0,021~92$.
+          \item En déduire la probabilité qu'un voyageur porte un objet métallique sachant qu'il a fait sonner le portique. (On arrondira le résultat à $10^{-3}$.)
+     \end{enumerate}
+     \item 80 personnes s'apprêtent à passer le portique de sécurité. On suppose que pour chaque personne la probabilité que le portique sonne est égale à $0,021~92$.
+     \par
+     Soit $X$ la variable aléatoire donnant le nombre de personnes faisant sonner le portique, parmi les 80 personnes de ce groupe.
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier que $X$ suit une loi binomiale dont on précisera les paramètres.
+          \item Calculer l'espérance de $X$ et interpréter le résultat.
+          \item
+          Sans le justifier, donner la valeur arrondie à $10^{-3}$ de~:
+          \begin{itemize}
+               \item la probabilité qu'au moins une personne du groupe fasse sonner le portique;
+               \item la probabilité qu'au maximum 5 personnes fassent sonner le portique.
+          \end{itemize}
+          \item Sans le justifier, donner la valeur du plus petit entier $n$ tel que $P(X \leqslant n) \geqslant 0,9$.
+     \end{enumerate}
+\end{enumerate}
+\input{_footer}

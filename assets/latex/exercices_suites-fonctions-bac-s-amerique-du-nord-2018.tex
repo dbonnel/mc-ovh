@@ -1,0 +1,145 @@
+\input{_header}
+\meta{url}{/exercices/suites-fonctions-bac-s-amerique-du-nord-2018/}
+\meta{pid}{7974}
+\meta{titre}{Suites - Fonctions - Bac S Amérique du Nord  2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+\medskip
+\textbf{Les deux graphiques donnés en annexe seront à compléter et à rendre avec la copie}
+\medskip
+Un scooter radio commandé se déplace en ligne droite à la vitesse constante de 1 m.s$^{-1}$. Il est poursuivi
+par un chien qui se déplace à la même vitesse.
+\par
+On représente la situation vue de dessus dans un repère orthonormé du plan d'unité 1 mètre. L'origine de ce repère est la position initiale du chien. Le scooter est représenté par un point appartenant à la droite d'équation $x = 5$. Il se déplace sur cette droite dans le sens des ordonnées croissantes.
+\par
+\smallskip
+\par
+Dans la suite de l'exercice, on étudie deux modélisations différentes de la trajectoire du chien.
+\bigskip
+\begin{center}\begin{h3}Partie A - Modélisation à l'aide d'une suite \end{h3}\end{center}
+\medskip
+La situation est représentée par le graphique n° 1 donné en annexe.
+\par
+À l'instant initial, le scooter est représenté par le point $S_0$. Le chien qui le poursuit est représenté
+par le point $M_0$. On considère qu'à chaque seconde, le chien s'oriente instantanément en direction
+du scooter et se déplace en ligne droite sur une distance de 1 mètre.
+\par
+Ainsi, à l'instant initial, le chien s'oriente en direction du point $S_0$, et une seconde plus tard il se
+trouve un mètre plus loin au point $M_1$. À cet instant, le scooter est au point $S_1$. Le chien s'oriente
+en direction de $S_1$ et se déplace en ligne droite en parcourant 1 mètre, et ainsi de suite.
+\par
+On modélise alors les trajectoires du chien et du scooter par deux suites de points notées $\left(M_n\right)$ et $\left(S_n\right)$.
+\par
+Au bout de $n$ secondes, les coordonnées du point $S_n$ sont $(5~:~n)$. On note $\left(x_n~:~y_n\right)$ les coordonnées du point $M_n$.
+\medskip
+\begin{enumerate}
+     \item Construire sur le graphique n° 1 donné en annexe les points $M_2$ et $M_3$.
+     \item  On note $d_n$ la distance entre le chien et le scooter $n$ secondes après le début de la poursuite.
+     \par
+     On a donc $d_n = M_nS_n$.
+     \par
+     Calculer $d_0$ et $d_1$.
+     \item  Justifier que le point $M_2$ a pour coordonnées $\left(1 + \dfrac{4}{\sqrt{17}}~:~\dfrac{1}{\sqrt{17}}\right)$.
+     \item  On admet que, pour tout entier naturel $n$~:
+     \par
+     \[\left\{\begin{array}{l c l}
+               x_{n+1}& = &x_n + \dfrac{5 - x_n}{d_n}\\
+               y_{n+1}&=&y_n + \dfrac{n - y_n}{d_n}
+     \end{array}\right.\]
+     \begin{enumerate}[label=\alph*.]
+          \item Le tableau ci-dessous, obtenu à l'aide d'un tableur, donne les coordonnées des points $M_n$
+          et $S_n$ ainsi que la distance $d_n$ en fonction de $n$. Quelles formules doit-on écrire dans les
+          cellules C5 et F5 et recopier vers le bas pour remplir les colonnes C et F~?
+          \begin{center}
+               \begin{extern}%width="700" class="mw500"
+                    \begin{tabularx}{\linewidth}{|>{\columncolor[gray]{0.9}}c|*{6}{>{\centering \arraybackslash}X|}}\hline
+                         \rowcolor[gray]{0.9}&A &B &C &D &E &F\\ \hline
+                         1 &$n$& \multicolumn{2}{|c|}{$M_n$} & \multicolumn{2}{|c|}{$S_n$} &$d_n$\\ \hline
+                         2 &&$x_n$& $y_n$& 5 &n&\\ \hline
+                         3 &0& 0& 0& 5 &0& 5\\ \hline
+                         4 &1 &1 &0 &5 &1 &\np{4,12310563}\\ \hline
+                         5 &2 &\np{1,9701425} &\np{0,24253563} &5 &2 &\np{3,50267291}\\ \hline
+                         6 &3 &\np{2,83515547} &\np{0,74428512} &5 &3 &\np{3,12646789}\\ \hline
+                         7 &4 &\np{3,52758047} &\np{1,46577498} &5 &4 &\np{2,93092404}\\ \hline
+                         \ldots&\ldots&\ldots&\ldots&\ldots&\ldots&\ldots\\ \hline
+                         28 &24 &\np{4,99979751} &\np{21,2268342} &5 &24 &\np{2,7731658}\\ \hline
+                         29 &25 &\np{4,99987053} &\np{22,2268342} &5 &25 &\np{2,7731658}\\ \hline
+                    \end{tabularx}
+               \end{extern}
+          \end{center}
+          \medskip
+          \item On admet que la suite $\left(d_n\right)$ est strictement décroissante.
+          \par
+          Justifier que cette suite est convergente et conjecturer sa limite à l'aide du tableau.
+     \end{enumerate}
+\end{enumerate}
+\bigskip
+\begin{center}\begin{h3}Partie B - Modélisation à l'aide d'une fonction \end{h3}\end{center}
+\par
+\medskip
+\par
+On modélise maintenant la trajectoire du chien à l'aide de la courbe $\mathscr{F}$ de la fonction $f$ définie
+pour tout réel $x$ de l'intervalle [0~:~5[ par~:
+\par
+\[f(x) = -2,5\ln (1 - 0, 2x) - 0,5x + 0,05x^2.\]
+\par
+\medskip
+\par
+Cela signifie que le chien se déplace sur la courbe $\mathscr{F}$ de la fonction $f$.
+\par
+\medskip
+\begin{enumerate}
+     \item Lorsque le chien se trouve au point $M$ de coordonnées $(x~:~f(x))$ de la courbe $\mathscr{F}$, où $x$  appartient à l'intervalle [0~:~5[, le scooter se trouve au point $S$, d'ordonnée notée $y_S$. Ainsi le point $S$
+     a pour coordonnées $\left(5~:~y_S\right)$. La tangente à la courbe $\mathscr{F}$ au point $M$ passe par le point $S$. Cela traduit le fait que le chien s'oriente toujours en direction du scooter. On note $d(x)$ la distance $MS$ entre le chien et le scooter lorsque $M$ a pour abscisse $x$.
+     \begin{enumerate}[label=\alph*.]
+          \item Sur le graphique n° 2 donné en annexe, construire, sans calcul, le point $S$ donnant la position du scooter lorsque le chien se trouve au point d'abscisse 3 de la courbe $\mathscr{F}$ et lire les
+          coordonnées du point $S$.
+          \item On note $f'$ la fonction dérivée de la fonction $f$ sur l'intervalle [0~:~5[ et on admet que, pour tout réel $x$ de l'intervalle [0~:~5[~:
+          \par
+          \[f'(x) = \dfrac{x(1  - 0,1x)}{5 - x}.\]
+          \par
+          Déterminer par le calcul une valeur approchée au centième de l'ordonnée du point $S$ lorsque
+          le chien se trouve au point d'abscisse 3 de la courbe $\mathscr{F}$.
+     \end{enumerate}
+     \item  On admet que $d(x) = 0,1x^2 - x + 5$ pour tout réel $x$ de l'intervalle [0~:~5[.
+     \par
+     Justifier qu'au cours du temps la distance $MS$ se rapproche d'une valeur limite que l'on déterminera.
+\end{enumerate}
+\newpage
+\begin{center}
+     \begin{h3}Annexe\end{h3}
+     \par
+     \textbf{À rendre avec la copie}
+     \bigskip
+     \textbf{Partie A - question 1}
+     \par
+     Graphique n° 1
+     \par          \begin{extern}
+          \psset{unit=1.4cm}
+          \begin{pspicture*}(-0.2,-0.2)(5.5,4.5)
+               \psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt](0,0)(6,5)
+               \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(5.5,4.5)
+               \psline[linecolor=blue](5,0)(5,6)
+               \uput[dr](0,0){$M_0$}\uput[dr](1,0){$M_1$}\uput[ur](5,0){$S_0$}
+               \uput[ur](5,1){$S_1$}\uput[ur](5,2){$S_2$}\uput[ur](5,3){$S_3$}
+          \end{pspicture*}
+     \end{extern}
+     \bigskip
+     \textbf{Partie B - question 1 }
+     \par
+     Graphique n° 2
+     \par
+     \begin{extern}
+          \psset{unit=1.4cm}
+          \begin{pspicture*}(-0.5,-0.5)(5.5,5.5)
+               \psgrid[gridlabels=0pt,subgriddiv=1,gridwidth=0.3pt](0,0)(6,6)
+               \psaxes[linewidth=0.75pt,labelFontSize=\scriptstyle]{->}(0,0)(0,0)(5.5,5.5)
+               \psline[linecolor=blue](5,0)(5,6)
+               \psplot[plotpoints=3000,linewidth=0.75pt,linecolor=red]{0}{4.8}{0.05 x dup mul mul 0.5 x mul sub 1 0.2 x mul sub ln 2.5 mul sub}
+               \psdots[dotsize=3pt,dotstyle=+](3,1.24)\uput[ul](3,1.24){$M$}\uput[l](4.5,4.5){\red $\mathcal{F}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\input{_footer}

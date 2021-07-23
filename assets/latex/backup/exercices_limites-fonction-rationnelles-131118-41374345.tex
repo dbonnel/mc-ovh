@@ -1,0 +1,119 @@
+\input{_header}
+\meta{url}{/exercices/limites-fonction-rationnelles-131118/}
+\meta{pid}{1288}
+\meta{titre}{Limites fonction rationnelle}
+\meta{type}{exercices}
+%
+Soit la fonction $f$ définie sur $\left]-\infty  ; -1\right[ \cup  \left]-1 ; 1\right[ \cup  \left]1 ; +\infty \right[ $ par :
+\par
+$f\left(x\right)=\frac{x+2}{x^{2}-1}$
+\par
+Déterminer les limites de $f$ aux bornes de son ensemble de définition. (\textit{Il y a 6 limites à calculer)}
+\par
+Quelles sont les asymptotes (horizontales et verticales) à la courbe représentative de $f$ ?
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          En $+\infty $ et $-\infty $ :
+          \par
+          On a une forme indéterminée du type «$\frac{\infty}{\infty} $» (voir \mcLien{/methodes/limites/formes-indeterminees}{Méthode : Formes indéterminées})
+          \par
+          On factorise par $x$ au numérateur et $x^{2}$ au dénominateur :
+          \par
+          $f\left(x\right)=\frac{x\left(1+2/x\right)}{x^{2}\left(1-1/x^{2}\right)}=\frac{1+2/x}{x\left(1-1/x^{2}\right)}  $
+          \par
+          Lorsque $x\rightarrow \backslash\pm \infty $ le numérateur tend vers 1 et le dénominateur tend vers $\backslash\pm \infty $ donc :
+          \par
+          $\lim\limits_{x\rightarrow \backslash\pm \infty }f\left(x\right)=0$
+\par
+          \textbf{Remarque :} On peut aussi écrire : $\lim\limits_{x\rightarrow \backslash\pm \infty }\frac{x+2}{x^{2}-1}=\lim\limits_{x\rightarrow \backslash\pm \infty }\frac{x}{x^{2}}=\lim\limits_{x\rightarrow \backslash\pm \infty }\frac{1}{x}=0$
+          \item
+          En $-1$ et $+1$
+          \par
+          Le dénominateur tend vers zéro; on a une limite du type «$\frac{k}{0}$» (voir \mcLien{/methodes/limites/limites-du-type-k0}{Méthode : limite «$k/0$»})
+          \par
+          On peut écrire $f\left(x\right)=\frac{x+2}{\left(x-1\right)\left(x+1\right)}$
+          \textbf{Si $x\rightarrow -1$ et $x < -1$} :
+          \par
+          $x+2 > 0$ (tend vers $1$)
+          \par
+          $x-1 < 0$ (tend vers $-2$)
+          \par
+          $x+1 < 0$ (car $x < -1$)
+          \par
+          donc $\lim\limits_{x\rightarrow -1^-}f\left(x\right)=+\infty $
+          \textbf{Si $x\rightarrow -1$ et $x > -1$} :
+          \par
+          $x+2 > 0$ (tend vers $1$)
+          \par
+          $x-1 < 0$ (tend vers $-2$)
+          \par
+          $x+1 > 0$ (car $x > -1$)
+          \par
+          donc $\lim\limits_{x\rightarrow -1^+}f\left(x\right)=-\infty $
+          \textbf{Si $x\rightarrow 1$ et $x < 1$} :
+          \par
+          $x+2 > 0$ (tend vers $3$)
+          \par
+          $x+1 > 0$ (tend vers $2$)
+          \par
+          $x-1 < 0$ (car $x < 1$)
+          \par
+          donc $\lim\limits_{x\rightarrow +1^-}f\left(x\right)=-\infty $
+          \textbf{Si $x\rightarrow 1$ et $x > 1$} :
+          \par
+          $x+2 > 0$ (tend vers $3$)
+          \par
+          $x+1 > 0$ (tend vers $2$)
+          \par
+          $x-1 > 0$ (car $x > 1$)
+          \par
+          donc $\lim\limits_{x\rightarrow +1^+}f\left(x\right)=+\infty $
+     \end{enumerate}
+     La courbe représentative de $f$ admet :
+     \begin{itemize}
+          \item
+          une asymptote horizontale d'équation $y=0$
+          \item
+          deux asymptotes verticales d'équations $x=-1$ et $x=1$
+     \end{itemize}
+%##
+% type=graphic;   width=40; 
+% xmin=-4.5; xmax=6.5; ymin=-2.9; ymax=9.5; xunit=1; yunit=1
+%--
+%grid=1;subgriddiv=1
+%repere=0
+%axes=1
+%fct=(2*x^2+1)/(x-1)^2;linecolor=blue
+%fct=2000*(x-1);linecolor=red
+%fct=2;linecolor=red
+%text=\blue \mathscr{C}_f;pos=[t](2.7,9)
+%--
+\begin{center}
+ \begin{extern}%style="width:40rem" alt="Fonction"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \def\xmin{-4.5}
+       \def\xmax{6.5}
+       \def\ymin{-2.9}
+       \def\ymax{9.5}
+       \def\xunit{1}
+       \def\yunit{1}
+       \psset{xunit=\xunit, yunit=\yunit, algebraic=true}
+       \fontsize{15pt}{15pt}\selectfont
+       \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+       \psgrid[gridcolor=light,subgriddiv=1,gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+       \psaxes[linewidth=0.75pt,showorigin=false]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+       \rput(-0.5,-0.5){$O$}
+       \psplot[linewidth=1pt,plotpoints=2000,linecolor=blue]{\xmin}{\xmax}{(2*x^2+1)/(x-1)^2}
+       \psplot[linewidth=1pt,plotpoints=2000,linecolor=red]{\xmin}{\xmax}{2000*(x-1)}
+       \psplot[linewidth=1pt,plotpoints=2000,linecolor=red]{\xmin}{\xmax}{2}
+       \rput[t](2.7,9){$\blue \mathscr{C}_f$}
+       \end{pspicture*}
+      }
+   \end{extern}
+\end{center}
+%##
+\end{corrige}
+\input{_footer}

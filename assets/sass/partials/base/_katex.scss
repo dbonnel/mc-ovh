@@ -1,0 +1,23 @@
+.katex-wrapper {
+    display: inline-block;
+    text-transform: none;
+    margin: 2px;
+    font-size: .9em;
+}
+
+.katex-wrapper .katex-display {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.katex-wrapper .katex .outer-wrap > .cancel.strike {
+    background: linear-gradient(to top left,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) calc(50% - 0.02em),
+            $primary calc(50% - 0.02em),
+            $primary calc(50% + 0.02em),
+            rgba(0, 0, 0, 0) calc(50% + 0.02em),
+            rgba(0, 0, 0, 0) 100%);
+    top: 1px;
+}

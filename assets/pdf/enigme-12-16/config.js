@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"","author":"Patrick Kitabgi","fileName":"solutiontrapeze.pdf","bounds":[[711,1025]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

@@ -1,0 +1,116 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-combinaisons-bac-s-metropole-2009/}
+\meta{pid}{2323}
+\meta{titre}{Probabilités Combinaisons - Bac S Métropole 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3\end{h2}
+\textit{5 points - Commun à tous les candidats}
+\begin{h3}Partie I\end{h3}
+\textit{Cette question est une restitution organisée de connaissances. }
+\par
+On rappelle que si $n$ et $p$ sont deux nombres entiers naturels tels que $p \leqslant n$ alors
+
+\begin{center}
+$\begin{pmatrix} n \\ p \end{pmatrix}=\frac{n!}{p!\left(n-p\right)!}$.
+\end{center}
+
+Démontrer que pour tout nombre entier naturel $n$ et pour tout nombre entier naturel $p$ tels que $1  \leqslant  p  \leqslant  n$ on a : $\begin{pmatrix} n \\ p\end{pmatrix}=\begin{pmatrix} n-1 \\ p-1\end{pmatrix} + \begin{pmatrix} n-1 \\ p \end{pmatrix}$.
+\begin{h3}Partie II\end{h3}
+Un sac contient 10 jetons indiscernables au toucher :
+\par
+7 jetons blancs numérotés de 1 à 7 et 3 jetons noirs numérotés de 1 à 3.
+\par
+On tire simultanément deux jetons de ce sac.
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          On note A l'événement " obtenir deux jetons blancs ".
+          \par
+          Démontrer que la probabilité de l'événement A est égale à $\frac{7}{15}$.
+          \item
+          On note B l'événement " obtenir deux jetons portant des numéros impairs ".
+          \par
+          Calculer la probabilité de B.
+          \item
+          Les événements A et B sont-ils indépendants ?
+     \end{enumerate}
+     \item
+     Soit $X$ la variable aléatoire prenant pour valeur le nombre de jetons blancs obtenus lors de ce tirage simultané.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer la loi de probabilité de $X$.
+          \item
+          Calculer l'espérance mathématique de $X$.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie I\end{h3}
+     Voir cours (calcul assez fastidieux!)
+     \begin{h3}Partie II\end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Le nombre total de tirages est $\begin{pmatrix} 10 \\ 2 \end{pmatrix}=45$
+               \par
+               Le nombre de tirages de deux jetons blancs est $\begin{pmatrix} 7 \\ 2 \end{pmatrix}=21$ (il y a 7 jetons blancs)
+               \par
+               La probabilité cherchée est donc :
+               \par
+               $p\left(A\right)=\frac{21}{45}=\frac{7}{15}$
+               \item
+               Il y a 6 jetons impairs.
+               \par
+               Le nombre de tirages de deux jetons impairs est $\begin{pmatrix} 6 \\ 2 \end{pmatrix}=15$
+               \par
+               La probabilité cherchée est donc :
+               \par
+               $p\left(A\right)=\frac{15}{45}=\frac{1}{3}$
+               \item
+               Il y a 4 jetons blancs et impairs.
+               \par
+               Le nombre de tirages de deux jetons blancs et impairs est $\begin{pmatrix} 4 \\ 2 \end{pmatrix}=6$
+               \par
+               La probabilité de tirer deux jetons blancs et impairs est donc :
+               \par
+               $p\left(A \cap  B\right)=\frac{6}{45}=\frac{2}{15}$
+               \par
+               Or $p\left(A\right)\times p\left(B\right)=\frac{7}{15}\times \frac{1}{3}=\frac{7}{45}$ donc : $p\left(A \cap  B\right) \neq p\left(A\right)\times p\left(B\right)$
+               \par
+               Les évènements A et B ne sont pas indépendants.
+          \end{enumerate}
+          \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          $X$ peut prendre les valeurs 0; 1 et 2.
+          \par
+          L'évènement $\left(X=0\right)$ correspond à " ne tirer aucun jeton blanc ". Comme il y a 3 jetons noirs :
+          \par
+          $p\left(X=0\right)=\frac{\begin{pmatrix} 3 \\ 2 \end{pmatrix}}{45}=\frac{3}{45}=\frac{1}{15}$
+          \par
+          L'évènement $\left(X=1\right)$ correspond à " tirer un jeton blanc et un jeton noir ". Ici on ne tient pas compte de l'ordre. Comme il y a 3 jetons noirs et 7 jetons blancs, il y a 21 \textbf{paires} composées d'un jeton blanc et d'un jeton noir. Donc :
+          \par
+          $p\left(X=1\right)=\frac{21}{45}=\frac{7}{15}$
+          \par
+          Enfin, l'évènement $\left(X=2\right)$ est l'évènement A.
+          \par
+          $p\left(X=2\right)=p\left(A\right)=\frac{7}{15}$
+          \par
+          La loi de probabilité de $X$ est donnée par le tableau :
+
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $x_{i}$ & 0 & 1 & 2
+               \\ \hline
+               $p\left(X=x_{i}\right)$  &  $\frac{1}{15}$  &  $\frac{7}{15}$  &  $\frac{7}{15}$
+               \\ \hline
+          \end{tabularx}   
+
+\item
+$ E(X) = 0  \times \frac{ 1 }{ 15 } + 1  \times \frac{ 7 }{ 15 } + 2  \times \frac{ 7 }{ 15 } $\nosp$ = \frac{ 7 }{ 5 } = 1,4 $  
+\end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

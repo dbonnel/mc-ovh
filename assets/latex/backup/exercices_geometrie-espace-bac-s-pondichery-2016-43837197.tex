@@ -1,0 +1,168 @@
+\input{_header}
+\meta{url}{/exercices/geometrie-espace-bac-s-pondichery-2016/}
+\meta{pid}{4070}
+\meta{titre}{Géométrie dans l'espace – Bac S Pondichéry 2016}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 - 5 points\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+
+\begin{center}
+\imgsvg{geometrie-espace-bac-s-pondichery-2016-1}{0.3}% alt="Géométrie dans l'espace – Bac S Pondichéry 2016 - 1" style="width:30rem"
+\end{center}
+
+$ABCDEFGH$ désigne un cube de côté $1$.
+\par
+Le point $I$ est le milieu du segment $[BF]$.
+\par
+Le point $J$ est le milieu du segment $[BC]$.
+\par
+Le point $K$ est le milieu du segment $[CD]$.
+\begin{h3}Partie A\end{h3}
+\textbf{Dans cette partie, on ne demande aucune justification}
+On admet que les droites $(IJ)$ et $(CG)$ sont sécantes en un point $L$.
+\par
+Construire, sur la figure fournie en annexe et en laissant apparents les traits de construction :
+\begin{itemize}
+     \item
+     le point $L$;
+     \item
+     l'intersection$\mathscr{D}$ des plans $(IJK)$ et $(CDH)$;
+     \item
+     la section du cube par le plan $(IJK)$
+\end{itemize}
+\begin{h3}Partie B\end{h3}
+L'espace est rapporté au repère $\left(A ~;~\overrightarrow{AB},~\overrightarrow{AD},~\overrightarrow{AE}\right)$.
+\begin{enumerate}
+     \item
+     Donner les coordonnées de $A, G, I, J$ et $K$ dans ce repère.
+     \item
+     \begin{enumerate}
+          \item
+          Montrer que le vecteur $\overrightarrow{AG}$ est normal au plan $(IJK)$.
+          \item
+          En déduire une équation cartésienne du plan $(IJK)$.
+     \end{enumerate}
+     \item
+     On désigne par $M$ un point du segment $[AG]$ et $t$ le réel de l'intervalle $[0~;~1]$ tel que $\overrightarrow{AM} = t\overrightarrow{AG}$.
+     \begin{enumerate}
+          \item
+          Démontrer que $M\text{I}^2 = 3t^2-3t+\dfrac{5}{4}$.
+          \item
+     Démontrer que la distance $MI$ est minimale pour le point $M\left(\dfrac{1}{2}~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$.\end{enumerate}
+     \item
+     Démontrer que pour ce point $M\left(\dfrac{1}{2}~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$ :
+     \begin{enumerate}
+          \item
+          $M$ appartient au plan $(IJK)$.
+          \item
+          La droite ($IM$) est perpendiculaire aux droites $(AG)$ et $(BF)$.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A\end{h3}
+     \begin{itemize}
+          \item
+          Les points $I, J,C$ et $G$ sont coplanaires. Pour placer le point $L$, il suffit de prolonger les droites $(IJ)$ et $(GC)$.
+          \item
+          Les points $K$ et $L$ appartiennent tous deux aux plans $IJK$ et $CDH$. L'intersection$\mathscr{D}$ de ces plans est donc la droite $(LK)$. Cette droite coupe le côté $[DH]$ en un point $P$.
+          \item
+          La section du cube par le plan $(IJK)$ a pour côtés $[IJ], [JK]$ et $[KP]$. Les trois autres côtés s'obtiennent en traçant les parallèles à $[IJ], [JK]$ et $[KP]$. On obtient ainsi un hexagone régulier $IJKPQR$.
+     \end{itemize}
+\begin{center}
+\imgsvg{geometrie-espace-bac-s-pondichery-2016-2}{0.3}% alt="Géométrie dans l'espace – Bac S Pondichéry 2016 - 2" style="width:30rem"
+\end{center}
+     \begin{h3}Partie B\end{h3}
+     \begin{enumerate}
+          \item
+          Par lecture directe :
+          \par
+          $A(0;0;0)$
+          \par
+          $G(1;1;1)$
+          \par
+          $I\left(1;0;\frac{1}{2}\right)$
+          \par
+          $J\left(1;\frac{1}{2};0\right)$
+          \par
+          $K\left(\frac{1}{2};1;0\right)$
+          \item
+          \begin{enumerate}
+               \item
+               Pour montrer que le vecteur $\overrightarrow{AG}$ est normal au plan $(IJK)$, il suffit de montrer que $\overrightarrow{AG}$ est orthogonal à deux vecteurs non colinéaires de ce plan, par exemple $\overrightarrow{IJ}$ et $\overrightarrow{JK}$.
+               \begin{itemize}
+                    \item
+                    Les coordonnées de $\overrightarrow{IJ}$ sont $\begin{pmatrix} 0 \\ 1/2 \\ -1/2 \end{pmatrix}$ et les coordonnées de $\overrightarrow{AG}$ sont $\begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix}$.
+                    \par
+                    $\overrightarrow{IJ}.\overrightarrow{AG}=0 \times 1+\frac{1}{2} \times 1-\frac{1}{2} \times 1 = 0$
+                    \par
+                    Donc les vecteurs $\overrightarrow{IJ}$ et $\overrightarrow{AG}$ sont orthogonaux.
+                    \item
+                    Les coordonnées de $\overrightarrow{JK}$ sont $\begin{pmatrix} -1/2 \\ 1/2 \\ 0 \end{pmatrix}$.
+                    \par
+                    $\overrightarrow{JK}.\overrightarrow{AG}=-\frac{1}{2} \times 1+\frac{1}{2} \times 1 +0 \times 1= 0$
+                    \par
+                    Donc les vecteurs $\overrightarrow{JK}$ et $\overrightarrow{AG}$ sont orthogonaux.
+               \end{itemize}
+               Le vecteur $\overrightarrow{AG}$ est donc normal au plan $(IJK)$.
+               \item
+               Le plan $(IJK)$ admet donc une équation cartésienne de la forme $x+y+z+d=0$.
+               \par
+               Ce plan passant par $I$, les coordonnées de $I$ vérifient l'équation.
+               \par
+               Par conséquent :
+               \par
+               $1+0+\frac{1}{2}+d=0$
+               \par
+               $d=-\frac{3}{2}$
+               \par
+               Une équation cartésienne du plan $(IJK)$ est donc $x+y+z-\frac{3}{2}=0$
+          \end{enumerate}
+          \item
+          \begin{enumerate}
+               \item
+               Les coordonnées du point $G$ étant $(1;1;1)$ et $A$ étant l'origine du repère, la relation $\overrightarrow{AM} = t\overrightarrow{AG}$ entraîne que les coordonnées de $M$ sont $(t;t;t)$.
+               \par
+               Alors :
+               \par
+               $MI^2=(1-t)^2+(-t)^2+ \left(\frac{1}{2}-t \right)^2$
+               \par
+               $\phantom{MI^2}=1-2t+t^2+t^2+\frac{1}{4}-t +t^2$
+               \par
+               $\phantom{MI^2}= 3t^2-3t+\dfrac{5}{4}$
+               \item
+               La fonction carrée étant strictement croissante sur $\mathbb{R}^+$, $MI^2$ et $MI$ ont des sens de variations identiques.
+               \par
+               $MI^2$ est un polynôme du second degré en $t$ de coefficients $a=3,\ b=-3$ et $c=\frac{5}{4}$.
+               \par
+               $a>0$ donc $MI^2$ admet un minimum pour $t_0=-\frac{b}{2a}=\frac{1}{2}$. Les coordonnées de $M$ sont alors $\left(\dfrac{1}{2}~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$.
+               \par
+               La distance $MI$ est donc minimale au point $M\left(\dfrac{1}{2}~;~\dfrac{1}{2}~;~\dfrac{1}{2}\right)$
+          \end{enumerate}
+          \item
+          \begin{enumerate}
+               \item
+               Pour prouver que le point $M$ appartient au plan $(IJK)$, il suffit de montrer que les coordonnées de $M$ vérifient l'équation du plan $(IJK)$ (trouvée en \textbf{2.a.}).
+               \par
+               C'est immédiat :
+               \par
+               $\frac{1}{2}+\frac{1}{2}+\frac{1}{2}-\frac{3}{2}=0$
+               \item
+               Pour montrer que deux droites sont perpendiculaires ils faut montrer qu'elles sont orthogonales \textbf{et} sécantes.
+               \begin{itemize}
+                    \item
+                    $(IM)$ et $(AG)$ sont sécantes en $M$ puisque, par hypothèse, $M$ est un point du segment $[AG]$. Par ailleurs, $(IM)$ est incluse dans le plan $(IJK)$ qui est perpendiculaire à $(AG)$ d'après \textbf{2.a.} donc $(IM)$ et $(AG)$ sont orthogonales.
+                    \item
+                    $(IM)$ et $(BF)$ sont sécantes en $I$.
+                    \par
+                    Les coordonnées des vecteurs $\overrightarrow{IM}$ et $\overrightarrow{BF}$ sont $\overrightarrow{IM}\begin{pmatrix} -1/2 \\ 1/2 \\ 0  \end{pmatrix}$et $\overrightarrow{BF}\begin{pmatrix}  0 \\ 0 \\ 1   \end{pmatrix}$
+                    \par
+                    $\overrightarrow{IM}.\overrightarrow{BF}=-\frac{1}{2} \times 0 + \frac{1}{2} \times 0 + 0 \times 1=0$.
+                    \par
+                    Donc $(IM)$ et $(BF)$ sont orthogonales.
+               \end{itemize}
+               La droite ($IM$) est donc perpendiculaire aux droites $(AG)$ et $(BF)$.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

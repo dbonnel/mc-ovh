@@ -1,0 +1,8 @@
+
+/*    create box */
+
+ .submit-btn {
+  @extend .main-btn;
+  height: 5.8rem;
+  @extend %col-lg1-xl6;
+}

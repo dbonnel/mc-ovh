@@ -1,0 +1,63 @@
+// colors
+
+$white: #fff;
+$gray-100: #f9f9f9;
+$gray-200: #eef1f6;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$green-light: lighten($green, 5%);
+$red-light: lighten($red, 10%);
+
+$primary: #333;
+$secondary: #7dc246;
+$dark: #222;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+
+// font sizes
+
+$font-size-base: 1.6rem;
+$font-size-h0: 4rem;
+$font-size-h1: 2.4rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.4rem;
+$font-size-h4: 1.2rem;
+$font-size-small: 1.4rem;
+$font-size-smaller: 1.2rem;
+$font-size-xsmaller: 1rem;
+
+
+$font-size-smaller-em: .625em;
+$font-size-small-em: .8em;
+$font-size-large-em: 1.2em;
+$font-size-larger-em: 1.5em;
+
+
+// Grid breakpoints
+
+
+$breakpoints-sm: 576px;
+$breakpoints-md: 768px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;

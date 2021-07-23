@@ -1,0 +1,50 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats ayant  choisi l'enseignement de spécialité \og mathématiques \fg{} }
+\medbreak
+Un atome d'hydrogène peut se trouver dans deux états différents, l'état stable et l'état excité. À chaque nanoseconde, l'atome peut changer d'état.
+\bigbreak
+\TitreC{Partie A - Étude d'un premier milieu}
+\medbreak
+Dans cette partie, on se place dans un premier milieu (milieu 1) où, à chaque nanoseconde, la probabilité qu'un atome passe de l'état stable à l'état excité est $0,005$, et la probabilité qu'il passe de l'état excité à l'état stable est $0,6$.
+\par
+On observe un atome d'hydrogène initialement à l'état stable.
+\par
+On note $a_n$ la probabilité que l'atome soit dans un état stable et $b_n$ la probabilité qu'il se trouve dans un état excité, $n$ nanosecondes après le début de l'observation.
+\par
+On a donc $a_0 = 1$ et $b_0 = 0$.
+\par
+On appelle $X_n$ la matrice ligne $X_n = \begin{pmatrix}a_n& b_n\end{pmatrix}$.
+L'objectif est de savoir dans quel état se trouvera l'atome d'hydrogène à long terme.
+\medbreak
+\begin{enumerate}
+     \item Calculer $a_1$ puis $b_1$ et montrer que $a_2 = 0,993025$ et $b_2 = 0,006975$.
+     \item Déterminer la matrice $A$ telle que, pour tout entier naturel $n$,\: $X_{n+1} = X_n A$.
+     \par
+     $A$ est appelée matrice de transition dans le milieu 1.
+     \par
+     On admet alors que, pour tout entier naturel $n$,\: $X_n = X_0A^n$.
+     \item On définit la matrice $P$ par $P = \begin{pmatrix}1&-1\\ 1&120\end{pmatrix}$.
+     On admet que $P$ est inversible et que
+     \[P^{-1} = \dfrac{1}{121}\begin{pmatrix}120&1\\- 1&1\end{pmatrix}.\]
+     Déterminer la matrice $D$ définie par $D = P^{-1} AP$.
+     \item Démontrer que, pour tout entier naturel $n$,\: $A^n = P D^n P^{-1}$.
+     \item On admet par la suite que, pour tout entier naturel $n$,
+     \par
+     \[A^n = \dfrac{1}{121}\begin{pmatrix}120 + 0,395^n&1 - 0,395^n\\120\left(1 - 0,395^n\right)&1 + 120 \times 0,395^n\end{pmatrix}.\]
+     En déduire une expression de $a_n$ en fonction de $n$.
+     \item Déterminer la limite de la suite $\left(a_n\right)$. Conclure.
+\end{enumerate}
+\bigbreak
+\TitreC{Partie B - Étude d'un second milieu}
+\medbreak
+Dans cette partie, on se place dans un second milieu (milieu 2), dans lequel on ne connaît pas la probabilité que l'atome passe de l'état excité à l'état stable. On note $a$ cette probabilité supposée constante. On sait, en revanche, qu'à chaque nanoseconde, la probabilité qu'un atome passe de l'état stable à l'état excité est $0,01$.
+\medbreak
+\begin{enumerate}
+     \item Donner, en fonction de $a$, la matrice de transition $M$ dans le milieu 2.
+     \item Après un temps très long, dans le milieu 2, la proportion d'atomes excités se stabilise autour de 2\,\%.
+     \par
+     On admet qu'il existe un unique vecteur $X$, appelé état stationnaire, tel que $XM = X$, et que $X = \begin{pmatrix}0,98& 0,02\end{pmatrix}$.
+     Déterminer la valeur de $a$.
+\end{enumerate}
+\input{_footer}

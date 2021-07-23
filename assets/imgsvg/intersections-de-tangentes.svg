@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" baseProfile="full" xmlns:ev="http://www.w3.org/2001/xml-events" height="11.765cm" width="12.573cm" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 466 436">
+ <title></title>
+ <g stroke-linecap="square" stroke-miterlimit="10">
+  <clipPath id="clip1">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip1)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m209.52 2v435"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip1 -->
+  <clipPath id="clip2">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip2)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m209.52 1l-3 3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip2 -->
+  <clipPath id="clip3">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip3)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m209.52 1l3 3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip3 -->
+  <clipPath id="clip4">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip4)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m0 368.62h465"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip4 -->
+  <clipPath id="clip5">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip5)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m466 368.62l-3-3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip5 -->
+  <clipPath id="clip6">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip6)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m466 368.62l-3 3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip6 -->
+  <clipPath id="clip7">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip7)">
+   <g transform="translate(56 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">–2</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip7 -->
+  <clipPath id="clip8">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip8)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m60.948 368.62v3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip8 -->
+  <clipPath id="clip9">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip9)">
+   <g transform="translate(131 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">–1</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip9 -->
+  <clipPath id="clip10">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip10)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m135.24 368.62v3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip10 -->
+  <clipPath id="clip11">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip11)">
+   <g transform="translate(215 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">0</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip11 -->
+  <clipPath id="clip12">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip12)">
+   <g transform="translate(282 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">1</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip12 -->
+  <clipPath id="clip13">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip13)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m283.81 368.62v3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip13 -->
+  <clipPath id="clip14">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip14)">
+   <g transform="translate(356 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">2</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip14 -->
+  <clipPath id="clip15">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip15)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m358.1 368.62v3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip15 -->
+  <clipPath id="clip16">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip16)">
+   <g transform="translate(430 382)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">3</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip16 -->
+  <clipPath id="clip17">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip17)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m432.38 368.62v3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip17 -->
+  <clipPath id="clip18">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip18)">
+   <g transform="translate(197 366)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">0</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip18 -->
+  <clipPath id="clip19">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip19)">
+   <g transform="translate(197 298)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">1</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip19 -->
+  <clipPath id="clip20">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip20)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m206.52 294.33h3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip20 -->
+  <clipPath id="clip21">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip21)">
+   <g transform="translate(197 224)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">2</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip21 -->
+  <clipPath id="clip22">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip22)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m206.52 220.04h3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip22 -->
+  <clipPath id="clip23">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip23)">
+   <g transform="translate(197 149)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">3</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip23 -->
+  <clipPath id="clip24">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip24)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m206.52 145.76h3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip24 -->
+  <clipPath id="clip25">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip25)">
+   <g transform="translate(197 75)">
+    <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#000000">4</text>
+   </g>
+<!-- transform -->  </g>
+<!-- clip25 -->
+  <clipPath id="clip26">
+   <path d="m0 0v437h467v-437z"/>
+  </clipPath>
+  <g clip-path="url(#clip26)">
+   <g stroke="#000" stroke-linecap="butt" fill="none">
+    <path d="m206.52 71.469h3"/>
+   </g>
+<!-- drawing style -->  </g>
+<!-- clip26 --><!-- misc -->
+  <g id="layer0">
+   <clipPath id="clip27">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip27)">
+    <g stroke-linejoin="round" stroke="#f00" stroke-linecap="round" fill="none">
+     <path d="m-13.339-299.97c148.58 891.45 297.15 891.45 445.72 0"/>
+     <title>Parabole P</title>
+     <desc>P: y = x²</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip27 -->
+   <clipPath id="clip28">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip28)">
+    <g transform="translate(95 250)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#ff0000">P</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip28 -->
+   <clipPath id="clip29">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip29)">
+    <g stroke-linejoin="round" stroke="#33f" stroke-linecap="round" fill="none">
+     <path d="m163.55 442l223.5-447"/>
+     <title>Droite D_1</title>
+     <desc>Droite D_1: y = 2m x + 0.25</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip29 -->
+   <clipPath id="clip30">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip30)">
+    <g transform="translate(179 428)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#3333ff">D</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip30 -->
+   <clipPath id="clip31">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip31)">
+    <g transform="translate(187.67 433)">
+     <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#3333ff">1</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip31 -->
+   <clipPath id="clip32">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip32)">
+    <g stroke-linejoin="round" stroke="#090" stroke-linecap="round" fill="none">
+     <path d="m-5 319.01l477 112.61"/>
+     <title>Droite g</title>
+     <desc>Droite g: y = 2x_1 x - x_1²</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip32 -->
+   <clipPath id="clip33">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip33)">
+    <g stroke-linejoin="round" stroke="#090" stroke-linecap="round" fill="none">
+     <path d="m270.87 442l105.52-447"/>
+     <title>Droite h</title>
+     <desc>Droite h: y = 2x_2 x - x_2²</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip33 -->
+   <clipPath id="clip34">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip34)">
+    <g fill="#f00">
+     <path d="m201.75 367.58c0 0.56-0.44 1-1 1-0.55 0-1-0.44-1-1 0-0.55 0.45-1 1-1 0.56 0 1 0.45 1 1z"/>
+     <title>Point A_1</title>
+     <desc>Point A_1: Point d&apos;intersection de P et D_1</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip34 -->
+   <clipPath id="clip35">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip35)">
+    <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+     <path d="m201.75 367.58c0 0.56-0.44 1-1 1-0.55 0-1-0.44-1-1 0-0.55 0.45-1 1-1 0.56 0 1 0.45 1 1z"/>
+     <title>Point A_1</title>
+     <desc>Point A_1: Point d&apos;intersection de P et D_1</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip35 -->
+   <clipPath id="clip36">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip36)">
+    <g transform="translate(196 384)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#ff0000">A</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip36 -->
+   <clipPath id="clip37">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip37)">
+    <g transform="translate(204 389)">
+     <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#ff0000">1</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip37 -->
+   <clipPath id="clip38">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip38)">
+    <g fill="#f00">
+     <path d="m367.87 35.361c0 0.552-0.45 1-1 1-0.56 0-1-0.448-1-1 0-0.553 0.44-1 1-1 0.55 0 1 0.447 1 1z"/>
+     <title>Point B_1</title>
+     <desc>Point B_1: Point d&apos;intersection de P et D_1</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip38 -->
+   <clipPath id="clip39">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip39)">
+    <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+     <path d="m367.87 35.361c0 0.552-0.45 1-1 1-0.56 0-1-0.448-1-1 0-0.553 0.44-1 1-1 0.55 0 1 0.447 1 1z"/>
+     <title>Point B_1</title>
+     <desc>Point B_1: Point d&apos;intersection de P et D_1</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip39 -->
+   <clipPath id="clip40">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip40)">
+    <g transform="translate(372 45)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#ff0000">B</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip40 -->
+   <clipPath id="clip41">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip41)">
+    <g transform="translate(380 50)">
+     <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#ff0000">1</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip41 -->
+   <clipPath id="clip42">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip42)">
+    <g fill="#090">
+     <path d="m284.81 387.19c0 0.55-0.45 1-1 1s-1-0.45-1-1 0.45-1 1-1 1 0.45 1 1z"/>
+     <title>Point I_1</title>
+     <desc>Point I_1: Point d&apos;intersection de g et h</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip42 -->
+   <clipPath id="clip43">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip43)">
+    <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+     <path d="m284.81 387.19c0 0.55-0.45 1-1 1s-1-0.45-1-1 0.45-1 1-1 1 0.45 1 1z"/>
+     <title>Point I_1</title>
+     <desc>Point I_1: Point d&apos;intersection de g et h</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip43 -->
+   <clipPath id="clip44">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip44)">
+    <g transform="translate(287 402)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#009900">I</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip44 -->
+   <clipPath id="clip45">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip45)">
+    <g transform="translate(290.33 407)">
+     <text font-size="10" font-family="serif" y="0" x="0" font-style="italic" fill="#009900">1</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip45 -->
+   <clipPath id="clip46">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip46)">
+    <g fill="#300">
+     <path d="m210.52 368.62c0 0.55-0.44 1-1 1-0.55 0-1-0.45-1-1s0.45-1 1-1c0.56 0 1 0.45 1 1z"/>
+     <title>Point O</title>
+     <desc>O = (0, 0)</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip46 -->
+   <clipPath id="clip47">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip47)">
+    <g stroke-linejoin="round" stroke="#000" stroke-linecap="round" fill="none">
+     <path d="m210.52 368.62c0 0.55-0.44 1-1 1-0.55 0-1-0.45-1-1s0.45-1 1-1c0.56 0 1 0.45 1 1z"/>
+     <title>Point O</title>
+     <desc>O = (0, 0)</desc>
+    </g>
+<!-- drawing style -->   </g>
+<!-- clip47 -->
+   <clipPath id="clip48">
+    <path d="m0 0v437h467v-437z"/>
+   </clipPath>
+   <g clip-path="url(#clip48)">
+    <g transform="translate(213 366)">
+     <text font-size="12" font-family="serif" y="0" x="0" font-style="italic" fill="#330000">O</text>
+    </g>
+<!-- transform -->   </g>
+<!-- clip48 -->  </g>
+<!-- layer0 -->
+  <defs>
+   <font id="serif" horiz-adv-x="0">
+    <font-face font-size="100" descent="21.972656" units-per-em="100.00" font-family="serif" ascent="100.53711" font-style="italic"/>
+    <missing-glyph d=""/>
+    <glyph horiz-adv-x="50.000" unicode="–" d="M 5.1250 26.516 L 5.1250 33.156 L 44.875 33.156 L 44.875 26.516 L 5.1250 26.516 z"/>
+    <glyph horiz-adv-x="77.783" unicode="O" d="M 4.8281 34.859 Q 4.8281 52.688 14.398 62.773 Q 23.969 72.859 39.109 72.859 Q 49.031 72.859 56.984 68.117 Q 64.938 63.375 69.117 54.906 Q 73.297 46.438 73.297 35.688 Q 73.297 24.812 68.898 16.219 Q 64.500 7.6250 56.445 3.2031 Q 48.391 -1.2188 39.062 -1.2188 Q 28.953 -1.2188 20.992 3.6641 Q 13.031 8.5469 8.9297 16.992 Q 4.8281 25.438 4.8281 34.859 z M 14.594 34.719 Q 14.594 21.781 21.555 14.336 Q 28.516 6.8906 39.016 6.8906 Q 49.703 6.8906 56.617 14.406 Q 63.531 21.922 63.531 35.750 Q 63.531 44.484 60.578 51.000 Q 57.625 57.516 51.930 61.109 Q 46.234 64.703 39.156 64.703 Q 29.109 64.703 21.852 57.789 Q 14.594 50.875 14.594 34.719 z"/>
+    <glyph horiz-adv-x="55.615" unicode="4" d="M 32.328 -0.0000 L 32.328 17.141 L 1.2656 17.141 L 1.2656 25.203 L 33.938 71.578 L 41.109 71.578 L 41.109 25.203 L 50.781 25.203 L 50.781 17.141 L 41.109 17.141 L 41.109 -0.0000 L 32.328 -0.0000 z M 32.328 25.203 L 32.328 57.469 L 9.9062 25.203 L 32.328 25.203 z"/>
+    <glyph horiz-adv-x="66.699" unicode="P" d="M 7.7188 -0.0000 L 7.7188 71.578 L 34.719 71.578 Q 41.844 71.578 45.609 70.906 Q 50.875 70.016 54.445 67.555 Q 58.016 65.094 60.188 60.648 Q 62.359 56.203 62.359 50.875 Q 62.359 41.750 56.547 35.430 Q 50.734 29.109 35.547 29.109 L 17.188 29.109 L 17.188 -0.0000 L 7.7188 -0.0000 z M 17.188 37.547 L 35.688 37.547 Q 44.875 37.547 48.734 40.969 Q 52.594 44.391 52.594 50.594 Q 52.594 55.078 50.320 58.273 Q 48.047 61.469 44.344 62.500 Q 41.938 63.141 35.500 63.141 L 17.188 63.141 L 17.188 37.547 z"/>
+    <glyph horiz-adv-x="55.615" unicode="1" d="M 37.250 -0.0000 L 28.469 -0.0000 L 28.469 56.000 Q 25.297 52.984 20.141 49.953 Q 14.984 46.922 10.891 45.406 L 10.891 53.906 Q 18.266 57.375 23.781 62.305 Q 29.297 67.234 31.594 71.875 L 37.250 71.875 L 37.250 -0.0000 z"/>
+    <glyph horiz-adv-x="55.615" unicode="3" d="M 4.2031 18.891 L 12.984 20.062 Q 14.500 12.594 18.141 9.2969 Q 21.781 6.0000 27.000 6.0000 Q 33.203 6.0000 37.477 10.297 Q 41.750 14.594 41.750 20.953 Q 41.750 27.000 37.797 30.930 Q 33.844 34.859 27.734 34.859 Q 25.250 34.859 21.531 33.891 L 22.516 41.609 Q 23.391 41.500 23.922 41.500 Q 29.547 41.500 34.039 44.430 Q 38.531 47.359 38.531 53.469 Q 38.531 58.297 35.258 61.477 Q 31.984 64.656 26.812 64.656 Q 21.688 64.656 18.266 61.430 Q 14.844 58.203 13.875 51.766 L 5.0781 53.328 Q 6.6875 62.156 12.398 67.016 Q 18.109 71.875 26.609 71.875 Q 32.469 71.875 37.398 69.359 Q 42.328 66.844 44.945 62.500 Q 47.562 58.156 47.562 53.266 Q 47.562 48.641 45.070 44.828 Q 42.578 41.016 37.703 38.766 Q 44.047 37.312 47.562 32.695 Q 51.078 28.078 51.078 21.141 Q 51.078 11.766 44.242 5.2500 Q 37.406 -1.2656 26.953 -1.2656 Q 17.531 -1.2656 11.305 4.3516 Q 5.0781 9.9688 4.2031 18.891 z"/>
+    <glyph horiz-adv-x="55.615" unicode="0" d="M 4.1562 35.297 Q 4.1562 48.000 6.7656 55.742 Q 9.3750 63.484 14.523 67.680 Q 19.672 71.875 27.484 71.875 Q 33.250 71.875 37.594 69.555 Q 41.938 67.234 44.773 62.867 Q 47.609 58.500 49.219 52.227 Q 50.828 45.953 50.828 35.297 Q 50.828 22.703 48.242 14.969 Q 45.656 7.2344 40.508 3.0078 Q 35.359 -1.2188 27.484 -1.2188 Q 17.141 -1.2188 11.234 6.2031 Q 4.1562 15.141 4.1562 35.297 z M 13.188 35.297 Q 13.188 17.672 17.312 11.836 Q 21.438 6.0000 27.484 6.0000 Q 33.547 6.0000 37.672 11.859 Q 41.797 17.719 41.797 35.297 Q 41.797 52.984 37.672 58.789 Q 33.547 64.594 27.391 64.594 Q 21.344 64.594 17.719 59.469 Q 13.188 52.938 13.188 35.297 z"/>
+    <glyph horiz-adv-x="55.615" unicode="2" d="M 50.344 8.4531 L 50.344 -0.0000 L 3.0312 -0.0000 Q 2.9375 3.1719 4.0469 6.1094 Q 5.8594 10.938 9.8359 15.625 Q 13.812 20.312 21.344 26.469 Q 33.016 36.031 37.117 41.625 Q 41.219 47.219 41.219 52.203 Q 41.219 57.422 37.477 61.008 Q 33.734 64.594 27.734 64.594 Q 21.391 64.594 17.578 60.789 Q 13.766 56.984 13.719 50.250 L 4.6875 51.172 Q 5.6094 61.281 11.664 66.578 Q 17.719 71.875 27.938 71.875 Q 38.234 71.875 44.242 66.164 Q 50.250 60.453 50.250 52.000 Q 50.250 47.703 48.492 43.555 Q 46.734 39.406 42.656 34.812 Q 38.578 30.219 29.109 22.219 Q 21.188 15.578 18.945 13.211 Q 16.703 10.844 15.234 8.4531 L 50.344 8.4531 z"/>
+    <glyph horiz-adv-x="27.783" unicode="I" d="M 9.3281 -0.0000 L 9.3281 71.578 L 18.797 71.578 L 18.797 -0.0000 L 9.3281 -0.0000 z"/>
+    <glyph horiz-adv-x="72.217" unicode="D" d="M 7.7188 -0.0000 L 7.7188 71.578 L 32.375 71.578 Q 40.719 71.578 45.125 70.562 Q 51.266 69.141 55.609 65.438 Q 61.281 60.641 64.086 53.195 Q 66.891 45.750 66.891 36.188 Q 66.891 28.031 64.992 21.734 Q 63.094 15.438 60.109 11.305 Q 57.125 7.1719 53.586 4.8047 Q 50.047 2.4375 45.047 1.2188 Q 40.047 -0.0000 33.547 -0.0000 L 7.7188 -0.0000 z M 17.188 8.4531 L 32.469 8.4531 Q 39.547 8.4531 43.578 9.7656 Q 47.609 11.078 50.000 13.484 Q 53.375 16.844 55.250 22.531 Q 57.125 28.219 57.125 36.328 Q 57.125 47.562 53.438 53.594 Q 49.750 59.625 44.484 61.672 Q 40.672 63.141 32.234 63.141 L 17.188 63.141 L 17.188 8.4531 z"/>
+    <glyph horiz-adv-x="66.699" unicode="B" d="M 7.3281 -0.0000 L 7.3281 71.578 L 34.188 71.578 Q 42.391 71.578 47.344 69.406 Q 52.297 67.234 55.102 62.719 Q 57.906 58.203 57.906 53.266 Q 57.906 48.688 55.422 44.633 Q 52.938 40.578 47.906 38.094 Q 54.391 36.188 57.883 31.594 Q 61.375 27.000 61.375 20.750 Q 61.375 15.719 59.250 11.398 Q 57.125 7.0781 54.000 4.7344 Q 50.875 2.3906 46.164 1.1953 Q 41.453 -0.0000 34.625 -0.0000 L 7.3281 -0.0000 z M 16.797 41.500 L 32.281 41.500 Q 38.578 41.500 41.312 42.328 Q 44.922 43.406 46.750 45.898 Q 48.578 48.391 48.578 52.156 Q 48.578 55.719 46.875 58.430 Q 45.172 61.141 41.992 62.141 Q 38.812 63.141 31.109 63.141 L 16.797 63.141 L 16.797 41.500 z M 16.797 8.4531 L 34.625 8.4531 Q 39.203 8.4531 41.062 8.7969 Q 44.344 9.3750 46.539 10.742 Q 48.734 12.109 50.148 14.719 Q 51.562 17.328 51.562 20.750 Q 51.562 24.750 49.516 27.711 Q 47.469 30.672 43.828 31.867 Q 40.188 33.062 33.344 33.062 L 16.797 33.062 L 16.797 8.4531 z"/>
+    <glyph horiz-adv-x="66.699" unicode="A" d="M -.14062 -0.0000 L 27.344 71.578 L 37.547 71.578 L 66.844 -0.0000 L 56.062 -0.0000 L 47.703 21.688 L 17.781 21.688 L 9.9062 -0.0000 L -.14062 -0.0000 z M 20.516 29.391 L 44.781 29.391 L 37.312 49.219 Q 33.891 58.250 32.234 64.062 Q 30.859 57.172 28.375 50.391 L 20.516 29.391 z"/>
+   </font>
+  </defs>
+<!-- font definitions --> </g>
+<!-- default stroke --></svg>
+<!-- bounding box -->

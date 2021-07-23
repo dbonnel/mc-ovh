@@ -1,0 +1,200 @@
+\input{_header}
+\cadre{rouge}{Méthode}{ % id="m010"
+     \begin{itemize}
+          \item %
+          \textbf{1ère étape~:} (facultative mais permet de simplifier les calculs)~:\\
+          Rechercher l'équation dans laquelle il sera facile d'exprimer $y$ en fonction de $x$, ou $x$ en fonction de $y$.\\
+          \textit{On supposera, dans l'explication qui suit, que l'on a choisi d'exprimer $y$ en fonction de $x$ dans la première équation.}
+          \item %
+          \textbf{2ème étape~:} \\
+          Dans la première équation, exprimer $y$ en fonction de $x$.\\
+          Ne pas modifier la seconde équation.
+          \item %
+          \textbf{3ème étape~:} \\
+          Remplacer $y$ par l'expression trouvée précédemment dans la seconde équation.\\
+          La seconde équation n'a alors plus qu'une seule inconnue $x.$
+          \item %
+          \textbf{4ème étape~:} \\
+          Résoudre la seconde équation pour trouver $x.$
+          \item %
+          \textbf{5ème étape~:} \\
+          Calculer $y$ en remplaçant $x$, dans la première équation,  par la valeur trouvée à l'étape précédente.
+          \item %
+          \textbf{6ème étape~:} \\
+          Conclure en précisant la ou les couple(s) de solution(s).
+     \end{itemize}
+} % fin méth
+\bloc{cyan}{Remarques}{ % id="r020"
+     \begin{itemize}
+          \item %
+          Pour présenter les calculs, il est préférable de recopier à chaque étape un système équivalent au système de départ en réécrivant les deux équations, y compris celle que l'on n'a pas modifiée.
+          \item %
+          Un système admet souvent un unique couple solution mais peut aussi n'avoir aucune solution ou admettre une infinité de solutions (voir exemple 3 et 4).
+     \end{itemize}
+} % fin rem
+\bloc{orange}{Exemple 1}{ % id="e030"
+     Résoudre le système :
+     \par
+     $(S_1)~~\begin{cases} 3x+y=2 \\  5x+2y=3\end{cases}$
+     \par
+     \textbf{Solution~:}
+     \begin{itemize}
+          \item %
+          \textbf{1ère étape~: Recherche de la méthode la plus rapide.}
+          \par
+          On remarque qu'ici,  il sera particulièrement simple d'exprimer $y$ en fonction de $x$ dans la première équation.
+          \item %
+          \textbf{2ème étape~: Expression de  $y$ en fonction de $x$.}
+          \par
+          Il suffit de \og faire passer \fg{} $3x$ dans l'autre membre dans la première équation~;
+          \\on recopie la seconde équation sans y toucher.
+          \par
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3x \\  5x+2y=3\end{cases}$
+          \item %
+          \textbf{3ème étape~: Remplacement de $y$.}
+          \par
+          On remplace $y$ par $(2-3x)$ dans la seconde équation (ne pas oublier la parenthèse~!).\\
+          On ne touche pas à la première équation.
+          \par
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3x \\  5x+2(2-3x)=3\end{cases}$
+          \item %
+          \textbf{4ème étape~: Calcul de $x.$}
+          \par
+          On résout la seconde équation (en recopiant à chaque fois la première à l'identique).
+          \par
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3x \\  5x+4-6x=3\end{cases}$\\
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3x \\  -x=3-4\end{cases}$\\
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3x \\  x=1\end{cases}$\\
+          \item %
+          \textbf{5ème étape~: Calcul de $y.$}
+          \par
+          On  remplace $x$ par $1$ dans la première équation~:
+          \par
+          $(S_1)~\Leftrightarrow~\begin{cases} y=2-3\times 1\\  x=1\end{cases}$\\
+          $(S_1)~\Leftrightarrow~\begin{cases} y=-1\\  x=1\end{cases}$\\
+          \item %
+          \textbf{6ème étape~: Conclusion. }
+          \par
+          Le couple $(1~;~-1)$ est l'unique couple solution du système $(S_1)$.
+     \end{itemize}
+} % fin ex
+\bloc{orange}{Exemple 2}{ % id="e040"
+     Résoudre le système :
+     \par
+     $(S_1)~~\begin{cases} 5x-2y=1 \\  x+3y=7\end{cases}$
+     \par
+     \textbf{Solution~:}
+     \begin{itemize}
+          \item %
+          \textbf{1ère étape~: Recherche de la méthode la plus rapide.}
+          \par
+          On pourrait, comme dans l'exemple précédent, exprimer $y$ en fonction de $x$ dans la première équation. Toutefois, à cause du coefficient $-2$, cela entraînerait des calculs plus longs comportant des fractions (on trouverait $y=\dfrac{-1+5x}{2}$).
+          \par
+          Il est plus simple, ici, d'exprimer $x$ en fonction de $y$ dans la deuxième équation.
+          \item %
+          \textbf{2ème étape~: Expression de  $x$ en fonction de $y$.}
+          \par
+          $(S_2)~\Leftrightarrow~\begin{cases} 5x-2y=1 \\  x=7-3y\end{cases}$
+          \item %
+          \textbf{3ème étape~: Remplacement de $x$.}
+          \par
+          On remplace $x$ par $(7-3y)$ dans la première équation.
+          \par
+          $(S_2)~\Leftrightarrow~\begin{cases} 5(7-3y)-2y=1 \\  x=7-3y\end{cases}$
+          \item %
+          \textbf{4ème étape~: Calcul de $y.$}
+          \par
+          On résout la première équation.
+          \par
+          $(S_2)~\Leftrightarrow~\begin{cases} 35-15y-2y=1 \\  x=7-3y\end{cases}$\\
+          $(S_2)~\Leftrightarrow~\begin{cases} -17y=-34 \\  x=7-3y\end{cases}$\\
+          $(S_2)~\Leftrightarrow~\begin{cases} y=\dfrac{-34}{-17} \\  x=7-3y\end{cases}$\\
+          $(S_2)~\Leftrightarrow~\begin{cases} y=2\\  x=7-3y\end{cases}$\\
+          \item %
+          \textbf{5ème étape~: Calcul de $x.$}
+          \par
+          On  remplace $y$ par $2$ dans la seconde équation~:
+          \par
+          $(S_2)~\Leftrightarrow~\begin{cases}  y=2\\  x=7-3 \times 2\end{cases}$\\
+          $(S_2)~\Leftrightarrow~\begin{cases} y=2\\  x=1\end{cases}$\\
+          \item %
+          \textbf{6ème étape~: Conclusion. }
+          \par
+          Le couple $(1~;~2)$ est l'unique solution du système $(S_2)$.
+     \end{itemize}
+} % fin ex
+\bloc{orange}{Exemple 3}{ % id="e050"
+     Résoudre le système :
+     \par
+     $(S_3)~~\begin{cases} 6x-2y=3 \\  -3x+y=5\end{cases}$
+     \par
+     \textbf{Solution~:}
+     \begin{itemize}
+          \item %
+          \textbf{1ère étape~: Recherche de la méthode la plus rapide.}
+          \par
+          Ici, il est facile d'exprimer $y$ en fonction de $x$ dans la seconde équation.
+          \item %
+          \textbf{2ème étape~: Expression de  $y$ en fonction de $x$.}
+          \par
+          $(S_3)~\Leftrightarrow~\begin{cases} 6x-2y=3 \\ y=5+3x\end{cases}$
+          \item %
+          \textbf{3ème étape~: Remplacement de $y$.}
+          \par
+          $(S_3)~\Leftrightarrow~\begin{cases}  6x-2(5+3x)=3 \\ y=5+3x\end{cases}$
+          \item %
+          \textbf{4ème étape~: Calcul de $x.$}
+          \par
+          $(S_3)~\Leftrightarrow~\begin{cases}  6x-10-6x=3 \\ y=5+3x\end{cases}$\\
+          $(S_3)~\Leftrightarrow~\begin{cases}  -10=3 \\ y=5+3x\end{cases}$\\
+          \par
+          La première équation n'a pas de solution, donc le système n'en a pas non plus.
+          \par
+          On peut donc passer directement à la conclusion~:
+          \item %
+          \textbf{6ème étape~: Conclusion. }
+          \par
+          Le système $(S_3)$ n'admet aucune solution dans $\mathbb{R}.$
+     \end{itemize}
+} % fin ex
+\bloc{orange}{Exemple 4}{ % id="e060"
+     Résoudre le système :
+     \par
+     $(S_4)~~\begin{cases} 4x-2y=6 \\  -6x+3y=-9\end{cases}$
+     \par
+     \textbf{Solution~:}
+     \begin{itemize}
+          \item %
+          \textbf{1ère étape~: Recherche de la méthode la plus rapide.}
+          \par
+          On choisit d'exprimer $y$ en fonction de $x$ dans la première équation.
+          \item %
+          \textbf{2ème étape~: Expression de  $y$ en fonction de $x$.}
+          \par
+          $(S_4)~\Leftrightarrow~\begin{cases}-2y=6 -4x\\  -6x+3y=-9\end{cases}$\\
+          $(S_4)~\Leftrightarrow~\begin{cases}2y=-6 +4x\\  -6x+3y=-9\end{cases}$\\
+          $(S_4)~\Leftrightarrow~\begin{cases}y=\dfrac{-6 +4x}{2}\\  -6x+3y=-9\end{cases}$\\
+          $(S_4)~\Leftrightarrow~\begin{cases}y=\dfrac{-6}{2} +\dfrac{4x}{2}\\  -6x+3y=-9\end{cases}$\\
+          $(S_4)~\Leftrightarrow~\begin{cases}y=-3+2x\\  -6x+3y=-9\end{cases}$\\
+          \item %
+          \textbf{3ème étape~: Remplacement de $y$.}
+          \par
+          $(S_4)~\Leftrightarrow~\begin{cases}  y=-3+2x\\  -6x+3(-3+2x)=-9\end{cases}$\\
+          \item %
+          \textbf{4ème étape~: Calcul de $x.$}
+          \par
+          $(S_4)~\Leftrightarrow~\begin{cases}  y=-3+2x\\  -6x-9+6x=-9\end{cases}$\\
+          $(S_4)~\Leftrightarrow~\begin{cases}  y=-3+2x\\  -9=-9\end{cases}$\\
+          \par
+          La deuxième équation est toujours vérifiée. Il suffit donc qu'un couple soit solution de la première équation $y=-3+2x$ pour qu'il soit solution du système.
+          \par
+          Or, cette équation possède une infinité de solutions (par exemple $(0~;~-3)$, $(1~;~-1)$, etc.).
+          \par
+          On peut donc sauter la cinquième étape et passer à la conclusion.
+          \item %
+          \textbf{6ème étape~: Conclusion. }
+          \par
+          Le système $(S_4)$ admet une infinité de solutions dans $\mathbb{R}.$
+     \end{itemize}
+} % fin ex
+\input{_footer}

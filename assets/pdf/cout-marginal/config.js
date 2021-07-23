@@ -1,0 +1,1 @@
+IDRViewer.config = {"pagecount":1,"title":"","author":"Denis","fileName":"co_t_marginal.pdf","bounds":[[783,985]],"bookmarks":[],"thumbnailType":"jpg","pageType":"svg","pageLabels":[]};

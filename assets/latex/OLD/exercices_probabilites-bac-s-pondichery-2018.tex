@@ -1,0 +1,325 @@
+\input{_header}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Commun  à tous les candidats}
+\medskip
+Une entreprise conditionne du sucre blanc provenant de deux exploitations U et V en paquets
+de 1 kg et de différentes qualités.
+\smallskip
+Le sucre extra fin est conditionné séparément dans des paquets portant le label \og  extra fin \fg.
+\smallskip
+\emph{Les parties A, B et C peuvent être traitées de façon indépendante.}
+\smallskip
+Dans tout l'exercice, les résultats seront arrondis, si nécessaire, au millième.
+\begin{center}\begin{h3}Partie A \end{h3}\end{center}
+Pour calibrer le sucre en fonction de la taille de ses cristaux, on le fait passer au travers d'une
+série de trois tamis positionnés les uns au-dessus des autres et posés sur un récipient à fond
+étanche.
+Les ouvertures des mailles sont les suivantes~:
+\begin{center}
+     \begin{extern}%alt="tamis"
+          \psset{unit=1cm}
+          \begin{pspicture}(12,4)
+               %\psgrid
+               \uput[r](0.5,3){Tamis 1 : 0,8 mm} \psline[linewidth=1pt]{->}(4,1)(6.8,1)
+               \uput[r](0.5,2){Tamis 2 : 0,5 mm} \psline[linewidth=1pt]{->}(4,2)(6.8,2)
+               \uput[r](0.5,1){Tamis 3 : 0,2 mm} \psline[linewidth=1pt]{->}(4,3)(6.8,3)
+               \uput[r](-0.95,0.2){Récipient à fond étanche}  \psline[linewidth=1pt]{->}(4,0.2)(7,0.2)
+               \psline[linewidth=1pt](7,3.75)(7,0)(12,0)(12,3.75)
+               \multido{\n=7.00+0.13}{39}{\psframe(\n,2.94)(\n,3)}
+               \multido{\n=7.00+0.12}{42}{\psframe(\n,1.96)(\n,2.02)}
+               \multido{\n=7.00+0.1}{50}{\psframe(\n,0.97)(\n,1.03)}
+          \end{pspicture}
+     \end{extern}
+\end{center}
+Les cristaux de sucre dont la taille est inférieure à $0,2$ mm se trouvent dans le récipient à fond
+étanche à la fin du calibrage. Ils seront conditionnés dans des paquets portant le label \og  sucre
+extra fin \fg.
+\medskip
+\begin{enumerate}
+     \item On prélève au hasard un cristal de sucre de l'exploitation U. La taille de ce cristal,
+     exprimée en millimètre, est modélisée par la variable aléatoire $X_{\text{ U}}$ qui suit la loi normale
+     de moyenne $\mu_{\text{ U}} = 0,58$~mm et d'écart type $\sigma_{\text{ U}} = 0,21$~mm.
+     \begin{enumerate}[label=\alph*.]
+          \item Calculer les probabilités des événements suivants~: $X_{\text{ U}} < 0,2 $ et $ 0,5 \leqslant X_{\text{ U}} < 0,8$.
+          \item On fait passer 1~800 grammes de sucre provenant de l'exploitation U au travers de la
+          série de tamis.
+          \par
+          Déduire de la question précédente une estimation de la masse de sucre récupérée dans
+          le récipient à fond étanche et une estimation de la masse de sucre récupérée dans le
+          tamis 2.
+     \end{enumerate}
+     \item On prélève au hasard un cristal de sucre de l'exploitation V. La taille de ce cristal,
+     exprimée en millimètre, est modélisée par la variable aléatoire $X_{\text{V}}$ qui suit la loi normale
+     de moyenne $\mu_{\text{V}} = 0,65$ mm et d'écart type $\sigma_{\text{V}}$ à déterminer.
+     \par
+     Lors du calibrage d'une grande quantité de cristaux de sucre provenant de l'exploitation V,
+     on constate que 40\,\% de ces cristaux se retrouvent dans le tamis 2.
+     \par
+     Quelle est la valeur de l'écart type $\sigma_{\text{V}}$ de la variable aléatoire $X_{\text{V}}$~?
+\end{enumerate}
+\begin{center}\begin{h3}Partie B \end{h3}\end{center}
+Dans cette partie, on admet que 3\,\% du sucre provenant de l'exploitation U est extra fin et que
+5\,\% du sucre provenant de l'exploitation V est extra fin.
+\par
+On prélève au hasard un paquet de sucre dans la production de l'entreprise et, dans un souci
+de traçabilité, on s'intéresse à la provenance de ce paquet.
+\par
+On considère les événements suivants~:
+\begin{indent}
+     \begin{itemize}
+          \item $U$~: \og  Le paquet contient du sucre provenant de l'exploitation U \fg{}~;
+          \item $V$~: \og Le paquet contient du sucre provenant de l'exploitation V \fg{}~;
+          \item $E$~: \og Le paquet porte le label "extra fin" \fg{}.
+     \end{itemize}
+\end{indent}
+\medskip
+\begin{enumerate}
+     \item Dans cette question, on admet que l'entreprise fabrique 30\,\% de ses paquets avec du sucre
+     provenant de l'exploitation U et les autres avec du sucre provenant de l'exploitation V,
+     sans mélanger les sucres des deux exploitations.
+     \begin{enumerate}[label=\alph*.]
+          \item Quelle est la probabilité que le paquet prélevé porte le label \og extra fin \fg{}~?
+          \item Sachant qu'un paquet porte le label \og extra fin \fg, quelle est la probabilité que le sucre
+          qu'il contient provienne de l'exploitation U~?
+     \end{enumerate}
+     \item L'entreprise souhaite modifier son approvisionnement auprès des deux exploitations afin
+     que parmi les paquets portant le label « extra fin », 30\,\% d'entre eux contiennent du sucre
+     provenant de l'exploitation U.
+     \par
+     Comment doit-elle s'approvisionner auprès des exploitations U et V~?
+     \par
+     \emph{Toute trace de recherche sera valorisée dans cette question}.
+\end{enumerate}
+\begin{center}\begin{h3}Partie C \end{h3}\end{center}
+\begin{enumerate}
+     \item L'entreprise annonce que 30\,\% des paquets de sucre portant le label « extra fin » qu'elle
+     conditionne contiennent du sucre provenant de l'exploitation U.
+     \par
+     Avant de valider une commande, un acheteur veut vérifier cette proportion annoncée. Il
+     prélève $150$ paquets pris au hasard dans la production de paquets labellisés \og extra fin \fg{} de
+     l'entreprise. Parmi ces paquets, $30$ contiennent du sucre provenant de l'exploitation U.
+     \par
+     A-t-il des raisons de remettre en question l'annonce de l'entreprise~?
+     \item  L'année suivante, l'entreprise déclare avoir modifié sa production. L'acheteur souhaite
+     estimer la nouvelle proportion de paquets de sucre provenant de l'exploitation U parmi les
+     paquets portant le label \og extra fin \fg.
+     \par
+     Il prélève 150 paquets pris au hasard dans la production de paquets labellisés \og extra fin \fg{} de l'entreprise. Parmi ces paquets 42\,\% contiennent du sucre provenant de l'exploitation U.
+     \par
+     Donner un intervalle de confiance, au niveau de confiance 95\,\%, de la nouvelle proportion
+     de paquets labellisés \og extra fin \fg{} contenant du sucre provenant de l'exploitation U.
+\end{enumerate}
+\begin{corrige}
+     \begin{center}\begin{h3}Partie A \end{h3}\end{center}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $X_{\text{ U}}$ suit la loi normale de moyenne $\mu_{\text{ U}} = 0,58$ et d'écart type $\sigma_{\text{ U}} = 0,21$.
+               \par
+               \`A la calculatrice, on trouve~:
+               \par
+               $p\left(X_{\text{ U}}<0,2 \right)\approx 0,035$  (au millième).
+               \par
+               $p\left(0,5 \leqslant  X_{\text{ U}} < 0,8 \right)\approx 0,501$  (au millième).
+               \item
+               $p\left(X_{\text{ U}}<0,2 \right)\approx 0,035$ donc 3,5\% des cristaux se retrouvent dans le récipient à fond étanche.
+               \par
+               Pour 1~800g de sucre, cela correspond à une masse d'environ $1~800 \times  0,035~=~63$ grammes (arrondie au gramme).
+               \smallskip
+               $p\left(0,5 \leqslant  X_{\text{ U}}<0,8 \right)\approx 0,501$ donc 50,1\% des cristaux se retrouvent dans le tamis 2 .
+               \par
+               Pour 1~800g de sucre, cela correspond à une masse d'environ $1~800 \times   0,501~=~902 $ grammes (arrondie au gramme).
+          \end{enumerate}
+          \item
+          Posons  $Z=\dfrac{X_{\text{V}}-\mu_{\text{V}}}{\sigma_{\text{V}}} = \dfrac{X_{\text{V}}-0,65}{\sigma_{\text{V}}}$
+          \par
+          Puisque $X_{\text{V}}$ suit la loi normale de moyenne $\mu_{\text{ V}} = 0,58$ et d'écart type $\sigma_{\text{V}}$, $Z$ suit la loi normale centrée réduite.
+          \par
+          D'après l'énoncé, 40\,\% des cristaux se retrouvent dans le tamis 2 donc~:
+          \par
+          $p\left(0,5 \leqslant X_{\text{ V}}<0,8 \right)= 0,4$.
+          \par
+          Or~:
+          \par
+          $0,5 \leqslant X_{\text{ V}}<0,8~ \Leftrightarrow ~0,5 -0,65\leqslant X_{\text{ V}}-0,65<0,8-0,65$\\
+          $\phantom{0,5 \leqslant X_{\text{ V}}<0,8}~ \Leftrightarrow  ~ -0,15\leqslant X_{\text{ V}}-0,65<0,15$\\
+          $\phantom{0,5 \leqslant X_{\text{ V}}<0,8}~ \Leftrightarrow  ~ -\dfrac{0,15}{\sigma_{\text{V}}} \leqslant Z<\dfrac{0,15}{\sigma_{\text{V}}} $
+          \par
+          Par conséquent~:
+          \par
+          $p\left(-\dfrac{0,15}{\sigma_{\text{V}}} \leqslant Z<\dfrac{0,15}{\sigma_{\text{V}}} \right) =0,4$
+          \par
+          où $Z$ suit la loi normale centrée réduite.
+          \par
+          \`A  la calculatrice on trouve $p\left(-0,524 \leqslant Z<0,524\right) =0,4$.
+          \par
+          Donc $\dfrac{0,15}{\sigma_{\text{V}}}\approx 0,524$  et $\sigma_{\text{V}} \approx \dfrac{0,15}{0,524}\approx 0,286$.
+     \end{enumerate}
+     \begin{center}\begin{h3}Partie B \end{h3}\end{center}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               On cherche à calculer $p(E)$.
+               \par
+               On peut modéliser la situation à l'aide de l'arbre ci-dessous~:
+               \begin{center}
+                    \begin{extern}%width="350" alt="arbre pondéré probabilités"
+                         % Racine à Gauche, développement vers la droite
+                         \begin{tikzpicture}[xscale=1,yscale=1]
+                              % Styles (MODIFIABLES)
+                              \tikzstyle{fleche}=[-,>=latex,thick]
+                              \tikzstyle{noeud}=[fill=white]
+                              \tikzstyle{feuille}=[fill=white]
+                              \tikzstyle{etiquette}=[midway,fill=white]
+                              % Dimensions (MODIFIABLES)
+                              \def\DistanceInterNiveaux{3}
+                              \def\DistanceInterFeuilles{2}
+                              % Dimensions calculées (NON MODIFIABLES)
+                              \def\NiveauA{(0)*\DistanceInterNiveaux}
+                              \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                              \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                              \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                              % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                              \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$ $};
+                              \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$U$};
+                              \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$E$};
+                              \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{E}$};
+                              \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$V$};
+                              \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$E$};
+                              \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{E}$};
+                              % Arcs (MODIFIABLES : Styles)
+                              \draw[fleche] (R)--(Ra) node[etiquette] {$0,3$};
+                              \draw[fleche] (Ra)--(Raa) node[etiquette] {$0,03$};
+                              \draw[fleche] (Ra)--(Rab) node[etiquette] {$0,97$};
+                              \draw[fleche] (R)--(Rb) node[etiquette] {$0,7$};
+                              \draw[fleche] (Rb)--(Rba) node[etiquette] {$0,05$};
+                              \draw[fleche] (Rb)--(Rbb) node[etiquette] {$0,95$};
+                         \end{tikzpicture}
+                    \end{extern}
+               \end{center}
+               %~:-+-+-+-+- Fin
+               \par
+               Le sucre provenant soit de l'exploitation U, soit de l'exploitation V, les événements $U$ et $V$ forment une partition de l'univers.
+               \par
+               D'après la formule des probabilités totales~:
+               \par
+               $p(E)=p(U) \times  p_U(E) +p(V) \times  p_V(E)$\\
+               $\phantom{P(E)}=0,3 \times 0,03 + 0,7 \times 0,05 $ $= 0,009 +0,035=0,044$
+               \item
+               La probabilité cherchée est $P_E(U)$.
+               \par
+               D'après la formule des probabilités conditionnelles~:
+               \par
+               $P_E(U)=\dfrac{P(E\cap U)}{P(E)}$ $=\dfrac{0,009}{0,044}=\dfrac{9}{44}\approx 0,205$
+          \end{enumerate}
+          \item
+          Posons  $p(U)=x$. Alors $p(V)=1-x$.
+          \par
+          L'arbre obtenu est alors~:
+          \par
+          %~:-+-+-+- Engendré par~: http~://math.et.info.free.fr/TikZ/Arbre/
+          \begin{center}
+               \begin{extern}%width="350" alt="arbre pondéré Pondichery 2018"
+                    % Racine à Gauche, développement vers la droite
+                    \begin{tikzpicture}[xscale=1,yscale=1]
+                         % Styles (MODIFIABLES)
+                         \tikzstyle{fleche}=[-,>=latex,thick]
+                         \tikzstyle{noeud}=[fill=white]
+                         \tikzstyle{feuille}=[fill=white]
+                         \tikzstyle{etiquette}=[midway,fill=white]
+                         % Dimensions (MODIFIABLES)
+                         \def\DistanceInterNiveaux{3}
+                         \def\DistanceInterFeuilles{2}
+                         % Dimensions calculées (NON MODIFIABLES)
+                         \def\NiveauA{(0)*\DistanceInterNiveaux}
+                         \def\NiveauB{(1.5)*\DistanceInterNiveaux}
+                         \def\NiveauC{(2.5)*\DistanceInterNiveaux}
+                         \def\InterFeuilles{(-1)*\DistanceInterFeuilles}
+                         % Noeuds (MODIFIABLES : Styles et Coefficients d'InterFeuilles)
+                         \node[noeud] (R) at ({\NiveauA},{(1.5)*\InterFeuilles}) {$ $};
+                         \node[noeud] (Ra) at ({\NiveauB},{(0.5)*\InterFeuilles}) {$U$};
+                         \node[feuille] (Raa) at ({\NiveauC},{(0)*\InterFeuilles}) {$E$};
+                         \node[feuille] (Rab) at ({\NiveauC},{(1)*\InterFeuilles}) {$\overline{E}$};
+                         \node[noeud] (Rb) at ({\NiveauB},{(2.5)*\InterFeuilles}) {$V$};
+                         \node[feuille] (Rba) at ({\NiveauC},{(2)*\InterFeuilles}) {$E$};
+                         \node[feuille] (Rbb) at ({\NiveauC},{(3)*\InterFeuilles}) {$\overline{E}$};
+                         % Arcs (MODIFIABLES : Styles)
+                         \draw[fleche] (R)--(Ra) node[etiquette] {$x$};
+                         \draw[fleche] (Ra)--(Raa) node[etiquette] {$0,03$};
+                         \draw[fleche] (Ra)--(Rab) node[etiquette] {$0,97$};
+                         \draw[fleche] (R)--(Rb) node[etiquette] {$1-x$};
+                         \draw[fleche] (Rb)--(Rba) node[etiquette] {$0,05$};
+                         \draw[fleche] (Rb)--(Rbb) node[etiquette] {$0,95$};
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          %~:-+-+-+-+- Fin
+          \par
+          On a donc~:
+          \par
+          $p_E(U)=\dfrac{p(E\cap U)}{p(E)} = \dfrac{x\times p_U(E)}{x\times p_U(E) +(1-x)\times p_V(E)}$\\
+          $\phantom{p_E(U)}=\dfrac{0,03x}{0,03x +0,05(1-x)}=\dfrac{0,03x}{0,05 -0,02x}$
+          \medskip
+          Par conséquent~:
+          \par
+          $p_E(U)=0,3 \Leftrightarrow \dfrac{0,03x}{0,05 -0,02x}=0,3$\\
+          $\phantom{p_E(U)=0,3} \Leftrightarrow 0,03x=0,015-0,006x$\\
+          $\phantom{p_E(U)=0,3} \Leftrightarrow 0,036x=0,015$\\
+          $\phantom{p_E(U)=0,3} \Leftrightarrow  x=\dfrac{0,015}{0,036}=\dfrac{5}{12}\approx 0,417 $
+          \par
+          Pour que, parmi les paquets portant le label « extra fin », 30\,\%  contiennent du sucre provenant de l'exploitation U, l'entreprise doit s'approvisionner à  41,7\% auprès de l'exploitation U.
+     \end{enumerate}
+     \begin{center}\begin{h3}Partie C \end{h3}\end{center}
+     \begin{enumerate}
+          \item
+          D'après l'entreprise, la proportion de paquets de sucre portant le label «extra fin» provenant de l’exploitation U est $p = 0,3$.
+          \par
+          La taille  de l'échantillon est $n=150$.
+          \par
+          On vérifie que~:
+          \begin{itbullet}
+               \item $n=150 \geqslant 30$~;
+               \item $np=150 \times 0,3=45\geqslant 5$~;
+               \item $n(1-p)=150 \times 0,7=105\geqslant 5$.
+          \end{itbullet}
+          Les conditions de validité étant remplies, l'intervalle de fluctuation asymptotique au seuil de $95\%$ est~:
+          \par
+          \[ I=\left[p-1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}~;~p+1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}\right]. \]
+          \medskip
+          $p-1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}=0,3-1,96\dfrac{\sqrt{0,3(1-0,3)}}{\sqrt{150}}$\\
+          $\phantom{p-1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}}  \approx 0,226$ (arrondi au millième par défaut).
+          \medskip
+          $p+1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}=0,3+1,96\dfrac{\sqrt{0,3(1-0,3)}}{\sqrt{150}}$\\
+          $\phantom{p+1,96\dfrac{\sqrt{p(1-p)}}{\sqrt{n}}} \approx 0,374 $ (arrondi au millième par excès).
+          \medskip
+          L'intervalle de fluctuation asymptotique au seuil de $95\%$ de la proportion de paquets  provenant de l’exploitation U est donc~:
+          \[ I=[0,226~;~0,374]. \]
+          \par
+          La fréquence observée des paquets  provenant de l’exploitation U  est $f=\dfrac{30}{150}=0,2$.
+          \par
+          Comme $0,2 \notin I$, on peut donc rejeter l'affirmation de l'entreprise avec un risque d'erreur inférieur à 5\%.
+          \item
+          La taille  de l'échantillon est $n=150$.
+          \par
+          La fréquence observée de paquets provenant de l'exploitation U est $f=0,42$
+          \par
+          On vérifie que~:
+          \begin{itbullet}
+               \item $n=150 \geqslant 30$~;
+               \item $nf=150 \times 0,42=63\geqslant 5$~;
+               \item $n(1-f)=150 \times 0,58=87\geqslant 5$.
+          \end{itbullet}
+          Les conditions de validité étant remplies, un intervalle de confiance, au niveau de confiance 95\,\% est~:
+          \[ I=\left[ f-\dfrac{1}{\sqrt{n}}~; f+\dfrac{1}{\sqrt{n}}  \right]. \]
+          \par
+          $f-\dfrac{1}{\sqrt{n}} \approx 0,338$ (arrondi au millième par défaut).
+          \par
+          $f+\dfrac{1}{\sqrt{n}} \approx 0,502$ (arrondi au millième par excès).
+          \par
+          Un intervalle de confiance, au niveau de confiance 95\,\% est donc~:
+          \[ I=[0,338~;~0,502] .\]
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

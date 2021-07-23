@@ -1,0 +1,376 @@
+
+<svg x="0" y="0" width="706" height="1087" viewBox="0 0 706 1087" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+
+<style type="text/css"><![CDATA[
+
+
+.s4_1{
+font-size: 18.33px;
+font-family: SymbolMT_34;
+fill: #000000;
+}
+.s3_1{
+font-size: 12.28px;
+font-family: TimesNewRomanPSMT_3b;
+fill: #000000;
+}
+.s1_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPS-BoldMT_39;
+fill: #000000;
+}
+.s2_1{
+font-size: 18.33px;
+font-family: TimesNewRomanPSMT_3b;
+fill: #000000;
+}
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,1087
+L706,1087
+L706,0 Z " 
+fill="#FFFFFF" stroke="none" />
+<text 
+x="13" 
+y="24" 
+dx="0,0" 
+class="s1_1"
+>A)</text>
+
+<text 
+x="37" 
+y="24" 
+dx="0,0.1,-0.1,0.1,0.1,-0.1,0,0,-0.1,0,0.1,0.1,0,0.1,0.1,-0.1" 
+class="s1_1"
+>Etude graphique </text>
+
+<text 
+x="13" 
+y="761" 
+dx="0,0,0,0" 
+class="s1_1"
+>A.1)</text>
+
+<text 
+x="51" 
+y="761" 
+dx="0,-0.2,-0.1,0,0,0,-0.1,-0.1,0,0,0,0,0,0.1,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,-0.1,0,0,-0.1,0,0.2,-0.1,0,0,-0.1,0,-0.1,0,0.2,-0.1,0,0,0,0,0,0.1,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,-0.1,-0.1,0.2,0.1,-0.1,0,0,-0.1,-0.1,-0.1,0,0,0,0.2,-0.1,-0.1,0,-0.1,0,-0.1,0,0.2,0" 
+class="s2_1"
+>Les traits verts sur le graphe de la fonction B indiquent que le bénéfice sera supérieur ou </text>
+
+<text 
+x="13" 
+y="782" 
+dx="0,-0.1,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0,0.2,-0.1,0.2,0,-0.1,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,0,-0.1,0,0,-0.1,0,-0.1,0,0,0.1,-0.1,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0" 
+class="s2_1"
+>égal à 13.000 € pour une production comprise entre 2400 et 3400 poulies. </text>
+
+<text 
+x="13" 
+y="824" 
+dx="0,0,0,0" 
+class="s1_1"
+>A.2)</text>
+
+<text 
+x="51" 
+y="824" 
+dx="0,-0.2,-0.1,0,0,0,-0.1,-0.1,0,0,0,0,-0.1,0,0.2,0,-0.1,0,0,0,0,0,0,0,0,-0.1,0,0,0,0,0,-0.1,0,0,-0.1,0,0,-0.1,0,0.1,-0.1,0,-0.1,-0.1,0,0.2,-0.1,0.2,0,0,0,0,0,-0.1,0,0,0,0,-0.1,-0.2,-0.1,-0.1,0,0,-0.1,0.2,-0.1,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0.2,-0.2,0" 
+class="s2_1"
+>Les traits rouges indiquent que le bénéfice maximum envisageable est de 15.000 €. Il </text>
+
+<text 
+x="13" 
+y="845" 
+dx="0,0,-0.1,-0.1,-0.1,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1,0,0,0.2,-0.1,0,0,-0.1,0,0.2,0,-0.1,0,0,0,0,0,0,-0.1,0,0,0,0,0,0,0,0,0,0,0,-0.1,0,0" 
+class="s2_1"
+>sera atteint pour une production de 3000 poulies. </text>
+
+<text 
+x="13" 
+y="888" 
+dx="0,0.1" 
+class="s1_1"
+>B)</text>
+
+<text 
+x="36" 
+y="888" 
+dx="0,0.1,-0.1,0.1,0.1,-0.1,0,-0.1,0.1,-0.1,0,-0.1,0,0.1,0.1,-0.1" 
+class="s1_1"
+>Etude théorique </text>
+
+<text 
+x="13" 
+y="909" 
+dx="0,-0.2,-0.1,0,0.2,-0.1,0,0.1,-0.1,0,-0.1,-0.1,0.2,-0.1,-0.1,0.2,-0.1,0,-0.1,0,0,0,0,0,0,0,-0.1,-0.1,0,0,0.2,-0.2,0,0,0,-0.1,0,0,0.2,-0.1,-0.1,0.2,-0.1,0,-0.1,0,0,0,-0.1,-0.1,0.2,0,0.2,-0.1" 
+class="s2_1"
+>Le bénéfice B(x) en milliers d'€ vaut B(x) = –5+(4–x)e</text>
+
+<text 
+x="416" 
+y="902" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="422" 
+y="909" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<text 
+x="13" 
+y="930" 
+dx="0,0,0,0,0,-0.1,0,0,0,-0.1,-0.1,0,0.1,-0.1,0,0,-0.1,-0.1,0,0,0.2,-0.1,0,0.1,0,0,0.2,-0.1" 
+class="s2_1"
+>On peut remarquer que (4–x)e</text>
+
+<text 
+x="235" 
+y="923" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="246" 
+y="930" 
+dx="0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,0.1,0,0,-0.1,0,0.2,0,-0.1,0,0,-0.1,0,0,0,0,0,0,0,-0.1,-0.1,0,0,0,-0.1,0,0,0,-0.1,0,0,0,0,0,0,-0.1,0,0,-0.1,0" 
+class="s2_1"
+>étant le produit de deux fonctions définies, continues et </text>
+
+<text 
+x="13" 
+y="952" 
+dx="0,0,-0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0.1" 
+class="s2_1"
+>dérivables sur ]–</text>
+
+<text 
+x="135" 
+y="952" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="148" 
+y="952" 
+dx="0,0" 
+class="s2_1"
+>;+</text>
+
+<text 
+x="163" 
+y="952" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="176" 
+y="952" 
+dx="0,0.1,0,0,0,-0.1,0,-0.1,0,0,-0.1,0,0,0,0,0,-0.1,0.2,-0.1,0,0,0,-0.1,0,0,-0.1,-0.1,0,0.1,0,-0.1,0,-0.1,0,0,0,0,0,0,-0.1,0,-0.1,0,0,0,-0.1,-0.1,0,0,0,-0.1,0.2,-0.1,0,0.2,0,-0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0,0,-0.1,0.2,-0.1,-0.1,0" 
+class="s2_1"
+>[, la fonction B est elle-même continue et définie et dérivable sur cet </text>
+
+<text 
+x="13" 
+y="973" 
+dx="0,0,0,0,-0.1,-0.1,0,-0.1,0,0,-0.1,0" 
+class="s2_1"
+>intervalle. </text>
+
+<text 
+x="13" 
+y="1017" 
+dx="0,0.1,0,0,0,0" 
+class="s1_1"
+>B.1.a)</text>
+
+<text 
+x="63" 
+y="1017" 
+dx="0,-0.1,0,-0.1,0,-0.1,0,0,0,0,0.1,-0.1,0,0,-0.1,0,0,-0.1,0,0.2,0,-0.1,0,0.1" 
+class="s2_1"
+>B étant dérivable sur ]–</text>
+
+<text 
+x="236" 
+y="1017" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="249" 
+y="1017" 
+dx="0,0" 
+class="s2_1"
+>;+</text>
+
+<text 
+x="264" 
+y="1017" 
+dx="0" 
+class="s4_1"
+>∞</text>
+
+<text 
+x="277" 
+y="1017" 
+dx="0,0.1,0,0,-0.1,0,0,-0.1,0,-0.1,0,0,0,0,-0.1,-0.1,0,0.2,-0.1,0,0,-0.1,0,0,0,-0.1" 
+class="s2_1"
+>[, elle est dérivable sur </text>
+
+<text 
+x="453" 
+y="1017" 
+dx="0,-0.2,0.2,-0.1,0,0.1,0,0,0,0,0,0.1,-0.2" 
+class="s2_1"
+>I = [0;3,6]. </text>
+
+<text 
+x="13" 
+y="1038" 
+dx="0,0,0,0,-0.1,0,0.1,-0.1,0.2,-0.1,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0.2,-0.1,-0.1,0,0.2,0,0,-0.1,0,-0.1,0,0,0,0,-0.1,0,0,-0.1,0,0,0,0,-0.1,0,0,0,0.2,0,-0.1,0,0.2,0,0,-0.1,0" 
+class="s2_1"
+>On a B(x) = k+u.v avec, k = constante, u = 4–x et v = e</text>
+
+<text 
+x="418" 
+y="1031" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="424" 
+y="1038" 
+dx="0,0.2" 
+class="s2_1"
+>. </text>
+
+<text 
+x="13" 
+y="1059" 
+dx="0,0,0,0,-0.1,0,0,0.1,-0.2,-0.1,0.2,-0.1,0,-0.1,0,0.2,-0.2,0,-0.1,0,0.2,-0.2,0.2,-0.1,0,0.2,0" 
+class="s2_1"
+>Alors B'(x) = u'v+uv' = – e</text>
+
+<text 
+x="210" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="216" 
+y="1059" 
+dx="0,-0.1,-0.1,0,0,0.2,-0.1,0" 
+class="s2_1"
+>+(4–x) e</text>
+
+<text 
+x="278" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="289" 
+y="1059" 
+dx="0,-0.1,0,0,0" 
+class="s2_1"
+>= – e</text>
+
+<text 
+x="326" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="332" 
+y="1059" 
+dx="0,-0.1,0,0" 
+class="s2_1"
+>+ 4e</text>
+
+<text 
+x="364" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="370" 
+y="1059" 
+dx="0,0.2,0.2,0" 
+class="s2_1"
+>–x e</text>
+
+<text 
+x="402" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="412" 
+y="1059" 
+dx="0,-0.1,0,-0.1,0,0,0.2,-0.1,0" 
+class="s2_1"
+>= (3–x) e</text>
+
+<text 
+x="480" 
+y="1052" 
+dx="0" 
+class="s3_1"
+>x</text>
+
+<text 
+x="486" 
+y="1059" 
+dx="0,0" 
+class="s2_1"
+>. </text>
+
+<image x="68" y="57" width="619" height="665" xlink:href="1/img/1.png" />
+
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: TimesNewRomanPSMT_3b;
+	src: url("fonts/TimesNewRomanPSMT_3b.woff") format("woff");
+}
+
+@font-face {
+	font-family: SymbolMT_34;
+	src: url("fonts/SymbolMT_34.woff") format("woff");
+}
+
+@font-face {
+	font-family: TimesNewRomanPS-BoldMT_39;
+	src: url("fonts/TimesNewRomanPS-BoldMT_39.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

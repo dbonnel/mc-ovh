@@ -1,0 +1,17 @@
+.fullscreen {
+    .container {
+        max-width: 100%!important;
+    }
+
+    .header-area, .breadcrumb, .headline, .icon-menu, .field-box-xl1, .fields-meta, .field-box-sm1-lg4 {
+        display: none!important;
+    }
+}
+#text-content {
+    height: 80vh;
+    overflow: scroll;
+}
+
+#source {
+    height: 80vh;
+}

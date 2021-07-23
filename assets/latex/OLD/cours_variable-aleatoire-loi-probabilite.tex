@@ -1,0 +1,102 @@
+\input{_header}
+\begin{h2}I - Rappels de probabilités\end{h2}
+\cadre{bleu}{Définitions}{% id="d10"
+     Une expérience \textbf{aléatoire} est une expérience dont le résultat dépend du hasard.
+     \par
+     Chacun des résultats possibles s'appelle une \textbf{éventualité} (ou une \textbf{issue} ou un \textbf{évènement élémentaire})
+     \par
+     L'ensemble de tous les résultats possibles d'une expérience aléatoire s'appelle l'\textbf{univers} de l'expérience.
+}
+\bloc{orange}{Exemple}{% id="e10"
+     Par exemple, le lancer d'un dé à six faces est une expérience aléatoire. \textit{"Obtenir un 6 avec le dé"} est une éventualité. L'univers possède 6 éventualités; on peut le représenter par l'ensemble:
+     \par
+     $\Omega =\left\{1;2;3;4;5;6\right\}$
+}
+\cadre{bleu}{Définition}{% id="d20"
+     Soit une expérience aléatoire ayant comme univers:
+     \par
+     $\Omega =\left\{x_{1}; x_{2};. . .; x_{n}\right\}$
+     \par
+     On définit une \textbf{probabilité} sur $\Omega $ en associant, à chaque éventualité $x_{i}$, un réel $p_{i}$ compris entre 0 et 1 tel que la somme de tous les $p_{i}$ soit égale à 1.
+}
+\bloc{cyan}{Remarques}{% id="r20"
+     \begin{itemize}
+          \item En pratique, pour définir les probabilités $p_{i}$ on peut effectuer un très grand nombre de fois l'expérience aléatoire. La fréquence des résultats obtenus permet d'obtenir une estimation de la loi de probabilité. Par exemple, si en lançant 1 000 000 de fois un dé, on obtient 166 724 fois la face "6" on considérera que la probabilité d'obtenir un "6" est d'environ $\frac{166~724}{1~000~000} \approx \frac{1}{6}$
+          \item A condition de faire certaines hypothèses (par exemple : "\textit{le dé n'est pas truqué}") les théorèmes qui suivent permettent de calculer les lois de probabilité de certaines expériences sans avoir recours aux statistiques. Les statistiques peuvent alors servir à valider les hypothèses que l'on a faites au départ.
+     \end{itemize}
+}
+\cadre{bleu}{Définition et propriété}{% id="d30"
+     On dit que l'on est en situation d'\textbf{équiprobabilité} si toutes les éventualités on la même probabilité.
+     \par
+     Cette probabilité est alors $p=\frac{1}{n}$ où $n$ est le nombre total d'éventualités.
+}
+\bloc{cyan}{Remarque}{% id="r30"
+     Dans les exercices, on considérera qu'il y a équiprobabilité si l'énoncé indique que l'on jette une pièce "\textit{équilibrée}", qu'on lance un dé "\textit{non truqué}", qu'on tire une carte "\textit{au hasard}" , etc.
+}
+\bloc{orange}{Exemples}{% id="e30"
+     \begin{itemize}\item Si l'on jette une pièce non truquée, la probabilité d'obtenir \textit{pile} est $p=\frac{1}{2}$
+     \item Pour un dé à six faces non truqué, la probabilité d'obtenir une face donnée est $p=\frac{1}{6}$ \end{itemize}
+}
+\begin{h2}II - Variables aléatoires\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     On définit une \textbf{variable aléatoire} en associant un nombre réel à chaque éventualité d'une expérience aléatoire.
+}
+\bloc{orange}{Exemples}{% id="e50"
+     \begin{itemize}\item On mise 1€  sur le numéro 1  à la roulette. On gagne 35€ (36€ - la mise) si le numéro sort. On perd sa mise (soit 1€) dans les autres cas. On peut définir une variable aléatoire représentant le gain algébrique du joueur. Cette variable aléatoire peut prendre la valeur 35 (en cas de gain) ou -1 (en cas de perte).
+          \item On lance 4 fois une pièce de monnaie. On peut définir une variable aléatoire égale au nombre de "\textit{faces}" obtenues.
+          \par
+          Les valeurs possibles pour cette variable sont : 0; 1; 2; 3 ou 4.
+     \end{itemize}
+}
+\bloc{cyan}{Notations}{% id="n50"
+     \begin{itemize}\item On note généralement une variable aléatoire à l'aide d'une lettre majuscule (le plus souvent $X$)
+     \item Si la variable aléatoire $X$ peut prendre les valeurs $a_{1}, a_{2}, . . . a_{n}$, on note $\left(X=a_{i}\right)$ l'évènement : "$X$ prend la valeur $a_{i}$"\end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d60"
+     La loi de probabilité d'une variable aléatoire $X$ associe à chaque valeur $a_{i}$ prise par $X$ la probabilité de l'événement $\left(X = a_{i}\right)$.
+     \par
+     On la représente généralement sous forme de tableau.
+}
+\bloc{orange}{Exemples}{% id="e60"
+     \begin{itemize}\item Si l'on reprend l'exemple de la roulette (ci-dessus) et si on suppose que la probabilité de sortie de chacun des 37 numéros (0 à 36) est égale, la probabilité de gain est de $\frac{1}{37}$ et la probabilité de perte $\frac{36}{37}$.
+          \par
+          La loi de probabilité est donnée par le tableau suivant :
+\begin{center}
+           \begin{tabular}{|c|c|c|}%class="compact" width="600"
+               \hline
+               $a_{i}$  &  $-1$  &  $35$
+               \\ \hline
+               $p\left(X=a_{i}\right)$  &  $\frac{36}{37}$  &  $\frac{1}{37}$
+              \\ \hline
+          \end{tabular}
+\end{center}
+          \item Si on lance 4 fois une pièce de monnaie équilibrée, on montre à l'aide d'un arbre que la variable aléatoire $X$ donnant le nombre de "\textit{faces}" obtenues suit la loi de probabilité donnée par le tableau ci-dessous :
+\begin{center}
+          \begin{tabular}{|c|c|c|c|c|c|}%class="compact" width="600"
+               \hline
+               $a_{i}$  &  $0$  &  $1$  &  $2$  &  $3$  &  $4$
+               \\ \hline
+               $p\left(X=a_{i}\right)$  &  $\frac{1}{16}$  &  $\frac{1}{4}$ &  $\frac{3}{8}$  &  $\frac{1}{4}$ &   $\frac{1}{16}$
+               \\ \hline
+          \end{tabular}
+\end{center}
+          \end{itemize}
+          }
+          \cadre{bleu}{Définition}{% id="d70"
+               Soit $X$ une variable aléatoire qui prend les valeurs $a_{i}$ avec les probabilités $p_{i}=p\left(X=a_{i}\right)$.
+               \par
+               On appelle \textbf{espérance mathématique} de $X$ le nombre :
+               \par
+               $E\left(X\right)= a_{1}\times p_{1}+a_{2}\times p_{2}+. . . +a_{n}\times p_{n}$
+          }
+          \bloc{cyan}{Remarque}{% id="r70"
+               Ce nombre peut s'interpréter comme une valeur moyenne de $X$ si l'on répète un grand nombre de fois l'expérience.
+          }
+          \bloc{orange}{Exemple}{% id="e70"
+               Pour l'exemple de la roulette on a :
+               \par
+               $E\left(X\right)=-1\times \frac{36}{37}+35\times \frac{1}{37}=-\frac{1}{37}$
+               \par
+               L'espérance est négative, ce qui signifie qu'en moyenne, le jeu n'est pas favorable au joueur.
+          }
+          \input{_footer}

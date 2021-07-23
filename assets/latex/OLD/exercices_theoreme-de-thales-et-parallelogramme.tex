@@ -1,0 +1,129 @@
+\input{_header}
+Sur la figure ci-dessous, $ ABCD $ est un parallélogramme. $ N$  est un point du côté $  \left[ AD \right] . $
+\par
+La parallèle à la droite $  \left( AB \right)   $ passant par $N$ coupe la diagonale $  \left[ AC \right]   $ en $M$.
+\par
+Enfin, la droite $  \left( BM \right)   $ coupe la droite $  \left( AD \right)   $ en $I$.
+\begin{center}
+     \begin{extern}%width="500" alt="géométrie"
+          \newrgbcolor{grey}{0.2 0.2 0.2}
+          \psset{xunit=1cm,yunit=1cm,algebraic=true,dimen=middle,linecolor=grey,dotstyle=*,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,0.)(10.,8.)
+               \psline[linewidth=0.4pt,linecolor=grey](4.,7.)(9.,7.)
+               \par\psline[linewidth=0.4pt,linecolor=grey](9.,7.)(6.,1.)
+               \psline[linewidth=0.4pt,linecolor=grey](6.,1.)(1.,1.)
+               \psline[linewidth=0.4pt,linecolor=grey](1.,1.)(4.,7.)
+               \psline[linewidth=0.4pt,linecolor=grey](4.,7.)(6.,1.)
+               \psline[linewidth=0.4pt,linecolor=grey](3.,5.)(8.,5.)
+               \psline[linewidth=0.4pt,linecolor=grey](9.,7.)(2.5,4.)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](4.,7.)
+                    \rput[bl](3.6845133506321366,7.094154302649859){\grey{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](9.,7.)
+                    \rput[bl](9.049212521237859,7.04493687906632){\grey{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](6.,1.)
+                    \rput[bl](6.046949682641996,0.6835848808939424){\grey{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](1.,1.)
+                    \rput[bl](0.731467935619812,0.6589761691021732){\grey{$D$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](3.,5.)
+                    \rput[bl](2.7001648789613615,4.9778050885576945){$N$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](4.666666666666667,5.)
+                    \rput[bl](4.791905381261758,4.6825005470564625){\grey{$M$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=grey](2.5,4.)
+                    \rput[bl](2.306425490293052,3.9811522609910357){\grey{$I$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item
+     Montrer que~:
+     \begin{center}
+          $ \frac{ NM }{ AB } = \frac{ NI }{ AI }   $
+     \end{center}
+     \item
+     Montrer que~:
+     \begin{center}
+          $ \frac{ NM }{ DC } = \frac{ AN }{ AD }   $
+     \end{center}
+     \item
+     En déduire que~:
+     \begin{center}
+          $ \frac{ NI }{ AI } = \frac{ AN }{ AD }.$
+     \end{center}
+     \item  \textbf{Application numérique~: }
+     \\
+     Calculer la longueur $ NI $ sachant que $ AN = 2 $ cm et $ AD = 6 $ cm.
+     \item
+     (Question subsidiaire) Que peut-on dire de la position du point $I$ lorsque l'on modifie la position du point $B$~?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Les triangles $ IAB $ et $ INM $ sont en situation de Thalès~; en effet~:
+          \begin{itemize}
+               \item
+               les points $I$, $N$ et $A$ sont alignés
+               \item
+               les points $ I $, $M$ et $ B $ sont alignés
+               \item
+               les droites $  \left( MN \right)   $ et $  \left( AB \right)   $ sont parallèles.
+          \end{itemize}
+          D'après le \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#d10}{théorème de Thalès}, on a donc~:
+          \par
+          $ \frac{ NM }{ AB } = \frac{ NI }{ AI }   = \frac{ MI }{ BI } .  $
+          \medskip
+          (Le troisième rapport $  \frac{ MI }{ BI }  $ sera inutile pour cet exercice.)
+          \item
+          De même, les triangles $ ANM $ et $ ACD $ sont en situation de Thalès car~:
+          \begin{itemize}
+               \item
+               les points $D$, $N$ et $A$ sont alignés
+               \item
+               les points $ C$, $M$ et $ A $ sont alignés
+               \item
+               les droites $  \left( MN \right)   $ et $  \left( DC \right)   $ sont parallèles.
+          \end{itemize}
+          D'après le théorème de Thalès~:
+          \par
+          $ \frac{ NM }{ DC } = \frac{ AN }{ AD } = \frac{ AM }{ AC }    $
+          \item
+          Comme $ ABCD $ est un parallélogramme, $ AB=DC $ donc $ \frac{ NM }{ AB } = \frac{ NM }{ DC }    $ et donc les rapports des questions  \textbf{1.} et  \textbf{2.} sont tous égaux.
+          \par
+          En particulier~:
+          \par
+          $ \frac{ NI }{ AI } = \frac{ AN }{ AD }.$
+          \item  \textbf{Application numérique~: }
+          \\
+          Posons $ NI = x. $
+          \par
+          Alors:
+          \\
+          $ AI=AN+NI=x+2 $
+          \par
+          D'après la question précédente, on a donc~:
+          \par
+          $ \frac{ x }{ x+2 } = \frac{ 2 }{ 6 }    $
+          \par
+          En effectuant le produit en croix cette équation s'écrit:
+          \par
+          $ 6x=2  \left( x+2 \right)   $
+          \\
+          $ 6x=2x+4 $
+          \\
+          $ 6x-2x=4 $
+          \\
+          $4x=4  $
+          \\
+          $ x=1 $
+          \par
+          La longueur $ NI $ mesure donc 1~cm.
+          \item
+          La position du point $ I$  \textbf{ reste inchangée} lorsque l'on modifie la position du point $ B $ (à partir du moment où $ ABCD $ est un parallélogramme et où l'on suit les consignes de l'énoncé. ).
+          \\
+          On peut d'ailleurs vérifier ce résultat à l'aide d'un logiciel de géométrie dynamique comme geogebra.
+          \par
+          En effet, le résultat de la question  \textbf{3.} montre que la distance $ NI $ ne dépend que de la position de $A$, $N$ et $D$ et ne dépend ni de la distance $ AB $ ni de la mesure de l'angle $  \widehat{ DAB } .  $
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

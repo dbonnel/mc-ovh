@@ -1,0 +1,79 @@
+\input{_header}
+\begin{h2}EXERCICE 3 (4 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\medskip
+L'objectif de cet exercice est d'étudier les trajectoires de deux sous-marins en phase de plongée.
+\par
+On considère que ces sous-marins se déplacent en ligne droite, chacun à vitesse constante.
+\par
+À chaque instant $t$, exprimé en minutes, le premier sous-marin est repéré par le point $S_1(t)$ et le second
+sous-marin est repéré par le point $S_2(t)$ dans un repère orthonormé $\left(\text{O}~;~\vec{i},~\vec{j},~\vec{k}\right)$ dont l'unité est le mètre.
+\par
+Le plan défini par $\left(\text{O}~;~\vec{i},~\vec{j}\right)$ représente la surface de la mer. La cote $z$ est nulle au niveau de la
+mer, négative sous l'eau.
+\medskip
+\begin{enumerate}
+     \item On admet que, pour tout réel $t \geqslant 0$, le point $S_1(t)$ a pour coordonnées:
+     \begin{center}
+          $\begin{cases}
+               x(t) = \phantom{-}140 - 60t\\
+               y(t) = \phantom{-}105 - 90t\\
+               z(t) = -170 - 30 t
+          \end{cases}$
+     \end{center}
+     \begin{enumerate}[label=\alph*.]
+          \item Donner les coordonnées du sous- marin au début de l'observation.
+          \item Quelle est la vitesse du sous-marin ?
+          \item  On se place dans le plan vertical contenant la trajectoire du premier sous-marin.
+          \begin{center}
+               \begin{extern}%width="420"
+                    \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+                    \begin{pspicture*}(0,-3)(7,3)
+                         \psscalebox{0.5}{
+                              \psplot[linewidth=0.75pt,linecolor=blue]{-0.38}{13.42}{(--46.12-0.02*x)/11.48}
+                              \pscustom[linewidth=0.75pt,linecolor=blue]{
+                                   \parametricplot{-0.6324}{0.}{0.6*cos(t)+1.|0.6*sin(t)+4.}
+                              \lineto(1.,4.)\closepath}
+                              \psline[linewidth=1pt,linestyle=dashed,dash=2pt 2pt](1.,4.)(12,-4.)
+                              \rput[tl](9.22,4.5){\fontsize{15pt}{15pt}\selectfont{\blue{niveau de la mer}}}
+                              \rput[tl](1.82,3.78){$\blue{\alpha}$}
+                              \def\sm{\pscustom[linestyle=none,fillstyle=solid,fillcolor=black]
+                                   {
+                                        \newpath
+                                        \moveto(0.04237557,31.8862686)
+                                        \curveto(-0.14149443,31.65805592)(0.28549936,31.08408035)(1.08023317,30.56566562)
+                                        \curveto(1.81265886,29.99169006)(2.48583077,28.96037077)(2.48583077,28.21420253)
+                                        \curveto(2.60739266,26.3193944)(3.28056457,25.45843106)(4.62385406,25.45843106)
+                                        \curveto(5.23471786,25.45843106)(5.84558166,25.11289777)(6.02945167,24.71157406)
+                                        \curveto(6.57800736,23.39097108)(33.57757641,3.76146599)(37.48893731,1.81132661)
+                                        \curveto(40.6025101,0.31761261)(41.33799011,0.14496076)(42.12966959,0.71893632)
+                                        \curveto(43.47601341,1.75255152)(43.35139719,3.18749043)(41.8865458,4.96819221)
+                                        \curveto(41.21337389,5.77038046)(40.6648182,6.6901189)(40.6648182,7.03266752)
+                                        \curveto(40.6648182,7.37820081)(40.42169441,7.66518859)(40.11626251,7.66518859)
+                                        \curveto(39.81083061,7.66518859)(38.1590549,8.69903338)(36.45107972,9.96109084)
+                                        \curveto(33.76144641,11.97000532)(33.39676072,12.42987454)(33.94531641,13.40494423)
+                                        \curveto(34.74005022,14.78133763)(33.76144641,16.84879761)(32.41815692,16.84879761)
+                                        \curveto(31.92885501,16.84879761)(31.31799122,17.30866683)(30.95330553,17.88264239)
+                                        \curveto(30.52325741,18.5707243)(29.66926982,18.85771208)(27.59355463,18.79916657)
+                                        \curveto(25.08779133,18.74360574)(24.47692753,19.03059352)(19.46845524,22.93362735)
+                                        \curveto(16.41413625,25.34432472)(12.80820724,27.58145187)(11.22179396,28.15542744)
+                                        \curveto(8.65677686,29.01639078)(8.35134497,29.30337856)(8.65677686,30.45132969)
+                                        \curveto(9.14302445,32.11723637)(7.37274116,32.92011338)(6.27257546,31.5432608)
+                                        \curveto(5.54014976,30.62421113)(5.23471786,30.62421113)(2.97513267,31.37106813)
+                                        \curveto(1.56953507,31.83024858)(0.22624557,32.05915004)(0.04237557,31.8862686)
+                                        \closepath
+                              }}
+                              \rput[tl](9.25,-3){\psscalebox{0.03}{\sm}}
+                         }
+                    \end{pspicture*}
+               \end{extern}
+          \end{center}
+          Déterminer l'angle $\alpha$ que forme la trajectoire du sous-marin avec le plan horizontal.\\
+          On donnera l'arrondi de $\alpha$ à $0,1$ degré près.
+     \end{enumerate}
+     \item  Au début de l'observation, le second sous-marin est situé au point $S_2(0)$ de coordonnées
+     $(68~;~135~;~- 68)$ et atteint au bout de trois minutes le point $S_2(3)$ de coordonnées $(-202~;~-405~;~ - 248)$ avec une vitesse constante.
+     \par
+     \`A quel instant $t$, exprimé en minutes, les deux sous-marins sont-ils à la même profondeur ?
+\end{enumerate}
+\input{_footer}

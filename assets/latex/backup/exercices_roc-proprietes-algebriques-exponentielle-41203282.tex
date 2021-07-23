@@ -1,0 +1,138 @@
+\input{_header}
+\meta{url}{/exercices/roc-proprietes-algebriques-exponentielle/}
+\meta{pid}{1327}
+\meta{titre}{[ROC] Propriétés algébriques de la fonction exponentielle}
+\meta{type}{exercices}
+%
+
+\cadre{rouge}{Pré-requis}{ % id=t010 
+
+
+\begin{enumerate}[label=\alph*.]
+     \item
+     La fonction exponentielle (notée $\text{exp}$) est l'unique fonction dérivable sur $\mathbb{R}$ telle que :
+     \par
+     $\text{exp}^{\prime}=\text{exp}$
+\\     
+     $\text{exp}\left(0\right)=1$
+     \par
+     La fonction exponentielle est \textbf{strictement croissante} et \textbf{strictement positive} sur $\mathbb{R}$.
+     \item
+     On utilisera également le résultat suivant :
+\\
+     \textit{Si $f$ est une fonction dérivable sur $\mathbb{R}$, alors la fonction $x\mapsto f\left(ax+b\right)$ est dérivable sur $\mathbb{R}$ et sa dérivée est la fonction $x\mapsto af^{\prime}\left(ax+b\right)$}
+\end{enumerate}
+} % fin Pré-requis
+\bigskip
+Soit $a$ un réel quelconque et $ f $ la fonction définie sur $\mathbb{R}$ par $f\left(x\right)=\frac{\text{exp}\left(x+a\right)}{\text{exp}\left(a\right)}$.
+\begin{enumerate}
+     \item
+     Montrer que pour tout $x \in  \mathbb{R} : f^{\prime}\left(x\right)=f\left(x\right)$.
+     \item
+     Calculer $f\left(0\right)$. Que peut-on en conclure pour la fonction $f$ ?
+     \par
+     En déduire que pour tous réels $a$ et $b$ : $\text{exp}\left(a+b\right)=\text{exp}\left(a\right)\times \text{exp}\left(b\right)$.
+     \item
+     Montrer que pour tout réel $a$ : $\text{exp}\left(-a\right)=\frac{1}{\text{exp}\left(a\right)}$
+     \par
+     En déduire que pour tous réels $a$ et $b$ : $\text{exp}\left(a-b\right)=\frac{\text{exp}\left(a\right)}{\text{exp}\left(b\right)}$.
+     \item
+     Démontrer par récurrence que pour tout $n \in  \mathbb{N}$ :
+\\
+     $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$
+     \item
+     A l'aide des questions précédentes, montrer que pour tout $n \in  \mathbb{N}$ :
+\\
+     $\text{exp}\left(-na\right) = \left(\text{exp}\left(a\right)\right)^{-n}$
+     \par
+     En déduire que l'égalité $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$ est vraie pour tout $n \in  \mathbb{Z}$
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          D'après les prérequis, la dérivée de la fonction $x\mapsto \text{exp}\left(x+a\right)$ est la fonction $x\mapsto \text{exp}\left(x+a\right)$ (c'est à dire elle-même).
+          \par
+          Par conséquent :
+          \par
+          $f^{\prime}\left(x\right)=\frac{\text{exp}\left(x+a\right)}{\text{exp}\left(a\right)}=f\left(x\right)$
+          \par
+          (Remarque : pas besoin d'utiliser la formule $\left(\frac{u}{v}\right)^{\prime}=\frac{u^{\prime}v-uv^{\prime}}{v^{2}}$ car le dénominateur est une constante)
+          \item
+          $f\left(0\right)=\frac{\text{exp}\left(0+a\right)}{\text{exp}\left(a\right)}=1$
+          \par
+          La fonction $f$ est égale à sa dérivée et vérifie $f\left(0\right)=1$. Or, d'après le prérequis \textbf{a.} la fonction exponentielle est la seule a vérifier ces deux conditions. Donc pour tout $x \in  \mathbb{R}$ :
+          \par
+          $f\left(x\right)=\text{exp}\left(x\right)$
+          \par
+          En posant $x=b$ on obtient :
+          \par
+          $f\left(b\right)=\frac{\text{exp}\left(b+a\right)}{\text{exp}\left(a\right)}=\text{exp}\left(b\right)$
+          \par
+          Par conséquent : $\text{exp}\left(a+b\right)=\text{exp}\left(a\right)\times \text{exp}\left(b\right)$
+ 
+     \cadre{rouge}{Remarque}{%
+          La formule précédente est vrai \textbf{pour tous réels $a$ et $b$}. Cela signifie qu'on va pouvoir remplacer $a$ et$b$ par n'importe quel nombre réel (opération que l'on fera souvent dans les questions qui suivent...)
+}
+     \item
+     En faisant $b=-a$ dans l'égalité précédente on obtient :
+     \par
+     $\text{exp}\left(a-a\right)=\text{exp}\left(a\right)\times \text{exp}\left(-a\right)$
+     \par
+     $\text{exp}\left(0\right)=\text{exp}\left(a\right)\times \text{exp}\left(-a\right)$
+     \par
+     $1=\text{exp}\left(a\right)\times \text{exp}\left(-a\right)$
+     \par
+     $\frac{1}{\text{exp}\left(a\right)}=\text{exp}\left(-a\right)$
+     \par
+     En remplaçant cette fois $b$ par $-b$ dans le résultat de la question \textbf{2.} on obtient :
+     \par
+     $\text{exp}\left(a-b\right)=\text{exp}\left(a\right)\times \text{exp}\left(-b\right)$
+     \par
+     et d'après le résultat précédent : $\text{exp}\left(-b\right)=\frac{1}{\text{exp}\left(b\right)}$
+     \par
+     par conséquent :
+     \par
+     $\text{exp}\left(a-b\right)=\frac{\text{exp}\left(a\right)}{\text{exp}\left(b\right)}$
+     \item
+     \textbf{Initialisation :}
+     La propriété que l'on souhaite démontrer est vraie pour $n=0$ car :
+     \par
+     $\text{exp}\left(0a\right) = \text{exp}\left(0\right) = 1$
+     \par
+     $\left(\text{exp}\left(a\right)\right)^{0} = 1$ (n'importe quel réel non nul à la puissance zéro donne $1$)
+     \par
+     donc: $\text{exp}\left(0a\right) =\left(\text{exp}\left(a\right)\right)^{0}$
+\par
+     \textbf{Hérédité}
+     Supposons que pour un certain entier $n$, $\text{exp}\left(na\right) =\left(\text{exp}\left(a\right)\right)^{n}$ («hypothèse de récurrence»)
+     \par
+     Alors :
+     \par
+     $\text{exp}\left(\left(n+1\right)a\right)=\text{exp}\left(na+a\right)=\text{exp}\left(na\right)\times \text{exp}\left(a\right)$ d'après \textbf{2.}
+     $\text{exp}\left(\left(n+1\right)a\right)=\left(\text{exp}\left(a\right)\right)^{n}\times \text{exp}\left(a\right)$ (d'après l'hypothèse de récurrence)
+     \par
+     $\text{exp}\left(\left(n+1\right)a\right)=\left(\text{exp}\left(a\right)\right)^{n+1}$ (propriété des puissances)
+     \par
+     Ceci montre par récurrence que pour tout $n \in  \mathbb{N}$ :
+     \par
+     $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$
+     \item
+     $\text{exp}\left(-na\right) = \frac{1}{\text{exp}\left(na\right)}$  (d'après \textbf{3.})
+     \par
+     $\text{exp}\left(-na\right) = \frac{1}{\left(\text{exp}\left(a\right)\right)^{n}}$  (d'après \textbf{4.})
+     \par
+     $\text{exp}\left(-na\right) = \left(\text{exp}\left(a\right)\right)^{-n}$  (propriété des puissances)
+     \par
+     Soit $n \in  \mathbb{Z}$.
+     \par
+     Si $n\geqslant 0$, $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$ d'après \textbf{4.}
+     Si $n < 0$, on pose $n=-n^{\prime}$ :
+     \par
+     $\text{exp}\left(na\right) = \text{exp}\left(-n^{\prime}a\right)=\left(\text{exp}\left(a\right)\right)^{-n^{\prime}}$ (d'après le calcul ci-dessus)
+     \par
+     $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$
+     \par
+     Par conséquent, l'égalité $\text{exp}\left(na\right) = \left(\text{exp}\left(a\right)\right)^{n}$ est vraie pour tout $n \in  \mathbb{Z}$
+\end{enumerate}
+     \end{corrige}
+\input{_footer}

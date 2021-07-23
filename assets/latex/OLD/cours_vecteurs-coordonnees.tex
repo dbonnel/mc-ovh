@@ -1,0 +1,114 @@
+\input{_header}
+\cadre{bleu}{Définitions}{%
+     Un \textbf{repère} du plan est déterminé par un point quelconque O, appelé \textbf{origine} du repère, et deux vecteurs $\vec{i}$ et $\vec{j}$ non colinéaires.
+}
+\cadre{bleu}{Définitions}{%
+     On dit que le repère $\left(O;\vec{i},\vec{j}\right)$ est :
+     \begin{itemize}
+          \item \textbf{orthogonal} : si les vecteurs $\vec{i}$ et $\vec{j}$ sont orthogonaux
+          \item \textbf{orthonormé} ou \textbf{orthonormal} : si c'est un repère orthogonal et si les vecteurs $\vec{i}$ et $\vec{j}$ ont la même norme.
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt="repère orthonormé"
+          \resizebox{10cm}{!}{%
+               % -+-+-+ variables modifiables
+                 \def\xmin{-4.5}
+               \def\xmax{4.5}
+               \def\ymin{-3.5}
+               \def\ymax{3.5}
+               \def\xunit{1.5}  % unités en cm
+               \def\yunit{1.5}
+               \psset{xunit=\xunit,yunit=\yunit,algebraic=true}
+               \fontsize{15pt}{15pt}\selectfont
+               \begin{pspicture*}[linewidth=1pt](\xmin,\ymin)(\xmax,\ymax)
+                    %      \psgrid[gridcolor=mcgris, subgriddiv=5, gridlabels=0pt](\xmin,\ymin)(\xmax,\ymax)
+                    \psaxes[linewidth=0.75pt,Dx=1,Dy=1]{->}(0,0)(\xmin,\ymin)(\xmax,\ymax)
+                    \rput[tr](-0.2,-0.2){$\blue O$}
+                    \psline[linewidth=0.75pt,linecolor=blue,arrowsize=6pt]{->}(0,0)(0,1)
+                     \psline[linewidth=0.75pt,linecolor=blue,arrowsize=6pt]{->}(0,0)(1,0)
+                    \rput[t](0.5,-0.1){$\blue \vec{i}$}
+                    \rput[r](-0.1,0.5){$\blue \vec{j}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+\textit{Repère orthonormé}
+\end{center}
+\cadre{bleu}{Définitions}{%
+     Soit $\left(O;\vec{i},\vec{j}\right)$ un repère du plan.
+     \par
+     On dit que $M$ a pour \textbf{coordonnées} $\left(x ; y\right)$ si et seulement si :
+     \par
+     $\overrightarrow{OM}=x\vec{i}+y\vec{j}$
+     \par
+     On dit que $\vec{u}$ a pour \textbf{coordonnées} $\begin{pmatrix} x \\ y \end{pmatrix}$ si et seulement si :
+     \par
+     $\vec{u}=x\vec{i}+y\vec{j}$
+}
+Par la suite, on considère que le plan P est muni d'un repère $\left(O;\vec{i},\vec{j}\right)$.
+\cadre{vert}{Propriété}{%
+     Deux vecteurs $\vec{u}$ et $\vec{v}$ sont \textbf{égaux} si et seulement si ils ont les \textbf{mêmes coordonnées}.
+}
+\cadre{vert}{Propriété}{%
+     Soient $A\left(x_A;y_A\right)$ et $B\left(x_B;y_B\right)$. Le vecteur $\overrightarrow{AB}$ a pour coordonnées $\begin{pmatrix} x_B-x_A \\ y_B-y_A \end{pmatrix}$
+}
+\bloc{orange}{Exemple}{%
+     Soient $A\left(1 ; 1\right), B\left(4 ; 2\right), C\left(5 ; 0\right), D\left(2 ; -1\right)$
+     \par
+     Les coordonnées de $\overrightarrow{AB}$ sont $\begin{pmatrix} 4-1 \\ 2-1 \end{pmatrix} = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$
+     \par
+     Les coordonnées de $\overrightarrow{DC}$ sont $\begin{pmatrix} 5-2 \\ 0-\left(-1\right) \end{pmatrix} = \begin{pmatrix} 3 \\ 1 \end{pmatrix}$
+     \par
+     $\overrightarrow{AB} = \overrightarrow{DC}$ donc $ABCD$ est un parallélogramme. ( voir \mcLien{/seconde/vecteurs}{Généralités sur les vecteurs} )
+}
+\cadre{vert}{Propriétés}{%
+     Soient deux vecteurs $\vec{u} \begin{pmatrix} x \\ y \end{pmatrix}$ et $\vec{v} \begin{pmatrix} x^{\prime} \\ y^{\prime} \end{pmatrix}$.
+     \begin{itemize}
+          \item Le vecteur $\vec{u}+\vec{v}$ a pour coordonnées $\begin{pmatrix} x+x^{\prime} \\ y+y^{\prime} \end{pmatrix}$
+          \item Le vecteur $k\vec{u}$ a pour coordonnées $\begin{pmatrix} kx \\ ky \end{pmatrix}$
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     \textbf{Colinéarité}
+     Deux vecteurs non nuls $\vec{u} \begin{pmatrix} x \\ y \end{pmatrix}$ et $\vec{v} \begin{pmatrix} x^{\prime} \\ y^{\prime} \end{pmatrix}$ sont colinéaires si et seulement si:
+     \par
+     $xy^{\prime}-yx^{\prime}=0$
+}
+\cadre{vert}{Propriété}{%
+     \textbf{Milieu d'un segment}
+     Si $A\left(x_A;y_A\right)$ et $B\left(x_B;y_B\right)$, le milieu $M$ de $\left[AB\right]$ a pour coordonnées :
+     \par
+     $M \left(\frac{x_A+x_B}{2} ; \frac{y_A+y_B}{2}\right)$
+}
+\cadre{vert}{Propriété}{%
+     \textbf{Norme et distance}
+     Soient un vecteur $\vec{u} \begin{pmatrix} x \\ y \end{pmatrix}$. Alors :
+     \par
+     $||\vec{u}||=\sqrt{x^2+y^2}$
+     \par
+     On en déduit si $A\left(x_A;y_A\right)$ et $B\left(x_B;y_B\right)$ :
+     \par
+     $AB=||\overrightarrow{AB}||=\sqrt{\left(x_B-x_A\right)^2+\left(y_B-y_A\right)^2}$
+}
+\bloc{orange}{Exemple}{%
+     Soient $A\left(1 ; 0\right), B\left(3 ; 1\right), C\left(0 ; 2\right)$. Que peut-on dire du triangle $ABC$ ?
+     \par
+     $AB=\sqrt{2^2+1^2}=\sqrt{5}$
+     \par
+     $AC=\sqrt{\left(-1\right)^2+2^2}=\sqrt{5}$
+     \par
+     $BC=\sqrt{\left(-3\right)^2+1^2}=\sqrt{10}$
+     \par
+     Donc $AB=AC$
+     \par
+     De plus :
+     \par
+     $AB^2+AC^2=5+5=10$
+     \par
+     $BC^2=10$
+     \par
+     Le triangle $ABC$ est donc rectangle en $A$ (réciproque du théorème de Pythagore) et isocèle.
+}
+\input{_footer}

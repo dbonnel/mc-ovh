@@ -1,0 +1,94 @@
+\input{_header}
+Dans cet exercice, l'unité de longueur correspond au côté d'un carré du quadrillage.
+\begin{center}
+     \begin{extern}%width="500" alt="Produit Scalaire et quadrillage"
+          \resizebox{8cm}{!}{
+               % prod-scal-10.ggb
+               \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+                    \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (3.,4.) grid (11.,9.);
+                    \clip(3.,4.) rectangle (11.,9.);
+                    \draw [line width=0.4pt,color=tttttt] (4.,5.)-- (8.,8.);
+                    \draw [line width=0.4pt,color=tttttt] (8.,8.)-- (10.,5.);
+                    \draw [line width=0.4pt,color=tttttt] (10.,5.)-- (4.,5.);
+                    \begin{scriptsize}
+                         \draw [fill=tttttt] (8.,8.) circle (1.0pt);
+                         \draw[color=tttttt] (8.015646625983543,8.306133358394499) node {$A$};
+                         \draw [fill=tttttt] (10.,5.) circle (1.0pt);
+                         \draw[color=tttttt] (10.08277841649217,4.688652725004405) node {$B$};
+                         \draw [fill=tttttt] (4.,5.) circle (1.0pt);
+                         \draw[color=tttttt] (3.7952525536950965,4.7132614367961745) node {$C$};
+                    \end{scriptsize}
+               \end{tikzpicture}
+          }
+     \end{extern}
+\end{center}
+\begin{enumerate}
+     \item
+     À l'aide du quadrillage, calculez le produit scalaire  $ \overrightarrow{CB}  \cdot \overrightarrow{CA} $ puis les normes
+     $\left\Vert \overrightarrow{CB} \right\Vert $ et $\left\Vert \overrightarrow{CA} \right\Vert $ .
+     \item
+     En déduire la valeur exacte de $ \cos\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right) $ .\\
+     Donner la valeur arrondie au degré de l'angle $ \left( \overrightarrow{CB} ; \overrightarrow{CA}  \right)$ .
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Tout d'abord, traçons le projeté orthogonal $H$ du point  $A$ sur la droite $(CB) $~:
+          \begin{center}
+               \begin{extern}%width="500" alt="Produit Scalaire et quadrillage"
+                    \resizebox{8cm}{!}{
+                         \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+                              \draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (3.,4.) grid (11.,9.);
+                              \clip(3.,4.) rectangle (11.,9.);
+                              \draw[line width=0.4pt,color=sqsqsq] (8.261014804763382,5.) -- (8.261014804763382,5.2610148047633825) -- (8.,5.2610148047633825) -- (8.,5.) -- cycle;
+                              \draw [line width=0.4pt,color=tttttt] (4.,5.)-- (8.,8.);
+                              \draw [line width=0.4pt,color=tttttt] (8.,8.)-- (10.,5.);
+                              \draw [line width=0.4pt,color=tttttt] (10.,5.)-- (4.,5.);
+                              \draw [line width=0.4pt,color=ffqqqq] (8.,8.)-- (8.,5.);
+                              \begin{scriptsize}
+                                   \draw [fill=tttttt] (8.,8.) circle (1.0pt);
+                                   \draw[color=tttttt] (8.015646625983543,8.306133358394499) node {$A$};
+                                   \draw [fill=tttttt] (10.,5.) circle (1.0pt);
+                                   \draw[color=tttttt] (10.08277841649217,4.688652725004405) node {$B$};
+                                   \draw [fill=tttttt] (4.,5.) circle (1.0pt);
+                                   \draw[color=tttttt] (3.7952525536950965,4.7132614367961745) node {$C$};
+                                   \draw [fill=ffqqqq] (8.,5.) circle (1.0pt);
+                                   \draw[color=ffqqqq] (8.114081473150621,4.7132614367961745) node {$H$};
+                              \end{scriptsize}
+                         \end{tikzpicture}
+                    }
+               \end{extern}
+          \end{center}
+          Comme l'angle $\left( \overrightarrow{CB} ; \overrightarrow{CA}  \right) $ est un angle aigu~:
+          \newpar
+          $\overrightarrow{CB}  \cdot \overrightarrow{CA} =CB \times CH$\\
+          $\overrightarrow{CB}  \cdot \overrightarrow{CA} =6 \times 4=24.$
+          \medbreak
+          Par ailleurs, on a immédiatement~:
+          \newpar
+          $\left\Vert \overrightarrow{CB} \right\Vert =CB=6.$
+          \medbreak
+          Pour calculer la longueur du segment $[CA] $, on utilise le théorème de Pythagore dans le triangle $AHC$ rectangle en $H$~:
+          \newpar
+          $AC{}^2 =CH{}^2 +HA{}^2 =4{}^2 +3{}^2 $\\
+          $\phantom{AC{}^2 }=16+9=25$
+          \newpar
+          Donc :\\
+          $ \left\Vert \overrightarrow{CA} \right\Vert =AC=\sqrt{25} = 5$
+          \item
+          Pour calculer la valeur de  $ \cos\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right) $, on utilise la formule donnant le produit scalaire à l'aide du cosinus~:
+          \newpar
+          $\overrightarrow{CB}  \cdot \overrightarrow{CA} = \left\Vert \overrightarrow{CB} \right\Vert  \times \left\Vert \overrightarrow{CA} \right\Vert  \times \cos\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right)$
+          \newpar
+          On en déduit :
+          \newpar
+          $\cos\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right) = \frac{\overrightarrow{CB}  \cdot \overrightarrow{CA} }{ \left\Vert \overrightarrow{CB} \right\Vert  \times \left\Vert \overrightarrow{CA} \right\Vert } $
+          \newpar
+          $\cos\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right) =\frac{24}{6 \times 5} =0,8.$
+          \medbreak
+          À la calculatrice (touche \og $\cos{}^{ - 1}$  \fg{}  ou \og Arccos \fg{} ), on trouve que l'angle $\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right)$ vaut approximativement 37° au degré près.
+          \medbreak
+          Remarque : il était aussi possible et plus simple, ici, de calculer une valeur approchée de l'angle $\left( \overrightarrow{CB} ;\overrightarrow{CA}  \right)$ à l'aide des formules trigonométriques vues en classe de troisième dans le triangle rectangle $AHC$.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

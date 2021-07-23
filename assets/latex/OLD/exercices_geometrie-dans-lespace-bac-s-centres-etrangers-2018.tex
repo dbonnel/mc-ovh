@@ -1,0 +1,96 @@
+\input{_header}
+\begin{h2}Exercice 4 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas choisi la spécialité \og mathématiques \fg{} }
+\medskip
+La figure ci-dessous représente un cube ABCDEFGH.
+\begin{center}
+\begin{extern} %width="250" alt="Géométrie dans l'espace Section d'un cube"
+     \psset{unit=0.8cm}
+     \begin{pspicture}(-0.5,-0.5)(8,7.8)
+          \psframe(0,0)(4.5,4.5)%ABFE
+          \psline(4.5,0)(6.7,2.3)(6.7,6.8)(4.5,4.5)%BCGF
+          \psline(6.7,6.8)(2.2,6.8)(0,4.5)%GHE
+          \psline[linestyle=dashed](0,0)(2.2,2.3)(6.7,2.3)
+          \psline[linestyle=dashed](2.2,2.3)(2.2,6.8)
+          \uput[dl](0,0){A} \uput[dr](4.5,0){B} \uput[r](6.7,2.3){C}
+          \uput[ur](2.2,2.3){D} \uput[l](0,4.5){E} \uput[r](4.5,4.5){F}
+          \uput[r](6.7,6.8){G} \uput[u](2.2,6.8){H} \uput[ul](1.1,1.15){I}
+          \uput[l](0,3.375){J} \uput[dr](5.6,5.65){K}
+          \psdots(1.1,1.15)(0,3.375)(5.6,5.65)
+     \end{pspicture}
+\end{extern}
+\end{center}    
+     Les trois points I, J, K sont définis par les conditions
+     suivantes~:
+     \begin{itemize}
+          \item I est le milieu du segment [AD]~;
+          \item J est tel que $\overrightarrow{\text{AJ}} = \dfrac{3}{4} \overrightarrow{\text{AE}}$~;
+          \item K est le milieu du segment [FG].
+\end{itemize}
+\bigskip
+\TitreC{Partie A}
+\medskip
+\begin{enumerate}
+     \item Sur la figure donnée en annexe, construire sans justifier le point d'intersection P du plan (IJK) et
+     de la droite (EH). On laissera les traits de construction sur la figure.
+     \item  En déduire, en justifiant, l'intersection du plan (IJK) et du plan (EFG).
+\end{enumerate}
+\bigskip
+\TitreC{Partie B}
+\medskip
+On se place désormais dans le repère orthonormé $\left(\text{A}~;~\overrightarrow{\text{AB}}, \overrightarrow{\text{AD}}, \overrightarrow{\text{AE}}\right)$.
+\medskip
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Donner sans justification les coordonnées des points I, J et K.
+          \item Déterminer les réels $a$ et $b$ tels que le vecteur $\overrightarrow{n} (4~;~a~;~b)$ soit orthogonal aux vecteurs $\overrightarrow{\text{IJ}}$ et $\overrightarrow{\text{IK}}$.
+          \item  En déduire qu'une équation cartésienne du plan (IJK) est~: $4x - 6y - 4z + 3 = 0$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item Donner une représentation paramétrique de la droite (CG).
+          \item Calculer les coordonnées du point N, intersection du plan (IJK) et de la droite (CG).
+          \item Placer le point N sur la figure et construire en couleur la section du cube par le plan (IJK).
+     \end{enumerate}
+\end{enumerate}
+\bigskip
+\TitreC{Partie C}
+\medskip
+On note R le projeté orthogonal du point F sur le plan (IJK). Le point R est donc l'unique point du
+plan (IJK) tel que la droite (FR) est orthogonale au plan (IJK).
+\par
+On définit l'intérieur du cube comme l'ensemble des points $M(x~;~y~;~z)$ tels que :
+\begin{center}
+$\left\{\begin{array}{l}
+          0 < x < 1\\
+          0 < y < 1\\
+          0 < z < 1
+\end{array}\right.$
+\end{center}
+Le point R est-il à l'intérieur du cube~?
+\bigskip
+\newpage
+\TitreC{Annexe}
+\begin{center}
+\textit{(À rendre avec la copie)}
+\end{center}
+\bigskip
+\begin{center}
+\begin{extern} %width="400" alt="Géométrie dans l'espace Section d'un cube"
+     \psset{unit=1.2cm}
+     \begin{pspicture}(-0.5,-0.5)(8,7.8)
+          \psframe(0,0)(4.5,4.5)%ABFE
+          \psline(4.5,0)(6.7,2.3)(6.7,6.8)(4.5,4.5)%BCGF
+          \psline(6.7,6.8)(2.2,6.8)(0,4.5)%GHE
+          \psline[linestyle=dashed](0,0)(2.2,2.3)(6.7,2.3)
+          \psline[linestyle=dashed](2.2,2.3)(2.2,6.8)
+          \uput[dl](0,0){A} \uput[dr](4.5,0){B} \uput[r](6.7,2.3){C}
+          \uput[ur](2.2,2.3){D} \uput[l](0,4.5){E} \uput[r](4.5,4.5){F}
+          \uput[r](6.7,6.8){G} \uput[u](2.2,6.8){H} \uput[ul](1.1,1.15){I}
+          \uput[l](0,3.375){J} \uput[dr](5.6,5.65){K}
+          \psdots(1.1,1.15)(0,3.375)(5.6,5.65)
+     \end{pspicture}
+\end{extern}
+\end{center}
+\input{_footer}

@@ -1,0 +1,166 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-bac-s-pondichery-2016/}
+\meta{pid}{4047}
+\meta{titre}{Nombres complexes – Bac S Pondichéry 2016}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2 - 3 points\end{h2}
+\par
+\textbf{Commun  à tous les candidats}
+\par
+L'objectif de cet exercice est de trouver une méthode pour construire à la règle et au compas un pentagone régulier.
+\par
+Dans le plan complexe muni d'un repère orthonormé direct $(O~;~\vec{u},\vec{v})$, on considère le pentagone régulier $A_0A_1A_2A_3A_4$, de centre $O$ tel que $\overrightarrow{OA_0} = \vec{u}$.
+
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-1}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+On rappelle que dans le pentagone régulier $A_0A_1A_2A_3A_4$, ci-dessus :
+\begin{itemize}
+     \item
+     $A_0,\:A_1,\:A_2,\:A_3$ et $A_4$appartiennent au cercle trigonométrique ;\item
+     $k$ appartenant à $\{0~;~1~;~2~;~3\}$ on a $\left(\overrightarrow{OA_k}~;~\overrightarrow{OA}_{k+1}\right) = \frac{2\pi}{5} $.
+\end{itemize}
+\begin{enumerate}
+     \item
+     On considère les points $B$ d'affixe $-1$ et $J$ d'affixe $\frac{i}{2}$.
+     \par
+     Le cercle $(\mathscr{C})$ de centre $J$ et de rayon $\dfrac{1}{2}$ coupe le segment $[BJ]$ en un point $K$.
+     \par
+     Calculer $BJ$, puis en déduire $BK$. \item
+     \begin{enumerate}[label=\alph*.]
+
+          \item
+          Donner sous forme exponentielle l'affixe du point $A_2$. Justifier brièvement.
+          \item
+          Démontrer que $B{A_2}^{2} = 2+ 2\cos \left(\dfrac{4\pi}{5}\right)$.
+          \item
+          Un logiciel de calcul formel affiche les résultats ci-dessous, que l'on pourra utiliser sans justification :
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+     \hline
+ \textbf{1.}&\textbf{cos(4*pi/5)}& 
+     \\ \hline
+     &    &  $ \to \dfrac{1}{4}\left(- \sqrt{5}-1\right)  $
+     \\ \hline
+     \textbf{2.}& \textbf{sqrt((3-sqrt(5))/2)}  $  $
+     \\ \hline
+     &    &   $\to \dfrac{1}{2}\left(\sqrt{5}-1\right)$
+     \\ \hline
+\end{tabularx}
+        
+          \par
+          "sqrt" signifie "racine carrée"
+          \par
+          En   déduire, grâce à ces résultats, que $BA_2 = BK$.
+     \end{enumerate}
+     \item
+     Dans le repère $(O~;~\vec{u},\vec{v})$ donné ci-dessous, construire à la règle et au compas un pentagone régulier. N'utiliser ni le rapporteur ni les graduations de la règle et laisser apparents les traits de construction.
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-2}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+
+\cadre{bleu}{Rappel}{ % id=r010  
+Pour deux points $A(z_A)$ et $B(z_B)$, la longueur $AB$ est égale à $\left|z_B-z_A\right|$
+} % fin Rappel
+     $BJ = \left|z_J-z_B\right|$
+     \par
+     $\phantom{BJ }= \left|\frac{i}{2}+1\right|$
+     \par
+     $\phantom{BJ }= \sqrt{1+\frac{1}{4}}$
+     \par
+     $\phantom{BJ }= \sqrt{\frac{5}{4}}=\frac{\sqrt{5}}{2}$
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-3}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+     Les points $B, K$ et $J$ étant alignés dans cet ordre :
+     \par
+     $BK=BJ-KJ$
+     \par
+     $\phantom{BK}=\frac{\sqrt{5}}{2}-\frac{1}{2}$ car $KJ$ est un rayon du cercle $\mathscr C$
+     \par
+     $\phantom{BK}=\frac{\sqrt{5}-1}{2}$
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Notons $z_2$ l'affixe du point $A_2$.
+          \par
+          Comme $A_2$ est situé sur le cercle trigonométrique, $|z_2|=1 $.
+          \par
+          Un argument de $z_2$ est une mesure de l'angle orienté $(\vec{u}, \overrightarrow{OA_2})$.
+          \par
+          D'après la relation de Chasles sur les angles orientés :
+          \par
+          $(\vec{u}, \overrightarrow{OA_2})=(\vec{u}, \overrightarrow{OA_1})+(\overrightarrow{OA_1}, \overrightarrow{OA_2}) $
+          \par
+          $(\vec{u}, \overrightarrow{OA_2})=\frac{2\pi}{5}+\frac{2\pi}{5} \quad [2\pi] $
+          \par
+          $(\vec{u}, \overrightarrow{OA_2})=\frac{4\pi}{5} \quad [2\pi] $
+          \par
+          La forme exponentielle de $z_2$ est donc $z_2=e^{i \frac{4\pi}{5}}$
+          \item
+          Par conséquent :
+          \par
+          $z_2=\cos\left(\frac{4\pi}{5}\right)+i\sin\left(\frac{4\pi}{5}\right)$
+          \par
+          $B{A_2}^2=\left|z_2-(-1) \right|^2$
+          \par
+          $\phantom{B{A_2}^2}=\left|1+\cos\left(\frac{4\pi}{5}\right)+i\sin\left(\frac{4\pi}{5}\right) \right|^2$
+          \par
+          $\phantom{B{A_2}^2}=\left(1+\cos\left(\frac{4\pi}{5}\right)\right)^2+\left(\sin\left(\frac{4\pi}{5}\right) \right)^2$
+          \par
+          $\phantom{B{A_2}^2}=1+2\cos\left(\frac{4\pi}{5}\right)+\cos^2\left(\frac{4\pi}{5}\right)+\sin^2\left(\frac{4\pi}{5}\right)$
+          \par
+          $\phantom{B{A_2}^2}=2+2\cos\left(\frac{4\pi}{5}\right)\quad$ car $\cos^2\left(\frac{4\pi}{5}\right)+\sin^2\left(\frac{4\pi}{5}\right)=1 $
+          \item
+          D'après le logiciel de calcul formel (\textit{ligne 1}) : $\cos\left(\frac{4\pi}{5}\right)=  \frac{1}{4}\left(- \sqrt{5}-1\right)$.
+          \par
+          Donc :
+          \par
+          $B{A_2}^2=2+2 \times \frac{1}{4}\left(-\sqrt{5}-1\right)$
+          \par
+          $\phantom{B{A_2}^2}=\frac{4}{2}+\frac{-\sqrt{5}-1}{2}$
+          \par
+          $\phantom{B{A_2}^2}=\frac{3-\sqrt{5}}{2}$
+          \par
+          et d'après le logiciel de calcul formel (\textit{ligne 2}) : $\sqrt{\frac{3-\sqrt{5}}{2}} = \frac{\sqrt{5}-1}{2} $.
+          \par
+          Par conséquent $BA_2=\frac{\sqrt{5}-1}{2}=BK$.
+     \end{enumerate}
+     \item
+     \textit{Dans la suite, on note $I$ le point d'affixe $i$.}
+     \textbf{1ère étape : } Construction du milieu $J$ de $[OI]$.
+     \par
+     On construit au compas la médiatrice du segment $[OI]$. Cette droite coupe l'axe des ordonnées en $J$.
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-4}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+     \textbf{2ème étape : } Construction du point $K$
+     \par
+     On trace le cercle de centre $J$ et de rayon $[OJ]$.
+     \par
+     Ce cercle coupe le segment $[BJ]$ en $K$.
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-5}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+     \textbf{3ème étape : } Construction des points $A_2$ et $A_3$
+     \par
+     On reporte la longueur $[BK]$ de part et d'autre du point $B$ sur le cercle trigonométrique.
+     \par
+     On obtient alors les points $A_2$ et $A_3$ (car d'après la question précédente $BA_2=BK$ et $A_2$ et $A_3$ sont symétriques par rapport à l'axe des abscisses).
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-6}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+     \textbf{4ème étape : } Tracé du pentagone
+     \par
+     Le segment $[A_2A_3]$ est un côté du pentagone. On complète la construction en reportant plusieurs fois la longueur $A_2A_3$ sur le cercle trigonométrique.
+\begin{center}
+\imgsvg{nombres-complexes-bac-s-pondichery-2016-7}{0.3}% alt="pentagone régulier" style="width:40rem"
+\end{center}
+\end{enumerate}
+\end{corrige}
+\input{_footer}
