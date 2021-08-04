@@ -85,11 +85,14 @@ namespace App {
         public function exec()
         {
             dbg('routes', $this->routes);
+           // print_r($this->routes);exit;
             $uri_items = explode("?", $_SERVER['REQUEST_URI']);
             $uri = $uri_items[0];
+           // print_r($uri);exit;
             foreach ($this->routes as $route) {
                 if ($route['params']) {
                     if ($route['path'] == substr($uri, 0, strlen($route['path']))) {
+                      //  print_r($route['path']);
                         $controllerClass = '\\Controllers\\' . $route['ctrlr-name'];
                         $this->controller = new $controllerClass();
                         $params = explode(
@@ -119,6 +122,7 @@ namespace App {
                     }
                 }
             }
+            
             throw new NotFoundException('Url non trouvée');
         }
 

@@ -17,7 +17,7 @@ namespace Controllers {
             $this->admin_page = strpos($_SERVER['REQUEST_URI'], '/admin/') !== false;
             $this->user = \App\Session::read('user');
             $this->view = new \Views\HtmlView;
-            $this->view->set_var('title', 'Maths-cours.fr')
+            $this->view->set_var('title', 'Cours et exercices pour le collège et le lycée - Maths-cours.fr')
                 ->set_var('current_url', $_SERVER['REQUEST_URI'])
                 ->set_var('dev', \App\Config::$is_dev)
                 ->set_var('admin_page', $this->admin_page)

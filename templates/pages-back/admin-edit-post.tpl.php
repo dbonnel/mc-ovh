@@ -1,5 +1,5 @@
 
-        <form action="<?=__('current_url')?>" method="POST">
+        <form <action="" method="POST">
             <?php if (__('id')) {
     __inc('components/field-box', ['field_type' => 'hidden', 'field_name' => 'id', 'field_value' => __('id')]);
 }?>

@@ -1,4 +1,4 @@
-<form action="<?=__('current_url')?>" method="POST">
+<form action="" method="POST">
 
             <div class="fields-group-top">
 

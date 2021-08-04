@@ -14,7 +14,7 @@ namespace App {
         {
             if($e instanceof NotFoundException) {
                 $controllerClass = '\Controllers\ErrorController';
-                call_user_func(array(new $controllerClass(), 'notFound'));
+                call_user_func(array(new $controllerClass(), 'notFound'), $e);
             } else {
                 self::printException($e);
             }

@@ -1,9 +1,6 @@
-<form id="mcs-form" accept-charset="UTF-8" action="/solver/coefficients-bezout" method="post" name="coefficients_bezout">D'après le théorème de Bézout, quels que soient les entiers naturels <span class="maths"><i>a</i></span> et <span class="maths"><i>b</i></span> il existe deux entiers relatifs <span class="maths"><i>u</i></span> et <span class="maths"><i>v</i></span> tels que:
-<p class="center"><i>a</i><i>u</i> + <i>b</i><i>v</i> = PGCD(<i>a;b</i>)</p>
+<form id="mcs-form" accept-charset="UTF-8" action="" method="post" name="algorithme-euclide"><p>Cet outil permet de calculer le PGCD de deux entiers naturels non nuls a et b à l'aide de l'algorithme d'Euclide.</p><p> La méthode de calcul est détaillée sur cette fiche : <a href="/methode/algorithme-euclide-tx/">Algorithme d'Euclide</a>. </p><p> 
 
-Cet outil permet de calculer le PGCD de <span class="maths"><i>a</i></span> et <span class="maths"><i>b</i></span> puis les entiers <span class="maths"><i>u</i></span> et <span class="maths"><i>v</i></span> à l'aide de l'algorithme d'Euclide.
-
-Si vous souhaitez progresser, <strong>faites vous-même vos calculs</strong> et utilisez cet outil pour vérifier !
+Si vous souhaitez progresser, <strong>faites vous-même vos calculs</strong> et utilisez cet outil pour vérifier !</p> 
 <table id="calcul" class="noborder" style="text-align: left;">
 <tr>
 <td class="form-item"><label style="display: inline;" for="a">   a : </label><br />

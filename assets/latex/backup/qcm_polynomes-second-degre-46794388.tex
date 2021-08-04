@@ -1,0 +1,101 @@
+\input{_header}
+\meta{url}{/qcm/polynomes-second-degre/}
+\meta{pid}{1640}
+\meta{titre}{QCM : Polynôme du second degré}
+\meta{type}{qcm}
+%
+§Q:$f$ est une fonction polynôme du second degré dont le signe est donné par le tableau ci-dessous :
+<img src="/wp-content/uploads/mc-0443.png" alt="" class="aligncenter size-full  img-pc" />
+%##
+% type=table; width=45; c1=30
+%--
+% x|   -\infty   ~   -1   ~   2  ~   +\infty 
+% f(x)|  ~    -       :0     +  :0   -   ~
+%--
+\begin{center}
+ \begin{extern}%style="width:45rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (92*\width, -10*\height);
+       \draw (30*\width, 0*\height) -- (30*\width, -10*\height);
+       \node (l0c0) at (15*\width,-5*\height) {$ x $};
+       \node (l0c1) at (34*\width,-5*\height) {$ -\infty $};
+       \node (l0c2) at (43*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (52*\width,-5*\height) {$ -1 $};
+       \node (l0c4) at (61*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (70*\width,-5*\height) {$ 2 $};
+       \node (l0c6) at (79*\width,-5*\height) {$ ~ $};
+       \node (l0c7) at (88*\width,-5*\height) {$ +\infty $};
+       \draw (0, -20*\height) -- (92*\width, -20*\height);
+       \draw (30*\width, -10*\height) -- (30*\width, -20*\height);
+       \node (l1c0) at (15*\width,-15*\height) {$ f(x) $};
+       \node (l1c1) at (34*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (43*\width,-15*\height) {$ - $};
+       \draw[light] (52*\width, -10*\height) -- (52*\width, -20*\height);
+       \node (l1c3) at (52*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (61*\width,-15*\height) {$ + $};
+       \draw[light] (70*\width, -10*\height) -- (70*\width, -20*\height);
+       \node (l1c5) at (70*\width,-15*\height) {$ 0 $};
+       \node (l1c6) at (79*\width,-15*\height) {$ - $};
+       \node (l1c7) at (88*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (92*\width, -20*\height);
+
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+On peut en déduire que :
+§S+:Le discriminant $\Delta $ est positif
+§S-:Le discriminant $\Delta $ est négatif
+§S-:On ne peut déduire aucune information concernant  le discriminant
+§R:$f $ possède deux racines $-1$ et $2$ donc le discriminant est strictement positif.
+§Q:Soit $P\left(x\right)=\left(x^{2}+x+1\right)\left(x-1\right)$
+§S-:Le polynôme $P$ n'a \textbf{pas de racine}
+}S+:Le polynôme $P$ a \textbf{une unique} racine
+§S-:Le polynôme $P$ a exactement \textbf{deux} racines
+§S-:Le polynôme $P$ a exactement \textbf{trois} racines
+§R: $\left(x^{2}+x+1\right)\left(x-1\right)=0  \Leftrightarrow   x^{2}+x+1 = 0 $ ou $x-1=0$ (équation \textit{"produit nul"})
+\par
+Or le polynôme $x^{2}+x+1$ n'a pas de racine car son discriminant $\Delta  = -3$ est strictement négatif.
+\par
+Par contre $x-1=0 \Leftrightarrow  x=1$.
+\par
+Donc $1$ est la seule racine de $P$.
+§Q:L'ensemble des solutions de l'inéquation $x^{2}+x+1 < 0$ est :
+§S+:$S=\varnothing$
+§S-:$S=\mathbb{R}$
+§S-:$S=\left]-\infty  ; -1\right[ \cup  \left]1 ; +\infty \right[$
+§S-:$S=\left]-1 ; 1\right[$
+§R:  Le discriminant de $x^{2}+x+1$ est :$\Delta  = -3$.
+\par
+Il est strictement négatif. Quel que soit $x$, $x^{2}+x+1$ est donc du signe de $a \left(=1\right)$ et ne peut jamais être négatif.
+§Q:Pour quelle(s) valeur(s) de $m$ l'équation $x^{2}+mx+m=0$ admet-elle une unique solution ?
+§S-:Pour $m=2$
+§S+:Pour $m=0$ et pour $m=4$
+§S-:Pour aucune valeur de $m$
+§R:L'équation $x^{2}+mx+m=0$ admet une unique solution  lorsque le discriminant de $x^{2}+mx+m$ est nul.
+\par
+$\Delta  = m^{2} - 4m = m\left(m-4\right)$
+\par
+$\Delta  = 0  \Leftrightarrow  m=0 $ ou $ m=4$.
+§Q:L'ensemble des solutions de l'inéquation $\frac{x^{2}-3x+2}{x^{2}+x+1} \geqslant  0$ est :
+§S-:$S=\left]-1 ; 1\right[$
+§S-:$S=\left[-1 ; 0\right] \cup  \left[1 ; 2\right]$
+§S+:$S=\left]-\infty  ; 1\right] \cup  \left[2 ; +\infty \right[$
+§R: $x^{2}+x+1$ est toujours strictement positif (\textit{cf.} question 3).
+\par
+$\frac{x^{2}-3x+2}{x^{2}+x+1}$ a donc le même signe que $x^{2}-3x+2$
+\par
+$\Delta  = \left(-3\right)^{2}-4\times 1\times 2=1$
+\par
+$x_{1}=\frac{3-1}{2}=1$ et $x_{2}=\frac{3+1}{2}=2$
+\par
+Le tableau de signe donne :
+<img src="/wp-content/uploads/mc-0541.png" alt="" class="aligncenter size-full" />Donc $S=\left]-\infty  ; 1\right] \cup  \left[2 ; +\infty \right[$
+\input{_footer}

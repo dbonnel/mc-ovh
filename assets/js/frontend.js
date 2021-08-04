@@ -95,3 +95,28 @@ $class("volet").forEach(function (item) {
         e.currentTarget.classList.toggle('volet-open');
     });
 });
+
+/*=============================================
+   =                qcm              =
+   =============================================*/
+
+	// $id("mcqcm-submit").click(function() {
+	// 	vars = {};
+    //     $class('question input:checked').forEach(function (item) {
+	// 		vars[item.attr("name")] = item.val();
+	// 	});
+	//     jQuery.ajax({
+	// 		url : mcqcm.ajax_url,
+	// 		type : 'post',
+	// 		data : {
+	// 			action : 'mcqcm_exec_mcqcm',
+	// 			form_name : $id("mcqcm-form").attr("name"),
+	// 			vars : JSON.stringify(vars)
+	// 		},
+	// 		success : function( response ) {
+	// 			$id("mcqcm-result").html( response ).trigger("mcChange");
+	// 			$('html, body').animate( { scrollTop: $id("mcqcm-result").offset().top }, 750 ); 
+	// 		}
+	// 	});
+	// 	return false;
+	// });	

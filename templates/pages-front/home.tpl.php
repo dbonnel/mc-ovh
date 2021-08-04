@@ -1,1 +1,1 @@
-<?php __inc('components/home.search')?>
+<?= __('content') ?>

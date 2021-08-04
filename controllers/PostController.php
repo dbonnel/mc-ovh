@@ -38,6 +38,19 @@ namespace Controllers {
             $this->model = new \Models\PostModel();
         }
 
+        public function home($params='')
+        {
+            $post = $this->model->select_by_slug('home');
+             if (is_null($post) || $post['category'] != 'page') {
+                 throw new \App\NotFoundException('Post non trouvé');
+            }
+            if (\App\Session::is_administrator()) {
+                $this->view->set_var('actions-menu', $this->getActions($post, ['show', 'edit', 'modify']));
+            }
+            $this->view->set_var('content', $post['content'])
+                ->show('main');
+        }
+
         public function showExercices($params)
         {
             $this->showPost($params, 'exercices');
@@ -56,6 +69,11 @@ namespace Controllers {
         public function showEnigme($params)
         {
             $this->showPost($params, 'enigme');
+        }
+
+        public function showQcm($params)
+        {
+            $this->showPost($params, 'qcm');
         }
 
         public function showSupplement($params)
@@ -79,9 +97,15 @@ namespace Controllers {
             } else {
                 $sommaire_annale = false;
             }
+            if ($post['category'] == 'qcm') {
+                $content = $this->model->qcmData($post);
+            } else {
+                $content = $post['content'];
+            }
             dbg('sommaire', $post['annale_classe'] . $post['annale_annee'] . $post['annale_lieu']);
             $this->view->set_var('page_title', $post['title'])
-                ->set_var('content', $post['content'])
+                ->set_var('title', $post['title'].' - Maths-cours.fr')
+                ->set_var('content', $content)
                 ->set_var('sommaire_annale', $sommaire_annale)
                 ->set_var('sommaire', $sommaire)
                 ->set_var('type_sommaire', 'fiche')
@@ -166,6 +190,7 @@ namespace Controllers {
             } else {
                 $this->view->set_var('sommaire', $sommaire)
                     ->set_var('page_title', "Cours et exercices de " . $classe)
+                    ->set_var('title', "Cours et exercices de " . $classe . ' - Maths-cours.fr')
                     ->set_var('type_sommaire', 'global')
                     ->set_var('content_tpl', 'pages-front/sommaire')
                     ->show('main');
@@ -182,7 +207,8 @@ namespace Controllers {
                 throw new \App\NotFoundException('Annales vide');
             } else {
                 $this->view->set_var('sommaire_annale', $sommaire_annale)
-                    ->set_var('page_title', "Annales du " . $annale)
+                    ->set_var('page_title', "Annales " . $annale)
+                    ->set_var('title', "Annales " . $annale . ' - Maths-cours.fr')
                     ->set_var('type_sommaire', 'global')
                     ->set_var('content_tpl', 'pages-front/sommaire-annales')
                     ->show('main');
@@ -374,8 +400,9 @@ namespace Controllers {
         private function getActions($post, $actions = ['show', 'edit', 'read'])
         {
             dbg();
+
             $all_actions = [
-                'show' => ['icon' => 'icon-zoom', 'href' => '/' . $post['category'] . '/' . $post['slug']],
+                'show' => ['icon' => 'icon-zoom', 'href' =>  ($post['slug'] == 'home') ?'/':('/' . $post['category'] . '/' . $post['slug'])],
                 'edit' => ['icon' => 'icon-pen', 'href' => '/admin/update-post' . '/' . $post['id']],
                 'read' => ['icon' => 'icon-gear', 'href' => '/admin/read-post' . '/' . $post['id']],
                 'modify' => ['icon' => 'icon-tools', 'href' => '/admin/transform-post/set_source/' . $post['id']],

@@ -37,11 +37,6 @@ $GLOBALS['app'] = $app;
 set_exception_handler('\app\ExceptionHandler::handleException');
 
 $app->addRoutes(
-    'Page', [
-        '/' => 'home',
-    ]
-);
-$app->addRoutes(
     'User', [
         '/login-register' => 'login_register',
         '/confirm-mail' => 'confirm_mail_address',
@@ -52,12 +47,14 @@ $app->addRoutes(
 
 $app->addRoutes(
     'Post', [
+        '/' => 'home',
         '/annales/*' => 'annales',
         '/classe/*' => 'sommaire',
         '/exercices/*' => 'showExercices',
         '/cours/*' => 'showCours',
         '/methode/*' => 'showMethode',
         '/enigme/*' => 'showEnigme',
+        '/qcm/*' => 'showQcm',
         '/supplement/*' => 'showSupplement',
     ]
 );

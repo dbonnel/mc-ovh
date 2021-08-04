@@ -75,7 +75,7 @@ namespace Models {
         public function db_write(string $sql, array $data = [])
         {
             $this->open_connexion();
-            print_r($sql . '   ');
+           // print_r($sql . '   ');
             $stmt = $this->sql_exec($sql, $data);
             $id = $this->db->lastInsertId();
             $this->close_connexion();

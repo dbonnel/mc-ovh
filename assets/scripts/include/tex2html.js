@@ -291,12 +291,17 @@ class Tex2Html {
     texte = texte.replace(/\\end{(corrige|reponses|solution)}/g, "</p></div></div><p>")
     texte = texte.replace(/\\begin{code}\s*\n/g, "</p><code>")
     texte = texte.replace(/\s*\n\s*\\end{code}/g, "</code><p>")
-    texte = texte.replace(/\\begin{overflow}/, "<div style=\"overflow-x:auto;\">", texte);
-    texte = texte.replace(/\\end{overflow}/, "</div>", texte);
+
 
     //overflow
-    texte = texte.replace("\\begin{overflow}", "<div style=\"overflow-x:auto;\">", texte);
-    texte = texte.replace("\\end{overflow}", "</div>", texte);
+    texte = texte.replace(/\\begin{overflow}/g, "<div style=\"overflow-x:auto;\">", texte);
+    texte = texte.replace(/\\end{overflow}/g, "</div>", texte);
+    
+    //qcm
+    texte = texte.replace(/§Q:/g, '<div class="qcm-item-q"></div>', texte);
+    texte = texte.replace(/§S\+:/g, '<div class="qcm-item-sok"></div>', texte);
+    texte = texte.replace(/§S-:/g, '<div class="qcm-item-snok"></div>', texte);
+    texte = texte.replace(/§R:/g, '<div class="qcm-item-r"></div>', texte);
 
     //quiz		
     if (this.model.config["site"] == "quiz") {

@@ -1,4 +1,4 @@
-<form name="second_degre" id="mcs-form" accept-charset="UTF-8" action="/solver/outil-equation-du-2nd-degre" method="get">Cet outil permet de résoudre des équations du type <span class="mc-katex">ax^2+bx+c = 0</span> lorsque <span class="mc-katex">a, b</span> et <span class="mc-katex">c</span> sont des <strong>entiers</strong> relatifs.<p></p>
+<form name="second_degre" id="mcs-form" accept-charset="UTF-8" action="" method="get">Cet outil permet de résoudre des équations du type <span class="mc-katex">ax^2+bx+c = 0</span> lorsque <span class="mc-katex">a, b</span> et <span class="mc-katex">c</span> sont des <strong>entiers</strong> relatifs.<p></p>
 <p>Utilisez-le pour vérifier vos solutions et éventuellement comprendre vos erreurs.<br>
 Si vous souhaitez progresser, <strong>faites vous-même vos calculs</strong> avant d'utiliser cet outil !</p>
 <table id="calcul" class="noborder" style="text-align: left;">
