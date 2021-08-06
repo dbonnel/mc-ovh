@@ -49,3 +49,27 @@ table.cel25 {
         width: 25%;
     }
 }
+
+.lg-w30 {
+    @media (min-width: $breakpoints-lg) {
+        width: 30% !important;
+    }
+}
+.lg-w40 {
+    @media (min-width: $breakpoints-lg) {
+        width: 40% !important;
+    }
+}
+.lg-w50 {
+    @media (min-width: $breakpoints-lg) {
+        width: 50% !important;
+    }
+}
+.lg-w60 {
+    @media (min-width: $breakpoints-lg) {
+        width: 60% !important;
+    }
+}
+.w100 {
+    width: 100% !important;
+}

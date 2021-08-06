@@ -9,10 +9,12 @@
     <article class="content">
         <?php if(__('actions-menu')) : ?>
             <?php __inc('components/icon-menu'); ?>
-        <?php endif; ?>        
-        <div class="headline">
-            <h1><?=__('page_title')?></h1>
-        </div>
+        <?php endif; ?>  
+        <?php if(__('page_title')) : ?>      
+            <div class="headline">
+                <h1><?=__('page_title')?></h1>
+            </div>
+        <?php endif; ?>  
         <?= __('content_tpl')?__inc(__('content_tpl')):__('content') ?>
     </article>
     <?php __inc('base/aside')?>

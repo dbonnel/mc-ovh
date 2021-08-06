@@ -48,6 +48,8 @@ namespace Controllers {
                 $this->view->set_var('actions-menu', $this->getActions($post, ['show', 'edit', 'modify']));
             }
             $this->view->set_var('content', $post['content'])
+                ->set_var('page_title', $post['title'])
+                ->set_var('title', $post['title'].' - Maths-cours.fr')
                 ->show('main');
         }
 
@@ -60,7 +62,10 @@ namespace Controllers {
         {
             $this->showPost($params, 'cours');
         }
-
+        public function showPages($params)
+        {
+            $this->showPost($params, 'page');
+        }
         public function showMethode($params)
         {
             $this->showPost($params, 'methode');

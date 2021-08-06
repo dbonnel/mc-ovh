@@ -51,6 +51,7 @@ $app->addRoutes(
         '/annales/*' => 'annales',
         '/classe/*' => 'sommaire',
         '/exercices/*' => 'showExercices',
+        '/page/*' => 'showPages',
         '/cours/*' => 'showCours',
         '/methode/*' => 'showMethode',
         '/enigme/*' => 'showEnigme',

@@ -44,11 +44,31 @@ namespace Controllers {
         {
             try {
                 $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name, \App\Config::$db_username, \App\Config::$db_password);
-                $dump->start(dirname(__DIR__) . '/db-save/backup.sql');
-                $this->view->set_var('content', 'Backup OK : ' . dirname(__DIR__) . '/db-save/backup.sql');
+                $dump->start(dirname(__DIR__) . '/db-save/backup.sql.gz');
+                $this->view->set_var('content', 'Backup OK : ' . dirname(__DIR__) . '/db-save/backup.rar');
             } catch (\Exception $e) {
                 $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             }
+            //     try {
+            //         $zip = new \ZipArchive();
+
+            //         $zipFile=dirname(__DIR__) . '/db-save/backup.zip';
+
+            //         if(file_exists($zipFile)) {
+            //                 unlink ($zipFile);
+            //         }
+            //         if ($zip->open($zipFile, \ZIPARCHIVE::CREATE) != TRUE) {
+            //                 throw new \Exception("Could not open archive");
+            //         }
+            //    //     $zip->open($zipFile, \ZipArchive::OVERWRITE);
+            //             $zip->addFile("$zipFile", 'backup.sql');
+
+            //         // close and save archive
+
+            //         $zip->close();
+            //     } catch (\Exception $e) {
+            //         $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
+            //     }
             $this->view->set_var('page_title', 'Backup');
             $this->view->show('main');
         }
@@ -56,14 +76,39 @@ namespace Controllers {
         public function dbRestore()
         {
             try {
+                $this->unzip(dirname(__DIR__) . '/db-save/backup.sql.gz');
                 $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name, \App\Config::$db_username, \App\Config::$db_password);
                 $dump->restore(dirname(__DIR__) . '/db-save/backup.sql');
-                $this->view->set_var('content', 'Restore OK : ' . dirname(__DIR__) . '/db-save/backup.sql');
+                $this->view->set_var('content', 'Restore OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
+                unlink(dirname(__DIR__) . '/db-save/backup.sql');
             } catch (\Exception $e) {
                 $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             }
             $this->view->set_var('page_title', 'Restore');
             $this->view->show('main');
+        }
+
+        public function unzip($file_name)
+        {
+           
+// Raising this value may increase performance
+            $buffer_size = 8192; // read 8kb at a time
+            $out_file_name = str_replace('.gz', '', $file_name);
+
+// Open our files (in binary mode)
+            $file = gzopen($file_name, 'rb');
+            $out_file = fopen($out_file_name, 'wb');
+
+// Keep repeating until the end of the input file
+            while (!gzeof($file)) {
+                // Read buffer-size bytes
+                // Both fwrite and gzread and binary-safe
+                fwrite($out_file, gzread($file, $buffer_size));
+            }
+
+// Files are done, close files
+            fclose($out_file);
+            gzclose($file);
         }
 
         public function ftpUpload($filename)
@@ -74,7 +119,7 @@ namespace Controllers {
                 echo 'transfert error: ' . $e->getMessage();
             }
         }
-        
+
         public function ftpDownload($filename)
         {
             try {

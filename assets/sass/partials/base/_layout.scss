@@ -166,3 +166,26 @@
     padding: 1rem 0;
   }
 }
+
+
+.flexi-2 {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+
+
+  &>* {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoints-lg) {
+    flex-direction: row;
+    align-items: center;
+
+    &>* {
+      width: 100%;
+    }
+  }
+}
