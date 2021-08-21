@@ -1,0 +1,247 @@
+\input{_header}
+\meta{url}{/exercices/integrales-suites-bac-s-pondichery-2009/}
+\meta{pid}{2340}
+\meta{titre}{Intégrales et suites - Bac S Pondichéry 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1\end{h2}
+\textit{7 points - Commun à tous candidats }
+\par
+Soit $f$ la fonction définie sur l'intervalle $\left[0, + \infty \right[$ par: $f\left(x\right) = xe^{-x^{2}}$
+\par
+On désigne par $C$ la courbe représentative de la fonction $f$ dans un repère orthonormal $\left(O; \vec{i}, \vec{j}\right)$ du plan. Cette courbe est représentée ci-dessous.
+
+\begin{center}
+\imgsvg{Bac_S_Pondichery_2009}{0.3}% alt="Bac S Pondichery 2009" style="width:50rem"
+\end{center}
+\begin{h3}Partie A\end{h3}
+\begin{enumerate}
+     \item 
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer la limite de la fonction $f$ en $+\infty $.
+          \par
+          (On pourra écrire, pour $x$ différent de 0 : $f\left(x\right) = \frac{1}{x}\times \frac{x^{2}}{e^{x^{2}}}$).
+          \item
+          Démontrer que $f$ admet un maximum en $\frac{\sqrt{2}}{2}$ et calculer ce maximum.
+     \end{enumerate}
+     \item
+     Soit $a$ un nombre réel positif ou nul. Exprimer en unités d'aire et en fonction de $a$, l'aire $F\left(a\right)$ de la partie du plan limitée par la courbe $C$, l'axe des abscisses et les droites d'équations respectives $x=0$ et $x = a$ . Quelle est la limite de $F\left(a\right)$ quand $a$ tend vers $+\infty $?
+\end{enumerate}
+ 
+\begin{h3}Partie B\end{h3}
+On considère la suite $\left(u_{n}\right)$ définie pour tout entier naturel $n$ par: $u_{n} = \int_{n}^{n+1}f\left(x\right)dx$. On ne cherchera pas à expliciter $u_{n}$.
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que, pour tout entier naturel $n$ différent de 0 et de 1,
+          \par
+          $f\left(n+1\right) \leqslant  u_{n} \leqslant  f\left(n\right)$
+          \item
+          Quel est le sens de variation de la suite $\left(u_{n}\right)_{n\geqslant 2}$?
+          \item
+          Montrer que la suite $\left(u_{n}\right)$ converge. Quelle est sa limite?
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Vérifier que, pour tout entier naturel strictement positif $n$, $F\left(n\right) = \sum_{k=0}^{n-1}u_{k}$.
+          \item
+          \textit{Dans cette question, toute trace de recherche, même incomplète, ou d'initiative même non fructueuse, sera prise en compte dans l'évaluation. }
+          On donne ci-dessous les valeurs de $F\left(n\right)$ obtenues à l'aide d'un tableur, pour $n$ entier compris entre 3 et 7.
+
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $n$  &  3  &  4  &  5  &  6  &  7
+               \\ \hline
+               $F\left(n\right)$  &  0,4999382951  &  0,4999999437  &  0,5  &  0,5  &  0,5
+               \\ \hline
+          \end{tabularx}
+          Interpréter ces résultats.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A\end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Pour $x$ différent de 0 : $f\left(x\right) = \frac{1}{x}\times \frac{x^{2}}{e^{x^{2}}}$.
+               \par
+               En posant $X=x^{2}$ on a :
+               \par
+               $\lim\limits_{x\rightarrow +\infty }\frac{x^{2}}{e^{x^{2}}}=\lim\limits_{X\rightarrow +\infty }\frac{X}{e^{X}}=\lim\limits_{X\rightarrow +\infty }\frac{1}{\frac{e^{X}}{X}}=0$
+               \par
+               Par ailleurs :
+               \par
+               $\lim\limits_{x\rightarrow +\infty }\frac{1}{x}=0$
+               \par
+               donc, par produit des limites:
+               \par
+               $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=0$
+               \item
+               La dérivée de la fonction $x\mapsto e^{-x^{2}}$ est la fonction $x\mapsto -2xe^{-x^{2}}$ (dérivée de fonction composée $\left(e^{u}\right)^{\prime}=u^{\prime}e^{u}$)
+               \par
+               On dérive $f$ grâce à la formule de dérivation d'un produit $\left(uv\right)^{\prime}=u^{\prime}v+uv^{\prime}$
+               \par
+               $f^{\prime}\left(x\right)=e^{-x^{2}}-2x^{2}e^{-x^{2}}=\left(1-2x^{2}\right)e^{-x^{2}}=\left(1-\sqrt{2}x\right)\left(1+\sqrt{2}x\right)e^{-x^{2}}$
+               \par
+               Le facteur $1+\sqrt{2}x$ est positif pour $x > 0$.Le facteur $e^{-x^{2}}$ est toujours positif donc $f^{\prime}\left(x\right)$ est du signe de $1-\sqrt{2}x$ qui s'annule pour $x=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}$ et dont le coefficient directeur est négatif.
+               \par
+               Le tableau de variation de $f$ est~:
+%##
+% type=table; width=25; l3=20; alt=tableau de variation
+%--
+% x|   0  ~    \frac{\sqrt{ 2 }}{ 2 }     ~   +\infty 
+% f'(x)|  ~            +   :0   -     ~
+% f(x)|  0                /   :\frac{\sqrt{ 2 }}{ 2 \sqrt{ \text{e}}}    \   0
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (54*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ 0 $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ \frac{\sqrt{ 2 }}{ 2 } $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ +\infty $};
+       \draw (0, -20*\height) -- (54*\width, -20*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -20*\height);
+       \node (l1c0) at (5*\width,-15*\height) {$ f'(x) $};
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-15*\height) {$ + $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -20*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (41*\width,-15*\height) {$ - $};
+       \node (l1c5) at (50*\width,-15*\height) {$ ~ $};
+       \draw (0, -40*\height) -- (54*\width, -40*\height);
+       \draw (10*\width, -20*\height) -- (10*\width, -40*\height);
+       \node (l2c0) at (5*\width,-30*\height) {$ f(x) $};
+       \node (l2c1) at (14*\width,-35*\height) {$ 0 $};
+       \node (l2c2) at (23*\width,-30*\height) {$ ~ $};
+       \draw[light] (32*\width, -20*\height) -- (32*\width, -40*\height);
+       \node (l2c3) at (32*\width,-25*\height) {$ \frac{\sqrt{ 2 }}{ 2 \sqrt{ \text{e}}} $};
+       \node (l2c4) at (41*\width,-30*\height) {$ ~ $};
+       \node (l2c5) at (50*\width,-35*\height) {$ 0 $};
+       \draw (0, 0) rectangle (54*\width, -40*\height);
+       \draw[fleche] (l2c1) -- (l2c3);
+       \draw[fleche] (l2c3) -- (l2c5);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+$f$ admet donc un maximum pour $x=\frac{\sqrt{2}}{2}$.
+          \end{enumerate}
+          \item
+          L'aire $F\left(a\right)$ de la partie du plan limitée par la courbe $C$, l'axe des abscisses et les droites d'équations respectives $x=0$ et $x = a$ est donnée par :
+          \par
+          $F\left(a\right)=\int_{0}^{a}f\left(x\right)dx$
+          \par
+          Or $f\left(x\right)=-\frac{1}{2}\left(-2xe^{-x^{2}}\right)$ et la fonction $x\mapsto -2xe^{-x^{2}}$ est la dérivée de la fonction $x\mapsto e^{-x^{2}}$.
+          \par
+          Une primitive de $f$ est donc $x\mapsto -\frac{1}{2}e^{-x^{2}}$.
+          \par
+          Donc:
+          \par
+          $F\left(a\right)=\int_{0}^{a}f\left(x\right)dx=\left[-\frac{1}{2}e^{-x^{2}}\right]_{0}^{a}=-\frac{1}{2}e^{-a^{2}}+\frac{1}{2}$
+          \par
+          (Remarque: $F$ est la primitive de $f$ qui s'annule pour $x=0$)
+          \par
+          On a immédiatement :
+          \par
+          $\lim\limits_{a\rightarrow +\infty }F\left(a\right)=\frac{1}{2}$
+     \end{enumerate}
+      
+     \begin{h3}Partie B\end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               D'après la partie A, $f$ est décroissante pour $x > 1$ donc si $1 < n \leqslant  x \leqslant  n+1$:
+               \par
+               $f\left(n+1\right) \leqslant  f\left(x\right) \leqslant  f\left(n\right)$
+               \par
+               D'après les propriétés de l'intégrale, on a donc  :
+               \par
+               $\int_{n}^{n+1}f\left(n+1\right)dx \leqslant  \int_{n}^{n+1}f\left(x\right)dx \leqslant  \int_{n}^{n+1}f\left(n\right)dx$
+               \par
+               soit, comme $f\left(n\right)$ et $f\left(n+1\right)$ sont des constantes :
+               \par
+               $f\left(n+1\right)\int_{n}^{n+1}1dx \leqslant  \int_{n}^{n+1}f\left(x\right)dx \leqslant  f\left(n\right)\int_{n}^{n+1}1dx$
+               \par
+               Or :
+               \par
+               $\int_{n}^{n+1}1dx=\left[x\right]_{n}^{n+1}=n+1-n=1$
+               \par
+               donc :
+               \par
+               $f\left(n+1\right) \leqslant  \int_{n}^{n+1}f\left(x\right)dx \leqslant  f\left(n\right)$
+               \par
+               c'est à dire :
+               \par
+               $f\left(n+1\right) \leqslant  u_{n} \leqslant  f\left(n\right)$
+               \item
+               Pour $n\geqslant 2$, d'après la question précédente : $f\left(n+1\right) \leqslant  u_{n}$ et $u_{n+1}\leqslant  f\left(n+1\right)$ donc $u_{n+1}\leqslant  u_{n}$.
+               \par
+               La suite $\left(u_{n}\right)_{n\geqslant 2}$ est décroissante.
+               \item
+               La fonction $f$ étant positive sur $\left[0; +\infty \right[$, $u_{n}=\int_{n}^{n+1}f\left(x\right)dx \geqslant  0$ pour tout entier $n$.
+               \par
+               La suite $\left(u_{n}\right)$ est décroissante à partir du rang 2 et minorée par 0. Elle est donc convergente.
+               \par
+               D'après le théorème des gendarmes :
+               \par
+               $\lim\limits_{n\rightarrow +\infty }f\left(n+1\right) \leqslant  \lim\limits_{n\rightarrow +\infty }u_{n} \leqslant  \lim\limits_{n\rightarrow +\infty }f\left(n\right)$
+               \par
+               donc, d'après la partie A :
+               \par
+               $0 \leqslant  \lim\limits_{n\rightarrow +\infty }u_{n} \leqslant  0$
+               \par
+               c'est à dire :
+               \par
+               $\lim\limits_{n\rightarrow +\infty }u_{n} = 0$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Montrons par récurrence que pour tout entier naturel $n$ strictement positif, $F\left(n\right) = \sum_{k=0}^{n-1}u_{k}$.
+               \textbf{Initialisation}
+               Cette propriété est vraie pour $n = 1$; en effet :
+               \par
+               $F\left(1\right) = \int_{0}^{1}f\left(x\right)dx=u_{0}$ et $\sum_{k=0}^{0}u_{k}=u_{0}$
+               \textbf{Hérédité}
+               Supposons $F\left(n\right) = \sum_{k=0}^{n-1}u_{k}$ pour un certain entier $n$ fixé.
+               \par
+               $F\left(n+1\right) = \int_{0}^{n+1}f\left(x\right)dx = \int_{0}^{n}f\left(x\right)dx + \int_{n}^{n+1}f\left(x\right)dx$
+               \par
+               d'après la relation de Chasles pour les intégrales.
+               \par
+               Donc :
+               \par
+               $F\left(n+1\right) = F\left(n\right) + u_{n} = \sum_{k=0}^{n-1}u_{k} + u_{n} = \sum_{k=0}^{n}u_{k}$
+               \par
+               ce qui prouve bien l'hérédité.
+               \par
+               Donc, pour tout entier naturel $n$ strictement positif, $F\left(n\right) = \sum_{k=0}^{n-1}u_{k}$.
+               \item
+               Le tableau confirme que $\lim\limits_{n\rightarrow +\infty }F\left(n\right)=\frac{1}{2}$
+               \par
+               En réalité on n'a pas exactement $F\left(5\right)=\frac{1}{2}$. Ce résultat est dû à l'arrondi effectué par le tableur.
+               \par
+               En effet, d'après la partie A. $F\left(5\right)=-\frac{1}{2}e^{-5^{2}}+\frac{1}{2}=\frac{1}{2}-\frac{1}{2}e^{-25}$
+               \par
+               Or $e^{-25} < 1,4\times 10^{-11}$ n'est pas pris en compte par le tableur qui ne conserve apparemment que 10 décimales.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

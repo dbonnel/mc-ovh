@@ -1,0 +1,43 @@
+\input{_header}
+\meta{url}{/exercices/puissance-point-cercle/}
+\meta{pid}{1012}
+\meta{titre}{Puissance d'un point par rapport à un cercle}
+\meta{type}{exercices}
+%
+\begin{center}
+\imgsvg{mc-0401}{0.3}% alt="Puissance d'un point par rapport à un cercle" style="width:23rem" 
+\end{center}
+$\mathscr C$ est un cercle de centre $O$ et de rayon $r$ et $\left[AB\right]$ est un diamètre de ce cercle.
+\par
+$M$ est un point situé à l'extérieur du cercle. On admettra que, dans ce cas, l'angle $\widehat{AMB}$ est aigu.
+\par
+Les droites $\left(AM\right)$ et $\left(BM\right)$ coupent $\mathscr C$ respectivement en $I$ et $J$.
+\begin{enumerate}
+     \item
+     Montrer que $\overrightarrow{MA}.\overrightarrow{MB}=MI\times MA$.
+     \item
+     En déduire que $MI\times MA=OM^{2}-r^{2}$
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $I$ étant situé sur le cercle de diamètre $\left[AB\right]$, le triangle $ABI$ est rectangle en $I$
+          \par
+          $I$ est donc le projeté orthogonal de $B$ sur $\left(AM\right)$.
+          \par
+          Comme l'angle $\widehat{AMB}$ est aigu, en utilisant la formule du \mcLien{/cours/premiere-s/produit-scalaire#t50}{produit scalaire à l'aide d'une projection orthogonale} :
+          \par
+          $\overrightarrow{MA}.\overrightarrow{MB}=MA\times MI$
+          \item
+          Par ailleurs, en utilisant la relation de Chasles :
+          \par
+          $\overrightarrow{MA}.\overrightarrow{MB}=\left(\overrightarrow{MO}+\overrightarrow{OA}\right).\left(\overrightarrow{MO}+\overrightarrow{OB}\right)=\left(\overrightarrow{MO}+\overrightarrow{OA}\right).\left(\overrightarrow{MO}-\overrightarrow{OA}\right)$
+          \par
+          $\overrightarrow{MA}.\overrightarrow{MB}=\overrightarrow{MO}^{2}-\overrightarrow{OA}^{2}=OM^{2}-r^{2}$
+          \par
+          Par conséquent : $MI\times MA=OM^{2}-r^{2}$
+          \par
+          Remarque: Le résultat $MI\times MA=OM^{2}-r^{2}$ montre que le produit $MI\times MA$ ne dépend pas de la position du point $A$ sur le cercle mais dépend uniquement du rayon du cercle et de la distance $OM$. Ce nombre s'appelle la \textit{puissance du point $M$ par rapport au cercle $\mathscr C$}.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

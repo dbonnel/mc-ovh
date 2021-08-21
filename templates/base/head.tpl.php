@@ -13,7 +13,7 @@
 
     <!--======  Style CSS ======-->
     <link rel="stylesheet" href="/assets/css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500&display=swap" rel="stylesheet">
 
 </head>
 

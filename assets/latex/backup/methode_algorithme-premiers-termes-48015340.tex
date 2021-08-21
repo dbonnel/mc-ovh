@@ -1,0 +1,128 @@
+\input{_header}
+\meta{url}{/methode/algorithme-premiers-termes/}
+\meta{pid}{871}
+\meta{titre}{Algorithme de calcul des premiers termes d'une suite}
+\meta{type}{methode}
+%
+\cadre{vert}{Situation}{%
+     On considère une suite $\left(u_{n}\right)$ définie par son premier terme $u_{0}$ et par une relation de récurrence du type $u_{n+1}=f\left(u_{n}\right)$
+     \par
+     On souhaite écrire un algorithme permettant de calculer et d'afficher les termes $u_{0}$ à $u_{k}$ où $k$ est un nombre entré par l'utilisateur.
+}
+\begin{h3}1. Algorithme\end{h3}
+Voici un algorithme répondant à la question pour la suite $\left(u_{n}\right)$ définie par :
+\par
+$\left\{ \begin{matrix} u_{0}=3 \\ u_{n+1} = 0,5u_{n}+2\end{matrix}\right.$
+\par
+     \textbf{Remarque : }Cet algorithme n'est pas le seul possible.
+\\
+    \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{ 1.} & \textbf{Variables}  &  	$i$ et $k$ sont des entiers naturels
+          \\ \hline
+          \textbf{ 2.} &  & $u$ est un réel
+          \\ \hline
+          \textbf{ 3.} & \textbf{Entrée}  & Saisir la valeur de $k$
+          \\ \hline
+          \textbf{ 4.} & \textbf{Début traitement} : &  	$u$ prend la valeur 3
+          \\ \hline
+          \textbf{ 5.} &  & Afficher $u$
+               \\ \hline
+               \textbf{ 6.} &   & Pour $i$ allant de $1$ à $k$
+               \\ \hline
+               \textbf{ 7.} &  & $\quad$$\quad$$\quad$$u$ prend la valeur $0,5\times u+2$
+               \\ \hline
+               \textbf{ 8.} &  & $\quad$$\quad$$\quad$Afficher $u$
+               \\ \hline
+               \textbf{ 9.} &  &  Fin Pour
+               \\ \hline
+               \textbf{10.} & \textbf{Fin traitement}  &
+               \\ \hline
+          \end{tabularx}
+     \begin{h3}2. Commentaires\end{h3}
+\\      \textbf{Lignes 1 et 2 : } On définit 3 variables :
+     \begin{itemize}
+          \item
+          $k$ contiendra la valeur saisie par l'utilisateur qui déterminera l'arrêt de la boucle. $k$ ne sera pas modifié lors du traitement mais gardera une valeur constante
+          \item
+          $i$ contiendra le rang (indice) du terme que l'on calcule à partir du rang 1. $i$ variera de $1$ à $k$
+          \item
+          $u$ contiendra les valeurs de $u_{i}$. Notez que l'on définit \textbf{une seule variable pour l'ensemble des termes de la suites}. Au départ cette variable sera initialisée à $u_{0}$. Puis on calculera $u_{1}$ qui viendra «écraser» $u_{0}$. Puis $u_{2}$ viendra écraser $u_{1}$ et ainsi de suite...
+     \end{itemize}
+\\      \textbf{Ligne 3 :} La valeur saisie par l'utilisateur qui déterminera l'arrêt de l'algorithme est stockée dans la variable $k$
+\\      \textbf{Ligne 4 :} On initialise $u$ en lui donnant la valeur de $u_{0}$ (ici $u_{0}=3$).
+\\      \textbf{Ligne 5 :} On affiche la valeur de $u$ (qui contient actuellement $3$). Cette ligne est nécessaire pour afficher la valeur de $u_{0}$ car la boucle qui suit n'affichera que les valeurs de $u_{1}$ à $u_{n}$.
+\\      \textbf{Ligne 6 :} On crée une boucle qui fera varier l'indice $i$ de $1$ à $k$. Puisqu'ici on connait le nombre d'itérations $k$, une boucle \textit{Pour} a été préférée à une boucle \textit{Tant que}.
+\\      \textbf{Ligne 7 :} On modifie la valeur de $u$ : La nouvelle valeur de $u$ sera égale à l'ancienne valeur de $u$ fois $0,5$ plus $2$. Cela traduit bien la relation de récurrence  $u_{n+1}= 0,5u_{n}+2$.
+\\      \textbf{Ligne 8 :} On affiche le terme que l'on vient de calculer (à savoir $u_{i}$).
+\\      \textbf{Ligne 9 :} On « ferme » la boucle; on retourne à la ligne 6; si $i$ valait $k$, la boucle se terminera alors et  on passera à la ligne 10.
+\\      \textbf{Ligne 10 :} L'algorithme est terminé !
+     \textbf{Remarque : }Il faut toujours être très attentif au nombre de passages dans la boucle et au nombre d'affichages. Pour vérifier son algorithme, on peut :
+     \begin{itemize}
+          \item
+          faire « tourner » l'algorithme (c'est à dire créer un tableau contenant les valeurs des variables étape par étape) - voir \textbf{3.} ci-dessous.
+          \item
+          compter le nombre d'affichages :
+          \par
+          Ici on souhaite afficher les valeurs de $u_{0}$ à $u_{k}$, c'est à dire $k+1$ valeurs.
+          \par
+          La ligne \textbf{5.} effectue un premier affichage (de $u_{0}$).
+          \par
+          La boucle affichera, quant à elle, $k$ valeurs puisque $i$ varie de $1$ à $k$
+          \par
+          En tout on a donc bien effectué $k+1$ affichages.
+     \end{itemize}
+     \begin{h3}3. Résultats\end{h3}
+     Le tableau ci dessous récapitule les valeurs prises par les variables pour $k=4$
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singlebor" width="600"
+          \hline
+          $   k   $ & $  i  $ & fin de boucle ? & $   u   $
+          \\ \hline
+          4 & - & - & 3
+          \\ \hline
+          4 & 1 & non & 3,5
+          \\ \hline
+          4 & 2 & non & 3,75
+          \\ \hline
+          4 & 3 & non & 3,875
+          \\ \hline
+          4 & 4 & non & 3,9375
+          \\ \hline
+          4 & 5 & oui &
+          \\ \hline
+     \end{tabularx}
+     \begin{h3}4. Variante\end{h3}
+     Cette fois, on ne souhaite pas afficher toutes les valeurs de $u_{0}$ à $u_{k}$ mais uniquement la valeur $u_{k}$.
+     \par
+     Les modifications à apporter à l'algorithme sont les suivantes :
+     \begin{itemize}
+          \item
+          On supprime la ligne 5 puisque l'on ne souhaite plus afficher $u_{0}$
+          \item
+          On supprime la ligne 8 puisque l'on ne souhaite plus afficher tous les termes de $u_{1}$ à $u_{n}$
+          \item
+          On ajoute une ligne « Afficher $u$ » \textbf{après la boucle} pour afficher la dernière valeur calculée dans la boucle (et qui correspond à $u_{k}$)
+     \end{itemize}
+     On obtient l'algorithme ci-dessous :
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+          \hline
+          \textbf{ 1.} & \textbf{Variables}  &  	$i$ et $k$ sont des entiers naturels
+          \\ \hline
+          \textbf{ 2.} &  & $u$ est un réel
+          \\ \hline
+          \textbf{ 3.} & \textbf{Entrée}  & Saisir la valeur de $k$
+          \\ \hline
+          \textbf{ 4.} & \textbf{Début traitement} : &  	$u$ prend la valeur 3
+          \\ \hline
+          \textbf{ 5.} &   & Pour $i$ allant de $1$ à $k$
+          \\ \hline
+          \textbf{ 6.} &  & $\quad$$\quad$$\quad$$u$ prend la valeur $0,5\times u+2$
+          \\ \hline
+          \textbf{ 7.} &  &  Fin Pour
+          \\ \hline
+          \textbf{ 8.} &  & \textbf{Afficher $u$}
+          \\ \hline
+          \textbf{9.} & \textbf{Fin traitement}  &
+          \\ \hline
+     \end{tabularx}
+\input{_footer}

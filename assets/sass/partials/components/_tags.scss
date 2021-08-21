@@ -1,0 +1,75 @@
+#tags {
+  width: auto;
+  border: 2px dotted $gray-400;
+  padding: 1em;
+  list-style: none;
+  line-height: 1.4;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 0;
+  a {
+    border: none;
+  }
+  a:hover {
+    color: white !important;
+    background-color: #607ec5;
+    border: none;
+  }
+  a:active {
+    color: white !important;
+    background-color: #607ec5;
+  }
+  li {
+    display: inline;
+    margin: 0;
+    border: none;
+  }
+  .tag0 {
+    font-size: 1.2rem;
+    color: #acc1f3;
+    z-index: 10;
+  }
+  .tag0 a {
+    color: #acc1f3;
+  }
+  .tag1 {
+    font-size: 1.4rem;
+    color: #acc1f3;
+    z-index: 9;
+  }
+  .tag1 a {
+    color: #acc1f3;
+  }
+  .tag2 {
+    font-size: 1.6rem;
+    color: #86a0dc;
+    z-index: 8;
+  }
+  .tag2 a {
+    color: #86a0dc;
+  }
+  .tag3 {
+    font-size: 1.8rem;
+    color: #86a0dc;
+    z-index: 7;
+  }
+  .tag3 a {
+    color: #86a0dc;
+  }
+  .tag4 {
+    font-size: 2rem;
+    color: #607ec5;
+    z-index: 6;
+  }
+  .tag4 a {
+    color: #607ec5;
+  }
+  .tag5 {
+    font-size: 2.3rem;
+    color: #607ec5;
+    z-index: 5;
+  }
+  .tag5 a {
+    color: #607ec5;
+  }
+}

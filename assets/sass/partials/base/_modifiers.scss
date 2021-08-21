@@ -70,6 +70,26 @@ table.cel25 {
         width: 60% !important;
     }
 }
+.sm-w30 {
+    @media (min-width: $breakpoints-sm) {
+        width: 30% !important;
+    }
+}
+.sm-w40 {
+    @media (min-width: $breakpoints-sm) {
+        width: 40% !important;
+    }
+}
+.sm-w50 {
+    @media (min-width: $breakpoints-sm) {
+        width: 50% !important;
+    }
+}
+.sm-w60 {
+    @media (min-width: $breakpoints-sm) {
+        width: 60% !important;
+    }
+}
 .w100 {
     width: 100% !important;
 }

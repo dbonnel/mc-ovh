@@ -1,0 +1,94 @@
+\input{_header}
+\meta{url}{/exercices/suites-matrices-bac-s-pondichery-2017-spe/}
+\meta{pid}{6313}
+\meta{titre}{Suites et matrices - Bac S Pondichéry 2017 (spé)}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4\end{h2}
+\textit{(5 points) - Candidats ayant  suivi l'enseignement de spécialité}
+On définit les suites $\left(u_n\right)$ et $\left(v_n\right)$ par :
+\par
+$u_0 = v_0 = 1$
+\par
+et, pour tout entier naturel $n$ :
+\par
+$u_{n+1} = 2u_n+3v_n $
+\par
+et $v_{n+1} = 2u_n+v_n$
+\par
+On admettra que les termes de ces suites sont des entiers naturels non nuls.
+\begin{h3}Partie A\end{h3}
+\textbf{Conjectures}
+Flore a calculé les premiers termes des suites à l'aide d'un tableur.
+\par
+Une copie d'écran est donnée ci-dessous.
+
+\begin{center}
+\imgsvg{suites-matrices-bac-s-pondichery-2017-spe-1}{0.3}% alt="Bac S Pondichéry 2017 Spé Tableur 1" style="width:38rem"
+\end{center}
+
+\begin{enumerate}
+     \item
+     Quelles formules ont été entrées dans les cellules B3 et C3 pour obtenir par copie vers le
+     \par
+     bas les termes des suites ?
+     \item
+     Soit $n$ un entier naturel.
+     \par
+     Conjecturer la valeur de PGCD$\left(u_n~;~v_n\right)$. Aucune justification n'est demandée.
+     \item
+     Pour les termes de rang 10, 11, 12 et 13 Flore obtient les résultats suivants :
+
+\begin{center}
+\imgsvg{suites-matrices-bac-s-pondichery-2017-spe-2}{0.3}% alt="Bac S Pondichéry 2017 Spé Tableur 2" style="width:38rem"
+\end{center}
+\end{center}
+
+
+     Elle émet la conjecture : \og la suite $\left(\dfrac{u_n}{v_n} \right)$ converge \fg{}.
+     \par
+     Qu'en penser ?
+\end{enumerate}
+\begin{h3}Partie B\end{h3}
+\textbf{Étude arithmétique}
+\begin{enumerate}
+     \item
+     Démontrer par récurrence que, pour tout entier naturel $n$, on a :
+     \par
+     $2u_n-3v_n = (- 1)^{n+1}$.
+     \item
+     Soit $n$ un entier naturel.
+     \par
+     Déduire de la question précédente la valeur de PGCD$\left(u_n~;~v_n\right)$.
+\end{enumerate}
+\begin{h3}Partie C\end{h3}
+\textbf{Étude matricielle}
+Pour tout entier naturel $n$, on définit :
+\begin{itemize}
+     \item
+     $X_n = \begin{pmatrix}u_n \\ v_n\end{pmatrix}$,
+     \item
+     $P = \begin{pmatrix} 1&3 \\-1&2\end{pmatrix}$ et $Q_n = \begin{pmatrix}(- 1)^n&3 \times 2^{2n}\\(- 1)^{n+1}&2^{2n+1}\end{pmatrix}.$
+\end{itemize}
+\begin{enumerate}
+     \item
+     \begin{enumerate}
+          \item
+          Montrer que la matrice $\dfrac{1}{5}\begin{pmatrix}2&- 3\\1&1\end{pmatrix}$ est l'inverse de $P$.
+          \item
+          On admet que, pour tout entier naturel $n$, on a $X_n = Q_nP^{-1} X_0$.
+          \par
+          Démontrer que, pour tout entier naturel $n$, on a $\left\{\begin{array}{l c l}
+                    u_n&=&\dfrac{(- 1)^{n+1}+ 3\times 2^{2n+1}}{5} \\ \\
+                    v_n&=&\dfrac{(- 1)^{n}+  2^{2n+2}}{5}
+               \end{array}\right.$
+          \end{enumerate}
+          \item
+          \begin{enumerate}
+               \item
+               Vérifier que, pour tout entier naturel $n$, on a $\dfrac{u_n}{v_n}= \dfrac{\frac{(- 1)^{n+1}}{2^{2n+1}}+ 3}{\frac{(- 1)^{n}}{2^{2n+1}}+ 2}$.
+               \item
+               En déduire la limite de la suite $\left(\dfrac{u_n}{v_n} \right)$.
+          \end{enumerate}
+     \end{enumerate}
+\input{_footer}

@@ -1,0 +1,99 @@
+\input{_header}
+\meta{url}{/exercices/bac-interets-composes/}
+\meta{pid}{841}
+\meta{titre}{[Bac] Intérêts composés}
+\meta{type}{exercices}
+%
+\textit{(D'après bac ES/L Pondichéry 2013)}
+\par
+Le 1er janvier 2000, un client a placé 3000 euros à intérêts composés au taux annuel de 2,5\%.
+\par
+On note $C_{n}$ le  capital du client au 1er janvier de l'année $2000+n$, où $n$ est un entier naturel.
+\begin{enumerate}
+     \item
+     Calculer $C_{1}$ et $C_{2}$. Arrondir les résultats au centime d'euro.
+     \item
+     Exprimer $C_{n+1}$ en fonction de $C_{n}$. En déduire que, pour tout nombre entier naturel $n$, on a la relation :
+     \par
+     $C_{n}=3000 \times  1,025^{n}.$
+     \item
+     On donne l'algorithme suivant :
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          \textbf{Entrée} &  Saisir un nombre $S$ supérieur à 3000
+          \\ \hline
+          \textbf{Traitement} &  Affecter à $n$ la valeur $0$.
+          \\ \hline
+          & Affecter à $U$ la valeur 3000
+          \\ \hline
+          & Tant que $U\leqslant S$
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span>$n$ prend la valeur $n+1$
+          \\ \hline
+          & <span style="color:transparent">...</span><span style="color:transparent">...</span>$U$ prend la valeur $U \times  1,025$
+          \\ \hline
+          & Fin tant que
+          \\ \hline
+          \textbf{Sortie} & Afficher le nombre $2000+n$
+          \\ \hline
+\end{tabularx}
+\begin{enumerate}[label=\alph*.]
+     \item
+     Pour la valeur $S=3300$ saisie, recopier et compléter autant que nécessaire le tableau suivant. Les résultats seront arrondis à l'unité.
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          Valeur de $n$ & $0$ &  $1$ & . . . & <span style="color:transparent">...</span><span style="color:transparent">...</span>
+          \\ \hline
+          Valeur de $U$ & 3000 &   &  . . . &
+          \\ \hline
+          Condition $U\leqslant S$  & vrai &  &   . . . &
+          \\ \hline
+     \end{tabularx}
+     \item
+     En déduire l'affichage obtenu quand la valeur de $S$ saisie est 3300.
+     \item
+     Dans le contexte de cet exercice, expliquer comment interpréter le nombre obtenu en sortie de cet algorithme quand on saisit un nombre $S$ supérieur à 3000.
+\end{enumerate}
+\item
+Au 1er janvier 2013, le client avait besoin d'une somme de 5000 euros. Montrer que le capital de son placement n'est pas suffisant à cette date.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $C_{1}=\left(1+\frac{t}{100}\right)\times C_{0}=1,025\times 3000=3075$
+          \par
+          $C_{2}=1,025\times C_{1}=1,025\times 3075=3151,88$ à $0,01$ près.
+          \item
+          Pour tout entier naturel $n$ :
+          \par
+          $C_{n+1}=1,025\times C_{n}$
+          \par
+          La suite $\left(C_{n}\right)$ est une \textbf{suite géométrique} de premier terme $C_{0}=3000$ et de raison $q=1,025$.
+          \par
+          $C_{n}=C_{0}\times q^{n}=3000\times 1,025^{n}$
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+                    \hline
+                    Valeur de $n$ & 0 &  1 & 2 & 3 & 4
+                    \\ \hline
+                    Valeur de $U$ & 3000 & 3075  &  3151,88 & 3230,67 & 3311,44
+                    \\ \hline
+                    Condition $U\leqslant S$  & vrai & vrai &  vrai &  vrai &  faux
+                    \\ \hline
+               \end{tabularx}
+               \item
+               La boucle s'arrête pour $n=4$ et le programme se termine après avoir affiché la valeur \textbf{2004}.
+               \item
+               L'algorithme affiche l'année à partir de laquelle le capital sera strictement supérieur à $S$.
+          \end{enumerate}
+          \item
+          Le capital au 1er janvier 2013, correspond à $C_{13}$.
+          \par
+          $C_{13}=3000\times 1,025^{13}\approx 4135,53$.
+          \par
+          Ce capital est donc inférieur à 5000 euros.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

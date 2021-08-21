@@ -1,0 +1,113 @@
+\input{_header}
+\meta{url}{/exercices/integrale-aire-bac-s-pondichery-2017/}
+\meta{pid}{6294}
+\meta{titre}{Intégrale - Aire - Bac S Pondichéry 2017}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3\end{h2}
+\textit{(4 points) - Commun à tous les candidats}
+\par
+Une entreprise spécialisée dans les travaux de construction a été mandatée pour percer un tunnel à flanc de montagne.
+\par
+Après étude géologique, l'entreprise représente dans le plan la situation de la façon suivante : dans un repère orthonormal, d'unité $2~m$, la zone de creusement est la surface délimitée par l'axe des abscisses et la courbe $\mathscr{C}$.
+
+\begin{center}
+\imgsvg{integrale-aire-bac-s-pondichery-2017}{0.3}% alt="Intégrale - Aire - Bac S Pondichéry 2017" style="width:55rem"
+\end{center}
+
+On admet que $\mathscr{C}$ est la courbe représentative de la fonction $f$ définie sur l'intervalle $[- 2,5~;~2,5]$ par:
+\begin{center}$f(x) = \ln \left(- 2x^2+13,5\right).$\end{center}
+L'objectif est de déterminer une valeur approchée, au mètre carré près, de l'aire de la zone de creusement.
+\begin{h3}Partie A\end{h3}
+\textbf{Étude de la fonction }  $f$
+\begin{enumerate}
+     \item
+     Calculer $f^\prime(x)$ pour $x \in  [- 2,5~;~2,5]$.
+     \item
+     Dresser, en justifiant, le tableau de variation de la fonction $f$ sur $[- 2,5~;~2,5]$.
+     \par
+     En déduire le signe de $f$ sur $[- 2,5~;~2,5]$.
+\end{enumerate}
+\begin{h3}Partie B\end{h3}
+\textbf{Aire de la zone de creusement}
+On admet que la courbe $\mathscr{C}$ est symétrique par rapport à l'axe des ordonnées du repère.
+\begin{enumerate}
+     \item
+     La courbe $\mathscr{C}$ est-elle un arc de cercle de centre $O$ ? Justifier la réponse.
+     \item
+     Justifier que l'aire, en mètre carré, de la zone de creusement est
+     \par
+     $\mathscr{A} = 8\int_0^{2,5}  f(x)\:\text{d}x$.
+     \item
+     L'algorithme, donné en annexe, permet de calculer une valeur approchée par défaut de $I = \int_0^{2,5}  f(x)\:\text{d}x$, notée $a$.
+     \par
+     On admet que : $a \leqslant  I \leqslant a+\dfrac{f(0)-f(2,5)}{n}\times  2,5$.
+     \begin{enumerate}
+          \item
+          Le tableau fourni en annexe, donne différentes valeurs obtenues pour $R$ et $S$ lors de l'exécution de l'algorithme pour $n = 50$.
+          \par
+          Compléter ce tableau en calculant les six valeurs manquantes.
+          \item
+          En déduire une valeur approchée, au mètre carré près, de l'aire de la zone de creusement.
+     \end{enumerate}
+\end{enumerate}
+~
+\begin{h3}ANNEXE à compléter et à remettre avec la copie\end{h3}
+\begin{tabularx}{0.8\linewidth}{&*{3}{>{\centering \arraybackslash }X&}}%class="singleborder" width="600"
+// /hline
+Variables &
+// /hline
+&		$R$ et $S$ sont des réels
+// /hline
+&		$n$ et $k$ sont des entiers
+// /hline
+Traitement &
+// /hline
+& $S$ prend la valeur $0$
+// /hline
+& Demander la valeur de $n$
+// /hline
+& Pour $k$ variant de $1$ à $n$ faire
+// /hline
+&	$~ ~ $		$R$ prend la valeur $\dfrac{2,5}{n} \times  f\left(\dfrac{2,5}{n}\times k \right)$
+\par
+&	$~ ~ $		$S$ prend la valeur $S+R$
+// /hline
+& Fin Pour
+// /hline
+& Afficher $S$
+// /hline
+\end{tabularx}
+
+Le tableau ci-dessous donne les valeurs de $R$ et de $S$, arrondies à $10^{-6}$, obtenues lors de l'exécution de l'algorithme pour $n = 50$.
+\par
+\begin{tabularx}{0.8\linewidth}{&*{3}{>{\centering \arraybackslash }X&}}%class="compact" width="600"
+ /hline
+Initialisation						&$S = 0$,   $n = 50 $&       &
+// /hline
+Boucle Pour						&Étape $k$ 			&  $R$ &  $S$
+// /hline
+&  1							&  ...  		& ...
+// /hline
+&  2							&   0,130060&0,260176
+// /hline
+&  3							&   0,129968&0,390144
+// /hline
+&  4							&   0,129837   & ...
+// /hline
+&${\vdots}$&&${\vdots}$
+// /hline
+&24 &  0,118 137&   3,025705
+// /hline
+&25&   0,116970&   3,142675
+// /hline
+&${\vdots}$&&${\vdots}$
+// /hline
+&49&   0,020106&   5,197538
+// /hline
+&50&  ...&  ...
+// /hline
+Affichage &$S = \ldots $& &
+// /hline
+\end{tabularx}
+\input{_footer}

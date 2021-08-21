@@ -1,0 +1,114 @@
+\input{_header}
+\meta{url}{/exercices/arbre-loi-probabilite/}
+\meta{pid}{903}
+\meta{titre}{Arbre et loi de probabilité}
+\meta{type}{exercices}
+%
+On lance 3 pièces bien équilibrées valant respectivement 1€, 2€ et 2€.
+\par
+On veut étudier la variable aléatoire $X$ qui totalise le montant en euros des pièces tombées sur \textbf{\textit{Pile}}.
+\begin{enumerate}
+     \item
+     Représenter l'expérience par un arbre pondéré.
+     \item
+     Quelles sont les différentes valeurs possibles pour $X$?
+     \par
+     Donner la loi de probabilité de $X$.
+     \item
+     Quelle est la probabilité d'obtenir un résultat supérieur ou égal à 3€ ?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+%##
+% type=arbre; width=35; wcell=3.5; hcell=1.5
+%--
+% >1:0,5
+% >>2:0,5
+% >>>2:0,5
+% >>>0:0,5
+% >>0:0,5
+% >>>2:0,5
+% >>>0:0,5
+% >0:0,5
+% >>2:0,5
+% >>>2:0,5
+% >>>0:0,5
+% >>0:0,5
+% >>>2:0,5
+% >>>0:0,5
+%--
+\begin{center}
+ \begin{extern}%style="width:35rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-3.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-1.5*\height}) {$1$};
+     \draw (r) -- (ra) node [poids] {$0,5$};
+    \node[noeud] (raa) at ({3*\width},{-0.5*\height}) {$2$};
+     \draw (ra) -- (raa) node [poids] {$0,5$};
+    \node[noeud] (raaa) at ({4*\width},{0*\height}) {$2$};
+     \draw (raa) -- (raaa) node [poids] {$0,5$};
+    \node[noeud] (raab) at ({4*\width},{-1*\height}) {$0$};
+     \draw (raa) -- (raab) node [poids] {$0,5$};
+    \node[noeud] (rab) at ({3*\width},{-2.5*\height}) {$0$};
+     \draw (ra) -- (rab) node [poids] {$0,5$};
+    \node[noeud] (raba) at ({4*\width},{-2*\height}) {$2$};
+     \draw (rab) -- (raba) node [poids] {$0,5$};
+    \node[noeud] (rabb) at ({4*\width},{-3*\height}) {$0$};
+     \draw (rab) -- (rabb) node [poids] {$0,5$};
+    \node[noeud] (rb) at ({2*\width},{-5.5*\height}) {$0$};
+     \draw (r) -- (rb) node [poids] {$0,5$};
+    \node[noeud] (rba) at ({3*\width},{-4.5*\height}) {$2$};
+     \draw (rb) -- (rba) node [poids] {$0,5$};
+    \node[noeud] (rbaa) at ({4*\width},{-4*\height}) {$2$};
+     \draw (rba) -- (rbaa) node [poids] {$0,5$};
+    \node[noeud] (rbab) at ({4*\width},{-5*\height}) {$0$};
+     \draw (rba) -- (rbab) node [poids] {$0,5$};
+    \node[noeud] (rbb) at ({3*\width},{-6.5*\height}) {$0$};
+     \draw (rb) -- (rbb) node [poids] {$0,5$};
+    \node[noeud] (rbba) at ({4*\width},{-6*\height}) {$2$};
+     \draw (rbb) -- (rbba) node [poids] {$0,5$};
+    \node[noeud] (rbbb) at ({4*\width},{-7*\height}) {$0$};
+     \draw (rbb) -- (rbbb) node [poids] {$0,5$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+<img src="/wp-content/uploads/mc-0024.png" alt="" class="aligncenter size-full  img-pc" />Pour simplifier la lecture de l'arbre chaque évènement a été représenté par le montant généré (par exemple "1" signifie que la pièce de 1 euro a donné \textit{"Pile"})
+          \item
+          Les valeurs prises par la variable aléatoire $X$ sont :
+          \par
+          0 <span style="color:transparent">...</span> (0+0+0)
+          \par
+          1 <span style="color:transparent">...</span> (1+0+0)
+          \par
+          2 <span style="color:transparent">...</span> (0+2+0 ou 0+0+2)
+          \par
+          3 <span style="color:transparent">...</span> (1+2+0 ou 1+0+2)
+          \par
+          4 <span style="color:transparent">...</span> (0+2+2)
+          \par
+          5 <span style="color:transparent">...</span> (1+2+2)
+          \par
+          Chaque éventualité (issue) a une probabilité de $\frac{1}{2}\times \frac{1}{2}\times \frac{1}{2}=\frac{1}{8}$. Les évènements $X=2$ et $X=3$ correspondent chacun à 2 éventualités. On obtient donc le tableau suivant :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $x_{i}$ &  0  &  1  &  2  &  3  &  4  &  5
+               \\ \hline
+               $p\left(X=x_{i}\right)$ &  $\frac{1}{8}$  &   $\frac{1}{8}$  &   $\frac{1}{4}$  &   $\frac{1}{4}$  &   $\frac{1}{8}$  &  $\frac{1}{8}$
+               \\ \hline
+          \end{tabularx}
+          \item
+          On recherche $p\left(X\geqslant 3\right)$.
+          \par
+          $p\left(X\geqslant 3\right)=p\left(X=3\right)+p\left(X=4\right)+p\left(X=5\right)=\frac{1}{4}+\frac{1}{8}+\frac{1}{8}=\frac{1}{2}$
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

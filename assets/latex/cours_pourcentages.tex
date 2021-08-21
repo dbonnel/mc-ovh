@@ -1,0 +1,184 @@
+\input{_header}
+\meta{url}{/cours/pourcentages/}
+\meta{pid}{365}
+\meta{titre}{Pourcentages}
+\meta{type}{cours}
+\begin{h2}1. Part en pourcentage\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     Soit $E$ un ensemble fini (que l'on appellera \textbf{ensemble de référence}) et $F$ une partie de l'ensemble $E$. La \textbf{part en pourcentage} de $F$ par rapport à  $E$ est le nombre :
+     \begin{center}$t \% =\frac{t}{100}= \frac{card \left(F\right)}{card \left(E\right)}$\end{center}
+     où $card \left(E\right)$ (cardinal de $E$) désigne le nombre d'éléments de $E$ et $card \left(F\right)$ le nombre d'éléments de $F$.
+     \par
+     On dit également que $F$ représente $t\%$ de $E$.
+}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item $5\%$, $\frac{5}{100}$ et $0,05$ sont trois écritures différentes du \textbf{même nombre} (pourcentage, fraction, écriture décimale).
+          \item On est en présence d'une situation de proportionnalité que l'on peut représenter par le tableau suivant :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $t$ & nombre d'éléments de $F$
+               \\ \hline
+               $100$ & nombre d'éléments de $E$
+               \\ \hline
+          \end{tabularx}
+          \item Ceci peut également s'écrire : nombre d'éléments de $F =\frac{t}{100} \times $ nombre d'élements de $E$.
+          \par
+          Cette dernière égalité permet de calculer le nombre d'éléments de $F$ connaissant sa part en pourcentage par rapport à $E$
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e10"
+     \begin{itemize}
+          \item Dans une classe de $25$ élèves qui compte $15$ garçons le pourcentage de garçons est :
+          \par
+          $\frac{15}{25}=0,6=\frac{60}{100}=60\%$
+          \item $16\%$ de $75$€ font : $\frac{16}{100}\times 75=12$€
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p20"
+     \textbf{Pourcentages de pourcentages}
+     Soit 3 ensembles $E, F, G$ tels que $G \subset F \subset E$.
+     \par
+     Si $G$ représente $t_{1}$\% de $F$ et si $F$ représente $t_{2}$\% de $E$, la part en pourcentage de $G$ par rapport à $E$ est :
+     \begin{center}$\frac{t}{100}=\frac{t_{1}}{100}\times \frac{t_{2}}{100}$\end{center}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     Dans un lycée de $800$ élèves :
+     \begin{itemize}
+          \item $25$ \% des élèves sont en Seconde;
+          \item $45$ \% des élèves de Seconde sont des filles.
+     \end{itemize}
+     La part des filles de Seconde dans le lycée est :
+     \par
+     $\frac{t}{100}=\frac{25}{100}\times \frac{45}{100}=\frac{1125}{10000}=\frac{11,25}{100}=11,25\%$
+     \par
+     Le nombre de filles en Seconde est $\frac{11,25}{100}\times 800=90$
+}
+\begin{h2}2. Pourcentages d'évolution\end{h2}
+\cadre{bleu}{Définition}{% id="d40"
+     On considère une quantité passant d'une valeur $V_{0}$ à une valeur $V_{1}$.
+     \par
+     Le pourcentage d'évolution de cette quantité est le nombre
+     \begin{center}$\frac{t}{100}=\frac{V_{1}-V_{0}}{V_{0}}$\end{center}
+}
+\bloc{cyan}{Remarques}{% id="r40"
+     Le pourcentage d'évolution est \textbf{positif} dans le cas d'une \textbf{augmentation} et \textbf{négatif} dans le cas d'une \textbf{diminution}.
+}
+\bloc{orange}{Exemple}{% id="e40"
+     Le prix d'un article passe de 80€ à 76€. Le pourcentage d'évolution est :
+     \begin{center}$\frac{t}{100}=\frac{76-80}{80}=-\frac{4}{80}=-0,05=-5\%$\end{center}
+     Le prix de l'article a diminué de 5\%
+}    
+\cadre{bleu}{Définition}{% id="d30"
+     On considère une quantité passant d'une valeur $V_{0}$ à une valeur $V_{1}$.
+     \par
+     Le \textbf{coefficient multiplicateur} est le nombre par lequel il faut multiplier $V_{0}$ pour obtenir $V_{1}$ :
+     \par
+     $V_{1}=CM \times  V_{0}$
+}
+\bloc{cyan}{Remarques}{% id="r30"
+     \begin{itemize}
+          \item On a donc  $CM=\frac{V_{1}}{V_{0}}$
+          \item Le coefficient multiplicateur est \textbf{supérieur à 1} dans le cas d'une \textbf{augmentation} et \textbf{inférieur à 1} dans le cas d'une \textbf{diminution}.
+          \item La fonction qui à l'ancienne valeur associe la nouvelle valeur est : $x\mapsto CM\times x$
+          \par
+          C'est une \textbf{fonction linéaire} de coefficient directeur $CM$
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p50"
+     Le coefficient multiplicateur s'exprime en fonction du pourcentage d'évolution par:
+     \par
+     $CM=1+\frac{t}{100}$
+     \par
+     (où $t$ est positif en cas d'augmentation, négatif en cas de diminution)
+}
+\bloc{cyan}{Remarques}{% id="r50"
+     \begin{itemize}
+          \item On a donc : $V_{1}=\left(1+\frac{t}{100}\right)V_{0}$.
+          \item Dans le cas d'une diminution de $5$\%, par exemple, on pourra au choix considérer que :
+          \par
+          $CM=1+\frac{t}{100}$ avec $t=-5$
+          \par
+          ou
+          \par
+          $CM=1-\frac{t}{100}$ avec $t=5$
+          \par
+          Dans les deux raisonnements, on obtient évidemment le même coefficient multiplicateur $0,95$.
+          \item Connaissant le coefficient multiplicateur, on a facilement le pourcentage d'évolution grâce à la relation : $\frac{t}{100}=CM-1$
+          \item Le tableau ci-dessous résume les différents cas :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               &  Prendre $t\%$ de $x$                &   Augmenter $x$ de $t\%$                 & Diminuer $x$ de $t\%$
+               \\ \hline
+               Calculs à effectuer  &  Multiplier $x$ par \textbf{$\frac{t}{100}$}  &   Multiplier $x$ par \textbf{$1+\frac{t}{100}$} & Multiplier $x$ par \textbf{$1-\frac{t}{100}$}
+               \\ \hline
+               Fonction linéaire    & $x\mapsto \frac{t}{100}\times x$                    &  $x\mapsto \left(1+\frac{t}{100}\right)\times x$                    & $x\mapsto \left(1-\frac{t}{100}\right)\times x$
+               \\ \hline
+          \end{tabularx}
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e50"
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          &  Prendre $25\%$ de $x$         &   Augmenter $x$ de $25\%$        & Diminuer $x$ de $25\%$
+          \\ \hline
+          Calculs à effectuer  &  Multiplier $x$ par $\frac{25}{100}$  &   Multiplier $x$ par $1,25$     & Multiplier $x$ par $0,75$
+          \\ \hline
+          Fonction linéaire    & $x\mapsto 0,25\times x$                 &   $x\mapsto 1,25\times x$                 & $x\mapsto 0,75\times x$
+          \\ \hline
+          Exemples             & Prendre $25\%$ de 200          &   Augmenter 50 de $25\%$         & Diminuer 50 de $25\%$
+          \\ \hline
+          Résultat             & $0,25\times 200=50$          &   $1,25\times 50=62,5$          & $0,75\times 50=37,5$
+          \\ \hline
+     \end{tabularx}
+}
+\cadre{vert}{Propriété (Évolutions successives)}{% id="p60"
+     Lors d'évolutions successives, le coefficient multiplicateur global est égal au \textbf{produit} des coefficients multiplicateurs de chaque évolution
+}
+\bloc{orange}{Exemple}{% id="e60"
+     Le prix d'un objet augmente de $10\%$ puis diminue de $10\%$.
+     \par
+     Le coefficient multiplicateur global est :
+     \begin{center}$CM=\left(1+\frac{10}{100}\right)\left(1-\frac{10}{100}\right)=0,99$ \end{center}
+     Si $t$ désigne le pourcentage d'évolution global en \%, on a donc :
+     \par
+     $1+ \frac{t}{100}=0,99 $
+     \par
+     $\frac{t}{100}=0,99-1=-0,01=-\frac{1}{100}$
+     \par
+     Le prix de l'objet a globalement \textbf{diminué} de $1\%$.
+}
+\bloc{cyan}{Remarques}{% id="r60"
+     \begin{itemize}
+          \item \textbf{Une hausse de $t\%$ ne "compense" pas une baisse de $t\%$}. C'est dû au fait que les deux pourcentages ne portent pas sur le même montant.
+          \par
+          En effet, si un objet coûtant 100 euros subit une augmentation de $10\%$ son prix passera à $110$€ (les $10\%$ ont été calculé par rapport à $100$€).
+          \par
+          Si son prix subit ensuite une diminution de $10\%$, le montant de la baisse sera calculé par rapport au prix de $110$€ et non plus de $100$€. La baisse sera donc de $11$€ et non $10$€.
+          \item En cas d'évolution successives,\textbf{ les pourcentages d'évolutions ne s'ajoutent (ni ne soustraient) jamais}.
+     \end{itemize}
+}
+\cadre{vert}{Définition et propriété (Taux d'évolution réciproque)}{% id="p70"
+     Si le taux d'évolution $t \%$ fait passer de $V_{0}$ à $V_{1}$, on appelle taux d'évolution réciproque $t^{\prime} \%$, le taux d'évolution qui fait passer de $V_{1}$ à $V_{0}$.
+     \par
+     On a alors la relation suivante :
+     \begin{center}$\left(1+\frac{t}{100}\right)\left(1+\frac{t^{\prime}}{100}\right)=1$\end{center}
+}
+\bloc{orange}{Exemple}{% id="e70"
+     Le prix d'un article augmente de 60\%. Pour qu'il revienne à son prix de départ, il faut qu'ensuite il varie de $t^{\prime} \%$ tel que :
+     \par
+     $\left(1+\frac{60}{100}\right)\left(1+\frac{t^{\prime}}{100}\right)=1$
+     \par
+     $1,6\times \left(1+\frac{t^{\prime}}{100}\right)=1$
+     \par
+     $1+\frac{t^{\prime}}{100}=\frac{1}{1,6}$
+     \par
+     $1+\frac{t^{\prime}}{100}=0,625$
+     \par
+     $\frac{t^{\prime}}{100}=-0,375$
+     \par
+     $t^{\prime}=-37,5$
+     \par
+     Il faut donc que le prix diminue de 37,5\% pour compenser la hausse de 60\%.
+}
+\input{_footer}

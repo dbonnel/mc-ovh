@@ -1,0 +1,194 @@
+\input{_header}
+\meta{url}{/methode/determiner-si-deux-droites-sont-paralleles-thales/}
+\meta{pid}{11546}
+\meta{titre}{Déterminer si deux droites sont parallèles (Thalès)}
+\meta{type}{methode}
+%
+\begin{h2} Problème~: \end{h2}
+$ A $ et $ B $ sont deux points d'une droite $\mathscr{D} $ et $ C $ et $ D $ deux points d'une droite $ \mathscr{D'} $.
+\\
+Les droites $ \left( AC \right) $ et $ \left( BD \right) $ sont sécantes en un point $ M $.
+\\
+Deux cas de figure sont possibles~:
+
+     \begin{center}
+          \begin{extern}%style="width:30rem" alt="Thales 1"
+               \newrgbcolor{tttttt}{0.2 0.2 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.,1.)(7.,8.)
+                    \rput[tl](5.3728597107438,7.1){$\tttttt{\mathscr{D}}$}
+                    \rput[tl](6.487572210743799,4.1){$\tttttt{\mathscr{D'}}$}
+                    \psline[linewidth=0.4pt,linecolor=tttttt](5.,7.)(2.,2.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](6.,4.)(3.,6.)
+                    \psplot[linewidth=0.4pt,linecolor=tttttt]{1.}{7.}{(--9.--1.*x)/2.}
+                    \psplot[linewidth=0.4pt,linecolor=tttttt]{1.}{7.}{(--4.--2.*x)/4.}
+                    \begin{scriptsize}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](3.,6.)
+                         \rput[bl](2.7690909607438003,6.065112062122526){\tttttt{$A$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](5.,7.)
+                         \rput[bl](5.0151534607438,7.115625918895607){\tttttt{$B$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,4.)
+                         \rput[bl](6.079953460743799,3.780661294219158){\tttttt{$D$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](2.,2.)
+                         \rput[bl](1.8873034607438006,1.7630076962899062){\tttttt{$C$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](4.,5.333333333333333)
+                         \rput[bl](3.6,5.2){\tttttt{$M$}}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+
+     \begin{center}
+          \begin{extern}%%style="width:30rem" alt="Thales 2"
+               \newrgbcolor{tttttt}{0.2 0.2 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.,1.)(7.,8.)
+                    \psplot[linewidth=0.4pt,linecolor=tttttt]{1.}{7.}{(--5.841086716091681--1.0004893874029346*x)/2.0131375}
+                    \psplot[linewidth=0.4pt,linecolor=tttttt]{1.}{7.}{(--4.--2.*x)/4.}
+                    \rput[tl](5.3728597107438,5.5){$\tttttt{\mathscr{D}}$}
+                    \rput[tl](6.487572210743799,4.1){$\tttttt{\mathscr{D'}}$}
+                    \psline[linewidth=0.4pt,linecolor=tttttt](3.997317828962791,6.802444984387303)(2.,2.)
+                    \psline[linewidth=0.4pt,linecolor=tttttt](3.997317828962791,6.802444984387303)(6.,4.)
+                    \begin{scriptsize}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](2.9936972107438002,4.38929233822261)
+                         \rput[bl](2.7607722107438004,4.455991630716139){\tttttt{$A$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](5.0068347107438,5.389781725625545)
+                         \rput[bl](5.0234722107438,5.50650548748922){\tttttt{$B$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.,4.)
+                         \rput[bl](6.079953460743799,3.780661294219158){\tttttt{$D$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](2.,2.)
+                         \rput[bl](1.8873034607438006,1.7630076962899062){\tttttt{$C$}}
+                         \psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](3.997317828962791,6.802444984387303)
+                         \rput[bl](4.0335409607438,6.832153925798109){\darkgray{$M$}}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+
+On connait les longueurs $ AM, BM, CM, DM. $
+\\
+On se pose la question suivante~:
+\begin{center}
+     \textbf{ Les droites $\mathscr{D} $ et $ \mathscr{D'} $ sont-elles parallèles~?}
+\end{center}
+\begin{h2} Méthode \end{h2}
+On calcule séparément chacun des deux rapports $ \frac{ MA }{ MD } $ et $ \frac{ MB }{ MC } . $
+\begin{itemize}
+     \item
+     Si ces deux rapports sont égaux, les droites $\mathscr{D} $ et $\mathscr{D'} $ sont parallèles d'après la \mcLien{https://www.maths-cours.fr/cours/theoreme-thales/\#t50}{réciproque du théorème de Thalès}
+     \item
+     Sinon, les droites $\mathscr{D} $ et $\mathscr{D'} $ ne sont pas parallèles (en effet, si elles étaient parallèles, on aurait $ \frac{ MA }{ MD } = \frac{ MB }{ MC } $ d'après le théorème de Thalès.)
+\end{itemize}
+\bloc{cyan}{Attention à la rédaction~:}{ % id=r010
+     \begin{itemize}
+          \item
+          N'écrivez pas $ \frac{ MA }{ MD } = \frac{ MB }{ MC } $ tant que vous n'avez pas prouvé que ces rapports étaient égaux~!
+          \item
+          La \textbf{ réciproque } du théorème de Thalès sert à prouver que les droites $\mathscr{D} $ et $\mathscr{D'} $ \textbf{sont} parallèles. Ne citez pas la réciproque du théorème de Thalès si $\mathscr{D} $ et $\mathscr{D'} $ \textbf{ne sont pas} parallèles~!
+          \item
+          Il faut faire attention à l'alignement et à l' \textbf{ordre} des points.
+          //
+          Dans le cas de la première figure ci-dessus, on signalera que $ A, M, D $ et $ B, M, C $ sont dans le même ordre~; dans le cas de la seconde figure, que $ M, A, D $ et $ M, B, C $ sont dans le même ordre.
+     \end{itemize}
+} % fin Attention à la rédaction
+\bloc{cyan}{Remarque:}{ % id=r030
+     N'oubliez pas qu'il existe d'autres méthodes pour démontrer que deux droites sont parallèles.
+     \par
+     En particulier, un théorème couramment utilisé au collège pour montrer que deux droites sont parallèles est le suivant~:
+     \cadre{rouge}{Théorème}{ % id=t030
+          Deux droites prependiculaires à une même troisième sont parallèles entre elles.
+     } % fin théorème
+     \begin{center}
+          \begin{extern}%width="400" alt="perpendiculaires et parallèles "
+               \newrgbcolor{grey}{0.2 0.2 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \fontsize{9pt}{9pt}\selectfont
+               \begin{pspicture*}(0.,0.)(5.,5.)
+                    \pspolygon[linewidth=0.4pt,linecolor=grey](2.2980044729391027,3.6490022364695514)(2.2490022364695514,3.747006709408654)(2.150997763530449,3.6980044729391026)(2.2,3.6)
+                    \pspolygon[linewidth=0.4pt,linecolor=grey](2.6980044729391026,2.849002236469551)(2.6490022364695514,2.9470067094086536)(2.550997763530449,2.8980044729391023)(2.6,2.8)
+                    \psplot[linewidth=0.4pt,linecolor=red]{0.}{5.}{(--5.--1.*x)/2.}
+                    \psplot[linewidth=0.4pt,linecolor=red]{0.}{5.}{(--3.--1.*x)/2.}
+                    \psplot[linewidth=0.4pt,linecolor=blue]{0.}{3.5}{(--8.-2.*x)/1.}
+                    \rput[tl](2.884090909090908,4.434685073339088){$\red{\mathscr{D}}$}
+                    \rput[tl](3.1940082644628086,3.596031061259709){$\red{\mathscr{D'}}$}
+                    \rput[tl](1.9369834710743792,4.6106988783434025){$\blue{(d)}$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+} % fin remarque
+\begin{h2}Exemple 1 \end{h2}
+Dans la figure ci-dessous, tracée à main levée, on a~: $ IM=5 $cm, $ IJ = 3 $cm, $ IL=4 $cm et $ IK=2,5 $cm.
+\begin{center}
+     \imgsvg{reciproque-thales}{0.1}%width="400" alt="thales et reciproque"
+\end{center}
+Les droites $(JK)$ et $ (LM) $ sont-elles parallèles~?
+\bloc{orange}{Solution}{ % id=s040
+     Les droites $ \left( JM \right) $ et $ \left( KL \right) $ sont sécantes en $I$.
+     \\
+     Les points $ J, I, M $ et $ K, I, L $ sont dans le même ordre.
+     \par
+     On calcule $ \frac{ IJ }{ IM } $ et $ \frac{ IK }{ IL } $~:
+     \par
+     $ \frac{ IJ }{ IM } = \frac{ 3 }{ 5 } $
+     \par
+     $ \frac{ IK }{ IL } = \frac{ 2,5 }{ 4 } = \frac{ 25 }{ 40 } = \frac{ 5 }{ 8 } $
+     \par
+     Les rapports $ \frac{ IJ }{ IM } $ et $ \frac{ IK }{ IL } $ ne sont pas égaux~; par conséquent, les droites $ \left( JK \right) $ et $ \left( LM \right) $ ne sont pas parallèles.
+} % fin Solution
+\begin{h2}Exemple 2 \end{h2}
+\begin{center}
+     \begin{extern}%width="500" alt="réciproque du théorème de Thalès"
+          \newrgbcolor{tttttt}{0.2 0.2 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,0.)(8.,6.)
+               \psplot[linewidth=0.4pt,linecolor=tttttt]{0.}{8.}{(--5.389132322680942--0.606992187729279*x)/5.996124510410222}
+               \psline[linewidth=0.4pt,linecolor=tttttt](2.,5.)(1.,1.)
+               \psplot[linewidth=0.4pt,linecolor=tttttt]{0.}{8.}{(--19.372549727742015--0.606992187729279*x)/5.996124510410222}
+               \psline[linewidth=0.4pt,linecolor=tttttt](2.,5.)(6.996124510410222,1.606992187729279)
+               \begin{scriptsize}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](2.,5.)
+                    \rput[bl](1.9064419707276834,5.085640095555049){\tttttt{$A$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](1.,1.)
+                    \rput[bl](0.9049680478251896,0.6757659957857199){\tttttt{$B$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=tttttt](6.996124510410222,1.606992187729279)
+                    \rput[bl](7.050999793856933,1.3144978370986039){\tttttt{$C$}}
+                    \psdots[dotsize=2pt 0,dotstyle=*](1.5981569416534365,3.3926277666137454)
+                    \rput[bl](1.35,3.449438115194311){$D$}
+                    \psdots[dotsize=2pt 0,dotstyle=*,linecolor=darkgray](4.007657953143472,3.63654336372335)
+                    \rput[bl](4.07,3.710056053482655){\darkgray{$E$}}
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+Sur la figure ci-dessus, on sait que~:
+\begin{itemize}
+     \item
+     $ AD = 2 $ cm
+     \item
+     $ AB = 5 $ cm
+     \item
+     $ AE = 3 $ cm
+     \item
+     $ EC = 4,5 $ cm
+\end{itemize}
+Les droites $ \left( BD \right) $ et $ \left( EC \right) $ sont-elles parallèles~?
+\bloc{orange}{Solution}{ % id=e060
+     Les droites $ \left(BD \right) $ et $ \left( EC \right) $ sont sécantes au point $A$.
+     \\
+     Les points $ A, D, B $ et les points $ A, E, C $ sont situés dans le même ordre.
+     \par
+     On va comparer les rapports $ \frac{AD}{ AB } $ et $ \frac{ AE }{ AC } $.
+     \par
+     Pour cela, on calcule d'abord $ AC $~:
+     \\
+     $ AC = AE + EC = 3 + 4,5 = 7,5 .$
+     \par
+     Alors~:
+     \par
+     $ \frac{ AD }{ AB } = \frac{ 2 }{ 5 } $
+     \par
+     $ \frac{ AE }{ AC } = \frac{ 3 }{ 7,5 } = \frac{ 2 }{ 5 } $
+     \par
+     Les rapports $ \frac{ AD }{ AB } $ et $ \frac{ AE }{ AC }$ sont égaux, donc, d'après \textbf{la réciproque du théorème de Thalès} les droites $ \left( DE \right) $ et $ \left( BC \right) $ sont parallèles.
+} % fin Solution
+\input{_footer}

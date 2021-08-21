@@ -1,0 +1,180 @@
+\input{_header}
+\meta{url}{/exercices/suites-bac-es-l-pondichery-2018/}
+\meta{pid}{7099}
+\meta{titre}{Suites - Bac ES/L Pondichéry 2018}
+\meta{type}{exercice}
+\begin{h2}Exercice 3 (5 points)\end{h2}
+\textbf{Candidats n'ayant pas suivi l'enseignement de spécialité}
+\medskip
+On considère la suite $\left(u_n\right)$ définie par $u_0 = 65$ et pour tout entier naturel $n$~:
+\par
+\[u_{n+1} = 0,8u_n + 18.\]
+\medskip
+\begin{enumerate}
+     \item Calculer $u_1$ et $u_2$.
+     \item Pour tout entier naturel $n$, on pose~: $v_n = u_n - 90$.
+     \begin{enumerate}[label=\alph*.]
+          \item Démontrer que la suite $\left(v_n\right)$ est géométrique de raison $0,8$.
+          \par
+          On précisera la valeur de $v_0$.
+          \item Démontrer que, pour tout entier naturel $n$~:
+          \[u_n = 90 - 25 \times  0,8^n.\]
+     \end{enumerate}
+     \item  On considère l'algorithme ci-dessous~:
+     \begin{center}
+          \begin{extern}%width="330px" alt="algorithme suite géométrique"
+               \begin{tabularx}{0.5\linewidth}{|c|X|}\hline
+                    ligne 1&$u \gets 65$\\
+                    ligne 2&$n \gets 0$\\
+                    ligne 3&Tant que .........\\
+                    ligne 4&\hspace{1cm}$n \gets n+1$\\
+                    ligne 5&\hspace{1cm}$u \gets 0,8 \times u + 18$\\
+                    ligne 6&Fin Tant que\\ \hline
+               \end{tabularx}
+          \end{extern}
+     \end{center}
+     \medskip
+     \begin{enumerate}[label=\alph*.]
+          \item Recopier et compléter la ligne 3 de cet algorithme afin qu'il détermine le plus petit entier
+          naturel $n$ tel que $u_n \geqslant 85$.
+          \item Quelle est la valeur de la variable $n$ à la fin de l'exécution de l'algorithme~?
+          \item Retrouver par le calcul le résultat de la question précédente en résolvant l'inéquation
+          $u_n \geqslant 85$.
+     \end{enumerate}
+     \item  La société Biocagette propose la livraison hebdomadaire d'un panier bio qui contient des fruits
+     et des légumes de saison issus de l'agriculture biologique. Les clients ont la possibilité de
+     souscrire un abonnement de $52$~\euro par mois qui permet de recevoir chaque semaine ce panier
+     bio.
+     \par
+     En juillet 2017, $65$ particuliers ont souscrit cet abonnement.
+     \smallskip
+     Les responsables de la société Biocagette font les hypothèses suivantes~:
+     \begin{itemize}[label=---]
+          \item d'un mois à l'autre, environ 20\,\% des abonnements sont résiliés~;
+          \item chaque mois, $18$ particuliers supplémentaires souscrivent à l'abonnement.
+     \end{itemize}
+     \begin{enumerate}[label=\alph*.]
+          \item Justifier que la suite $\left(u_n\right)$ permet de modéliser le nombre d'abonnés au panier bio le $n$-ième mois qui suit le mois de juillet 2017.
+          \item Selon ce modèle, la recette mensuelle de la société Biocagette va-t-elle dépasser 4~420~\euro{} durant l'année 2018~? Justifier la réponse.
+          \item Selon ce modèle, vers quelle valeur tend la recette mensuelle de la société Biocagette~?
+          \par
+          Argumenter la réponse.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Pour tout entier naturel $n$, $u_{n+1} = 0,8u_n + 18$, par conséquent~:
+          $u_1 = 0,8 u_0 + 18 = 0,8\times 65 + 18 = 70$ \\
+          $u_2 = 0,8 u_1 + 18 = 0,8\times 70 + 18 = 74$\\
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Pour tout entier naturel $n$~:
+               \par
+               $v_{n+1}=u_{n+1}-90 $\\
+               $\phantom{v_{n+1}}=0,8 u_n + 18 -90$\\
+               $\phantom{v_{n+1}}=0,8u_n-72$.
+               \par
+               Or $v_n = u_n - 90$~; donc $u_n=v_n+90$~; alors~:
+               \par
+               $v_{n+1}=0,8 \left ( v_n+90\right ) - 72$\\
+               $\phantom{v_{n+1}}=0,8 v_n + 72-72$\\
+               $\phantom{v_{n+1}}=0,8v_n$.
+               \par
+               De plus $v_0=u_0-90 = 65- 90 = -25$~; par conséquent, la suite $(v_n)$ est une suite géométrique de premier terme ${v_0=-25}$  et de raison ${q=0,8}$.
+               \item
+               On en déduit que~:
+               \par
+               $v_n=v_0q^n=-25 \times 0,8^n$.
+               \par
+               Et comme $u_n=v_n+90$, pour tout entier naturel $n$~:
+               $u_n=90-25\times 0,8^{n}$.
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item  On souhaite déterminer le plus petit entier naturel $n$ tel que $u_n \geqslant 85$.
+               \par
+               Pour cela, on doit rester dans la boucle \og Tant que \fg{} aussi longtemps que $u_n$ est strictement inférieur à 85.
+               \par
+               On doit donc compléter l'algorithme comme suit~:
+               \begin{center}
+                    \begin{extern}%width="330px" alt="algoritme bac correction"
+                         \begin{tabularx}{0.5\linewidth}{|c|X|}\hline
+                              ligne 1&$u \gets 65$\\
+                              ligne 2&$n \gets 0$\\
+                              ligne 3&Tant que  $\red{u<85}$\\
+                              ligne 4&\hspace{1cm}$n \gets n+1$\\
+                              ligne 5&\hspace{1cm}$u \gets 0,8 \times u + 18$\\
+                              ligne 6&Fin Tant que\\ \hline
+                         \end{tabularx}
+                    \end{extern}
+               \end{center}
+               \medskip
+               \item
+               \par
+               On peut programmer l'algorithme sur sa calculatrice ou plus simplement utiliser le menu \og Suite \fg{} de la calculatrice (ou même le menu \og Fonction \fg{} en entrant la fonction $Y_1= 90-25 \times 0,8\hat~X$ et un pas de 1) de façon à calculer les premiers termes de la suite.
+               \par
+               On trouve alors~:
+               \par
+               $u_ 7 ~=  84,8$\\
+               \par
+               et $u_8 ~= 85,8$\\
+               \par
+               \`A la fin de l'exécution de l'algorithme, la variable $n$ contiendra donc la valeur 8.
+               \item
+               $u_n \geqslant 85 \Leftrightarrow 90-25\times 0,8^{n} \geqslant 85$\\
+               $\phantom{u_n \geqslant 85 } \Leftrightarrow -25\times 0,8^{n} \geqslant -5$\\
+               $\phantom{u_n \geqslant 85 } \Leftrightarrow 25\times 0,8^{n} \leqslant 5$\\
+               $\phantom{u_n \geqslant 85 }\Leftrightarrow   0,8^{n} \leqslant \dfrac{5}{25}$\\
+               $\phantom{u_n \geqslant 85 }\Leftrightarrow   0,8^{n} \leqslant 0,2$\\
+               \par
+               Comme la fonction $\ln$ est strictement croissante sur l'intervalle $]0~;~+\infty[$, on peut appliquer, à chaque membre, la fonction $\ln$~:\\
+               \par
+               $u_n \geqslant 85 \Leftrightarrow   \ln \left ( 0,8^{n} \right )\leqslant \ln 0,2$\\
+               $\phantom{u_n \geqslant 85}\Leftrightarrow n \times \ln 0,8 \leqslant \ln 0,2$\\
+               \par
+               On divise chaque membre par $ \ln 0,8 $ qui est strictement négatif~; il faut donc changer le sens de l'inégalité~:
+               \par
+               $u_n \geqslant 85 \Leftrightarrow n \geqslant \dfrac{\ln 0,2}{\ln 0,8} $
+               \par
+               Or $\dfrac{\ln 0,2}{\ln 0,8} \approx 7,21$~; le plus petit entier $n$ vérifiant l'inégalité est donc bien  $n=8$.
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               \par
+               Notons $a_n$ le nombre d'abonnés au panier bio le $n$-ième mois qui suit le mois de juillet 2017.
+               \par
+               En juillet 2017, 65 particuliers avaient souscrit l'abonnement, donc $a_0=65$.
+               \par
+               Une diminution de 20\% correspond à un coefficient multiplicateur de ${1-\dfrac{20}{100}=0,8}$~; on ajoute ensuite les 18 nouveaux abonnés.
+               \par
+               On a donc~:
+               \[ a_{n+1}=0,8a_n+60. \]
+               Les suites $(u_n)$ et $(a_n)$ sont définies par la même relation de récurrence et le même premier terme~; elles sont donc identiques.
+               \par
+               La suite $\left(u_n\right)$ permet donc bien de modéliser le nombre d'abonnés au panier bio le $n$-ième mois qui suit le mois de juillet 2017.
+               \item
+               \par
+               Puisque le prix d'un abonnement est  $52$~\euro par mois, la recette mensuelle pour le mois $n$ est $52 u_n$ euros.
+               \par
+               On cherche donc à résoudre l'inéquation $52 u_n > 4~420$. Or~:
+               \par
+               $52 u_n > 4~420 \Leftrightarrow u_n > \dfrac{4~420}{52} \Leftrightarrow u_n > 85$.
+               \par
+               Et d'après la question \textbf{3} ceci produit pour $n=8$ soit 8 mois après le mois de juillet 2017 c'est à dire en mars 2018.
+               \par
+               La recette mensuelle dépassera donc 4~420~\euro{} durant l'année 2018.
+               \item
+               La suite $(v_n)$ est une géométrique de raison $q=0,8$. Comme $0<0,8<1$, la suite $(v_n)$ converge vers 0.
+               \par
+               Or, pour tout entier naturel $n$, $u_n=v_n+90$ donc  $\lim\limits_{n \rightarrow +\infty}u_n=90$.
+               \par
+               Au cours du temps le nombre d'abonnés se rapprochera de $90$.
+               \par
+               La recette mensuelle  de la société Biocagette tendra donc vers $52 \times 90= 4~680$~\euro.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

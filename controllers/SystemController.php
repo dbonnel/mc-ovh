@@ -90,7 +90,7 @@ namespace Controllers {
 
         public function unzip($file_name)
         {
-           
+
 // Raising this value may increase performance
             $buffer_size = 8192; // read 8kb at a time
             $out_file_name = str_replace('.gz', '', $file_name);
@@ -150,6 +150,18 @@ namespace Controllers {
                 $this->ftpUpload($filename);
                 echo $filename . '<br>';
             }
+        }
+
+        public function ftpTransfertDB()
+        {
+            try {
+                $this->ftpUpload('db-save/backup.sql.gz');
+                $this->view->set_var('content', 'Transfert effectué : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
+                $this->view->set_var('page_title', 'Transfert');
+            } catch (\Exception $e) {
+                $this->view->set_var('content', "db-save/backup.sql.gz upload failed ! " . $e->getMessage());
+            }
+            $this->view->show('main');
         }
 
         public function ftpDiff()

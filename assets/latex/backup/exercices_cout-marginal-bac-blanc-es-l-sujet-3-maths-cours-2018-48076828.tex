@@ -1,0 +1,254 @@
+\input{_header}
+\meta{url}{/exercices/cout-marginal-bac-blanc-es-l-sujet-3-maths-cours-2018/}
+\meta{pid}{10473}
+\meta{titre}{Coût marginal - Bac blanc ES/L Sujet 3 - Maths-cours 2018}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1 (5 points)\end{h2}
+\par
+Une entreprise fabrique une boisson conditionnée en bouteille d'un litre.
+\par
+Le coût total, exprimé en euros est donné par la fonction $C_t$ :
+\[ C_t(x)=4x^3-20x^2+80x+100. \]
+où $x$ représente le volume exprimé en centaines de litres, $x$ variant dans l'intervalle $[0~;~5]$.
+\par
+Le graphique ci-après affiche la représentation graphique $\mathscr{C}$ de la fonction $C_t$ dans un repère orthogonal.
+\par
+Le point $A$ est le point de la courbe $\mathscr{C}$ d'abscisse 5 et $B$ un point d'inflexion de cette courbe.
+\par
+$T_1$ et $T_2$ sont les tangentes à $\mathscr{C}$ respectivement aux points $A$ et $B$.
+\par
+\begin{center}
+     \begin{extern}%width="550" alt="Graphique coût marginal"
+          \includegraphics[width=0.9\textwidth]{images/BBESL-s3-1-1}% gbb 1 unite=3cm
+     \end{extern}
+\end{center}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie A}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item
+     Les coûts fixes sont les coûts que supporte l'entreprise même lorsque la production est nulle.
+     \par
+     \`A l'aide du graphique ou de la formule définissant $C_t$, déterminer les coûts fixes puis le coût pour une production de 500 litres.
+     \item
+     Le coût marginal est égal au coût de fabrication d'une unité supplémentaire.
+     \par
+     On rappelle que l'on peut assimiler le coût marginal à la dérivée du coût total.
+     \par
+     Par lecture graphique, donner une estimation du coefficient directeur à la courbe $\mathscr{C}$ au point $A$ d'abscisse 5.
+     \par
+     En déduire une estimation du coût marginal pour une production de 500 litres.
+     \item
+     Donner, par lecture graphique, une estimation de l'intervalle sur lequel la fonction $C_t$ est convexe et une estimation de l'intervalle sur lequel la fonction $C_t$ est concave.
+     \item
+     \`A l'aide du graphique, estimer la valeur minimum du coût marginal.
+     \par
+\end{enumerate}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item
+     Pour $x$ appartenant à l'intervalle $[0~;~5]$, exprimer le coût marginal $C_m(x)$ en fonction de $x$.
+     \item
+     Déterminer les coordonnées exactes du point $B$.
+     \par
+     Retrouver, par le calcul, la valeur minimum du coût marginal.
+     \par
+\end{enumerate}
+\begin{corrige}
+     %============================================================================================================================
+     %
+     \TitreC{Partie A}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item %1
+          Les coûts fixes sont égaux à $C_t(0)$ :
+          \par
+          $C_t(0)=4 \times 0^3 -20 \times 0^2 + 80 \times 0 + 100 = 100$
+          \par
+          Les coûts fixes sont de \textbf{100 euros}.
+          \par
+          Pour une production de 500 litres, soit 5 centaines de litres, le coût total est égal à :
+          \par
+          $C_t(5)=4 \times 5^3 -20 \times 5^2 + 80 \times 5 + 100 = 500$
+          \par
+          Le coût total pour une production de 500 litres est égal à \textbf{500 euros}.
+          \item %2
+          La tangente en $A$ à la courbe $\mathscr{C}$ est la droite $T_1$. Cette droite passe par le point $A(5~;~500)$ et passe par un point $M$ de coordonnées proches de $(4~;~320)$.
+          \par
+          Le coefficient directeur $a$ de cette tangente est donc approximativement :
+          \par
+          $a=\dfrac{y_M-y_A}{x_M-x_A}=\dfrac{500-320}{5-4}=180$
+          \par
+          Le coût marginal $C_m(5)$ pour une production de 500 litres est égal au nombre dérivé $C'_t(5)$. Or, ce nombre est le coefficient directeur de la tangente au point $A$.
+          \par
+          \cadre{rouge}{À retenir}{
+               Le \textbf{coefficient directeur de la tangente} à la courbe représentative de $f$ au point d'\textbf{abscisse} $\alpha$ est égal à $f'(\alpha)$.
+          }
+          \par
+          Le coût marginal pour une production de 500 litres est donc approximativement égal à \textbf{180 euros}.
+          \item %3
+          Notons $x_B$ l'abscisse du point $B$.
+          \par
+          Par lecture graphique, on voit que la fonction $C_t$ est concave sur l'intervalle $[0~;~x_B]$ et convexe sur l'intervalle $[x_B~;~5]$.
+          \par
+          On constate également que les coordonnées du point d'inflexion $B$ sont approximativement $(1,7~;~195)$.
+          \par
+          On peut donc estimer que la fonction $C_t$ est \textbf{concave sur l'intervalle} $\bm{[0~;~1,7]}$ et \textbf{convexe sur l'intervalle} $\bm{[1,7~;~5]}$.
+          \par
+          \cadre{rouge}{À retenir}{
+               Une fonction est \textbf{convexe} si et seulement si sa courbe représentative est située \textbf{au-dessus de ses tangentes} (courbe en \og $\cup$ \fg{}).
+               \par
+               Une fonction est \textbf{concave} si et seulement si sa courbe représentative est située \textbf{au-dessous de ses tangentes} (courbe en \og $\cap$ \fg{}).
+               \par
+               Un \textbf{point d'inflexion} est un point où la fonction \textbf{change de convexité}. En ce point, la tangente \og traverse \fg{} la courbe.
+          }
+          \item
+          La fonction $C_t$ est convexe si et seulement si sa fonction dérivée $C'_t$ (identique à la fonction $C_m$) est croissante.
+          \par
+          \cadre{rouge}{À retenir}{
+               Si $f$ est une fonction deux fois dérivable sur un intervalle $I$, les propositions suivantes sont équivalentes :
+               \par
+               \begin{itemize}
+                    \item
+                    la fonction $f$ est \textbf{connexe} sur $I$;
+                    \item
+                    la fonction dérivée $f'$ est \textbf{croissante} sur $I$;
+                    \item
+                    la fonction dérivée seconde $f''$ est \textbf{positive} sur $I$;
+               \end{itemize}
+
+               De même, les propositions suivantes sont équivalentes :
+               \par
+               \begin{itemize}
+                    \item
+                    la fonction $f$ est \textbf{concave} sur $I$;
+                    \item
+                    la fonction dérivée $f'$ est \textbf{décroissante} sur $I$;
+                    \item
+                    la fonction dérivée seconde $f''$ est \textbf{négative} sur $I$;
+               \end{itemize}
+          }
+          \par
+          D'après la question précédente on peut tracer le tableau ci-après :
+          \par
+          %:-+-+-+-+- Engendré par : http://math.et.info.free.fr/TikZ/TableauxVariations/
+          \begin{center}
+               \begin{extern}%width="400" alt="tableau de variations coût marginal"
+                    \begin{tikzpicture}[scale=0.875]
+                         % Styles
+                         \tikzstyle{cadre}=[thin]
+                         \tikzstyle{fleche}=[->,>=latex,thin]
+                         \tikzstyle{nondefini}=[lightgray]
+                         % Dimensions Modifiables
+                         \def\Lrg{1.5}
+                         \def\HtX{1}
+                         \def\HtY{0.5}
+                         % Dimensions Calculées
+                         \def\lignex{-0.5*\HtX}
+                         \def\lignef{-1.5*\HtX}
+                         \def\separateur{-0.5*\Lrg}
+                         % Largeur du tableau
+                         \def\gauche{-2*\Lrg}
+                         \def\droite{4.5*\Lrg}
+                         % Hauteur du tableau
+                         \def\haut{0.5*\HtX}
+                         \def\bas{-2.5*\HtX-2*\HtY}
+                         % Ligne de l'abscisse : x
+                         \node at (-1.3*\Lrg,0) {$x$};
+                         \node at (0*\Lrg,0) {$0$};
+                         \node at (2*\Lrg,0) {$x_B$};
+                         \node at (4*\Lrg,0) {$5$};
+                         % Ligne de la dérivée : f'(x)
+                         \node at (-1.3*\Lrg,-1*\HtX) {$C_t$};
+                         \node at (0*\Lrg,-1*\HtX) {$\ $};
+                         \node at (1*\Lrg,-1*\HtX) {$\text{concave}$};
+                         \node at (2*\Lrg,-1*\HtX) {$\ $};
+                         \node at (3*\Lrg,-1*\HtX) {$\text{convexe}$};
+                         \node at (4*\Lrg,-1*\HtX) {$\ $};
+                         % Ligne de la fonction : f(x)
+                         \node  at (-1.3*\Lrg,{-2*\HtX+(-1)*\HtY}) {$C'_t=C_m$};
+                         \node (f1) at (0*\Lrg,{-2*\HtX+(0)*\HtY}) {$\ $};
+                         \node (f2) at (2*\Lrg,{-2*\HtX+(-2)*\HtY}) {$\ $};
+                         \node (f3) at (4*\Lrg,{-2*\HtX+(0)*\HtY}) {$\ $};
+                         % Flèches
+                         \draw[fleche] (f1) -- (f2);
+                         \draw[fleche] (f2) -- (f3);
+                         % Encadrement
+                         \draw[cadre] (\separateur,\haut) -- (\separateur,\bas);
+                         \draw[cadre] (\gauche,\haut) rectangle  (\droite,\bas);
+                         \draw[cadre] (\gauche,\lignex) -- (\droite,\lignex);
+                         \draw[cadre] (\gauche,\lignef) -- (\droite,\lignef);
+                    \end{tikzpicture}
+               \end{extern}
+          \end{center}
+          Le coût marginal est minimal pour $x=x_B \approx 1,7$.
+          \par
+          Ce minimum vaut $C_m(x_B)=C'_t(x_B)$.
+          \par
+          Pour déterminer la valeur de $C'_t(x_B)$, on procède comme à la question \textbf{2.}
+          \par
+          $C'_t(x_B)$ est le coefficient directeur de la tangente $T_2$ à la courbe $\mathscr{C}$ au point $B$.
+          \par
+          Cette tangente passe approximativement par les points de coordonnées $(0~;~120)$ et $(1,7~;~195)$.
+          \par
+          On a donc :
+          \par
+          $C'_t(x_B) \approx \dfrac{195-120}{1,7-0} \approx 44$
+          \par
+          Le coût marginal minimal peut être estimé à \textbf{44 euros}.
+          \par
+          \textit{Remarque : il ne s'agit que d'une estimation. Vous pouvez tout à fait trouver un résultat légèrement différent. La valeur exacte, calculée dans la partie B, est comprise entre 46 et 47 euros.}
+          \par
+     \end{enumerate}
+     \par
+     %============================================================================================================================
+     %
+     \TitreC{Partie B}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item
+          Pour $x$ appartenant à l'intervalle $[0~;~5]$ :
+          \par
+          $C_m(x)=C'_t(x)=4 \times 3x^2-20 \times 2x + 80 = 12 x^2-40x+ 80$
+          \item
+          Le point $B$ est le point d'inflexion de la courbe $\mathscr{C}$.
+          Son abscisse correspond à la valeur de $x$ pour laquelle $C''_t(x)$ s'annule et change de signe.
+          Or :
+          \par
+          $C''_t(x)=C'_m(x)=12 \times 2x-40=24x-40$
+          \par
+          $C''_t$ est une fonction affine qui s'annule et change de signe pour ${x=\dfrac{40}{24}=\dfrac{5}{3}}$.
+          \par
+          Le point $B$ a donc pour abscisse $\dfrac{5}{3}$.
+          \par
+          L'ordonnée de $B$ est :
+          \par
+          $C_t\left(\dfrac{5}{3}\right)=4 \times \left(\dfrac{5}{3}\right)^3 - 20 \times \left(\dfrac{5}{3}\right)^2 + 80 \times \dfrac{5}{3} +100 = \dfrac{5300}{27}$
+          \par
+          Les coordonnées de $B$ sont donc $ \left(\dfrac{5}{3}~;~\dfrac{5300}{27}\right)$.
+          \vspace{3mm}
+          \par
+          D'après le tableau de la question \textbf{4.} de la partie \textbf{A.}, le coût marginal minimal correspond à $C_m\left(\dfrac{5}{3}\right)$ :
+          \par
+          $C_m\left(\dfrac{5}{3}\right)=12 \times \left(\dfrac{5}{3}\right)^2 - 40 \times \dfrac{5}{3} +80 = \dfrac{140}{3}$
+          \par
+          Le coût marginal minimum est donc $\dfrac{140}{3}\ $($\approx 46,7$ euros).
+          \par
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

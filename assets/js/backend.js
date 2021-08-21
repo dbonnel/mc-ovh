@@ -1012,6 +1012,8 @@ class Tex2Html {
 
     texte = texte.replace(/\\begin{note}/g, "</p><div class=\"note\"><p>")
     texte = texte.replace(/\\end{note}/g, "</p></div><p>")
+    texte = texte.replace(/\\begin{margeneg}/g, "</p><div class=\"margeneg\"><p>")
+    texte = texte.replace(/\\end{margeneg}/g, "</p></div><p>")
 
     texte = this._replace_cmd("\\mintxtbox{", ["</p>\n<span class=\"minbox\"><p>", "</p>\n</span><p>"], texte);
 

@@ -1,0 +1,162 @@
+\input{_header}
+\meta{url}{/exercices/nombres-complexes-et-suites-bac-s-pondichery-2009/}
+\meta{pid}{2350}
+\meta{titre}{Nombres complexes et suites - Bac S Pondichéry 2009}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2\end{h2}
+\textit{ 5 points - Candidats ayant suivi l'enseignement de spécialité}
+\par
+Le plan complexe est muni d'un repère orthonormal direct $\left(O; \vec{u}, \vec{v}\right)$. On prendra pour unité graphique 2 cm.
+\par
+Soit $A$ et $B$ les points d'affixes respectives $z_{A}=i$ et $z_{B}=1+2i$.
+\begin{enumerate}
+     \item
+     Justifier qu'il existe une unique similitude directe $S$ telle que :
+     \par
+     $S\left(O\right)=A$ et $S\left(A\right)=B$.
+     \item
+     Montrer que l'écriture complexe de $S$ est:
+     \par
+     $z^{\prime}=\left(1-i\right)z+i$.
+     \par
+     Préciser les éléments caractéristiques de $S$ (on notera $\Omega $ le centre de $S$).
+     \par
+     On considère la suite de points $\left(A_{n}\right)$ telle que:
+     \par
+     •~~ $A_{0}$ est l'origine du repère et,
+     \par
+     •~~ pour tout entier naturel $n$, $A_{n+l}= S\left(A_{n}\right)$.
+     \par
+     On note $z_{n}$, l'affixe de $A_{n}$ (On a donc $A_{0}=O$, $A_{1}=A$ et $A_{2}=B$).
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Démontrer que, pour tout entier naturel $n$, $z_{n}=1-\left(1-i\right)^{n}$.
+          \item
+          Déterminer, en fonction de $n$, les affixes des vecteurs $\overrightarrow{\Omega  A_{n}}$ et $\overrightarrow{A_{n}A_{n+1}}$.
+          \par
+          Comparer les normes de ces vecteurs et calculer une mesure de l'angle $\left(\overrightarrow{\Omega  A_{n}},\overrightarrow{A_{n}A_{n+1}}\right)$.
+          \item
+          En déduire une construction du point $A_{n+1}$ connaissant le point $A_{n}$.
+          \par
+          Construire les points $A_{3}$ et $A_{4}$.
+     \end{enumerate}
+     \item
+     Quels sont les points de la suite $\left(A_{n}\right)$ appartenant à la droite $\left(\Omega  B\right)$ ?
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          On sait que si $A\neq A^{\prime}$ et $B\neq B^{\prime}$, il existe une unique similitude directe $S$ transformant $A$ en $A^{\prime}$ et $B$ en $B^{\prime}$. Comme $O\neq A$ et $A\neq B$, il existe une unique similitude directe $S$ telle que :
+          \par
+          $S\left(O\right)=A$ et $S\left(A\right)=B$.
+          \item
+          L'écriture complexe de $S$ est de la forme :
+          \par
+          $z^{\prime}=az+b$
+          \par
+          Comme $S\left(O\right)=A$, $z_{A}=a\times 0+b$ donc $b=i$
+          \par
+          Comme $S\left(A\right)=B$, $z_{B}=az_{A}+i$ donc $1+2i=ai+i$ soit :
+          \par
+          $a=\frac{1+i}{i}=1-i$
+          \par
+          L'expression complexe de $S$ est donc :
+          \par
+          $z^{\prime}=\left(1-i\right)z+i$
+          \par
+          Le rapport de la similitude $S$ est :
+          \par
+          $R=|1-i|=\sqrt{2}$
+          \par
+          L'angle de la similitude $S$ est :
+          \par
+          $\theta =\text{arg}\left(1-i\right)=\text{arg}\left(\sqrt{2}\left[\frac{\sqrt{2}}{2}-\frac{\sqrt{2}}{2}i\right]\right)$
+          \par
+          $\theta =\text{arg}\left(\sqrt{2}\left[\cos\left(-\frac{\pi }{4}\right)+i\sin\left(-\frac{\pi }{4}\right)\right]\right)=-\frac{\pi }{4}\ \left[2\pi \right]$
+          \par
+          $\Omega \left(\omega \right)$ le centre de $S$ est le point invariant de $S$ donc :
+          \par
+          $\omega =\left(1-i\right)\omega +i$
+          \par
+          $i \omega =i$
+          \par
+          $\omega =1$
+          \par
+          $S$ est donc la similitude directe de centre $\Omega \left(1\right)$, de rapport $\sqrt{2}$ et d'angle $-\frac{\pi }{4}$
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Montrons par récurrence que pour tout entier naturel $n$, $z_{n}=1-\left(1-i\right)^{n}$.
+\par
+               \textbf{Initialisation}
+\\
+               Cette propriété est vraie pour $n=0$; en effet $z_{0}$ est l'affixe de $O$ dons $z_{0}=0$ et
+               \par
+               $1-\left(1-i\right)^{0}=1-1=0$
+\par
+               \textbf{Hérédité}
+\\
+               Supposons $z_{n}=1-\left(1-i\right)^{n}$ pour un certain entier $n$ fixé.
+               \par
+               $z_{n+1}=\left(1-i\right)z_{n}+i=\left(1-i\right)\left[1-\left(1-i\right)^{n}\right]+i$
+               \par
+               $z_{n+1}\equiv \left(1-i\right)-\left(1-i\right)\left(1-i\right)^{n}+i=1-\left(1-i\right)^{n+1}$
+               \par
+               ce qui prouve bien l'hérédité.
+               \par
+               Donc, pour tout entier naturel $n$, $z_{n}=1-\left(1-i\right)^{n}$.
+               \item
+               $z_{\overrightarrow{\Omega  A_{n}}}=z_{n}-\omega =1-\left(1-i\right)^{n}-1=-\left(1-i\right)^{n}$
+               \par
+               $z_{\overrightarrow{A_{n}A_{n+1}}}=1-\left(1-i\right)^{n+1}-\left[1-\left(1-i\right)^{n}\right]=\left(1-i\right)^{n}-\left(1-i\right)^{n+1}$
+               \par
+               $z_{\overrightarrow{A_{n}A_{n+1}}}=\left(1-i\right)^{n}\left[1-\left(1-i\right)\right]=i\left(1-i\right)^{n}$.
+               \par
+               $||\overrightarrow{\Omega  A_{n}}||=|-\left(1-i\right)^{n}|=|1-i|^{n}=\sqrt{2}^{n}$
+               \par
+               $||\overrightarrow{A_{n}A_{n+1}}||=|i\left(1-i\right)^{n}|=|1-i|^{n}=\sqrt{2}^{n}$
+               \par
+               donc $||\overrightarrow{\Omega  A_{n}}||=||\overrightarrow{A_{n}A_{n+1}|}$
+               \par
+               De plus
+               \par
+               $\left(\overrightarrow{\Omega  A_{n}}, \overrightarrow{A_{n}A_{n+1}}\right)=\text{arg}\left(\frac{i\left(1-i\right)^{n}}{-\left(1-i\right)^{n}}\right)=\text{arg}\left(-i\right)=-\frac{\pi }{2}\ \left[2\pi \right]$
+               \item
+               De la question précédente on déduit que :
+               \par
+               $\left(\overrightarrow{A_{n} \Omega }, \overrightarrow{A_{n}A_{n+1}}\right)=\frac{\pi }{2}\ \left[2\pi \right]$
+               \par
+               $A_{n+1}$ est l'image de $A_{n}$ par la rotation de centre $\Omega $ d'angle $\frac{\pi }{2}$ , c'est à dire que le triangle $A_{n} \Omega  A_{n+1}$ est rectangle isocèle en $A_{n}$ de sens direct.
+               <img src="/wp-content/uploads/Bac_S_Pondichery_spe_2009.png" alt="" class="aligncenter size-full  img-pc" />
+
+\begin{center}
+\imgsvg{Bac_S_Pondichery_spe_2009}{0.3}% alt="@" style="width:30rem"
+\end{center}
+          \end{enumerate}
+          \item
+          $A_{n}$ appartient à la droite $\left(\Omega  B\right)$ si et seulement si :
+          \par
+          $\left(\overrightarrow{\Omega  A_{n}}, \overrightarrow{\Omega  B}\right)=0 \ \left[\pi \right]$
+          \par
+          c'est à dire comme $B=A_{2}$ si et seulement si :
+          \par
+          $\text{arg}\left(\frac{\left(1-i\right)^{n}}{\left(1-i\right)^{2}}\right)=0\ \left[\pi \right]$
+          \par
+          $\text{arg}\left(\left(1-i\right)^{n-2}\right)=0\ \left[\pi \right]$
+          \par
+          $\left(n-2\right)\times -\frac{\pi }{4}=0\ \left[\pi \right]$
+          \par
+          $\left(n-2\right)\times \frac{\pi }{4}=0\ \left[\pi \right]$
+          \par
+          $\left(n-2\right)\times \frac{\pi }{4}=k\pi $ $\left(k\in \mathbb{Z}\right)$
+          \par
+          $n-2=4k$
+          \par
+          $n=4k+2$
+          \par
+          Donc $\left(A_{n}\right)$ appartient à la droite $\left(\Omega  B\right)$ si et seulement si le reste de la division euclidienne de $n$ par 4 est 2 ( $ n\in \left\{2; 6; 10; 14; . . .\right\} $ )
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

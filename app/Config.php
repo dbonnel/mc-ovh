@@ -72,7 +72,7 @@ namespace App {
                 static::$base_url = static::$dev_base_url;
                 static::$ftp_server = "ftp.cluster026.hosting.ovh.net";
                 static::$ftp_id = "mathscoukj";
-                static::$ftp_pw = "f2T6ybtmdps";
+                static::$ftp_pw = "f2T6ybtmdp";
                 static::$ftp_path = "mc-ovh";
             } else {
                 static::$db_host = "mathscoukjdidier.mysql.db";

@@ -1,0 +1,130 @@
+\input{_header}
+\meta{url}{/cours/probabilites/}
+\meta{pid}{155}
+\meta{titre}{Probabilités en Seconde}
+\meta{type}{cours}
+\begin{h2}1. Expérience aléatoire\end{h2}
+\cadre{bleu}{Définitions}{%
+     Une expérience \textbf{aléatoire} est une expérience dont le résultat dépend du hasard.
+     \par
+     L'ensemble de tous les résultats possibles d'une expérience aléatoire s'appelle l'\textbf{univers} de l'expérience.
+     \par
+     On le note en général \textbf{$\Omega $}.
+}
+\cadre{bleu}{Définition}{%
+     Soit une expérience aléatoire d'univers $\Omega $.
+     \par
+     Chacun des résultats possibles s'appelle une \textbf{éventualité} (ou un \textbf{événement élémentaire }ou une \textbf{issue}).
+     \par
+     On appelle \textbf{événement} tout sous ensemble de $\Omega $.
+     \par
+     Un événement est donc constitué de zéro, une ou plusieurs éventualités.
+}
+\bloc{orange}{Exemples}{%
+     Le lancer d'un dé à six faces est une expérience aléatoire d'univers :
+     \par
+     $\Omega =\left\{1;2;3;4;5;6\right\}$
+     \begin{itemize}
+          \item L'ensemble $E_1=\left\{2;4;6\right\}$ est un événement. En français, cet événement peut se traduire par la phrase : « \textit{le résultat du dé est un nombre pair} »
+          \item L'ensemble $E_2=\left\{1;2;3\right\}$ est un autre événement. Ce second événement peut se traduire par la phrase : « \textit{le résultat du dé est strictement inférieur à 4} »
+     \end{itemize}
+     Ces événements peuvent être représentés par un diagramme de Venn :
+     \begin{center}
+          \imgsvg{Venn}{0.33}%width="300" alt="Diagramme de Venn"
+     \end{center}
+}
+\cadre{bleu}{Définition}{%
+     \begin{itemize}
+          \item l'\textbf{événement impossible} est la partie vide, noté $\varnothing $, lorsque aucune issue ne le réalise.
+          \item l'\textbf{événement certain} est $\Omega $, lorsque toutes les issues le réalisent.
+          \item l'\textbf{événement contraire} de $A$ noté $\overline A$ est l'ensemble des éventualités de $\Omega $ qui n'appartiennent pas à $A$.
+          \item l'événement $A \cup  B$ (lire « $A$ union $B$ » ou « $A$ \textbf{ou} $B$ ») est constitué des éventualités qui appartiennent soit à $A$, soit à $B$, soit aux deux ensembles.
+          \item l'événement $A \cap  B$ (lire « $A$ inter $B$ » ou « $A$ \textbf{et }$B$ ») est constitué des éventualités qui appartiennent à la fois à $A$ et à $B$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     On reprend l'exemple précédent avec :
+     \par
+     $\Omega =\left\{1;2;3;4;5;6\right\}$
+     \par
+     $E_1=\left\{2;4;6\right\}$
+     \par
+     $E_2=\left\{1;2;3\right\}$
+     \begin{itemize}
+          \item  L'événement « obtenir un nombre supérieur à 7 » est l' événement impossible.
+          \item  L'événement « obtenir un nombre entier » est l' événement certain.
+          \item $\overline{E}_{1}=\left\{1; 3; 5\right\}$ : cet événement peut se traduire par \og le résultat est un nombre impair \fg{}~:
+          \begin{center}
+               \imgsvg{Venn-complementaire}{0.3}%width="300" alt="Diagramme de Venn - Complémentaire"
+          \end{center}
+          \item $E_{1} \cup  E_{2}=\left\{1; 2; 3; 4; 6\right\}$ : cet événement peut se traduire par \og le résultat est pair \textbf{ou} strictement inférieur à 4 \fg{}~:
+          \begin{center}
+               \imgsvg{Venn-union}{0.3}%width="300" alt="Diagramme de Venn - Union"
+          \end{center}
+          \item $E_{1} \cap  E_{2}=\left\{2\right\}$ : cet événement peut se traduire par \og le résultat est pair \textbf{et} strictement inférieur à 4 \fg{}~:
+          \begin{center}
+               \imgsvg{Venn-inter}{0.3}%width="300" alt="Diagramme de Venn - Intersection "
+          \end{center}
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{%
+     On dit que A et B sont \textbf{incompatibles} si et seulement si $A \cap  B=\varnothing$
+     \par
+     Deux événements sont incompatibles lorsqu'aucun événement ne les réalise simultanément.
+}
+\bloc{vert}{Remarque}{%
+     Deux événements contraires sont incompatibles mais deux événements peuvent être incompatibles sans être contraires.
+}
+\bloc{orange}{Exemple}{%
+     « Obtenir un chiffre inférieur à 2 » et « obtenir un chiffre supérieur à 4 » sont deux événements incompatibles.
+}
+\begin{h2}2. Probabilités\end{h2}
+\cadre{bleu}{Définition}{%
+     La probabilité d'un événement élémentaire est un nombre réel tel que:
+     \begin{itemize}
+          \item Ce nombre est compris entre 0 et 1
+          \item La somme des probabilités de tous les événements élémentaires de l'univers vaut 1
+     \end{itemize}
+}
+\cadre{vert}{Propriétés}{%
+     \begin{itemize}
+          \item $p\left(\varnothing\right)=0$
+          \item $p\left(\Omega \right)=1$
+          \item $p\left(\overline A\right)=1-p\left(A\right)$
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     On lance un dé à six faces. On note $S$ l'événement : « obtenir un $6$. On suppose que le dé est bien équilibré et que la probabilité de $S$ est de $\frac{1}{6}$. La probabilité d'obtenir un résultat différent de $6$ est alors :
+     \par
+     $p\left(\overline S\right)=1-p\left(S\right)=1-\frac{1}{6}=\frac{5}{6}$
+}
+\cadre{rouge}{Théorème}{%
+     Quels que soient les événements $A$ et $B$ de $\Omega $ :
+     \par
+     $p\left(A \cup  B\right)=p\left(A\right)+p\left(B\right)-p\left(A \cap  B\right)$
+     \par
+     En particulier, si $A$ et $B$ sont \textbf{incompatibles} :
+     \par
+     $p\left(A \cup  B\right)=p\left(A\right)+p\left(B\right)$
+}
+\cadre{bleu}{Définition}{%
+     Deux événements qui ont la même probabilité sont dits \textbf{ équiprobables}.
+     \par
+     Lorsque tous les événements élémentaires sont équiprobables, on dit qu'il y a \textbf{équiprobabilité}.
+}
+\bloc{orange}{Exemple}{%
+     Un lancer d'un dé non truqué est une situation d'équiprobabilité.
+}
+\cadre{vert}{Propriétés}{%
+     On suppose que l'univers est composé de $n$ événements élémentaires
+     \begin{itemize}
+          \item Dans le cas d'équiprobabilité, chaque événement élémentaire a pour probabilité : $\frac{1}{n}$
+          \item Si un événement $A$ de $ \Omega $ est composé de $m$ événements élémentaires, alors $P\left(A\right)=\frac{m}{n}$.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{%
+     On reprend l'exemple du lancer d'un dé avec $E_1$ : « le résultat du dé est un nombre pair »
+     \par
+     $P\left(E_1\right)=\frac{3}{6}=\frac{1}{2}$
+}
+\input{_footer}

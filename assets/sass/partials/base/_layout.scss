@@ -180,12 +180,12 @@
     width: 100%;
   }
 
-  @media (min-width: $breakpoints-lg) {
+@media (min-width: $breakpoints-sm) {
     flex-direction: row;
     align-items: center;
 
     &>* {
       width: 100%;
     }
-  }
+ }
 }

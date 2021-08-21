@@ -1,0 +1,224 @@
+\input{_header}
+\meta{url}{/exercices/graphes-probabilistes-bac-blanc-es-l-sujet-5-maths-cours-2018-spe/}
+\meta{pid}{10559}
+\meta{titre}{Graphes probabilistes - Bac blanc ES/L Sujet 5 - Maths-cours 2018 (spé)}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\par
+\textbf{Candidats ayant suivi l'enseignement de spécialité}
+\par
+Depuis le début de l'année 2015, une agence bancaire propose à ses clients, titulaires d'une carte de crédit, une assurance \og Tranquillité \fg{} qui leur permet d'être mieux indemnisé en cas de perte ou de vol de leur carte.
+\par
+De 2015 à 2017, on a constaté que :
+\par
+\begin{itemize}
+     \item
+     20\% des titulaires d'une carte de crédit qui ne bénéficient pas de l'assurance \og Tranquillité \fg{} souscrivent à cette assurance l'année suivante ;
+     \item
+     5\% des titulaires d'une carte de crédit qui ont souscrit à l'assurance \og Tranquillité \fg{} résilient cette assurance l'année suivante  ;
+\end{itemize}
+\par
+On suppose que cette évolution se poursuivra de manière identique durant les années à venir.
+\par
+On sélectionne au hasard un client titulaire d'une carte de crédit et, pour tout entier naturel $n$, on note :
+\par
+\begin{itemize}
+     \item
+     $a_{n}$, la probabilité que le client ait souscrit à l'assurance \og Tranquillité \fg{} au début de l'année $2015 + n$ ;
+     \item
+     $b_{n}$, la probabilité que le client choisi n'ait pas souscrit à l'assurance \og Tranquillité \fg{} au début de l'année $2015 + n$ ;
+     \item
+     $P_{n}$, la matrice ligne $\left(a_{n} \quad b_{n}\right)$ donnant l'état probabiliste au début de l'année $2015 + n$.
+\end{itemize}
+\par
+Au début de l'année 2015, aucun client n'a encore souscrit à l'assurance \og Tranquillité \fg{}. \\
+On a donc $P_0=\left(0 \quad 1\right)$.
+\par
+%============================================================================================================================
+%
+\TitreC{Partie A}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item %1
+     Représenter la situation par un graphe probabiliste de sommets $T$ et $\overline{T}$ où $T$ correspond à l'état " le client a souscrit à l'assurance \og Tranquillité \fg{} " et $\overline{T}$ correspond à l'état contraire.
+     \item %2
+     Déterminer la matrice de transition $M$ associée à ce graphe, les sommets $T$ et $\overline{T}$ étant classés dans cet ordre.
+     \item %3
+     Déterminer l'état stable de ce graphe probabiliste. \\
+     Que peut-on en conclure concernant le pourcentage de clients qui souscriront à l'assurance \og Tranquillité \fg{} dans les années futures ?
+     \par
+\end{enumerate}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\par
+Le directeur de l'agence cherche à déterminer au début de quelle année plus de 70\% des titulaires d'une carte de crédit auront souscrit à l'assurance \og Tranquillité \fg{}.
+\par
+\begin{enumerate}
+     \item
+     Recopier et compléter l'algorithme ci-après afin qu'il réponde à l'interrogation du directeur.
+     \par
+     \begin{center}
+          \begin{extern}%style=="400" alt="Algorithme"
+               \begin{tabular}{|l l|}\hline
+                    \textbf{Variables :}	& 	$n$ un nombre entier naturel \\
+                    &$a$ et $b$ sont des nombres réels\\
+                    \textbf{Initialisation :}	& Affecter à $n$ la valeur ...\\
+                    & Affecter à $a$ la valeur ...\\
+                    & Affecter à $b$ la valeur ...\\
+                    \textbf{Traitement :} & Tant que ...\\
+                    &\qquad Affecter à $a$ la valeur \\
+                    &\qquad \phantom{Affecter }$0,95 \times a + 0,2 \times b$\\
+                    &\qquad Affecter à $b$ la valeur $1-a$ \\
+                    &\qquad Affecter à $n$ la valeur ...\\
+                    &Fin Tant que\\
+                    \textbf{Sortie :}		&Afficher $2015+n$ \\ \hline
+               \end{tabular}
+          \end{extern}
+     \end{center}
+     \item
+     On admet que pour tout entier naturel $n$ :
+     \[ a_{n}=0,8(1-0,75^n). \]
+     Déterminer la valeur affichée par l'algorithme de la question précédente.
+     \par
+\end{enumerate}
+\begin{corrige}
+     %============================================================================================================================
+     %
+     \TitreC{Partie A}
+     %
+     %============================================================================================================================
+     \par
+     \begin{enumerate}
+          \item On traduit les données de l'énoncé par un graphe probabiliste de sommets $T$ et $\overline{T}$:
+          \begin{center}
+               %\hspace*{1cm}
+               \begin{extern}%width="400" alt="Graphe probabiliste"
+                    \begin{pspicture}(-2,-0.5)(4,1)
+                         \circlenode{T}{$T$} \hskip 4cm \circlenode{B}{$\overline{T}$}% définition des sommets
+                         \psset{arcangle=15,arrowsize=2pt 3}%  différents paramètres
+                         \ncarc{->}{T}{B} \Aput{0,05}%              arc pondéré partant de T
+                         \ncarc{->}{B}{T} \Aput{0,2}%              arc pondéré arrivant à B
+                         \nccircle[angleA=90]{->}{T}{4mm}   \Bput{0,95}%    boucle autour de T
+                         \nccircle[angleA=-90]{->}{B}{.4cm} \Bput{0,8}%    boucle autour de B
+                    \end{pspicture}
+               \end{extern}
+          \end{center}
+          \item  La matrice de transition de ce graphe en considérant les sommets dans l'ordre $T$, $\overline{T}$ est:
+          \[ M=
+          \begin{pmatrix}
+               0,95 & 0,05\\
+               0,2 & 0,8
+          \end{pmatrix}. \]
+          \item
+          Les états stables sont les matrices-ligne $P = (a\quad b)$ telles que ${a + b = 1}$ et ${PM = P}$.
+          \par
+          $PM=P \Leftrightarrow \begin{pmatrix} a&b\end{pmatrix}
+          \times \begin{pmatrix} 0,95 & 0,05 \\ 0,2 & 0,8 \end{pmatrix}
+          $\nosp$=\begin{pmatrix} a&b\end{pmatrix}$
+          \par
+          $\phantom{PM=P} \Leftrightarrow \begin{pmatrix} 0,95a+0,2b & 0,05a+0,8b\end{pmatrix}
+          $\nosp$=\begin{pmatrix} a&b\end{pmatrix}$
+          \par
+          $\phantom{PM=P} \Leftrightarrow
+          \left\lbrace
+          \begin{array}{r c l}
+               0,95a+0,2b &=& a\\
+               0,05a+0,8b &=& b
+          \end{array}
+     \right.$
+     \par
+     $\phantom{PM=P}
+     \Leftrightarrow
+     \left\lbrace
+     \begin{array}{r c l}
+          -0,05a+0,2b &=& 0\\
+          0,05a-0,2b &=& 0
+     \end{array}
+\right.$
+\par
+$\phantom{PM=P}
+\Leftrightarrow
+0,05a-0,2b = 0$.
+\par
+Or $a+b=1$ ; donc  $b=1-a$ et:
+\par
+$0,05a-0,2(1-a) = 0$
+\par
+$0,25a-0,2 = 0$
+\par
+$a = \dfrac{0,2}{0.25}=0,8$.
+\par
+Et $b=1-a=1-0,8=0,2$.
+\par
+L'état stable du graphe est donc
+$P=\begin{pmatrix} 0,8 & 0,2 \end{pmatrix}$.
+\par
+Au fil du temps, le pourcentage de clients qui choisiront l'assurance \og Tranquillité \fg{} se rapprochera de 80\% ($=0,8$).
+\end{enumerate}
+\par
+%============================================================================================================================
+%
+\TitreC{Partie B}
+%
+%============================================================================================================================
+\par
+\begin{enumerate}
+     \item
+     On complète l'algorithme comme suit :
+     \begin{center}
+          \begin{extern}%width="400" alt="Algorithme"
+               \begin{tabular}{|l l|}\hline
+                    \textbf{Variables :}	& 	$n$ un nombre entier naturel \\
+                    &$a$ et $b$ sont des nombres réels\\
+                    \textbf{Initialisation :}	& Affecter à $n$ la valeur $\color{red}{0}$\\
+                    & Affecter à $a$ la valeur $\color{red}{0}$\\
+                    & Affecter à $b$ la valeur $\color{red}{1}$\\
+                    \textbf{Traitement :} & Tant que $\color{red}{a \leqslant 0,7}$ \\
+                    &\qquad Affecter à $a$ la valeur \\
+                    &\qquad \phantom{Affecter }$0,95 \times a + 0,2 \times b$\\
+                    &\qquad Affecter à $b$ la valeur $1-a$ \\
+                    &\qquad Affecter à $n$ la valeur $\color{red}{n+1}$ \\
+                    &Fin Tant que\\
+                    \textbf{Sortie :}		&Afficher $2015+n$ \\ \hline
+               \end{tabular}
+          \end{extern}
+     \end{center}
+     \item
+     L'algorithme affiche l'année à partir de laquelle plus de 70\% des titulaires d'une carte de crédit auront souscrit à l'assurance \og Tranquillité \fg{}.
+     \par
+     Pour trouver cette année, il nous faut donc résoudre l'inéquation $a_n > 0,7$.
+     \par
+     D'après l'énoncé $a_{n}=0,8(1-0,75^n)$ donc :
+     \par
+     $a_n > 0,7  \Leftrightarrow 0,8(1-0,75^n) > 0,7$\\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \  1-0,75^n > \dfrac{0,7}{0,8}$ \\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \  1-0,75^n > \dfrac{7}{8}$ \\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \  -0,75^n  > \dfrac{7}{8}-1 $\\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \  -0,75^n  > -\dfrac{1}{8}$\\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \  0,75^n < \dfrac{1}{8}$
+     \par
+     La fonction $\ln$ étant strictement croissante sur $]0~;~+\infty[$ :
+     \par
+     $a_n > 0,7  \Leftrightarrow \  \ln \left(0,75^n \right) < \ln \left(\dfrac{1}{8}\right) $ \\
+     $\phantom{ a_n > 0,7 } \Leftrightarrow \ n\ln (0,75) < -\ln (8)$
+     \par
+     Or $0,9 < 1$ donc $\ln (0,75)$ est strictement négatif ; par conséquent :
+     \par
+     $a_n > 0,7 \Leftrightarrow \ n > \dfrac{-\ln (8)}{\ln (0,75)}$
+     \par
+     \`A la calculatrice : $\dfrac{-\ln (8)}{\ln (0,75)} - 1 \approx 7,2$ (arrondi au dixième).
+     \par
+     La plus petite valeur de l'entier $n$ telle que $a_n > 0,7$, est donc $8$.
+     \par
+     Par conséquent, l'algorithme affichera l'année 2015+8=\textbf{2023}.
+     \par
+\end{enumerate}
+\end{corrige}
+\input{_footer}

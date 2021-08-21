@@ -1,3 +1,6 @@
+<?php
+header("HTTP/1.0 404 Not Found");
+?>
 <!DOCTYPE html>
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 

@@ -1,0 +1,232 @@
+\input{_header}
+\meta{url}{/cours/produit-scalaire-espace/}
+\meta{pid}{555}
+\meta{titre}{Orthogonalité et produit scalaire dans l'espace}
+\meta{type}{cours}
+\begin{h2}1. Produit scalaire\end{h2}
+Deux vecteurs de l'espace sont toujours coplanaires (voir chapitre précédent). On peut alors définir le produit scalaire dans l'espace à l'aide de la définition donnée en Première pour deux vecteurs d'un plan.
+\par
+La plupart des propriétés vues en Première seront donc encore valables pour le produit scalaire dans l'espace, en particulier pour tous vecteurs $\vec{u}$ et $\vec{v}$ :
+\begin{itemize}
+     \item $\vec{u}.\vec{v}=||\vec{u}||\times ||\vec{v}||\times  \cos\left(\vec{u}, \vec{v}\right)$
+     \item $\vec{u}.\vec{v}=\frac{1}{2} \left(||\vec{u}+\vec{v}||^{2}-||\vec{u}||^{2}-||\vec{v}||^{2}\right)$
+     \item $\vec{u}^{2} = ||\vec{u}||^{2}$
+\end{itemize}
+La notion d'\textbf{orthogonalité de vecteurs} vue en Première est encore valable dans l'espace. Pour tous vecteurs $\vec{u}$ et $\vec{v}$ : $\vec{u}$ et $\vec{v}$ sont orthogonaux  $ \Leftrightarrow   \vec{u}.\vec{v}=0$.
+\par
+Les principales distinctions concernent les formules faisant intervenir les coordonnées puisque, dans l'espace, chaque vecteur possède trois coordonnées.
+\cadre{vert}{Propriété}{% id="p10"
+     L'espace est rapporté à un repère orthonormé $\left(O; \vec{i}, \vec{j}, \vec{k}\right)$
+     \par
+     Soient $\vec{u}$ et $\vec{v}$ deux vecteurs de coordonnées respectives $\left(x ; y ; z\right)$ et $\left(x^{\prime} ; y^{\prime} ; z^{\prime}\right)$ dans ce repère. Alors:
+     \begin{center}$\vec{u}.\vec{v} =xx^{\prime}+yy^{\prime}+zz^{\prime}$\end{center}
+}
+\bloc{cyan}{Conséquences}{% id="r10"
+     \begin{itemize}
+          \item $||\vec{u}|| = \sqrt{x^{2}+y^{2}+z^{2}}$
+          \item $AB=||\overrightarrow{AB}|| = \sqrt{\left(x_{B}-x_{A}\right)^{2}+\left(y_{B}-y_{A}\right)^{2}+\left(z_{B}-z_{A}\right)^{2}}$
+     \end{itemize}
+}
+\begin{h2}2. Orthogonalité dans l'espace\end{h2}
+\cadre{bleu}{Définition}{% id="d50"
+     Deux droites $d_{1}$ et $d_{2}$ sont \textbf{orthogonales} si et seulement si il existe une droite qui est à la fois parallèle à $d_{1}$ et perpendiculaire à $d_{2}$
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{afeeee}{0.7 0.9 0.9}
+          \newrgbcolor{qqwuqq}{0. 0.4 0.}
+          \newrgbcolor{wwzzff}{0.4 0.6 1.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-5.6,-2.8)(5.6,3.5)
+               \pspolygon[linewidth=0.8pt,linecolor=afeeee,fillcolor=afeeee,fillstyle=solid,opacity=0.1](-3.,0.)(-5.,-2.)(3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-3.,0.)(-5.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-5.,-2.)(3.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](5.,0.)(-3.,0.)
+               \rput[tl](-0.6097241218054483,2.8){$\qqwuqq{d_1}$}
+               \rput[tl](2.672271188641368,-1.6){$\wwzzff{\mathscr{P}}$}
+               \psline[linewidth=0.8pt,linecolor=qqwwtt](-4.69749899688947,0.6225150605167632)(0.39015188716309995,2.589170024100124)
+               \psline[linewidth=0.8pt,linecolor=qqwuqq](-4.017190664344944,-2.)(0.8786019214951395,0.)
+               \psline[linewidth=0.8pt,linecolor=red](-2.340323340435117,0.)(1.0884968352036755,-2)
+               \psline[linewidth=0.4pt](-1.1428090352869673,-0.6557784132517245)(-0.9566973185809743,-0.5797491642822004)
+               \psline[linewidth=0.4pt](-0.9566973185809743,-0.5797491642822004)(-0.7786761090029106,-0.6772364893524531)
+               \rput[tl](0.812473846054839,-0.1){$\qqwuqq{d'_1}$}
+               \rput[tl](1.2,-1.6){$\red{d_2}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}\textit{$d_{1}$ et $d_{2}$ sont orthogonales}\end{center}
+\bloc{cyan}{Remarque}{% id="r50"
+     Attention à ne pas confondre \textit{orthogonales} et \textit{perpendiculaires}. Le terme \textit{perpendiculaires} s'emploie uniquement pour des droites \textbf{sécantes} (donc \textbf{coplanaires}).
+}
+\cadre{vert}{Propriétés}{% id="t60"
+     Soient deux droites $d_{1}$ et $d_{2}$, $\overrightarrow{u_{1}}$ un vecteur directeur de $d_{1}$ et $\overrightarrow{u_{2}}$ un vecteur directeur de $d_{2}$.
+     \par
+     $d_{1}$ et $d_{2}$ sont orthogonales si et seulement si les vecteurs $\overrightarrow{u_{1}}$ et $\overrightarrow{u_{2}}$ sont orthogonaux, c'est à dire si et seulement si $\overrightarrow{u_{1}}.\overrightarrow{u_{2}}=0$
+}
+\cadre{bleu}{Définition (Droite perpendiculaire à un plan)}{% id="d65"
+     Une droite $d$ est \textbf{perpendiculaire} (ou \textbf{orthogonale}) à un plan $\mathscr P$ si et seulement si elle est orthogonale à toutes les droites incluses dans ce plan.
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{afeeee}{0.7 0.9 0.9}
+          \newrgbcolor{wwzzff}{0.4 0.6 1.}
+          \newrgbcolor{qqwuqq}{0. 0.4 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-5.5,-4.6)(6.4,2.6)
+               \pspolygon[linewidth=0.8pt,linecolor=afeeee,fillcolor=afeeee,fillstyle=solid,opacity=0.1](-3.,0.)(-5.,-2.)(3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-3.,0.)(-5.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-5.,-2.)(3.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](5.,0.)(-3.,0.)
+               \rput[tl](0.20176035252591304,2.59630929745675){$\red{d}$}
+               \rput[tl](2.6,-1.5){$\wwzzff{\mathscr{P}}$}
+               \psline[linewidth=0.8pt,linecolor=red](0.,3.)(0.,-1.)
+               \psline[linewidth=0.8pt,linecolor=red](0.,-2.)(0.,-7.)
+               \begin{scriptsize}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](0.,-1.)
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}\textbf{\textit{Droite perpendiculaire à un plan}}\end{center}
+\bloc{cyan}{Remarque}{% id="r65"
+     Une droite orthogonale à un plan coupe nécessairement ce plan en un point. Il n'y a donc plus lieu ici de distinguer orthogonalité et perpendicularité.
+}
+\cadre{vert}{Propriété}{% id="p70"
+     La droite $d$ est perpendiculaire au plan $\mathscr P$ si et seulement si elle est orthogonale à \textbf{deux droites sécantes} incluses dans ce plan.
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{afeeee}{0.7 0.9 0.9}
+          \newrgbcolor{wwzzff}{0.4 0.6 1.}
+          \newrgbcolor{qqwuqq}{0. 0.4 0.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-5.5,-4.6)(6.4,2.6)
+               \pspolygon[linewidth=0.8pt,linecolor=afeeee,fillcolor=afeeee,fillstyle=solid,opacity=0.1](-3.,0.)(-5.,-2.)(3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-3.,0.)(-5.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-5.,-2.)(3.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](5.,0.)(-3.,0.)
+               \rput[tl](0.20176035252591304,2.59630929745675){$\red{d}$}
+               \rput[tl](2.6,-1.5){$\wwzzff{\mathscr{P}}$}
+               \psline[linewidth=0.8pt,linecolor=red](0.,3.)(0.,-1.)
+               \psline[linewidth=0.8pt,linecolor=red](0.,-2.)(0.,-7.)
+               \psline[linewidth=0.8pt,linecolor=qqwuqq](-3.9857227292164437,-2.)(-0.5037395145067665,0.)
+               \psline[linewidth=0.8pt,linecolor=qqwuqq](-3.332609727222885,-0.3326097272228852)(0.7024376775168468,-2.)
+               \begin{scriptsize}
+                    \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](0.,-1.)
+               \end{scriptsize}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\cadre{bleu}{Définition (Plans perpendiculaires)}{% id="d70"
+     Deux plans $\mathscr P_{1}$ et  $\mathscr P_{1}$ sont \textbf{perpendiculaires} (ou \textbf{orthogonaux}) si et seulement si $\mathscr P_{1}$ contient une droite $d$ perpendiculaire à $\mathscr P_{2}$.
+}
+\begin{center}
+     \begin{extern}%width="350" alt=""
+          \newrgbcolor{afeeee}{0.7 0.9 0.9}
+          \newrgbcolor{zzffzz}{0.6 1. 0.6}
+          \newrgbcolor{ccccff}{0.8 0.8 1.}
+          \newrgbcolor{ffzzff}{1. 0.6 1.}
+          \newrgbcolor{qqccqq}{0. 0.4 0.}
+          \newrgbcolor{qqzzff}{0. 0.6 1.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-2.3,-1.3)(6.9,7.4)
+               \pspolygon[linewidth=0.8pt,linecolor=afeeee,fillcolor=afeeee,fillstyle=solid,opacity=0.1](0.061284443758347074,4.)(-1.938715556241653,2.)(4.061284443758347,2.)(6.061284443758347,4.)
+               \pspolygon[linewidth=0.4pt,linecolor=qqccqq,fillcolor=qqccqq,fillstyle=solid,opacity=0.03](1.0080587194837574,-0.8588531512120481)(1.,5.)(3.,7.)(3.,1.)
+               \psline[linewidth=0.8pt,linecolor=ccccff](1.0041264318847574,2.)(3.,4.)
+               \psline[linewidth=0.8pt,linecolor=red](1.9956031708383426,2.0000048330325084)(1.9934714932952935,0.060720963628051905)
+               \psline[linewidth=0.8pt,linecolor=red](1.9966964627665804,2.994622151160741)(2.,6.)
+               \rput[tl](3.1583617599248424,7.0096617252930775){$\qqccqq{\mathscr{P}_1}$}
+               \rput[tl](5.5,4.4){$\qqzzff{\mathscr{P}_2}$}
+               \rput[tl](2.1,5.9){$\red{d}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r70"
+     \textbf{Attention, } cela ne signifie \textbf{pas} que toutes les droites de $\mathscr P_{1}$ sont orthogonales à toutes les droites de  $\mathscr P_{2}$
+}
+\cadre{bleu}{Définition (Vecteur normal à un plan)}{% id="d80"
+     On dit qu'un vecteur $\vec{n}$ non nul est un vecteur \textbf{normal} au plan $\mathscr P$ si et seulement si la droite dirigée par $\vec{n}$ est perpendiculaire au plan $\mathscr P$.
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{afeeee}{0.7 0.9 0.9}
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{wwzzff}{0.4 0.6 1.}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(-5.3,-3.8)(5.5,2.5)
+               \pspolygon[linewidth=0.8pt,linecolor=afeeee,fillcolor=afeeee,fillstyle=solid,opacity=0.1](-3.,0.)(-5.,-2.)(3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-3.,0.)(-5.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](-5.,-2.)(3.,-2.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](3.,-2.)(5.,0.)
+               \psline[linewidth=0.8pt,linecolor=afeeee](5.,0.)(-3.,0.)
+               \rput[tl](0.2,2.2){$\ttzzqq{d}$}
+               \rput[tl](2.66,-1.5){$\wwzzff{\mathscr{P}}$}
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](0.,3.)(0.,-1.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](0.,-2.)(0.,-7.)
+               \psline[linewidth=0.8pt,linecolor=red]{->}(0.,-1.)(0.,0.9122128406690555)
+               \rput[tl](0.2,0.5){$\red{\vec{n}}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\cadre{rouge}{Théorème}{% id="t90"
+     Soit $\mathscr P$ un plan de vecteur normal $\vec{n}$ et soit $A$ un point de $\mathscr P$.
+     \begin{center}$M \in  \mathscr P   \Leftrightarrow  \overrightarrow{AM}.\vec{n} = 0$.\end{center}
+}
+\cadre{rouge}{Théorème}{% id="t100"
+     L'espace est rapporté à un repère orthonormé $\left(O; \vec{i}, \vec{j}, \vec{k}\right)$
+     \par
+     Le plan $\mathscr P$ de vecteur normal $\vec{n} \left(a ; b; c\right)$ admet une équation cartésienne de la forme :
+     \begin{center}$ax+by+cz+d=0$\end{center}
+     où $a$, $b$, $c$ sont les coordonnées de $\vec{n}$ et $d$ un nombre réel.
+     \par
+     \textbf{Réciproquement}, l'ensemble des points $M\left(x ; y ; z\right)$ tels que $ax+by+cz+d=0$ ($a, b, c, d$ étant des réels avec $a\neq 0$ ou $b\neq 0$ ou $c\neq 0$)  est un plan dont un vecteur normal est  $\vec{n}\left(a ; b ; c\right)$.
+}
+\bloc{cyan}{Démonstration}{% id="m100"
+     Soit $A\left(x_{A} ; y_{A} ; z_{A}\right)$ un point de $\mathscr P$ :
+     \par
+     $M \in  \mathscr P   \Leftrightarrow   \overrightarrow{AM}.\vec{n} = 0   \Leftrightarrow   a\left(x-x_{A}\right)+b\left(y-y_{A}\right)+c\left(z-z_{A}\right)= 0$
+ $M \in  \mathscr P $ 
+ $  M \in  \mathscr P \Leftrightarrow   \overrightarrow{AM}.\vec{n} = 0 \Leftrightarrow   ax+by+cz-ax_{A}-by_{A}-cz_{A}= 0$
+     \par
+     et il suffit de poser $d=-ax_{A}-by_{A}-cz_{A}$.
+     \par
+     \textbf{Réciproquement}, supposons par exemple $a\neq 0$.
+     \par
+     Soit $A$ le point de coordonnées $\left(-\frac{d}{a} ; 0 ;0\right)$ Les coordonnées de $A$ vérifient :
+     \par
+     $ax_{A}+by_{A}+cz_{A}+d= 0$.
+     \par
+     On a alors $d = -ax_{A}-by_{A}-cz_{A}$ donc :
+     \par
+     $ax+by+cz+d=0  \Leftrightarrow   a\left(x-x_{A}\right)+b\left(y-y_{A}\right)+c\left(z-z_{A}\right)= 0  \Leftrightarrow   \overrightarrow{AM}.\vec{n} = 0$
+     \par
+     donc $M\left(x ; y ; z\right)$ appartient au plan passant par $A$ et dont un vecteur normal est $\vec{n}\left(a ; b ; c\right)$
+}
+\bloc{orange}{Exemple}{% id="e100"
+     On cherche une équation cartésienne du plan passant par $A\left(1 ; 3 ; -2\right)$ et de vecteur normal $\vec{n}\left(1 ; 1 ; 1\right)$.
+     \par
+     Ce plan admet une équation cartésienne de la forme :
+     \par
+     $\left(E\right)      x+y+z+d=0$
+     \par
+     Le point $A\left(1 ; 3 ; -2\right)$ appartient à ce plan, donc les coordonnées de $A$ vérifient l'équation $\left(E\right)$ :
+     \par
+     $1+3-2+d=0$ soit $d=-2$
+     \par
+     Une équation cartésienne du plan est donc :
+     \par
+     $\left(E\right)      x+y+z-2=0$
+}
+\cadre{vert}{Propriétés}{% id="p110"
+     \begin{itemize}
+          \item Une droite $d$ est parallèle à un plan $\mathscr P$ si et seulement si un vecteur directeur de $d$ est orthogonal à un vecteur normal de $\mathscr P$.
+          \item Une droite $d$ est perpendiculaire à un plan $\mathscr P$ si et seulement si un vecteur directeur de $d$ est colinéaire à un vecteur normal de $\mathscr P$.
+          \item Deux plans sont parallèles si et seulement si leurs vecteurs normaux sont colinéaires.
+          \item Deux plans sont perpendiculaires si et seulement si leurs vecteurs normaux sont  orthogonaux.
+     \end{itemize}
+}
+\input{_footer}

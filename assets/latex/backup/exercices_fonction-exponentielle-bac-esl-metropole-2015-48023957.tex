@@ -1,0 +1,85 @@
+\input{_header}
+\meta{url}{/exercices/fonction-exponentielle-bac-esl-metropole-2015/}
+\meta{pid}{3445}
+\meta{titre}{Fonction exponentielle - Bac ES/L Métropole 2015}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 3 - 6 points\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+La courbe $(\mathscr{C})$ ci-dessous représente dans un repère orthogonal une fonction $f$ définie et dérivable sur l'intervalle $[-4~;~3]$. Les points $A$ d'abscisse $-3$ et $B(0~;~2)$ sont sur la courbe $(\mathscr{C})$.
+\par
+Sont aussi représentées sur ce graphique les tangentes à la courbe $(\mathscr{C})$ respectivement aux points $A$ et $B$, la tangente au point $A$ étant horizontale. On note $f^\prime$ la fonction dérivée de $f$.
+
+\begin{center}
+\imgsvg{fonction-exponentielle-bac-esl-metropole-2015}{0.3}% alt="      " style="width:50rem"
+\end{center}
+
+\textbf{Les parties  A et B sont indépendantes}
+\begin{h3}PARTIE A\end{h3}
+\begin{enumerate}
+     \item
+     Par lecture graphique, déterminer :
+     \begin{enumerate}[label=\alph*.]
+          \item
+          $f^\prime(-3)$ ;
+          \item
+          $f(0)$ et $f^\prime(0)$.
+     \end{enumerate}
+     \item
+     La fonction $f$ est définie sur $[-4~;~3]$ par
+     \begin{center}$f(x) = a+(x+b)e^{- x}$\end{center}
+     où $a$ et $b$ sont deux réels que l'on va déterminer dans cette partie.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Calculer $f^\prime(x)$ pour tout réel $x$ de $[-4~;~3]$.
+          \item
+          À l'aide des questions \textbf{1. b.} et \textbf{2. a.}, montrer que les nombres $a$ et $b$ vérifient le système suivant :
+          \begin{center}$\begin{cases} a+b=2 \\ 1-b =-3 \end{cases}$\end{center}
+          \item
+          Déterminer alors les valeurs des nombres $a$ et $b$.
+     \end{enumerate}
+\end{enumerate}
+\begin{h3}PARTIE B\end{h3}
+On admet que la fonction $f$ est définie sur $[-4~;~3]$ par
+\begin{center}$f(x) =-2+(x+4)e^{- x}.$\end{center}
+\begin{enumerate}
+     \item
+     Justifier que, pour tout réel $x$ de $[-4~;~3]$, $f^\prime(x) = (- x-3)e^{- x}$ et en déduire le tableau de variation de $f$ sur $[-4~;~3]$.
+     \item
+     Montrer que l'équation $f(x) = 0$ admet une unique solution $\alpha$ sur $[-3~;~3]$, puis
+     \par
+     donner une valeur approchée de $\alpha$ à $0,01$ près par défaut.
+     \item
+     On souhaite calculer l'aire $S$, en unité d'aire, du domaine délimité par la courbe
+     \par
+     $(\mathscr{C})$, l'axe des abscisses et les droites d'équation $x =-3$ et $x = 0$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Exprimer, en justifiant, cette aire à l'aide d'une intégrale.
+          \item
+          Un logiciel de calcul formel dorme les résultats ci-dessous :
+\par
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+     \hline
+ \textbf{1.} &  $F(x) :=-2x+(-x-5)*\text{exp}(-x)$
+\\ \hline  
+& $ \qquad \qquad $ // Interprète $F$
+     \\ \hline 
+& $ \qquad \qquad $ // Succès lors de la compilation $F$
+     \\ \hline
+& $ \qquad \qquad $ $x \mapsto-2*x+(- x-5)* \text{exp}(-x)$
+     \\ \hline 
+ \textbf{2.}  &  derive $(F (x))$ 
+     \\ \hline 
+& $ \qquad \qquad $ $-\text{exp}(-x)-\text{exp}(-x)*(-x-5)-2$
+          \textbf{3.}  & simplifier$(-\text{exp}(-x)-\text{exp}(-x)*(- x-5) -2)$&
+     \\ \hline 
+      & $ \qquad \qquad $ $x*\text{exp}(-x)+4 *\text{exp}(-x)-2$
+     \\ \hline 
+\end{tabularx}
+\par
+      À l'aide de ces résultats, calculer la valeur exacte de l'aire $S$ puis sa valeur arrondie au  centième.
+\end{enumerate}
+\end{enumerate}
+\input{_footer}

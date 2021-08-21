@@ -16,7 +16,9 @@
             </div>
         <?php endif; ?>  
         <?= __('content_tpl')?__inc(__('content_tpl')):__('content') ?>
+        <?php __inc('components/adsense2')?>
     </article>
+    
     <?php __inc('base/aside')?>
 </main>
 </section>

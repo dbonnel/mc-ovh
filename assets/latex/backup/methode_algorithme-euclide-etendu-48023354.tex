@@ -1,0 +1,91 @@
+\input{_header}
+\meta{url}{/methode/algorithme-euclide-etendu/}
+\meta{pid}{1543}
+\meta{titre}{Algorithme d'Euclide étendu}
+\meta{type}{methode}
+%
+L'algorithme d'Euclide étendu permet, outre le calcul le calcul du PGCD de deux entiers naturels non nuls $a$ et $b$, de déterminer les entiers relatifs $u$ et $v$ tels que $au+bv=PGCD\left(a;b\right)$.
+\par
+On procède comme pour l'algorithme d'Euclide (voir \mcLien{/methodes/arithmetique/algorithme-euclide-etendu}{algorithme d'Euclide})  mais à chaque étape on cherche à écrire le reste $r$ comme combinaison linéaire de $a$ et de $b$.
+\begin{h3}Exemple\end{h3}
+On veut monter que a=135 et b=101 sont premiers entre eux et on recherche les entiers relatifs $u$ et $v$ tels que $135u+101v=1$.
+\par
+(le tableau ci-dessous peut être obtenu avec l'outil \mcLien{outils/coefficients-bezout?val_a=135&val_b=101}{Outil : Coefficient de Bézout})
+\begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+     \hline
+     &  \textbf{Dividende} & \textbf{Diviseur} & 	\textbf{q} & 	\textbf{r} & \textbf{Combinaison}
+     \\ \hline
+     \textbf{1} & 135 & 	101 & 	1	 & 34 & 	34 = 135 - 1×101 34 = 1×a - 1×b
+     \\ \hline
+     \textbf{2} & 101 & 	34 & 	2 & 	33 & 	33 = 101 - 2×34<br>33 = (0×a + 1×b) - 2×(1×a - 1×b)<br>33 = -2×a + 3×b
+     \\ \hline
+     \textbf{3} & 34 & 	33 & 	1 & 	1 & 	1 = 34 - 1×33<br>1 = (1×a - 1×b) - 1×(-2×a + 3×b)<br>1 = 3×a - 4×b
+     \\ \hline
+     \textbf{4} & 33 & 	1 & 	33 & 	0	   &
+     \\ \hline
+\end{tabularx}
+\par
+\textbf{Ligne 1 :} On effectue la division euclidienne de 135 par 101. Le quotient est 1 et le reste 34.
+\par
+Cette division s'écrit : 135 = 1×101 + 34
+\par
+On en déduit (colonne combinaison) que 34 = 135 - 1×101
+\par
+Par conséquent, 34 s'écrit comme combinaison linéaire de a et de b :
+\begin{center}\textbf{34 = 1×a - 1×b}\end{center}
+\par
+\textbf{Ligne 2 :} Dans la colonne "Dividende", on place le diviseur de la ligne précédente soit 101.
+\par
+Dans la colonne "Diviseur", on place le reste de la ligne précédente soit 34.
+\par
+On effectue ensuite la division euclidienne de 101 par 34. Le quotient est 2 et le reste 33.
+\par
+Cette division s'écrit : 101 = 2×34 + 33
+\par
+c'est à dire 33 = 101 - 2×34
+\par
+Or 101 = 0×a + 1×b (ou plus simplement 101 = b...)
+\par
+et d'après la\textbf{ ligne 1} : 34 = 1×a - 1×b
+\par
+par conséquent : 33 = (0×a + 1×b) - 2×(1×a - 1×b)
+\par
+33 s'écrit donc  comme combinaison linéaire de a et de b :
+\begin{center}\textbf{33 = -2×a + 3×b}\end{center}
+\par
+\textbf{Ligne 3 :} Dans la colonne "Dividende", on place le diviseur de la ligne précédente soit 34.
+\par
+Dans la colonne "Diviseur", on place le reste de la ligne précédente soit 33.
+\par
+On effectue alors la division euclidienne de 34 par 33. Le quotient est 1 et le reste est également 1.
+\par
+Cette division s'écrit : 34 = 1×33 + 1
+\par
+c'est à dire 1=34-1×33
+\par
+Or d'après la \textbf{ligne 1 :} 34 = 1×a - 1×b
+\par
+et d'après la \textbf{ligne 2} : 33 = -2×a + 3×b
+\par
+par conséquent : 1 = (1×a - 1×b) - 1×(-2×a + 3×b)
+\par
+1 s'écrit donc  comme combinaison linéaire de a et de b :
+\begin{center}\textbf{1 = 3×a - 4×b}\end{center}
+\par
+\textbf{Ligne 4 : }\textit{(facultative ici, car on trouve r=1 à l'étape précédente; on sait donc déjà que $a$ et $b$ sont premiers entre eux)}
+\par
+Dans la colonne "Dividende", on place le diviseur de la ligne précédente soit 33.
+\par
+Dans la colonne "Diviseur", on place le reste de la ligne précédente soit 1.
+\par
+On effectue la division euclidienne de 33 par 1 : le reste est nul donc on a donc terminé le calcul.
+\par
+Le PGCD est le dernier entier non nul dans la colonne des restes. C'est donc 1.
+\par
+\textbf{Conclusion :}135 et 101 sont premiers entre eux.
+\par
+La ligne 3 donne l'égalité de Bézout :
+\begin{center}\textbf{3×a - 4×b = 1}\end{center}
+c'est à dire :
+\begin{center}\textbf{3×135 - 4×101 = 1}\end{center}
+\input{_footer}
