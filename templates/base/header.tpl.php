@@ -8,7 +8,7 @@
                         <img class="custom-logo" src="/assets/img/logo.svg" alt="logo maths-cours">
                         <h1>Maths-cours</h1>
                     </a>
-
+                    <h2>COURS & EXERCICES DE MATHÉMATIQUES</h2>
                 </div>
             </div>
         </div>
