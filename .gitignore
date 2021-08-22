@@ -1,5 +1,4 @@
 node_modules
-assets/psimg
 assets/psimg/*.aux
 assets/psimg/*.dvi
 assets/psimg/*.log
