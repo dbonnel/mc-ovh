@@ -1,4 +1,9 @@
 node_modules
 assets/psimg
-!assets/psimg/*.svg
+assets/psimg/*.aux
+assets/psimg/*.dvi
+assets/psimg/*.log
+assets/psimg/*.out
+assets/psimg/*.tex
+assets/psimg/*.ps
 .vscode
