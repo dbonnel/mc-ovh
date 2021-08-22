@@ -1,3 +1,4 @@
 node_modules
 assets/psimg
+!assets/psimg/*.svg
 .vscode
