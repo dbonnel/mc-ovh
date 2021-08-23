@@ -1,0 +1,198 @@
+\input{_header}
+\meta{url}{/exercices/suites-equations-differentielles-bac-s-pondichery-2008/}
+\meta{pid}{2258}
+\meta{titre}{Suites et équations différentielles - Bac S Pondichéry 2008}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4\end{h2}
+\textit{(7 points) Commun à tous les candidats}
+\par
+On cherche à modéliser de deux façons différentes l'évolution du nombre, exprimé en millions, de foyers français possédant un téléviseur à écran plat, en fonction de l'année.
+\par
+Les parties A et B sont indépendantes.
+\begin{h3}Partie A : un modèle discret\end{h3}
+Soit un le nombre, exprimé en millions, de foyers possédant un téléviseur à écran plat l'année n.
+\par
+On pose $ n = 0  $ en 2005, $u_{0}=1$ et, pour tout $n > 0$, $u_{n+1}=\frac{1}{10} u_{n} \left(20-u_{n}\right)$.
+\begin{enumerate}
+     \item
+     Soit $f$ la fonction définie sur [0 ; 20] par $f\left(x\right)=\frac{1}{10} x\left(20-x\right)$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Etudier les variations de $f$ sur [0 ; 20].
+          \item
+          En déduire que pour tout $x\in \left[0; 10\right]$,  $f\left(x\right)\in \left[0; 10\right]$.
+          \item
+          On donne ci-dessous la courbe représentative $\left(C\right)$ de la fonction $f$ dans un repère orthonormal $\left(O; \vec{i}, \vec{j}\right)$ du plan. Représenter, sur l'axe des abscisses, à l'aide de ce graphique, les cinq premiers termes de la suite $\left(u_{n}\right)_{n > 0}$.
+
+
+\begin{center}
+\imgsvg{copie-0002}{0.3}% alt="Courbe suite 1" style="width:50rem"
+\end{center}
+     \end{enumerate}
+     \item
+     Montrer par récurrence que pour tout $n\in \mathbb{N}$ , $0 < u_{n} < u_{n+1} < 10$.
+     \item
+     Montrer que la suite $\left(u_{n}\right)_{n > 0}$ est convergente et déterminer sa limite.
+\end{enumerate}
+\begin{h3}Partie B : un modèle continu\end{h3}
+Soit $g\left(x\right)$ le nombre, exprimé en millions, de tels foyers l'année $x$. On pose $x=0$ en 2005, $g\left(0\right)=1$ et $g$ est une solution, qui ne s'annule pas sur $\left[0,+\infty \right[$, de l'équation différentielle
+\par
+(E) : $y^{\prime}=\frac{1}{20} y \left(10-y\right)$
+\begin{enumerate}
+     \item
+     On considère une fonction $y$ qui ne s'annule pas sur $\left[0,+\infty \right[$ et on pose $z=\frac{1}{y}$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que y est solution de (E) si et seulement si z est solution de l'équation différentielle :
+          \par
+          (E1) : $z^{\prime}=-\frac{1}{2} z+\frac{1}{20}$.
+          \item
+          Résoudre l'équation (E1) et en déduire les solutions de l'équation (E).
+     \end{enumerate}
+     \item
+     Montrer que $g$ est définie sur $\left[0,+\infty \right[$ par $g\left(x\right)=\frac{10}{9e^{-\frac{1}{2}x}+1}$.
+     \item
+     Etudier les variations de $g$ sur $\left[0,+\infty \right[$.
+     \item
+     Calculer la limite de $g$ en $+\infty $ et interpréter le résultat.
+     \item
+     En quelle année le nombre de foyers possédant un tel équipement dépassera-t-il 5 millions ?
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A \end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $f\left(x\right)=-\frac{1}{10}x^{2}+2x$
+               \par
+               $f$ est une fonction polynôme du second degré avec un coefficient de $x^{2}$ négatif.
+               \par
+               Sa courbe représentative est une parabole dont l'abscisse du sommet est :
+               \par
+               $x_{0}=-\frac{b}{2a}=10$
+               \par
+               Son tableau de variation est le suivant :
+%##
+% type=table; width=25; l2=20
+%--
+% x|   0   ~   10  ~   20 
+% f(x)|  0              /   10   \   0
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (54*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ 0 $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ 10 $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ 20 $};
+       \draw (0, -30*\height) -- (54*\width, -30*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -30*\height);
+       \node (l1c0) at (5*\width,-20*\height) {$ f(x) $};
+       \node (l1c1) at (14*\width,-25*\height) {$ 0 $};
+       \node (l1c2) at (23*\width,-20*\height) {$ ~ $};
+       \node (l1c3) at (32*\width,-15*\height) {$ 10 $};
+       \node (l1c4) at (41*\width,-20*\height) {$ ~ $};
+       \node (l1c5) at (50*\width,-25*\height) {$ 0 $};
+       \draw (0, 0) rectangle (54*\width, -30*\height);
+       \draw[fleche] (l1c1) -- (l1c3);
+       \draw[fleche] (l1c3) -- (l1c5);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+               D'après le tableau il est évident que pour tout $x\in \left[0 ; 10\right] , f\left(x\right)\in \left[0 ; 10\right]$.
+               \item
+
+\begin{center}
+\imgsvg{copie-0010}{0.3}% alt="Courbe suite 2" style="width:50rem"
+\end{center}
+          \end{enumerate}
+          \item
+          $u_{0}=1$ et $u1=1,9$ donc la propriété est vraie au rang 0 ($0\leqslant 1\leqslant 1,9\leqslant 10$)
+          \par
+          Supposons $0\leqslant u_{n}\leqslant u_{n+1}\leqslant 10$.
+          \par
+          Comme f est  croissante sur [0;10]
+          \par
+          $f\left(0\right)\leqslant f\left(u_{n}\right)\leqslant f\left(u_{n+1}\right)\leqslant f\left(10\right)$
+          \par
+          c'est à dire
+          \par
+          $0\leqslant u_{n+1}\leqslant u_{n+2}\leqslant 10$.
+          \par
+          Donc la propriété est héréditaire.
+          \par
+          Donc pour tout $n \in \mathbb{N}, \cdots  0 \leqslant u_{n} \leqslant u_{n+1} \leqslant 10$.
+          \item
+          La suite $\left(u_{n}\right)_{n \geqslant 0}$ est croissante et majorée (par 10) donc elle est convergente. Sa limite vérifie $l=f\left(l\right)$
+          \par
+          Ce qui donne $l^{2}-10l=0$ donc $l=0$ ou $l=10$.
+          \par
+          La solution $l=0$ ne peut convenir car, la suite étant croissante $l\geqslant u_{0}\geqslant 1$
+          \par
+          Donc $l=10$.
+     \end{enumerate}
+     \begin{h3}Partie B\end{h3}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $z=\frac{1}{y}$ ne s'annule pas sur $\left[0,+\infty \right[$ donc $y=\frac{1}{z}$ et $y^{\prime}=-\frac{z^{\prime}}{z^{2}}$.
+               \par
+               $y^{\prime}=\frac{1}{2}y-\frac{1}{20}y^{2} \Leftrightarrow -\frac{z^{\prime}}{z^{2}}=\frac{1}{2z}-\frac{1}{20z^{2}} \Leftrightarrow  z^{\prime}=-\frac{1}{2}z+\frac{1}{20}$
+               \item
+               Les solutions de l'équation (E1) sont les fonctions définies par :
+               \par
+               $z\left(x\right)=Ce^{-\frac{1}{2}x}-\frac{\frac{1}{20}}{-\frac{1}{2}}=Ce^{-\frac{1}{2}x}+\frac{1}{10}$ où $C \in \mathbb{R}$
+               \par
+               Les solutions de (E) sont les fonctions définies par :
+               \par
+               $\frac{1}{y\left(x\right)}=Ce^{-\frac{1}{2}x}+\frac{1}{10}$
+               \par
+               $y\left(x\right)=\frac{1}{Ce^{-\frac{1}{2}x}+\frac{1}{10}}=\frac{10}{Ke^{-\frac{1}{2}x}+1}$ où $K \in \mathbb{R}$ (on a posé $K=10C$)
+          \end{enumerate}
+          \item
+          $g$ vérifie $g\left(0\right)=1$ ce qui donne:
+          \par
+          $\frac{10}{K+1}=1$ soit $K=9$
+          \par
+          Donc :
+          \par
+          $g\left(x\right)=\frac{10}{9e^{-\frac{1}{2}x}+1}$.
+          \item
+          $g^{\prime}\left(x\right)=-10\times \frac{-\frac{9}{2}e^{-\frac{1}{2}x}}{\left(9e^{-\frac{1}{2}x}+1\right)^{2}}=45\times \frac{e^{-\frac{1}{2}x}}{\left(9e^{-\frac{1}{2}x}+1\right)^{2}} > 0$
+          \par
+          Donc la fonction $g$ est strictement croissante sur $\left[0,+\infty \right[$
+          \item
+          $\lim\limits_{x\rightarrow +\infty } -\frac{1}{2}x=-\infty $ et $\lim\limits_{x\rightarrow -\infty } e^{x}=0$ donc par composition $\lim\limits_{x\rightarrow +\infty }e^{-\frac{1}{2}x}=0$ et
+          \par
+          $\lim\limits_{x\rightarrow +\infty }\frac{10}{9e^{-\frac{1}{2}x}+1}=10$
+          \par
+          Le nombre de foyers possédant un tel équipement se rapprochera progressivement de 10 millions.
+          \item
+          Comme $9e^{-\frac{1}{2}x}+1 > 0$ :
+          \par
+          $g\left(x\right)\geqslant 5 \Leftrightarrow  10\geqslant 5\left(9e^{-\frac{1}{2}x}+1\right) \Leftrightarrow  1\geqslant 9e^{-\frac{1}{2}x} $
+          \par
+          La fonction $\ln$ étant strictement croissante sur $\left]0,+\infty \right[$ :
+          \par
+          $g\left(x\right)\geqslant 5 \Leftrightarrow  \ln\left(1\right)\geqslant \ln\left(9e^{-\frac{1}{2}x}\right) \Leftrightarrow  0\geqslant -\frac{1}{2}x+\ln9 \Leftrightarrow  \frac{1}{2}x\geqslant \ln9 \Leftrightarrow  x\geqslant 2\ln9$
+          \par
+          Comme $4\leqslant 2\ln9\leqslant 5$, le nombre de foyers possédant un tel équipement dépassera les 5 millions au cours de l'année 2009.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

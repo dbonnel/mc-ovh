@@ -45,7 +45,7 @@ namespace Controllers {
             try {
                 $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name, \App\Config::$db_username, \App\Config::$db_password);
                 $dump->start(dirname(__DIR__) . '/db-save/backup.sql.gz');
-                $this->view->set_var('content', 'Backup OK : ' . dirname(__DIR__) . '/db-save/backup.rar');
+                $this->view->set_var('content', 'Backup OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
             } catch (\Exception $e) {
                 $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             }

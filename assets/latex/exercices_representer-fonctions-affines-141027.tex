@@ -1,0 +1,63 @@
+\input{_header}
+\meta{url}{/exercices/representer-fonctions-affines-141027/}
+\meta{pid}{1722}
+\meta{titre}{Représenter des fonctions affines}
+\meta{type}{exercices}
+%
+\begin{enumerate}
+     \item
+     Représenter graphiquement les fonctions $f$ et $g$ définies par :
+     \par
+     $f : x\mapsto  2x-3$
+     \par
+     $g : x\mapsto  -x+3$
+     \item
+     A l'aide du graphique, déterminer la ou les valeur(s) de $x$ telles que $f\left(x\right)=g\left(x\right)$.
+     \par
+     Retrouver ce résultat par le calcul.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Les fonctions $f$ et $g$ sont des fonctions affines. Leurs représentations graphiques sont des droites. Ils suffit donc de trouver deux points de ces droites pour pouvoir les tracer.
+          \par
+          On choisit donc deux valeurs quelconques pour $x$ par exemple $0$ et $1$ et on calcule les images de ces nombres :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $x$ & 0 & 1
+               \\ \hline
+               $f\left(x\right)$ & -3 & -1
+               \\ \hline
+          \end{tabularx}
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $x$ & 0 & 1
+               \\ \hline
+               $g\left(x\right)$ & 3 & 2
+               \\ \hline
+          \end{tabularx}
+\par
+          On obtient le graphique suivant :
+
+\begin{center}
+\imgsvg{mc-0536}{0.3}% alt="intersection des droites" style="width:30rem"
+\end{center}
+          \item
+          Pour trouver la valeur de $x$ telles que $f\left(x\right)=g\left(x\right)$, on voit sur le graphique que le point d'intersection des deux droites à pour coordonnées $\left(2;1\right)$.
+          \par
+          La valeur de $x$ recherchée est l'abscisse de ce point donc $\color{red}{x=2}$. On a alors $f\left(2\right)=g\left(2\right)=1$.
+          \par
+          Pour retrouver ce résultat par le calcul, on résout l'équation $f\left(x\right)=g\left(x\right)$ :
+          \par
+          $2x-3=-x+3$
+          \par
+          $2x+x=3+3$
+          \par
+          $3x=6$
+          \par
+          $x=\frac{6}{3}$
+          \par
+          $x=2$
+     \end{enumerate}
+}\end{corrige}
+\input{_footer}

@@ -1,0 +1,45 @@
+\input{_header}
+\meta{url}{/exercices/produit-scalaire-calcul-angles/}
+\meta{pid}{1004}
+\meta{titre}{Produit scalaire - Calcul d'angle}
+\meta{type}{exercices}
+%
+Dans le plan muni d'un repère orthonormé $\left(O ; \vec{i}, \vec{j}\right)$ on considère les points:
+\par
+$A \left(-1 ; 2\right) , B \left(0 ; 5\right)$ et $C \left(2 ; 1\right)$
+\begin{enumerate}
+     \item
+     Montrer que les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont orthogonaux.
+     \item
+     Calculer le produit scalaire $\overrightarrow{CA}.\overrightarrow{CB}$ et les normes $||\overrightarrow{CA}||$ et $||\overrightarrow{CB}||$
+     \par
+     En déduire la mesure de l'angle $\widehat{ACB}$.
+     \item
+     Que peut-on en conclure pour le triangle $ABC$ ?
+\end{enumerate}
+\begin{corrige}
+     <img src="/assets/imgsvg/mc-0397.png" alt="" class="aligncenter size-full  img-pc" />
+     \begin{enumerate}
+          \item
+          $\overrightarrow{AB} \left(1 ; 3\right)$ et $\overrightarrow{AC} \left(3 ; -1\right)$
+          \par
+          $\overrightarrow{AB}.\overrightarrow{AC}=1\times 3+3\times \left(-1\right)=0$
+          \par
+          Les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont donc orthogonaux.
+          \item
+          $\overrightarrow{CA} \left(-3 ; 1\right)$ et $\overrightarrow{CB} \left(-2 ; 4\right)$
+          \par
+          $\overrightarrow{CA}.\overrightarrow{CB}=\left(-3\right)\times \left(-2\right)+1\times 4=10$
+          \par
+          $||\overrightarrow{CA}||=\sqrt{\left(-3\right)^{2}+1^{2}}=\sqrt{10}$ et $||\overrightarrow{CB}||=\sqrt{\left(-2\right)^{2}+4^{2}}=\sqrt{20}=2\sqrt{5}$
+          \par
+          Comme $\overrightarrow{CA}.\overrightarrow{CB}=||\overrightarrow{CA}||\times ||\overrightarrow{CB}||\times \cos\left(\widehat{ACB}\right)$ on en déduit :
+          \par
+          $\cos\left(\widehat{ACB}\right) = \frac{\overrightarrow{CA}.\overrightarrow{CB}}{||\overrightarrow{CA}||\times ||\overrightarrow{CB}||} = \frac{10}{2\sqrt{5}\times \sqrt{10}}=\frac{10}{10\sqrt{2}}=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2}$
+          \par
+          L'angle $\widehat{ACB}$ mesure donc $45$°
+          \item
+          L'angle $\widehat{ABC}$ mesure $180-90-45=45$° également, donc le triangle $ABC$ est \textbf{rectangle isocèle} en $A$.
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -1,0 +1,200 @@
+\input{_header}
+\meta{url}{/exercices/fonction-ln-primitives-integrales-aire/}
+\meta{pid}{1379}
+\meta{titre}{[Bac] Fonction ln - Primitives - Intégrales - Aires}
+\meta{type}{exercices}
+%
+Extrait d'un exercice du Bac S Pondichéry 2011.
+\par
+Le sujet complet est disponible ici : \mcLien{/exercices/revisions/fonction-calcul-aire-bac-s-pondichery-2011}{Bac S Pondichéry 2011}
+\begin{h3}Partie I \end{h3}
+On considère la fonction $f$ définie sur l'intervalle $\left]0; +\infty \right[$ par
+
+\begin{center}
+$f\left(x\right)=\ln \left(x\right)+1-\frac{1}{x}.$
+\end{center}
+
+\begin{enumerate}
+     \item
+     Déterminer les limites de la fonction $f$ aux bornes de son ensemble de définition.
+     \item
+     Étudier les variations de la fonction $f$ sur l'intervalle $\left]0; +\infty \right[$.
+     \item
+     En déduire le signe de $f\left(x\right)$ lorsque $x$ décrit l'intervalle $\left]0; +\infty \right[$.
+     \item
+     Montrer que la fonction $F$ définie sur l'intervalle $\left]0; +\infty \right[$ par $F\left(x\right)=x \ln x-\ln x$ est une primitive de la fonction $f$ sur cet intervalle.
+     \item
+     Démontrer que la fonction $F$ est strictement croissante sur l'intervalle $\left]1; +\infty \right[$.
+     \item
+     Montrer que l'équation $F\left(x\right)=1-\frac{1}{\text{e}}$ admet une unique solution dans l'intervalle $\left]1;+\infty \right[$ qu'on note $\alpha $.
+     \item
+     Donner un encadrement de $\alpha $ d'amplitude $10^{-1}$.
+\end{enumerate}
+\begin{h3} Partie II \end{h3}
+Soit $g$ et $h$ les fonctions définies sur l'intervalle $\left]0; +\infty \right[$ par :
+\par
+$g\left(x\right)=\frac{1}{x}$ ~ et ~ $ h\left(x\right)=\ln \left(x\right)+1.$
+\par
+Sur le graphique ci-dessous, on a représenté dans un repère orthonormal, les courbes $\left(\mathscr C_{g}\right)$ et $\left(\mathscr C_{h}\right)$ représentatives des fonctions $g$ et $h$.
+
+\begin{center}
+\imgsvg{Bac_S_Pondichery_2011-fonction2}{0.3}% alt="Fonction ln - Primitives - Intégrales" style="width:40rem" 
+\end{center}
+
+\begin{enumerate}
+     \item
+     $A$ est le point d'intersection de la courbe $\left(\mathscr C_{h}\right)$ et de l'axe des abscisses. Déterminer les coordonnées du point $A$.
+     \item
+     $P$ est le point d'intersection des courbes $\left(\mathscr C_{g}\right)$ et $\left(\mathscr C_{h}\right)$. Justifier que les coordonnées du point $P$ sont $\left(1 ; 1\right)$.
+     \item
+     On note $\mathscr A$ l'aire du domaine délimité par les courbes $\left(\mathscr C_{g}\right)$, $\left(\mathscr C_{h}\right)$ et les droites d'équations respectives $x=\frac{1}{\text{e}}$ et $x=1$ (domaine grisé sur le graphique).
+
+
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Exprimer l'aire $\mathscr A$ à l'aide de la fonction $f$ définie dans la \textbf{partie II}.
+          \item
+          Montrer que $\mathscr A=1-\frac{1}{\text{e}}$.
+     \end{enumerate}
+     \item
+     Soit $t$ un nombre réel de l'intervalle $\left]1; +\infty \right[$. On note $\mathscr B_{t}$ l'aire du domaine délimité par les droites d'équations respectives $x=1, x=t$ et les courbes $\left(\mathscr C_{g}\right)$ et $\left(\mathscr C_{h}\right)$ (domaine hachuré sur le graphique).
+     \par
+     On souhaite déterminer une valeur de $t$ telle que $\mathscr A=\mathscr B_{t}$.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Montrer que $\mathscr B_{t}=t \ln \left(t\right)-\ln \left(t\right)$.
+          \item
+          Conclure.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h3} Partie I \end{h3}
+     \begin{enumerate}
+          \item
+          $\lim_{x\rightarrow 0^+} \ln\left(x\right)=-\infty   $  et  $ \lim_{x\rightarrow 0^+} \frac{1}{x}=+\infty $
+          \par
+          Par conséquent, par somme $\lim_{x\rightarrow 0^+} f\left(x\right)=-\infty $
+          \par
+          $\lim\limits_{x\rightarrow +\infty } \ln\left(x\right)=+\infty   $ et $ \lim\limits_{x\rightarrow +\infty } \frac{1}{x}=0$
+          \par
+          Et par somme $\lim\limits_{x\rightarrow +\infty }f\left(x\right)=+\infty $
+          \item
+          $f^{\prime}\left(x\right)= \frac{1}{x}+\frac{1}{x^{2}}$
+          \par
+          Sur l'intervalle $\left]0;+\infty \right[$, $\frac{1}{x} > 0$ donc $f^{\prime}\left(x\right) > 0$ et par conséquent $f$ est \textbf{strictement croissante}.
+          \item
+          Comme $f\left(1\right)=\ln\left(1\right)+1-\frac{1}{1}=0$ et comme $f$ est strictement croissante, $f$ est strictement négative sur $\left]0;1\right[$ et strictement positive sur $\left]1; +  \infty \right[$.
+          \par
+          Le tableau de signe de $f$ est :
+%##
+% type=table; width=25
+%--
+% x|   0   ~    1   ~      +\infty 
+% f(x)|  ||     -          :0   +     ~
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (54*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ 0 $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ 1 $};
+       \node (l0c4) at (41*\width,-5*\height) {$ ~ $};
+       \node (l0c5) at (50*\width,-5*\height) {$ +\infty $};
+       \draw (0, -20*\height) -- (54*\width, -20*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -20*\height);
+       \node (l1c0) at (5*\width,-15*\height) {$ f(x) $};
+       \draw[double distance=2pt] (14*\width, -10*\height) -- (14*\width, -20*\height);
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-15*\height) {$ - $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -20*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (41*\width,-15*\height) {$ + $};
+       \node (l1c5) at (50*\width,-15*\height) {$ ~ $};
+       \draw (0, 0) rectangle (54*\width, -20*\height);
+
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+          On calcule la dérivée $F^{\prime}\left(x\right)$ :
+          \par
+          $F^{\prime}\left(x\right)=\ln\left(x\right)+x\times \frac{1}{x}-\frac{1}{x}=\ln\left(x\right)+1-\frac{1}{x}=f\left(x\right)$
+          \par
+          Donc $F$ est une primitive de $f$ sur $\left]0;+\infty \right[$.
+          \item
+          La dérivée de $F$ est $f$ et est strictement positive sur $\left]1;+\infty \right[$ d'après \textbf{3.}. Donc $F$ est strictement croissante sur cet intervalle.
+          \item
+          $F\left(1\right)=0$
+          \par
+          $\lim\limits_{x\rightarrow +\infty }F\left(x\right)=\lim\limits_{x\rightarrow +\infty }x\ln\left(x\right)-\ln\left(x\right)=\lim\limits_{x\rightarrow +\infty }x\left(\ln\left(x\right)-\frac{\ln\left(x\right)}{x}\right)$
+          \par
+          Or $\lim\limits_{x\rightarrow +\infty }\frac{\ln\left(x\right)}{x}=0$ (\mcLien{/cours/fonction-logarithme-neperien#t60}{Croissance comparée})
+          \par
+          donc (par différence et produit) $\lim\limits_{x\rightarrow +\infty }F\left(x\right)=+\infty $
+          \par
+          Sur l'intervalle $\left]1;+\infty \right[$, $F$ est \textbf{continue} car dérivable, \textbf{strictement croissante} et  $1-\frac{1}{e}$ est compris entre $F\left(1\right)=0$ et  $\lim\limits_{x\rightarrow +\infty }F\left(x\right)=+\infty $.
+          \par
+          D'après le \mcLien{/cours/fonctions-continues#t70}{corolaire du théorème des valeurs intermédiaires},  l'équation $F\left(x\right)=1-\frac{1}{e}$ admet une unique solution sur l'intervalle $\left]1;+\infty \right[$.
+          \item
+          A la calculatrice, on trouve : $F\left(1,9\right)\approx -0,05$ et $F\left(2\right)\approx 0,06$ donc $1,9 < \alpha  < 2$.
+     \end{enumerate}
+     \begin{h3} Partie II \end{h3}
+     \begin{enumerate}
+          \item
+          L'abscisse du point $A$ est solution de l'équation : $h\left(x\right)=0$. Donc :
+          \par
+          $\ln\left(x_{A}\right)+1=0$
+          \par
+          $\ln\left(x_{A}\right)=-1$
+          \par
+          $x_{A}=e^{-1}=\frac{1}{e}$
+          \par
+          Donc $A\left(\frac{1}{e};0\right)$.
+          \item
+          L'abscisse du point $P$ vérifie l'équation :
+          \par
+          $\frac{1}{x}=\ln\left(x\right)+1$
+          \par
+          $\ln\left(x\right)+1-\frac{1}{x}=0$
+          \par
+          $f\left(x\right)=0$
+          \par
+          Donc d'après la\textbf{ partie II},  $x_{P}=1$ et $y_{P}=g\left(x_{P}\right)=g\left(1\right)=1$
+          \par
+          Donc $P\left(1;1\right)$
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Sur l'intervalle $\left[\frac{1}{e} ; 1\right]$, $g\geqslant h$. L'aire $\mathscr A$ est donc:
+               \par
+               $\mathscr A=\int_{1/e}^{1}g\left(x\right)-h\left(x\right)dx = \int_{1/e}^{1}-f\left(x\right)dx = -\int_{1/e}^{1}f\left(x\right)dx$
+               \item
+               $\mathscr A=-\left[F\left(x\right)\right]_{1/e}^{1} = -F\left(1\right)+F\left(\frac{1}{e}\right) = 1\ln 1-\ln 1+\frac{1}{e} \ln \frac{1}{e}-\ln \frac{1}{e} = 1-\frac{1}{e}$
+               \par
+               car $\ln 1 = 0 $ et $ \ln \frac{1}{e} = -\ln e = -1$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Sur l'intervalle $\left[1 ; +\infty \right[$, $g\leqslant h$. Par conséquent :
+               \par
+               $\mathscr B_{t}=\int_{1}^{t}h\left(x\right)-g\left(x\right)dx = \int_{1}^{t}f\left(x\right)dx = F\left(t\right)-F\left(1\right) = F\left(t\right) = t \ln t-\ln t$
+               \item
+               $\mathscr A=\mathscr B_{t}   \Leftrightarrow    F\left(t\right) = 1-\frac{1}{e}$
+               \par
+               D'après la question \textbf{6} de la partie précédente, cette équation admet $t=\alpha $ comme unique solution.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

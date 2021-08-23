@@ -1,0 +1,128 @@
+\input{_header}
+\meta{url}{/exercices/fonctions-bac-es-metropole-2014/}
+\meta{pid}{2206}
+\meta{titre}{Fonctions - Bac ES/L Métropole 2014}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 4   (5 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+On injecte à un patient un médicament et on mesure régulièrement, pendant $15$ heures, la concentration, en grammes par litre, de ce médicament dans le sang.
+\par
+On obtient la courbe fournie ci-dessous:
+
+\begin{center}
+\imgsvg{mc-0307}{0.3}% alt="concentration d'un médicament" style="width:50rem"
+\end{center}
+\begin{h3}A. Étude graphique\end{h3}
+Avec la précision permise par le graphique, indiquer :
+\begin{enumerate}
+     \item
+     la concentration à l'instant initial;
+     \item
+     l'intervalle de temps pendant lequel la concentration est supérieure ou égale à $0,4$ gramme par litre.
+     \textit{On fera apparaitre sur le graphique les traits de construction nécessaires.}
+\end{enumerate}
+\begin{h3}B. Étude théorique :\end{h3}
+On admet que la concentration peut être modélisée par la fonction $f$ définie sur l'intervalle [0 ; 15] par :
+\begin{center}$f\left(x\right)=\left(x+2\right)e^{- 0,5x},$\end{center}
+où $x$ représente le nombre d'heures écoulées depuis l'instant initial et $f\left(x\right)$ la concentration, en grammes par litre, du médicament dans le sang.
+\begin{enumerate}
+     \item
+     On note $f^{\prime}$ la fonction dérivée de la fonction $f$. Justifier que $f^{\prime}\left(x\right) =-0,5xe^{- 0,5x}$ et en déduire le tableau de variation de la fonction $f$ sur $\left[0 ; 15\right]$.
+     \item
+     Justifier que l'équation $f\left(x\right)=0,1$ admet une unique solution $a$ sur l'intervalle $\left[0; 15\right]$.
+     \item
+     Déterminer un encadrement de $a$ d'amplitude un dixième.
+     \item
+     Un logiciel de calcul formel donne le résultat ci-dessous.
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+          \hline
+          	& 1. derivez $\left(\left(x+2\right) \times  \exp\left(-0.5 \times  x\right)\right)$
+          \\ \hline
+& $ \qquad \qquad \exp\left(-0.5x\right)-0.5\times \exp\left(-0.5x\right)\times \left(x+2\right)$
+     \\ \hline
+     	&2. derivez $\left(\exp\left(-0.5\times x\right)-0.5\times \exp\left(-0.5\times x\right) \times  \left(x+2\right)\right)$
+     \\ \hline
+& $ \qquad \qquad -\exp\left(-0.5 \times x\right)+0.25 \times \exp\left(-0.5\times x\right) \times \left(x+2\right)$
+\\ \hline
+ & 3.	factorisez $\left(-\exp \left(-0.5\times x\right)+0.25\times \exp\left(-0.5\times x\right)\times \left(x+2\right) \right)$
+\\ \hline
+& $ \qquad \qquad \left(0.25\times x-0.5\right)\times \exp\left(-0.5\times x\right)$
+\\ \hline
+\end{tabularx}
+\par
+En vous appuyant sur ces résultats, étudier la convexité de la fonction $f$ sur l'intervalle $\left[0 ; 15\right]$ et préciser l'abscisse d'un éventuel point d'inflexion.
+\end{enumerate}
+\begin{h3}C. Interprétation des résultats :\end{h3}
+En vous aidant des résultats obtenus, soit dans la partie B, soit par lecture graphique et sans justifier, répondre aux questions ci-dessous.
+\begin{enumerate}
+     \item
+     On estime que le médicament n'est plus actif lorsque la concentration est strictement inférieure à $0,1$ gramme par litre. Pendant combien de temps le médicament est-il actif ?
+     \item
+     Au bout de combien d'heures la baisse de concentration ralentit-elle ?
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}A. Étude graphique\end{h3}
+     \begin{enumerate}
+          \item
+          Par lecture graphique, la concentration à l'instant initial est 2 grammes par litre.
+          \item
+          Par lecture graphique, l'intervalle de temps pendant lequel la concentration est supérieure ou égale à $0,4$ gramme par litre est $\left[0;6\right]$.
+     \end{enumerate}
+     \begin{h3}B. Étude théorique :\end{h3}
+     \begin{enumerate}
+          \item
+          On pose $u\left(x\right)=x+2$ et $v\left(x\right)=e^{- 0,5x},$
+          \par
+          On a $u^{\prime}\left(x\right)=1$ , $v^{\prime}\left(x\right)=-0,5e^{- 0,5x}$ et :
+          \par
+          $f^{\prime}\left(x\right)=u^{\prime}\left(x\right)v\left(x\right)+u\left(x\right)v^{\prime}\left(x\right)=e^{- 0,5x}+\left(x+2\right)\times \left(-0,5e^{- 0,5x}\right)$
+          \par
+          $f^{\prime}\left(x\right)=e^{- 0,5x}-0,5xe^{- 0,5x}-e^{- 0,5x}$
+          \par
+          $f^{\prime}\left(x\right)\equiv -0,5xe^{- 0,5x}$
+          \par
+          Sur l'intervalle $\left[0 ; 15\right]$, $-0,5x$ est négatif et  $e^{- 0,5x}$ est positif donc $f^{\prime}\left(x\right)$ est négative.
+          \par
+          On obtient le tableau de variation ci-dessous :
+          <img src="/assets/imgsvg/mc-0311.png" alt="" class="aligncenter size-full  img-pc" />
+%##
+% type=table; width=35; l3=20
+%--
+% x|   -\infty   ~    \frac{ 3 }{ 4 }   ~   4  ~   +\infty 
+% f'(x)|  ~       -               :0             +   :0   -     ~
+% f(x)|  +\infty    \          :0              /   :5   \   -\infty
+%--
+%##
+          avec $f\left(15\right)\approx 0,01$
+          \item
+          La fonction $f$ est \textbf{continue} et \textbf{strictement décroissante} sur $\left[0; 15\right]$.
+          \par
+          $0,1$ est compris entre $f\left(15\right)\approx 0,01$ et $f\left(0\right)=2$.
+          \par
+          Donc, d'après le corollaire du théorème des valeurs intermédiaires, l'équation $f\left(x\right)=0,1$ admet une unique solution sur l'intervalle $\left[0; 15\right]$.
+          \item
+          A la calculatrice on trouve : $f\left(9,4\right)\approx 0,104$ et $f\left(9,5\right)\approx 0,099$ donc $9,4 < \alpha  < 9,5$
+          \item
+          Le logiciel de calcul formel montre que :
+          \par
+          $f^{\prime\prime}\left(x\right) = \left(0,25x-0,5\right) e^{-0,5x}$
+          \par
+          Comme $e^{- 0,5x}$ est strictement positif $f^{\prime\prime}\left(x\right)$ est du signe de $0,25x-0,5$.
+          \par
+          ♦ ~ Sur l'intervalle $\left[0; 2\right]$, $f^{\prime\prime}$ est négative ou nulle donc la fonction est \textbf{concave}.
+          \par
+          ♦ ~ Sur l'intervalle $\left[2; 15\right]$, $f^{\prime\prime}$ est positive ou nulle donc la fonction est \textbf{convexe}.
+          \par
+          $f^{\prime\prime}$ s'annule et change de signe pour $x=2$ donc le point de la courbe d'abscisse $2$ est un point d'inflexion.
+     \end{enumerate}
+     \begin{h3}C. Interprétation des résultats :\end{h3}
+     \begin{enumerate}
+          \item
+          D'après la question \textbf{B.2.}, le médicament est actif pendant $\alpha $ heures, c'est à dire environ neuf heures et demi.
+          \item
+          D'après la question \textbf{B.4.}, la baisse de concentration ralentit au bout de deux heures
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

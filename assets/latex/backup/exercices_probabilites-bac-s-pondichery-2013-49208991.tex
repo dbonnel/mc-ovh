@@ -1,0 +1,212 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-s-pondichery-2013/}
+\meta{pid}{2514}
+\meta{titre}{Probabilités - Suites - Bac S Pondichéry 2013}
+\meta{type}{exercices}
+%
+\begin{h3}Exercice 4   (6 points)\end{h3}
+\textbf{Commun  à tous les candidats}
+\par
+Dans une entreprise, on s'intéresse à la probabilité qu'un salarié soit absent durant une période d'épidémie de grippe.
+\begin{itemize}
+     \item
+     Un salarié malade est absent
+     \item
+     La première semaine de travail, le salarié n'est pas malade.
+     \item
+     Si la semaine $n$ le salarié n'est pas malade, il tombe malade la semaine $n+1$ avec une probabilité égale à $0,04$.
+     \item
+     Si la semaine $n$ le salarié est malade, il reste malade la semaine $n+1$ avec une probabilité égale à $0,24$.
+\end{itemize}
+On désigne, pour tout entier naturel $n$ supérieur ou égal à 1, par $E_{n}$ l'évènement \textit{"le salarié est absent pour cause de maladie la $n$-ième semaine"}. On note $p_{n}$ la probabilité de l'évènement $E_{n}$.
+\par
+On a ainsi : $p_{1}=0$ et, pour tout entier naturel $n$ supérieur ou égal à 1 : $0\leqslant  p_{n} < 1$.
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer la valeur de $p_{3}$ à l'aide d'un arbre de probabilité.
+          \item
+          Sachant que le salarié a été absent pour cause de maladie la troisième semaine, déterminer la probabilité qu'il ait été aussi absent pour cause de maladie la deuxième semaine.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Recopier sur la copie et compléter l'arbre de probabilité donné ci-dessous
+          <img src="/assets/imgsvg/mc-0037.png" alt="" class="aligncenter size-full  img-pc" />
+          \item
+          Montrer que, pour tout entier naturel $n$ supérieur ou égal à 1,
+          \par
+          $p_{n+1}=0,2p_{n}+0,04$.
+          \item
+          Montrer que la suite $\left(u_{n}\right)$ définie pour tout entier naturel $n$ supérieur ou égal à 1 par $u_{n}=p_{n}-0,05$ est une suite géométrique dont on donnera le premier terme et la raison $r$.
+          \par
+          En déduire l'expression de $u_{n}$ puis de $p_{n}$ en fonction de $n$ et $r$.
+          \item
+          En déduire la limite de la suite $\left(p_{n}\right)$.
+          \item
+          On admet dans cette question que la suite $\left(p_{n}\right)$ est croissante. On considère l'algorithme  suivant :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="singleborder" width="600"
+               \hline
+               Variables		 &  K et J sont des entiers naturels,
+             	 &  P est un nombre réel
+               \\ \hline
+               Initialisation     &  P prend la valeur $0$
+               \\ \hline
+               & J prend la valeur $1$
+               \\ \hline
+               Entrée			 &  Saisir la valeur de K
+               \\ \hline
+               Traitement		 & Tant que $P < 0,05-10^{- K}$
+               \\ \hline
+               &$ \quad \quad $ P prend la valeur $0,2\times P+0,04$
+               \\ \hline
+               & $ \quad \quad $ J prend la valeur J + 1
+               \\ \hline
+               & Fin tant que
+               \\ \hline
+               Sortie			 & Afficher J
+               \\ \hline
+          \end{tabularx}
+
+     A quoi correspond l'affichage final J ?
+     \par
+     Pourquoi est-on sûr que cet algorithme s'arrête ?
+\end{enumerate}
+\item
+Cette entreprise emploie 220 salariés. Pour la suite on admet que la probabilité pour qu'un salarié soit malade une semaine donnée durant cette période d'épidémie est égale à $p=0,05$.
+\par
+On suppose que l'état de santé d'un salarié ne dépend pas de l'état de santé de ses collègues.
+\par
+On désigne par $X$ la variable aléatoire qui donne le nombre de salariés malades une semaine donnée.
+\begin{enumerate}[label=\alph*.]
+     \item
+     Justifier que la variable aléatoire $X$ suit une loi binomiale dont on donnera les paramètres.
+     \par
+     Calculer l'espérance mathématique $\mu $ et l'écart type $\sigma $ de la variable aléatoire $X$.
+     \item
+     On admet que l'on peut approcher la loi de la variable aléatoire $\frac{X-\mu }{\sigma }$ par la loi normale  centrée réduite c'est-à-dire de paramètres $0$ et $1$.
+     \par
+     On note $Z$ une variable aléatoire suivant la loi normale centrée réduite.
+     \par
+     Le tableau suivant donne les probabilités de l'évènement $Z < x$ pour quelques valeurs du nombre réel $x$.
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          $x$ &  -1,55  & -1,24  & -0,93  & - 0,62  & - 0,31
+          \\ \hline
+          $P\left(Z < x\right)$ &  0,061  & 0,108  & 0,177  & 0,268  & 0,379
+          \\ \hline
+     \end{tabularx}
+     \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+          \hline
+          $x$ & 0,00  & 0,31  & 0,62  & 0,93  & 1,24  & 1,55
+          \\ \hline
+          $P\left(Z < x\right)$  & 0,500  & 0,621  & 0,732  & 0,823  & 0,892  & 0,939
+          \\ \hline
+     \end{tabularx}
+     Calculer, au moyen de l'approximation proposée en question b., une valeur approchée à $10^{-2}$ près de la probabilité de l'évènement : \textit{"le nombre de salariés absents dans l'entreprise au cours d'une semaine donnée est supérieur ou égal  à 7 et inférieur ou égal à 15"}.
+\end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               <img src="/assets/imgsvg/mc-0040.png" alt="" class="aligncenter size-full  img-pc" />
+               $p_{3}=p\left(E_{3}\right)=0,04\times 0,24+0,96\times 0,04=0,048$
+               \item
+               On recherche $p_{E_{3}}\left(E_{2}\right)$
+               \par
+               $p_{E_{3}}\left(E_{2}\right)=\frac{p\left(E_{2} \cap  E_{3}\right)}{p\left(E_{3}\right)}=\frac{0,04\times 0,24}{0,048}=0,2$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+%##
+% type=arbre; width=25; wcell=3.5; hcell=2
+%--
+% >E_n:p_n
+% >>E_{n+1}:...
+% >>\overline{E_{n+1}}:...
+% >\overline{E_n}:...
+% >>E_{n+1}:...
+% >>\overline{E_{n+1}}:...
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{2}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-1.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-0.5*\height}) {$E_n$};
+     \draw (r) -- (ra) node [poids] {$p_n$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$E_{n+1}$};
+     \draw (ra) -- (raa) node [poids] {$...$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$\overline{E_{n+1}}$};
+     \draw (ra) -- (rab) node [poids] {$...$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$\overline{E_n}$};
+     \draw (r) -- (rb) node [poids] {$...$};
+    \node[noeud] (rba) at ({3*\width},{-2*\height}) {$E_{n+1}$};
+     \draw (rb) -- (rba) node [poids] {$...$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{E_{n+1}}$};
+     \draw (rb) -- (rbb) node [poids] {$...$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+               D'après la formule des probabilités totales :
+               \par
+               $p_{n+1}=p\left(E_{n+1}\right)=0,24p_{n}+0,04\left(1-p_{n}\right)=0,2p_{n}+0,04$
+               \item
+               $u_{n+1}=p_{n+1}-0,05=0,2p_{n}+0,04-0,05=0,2\left(u_{n}+0,05\right)-0,01=0,2u_{n}$
+               \par
+               Donc la suite $\left(u_{n}\right)$ est une suite géométrique de raison $q=0,2$. Son premier terme est $u_{1}=p_{1}-0,05=-0,05$.
+               \par
+               On a donc :
+               \par
+               $u_{n}=u_1\ q^{n-1}=-0,05\times 0,2^{n-1}$
+               \par
+               et :
+               \par
+               $p_{n}=-0,05\times 0,2^{n-1}+0,05$
+               \item
+               Comme $-1 < 0,2 < 1$, $\lim\limits_{n\rightarrow +\infty }0,2^{n-1}=0$ et donc $\lim\limits_{n\rightarrow +\infty }p_{n}=0,05$
+               \item
+               Le nombre $J$ affiché est le rang à partir duquel $p_{J}\geqslant  0,05-10^{- \text{K}}$.
+               \par
+               L'algorithme se termine toujours car la suite $p_{n}$ est croissante et $\lim\limits_{n\rightarrow \infty }p_{n}=0,05$, donc, quelque soit $K$ on trouvera toujours un rang $J$ tel que $p_{J}\geqslant  0,05-10^{- \text{K}}$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Pour un salarié donné, l'évènement $S$ : \textit{"Le salarié est malade"}  correspond à une épreuve de Bernouilli de probabilité $p\left(S\right)=0,05$
+               \par
+               Si l'on s'intéresse à l'état de santé des 220 employés, on répète 220 épreuves de Bernouilli identiques et indépendantes puisque par hypothèse : \textit{l'état de santé d'un salarié ne dépend pas de l'état de santé de ses collègues}.
+               \par
+               La variable aléatoire $X$ suit donc une loi binomiale de paramètres $n=220$ et $p=0,05$.
+               \par
+               L'espérance mathématique de $X$ est :
+               \par
+               $\mu =np=220\times 0,05=11$
+               \par
+               Son écart-type est :
+               \par
+               $\sigma =\sqrt{np\left(1-p\right)}=\sqrt{10,45}\approx 3,23$ à $10^{-2}$ près
+               \item
+               La probabilité cherchée est $p\left(7\leqslant X\leqslant 15\right)$. Or :
+               \par
+               $p\left(7\leqslant X\leqslant 15\right)=p\left(\frac{7-\mu }{\sigma }\leqslant \frac{X-\mu }{\sigma }\leqslant \frac{15-\mu }{\sigma }\right)\approx p\left(-1,24\leqslant \frac{X-\mu }{\sigma }\leqslant 1,24\right) $
+               \par
+               $p\left(7\leqslant X\leqslant 15\right)\approx p\left(\frac{X-\mu }{\sigma }\leqslant 1,24\right)-p\left(\frac{X-\mu }{\sigma }\leqslant -1,24\right)\approx  0,892-0,108$
+               \par
+               $p\left(7\leqslant X\leqslant 15\right)\approx 0,78$ à $10^{-2}$ près.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

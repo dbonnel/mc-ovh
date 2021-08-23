@@ -1,0 +1,114 @@
+\input{_header}
+\meta{url}{/exercices/lancers-successifs/}
+\meta{pid}{910}
+\meta{titre}{Arbre - Lancers successifs}
+\meta{type}{exercices}
+%
+On lance plusieurs fois un dé à six faces (numérotées de 1 à 6) bien équilibré.
+\par
+On s'arrête :
+\begin{itemize}
+     \item
+     dès que le chiffre 6 est obtenu
+     \item
+     au 4ème lancer au plus tard (même si le chiffre 6 n'a pas été obtenu)
+\end{itemize}
+\begin{enumerate}
+     \item
+     Représenter cette expérience par un arbre pondéré.
+     \item
+     Quelle est la probabilité de ne jamais obtenir le chiffre 6 au cours des 4 lancés.
+     \item
+     $X$ est la variable aléatoire qui comptabilise le nombre total de lancer avant l'arrêt.
+     \par
+     Quelles sont les différentes valeurs possibles pour $X$?
+     \par
+     Donner la loi de probabilité de $X$.
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+%##
+% type=arbre; width=45; wcell=3.5; hcell=1.5
+%--
+% >S:1/6
+% >\overline{S}:5/6
+% >>S:1/6
+% >>\overline{S}:5/6
+% >>>S:1/6
+% >>>\overline{S}:5/6
+% >>>>S:1/6
+% >>>>\overline{S}:5/6
+%--
+\begin{center}
+ \begin{extern}%style="width:45rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-2*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{0*\height}) {$S$};
+     \draw (r) -- (ra) node [poids] {$1/6$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$\overline{S}$};
+     \draw (r) -- (rb) node [poids] {$5/6$};
+    \node[noeud] (rba) at ({3*\width},{-1*\height}) {$S$};
+     \draw (rb) -- (rba) node [poids] {$1/6$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{S}$};
+     \draw (rb) -- (rbb) node [poids] {$5/6$};
+    \node[noeud] (rbba) at ({4*\width},{-2*\height}) {$S$};
+     \draw (rbb) -- (rbba) node [poids] {$1/6$};
+    \node[noeud] (rbbb) at ({4*\width},{-3.5*\height}) {$\overline{S}$};
+     \draw (rbb) -- (rbbb) node [poids] {$5/6$};
+    \node[noeud] (rbbba) at ({5*\width},{-3*\height}) {$S$};
+     \draw (rbbb) -- (rbbba) node [poids] {$1/6$};
+    \node[noeud] (rbbbb) at ({5*\width},{-4*\height}) {$\overline{S}$};
+     \draw (rbbb) -- (rbbbb) node [poids] {$5/6$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+$S$ est l'évènement : \textit{"on obtient le chiffre 6"} ;  
+\\
+$\overline{S}$ est l'évènement contraire.
+          \item
+          La probabilité de ne jamais obtenir de \textit{"6"} au cours de cette expérience est :
+          \par
+          $p=\frac{5}{6}\times \frac{5}{6}\times \frac{5}{6}\times \frac{5}{6}=\frac{625}{1296}$
+          \item
+          $X$ peut prendre les valeurs: 1, 2, 3, 4
+          \par
+          $X=1$ si on obtient un 6 lors du premier lancer.
+          \par
+          $p\left(X=1\right)=\frac{1}{6}$
+          \par
+          $X=2$ si on n'obtient pas de 6 lors du premier lancer et si l'on en obtient un lors du second lancer.
+          \par
+          $p\left(X=2\right)=\frac{5}{6}\times \frac{1}{6}=\frac{5}{36}$
+          \par
+          De même :
+          \par
+          $p\left(X=3\right)=\frac{5}{6}\times \frac{5}{6}\times \frac{1}{6}=\frac{25}{216}$
+          \par
+          La somme des probabilité de toutes les issues étant égale à 1 :
+          \par
+          $p\left(X=1\right)+p\left(X=2\right)+p\left(X=3\right)+p\left(X=4\right)=1$
+          \par
+          Par conséquent :
+          \par
+          $p\left(X=4\right)=1-\frac{1}{6}-\frac{5}{36}-\frac{25}{216}=\frac{125}{216}$
+          \par
+          On obtient donc le tableau suivant :
+          \begin{tabularx}{0.8\linewidth}{|*{3}{>{\centering \arraybackslash }X|}}%class="compact" width="600"
+               \hline
+               $x_{i}$ &  1  &  2  &  3  &  4
+               \\ \hline
+               $p\left(X=x_{i}\right)$ &  $\frac{1}{6}$  &   $\frac{5}{36}$  &   $\frac{25}{216}$  &   $\frac{125}{216}$
+               \\ \hline
+          \end{tabularx}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}
