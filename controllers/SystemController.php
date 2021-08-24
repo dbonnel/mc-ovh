@@ -43,7 +43,7 @@ namespace Controllers {
         public function dbBackup()
         {
             try {
-                $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';dbport=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
+                $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
                 $dump->start(dirname(__DIR__) . '/db-save/backup.sql.gz');
                 $this->view->set_var('content', 'Backup OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
             } catch (\Exception $e) {
@@ -77,7 +77,7 @@ namespace Controllers {
         {
             try {
                 $this->unzip(dirname(__DIR__) . '/db-save/backup.sql.gz');
-                $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';dbport=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
+                $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
                 $dump->restore(dirname(__DIR__) . '/db-save/backup.sql');
                 $this->view->set_var('content', 'Restore OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
                 unlink(dirname(__DIR__) . '/db-save/backup.sql');
