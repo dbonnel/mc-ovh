@@ -75,10 +75,10 @@ namespace App {
                 static::$ftp_pw = "f2T6ybtmdp";
                 static::$ftp_path = "mc-ovh";
             } else {
-                static::$db_host = "mathscoukjdidier.mysql.db";
-                static::$db_name = "mathscoukjdidier";
-                static::$db_username = "mathscoukjdidier";
-                static::$db_password = "m2Y6ybtmds";
+                static::$db_host = "bd837-001.privatesql.ovh.net";
+                static::$db_name = "mathscoursdb";
+                static::$db_username = "mathscoukjprive";
+                static::$db_password = "s2Q6ybtmdl";
                 static::$base_url = static::$prod_base_url;
             }
         }
