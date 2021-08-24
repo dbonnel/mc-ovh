@@ -32,6 +32,7 @@ namespace App {
         public static $is_backend;
         public static $db_host;
         public static $db_name;
+        public static $db_port;
         public static $db_username;
         public static $db_password;
         public static $base_url;
