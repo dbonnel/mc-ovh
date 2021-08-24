@@ -61,19 +61,7 @@
                     </a>
                 </div>
                 <ul class="header-mobile-meta">
-                    <li>
-                        <a href="/login-register">
 
-                            <svg role="img" width="21" height="22" viewBox="0 0 21 22">
-                                <title>User</title>
-                                <g stroke-width="2" stroke-miterlimit="10" fill="none">
-                                    <path d="M7.1 12.2c-3.3 1.3-5.6 4.3-5.6 8.3h17.9c0-4-2.3-7-5.6-8.3"></path>
-                                    <circle cx="10.5" cy="7.1" r="5.6"></circle>
-                                </g>
-                            </svg>
-
-                        </a>
-                    </li>
                     <li>
                         <a id="navbar-mobile-open" href="javascript:;">
 
