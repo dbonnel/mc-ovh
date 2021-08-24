@@ -75,7 +75,7 @@ namespace App {
                 static::$ftp_pw = "f2T6ybtmdp";
                 static::$ftp_path = "mc-ovh";
             } else {
-                static::$db_hos";
+                static::$db_host = "bd837-001.privatesql";
                 static::$db_name = "mathscoursdb";
                 static::$db_username = "mathscoukjprive";
                 static::$db_password = "s2Q6ybtmdl";
