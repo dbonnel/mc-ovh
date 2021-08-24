@@ -1,0 +1,165 @@
+\input{_header}
+\meta{url}{/cours/vecteurs-droites/}
+\meta{pid}{338}
+\meta{titre}{Vecteurs et droites}
+\meta{type}{cours}
+\begin{h2}1. Vecteurs et repère cartésien\end{h2}
+\cadre{bleu}{Définition (Vecteurs colinéaires)}{% id="d10"
+On dit que deux vecteurs non nuls $\vec{u}$ et $\vec{v}$ sont \textbf{colinéaires} s'il existe un réel $k$ tel que $\vec{v} = k\vec{u}$}
+\begin{center}
+     \begin{extern}%width="220" alt="Vecteurs colinéaires"
+          \psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dimen=middle,linewidth=1pt}
+          \begin{pspicture*}(-1,0.)(11,8)
+               \psline[linecolor=blue]{->}(3,3)(6,4)
+               \psline[linecolor=red]{->}(0,4)(9,7)
+               \psline[linecolor=mcvert]{->}(10,3)(4,1)
+               \rput[b](4.5,5.8){$\red 3\vec{u}$}
+               \rput[b](4.5,3.8){$\blue \vec{u}$}
+               \rput[b](7,2.3){$\color{mcvert}-2\vec{u}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Vecteurs colinéaires}
+\end{center}
+\bloc{cyan}{Remarques}{% id="r10"
+     \begin{itemize}
+          \item Par convention, on considère que le vecteur nul est colinéaire est tout vecteur du plan
+          \item Deux vecteurs colinéaires ont la même «direction»~;~ils ont le même sens si $k > 0$ et sont de sens contraire si $k < 0$.
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d20"
+     On dit que le vecteur non nul $\vec{u}$ est un \textbf{vecteur directeur} de la droite $d$ si et seulement si il existe deux points $A$ et $B$ de $d$ tels que $\vec{u}=\overrightarrow{AB}$.
+}
+\begin{center}
+     \begin{extern}%width="250" alt="vecteur directeur"
+          \psset{xunit=0.5cm,yunit=0.5cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.2pt}
+          \begin{pspicture*}(-4.,-1.84)(7.36,3.8)
+               \psplot[linewidth=0.8pt]{-4.}{7.36}{(-1.--2.*x)/5.}
+               \psline[linewidth=0.8pt,linecolor=red]{->}(-1.,1.)(4.,3.)
+               \psline[linewidth=0.8pt,linecolor=red]{->}(-2.,-1.)(3.,1.)
+               \rput[tl](0.9,3){$\red{\vec{u}}$}
+               \rput[tl](5.9,3){$d$}
+               \psdots[dotsize=2pt 0,dotstyle=*,linecolor=blue](-2.,-1.)
+               \rput[bl](-2.5,-0.8){\blue{$A$}}
+               \psdots[dotsize=2pt 0,dotstyle=*,linecolor=blue](3.,1.)
+               \rput[bl](2.6,1.3){\blue{$B$}}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Vecteur directeur}
+\end{center}
+\cadre{vert}{Propriété}{% id="p25"
+     Trois points distincts $A, B$ et $C$ sont alignés si et seulement si les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ sont colinéaires.
+}
+\cadre{vert}{Propriété}{% id="p30"
+     Deux droites sont parallèles si et seulement si elles ont des vecteurs directeurs colinéaires.
+}
+\cadre{rouge}{Théorème et définitions}{% id="t40"
+     Soient $O$ un point et $\vec{i}$ et $\vec{j}$ deux vecteurs \textbf{non colinéaires} du plan.
+     \par
+     Le triplet $\left(O ; \vec{i}, \vec{j}\right)$ s'appelle un \textbf{repère cartésien} du plan.
+     \begin{itemize}
+          \item Pour tout point $M$ du plan, il existe deux réels $x$ et $y$ tels que :
+          \begin{center}$\overrightarrow{OM}=x\vec{i}+y\vec{j}$\end{center}
+          \item Pour tout vecteur $\vec{u}$ du plan, il existe deux réels $x$ et $y$ tels que :
+          \begin{center}$\vec{u}=x\vec{i}+y\vec{j}$\end{center}
+     \end{itemize}
+     Le couple $\left(x ; y\right)$ s'appelle le couple de \textbf{coordonnées} du point $M$ (ou du vecteur $\vec{u}$) dans le repère $\left(O ; \vec{i}, \vec{j}\right)$
+}
+\begin{center}
+     \begin{extern}%width="330" alt="Coordonnées dans un repère cartésien"
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,linewidth=1pt}
+          \begin{pspicture*}(-2.5,0.)(6,5)
+               \psplot[linewidth=0.8pt]{-2.5}{6}{3.+2.*x}
+               \psplot[linewidth=0.8pt]{-2.5}{6}{1-0.*x}
+               \psline[linewidth=0.8pt,linecolor=red]{->}(-1.,1.)(5.,4.)
+               \psplot[linewidth=0.8pt,linecolor=lightgray]{-2.5}{6}{(-6.--2.*x)/1.}
+               \psplot[linewidth=0.8pt,linecolor=lightgray]{-2.5}{6}{(--12.-0.*x)/3.}
+               \psline[linewidth=0.8pt,linecolor=blue]{->}(-1.,1.)(1.,1.)
+               \psline[linewidth=0.8pt,linecolor=blue]{->}(-1.,1.)(-0.5,2)
+               \rput[tl](0,0.8){$\blue{\vec{i}}$}
+               \rput[tl](-1.3,1.8){$\blue{\vec{j}}$}
+               \rput[tl](3.5,0.8){$x$}
+               \rput[tl](0.3,4.4){$y$}
+               \rput[tl](1.8,3){$\red{\vec{u}}$}
+               \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](-1.,1.)
+               \rput[bl](-1.6,0.6){\blue{$O$}}
+               \psdots[dotsize=1pt 0,dotstyle=*,linecolor=blue](5.,4.)
+               \rput[bl](4.7,4.2){\blue{$M$}}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Coordonnées dans un repère cartésien}
+\end{center}
+\bloc{cyan}{Remarque}{% id="r40"
+     Dans ce chapitre, les repères utilisés ne seront pas nécessairement orthonormés.
+     \par
+     L'étude spécifique des repères orthonormés sera détaillée dans le chapitre «produit scalaire»
+}
+\cadre{vert}{Propriétés}{% id="p50"
+     On se place dans un repère $\left(O ; \vec{i}, \vec{j}\right)$.
+     \par
+     Soient deux points $A\left(x_{A} ; y_{A}\right)$ et $B\left(x_{B} ; y_{B}\right)$, alors :
+     \begin{itemize}
+          \item Le vecteur $\overrightarrow{AB}$ a pour coordonnées $\left(x_{B}-x_{A} ; y_{B}-y_{A}\right)$
+          \item Le milieu $M$ de $\left[AB\right]$ a pour coordonnées $M \left(\frac{x_{A}+x_{B}}{2} ; \frac{y_{A}+y_{B}}{2}\right)$
+     \end{itemize}
+}
+\cadre{rouge}{Théorème}{% id="t50"
+     Soient $\vec{u}$ et $\vec{v}$ deux vecteurs de coordonnées respectives $\left(x ; y\right)$ et $\left(x^{\prime} ; y^{\prime}\right)$ dans un repère $\left(O ; \vec{i}, \vec{j}\right)$. Les vecteurs $\vec{u}$ et $\vec{v}$ sont colinéaires si et seulement si leurs coordonnées sont proportionnelles, c'est à dire si et seulement si :
+     \begin{center}$xy^{\prime}-x^{\prime}y=0$\end{center}
+}
+\begin{h2}2. Équations de droites\end{h2}
+Dans cette partie, on se place dans un repère $\left(O ; \vec{i}, \vec{j}\right)$ (non nécessairement orthonormé).
+\cadre{rouge}{Théorème}{% id="t60"
+     Soit $d$ une droite passant par un point $A$ et de vecteur directeur $\vec{u}$.
+     \par
+     Un point $M$ appartient à la droite $d$ si et seulement si les vecteurs $\overrightarrow{AM}$ et $\vec{u}$ sont colinéaires.
+}
+\bloc{orange}{Exemple}{% id="e60"
+     Soient le point $A\left(0;1\right)$ et le vecteur $\vec{u}\left(1;-1\right)$. Le point $M\left(x ; y\right)$ appartient à la droite passant par $A$ et de vecteur directeur $\vec{u}$ si et seulement si $\overrightarrow{AM}$ et $\vec{u}$ sont colinéaires. Or les coordonnées de $\overrightarrow{AM}$ sont $\left(x ; y-1\right)$ donc :
+     \par
+     $M \in  d  \Leftrightarrow x\times \left(-1\right)-\left(y-1\right)\times 1=0 \Leftrightarrow -x-y+1=0$
+     \par
+     Cette dernière égalité s'appelle une équation cartésienne de la droite $d$.
+}
+\cadre{rouge}{Théorème}{% id="t70"
+     Toute droite du plan possède une \textbf{équation cartésienne} du type :
+     \[  ax+by+c=0 \]
+     où $a, b$ et $c$ sont trois réels.
+     \par
+     \textbf{Réciproquement, }l'ensemble des points $M\left(x ; y\right)$ tels que $ax+by+c=0$ où $a, b$ et $c$ sont trois réels avec $a\neq 0$ ou $b\neq 0$ est une droite.
+}
+\bloc{cyan}{Remarques}{% id="r70"
+     \begin{itemize}
+          \item Une droite possède une infinité d'équation cartésienne (il suffit de multiplier une équation par un facteur non nul pour obtenir une équation équivalente).
+          \item Si $b\neq 0$ l'équation peut s'écrire :
+          \par
+          $ax+by+c= 0 \Leftrightarrow by=-ax-c \Leftrightarrow y=-\frac{a}{b}x-\frac{c}{b}$
+          \par
+          qui est de la forme $y=mx+p$ (en posant $m=-\frac{a}{b}$ et $p=-\frac{c}{b}$).
+          \par
+          Cette forme est appelée \textbf{équation réduite} de la droite.
+          \par
+          Ce cas correspond à une droite qui n'est pas parallèle. à l'axe des ordonnées.
+          \item Si $b=0$ et $a\neq 0$ l'équation peut s'écrire :
+          \par
+          $ax+c= 0 \Leftrightarrow ax=-c \Leftrightarrow x=-\frac{c}{a}$
+          \par
+          qui est du type $x=k$ (en posant $k=-\frac{c}{a}$)
+          \par
+          Ce cas correspond à une droite qui est parallèle. à l'axe des ordonnées.
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{% id="p80"
+     Soit $d$ une droite d'équation $ax+by+c=0$.
+     \par
+     Le vecteur $\vec{u}$ de coordonnées $\left(-b ; a\right)$ est un vecteur directeur de la droite $d$.
+}
+\bloc{cyan}{Démonstration}{% id="r80"
+     Voir exercice~: \mcLien{/droites-equations-vecteur-directeur-140818}{«~Equation cartésienne - Vecteur directeur~»}.
+}
+\input{_footer}

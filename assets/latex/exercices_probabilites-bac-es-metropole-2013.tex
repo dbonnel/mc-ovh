@@ -1,0 +1,103 @@
+\input{_header}
+\meta{url}{/exercices/probabilites-bac-es-metropole-2013/}
+\meta{pid}{2113}
+\meta{titre}{Probabilités - Bac ES/L Métropole 2013}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 1   (6 points)\end{h2}
+\textbf{Commun à tous les candidats}
+\par
+Une usine de composants électriques dispose de deux unités de production, A et B.
+\par
+La production journalière de l'usine A est de $600$ pièces, celle de l'unité B est de $900$ pièces.
+\par
+On prélève au hasard un composant de la production d'une journée.
+\par
+La probabilité qu'un composant présente un défaut de soudure sachant qu'il est produit par l'unité A est égale à $0,014$.
+\par
+La probabilité qu'un composant présente un défaut de soudure sachant qu'il est produit par l'unité B est égale à $0,024$.
+\par
+On note :
+\begin{itemize}
+     \item
+     $D$ l'évènement : «le composant présente un défaut de soudure»
+     \item
+     $A$ l'évènement : «le composant est produit par l'unité A»
+     \item
+     $B$ l'évènement :«le composant est produit par l'unité B»
+\end{itemize}
+On note $p\left(D\right)$ la probabilité de l'évènement $D$ et $P_{A}\left(D\right)$ la probabilité de l'évènement $D$ sachant que l'évènement $A$ est réalisé.
+\begin{h3}Partie A : généralités\end{h3}
+\begin{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          D'après les données de l'énoncé, préciser $P_{A}\left(D\right)$  et $P_{B}\left(D\right)$.
+          \item
+     Calculer $p\left(A\right)$ et $p\left(B\right)$.\end{enumerate}
+     \item
+     Recopier et compléter l'arbre de probabilités ci-dessous :
+%##
+% type=arbre; width=25; wcell=3.5; hcell=1.5
+%--
+% >A:...
+% >>D:...
+% >>\overline{D}:...
+% >B:...
+% >>D:...
+% >>\overline{D}:...
+%--
+\begin{center}
+ \begin{extern}%style="width:25rem" alt="Arbre pondéré"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{3.5}
+       \def\height{1.5}
+       \tikzstyle{noeud}=[fill=white,circle,draw]
+       \tikzstyle{poids}=[fill=white,font=\footnotesize,midway]
+    \node[noeud] (r) at ({1*\width},{-1.5*\height}) {$$};
+    \node[noeud] (ra) at ({2*\width},{-0.5*\height}) {$A$};
+     \draw (r) -- (ra) node [poids] {$...$};
+    \node[noeud] (raa) at ({3*\width},{0*\height}) {$D$};
+     \draw (ra) -- (raa) node [poids] {$...$};
+    \node[noeud] (rab) at ({3*\width},{-1*\height}) {$\overline{D}$};
+     \draw (ra) -- (rab) node [poids] {$...$};
+    \node[noeud] (rb) at ({2*\width},{-2.5*\height}) {$B$};
+     \draw (r) -- (rb) node [poids] {$...$};
+    \node[noeud] (rba) at ({3*\width},{-2*\height}) {$D$};
+     \draw (rb) -- (rba) node [poids] {$...$};
+    \node[noeud] (rbb) at ({3*\width},{-3*\height}) {$\overline{D}$};
+     \draw (rb) -- (rbb) node [poids] {$...$};
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Calculer $p\left(A \cap  D\right)$ et $p\left(B \cap  D\right)$.
+          \item
+          En déduire $p\left(D\right)$.
+          \item
+          On prélève dans la-production totale un composant présentant un défaut de soudure. Quelle est la probabilité qu'il provienne de l'unité A ?
+     \end{enumerate}
+\end{enumerate}
+\begin{h3}Partie B : contrôle de qualité\end{h3}
+On suppose que les composants doivent présenter une résistance globale comprise entre $195$ et $205$ ohms.
+\par
+On admet que la variable aléatoire $R$ qui, à un composant prélevé au hasard dans la production, associe sa résistance, suit une loi normale de moyenne $\mu =200,5$ et d'écart-type $\sigma =3,5$.
+\par
+On prélève un composant dans la production.
+\textit{Les résultats seront arrondis à $0,0001$ près ; ils pourront être obtenus à l'aide de la calculatrice ou de la table fournie en annexe 1. }
+\begin{enumerate}
+     \item
+     Calculer la probabilité $p_{1}$ de l'évènement : « La résistance du composant est supérieure à $211$ ohms ».
+     \item
+     Calculer la probabilité $p_{2}$ de l'évènement : « La résistance du composant est comprise dans l'intervalle de tolérance indiqué dans l'énoncé ».
+     \item
+     On prélève au hasard dans la production trois composants. On suppose que les prélèvements sont indépendants l'un de l'autre et que la probabilité qu'un composant soit accepté est égale à $0,84$.
+     \par
+Déterminer la probabilité $p$ qu'exactement deux des trois composants prélevés soient acceptés.\end{enumerate}
+\input{_footer}

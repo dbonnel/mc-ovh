@@ -1,0 +1,106 @@
+\input{_header}
+\meta{url}{/cours/les-statistiques/}
+\meta{pid}{284}
+\meta{titre}{Les statistiques en Première}
+\meta{type}{cours}
+Dans tout ce chapitre, on considère une série statistique représentée par le tableau :
+\begin{center}
+     \begin{tabularx}{0.7\linewidth}{|*{6}{>{\centering \arraybackslash }X|}}%class="compact" width="500"
+          \hline
+          \textbf{Valeurs} & $x_{1}$ & $x_{2}$ & ... & $x_{p}$ & \textbf{Total}
+          \\ \hline
+          \textbf{Effectifs} & $n_{1}$ & $n_{2}$ & ... & $n_{p}$ & $N$
+          \\ \hline
+     \end{tabularx}
+\end{center}
+\begin{h2}1. Paramètres de position\end{h2}
+\cadre{bleu}{Définition}{% id="d10"
+     La \textbf{moyenne} d'une série statistique est le nombre :
+     \begin{center}
+          $\overline x=\frac{n_{1}x_{1}+n_{2}x_{2}+. . .+n_{p}x_{p}}{N}$\nosp$=\frac{1}{N}\sum_{k=1}^{p}n_{k}x_{k}$
+\end{center}}
+\bloc{orange}{Exemple}{% id="e10"
+     Les âges des élèves d'un lycée sont donnés par le tableau :
+     \begin{center}
+          \begin{tabularx}{0.95\linewidth}{|*{9}{>{\centering \arraybackslash }X|}}%class="compact" width="700"
+               \hline
+               \textbf{Ages} & 14 & 15 & 16 & 17 & 18 & 19 & 20 & \textbf{Total}
+               \\ \hline
+               \textbf{Effectifs} & 2 & 52 & 78 & 75 & 81 & 25 & 2 & 315
+               \\ \hline
+          \end{tabularx}
+     \end{center}
+     La moyenne des âges vaut:
+     \par
+$\overline x=\frac{1}{315}\left(2\times 14+52\times 15\right.$\nosp$\left.+78\times 16+75\times 17+81\times 18+25\times 19+2\times 20\right)$
+\par
+$\overline x=\frac{5304}{315} \approx  16,84 $ à $ 10^{-2} $ près.
+}
+\cadre{bleu}{Définition}{% id="d20"
+     La \textbf{médiane} d'une série statistique est la valeur du caractère qui partage la population en deux classes de même effectif.
+}
+\bloc{cyan}{Remarque}{% id="r20"
+     En pratique pour trouver la médiane d'une série statistique d'effectif global $N$ :
+     \begin{itemize}
+          \item On ordonne les valeurs du caractère dans l'ordre croissant.
+          \item Si $N$ est pair, la médiane sera la moyenne des valeurs du terme de rang $\frac{N}{2}$ et du terme de rang $\frac{N}{2}+1$.
+          \item Si $N$ est impair, la médiane sera la valeur du terme de rang $\frac{N+1}{2}$.
+          \item Lorsque l'effectif global est élevé, il est souvent utile de calculer les effectifs cumulés pour trouver cette valeur.
+     \end{itemize}
+}
+\bloc{orange}{Exemple}{% id="e20"
+     On lance 10 fois un dé à six faces. Les résultats obtenus sont : 1~;~5~;~6~;~6~;~3~;~2~;~3~;~1~;~4~;~1
+     \par
+     On trie ces valeurs par ordre croissant : 1~;~1~;~1~;~2~;~3~;~3~;~4~;~5~;~6~;~6
+     \par
+     N=10 étant pair on effectue la moyenne du cinquième et du sixième terme (3 et 3) et on obtient donc 3.
+}
+\bloc{cyan}{Remarque}{% id="r21"
+     Voir la fiche de \mcLien{/cours/seconde/statistiques-organisation-representation-donnees}{Statistiques en seconde} pour un exemple plus détaillé.
+}
+\begin{h2}2. Paramètres de dispersion\end{h2}
+\cadre{bleu}{Définitions}{% id="d30"
+     La \textbf{variance} d'une série statistique est le nombre :
+     \begin{center}$V=\dfrac{1}{N}$\nosp$\left(n_{1}\left(x_{1}-\overline x\right)^{2}+n_{2}\left(x_{2}-\overline x\right)^{2}+. . .\right.$\nosp$\left.+n_{p}\left(x_{p}-\overline x\right)^{2}\right)$\\
+$\phantom{V}=\frac{1}{N}\sum_{k=1}^{p}n_{k}\left(x_{k}-\overline x\right)^{2}$\end{center}
+L'\textbf{écart-type} est la racine carrée de la variance :
+\begin{center}$\sigma =\sqrt{V}$\end{center}
+}
+\cadre{vert}{Propriété}{% id="p40"
+     La \textbf{variance} d'une série statistique est égale à :
+     \begin{center}$V=\dfrac{n_{1}x_{1}^{2}+n_{2}x_{2}^{2}+. . .+n_{p}x_{p}^{2}}{N}-\overline x^{2}$\nosp$=\overline{x^{2}}-\overline x^{2}$\end{center}
+}
+\cadre{bleu}{Définitions}{% id="d50"
+     \begin{itemize}
+          \item Le \textbf{premier quartile} Q1 d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins un quart des données sont inférieures ou égales à Q1.
+          \item Le \textbf{troisième quartile} Q3  d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins trois quarts des données sont inférieures ou égales à Q3.
+          \item Le \textbf{premier décile} D1 d'une série statistique est la plus petite valeur  des termes de la série pour laquelle au moins 10\% des données sont inférieures ou égales à D1.
+          \item Le \textbf{neuvième décile} D9 d'une série statistique est la plus petite valeur des termes de la série pour laquelle au moins 90\% des données sont inférieures ou égales à D9
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d60"
+     L'\textbf{écart interquartile} est la différence entre le troisième et le premier quartile $Q_{3}-Q_{1}$.
+}
+\bloc{cyan}{Remarque}{% id="r60"
+     L'écart interquartile mesure la dispersion autour de la médiane.
+}
+\begin{h2}3. Diagramme en boîte\end{h2}
+\begin{center}
+     \img{diag-boite-1}{0.4}%width="400" alt="boite à moustaches"
+\end{center}
+On peut résumer un certain nombre d'informations relatives à une série statistique grâce à un \textbf{diagramme en boîte} (aussi appelé \textit{boîte à moustache}) qui fait apparaître (voir figure ci-dessus) :
+\begin{itemize}
+     \item les valeurs minimum et maximum
+     \item le premier et le troisième quartile (Q1 et Q3)
+     \item la médiane
+\end{itemize}
+\bloc{orange}{Exemple}{% id="e70"
+     \begin{center}
+          \img{diag-boite-2}{0.6}%width="480" alt="exemple diagramme boite à moustaches"
+     \end{center}
+     Le figure ci-dessus représente une série statistique de valeurs extrêmes 3 et 20, de premier quartile 6, de troisième quartile 14 et de médiane 9,5.
+}
+\bloc{cyan}{Remarque}{% id="r70"
+     Parfois, notamment lorsqu'on étudie des séries dont certaines valeurs peuvent être erronées, on remplace les valeurs minimum et maximum par les premier et neuvième déciles afin d'éliminer les valeurs aberrantes.
+}
+\input{_footer}

@@ -1,0 +1,33 @@
+\input{_header}
+\meta{url}{/exercices/forme-indeterminee-racine-carree/}
+\meta{pid}{1275}
+\meta{titre}{Forme indéterminée avec racine carrée}
+\meta{type}{exercices}
+%
+Calculer $\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}-1}{x-1}$
+\begin{corrige}
+     On obtient une forme indéterminée du type \og$\frac{0}{0}$\fg{}
+     \par
+     Voici deux méthodes pour lever l'indétermination :
+     \begin{h3}1ère méthode\end{h3}
+     On multiplie par l'expression conjuguée ( voir \mcLien{/methode/formes-indeterminees}{Méthode pour lever une forme indéterminée - Méthode 2} )
+     \par
+     $\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}-1}{x-1}=\lim\limits_{x\rightarrow 1}\frac{\left(\sqrt{x}-1\right)\left(\sqrt{x}+1\right)}{\left(x-1\right)\left(\sqrt{x}+1\right)}=\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}^{2}-1}{\left(x-1\right)\left(\sqrt{x}+1\right)}$
+     \par
+     Or pour $x\geqslant 0$, $\sqrt{x}^{2}=x$ donc :
+     \par
+     $\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}-1}{x-1}=\lim\limits_{x\rightarrow 1}\frac{x-1}{\left(x-1\right)\left(\sqrt{x}+1\right)}=\lim\limits_{x\rightarrow 1}\frac{1}{\sqrt{x}+1}=\frac{1}{2}$
+     \begin{h3}2ème méthode\end{h3}
+     On utilise le nombre dérivé ( voir \mcLien{/methode/calcul-limite-nombre-derive}{Calcul de limites et nombre dérivé} )
+     \par
+     Posons $f\left(x\right)=\sqrt{x}$ pour $x\geqslant 0$
+     \par
+     Alors :
+     \par
+     $\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}-1}{x-1}=\lim\limits_{x\rightarrow 1}\frac{f\left(x\right)-f\left(1\right)}{x-1}=f^{\prime}\left(1\right)$
+     \par
+     Et pour $x > 0$, $f^{\prime}\left(x\right)=\frac{1}{2\sqrt{x}}$ donc $f^{\prime}\left(1\right)=\frac{1}{2}$
+     \par
+     Finalement : $\lim\limits_{x\rightarrow 1}\frac{\sqrt{x}-1}{x-1}=\frac{1}{2}$
+\end{corrige}
+\input{_footer}

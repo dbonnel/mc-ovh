@@ -1,0 +1,146 @@
+\input{_header}
+\meta{url}{/exercices/roc-limites-exponentielle/}
+\meta{pid}{1331}
+\meta{titre}{[ROC] Limites de la fonction exponentielle}
+\meta{type}{exercices}
+%
+\textbf{Prérequis : }
+La fonction exponentielle (notée $\text{exp}$ ou $x\mapsto e^{x}$) est l'unique fonction dérivable sur $\mathbb{R}$ telle que :
+\par
+$\text{exp}^{\prime}=\text{exp}$
+\par
+$\text{exp}\left(0\right)=1$
+\par
+La fonction exponentielle est \textbf{strictement croissante} et \textbf{strictement positive} sur $\mathbb{R}$.
+\par
+Pour tous réels $a$ et $b$ :
+\begin{itemize}
+     \item
+     $e^{a+b}=e^{a}\times e^{b}$
+     \item
+     $e^{-a}=\frac{1}{e^{a}}$
+     \item
+     $e^{a-b}=\frac{e^{a}}{e^{b}}$
+\end{itemize}
+\textit{L'objectif de cet exercice est de démontrer les principaux résultats concernant les limites de la fonction exponentielle.}
+\begin{h3}Partie A\end{h3}
+Soit la fonction $ f $ définie sur $\mathbb{R}$ par $f\left(x\right)=e^{x}-x$.
+\begin{enumerate}
+     \item
+     Etudier le sens de variation de la fonction $f$.
+     \item
+     En déduire que pour tout réel $x$ : $e^{x} > x$.
+     \par
+     Montrer que $\lim\limits_{x\rightarrow +\infty }e^{x}=+\infty $
+     \item
+     A l'aide de la question précédente, montrer que $\lim\limits_{x\rightarrow -\infty }e^{x}=0$
+\end{enumerate}
+\begin{h3}Partie B\end{h3}
+Soit la fonction $g$ définie sur $\mathbb{R}$ par $g\left(x\right)=e^{x}-\frac{x^{2}}{2}$.
+\begin{enumerate}
+     \item
+     Etudier le sens de variation de la fonction $g$.
+     \par
+     Montrer que $g\left(x\right) > 0$ pour tout $x > 0$.
+     \item
+     En déduire la limite quand $x$ tend vers $+\infty $ de $\frac{e^{x}}{x}$.
+     \item
+     Montrer que $\lim\limits_{x\rightarrow -\infty }x e^{x}=0$.
+\end{enumerate}
+\begin{corrige}
+     \begin{h3}Partie A\end{h3}
+     \begin{enumerate}
+          \item
+          $f^{\prime}\left(x\right)=e^{x}-1$
+          \par
+          $f^{\prime}\left(x\right) > 0  \Leftrightarrow  e^{x}-1 > 0  \Leftrightarrow  e^{x} > 1  \Leftrightarrow  e^{x} > e^{0}  \Leftrightarrow   x > 0$ car le fonction exponentielle est strictement croissante.
+          \par
+          Par ailleurs $f\left(0\right)=e^{0}-0=1$.
+          \par
+          On en déduit le tableau de variation de $f$
+          <img src="/wp-content/uploads/mc-0345.png" alt="" class="aligncenter size-full  img-pc" />
+%##
+% type=table; width=35; l3=20
+%--
+% x|   -\infty   ~      ~   +\infty 
+% f'(x)|  ~       -               :0             +   :0   -     ~
+% f(x)|  +\infty    \          :0              /   :5   \   -\infty
+%--
+\begin{center}
+ \begin{extern}%style="width:35rem" alt="Exercice"
+    \resizebox{11cm}{!}{
+       \definecolor{dark}{gray}{0.1}
+       \definecolor{light}{gray}{0.8}
+       \tikzstyle{fleche}=[->,>=latex]
+       \begin{tikzpicture}[scale=.8, line width=.5pt, dark]
+       \def\width{.15}
+       \def\height{.10}
+       \draw (0, -10*\height) -- (46*\width, -10*\height);
+       \draw (10*\width, 0*\height) -- (10*\width, -10*\height);
+       \node (l0c0) at (5*\width,-5*\height) {$ x $};
+       \node (l0c1) at (14*\width,-5*\height) {$ -\infty $};
+       \node (l0c2) at (23*\width,-5*\height) {$ ~ $};
+       \node (l0c3) at (32*\width,-5*\height) {$ ~ $};
+       \node (l0c4) at (41*\width,-5*\height) {$ +\infty $};
+       \draw (0, -20*\height) -- (46*\width, -20*\height);
+       \draw (10*\width, -10*\height) -- (10*\width, -20*\height);
+       \node (l1c0) at (5*\width,-15*\height) {$ f'(x) $};
+       \node (l1c1) at (14*\width,-15*\height) {$ ~ $};
+       \node (l1c2) at (23*\width,-15*\height) {$ - $};
+       \draw[light] (32*\width, -10*\height) -- (32*\width, -20*\height);
+       \node (l1c3) at (32*\width,-15*\height) {$ 0 $};
+       \node (l1c4) at (41*\width,-15*\height) {$ + $};
+       \draw (0, -40*\height) -- (46*\width, -40*\height);
+       \draw (10*\width, -20*\height) -- (10*\width, -40*\height);
+       \node (l2c0) at (5*\width,-30*\height) {$ f(x) $};
+       \node (l2c1) at (14*\width,-25*\height) {$ +\infty $};
+       \node (l2c2) at (23*\width,-30*\height) {$ ~ $};
+       \draw[light] (32*\width, -20*\height) -- (32*\width, -40*\height);
+       \node (l2c3) at (32*\width,-35*\height) {$ 0 $};
+       \node (l2c4) at (41*\width,-30*\height) {$ ~ $};
+       \draw (0, 0) rectangle (46*\width, -40*\height);
+       \draw[fleche] (l2c1) -- (l2c3);
+       \draw[fleche] (l2c3) -- (l2c5);
+       \end{tikzpicture}
+      }
+   \end{extern}
+\end{center}
+%##
+\item
+          Le tableau précédent montre que pour tout $x \in  \mathbb{R}$, $f\left(x\right) > 0$, c'est à dire $e^{x} > x$.
+          \par
+          Or $\lim\limits_{x\rightarrow +\infty }x=+\infty $. Donc d'après le  \mcLien{/cours/terminale-s/limites-fonctions#t110}{théorème de comparaison} pour les limites infinies : $\lim\limits_{x\rightarrow +\infty }e^{x}=+\infty $
+          \item
+          On pose $X=-x$. Lorsque $x\rightarrow -\infty $, $X\rightarrow +\infty $ et :
+          \par
+          $\lim\limits_{x\rightarrow -\infty }e^{x}=\lim\limits_{X\rightarrow +\infty }e^{-X}=\lim\limits_{X\rightarrow +\infty }\frac{1}{e^{X}}$
+          \par
+          Or d'après la question précédente $\lim\limits_{X\rightarrow +\infty }e^{X}=+\infty $ donc par quotient :
+          \par
+          $\lim\limits_{X\rightarrow +\infty }\frac{1}{e^{X}}=0$
+          \par
+          En conclusion :  $\lim\limits_{x\rightarrow -\infty }e^{x}=0$
+     \end{enumerate}
+     \begin{h3}Partie B\end{h3}
+     \begin{enumerate}
+          \item
+          $g^{\prime}\left(x\right)=e^{x}-x=f\left(x\right) > 0$ pour tout $x \in  \mathbb{R}$.
+          \par
+          Donc la fonction $g$ est croissante sur $\mathbb{R}$
+          \par
+          On en déduit que pour $x > 0$, $g\left(x\right) > g\left(0\right)=1 > 0$
+          \item
+          Pour $x$ strictement positif $g\left(x\right) > 0$ donc $e^{x}-\frac{x^{2}}{2} > 0$ donc $e^{x} > \frac{x^{2}}{2}$
+          \par
+          Par conséquent : $\frac{e^{x}}{x} > \frac{x}{2}$ et comme $\lim\limits_{x\rightarrow +\infty }\frac{x}{2}=+\infty $, d'après le \mcLien{/cours/terminale-s/limites-fonctions#t110}{théorème de comparaison} pour les limites infinies : $\lim\limits_{x\rightarrow +\infty }\frac{e^{x}}{x}=+\infty $
+          \item
+          On pose, là encore, $X=-x$ :
+          \par
+          $\lim\limits_{x\rightarrow -\infty }x e^{x}=\lim\limits_{X\rightarrow +\infty }-X e^{-X}=\lim\limits_{X\rightarrow +\infty }-\frac{X}{e^{X}}$
+          \par
+          D'après la question précédente $\frac{e^{X}}{X}$ tend vers $+\infty $ lorsque $X\rightarrow +\infty $ donc $\frac{X}{e^{X}}$ (qui est son inverse) tend vers $0$.
+          \par
+          Donc  $\lim\limits_{x\rightarrow -\infty }x e^{x}=-0=0$.
+     \end{enumerate}
+}\end{corrige}
+\input{_footer}
