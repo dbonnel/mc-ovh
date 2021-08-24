@@ -62,7 +62,7 @@ namespace App {
             static::$is_backend = substr($_SERVER['REQUEST_URI'], 0, 7) == '/admin/';
             static::$file_list = 'temp/file_list.txt';
             static::$dev_base_url = "http://newmc.test";
-            static::$prod_base_url = "https://maths-cours.ovh";
+            static::$prod_base_url = "https://www.maths-cours.fr";
 
             if (static::$is_dev) {
                 static::$db_host = "localhost";
@@ -75,7 +75,7 @@ namespace App {
                 static::$ftp_pw = "f2T6ybtmdp";
                 static::$ftp_path = "mc-ovh";
             } else {
-                static::$db_host = "bd837-001.privatesql.ovh.net";
+                static::$db_host = "bd837-001.privatesql";
                 static::$db_name = "mathscoursdb";
                 static::$db_username = "mathscoukjprive";
                 static::$db_password = "s2Q6ybtmdl";
