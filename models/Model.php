@@ -14,7 +14,7 @@ namespace Models {
          *
          * @return void
          */
-        public function __construct(?string $table=null)
+        public function __construct(?string $table = null)
         {
             $this->table = $table;
         }
@@ -26,7 +26,7 @@ namespace Models {
          */
         private function open_connexion(): void
         {
-            $this->db = new \PDO('mysql:dbname=' . \App\Config::$db_name . ';host=' . \App\Config::$db_host, \App\Config::$db_username, \App\Config::$db_password);
+            $this->db = new \PDO('mysql:dbname=' . \App\Config::$db_name . ';host=' . \App\Config::$db_host . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
             $this->db->exec('SET NAMES utf8');
             $this->db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION); //Error Handling
         }
@@ -75,7 +75,7 @@ namespace Models {
         public function db_write(string $sql, array $data = [])
         {
             $this->open_connexion();
-           // print_r($sql . '   ');
+            // print_r($sql . '   ');
             $stmt = $this->sql_exec($sql, $data);
             $id = $this->db->lastInsertId();
             $this->close_connexion();
@@ -159,7 +159,7 @@ namespace Models {
             $stmt = $this->sql_exec($sql, $data);
             $result = $stmt->fetch(\PDO::FETCH_ASSOC);
             $this->close_connexion();
-            return $result ? $result : NULL;
+            return $result ? $result : null;
         }
 
         /**

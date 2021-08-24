@@ -69,6 +69,7 @@ namespace App {
                 static::$db_name = "newmc";
                 static::$db_username = "root";
                 static::$db_password = "";
+                static::$db_port = "3306";
                 static::$base_url = static::$dev_base_url;
                 static::$ftp_server = "ftp.cluster026.hosting.ovh.net";
                 static::$ftp_id = "mathscoukj";
@@ -79,6 +80,7 @@ namespace App {
                 static::$db_name = "mathscoursdb";
                 static::$db_username = "mathscoukjprive";
                 static::$db_password = "s2Q6ybtmdl";
+                static::$db_port = "35157";
                 static::$base_url = static::$prod_base_url;
             }
         }
