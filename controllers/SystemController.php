@@ -79,7 +79,7 @@ namespace Controllers {
             system("cmd /c C:\\batchs\\git.bat");
             $content = ob_get_contents();
             ob_end_clean();
-            $link = '<p><a href="'.\App\Config::$prod_base_url.'/autolog?key='.\Utils\Crypto::chiffreSym("1").'">Production'.'</a></p>';
+            $link = '<p><a href="'.\App\Config::$prod_base_url.'/autolog?key='.\Utils\Crypto::chiffreSym("1").'&location='.urlencode('/admin/pull-prod').'">Production'.'</a></p>';
             $this->view->set_var('content', "<pre>$content</pre>$link");
             $this->view->set_var('page_title', 'Push Github');
             $this->view->show('main');
