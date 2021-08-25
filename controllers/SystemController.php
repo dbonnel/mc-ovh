@@ -74,17 +74,18 @@ namespace Controllers {
         }
 
         public function pushGithub()
-        {          
-            $handle =  popen("cmd /c C:\\batchs\\git.bat", 'r');
-            $result = fread($handle, 2096);
-            pclose($handle);
+        {
+            ob_start();
+            system("cmd /c C:\\batchs\\git.bat");
+            $result = ob_get_contents();
+            ob_end_clean();
             $this->view->set_var('content', "<pre>$result</pre>");
-            $this->view->set_var('page_title', 'Push Github');
+            $this->view->set_var('page_title', 'Push Githu');
             $this->view->show('main');
         }
 
         public function pullProduction()
-        {          
+        {
             $result = shell_exec('/homez.138/mathscoukj/bin/pull-prod.sh');
             $this->view->set_var('content', "<pre>$result</pre>");
             $this->view->set_var('page_title', 'Pull production');
