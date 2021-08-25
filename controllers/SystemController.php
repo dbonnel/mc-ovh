@@ -84,7 +84,7 @@ namespace Controllers {
             // } catch (\Exception $e) {
             //     $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             // }
-            $output = shell_exec('ls -lart');
+            $output = shell_exec('pull-prod.sh');
             $this->view->set_var('content', "<pre>$output</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
