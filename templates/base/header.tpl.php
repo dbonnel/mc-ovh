@@ -35,7 +35,7 @@
                                     </svg>
                                 <?=__('text_login')?>
                         </a></li>
-                        <?php if (\App\Config::$is_dev): ?>
+                        <?php if (__('dev')): ?>
                         <li><a id="fullscreen" class="transparent-small-btn">
                         <span style="font-size: 1.4em; padding-bottom: 3px">&harr;</span>
                         </a></li>

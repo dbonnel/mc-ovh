@@ -80,7 +80,7 @@ namespace Controllers {
             $content = ob_get_contents();
             ob_end_clean();
             $this->view->set_var('content', "<pre>$content</pre>");
-            $this->view->set_var('page_title', 'Push Githu');
+            $this->view->set_var('page_title', 'Push Github');
             $this->view->show('main');
         }
 
