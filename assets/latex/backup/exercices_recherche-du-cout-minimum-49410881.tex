@@ -1,0 +1,131 @@
+\input{_header}
+\meta{url}{/exercices/recherche-du-cout-minimum/}
+\meta{pid}{766}
+\meta{titre}{Recherche du coût minimum}
+\meta{type}{exercices}
+%
+Le coût total, en euros, pour la fabrication d'un produit est donné par :
+\par
+$C\left(x\right)=0,01x^{2}+0,4x+9$ avec $x \in \left[0;100\right]$
+\par
+où $x$ est la quantité produite.
+\par
+On se limite a une production de moins de 100 produits.
+\par
+Le prix de vente unitaire est de 1,15 euros
+\begin{enumerate}
+     \item
+     Montrer que la fonction coût est croissante sur [0;100].
+     \par
+     Pour quelle quantité le coût de production dépasse les 86 euros ?
+     \item
+     Exprimer en fonction de la quantité $x$,
+     \begin{enumerate}[label=\alph*.]
+          \item
+          la fonction recette $R\left(x\right)$
+          \item
+          la fonction bénéfice $B\left(x\right)$
+     \end{enumerate}
+     \item
+     Etudier le sens de la variation de la fonction $B$. En déduire la ou les quantités à produire pour réaliser un bénéfice maximal.
+     \item
+     Etudier le signe de $B\left(x\right)$. Pour quelles quantités produites est-on bénéficiaire?
+     \item
+     Le but de cette question est de montrer que le coût moyen minimum est atteint pour une production de 30 objets.
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Calculer $C\left(30\right)$, en déduire le coût moyen de production pour cette quantité.
+          \item
+          Etudier le signe de $C\left(x\right) -x$. En déduire que $C\left(x\right) \geqslant x$ et résoudre l'équation: $C\left(x\right)=x$
+          \item
+          Quel est le coût moyen de production minimum?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Le coefficient de $x^{2}$ dans le polynôme $C$ est $a=0,01 > 0$. $C$ admet donc un minimum pour
+          \par
+          $x_{0}=-\frac{b}{2a}=-\frac{0,4}{2\times 0,01}=-20$.
+          \par
+          La fonction $x \mapsto 0,01x^{2}+0,4x+9$ est donc strictement croissante sur $\left[-20 ; +\infty \right[$ et par conséquent elle est \textbf{strictement croissante sur $\left[0 ; 100\right]$.
+          }
+          Le coût de production dépasse les 86 euros lorsque :
+          \par
+          $0,01x^{2}+0,4x+9 > 86$
+          \par
+          $0,01x^{2}+0,4x-77 > 0$
+          \par
+          $\Delta = b^{2}-4ac = 0,4^{2}-4\times 0,01\times \left(-77\right) = 3,24$
+          \par
+          $\sqrt{\Delta }=1,8$
+          \par
+          $x_{1} = \frac{-b+\sqrt{\Delta }}{2a} = \frac{-0,4+1,8}{2\times 0,01} = 70$
+          \par
+          $x_{2} = \frac{-b-\sqrt{\Delta }}{2a} = \frac{-0,4-1,8}{2\times 0,01} = -110$
+          \par
+          Donc $0,01x^{2}+0,4x-77 > 0$ si et seulement si $x > 70$ (ou $x < -110$ mais ici cette condition n'a pas de sens car $x$ est une quantité positive)
+          \textbf{Le coût de production dépasse les 86 euros lorsque la quantité produite est supérieure à 70.}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               La recette est de 1,15 euros par produit vendu. Donc :
+               \par
+               $R\left(x\right)=1,15x$
+               \item
+               Le bénéfice est la différence entre la recette et le coût de fabrication :
+               \par
+               $B\left(x\right)=1,15x-\left(0,01x^{2}+0,4x+9\right)=-0,01x^{2}+0,75x-9$
+          \end{enumerate}
+          \item
+          La fonction $B$ est une fonction polynôme du second degré dont le coefficient de $x^{2}$ est strictement négatif. $B$ admet donc un maximum pour $x=\frac{-b}{2a}=37,5$ . $B$ est croissante pour $x < 37,5$ et décroissante pour $x > 37,5$
+          \textbf{Le bénéfice est maximum pour une quantité produite égale à 37 ou 38 unités.}
+          \item
+          Recherchons les racines de $B$ :
+          \par
+          Le discriminant vaut :
+          \par
+          $\Delta =b^{2}-4ac = 0,75^{2}-4*\left(-0,01\right)*\left(-9\right) = 0,2025$
+          \par
+          $\sqrt{\Delta } = \sqrt{0,2025} = 0,45$
+          \par
+          Les racines sont :
+          \par
+          $x_{1} = \frac{-b+\sqrt{\Delta }}{2a} = \frac{-0,75+0,45}{2*-0,01} = 15$
+          \par
+          $x_{2} = \frac{-b-\sqrt{\Delta }}{2a} = \frac{-0,75-0,45}{2*-0,01} = 60$
+          \par
+          Le coefficient de $x^{2}$ étant strictement négatif, $B$ est positif (\textit{du signe opposé de a)} entre les racines, c'est à dire qu'on est bénéficiaire \textbf{lorsque la quantité produite est comprise entre 15 et 60 unités}.
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Le coût moyen est défini par :
+               \par
+               $C_{m}=\frac{C\left(x\right)}{x}$ pour \textbf{$x  > 0$}
+               $C\left(30\right)=0,01\times 30^{2}+0,4\times 30+9= 30$
+               \par
+               donc :
+               \par
+               $C_{m}\left(30\right)=\frac{30}{30}=1$
+               \item
+               $C\left(x\right)-x=0,01x^{2}+0,4x+9-x=0,01x^{2}-0,6x+9$
+               \par
+               On utilse l'identité remarquable $a^{2}-2ab+b^{2}=\left(a-b\right)^{2}$ :
+               \par
+               $C\left(x\right)-x=\left(0,1x-3\right)^{2}$
+               \par
+               $C\left(x\right)-x$ est un carré il est donc positif ou nul pour tout réel $x$.
+               \par
+               $C\left(x\right)-x\geqslant 0$ entraine $C\left(x\right)\geqslant x$ pour tout $x$.
+               \par
+               $C\left(x\right)-x=0 \Leftrightarrow \left(0,1x-3\right)^{2}=0 \Leftrightarrow 0,1x-3=0 \Leftrightarrow x=30 $
+               \item
+               En divisant chaque membre de l'inégalité $C\left(x\right)\geqslant x$ par $x$ (qui est strictement positif) on obtient :
+               \par
+               $\frac{C\left(x\right)}{x}\geqslant 1$
+               \par
+               Le coût moyen de production est donc supérieur ou égal à 1 euro, quelque soit $x$. D'après la question \textbf{a.}, ce coût est égal à 1 euro pour $x=30$. On obtient donc \textbf{un coût minimum de 1 euro} pour une production de 30 unités.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}
