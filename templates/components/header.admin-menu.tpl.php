@@ -22,6 +22,7 @@
             <ul class="sub-menu">
                 <li><a href="/admin/db-backup">Sauvegarde base</a></li>
                 <li><a href="/admin/db-restore">Restauration base</a></li>
+                <li><a href="/admin/pull-prod">Pull production</a></li>
                 <li><a href="/admin/batch-post">Batch</a></li>
             </ul>
         </li>

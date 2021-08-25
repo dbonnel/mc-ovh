@@ -110,6 +110,7 @@ if (\App\Session::is_administrator()) {
             '/admin/db-backup' => 'dbBackup',
             '/admin/db-restore' => 'dbRestore',
             '/admin/db-transfert' => 'ftpTransfertDB',
+            '/admin/pull-prod' => 'pullProduction',
             '/admin/ftp-transfert' => 'ftpTransfert',
             //  '/admin/ftp-upload' => 'ftpUpload',
             //  '/admin/ftp-download' => 'ftpDownload',

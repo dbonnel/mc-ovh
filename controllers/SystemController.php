@@ -73,6 +73,23 @@ namespace Controllers {
             $this->view->show('main');
         }
 
+        public function pullProduction()
+        {
+            // try {
+            //     $this->unzip(dirname(__DIR__) . '/db-save/backup.sql.gz');
+            //     $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
+            //     $dump->restore(dirname(__DIR__) . '/db-save/backup.sql');
+            //     $this->view->set_var('content', 'Restore OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
+            //     unlink(dirname(__DIR__) . '/db-save/backup.sql');
+            // } catch (\Exception $e) {
+            //     $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
+            // }
+            $output = shell_exec('ls -lart');
+            $this->view->set_var('content', "<pre>$output</pre>");
+            $this->view->set_var('page_title', 'Pull production');
+            $this->view->show('main');
+        }
+
         public function dbRestore()
         {
             try {
