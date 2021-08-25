@@ -76,7 +76,7 @@ namespace Controllers {
         public function pullProduction()
         {
             $output = shell_exec("bash pull-prod.sh");
-            $this->view->set_var('content', "<pre>hello2</pre>");
+            $this->view->set_var('content', "<pre>hello3</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
         }
