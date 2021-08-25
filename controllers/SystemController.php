@@ -75,7 +75,7 @@ namespace Controllers {
 
         public function pushGithub()
         {          
-            $result = system("cmd /c C:\\batchs\\git.bat");
+            $result = popen("cmd /c C:\\batchs\\git.bat");
             $this->view->set_var('content', "<pre>$result</pre>");
             $this->view->set_var('page_title', 'Push Github');
             $this->view->show('main');
