@@ -75,16 +75,7 @@ namespace Controllers {
 
         public function pullProduction()
         {
-            // try {
-            //     $this->unzip(dirname(__DIR__) . '/db-save/backup.sql.gz');
-            //     $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
-            //     $dump->restore(dirname(__DIR__) . '/db-save/backup.sql');
-            //     $this->view->set_var('content', 'Restore OK : ' . dirname(__DIR__) . '/db-save/backup.sql.gz');
-            //     unlink(dirname(__DIR__) . '/db-save/backup.sql');
-            // } catch (\Exception $e) {
-            //     $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
-            // }
-            $output = shell_exec("bash bin/pull-prod.sh");
+            $output = shell_exec("bash pull-prod.sh");
             $this->view->set_var('content', "<pre>hello2</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
