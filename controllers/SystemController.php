@@ -207,7 +207,8 @@ namespace Controllers {
 
         public function autolog()
         {
-            setcookie('pp-id', $_GET['key'], time() + 3600 * 24 * 365, '/', null, false, true);
+            setcookie('pp-id', $_GET['key'], time() + 3600 * 24 * 365, '/', '', false, true);
+
             header('Location: /admin/posts/list');
         }
     }
