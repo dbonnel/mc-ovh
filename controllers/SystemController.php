@@ -87,7 +87,7 @@ namespace Controllers {
 
         public function pullProduction()
         {
-            $result = shell_exec(\App\Config::$prog_base_dir . '/bin/pull-prod.sh');
+            $result = shell_exec(\App\Config::$prod_base_dir . '/bin/pull-prod.sh');
             $this->view->set_var('content', "<pre>$result</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
