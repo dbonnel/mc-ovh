@@ -76,10 +76,10 @@ namespace Controllers {
         public function pushGithub()
         {
             ob_start();
-            $result = system("cmd /c C:\\batchs\\git.bat");
+            system("cmd /c C:\\batchs\\git.bat");
             $content = ob_get_contents();
             ob_end_clean();
-            $this->view->set_var('content', "<pre>$content.$result</pre>");
+            $this->view->set_var('content', "<pre>$content</pre>");
             $this->view->set_var('page_title', 'Push Githu');
             $this->view->show('main');
         }
