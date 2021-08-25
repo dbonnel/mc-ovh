@@ -84,8 +84,8 @@ namespace Controllers {
             // } catch (\Exception $e) {
             //     $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             // }
-            $output = shell_exec("pull-prod 2>&1 | tee -a /tmp/mylog 2>/dev/null >/dev/null &");
-            $this->view->set_var('content', "<pre>Coucou</pre>");
+            $output = shell_exec("bash bin/pull-prod.sh");
+            $this->view->set_var('content', "<pre>hello2</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
         }
