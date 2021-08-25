@@ -76,7 +76,7 @@ namespace Controllers {
         public function pullProduction()
         {
            
-            $last_line = system('bash pull-prod.sh', $retval);
+            $last_line = system('/bin/bash pull-prod.sh', $retval);
             $this->view->set_var('content', "<pre> $retval</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
