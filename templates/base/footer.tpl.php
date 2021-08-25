@@ -36,15 +36,6 @@ let loadModule = ['<?=implode("', '", __('jsloadmodule'));?>']
  <?php if (is_array(__('jsfile'))): ?>
  <?php foreach (__('jsfile') as $jsfile): ?>
  <script src="/assets/js/<?=$jsfile?>"></script>
- <!-- Cookie Consent by https://www.CookieConsent.com -->
-<script type="text/javascript" src="//www.cookieconsent.com/releases/4.0.0/cookie-consent.js" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"fr","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"website_name":"Maths-cours.fr","website_privacy_policy_url":"https://www.maths-cours.fr/page/cookies"});
-});
-</script>
-
-<noscript>ePrivacy and GPDR Cookie Consent by <a href="https://www.CookieConsent.com/" rel="nofollow noopener">Cookie Consent</a></noscript>
-<!-- End Cookie Consent by https://www.CookieConsent.com -->
+ 
  <?php endforeach;?>
  <?php endif?>
