@@ -21,7 +21,7 @@
 
             <ul class="sub-menu">
                 <?php if (__('dev')): ?>
-                    <li><a href="/admin/db-backup">Sauvegarde base</a></li>               
+                    <li><a href="/admin/db-backup">Sauvegarde base</a></li>                
                     <li><a href="/admin/push-git">Push Github</a></li>
                     <li><a href="/admin/batch-post">Batch</a></li>
                 <?php else: ?>

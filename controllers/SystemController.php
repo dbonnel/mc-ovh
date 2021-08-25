@@ -49,29 +49,26 @@ namespace Controllers {
             } catch (\Exception $e) {
                 $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
             }
-            //     try {
-            //         $zip = new \ZipArchive();
 
-            //         $zipFile=dirname(__DIR__) . '/db-save/backup.zip';
-
-            //         if(file_exists($zipFile)) {
-            //                 unlink ($zipFile);
-            //         }
-            //         if ($zip->open($zipFile, \ZIPARCHIVE::CREATE) != TRUE) {
-            //                 throw new \Exception("Could not open archive");
-            //         }
-            //    //     $zip->open($zipFile, \ZipArchive::OVERWRITE);
-            //             $zip->addFile("$zipFile", 'backup.sql');
-
-            //         // close and save archive
-
-            //         $zip->close();
-            //     } catch (\Exception $e) {
-            //         $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
-            //     }
             $this->view->set_var('page_title', 'Backup');
             $this->view->show('main');
         }
+
+        // public function dbBackupDiff()
+        // {
+        //     try {
+        //         $save_dir = dirname(__DIR__) . '/db-save';
+        //          $dump = new \Utils\Mysqldump('mysql:host=' . \App\Config::$db_host . ';dbname=' . \App\Config::$db_name . ';port=' . \App\Config::$db_port, \App\Config::$db_username, \App\Config::$db_password);
+        //         $dump->start($save_dir . '/db.sql.gz');
+        //         $this->unzip($save_dir.'/backup.sql.gz');
+        //         $this->unzip($save_dir.'/db.sql.gz');                
+        //         $diff = xdiff_file_diff($save_dir.'/backup.sql', $save_dir . '/db.sql', $save_dir.'/diff.txt');
+        //        // unlink($backup_filename);
+        //        // unlink($save_dir . '/db.sql');
+        //     } catch (\Exception $e) {
+        //         $this->view->set_var('content', 'mysqldump-php error: ' . $e->getMessage());
+        //     }
+        // }
 
         public function pushGithub()
         {

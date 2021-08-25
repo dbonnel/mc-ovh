@@ -27,7 +27,7 @@ class EditController {
     window.setInterval(() => {
       this.model.doBackup()
     },
-      30000);
+      300000);
   }
 
   inputChanged = (input) => {

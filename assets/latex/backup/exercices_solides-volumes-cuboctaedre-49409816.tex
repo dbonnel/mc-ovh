@@ -1,0 +1,74 @@
+\input{_header}
+\meta{url}{/exercices/solides-volumes-cuboctaedre/}
+\meta{pid}{3563}
+\meta{titre}{Cuboctaèdre}
+\meta{type}{exercices}
+%
+On considère un cube $ABCDEFGH$ de $10$ cm d'arête. Soient $I$ le milieu de $[AB]$, $J$ celui de $[BC]$ et $K$ celui de $[BF]$.
+
+\begin{center}
+\imgsvg{cuboctaedre}{0.3}% alt="Cuboctaèdre" style="width:30rem"
+\end{center}
+\begin{enumerate}
+     \item
+     \begin{enumerate}
+          \item
+          Calculer $IJ$.
+          \item
+          Démontrer que $IJK$ est un triangle équilatéral, puis calculer son aire.
+          \item
+          Calculer le volume de la pyramide $BIJK$ ; en déduire, en centimètres, la hauteur issue de $B$ de cette pyramide.
+     \end{enumerate}
+     \item
+     A partir des 8 sommets du cube, on peut former 8 pyramides, comme cela a été fait à partir du sommet $B$. Après avoir découpé ces 8 pyramides, on obtient un nouveau solide, appelé  \textbf{cuboctaèdre}.
+     \begin{enumerate}
+          \item
+          Soit $M$ le milieu de $[AE]$ et $N$ celui de $[EF]$. Quelle est la nature du quadrilatère $MNKI$?
+          \par
+          Calculer l'aire de ce quadrilatère.
+          \item
+          Donner une description du cuboctaèdre : nombre et nature des faces, nombre de sommets et d'arêtes.
+          \par
+          Si S, A et F sont respectivement le nombre de sommets, d'arêtes et de faces d'un polyèdre, la formule d'Euler affirme que : S+F=A+2
+          \par
+          La formule d'Euler est-elle vérifiée?
+          \item
+          Dessiner un patron du cuboctaèdre.
+          \item
+          A partir du volume du cube, calculer le volume du cuboctaèdre.
+          \par
+          Calculer le rapport entre ces 2 volumes ?
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{h2}<a>Indications</a>\end{h2}
+     \begin{enumerate}
+          \item
+          \begin{enumerate}
+               \item
+               Employez le théorème de Pythagore dans le triangle $BIJ$
+               \item
+               Calculez la longueur de chacun des côtés. Pour l'aire, calculez d'abord la hauteur du triangle équilatéral (si vous ne connaissez pas la formule, utilisez la trigonométrie).
+               \item
+               volume=aire de la base x hauteur / 3
+               \par
+               Utilisez cette formule de 2 manières différentes en changeant de base pour trouver une équation donnant la hauteur de la pyramide.
+          \end{enumerate}
+          \item
+          \begin{enumerate}
+               \item
+               N'oubliez pas de montrer qu'il y a un angle droit!
+               \item
+               S=12; F=14; A=24. La formule d'Euler est bien vérifiée.
+               \item
+               Patron :
+               <img src="/wp-content/uploads/cuboctaedre2.svg" alt="" class="aligncenter" style="width:500px;"/>
+\begin{center}
+\imgsvg{cuboctaedre}{0.3}% alt="Cuboctaèdre" style="width:30rem"
+\end{center}
+               \item
+               Il suffit de retrancher le volume de chacun des "coins" au volume du cube.
+          \end{enumerate}
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

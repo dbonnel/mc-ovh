@@ -1,0 +1,376 @@
+\input{_header}
+\meta{url}{/cours/geometrie-espace/}
+\meta{pid}{219}
+\meta{titre}{Géométrie dans l'espace}
+\meta{type}{cours}
+\begin{h2}1. Positions relatives de droites et de plans\end{h2}
+\cadre{bleu}{Positions relatives de deux plans}{%
+     Deux plans distincts de l'espace peuvent être :
+     \begin{itemize}
+          \item \textbf{strictement parallèles} : dans ce cas, ils n'ont aucun point commun
+          \item \textbf{sécants} : dans ce cas, leur intersection est une droite
+     \end{itemize}
+}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt="Plans parallèles"
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.,2.8)(12,6.5)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \pspolygon[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(9.,3.)(11.,4.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \psline[linewidth=0.8pt,linecolor=blue](4.,4.)(2.,3.)
+                    \psline[linewidth=0.8pt,linecolor=blue](2.,3.)(9.,3.)
+                    \psline[linewidth=0.8pt,linecolor=blue](9.,3.)(11.,4.)
+                    \psline[linewidth=0.8pt,linecolor=blue](11.,4.)(4.,4.)
+                    \rput[tl](3,5.4){$\qqwwtt{\mathscr{P}'}$}
+                    \rput[tl](3,3.4){$\blue{\mathscr{P}}$}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Plans strictement parallèles}
+     \end{center}
+\end{vbloc}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(0.,2.5)(12,8.5)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \pspolygon[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(8.,7.)(10.,8.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=blue](4.,4.)(2.,3.)
+               \psline[linewidth=0.8pt,linecolor=blue](2.,3.)(8.,7.)
+               \psline[linewidth=0.8pt,linecolor=blue](8.,7.)(10.,8.)
+               \psline[linewidth=0.8pt,linecolor=blue](10.,8.)(4.,4.)
+               \rput[tl](3.,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](2.6,3.2){$\blue{\mathscr{P}\ '}$}
+               \psline[linewidth=0.8pt,linecolor=red](5.,5.)(7.,6.)
+               \rput[tl](7.,5.9){$\red{\mathscr{D}}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Plans sécants}
+\end{center}
+\cadre{bleu}{Positions relatives de d'une droite et d'un plan}{%
+     Soient $\mathscr D$ une droite et $\mathscr P$ un plan de l'espace.
+     \par
+     La droite $\mathscr D$ peut être :
+     \begin{itemize}
+          \item \textbf{strictement parallèle} au plan  $\mathscr P$ : dans ce cas, $\mathscr D$  et $\mathscr P$ n'ont aucun point commun
+          \item \textbf{sécante} avec le plan  $\mathscr P$ : dans ce cas, $\mathscr D$  et $\mathscr P$ ont un unique point commun
+          \item \textbf{contenue} dans le plan  $\mathscr P$
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.5,5)(11.5,8.3)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \rput[tl](3.0,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](2.25,7.5){$\red{\mathscr{D}}$}
+               \psplot[linewidth=0.8pt,linecolor=red]{1.75}{11.2}{(--56.-0.*x)/8.}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droite strictement parallèle à un plan}
+\end{center}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt=""
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+               \newrgbcolor{ttttff}{0.2 0.2 1.}
+               \newrgbcolor{ffewdf}{1. 0.9 0.9}
+               \newrgbcolor{qqqqcc}{0. 0. 0.8}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.5,3.3)(11.5,8.5)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \rput[tl](3,5.4){$\qqwwtt{\mathscr{P}}$}
+                    \rput[tl](7.5,8){$\red{\mathscr{D}}$}
+                    \psplot[linewidth=0.8pt,linecolor=red]{1.5}{11.2}{(-7.2--2.17*x)/1.1}
+                    \psline[linewidth=0.8pt,linecolor=ffewdf](6.15,5.555)(5.87,5.)
+                    \rput[tl](5.9,5.9){$\qqqqcc{I}$}
+                    \begin{scriptsize}
+                         \psdots[dotsize=1pt 0,dotstyle=*,linecolor=ttttff](6.15,5.55)
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Droite sécante à un plan}
+     \end{center}
+\end{vbloc}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{qqwwtt}{0. 0.4 0.2}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(2.,5)(12.,7.)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \rput[tl](3.,5.4){$\qqwwtt{\mathscr{P}}$}
+               \rput[tl](6.405,5.4){$\red{\mathscr{D}}$}
+               \psline[linewidth=0.8pt,linecolor=red](4.77,5.)(8.4,6.)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droite contenue (incluse) dans un plan}
+\end{center}
+\cadre{bleu}{Positions relatives de deux droites}{%
+     Soient $\mathscr D$ et $\mathscr D^{\prime}$ deux droites distinctes de l'espace.
+     \par
+     Ces droites peuvent être :
+     \begin{itemize}
+          \item \textbf{strictement parallèles} : dans ce cas, elles n'ont aucun point commun
+          \item \textbf{sécantes} : dans ce cas, leur intersection est un point
+          \item \textbf{non coplanaires} : dans ce cas, elles n'ont aucun point commun
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.3,4.9)(12.,6.6)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=red](3.8,5.)(7.5,6.)
+               \rput[tl](4.8,5.7){$\red{\mathscr{D}}$}
+               \rput[tl](8.0,5.5){$\wwqqzz{\mathscr{D}\ '}$}
+               \psline[linewidth=0.8pt,linecolor=wwqqzz](6.0,5.)(9.75,6.)
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droites strictement parallèles}
+\end{center}
+\begin{vbloc}
+     \begin{center}
+          \begin{extern}%width="400" alt=""
+               \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+               \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+               \newrgbcolor{qqttcc}{0. 0.2 0.8}
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(1.3,4.7)(12.,6.6)
+                    \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+                    \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+                    \psline[linewidth=0.8pt,linecolor=red](3.80,5.)(7.527,6.)
+                    \rput[tl](4.846,5.7){$\red{\mathscr{D}}$}
+                    \rput[tl](6.66,5.47){$\wwqqzz{\mathscr{D}\ '}$}
+                    \psline[linewidth=0.8pt,linecolor=wwqqzz](5.36,6.)(6.758,5.)
+                    \rput[tl](5.96,5.9){$\qqttcc{I}$}
+                    \begin{scriptsize}
+                    \end{scriptsize}
+               \end{pspicture*}
+          \end{extern}
+     \end{center}
+     \begin{center}
+          \textit{Droites sécantes}
+     \end{center}
+\end{vbloc}
+\begin{center}
+     \begin{extern}%width="400" alt=""
+          \newrgbcolor{ttzzqq}{0.2 0.6 0.}
+          \newrgbcolor{xfqqff}{0.5 0. 1.}
+          \newrgbcolor{wwqqzz}{0.4 0. 0.6}
+          \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.6pt,arrowsize=3pt 2,arrowinset=0.25}
+          \begin{pspicture*}(1.5,3)(12.,6.5)
+               \pspolygon[linewidth=0.8pt,linecolor=ttzzqq,fillcolor=ttzzqq,fillstyle=solid,opacity=0.1](4.,6.)(2.,5.)(9.,5.)(11.,6.)
+               \pspolygon[linewidth=0.8pt,linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](4.,4.)(2.,3.)(9.,3.)(11.,4.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](4.,6.)(2.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](2.,5.)(9.,5.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](9.,5.)(11.,6.)
+               \psline[linewidth=0.8pt,linecolor=ttzzqq](11.,6.)(4.,6.)
+               \psline[linewidth=0.8pt,linecolor=blue](4.,4.)(2.,3.)
+               \psline[linewidth=0.8pt,linecolor=blue](2.,3.)(9.,3.)
+               \psline[linewidth=0.8pt,linecolor=blue](9.,3.)(11.,4.)
+               \psline[linewidth=0.8pt,linecolor=blue](11.,4.)(4.,4.)
+               \psline[linewidth=0.8pt,linecolor=red](3.8,5.)(7.5,6.)
+               \psline[linewidth=0.8pt,linecolor=xfqqff](6.0,4.)(7.2,3.)
+               \rput[tl](5,5.8){$\red{\mathscr{D}}$}
+               \rput[tl](6.9,3.8){$\wwqqzz{\mathscr{D}\ '}$}
+          \end{pspicture*}
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Droites non coplanaires}
+\end{center}
+\bloc{cyan}{Remarque}{%
+     Dans les deux premiers cas, les deux droites $\mathscr D$ et $\mathscr D^{\prime}$ appartiennent à un même plan $\mathscr P$; elles sont \textbf{coplanaires}.
+}
+\begin{h2}2. Solides et volumes\end{h2}
+\cadre{bleu}{Définition}{%
+     Un \textbf{prisme droit} est un solide ayant deux bases polygonales identiques et dont les faces latérales  sont des rectangles.
+}
+\begin{center}
+     \begin{extern}%width="250" alt="prisme droit"
+          \resizebox{7cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.,0.)(9.,10.)
+                    \pspolygon[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](1.,8.)(3.,6.5)(7.,7.)(8.,8.)(4.,9.)
+                    \pspolygon[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](1.,2.)(3.,0.5)(7.,1.)(8.,2.)(4.,3.)
+                    \psline(1.,8.)(1.,2.)
+                    \psline(3.,6.5)(3.,0.5)
+                    \psline(7.,7.)(7.,1.)
+                    \psline(8.,8.)(8.,2.)
+                    \psline[linestyle=dashed,dash=2pt 2pt](4.,9.)(4.,3.)
+                    \rput(4.,2.){$\Large \blue{\mathscr{B}}$}
+                    \psline{<->}(0.,8.)(0.,2.)
+                    \rput(-0.5,5.){$\Large h$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Prisme droit de hauteur $h$}
+\end{center}
+\cadre{vert}{Propriété}{%
+     Si on désigne par $h$ la hauteur du prisme et $\mathscr B$ l'aire de la base, le volume du prisme est égal à :
+     \begin{center}$V=\mathscr B\times h$\end{center}
+}
+\bloc{cyan}{Cas particuliers}{%
+     \begin{itemize}
+          \item Si le volume est un \textbf{pavé droit} (\textit{parallélépipède rectangle}) de dimensions $l, L, h$,  la base est un rectangle de largeur $l$ et de longueur $L$. Le volume vaut alors $V=L\times l\times h$
+          \item Si le volume est un \textbf{cube} dont le côté mesure $c$, la base est un carré de côté $c$. Le volume vaut alors $V=c^3$
+     \end{itemize}
+}
+\cadre{vert}{Propriété}{%
+     Le volume d'un cylindre de révolution est égal à :
+     \begin{center}$V=\mathscr B\times h$\end{center}
+     où
+     \begin{itemize}
+          \item $h$ est la hauteur du cylindre de révolution
+          \item $\mathscr B = \pi R^2$ est l'aire de la base de rayon $R$.
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="250" alt="cylindre de révolution"
+          \resizebox{7cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.,1.)(9.,10.)
+                    \psline(1.,8.)(1.,2.)
+                    \psline(7.,8.)(7.,2.)
+                    \rput{-0.172}(4,1.94){\psellipse[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](0,0)(3.,0.59)}
+                    \rput{-0.172}(4,7.94){\psellipse[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](0,0)(3.,0.59)}
+                    \rput(4.,2.){$\Large \blue{\mathscr{B}}$}
+                    \psline{<->}(0.,8.)(0.,2.)
+                    \rput(-0.5,5.){$\Large h$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Cylindre de révolution de hauteur $h$}
+\end{center}
+\cadre{bleu}{Définition}{%
+     Une \textbf{pyramide} est un solide ayant une base polygonale, un sommet et dont les faces latérales sont des triangles.
+}
+\begin{center}
+     \begin{extern}%width="250" alt="pyramide"
+          \resizebox{7cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.,0.5)(9.,10.)
+                    \pspolygon[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](1.,2.)(3.,0.5)(7.,1.)(8.,2.)(4.,3.)
+                    \psline(4.,8.)(1.,2.)
+                    \psline(4.,8.)(3.,0.5)
+                    \psline(4.,8.)(7.,1.)
+                    \psline(4.,8.)(8.,2.)
+                    \psline[linestyle=dashed,dash=2pt 2pt](4.,8.)(4.,3.)
+                    \rput(4.,2.){$\Large \blue{\mathscr{B}}$}
+                    \psline{<->}(0.,8.)(0.,2.)
+                    \rput(-0.5,5.){$\Large h$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Pyramide de hauteur $h$}
+\end{center}
+\cadre{vert}{Propriété}{%
+     Si on désigne par $h$ la hauteur de la pyramide et $\mathscr B$ l'aire de la base, le volume de la pyramide est égal à :
+     \begin{center}$V=\frac{1}{3}\times \mathscr B\times h$\end{center}
+}
+\cadre{vert}{Propriété}{%
+     Le volume d'un cône de révolution est égal à :
+     \begin{center}$V=\frac{1}{3}\times \mathscr B\times h$\end{center}
+     où
+     \begin{itemize}
+          \item $h$ est la hauteur du cône
+          \item $\mathscr B = \pi R^2$ est l'aire de la base de rayon $R$.
+     \end{itemize}
+}
+\begin{center}
+     \begin{extern}%width="250" alt="cône de révolution"
+          \resizebox{7cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(-1.,1)(9.,9.)
+                    \psline(4.,8.)(1.,2.)
+                    \psline(4.,8.)(7.,2.)
+                    \rput{-0.172}(4,1.94){\psellipse[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.1](0,0)(3.,0.59)}
+                    \rput(4.,2.){$\Large \blue{\mathscr{B}}$}
+                    \psline{<->}(0.,8.)(0.,2.)
+                    \rput(-0.5,5.){$\Large h$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Cône de révolution de hauteur $h$}
+\end{center}
+\cadre{vert}{Propriété}{%
+     Le volume d'une sphère de rayon $r$ est égal à :
+     \begin{center}$V = \frac{4}{3}\times \pi \times r^3$ \end{center}
+}
+\begin{center}
+     \begin{extern}%width="220" alt="sphère"
+          \resizebox{7cm}{!}{
+               \psset{xunit=1.0cm,yunit=1.0cm,algebraic=true,dimen=middle,dotstyle=o,dotsize=5pt 0,linewidth=1.pt,arrowsize=3pt 2,arrowinset=0.25}
+               \begin{pspicture*}(0.,-1.2)(8.5,5.)
+                    \newrgbcolor{lblue}{0.9 0.9 1}
+                    \pscircle[linecolor=blue,GradientPos={(3,3.5)},fillstyle=gradient,gradmidpoint=0.01,GradientCircle=true, gradbegin=lblue, gradend=white](4.,2.){3}
+                    \psline[linecolor=red](4.,2.)(4.28,1.36)
+                    \rput[l](4.3,1.7){\red{$r$}}
+                    \rput{-0.172}(4,1.94){\psellipse[linecolor=blue,fillcolor=blue,fillstyle=solid,opacity=0.05](0,0)(3.,0.59)}
+                    \psdots[dotsize=3pt,dotstyle=*,linecolor=blue](4,2)
+                    \rput(3.8,2.2){$\Large \blue{O}$}
+               \end{pspicture*}
+          }
+     \end{extern}
+\end{center}
+\begin{center}
+     \textit{Sphère de rayon $r$}
+\end{center}
+\input{_footer}

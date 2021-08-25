@@ -1,0 +1,162 @@
+\input{_header}
+\meta{url}{/cours/regles-de-calculs-fractions-puissances/}
+\meta{pid}{1559}
+\meta{titre}{Les règles de calculs, fractions, puissances}
+\meta{type}{cours}
+\begin{h2}1 - Vocabulaire\end{h2}
+\cadre{bleu}{Définitions}{% id="d010"
+     \begin{itemize}
+          \item La \textbf{somme} de deux \textbf{termes} est le résultat de l'\textbf{addition} de ces nombres.
+          \item La \textbf{différence} de deux \textbf{termes} est le résultat de la \textbf{soustraction} de ces nombres.
+          \item Le \textbf{produit} de deux \textbf{facteurs} est le résultat de la \textbf{multiplication} de ces nombres.
+     \end{itemize}
+}
+
+\bloc{orange}{Exemples}{% id="e020"
+     \begin{itemize}
+          \item $5 = 3+2$ : $\quad 5$ est la \textbf{somme} des termes $3$ et $2$.
+          \item $1 = 3-2$ : $\quad1$ est la \textbf{différence} des termes $3$ et $2$.
+          \item $6 = 3\times 2$ : $\quad6$ est le \textbf{produit} des facteurs $3$ et $2$.
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{% id="r040"
+     On regroupe souvent \textbf{somme} et \textbf{différence} sous le même terme : \textbf{somme algébrique}. En effet, une soustraction d'un nombre positif correspond à une addition d'un nombre négatif.
+     \par
+     Lorsqu'une expression contient plusieurs opérations, il s'agit :
+     \begin{itemize}
+          \item d'une somme algébrique si la \textbf{dernière} opération effectuée (la \textbf{moins} prioritaire) est une addition ou une soustraction. Par exemple : $2x-3y$;
+          \item d'un produit si la \textbf{dernière} opération effectuée (la \textbf{moins} prioritaire) est une multiplication.  Par exemple : $3x\left(y-3\right)$.
+     \end{itemize}
+}
+\begin{h2}2 - Priorités de calculs\end{h2}
+\cadre{vert}{Propriétés}{% id="p040"
+     \begin{itemize}
+          \item On effectue d'abord les calculs des expressions entre \textbf{parenthèses}, en commençant par les parenthèses les plus intérieures.
+          \item Puis on effectue les \textbf{puissances} avant les multiplications, les divisions, les additions et les soustractions.
+          \item Puis on effectue d'abord les \textbf{multiplications} et les \textbf{divisions} avant les additions et les soustractions.
+          \item Enfin, on effectue les calculs de la gauche vers la droite.
+          \par
+          Dans une somme algébrique, on peut également regrouper ensemble les termes de même signe.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e040"
+     \begin{itemize}
+          \item $A=5-3\times 7+2\times \left(4-1\right)$
+          \par
+          On effectue d'abord les parenthèses :
+          \par
+          $A=5-3\times 7+2\times 3$
+          \par
+          Puis les multiplications :
+          \par
+          $A=5-21+6$
+          \par
+          Puis les opérations restantes (en regroupant les termes positifs par exemple) :
+          \par
+          $A=5-21+6=11-21=-10$
+          \item \textbf{Attention} à bien tenir compte de la priorité des opération même si l'expression contient des \textit{lettres}. Par exemple :
+          \par
+          $B=5+\left(7-4\right)\times x$
+          \par
+          On peut effectuer le calcul dans la parenthèse :
+          \par
+          $B=5+3\times x=5+3x$
+          \par
+          On ne peut pas effectuer l'addition $5+3$ car la multiplication $3\times x$ est prioritaire. On ne peut donc pas aller plus loin.
+     \end{itemize}
+}
+\begin{h2}3 - Fractions\end{h2}
+\cadre{vert}{Propriétés}{%  id="p060"
+     \begin{itemize}
+          \item Pour additionner (ou soustraire) des fractions, on ajoute (ou on soustrait) leurs numérateurs, après les avoir mises au \textbf{même dénominateur}.
+          \item Pour multiplier des fractions, on multiplie les numérateurs entre eux et les dénominateurs entre eux, \textbf{en simplifiant} au maximum.
+          \item Pour diviser par une fraction, on multiplie par son inverse.
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e060"
+     \begin{itemize}
+          \item %
+          $A=\frac{3}{4}-\frac{2}{5}$
+          \par
+          $A=\frac{3\times 5}{4\times 5}-\frac{2\times 4}{5\times 4}$
+          \par
+          $A=\frac{15}{20}-\frac{8}{20}$
+          \par
+          $A=\frac{7}{20}$
+          \item %
+          $B=\frac{3}{4}\times \frac{2}{5}$
+          \par
+          $B=\frac{3\times 2}{4 \times 5}$
+          \par
+          $B=\frac{3\times 2}{2\times 2\times 5}$
+          \par
+          $B=\frac{3}{10}$
+          \item %
+          $C=\frac{3}{4} \div \frac{2}{5}$
+          \par
+          $C=\frac{3}{4}\times \frac{5}{2}$
+          \par
+          $C=\frac{3\times 5}{4\times 2}$
+          \par
+          $C=\frac{15}{8}$
+     \end{itemize}
+}
+\begin{h2}4 - Puissances\end{h2}
+\cadre{vert}{Propriétés}{% id="p080"
+     \begin{itemize}
+          \item Produit : $a^{n}\times a^{m}=a^{n+m}$
+          \item Inverse : $\frac{1}{a^{m}}=a^{-m}$
+          \item Quotient :$\frac{a^{n}}{a^{m}}=a^{n-m}$
+          \item Puissance de puissance :$\left(a^{n}\right)^{m}=a^{n\times m}$
+          \item Exposants identiques :$a^{n}\times b^{n}=\left(ab\right)^{n}$
+     \end{itemize}
+}
+\bloc{orange}{Exemples}{% id="e080"
+     \begin{itemize}
+          \item $A=3^{2}\times 3^{3}=3^{2+3}=3^{5}$
+          \item $B=\frac{2^{3}}{2^{-4}}=2^{3-\left(-4\right)}=2^{7}$
+          \item $C=\left(10^{2}\right)^{-3}=10^{-6}$
+     \end{itemize}
+}
+\bloc{cyan}{Remarques}{%  id="r090"
+     \begin{itemize}
+          \item Ces formules peuvent, bien sûr, être utilisées \textit{dans les deux sens}. Par exemple, pour passer de $\frac{1}{a^{m}}$ à $a^{-m}$ ou pour passer de $a^{-m}$ à $\frac{1}{a^{m}}$
+          \item Cas particulier de la dernière formule :
+          \par
+          $\left(-a\right)^{n}=\left(-1\times a\right)^{n}=\left(-1\right)^{n}\times a^{n}$
+          \par
+          Donc pour $n$ \textbf{impair} : $\left(-a\right)^{n}=-a^{n}$ car alors $\left(-1\right)^{n}=-1$
+          \par
+          Pour $n$ \textbf{pair} : $\left(-a\right)^{n}=a^{n}$ car alors $\left(-1\right)^{n}=1$
+     \end{itemize}
+}
+\cadre{bleu}{Définition}{% id="d100"
+     On appelle \textbf{écriture scientifique} d'un  nombre positif, la notation $a\times 10^{n}$ avec $n$ entier relatif et $1 \leqslant  a < 10$.
+}
+\bloc{cyan}{Remarque}{% id="r100"
+     L'encadrement $1 \leqslant  a < 10$ signifie que l'écriture décimale de $a$ comporte \textbf{un et un seul chiffre non nul avant la virgule}.
+}
+\bloc{orange}{Exemple}{% id="e100"
+     $ D=\frac{5\times 10^{5}\times 10^{-2}\times 7}{2\times 10^{7}}$
+     \par
+     Donner l'écriture scientifique de $D$, puis son écriture décimale.
+     \par
+     On regroupe les puissances de 10 d'un coté et les nombres restants de l'autre:
+     \par
+     $ D=\frac{5\times 7}{2}\times \frac{10^{5}\times 10^{-2}}{10^{7}}$
+     \par
+     On simplifie :
+     \par
+     $ D=\frac{35}{2}\times \frac{10^{3}}{10^{7}}$
+     \par
+     $ D=17,5\times 10^{-4}$
+     \par
+     L'écriture scientifique de $D$ est :
+     \par
+     $ D=1,75\times 10^{-3}$
+     \par
+     L'écriture décimale de $D$ est :
+     \par
+     $ D=0,00175 $
+}
+\input{_footer}

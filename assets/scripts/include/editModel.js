@@ -104,8 +104,9 @@ class EditModel {
   }
 
   doBackup = () => {
+    console.log(">>>>> backup model 1")
     if (this.backup != this.input) {
-      console.log("backup model")
+      console.log(">>>>>>> backup model 2")
       this.backup = this.input
       this.file_rw.backup(this.getFileMetas(), this.input)
     }
