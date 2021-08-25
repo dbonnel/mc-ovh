@@ -10,7 +10,7 @@ namespace App {
         public static function start()
         {
             session_save_path(\App\Config::$session_dir);
-            session_set_cookie_params(0, '/', null, false, true);
+         //   session_set_cookie_params(0, '/', null, false, true);
             session_name('pp-session');
             session_start();
             if (!array_key_exists('user', $_SESSION) && isset($_COOKIE['pp-id'])) {
@@ -193,7 +193,8 @@ namespace App {
          * @param string $token   Le token a
          *                        vérifier
          * @param int    $temps   Le temps de validité
-         *                        (en secondes)
+         *                        (en
+ secondes)
          * @param string $referer Le referer attendu (adresse absolue, rappelez-vous :D)
          * @param string $nom     Le nom optionnel si vous en avez défini
          *                        un lors de la création du token
