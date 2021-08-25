@@ -45,6 +45,7 @@ namespace App {
         public static $file_list;
         public static $dev_base_url;
         public static $prod_base_url;
+        public static $prod_base_dir;
         //   public static $dev_base_dir;
         //   public static $prod_base_dir;
 
@@ -64,6 +65,7 @@ namespace App {
             static::$file_list = 'temp/file_list.txt';
             static::$dev_base_url = "http://newmc.test";
             static::$prod_base_url = "https://www.maths-cours.fr";
+            static::$prod_base_dir = "/homez.138/mathscoukj";
 
             if (static::$is_dev) {
                 static::$db_host = "localhost";

@@ -79,6 +79,7 @@ namespace Controllers {
             system("cmd /c C:\\batchs\\git.bat");
             $content = ob_get_contents();
             ob_end_clean();
+            $link = '<p><a href="\App\Config::'.$prod_base_url.'?key='.\Utils\Crypto::chiffreSym(1).'">Production'.'</a></p>';
             $this->view->set_var('content', "<pre>$content</pre>");
             $this->view->set_var('page_title', 'Push Github');
             $this->view->show('main');
@@ -86,7 +87,7 @@ namespace Controllers {
 
         public function pullProduction()
         {
-            $result = shell_exec('/homez.138/mathscoukj/bin/pull-prod.sh');
+            $result = shell_exec(\App\Config::$prog_base_dir . '/bin/pull-prod.sh');
             $this->view->set_var('content', "<pre>$result</pre>");
             $this->view->set_var('page_title', 'Pull production');
             $this->view->show('main');
@@ -209,7 +210,7 @@ namespace Controllers {
         {
             setcookie('pp-id', $_GET['key'], time() + 3600 * 24 * 365, '/', '', false, true);
             $location = ($_GET['location'])?($_GET['location']):'/admin/posts/list';
-            header('Location: '.$location);
+            header('Location: '.urldecode($location));
         }
     }
 }
