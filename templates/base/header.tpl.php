@@ -1,4 +1,10 @@
-    <!--====== Header Start ======-->
+   <!--====== Test signal ======-->
+
+   <?php if (__('dev')): ?>
+    <?php __inc('components/test-signal');?>
+    <?php endif; ?>
+
+   <!--====== Header Start ======-->
 
     <header class="header-area">
         <div class="header-main">
