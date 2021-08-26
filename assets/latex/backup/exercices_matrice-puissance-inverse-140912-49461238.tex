@@ -1,0 +1,42 @@
+\input{_header}
+\meta{url}{/exercices/matrice-puissance-inverse-140912/}
+\meta{pid}{1125}
+\meta{titre}{Matrices : Puissances et inverse}
+\meta{type}{exercices}
+%
+Soit la matrice $A=\begin{pmatrix} 1 & 1\\ 0 & 1 \end{pmatrix}$
+\begin{enumerate}
+     \item
+     Calculer $A^{2}$, $A^{3}$ et $A^{4}$
+     \item
+     On pose $B=\begin{pmatrix} 1 & a \\ 0 & 1 \end{pmatrix}$ et $I=\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}$.
+     \par
+     Montrer qu'il existe une valeur de $a$ telle que $A\times B=I$.
+     \par
+     En déduire que $A$ est inversible et déterminer $A^{-1}$
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          $A^{2}=\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}\times \begin{pmatrix} 1 & 1 \\ 0  & 1\end{pmatrix}=\begin{pmatrix}1 & 2 \\ 0 & 1 \end{pmatrix}$
+          \par
+          $A^{3}=A^{2}\times A=\begin{pmatrix} 1 & 2 \\ 0 & 1\end{pmatrix}\times\begin{pmatrix}1 & 1 \\ 0 & 1\end{pmatrix}=\begin{pmatrix}1 & 3 \\ 0 & 1 \end{pmatrix}$
+          \par
+          $A^{4}=A^{3}\times A=\begin{pmatrix} 1 & 3 \\ 0 & 1\end{pmatrix}\times \begin{pmatrix}1 & 1 \\ 0  & 1\end{pmatrix}=\begin{pmatrix}1 & 4 \\ 0 & 1 \end{pmatrix}$
+          \item
+          $A\times B=\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix} \times \begin{pmatrix}1 & a \\ 0 & 1\end{pmatrix}=\begin{pmatrix}1 &  a+1 \\ 0  &  1   \end{pmatrix}$
+          \par
+          On remarque que pour $a=-1$, $A\times B=I$
+          \par
+          On a donc :
+          \par
+          $\begin{pmatrix} 1 & 1 \\ 0 & 1\end{pmatrix}\times \begin{pmatrix}1 & -1 \\ 0 &  1\end{pmatrix}=I$
+          \par
+          On montre également, par un calcul direct, que :
+          \par
+          $\begin{pmatrix} 1 & -1 \\ 0  &  1\end{pmatrix}\times \begin{pmatrix}1 & 1 \\ 0 & 1\end{pmatrix}=I$
+          \par
+          Donc $A$ est inversible et $A^{-1}=\begin{pmatrix} 1 & -1 \\ 0 & 1 \end{pmatrix}$ (voir \mcLien{/terminale-es/matrices#d110}{définition})
+     \end{enumerate}
+\end{corrige}
+\input{_footer}

@@ -20,13 +20,14 @@ namespace Controllers {
             $this->view->set_var('title', 'Cours et exercices pour le collège et le lycée - Maths-cours.fr')
                 ->set_var('current_url', $_SERVER['REQUEST_URI'])
                 ->set_var('dev', \App\Config::$is_dev)
+                ->set_var('is_administrator', \App\Session::is_administrator())
                 ->set_var('admin_page', $this->admin_page)
                 ->set_var('top_note', \App\Session::read('top_note'))
                 ->set_var('msg_popup', \App\Session::read('msg_popup'))
                 ->set_var('top_footer', '')
                 ->set_var('aside', \App\Config::$is_backend ? '' : 'components/aside-std')
                 ->add_array_var('jsfile', ['frontend.js?z=' . time()])
-                ->set_var('jsloadmodule', []);
+                ->set_var('jsloadmodule', []);           
             if ($this->user) {
                 $this->view->set_var('user', $this->user)
                     ->set_var('text_login', 'Votre compte')
@@ -35,6 +36,7 @@ namespace Controllers {
             if ($this->admin_page) {
                 $this->view->add_array_var('jsfile', ['backend.js?z=' . time(), 'katex.min.js']);
             }
+
             \App\Session::delete('top_note');
             \App\Session::delete('msg_popup');
             dbg('user', 'user', \App\Session::read('user'));

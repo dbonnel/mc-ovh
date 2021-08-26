@@ -1,8 +1,5 @@
    <!--====== Test signal ======-->
-
-   <?php if (__('dev')): ?>
-    <?php __inc('components/test-signal');?>
-    <?php endif; ?>
+        <?php __inc('components/test-signal');?>
 
    <!--====== Header Start ======-->
 
