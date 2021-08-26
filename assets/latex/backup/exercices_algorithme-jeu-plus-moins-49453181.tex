@@ -1,0 +1,45 @@
+\input{_header}
+\meta{url}{/exercices/algorithme-jeu-plus-moins/}
+\meta{pid}{579}
+\meta{titre}{Algorithme : Jeu du plus ou moins}
+\meta{type}{exercices}
+%
+Vous devez écrire un algorithme pour le jeu du \textit{"Plus ou moins"}
+Au départ, l'algorithme va choisir au hasard un nombre "mystère" compris entre 1 et 99.(on utilisera l'instruction random(1;99) )
+\par
+Ensuite, le joueur propose un nombre.
+\par
+Si c'est le nombre mystère, l'algorithme affiche "Vous avez gagné !" et le nombre de coup(s) qui ont été nécessaire(s) pour trouver le nombre mystère.
+\par
+Sinon, l'algorithme indique si le nombre proposé est trop petit ou trop grand jusqu'à que le joueur ait trouvé le nombre mystère.
+\begin{corrige}
+     Solution rédigée par Bruisselor
+     \par
+\begin{code}
+
+\textbf{Variables}
+        nombreMystère, saisieUtilisateur, nombreCoups: nombres
+     \textbf{Début algorithme}
+        nombreMystère prend la valeur random(1;99)
+        nombreCoups prend la valeur 0
+        saisieUtilisateur prend la valeur -1
+        tant que nombreMystère différent de saisieUtilisateur
+           afficher "Veuillez entrer un nombre."
+           lire saisieUtilisateur
+           si saisieUtilisateur = nombreMystère
+              afficher "Vous avez gagné! "
+           sinon
+              si saisieUtilisateur < nombreMystère
+                 afficher "Le nombre mystère est plus grand!"
+              sinon
+                 afficher "Le nombre mystère est plus petit!"
+              fin si
+           fin si
+           nombreCoups prend la valeur nombreCoups + 1
+        fin tant que
+        afficher nombreCoups, " coup(s) ont été nécessaire(s) pour réussir."
+\textbf{Fin algorithme}
+  
+\end{code}
+\end{corrige}
+\input{_footer}

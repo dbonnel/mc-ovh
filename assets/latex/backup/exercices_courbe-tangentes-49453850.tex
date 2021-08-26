@@ -1,0 +1,102 @@
+\input{_header}
+\meta{url}{/exercices/courbe-tangentes/}
+\meta{pid}{814}
+\meta{titre}{Courbe et tangentes}
+\meta{type}{exercices}
+%
+Soit une fonction $f$ définie par une formule du type :
+
+\begin{center}
+$f\left(x\right)=a+ \frac{bx+c}{x^{2}+2x+3}$.
+\end{center}
+et soit $\mathscr C$ sa courbe représentative.
+\par
+Déterminer $a$, $b$ et $c$ pour que :
+\begin{itemize}
+     \item
+     la courbe $\mathscr C$ passe par le point $A\left(1,0\right)$
+     \item
+     la tangente à $\mathscr C$ en $A$ ait pour coefficient directeur $1$
+     \item
+     la tangente à $\mathscr C$ au point d'abscisse $3$ soit parallèle à l'axe des abscisses.
+\end{itemize}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          La courbe $\mathscr C$ passe par le point $A\left(1,0\right)$ :
+          \par
+          En remplaçant $x$ par 1 et $y$ par 0 dans l'équation de la courbe $y=a+ \frac{bx+c}{x^{2}+2x+3}$, on obtient:
+          \begin{note}Une fraction est nulle si et seulement si son numérateur est nul.
+          \end{note}
+          $a+\frac{b+c}{6}=0$
+          \par
+          $\frac{6a+b+c}{6}=0$
+          \par
+          $6a+b+c=0$
+          \item
+          La tangente à $\mathscr C$ en $A$ a pour coefficient directeur $1$ si et seulement si $f^{\prime}\left(1\right)=1$
+          \par
+          La dérivée de la fonction $x\mapsto a$ est nulle; pour dériver le quotient on pose :
+          \begin{note}Pour calculer $f^{\prime}\left(1\right)$ on calcule $f^{\prime}\left(x\right)$ \textbf{puis} on remplace $x$ par $1$.
+          \end{note}
+          $u\left(x\right)=bx+c$   donc $u^{\prime}\left(x\right)=b$
+          \par
+          $v\left(x\right)=x^{2}+2x+3$   donc $v^{\prime}\left(x\right)=2x+2$
+          \par
+          Donc :
+          \par
+          $f^{\prime}\left(x\right)=\frac{u^{\prime}\left(x\right)v\left(x\right)-u\left(x\right)v^{\prime}\left(x\right)}{v\left(x\right)^{2}}=\frac{b\left(x^{2}+2x+3\right)-\left(bx+c\right)\left(2x+2\right)}{\left(x^{2}+2x+3\right)^{2}}$
+          \par
+          $f^{\prime}\left(x\right)=\frac{-bx^{2}-2cx+3b-2c}{\left(x^{2}+2x+3\right)^{2}}$
+          \par
+          donc:
+          \par
+          $f^{\prime}\left(1\right)=\frac{-b-2c+3b-2c}{36}$
+          \par
+          L'égalité $f^{\prime}\left(1\right)=1$ se traduit par :
+          \par
+          $\frac{-b-2c+3b-2c}{36}=1$
+          \par
+          $2b-4c=36$
+          \par
+          $b-2c=18$
+          \item
+          \begin{note}La tangente à $\mathscr C_f$ au point d'abscisse $a$ est "horizontale" si et seulement si $f^{\prime}\left(a\right)=0$.\end{note}
+          La tangente au point d'abscisse 3 est parallèle à l'axe des abscisses si et seulement si $f^{\prime}\left(3\right)=0$ soit :
+          \par
+          $\frac{-9b-6c+3b-2c}{18^{2}}=0$
+          \par
+          $-6b-8c=0$
+          \par
+          $3b+4c=0$
+          \item
+          On doit donc résoudre le système :
+          \par
+          $\left(S\right) \Leftrightarrow \left\{ \begin{matrix} 6a+b+c=0 \\ b-2c=18 \\ 3b+4c=0 \end{matrix}\right.$
+               \par
+               De la seconde équation on tire $b=18+2c$ et on remplace $b$ par $18+2c$ dans les autres équations :
+               \par
+               $\left(S\right) \Leftrightarrow \left\{ \begin{matrix} 6a+\left(18+2c\right)+c=0 \\ b=18+2c \\ 3\left(18+2c\right)+4c=0 \end{matrix}\right.$
+                    \par
+                    $\phantom{\left(S\right)} \Leftrightarrow \left\{ \begin{matrix} b=18+2c \\ 10c+54=0 \\ 6a+3c+18=0 \end{matrix}\right.$
+                         \par
+                         $\phantom{\left(S\right)} \Leftrightarrow \left\{ \begin{matrix} c=-5,4 \\ b=18-2\times 5,4 \\ a=\frac{1}{6}\left(-18 -3\times 5,4\right) \end{matrix}\right.$
+                         \end{enumerate}
+                         On trouve donc :
+                         \par
+                         $a=-0,3$
+                         \par
+                         $b=7,2$
+                         \par
+                         $c=-5,4$
+                         \par
+                         En conclusion :
+                         \par
+                         $f\left(x\right)=-0,3+\frac{7,2x-5,4}{x^{2}+2x+3}$
+
+
+\begin{center}
+\imgsvg{mc-0052}{0.3}% alt="Courbe et tangentes" style="width:45rem"
+\end{center}
+\end{corrige}
+\input{_footer}
