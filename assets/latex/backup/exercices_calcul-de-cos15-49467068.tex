@@ -1,0 +1,131 @@
+\input{_header}
+\meta{url}{/exercices/calcul-de-cos15/}
+\meta{pid}{4543}
+\meta{titre}{Calcul de cos(15°)}
+\meta{type}{exercices}
+%
+Sur la figure ci-dessous, $A$ et $I$ sont les points de coordonnées respectives $(-1;0)$ et $(1;0)$. $B$ est le point du cercle de centre $ O $ et de rayon 1 tel que l'angle $  \widehat{ IOB }  $ mesure 30 degrés; $H$ est le pied de la hauteur issue de $B$ du triangle $OBA$.
+
+\begin{center}
+\imgsvg{cos15}{0.3}% alt="Calcul de cos(15°)" style="width:35rem"
+\end{center}
+\begin{enumerate}
+     \item
+     Donner, en degré, la mesure de l'angle $ \widehat{BOI} $ puis de l'angle $\widehat{AOB}$.
+     \item
+     Que peut-on dire du triangle $AOB$ ? En déduire la mesure, en degré, de l'angle $\widehat{BAH}$.
+     \item
+     Calculer les valeurs exactes de $OH$, $BH$ puis $AB$.
+     \item
+     En déduire que $\cos(\widehat{BAH}) = \frac{\sqrt{2+\sqrt{3}}}{2}$.
+     \item
+     Calculer $( \sqrt{2} +  \sqrt{6})^2  $.
+     \item
+     Déduire des questions précédentes que $\cos(15^{\circ})=  \frac{ \sqrt{2} +  \sqrt{6}}{4}  $
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Dire que $B$ est le point du cercle trigonométrique \textit{image de $\frac{\pi}{6}$}, signifie que l'angle $\widehat{BOI} $ mesure $ \frac{ \pi }{6} $ radians soit $30$ degrés.
+          \par
+          Les points $A, O$ et $I$ étant alignés (sur l'axe des abscisses), les angles $\widehat{AOB}$ et $\widehat{BOI}$ sont supplémentaires.
+          \par
+          Par conséquent :
+          \par
+          $\widehat{AOB}=180^\circ-30^\circ=150^\circ$
+          \item
+          Les côtés $[OA]$ et $[OB]$ sont des rayons du cercle trigonométrique donc $OA=OB=1$. Le triangle $AOB$ est donc isocèle.
+          \par
+          La somme des mesures des angles d'un triangle vaut $180^\circ$, par conséquent :
+          \par
+          $\widehat{OAB}+\widehat{ABO}+\widehat{BOA}=180^\circ$
+          \par
+          $\widehat{OAB}+\widehat{ABO} = 180^\circ-150^\circ = 30^\circ$
+          \par
+          et, comme le triangle $AOB$ est isocèle, les angles $\widehat{OAB}$ et $\widehat{ABO}$ ont la même mesure :
+          \par
+          $\widehat{OAB} = \widehat{ABO} = 15^\circ$
+          \item
+          Dans le triangle $OBH$ rectangle en $H$ :
+          \par
+          $\cos(\widehat{BOH})= \frac{OH}{OB} $
+          \par
+          $\cos(30^\circ)= \frac{OH}{1} $
+          \par
+          $OH=\cos(30^\circ)=\frac{\sqrt{3}}{2}$
+          \par
+          $\sin(\widehat{BOH})= \frac{BH}{OB}$
+          \par
+          $\sin(30^\circ)= \frac{BH}{1} $
+          \par
+          $BH=\sin(30^\circ)=\frac{1}{2}$
+          \par
+          $AH=AO+OH=1+\frac{\sqrt{3}}{2}$
+          \par
+          D'après le théorème de Pythagore :
+          \par
+          $AB^2=AH^2+HB^2$
+          \par
+          $AB^2=\left(1+ \frac{ \sqrt{3} }{2} \right)^2+\left( \frac{1}{2} \right)^2$
+          \begin{note}Pour tous réels $a$ et $b$ :
+               \par
+               $(a+b)^2$$=a^2+2ab+b^2$
+          \end{note}
+          $AB^2=1 + 2 \times \frac{ \sqrt{3} }{2} +  \frac{3}{4} + \frac{1}{4} $
+          \par
+          $AB^2=2+  \sqrt{3}$
+          \par
+          $AB=\sqrt{2+  \sqrt{3}}$
+          \item
+          Dans le triangle $ABH$ rectangle en $H$ :
+          \par
+          $\cos(\widehat{BAH})= \frac{AH}{AB} $
+          \par
+          $\cos(\widehat{BAH})= \frac{1+\frac{\sqrt{3}}{2}}{\sqrt{2+  \sqrt{3}} } $
+          \begin{note}Pour $b \neq 0$ et $c \neq 0$:
+               \par
+               $\frac{\frac{a}{b}}{c}=\frac{a}{b}\times \frac{1}{c}=\frac{a}{bc}$
+          \end{note}
+          $\cos(\widehat{BAH})= \frac{\frac{2+\sqrt{3}}{2}}{\sqrt{2+  \sqrt{3}} } $
+          \par
+          $\cos(\widehat{BAH})= \frac{2+\sqrt{3}} {2\sqrt{2+  \sqrt{3}} } $
+          \begin{note}Pour tout réel $a$ \textbf{positif} ou nul $\sqrt{a^2}=a$ et  $(\sqrt{a})^2=a$
+          \end{note}
+          ~
+          \par
+          Or $2+  \sqrt{3} =\left(\sqrt{2+  \sqrt{3}} \right)^2$ donc :
+          \par
+          $\cos(\widehat{BAH})= \frac{\left(\sqrt{2+  \sqrt{3}} \right)^2} {2\sqrt{2+  \sqrt{3}} } $
+          \par
+          $\cos(\widehat{BAH})= \frac{\sqrt{2+  \sqrt{3} }} {2} $
+          \par
+          après simplification par $\sqrt{2+  \sqrt{3}}$.
+          \item
+          $( \sqrt{2} +  \sqrt{6})^2 =2+2\times \sqrt{2} \times \sqrt{6} + 6$
+          \par
+          $( \sqrt{2} +  \sqrt{6})^2 =8+2 \sqrt{12} $
+          \par
+          $( \sqrt{2} +  \sqrt{6})^2 =8+4 \sqrt{3} $
+          \par
+          On peut mettre $4$ en facteur (utile pour la suite...) :
+          \par
+          $( \sqrt{2} +  \sqrt{6})^2 =4(2+ \sqrt{3}) $
+          \item
+          On déduit de la question précédente que :
+          \par
+          $2+ \sqrt{3}=\frac{( \sqrt{2} +  \sqrt{6})^2} {4} $
+          \par
+          Chaque membre de l'égalité étant positif, on en déduit, en prenant la racine carrée de chaque membre :
+          \par
+          $\sqrt{2+ \sqrt{3}}=\sqrt{\frac{( \sqrt{2} +  \sqrt{6})^2} {4}}$
+          \par
+          $\sqrt{2+ \sqrt{3}}=\frac{ \sqrt{2} +  \sqrt{6}} {2}$
+          \par
+          D'après la question \textbf{2.}, $\widehat{BAH}=15^\circ$ et d'après la question \textbf{4.}, $\cos(\widehat{BAH})= \frac{\sqrt{2+  \sqrt{3} }} {2} $, par conséquent :
+          \par
+          $\cos(15^\circ)= \frac{\sqrt{2+  \sqrt{3} }} {2} = \frac{\frac{ \sqrt{2} +  \sqrt{6}} {2} } {2} $
+          \par
+          $\cos(15^{\circ})=  \frac{ \sqrt{2} +  \sqrt{6}}{4} $
+     \end{enumerate}
+} 						\end{corrige}
+\input{_footer}
