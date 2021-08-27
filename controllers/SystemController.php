@@ -225,7 +225,7 @@ namespace Controllers {
         public function postRestore() {
             $this->model = new \Models\PostModel();
             $json = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/posts/post.json');
-            $post =json_decode($json);
+            $post =json_decode($json, true);
             $this->model->replace($post);
             $this->view->set_var('page_title', 'Restauration Post')
                 ->set_var('content', "<pre>".print_r($post)."</pre>")
