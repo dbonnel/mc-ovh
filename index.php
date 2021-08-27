@@ -120,6 +120,7 @@ if (\App\Session::is_administrator()) {
             '/admin/batch-js' => 'batchJs',
             '/admin/test' => 'test',
             '/admin/post-backup/*' => 'postBackup',
+            '/admin/post-restore/*' => 'postRestore',
         ]
     );
 }
