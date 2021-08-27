@@ -209,5 +209,27 @@ namespace Controllers {
             $location = ($_GET['location'])?($_GET['location']):'/admin/posts/list';
             header('Location: '.urldecode($location));
         }
+
+        public function postBackup($params) {
+            $this->model = new \Models\PostModel();
+            $id = $params[0];
+            $post = $this->model->select_by_id($id);
+            $json =json_encode($post);
+            file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/posts/post.json', $json);
+            $this->ftpUpload('assets/posts/post.json');
+            $this->view->set_var('page_title', 'Sauvegarde Post')
+                ->set_var('content', "<pre>".print_r($post)."</pre>")
+                ->show('main');
+        }
+
+        public function postRestore() {
+            $this->model = new \Models\PostModel();
+            $json = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/assets/posts/post.json');
+            $post =json_decode($json);
+            $this->model->replace($post);
+            $this->view->set_var('page_title', 'Restauration Post')
+                ->set_var('content', "<pre>".print_r($post)."</pre>")
+                ->show('main');
+        }
     }
 }

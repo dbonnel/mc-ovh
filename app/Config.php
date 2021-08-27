@@ -77,7 +77,7 @@ namespace App {
                 static::$ftp_server = "ftp.cluster026.hosting.ovh.net";
                 static::$ftp_id = "mathscoukj";
                 static::$ftp_pw = "f2T6ybtmdp";
-                static::$ftp_path = "mc-ovh";
+                static::$ftp_path = "www";
             } else {
                 static::$db_host = "bd837-001.privatesql";
                 static::$db_name = "mathscoursdb";

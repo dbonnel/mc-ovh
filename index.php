@@ -119,6 +119,7 @@ if (\App\Session::is_administrator()) {
             '/admin/debug-result' => 'getDebug',
             '/admin/batch-js' => 'batchJs',
             '/admin/test' => 'test',
+            '/admin/post-backup/*' => 'postBackup',
         ]
     );
 }

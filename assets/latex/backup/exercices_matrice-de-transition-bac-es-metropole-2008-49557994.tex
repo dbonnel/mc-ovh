@@ -1,0 +1,129 @@
+\input{_header}
+\meta{url}{/exercices/matrice-de-transition-bac-es-metropole-2008/}
+\meta{pid}{1152}
+\meta{titre}{Matrice de transition - Bac ES Métropole 2008}
+\meta{type}{exercices}
+%
+\begin{h2}Exercice 2 (5 points)\end{h2}
+\textit{(Pour les candidats \textbf{ayant suivi l'enseignement de spécialité})}
+\par
+Deux fabricants de parfum lancent simultanément leur nouveau produit qu'ils nomment respectivement Aurore et Boréale.
+\par
+Afin de promouvoir celui-ci, chacun organise une campagne de publicité.
+\par
+L'un d'eux contrôle l'efficacité de sa campagne par des sondages hebdomadaires.
+\par
+Chaque semaine, il interroge les mêmes personnes qui toutes se prononcent en faveur de l'un de ces deux produits.
+\par
+Au début de la campagne, 20 \% des personnes interrogées préfèrent Aurore et les autres préfèrent Boréale.
+\par
+Les arguments publicitaires font évoluer cette répartition : 10 \% des personnes préférant Aurore et 15 \% des personnes préférant Boréale changent d'avis d'une semaine sur l'autre.
+\par
+La semaine du début de la campagne est notée semaine 0.
+\par
+Pour tout entier naturel n, l'état probabiliste de la semaine n est défini par la matrice ligne $P_{n}=\begin{pmatrix}a_{n} & b_{n}\end{pmatrix}$ où $a_{n}$ désigne la probabilité qu'une personne interrogée au hasard préfère Aurore la semaine n et $b_{n}$ la probabilité que cette personne préfère Boréale la semaine n.
+\begin{enumerate}
+     \item
+     Déterminer la matrice ligne $P_{0}$ de l'état probabiliste initial.
+     \item
+     Représenter la situation par un graphe probabiliste de sommets A et B, A pour Aurore et B pour Boréale.
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Ecrire la matrice de transition $M$ de ce graphe en respectant l'ordre alphabétique des sommets.
+          \item
+          Montrer que la matrice ligne $P$, est égale à $\begin{pmatrix}0,3 & 0,7 \end{pmatrix}$.
+     \end{enumerate}
+     \item
+     \begin{enumerate}[label=\alph*.]
+          \item
+          Exprimer, pour tout entier naturel $n$, $P_{n}$ en fonction de $P_{0}$ et de $n$.
+          \item
+          En déduire la matrice ligne $P_{3}$. Interpréter ce résultat.
+     \end{enumerate}
+     \item
+     \textit{Dans la question suivante, toute trace de recherche même incomplète ou d'initiative même non fructueuse sera prise en compte dans l'évaluation.}
+\par
+     Soit $P=\begin{pmatrix}a & b \end{pmatrix}$ la matrice ligne de l'état probabiliste stable.
+\begin{enumerate}[label=\alph*.]
+          \item
+          Déterminer $a$ et $b$.
+          \item
+          Le parfum Aurore finira-t-îl par être préféré au parfum Boréale ? Justifier.
+     \end{enumerate}
+\end{enumerate}
+\begin{corrige}
+     \begin{enumerate}
+          \item
+          Au début de la campagne 20\% des personnes interrogées préfèrent Aurore donc 80\% préfèrent Boréale.
+          \par
+          La matrice de l'état initial est donc:
+          \par
+          $P_{0}=\begin{pmatrix}0,2 & 0,8\end{pmatrix}$
+          \item
+          En reprenant les données de l'énoncé :
+
+
+\begin{center}
+\imgsvg{copie-0012}{0.3}% alt="graphe probabiliste" style="width:35rem"
+\end{center}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               Le graphe précédent correspond à la matrice de transition suivante :
+               \par
+               $M=\begin{pmatrix} 0,9 & 0,1  \\ 0,15 & 0,85 \end{pmatrix}$
+               \item
+               $P_{1}=P_{0}\times M=\begin{pmatrix}0,2 & 0,8\end{pmatrix}\times \begin{pmatrix} 0,9 & 0,1  \\ 0,15 & 0,85 \end{pmatrix}=\begin{pmatrix}0,3 & 0,7\end{pmatrix}$
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               $P_{m}=P_{0}\times M^{n}$
+               \item
+               Pour n=3 :
+               \par
+               $P_{3}=P_{0}\times M^{3}$
+               \par
+               on calcule (à la calculatrice) :
+               \par
+               $M^{3}=\begin{pmatrix} 0,76875 & 0,23125  \\ 0,346875 & 0,653125 \end{pmatrix}$
+               \par
+               et
+               \par
+               $P_{3}=\begin{pmatrix}0,2 & 0,8\end{pmatrix}\times \begin{pmatrix} 0,76875 & 0,23125  \\ 0,346875 & 0,653125 \end{pmatrix}=\begin{pmatrix}0,43125 & 0,56875\end{pmatrix}$
+               \par
+               Cela signifie qu'après 3 semaines 43,125\% des personnes interrogées préféreront Aurore et 56,875\% préféreront Boréale.
+          \end{enumerate}
+          \item
+          \begin{enumerate}[label=\alph*.]
+               \item
+               La matrice $P=\begin{pmatrix}a & b \end{pmatrix}$ de l'état stable  est caractérisé par :
+               \par
+               $P=PM$ avec $a+b=1$
+               \par
+               c'est à dire
+               \par
+               $\begin{pmatrix}a & b \end{pmatrix}=\begin{pmatrix}a & b \end{pmatrix}\times \begin{pmatrix} 0,9 & 0,1  \\ 0,15 & 0,85 \end{pmatrix}$
+               \par
+               et $a+b=1$
+               \par
+               On obtient le système :
+               \par
+               $\left\{ \begin{matrix} a+b=1 \\ 0,9a+0,15b=a \\ 0,1a+0,85b=b \end{matrix}\right.$
+                    \par
+                    Ce système est équivalent à :
+                    \par
+                    $\left\{ \begin{matrix} b=1-a \\ 0,9a+0,15\left(1-a\right)=a \\ 0,1a+0,85\left(1-a\right) =1-a\end{matrix}\right.$
+                         \par
+                         $\left\{ \begin{matrix} b=1-a \\ 0,25a=0,15 \end{matrix}\right.$
+                              \par
+                              $\left\{ \begin{matrix} a=0,6 \\ b=0,4 \end{matrix}\right.$
+                                   \item
+                                   D'après la question précédente dans l'état stable 60\% des personnes interrogées préfèrent Aurore (contre 40\% qui préfèrent Boréal).
+                                   \par
+                                   Au fil du temps on se rapproche de l'état stable donc \textbf{le parfum Aurore finira par être préféré} au parfum Boréal.
+                              \end{enumerate}
+                         \end{enumerate}
+                    \end{corrige}
+\input{_footer}

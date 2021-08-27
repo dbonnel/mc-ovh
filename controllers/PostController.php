@@ -450,6 +450,8 @@ namespace Controllers {
                 ->set_var('content', $post)
                 ->show('main');
         }
+
+
     }
 
 }
